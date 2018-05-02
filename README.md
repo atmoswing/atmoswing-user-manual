@@ -1,2 +1,2 @@
-# user-manual
+# AtmoSwing user manual
 User manual for AtmoSwing
