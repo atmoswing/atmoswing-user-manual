@@ -9,9 +9,6 @@ The Forecaster manual is divided into the following topics:
 
 .. toctree::
    :maxdepth: 2
-
-
-
-
-
+   
+   app-forecaster/installation
 

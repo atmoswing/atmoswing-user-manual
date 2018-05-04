@@ -9,9 +9,6 @@ The Optimizer manual is divided into the following topics:
 
 .. toctree::
    :maxdepth: 2
-
-
-
-
-
+   
+   app-optimizer/installation
 
