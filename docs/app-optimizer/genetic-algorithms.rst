@@ -25,36 +25,36 @@ All options
 
 The different operators can be controlled with the following options:
 
-- `ga-ope-nat-sel`:          operator choice for natural selection
-- `ga-ope-coup-sel`:         operator choice for couples selection
-- `ga-ope-cross`:            operator choice for chromosome crossover
-- `ga-ope-mut`:              operator choice for mutation
-- `ga-pop-size`:             size of the population
-- `ga-conv-steps`:           number of generations for convergence
-- `ga-interm-gen`:           ratio of the intermediate generation
-- `ga-nat-sel-tour-p`:       natural selection - tournament probability
-- `ga-coup-sel-tour-nb`:     couples selection - tournament candidates (2-3)
-- `ga-cross-mult-pt-nb`:     standard crossover - number of points
-- `ga-cross-blen-pt-nb`:     blending crossover - number of points
-- `ga-cross-blen-share-b`:   blending crossover - beta shared (1/0)
-- `ga-cross-lin-pt-nb`:      linear crossover - number of points
-- `ga-cross-heur-pt-nb`:     heuristic crossover - number of points
-- `ga-cross-heur-share-b`:   heuristic crossover - beta shared (1/0)
-- `ga-cross-bin-pt-nb`:      binary-like crossover - number of points
-- `ga-cross-bin-share-b`:    binary-like crossover - beta shared (1/0)
-- `ga-mut-unif-cst-p`:       uniform mutation - probability
-- `ga-mut-norm-cst-p`:       normal mutation - probability
-- `ga-mut-norm-cst-dev`:     normal mutation - standard deviation
-- `ga-mut-unif-var-gens`:    variable uniform mutation - generations nb
-- `ga-mut-unif-var-p-strt`:  variable uniform mutation - starting probability
-- `ga-mut-unif-var-p-end`:   variable uniform mutation - end probability
-- `ga-mut-norm-var-gens-p`:  variable normal mutation - generations nb for probability
-- `ga-mut-norm-var-gens-d`:  variable normal mutation - generations nb for std deviation
-- `ga-mut-norm-var-p-strt`:  variable normal mutation - starting probability
-- `ga-mut-norm-var-p-end`:   variable normal mutation - end probability
-- `ga-mut-norm-var-d-strt`:  variable normal mutation - starting std deviation
-- `ga-mut-norm-var-d-end`:   variable normal mutation - end std deviation
-- `ga-mut-non-uni-p`:        non uniform mutation - probability
-- `ga-mut-non-uni-gens`:     non uniform mutation - generations nb
-- `ga-mut-non-uni-min-r`:    non uniform mutation - minimum rate
-- `ga-mut-multi-scale-p`:    multi-scale mutation - probability
+- `ga-ope-nat-sel`: operator choice for natural selection
+- `ga-ope-coup-sel`: operator choice for couples selection
+- `ga-ope-cross`: operator choice for chromosome crossover
+- `ga-ope-mut`: operator choice for mutation
+- `ga-pop-size`: size of the population
+- `ga-conv-steps`: number of generations for convergence
+- `ga-interm-gen`: ratio of the intermediate generation
+- `ga-nat-sel-tour-p`: natural selection - tournament probability
+- `ga-coup-sel-tour-nb`: couples selection - tournament candidates (2-3)
+- `ga-cross-mult-pt-nb`: standard crossover - number of points
+- `ga-cross-blen-pt-nb`: blending crossover - number of points
+- `ga-cross-blen-share-b`: blending crossover - beta shared (1/0)
+- `ga-cross-lin-pt-nb`: linear crossover - number of points
+- `ga-cross-heur-pt-nb`: heuristic crossover - number of points
+- `ga-cross-heur-share-b`: heuristic crossover - beta shared (1/0)
+- `ga-cross-bin-pt-nb`: binary-like crossover - number of points
+- `ga-cross-bin-share-b`: binary-like crossover - beta shared (1/0)
+- `ga-mut-unif-cst-p`: uniform mutation - probability
+- `ga-mut-norm-cst-p`: normal mutation - probability
+- `ga-mut-norm-cst-dev`: normal mutation - standard deviation
+- `ga-mut-unif-var-gens`: variable uniform mutation - generations nb
+- `ga-mut-unif-var-p-strt`: variable uniform mutation - starting probability
+- `ga-mut-unif-var-p-end`: variable uniform mutation - end probability
+- `ga-mut-norm-var-gens-p`: variable normal mutation - generations nb for probability
+- `ga-mut-norm-var-gens-d`: variable normal mutation - generations nb for std deviation
+- `ga-mut-norm-var-p-strt`: variable normal mutation - starting probability
+- `ga-mut-norm-var-p-end`: variable normal mutation - end probability
+- `ga-mut-norm-var-d-strt`: variable normal mutation - starting std deviation
+- `ga-mut-norm-var-d-end`: variable normal mutation - end std deviation
+- `ga-mut-non-uni-p`: non uniform mutation - probability
+- `ga-mut-non-uni-gens`: non uniform mutation - generations nb
+- `ga-mut-non-uni-min-r`: non uniform mutation - minimum rate
+- `ga-mut-multi-scale-p`: multi-scale mutation - probability
