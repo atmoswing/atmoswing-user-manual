@@ -22,9 +22,9 @@ The Optimizer implements different optimization techniques, such as a sequential
    :maxdepth: 2
    :caption: Contents:
 
-   app-downscaler
    app-forecaster
    app-viewer
+   app-downscaler
    app-optimizer
    data
    faq
