@@ -10,5 +10,5 @@ This section is divided into the following topics:
 .. toctree::
    :maxdepth: 2
    
-   data/preferences
+   various/preferences
    
