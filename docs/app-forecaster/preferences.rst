@@ -1,7 +1,9 @@
-Global preferences
-==================
+Preferences
+===========
 
 .. todo:: write
+
+.. image:: img/preferences-paths-forecasting.png
 
 Log options
 -----------
@@ -23,3 +25,15 @@ The proxy configuration contains the following elements:
 * Proxy properties - provide the address, port, user name and password.
 
 .. image:: img/preferences-general-proxy.png
+
+.. image:: img/preferences-adv-gui.png
+
+.. image:: img/preferences-adv-downloads.png
+
+.. image:: img/preferences-adv-advancedoptions.png
+
+.. image:: img/preferences-adv-multithreading.png
+
+.. image:: img/preferences-adv-processing.png
+
+.. image:: img/preferences-adv-userpaths.png

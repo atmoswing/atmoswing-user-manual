@@ -27,7 +27,6 @@ The Optimizer implements different optimization techniques, such as a sequential
    app-downscaler
    app-optimizer
    data
-   various
    faq
 
 

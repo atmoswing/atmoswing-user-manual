@@ -11,4 +11,6 @@ The Forecaster manual is divided into the following topics:
    :maxdepth: 2
    
    app-forecaster/installation
+   app-forecaster/usage
+   app-forecaster/preferences
 

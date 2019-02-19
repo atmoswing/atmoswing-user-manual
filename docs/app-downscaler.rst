@@ -11,4 +11,6 @@ The Downscaler manual is divided into the following topics:
    :maxdepth: 2
    
    app-downscaler/installation
+   app-downscaler/usage
+   app-downscaler/preferences
 
