@@ -37,6 +37,13 @@ Usage
 
 .. image:: img/panel-forecasts.png
 
+For the different layers, it is possible to change the following properties, if available:
+
+* Visibility - whether the layer is visible or not by default.
+* Transparency - 0% is opaque and 100% is fully transparent.
+* Color - is applied to lines or surfaces.
+* The thickness of the line - for the lines or perimeters of polygons.
+
 .. image:: img/panel-layers.png
 
 .. image:: img/panel-alarms.png
