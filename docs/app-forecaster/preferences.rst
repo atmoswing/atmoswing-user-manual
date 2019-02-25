@@ -3,6 +3,17 @@ Preferences
 
 .. todo:: write
 
+Batch file properties
+---------------------
+
+Different directories must be specified for real-time forecasting:
+
+* Directory containing the forecast parameter files - contains the xml files defining by the method parameters
+* Directory containing the predictors archives.
+* Directory for recording downloaded predictors. Subdirectories are automatically created for each date according to the Year/Month/Day tree structure.
+* Directory for recording forecast results - location where these results are stored. Subdirectories are also generated for each date.
+* Directory containing the precipitation database - this database is a NetCDF file.
+
 .. image:: img/preferences-paths-forecasting.png
 
 Log options
