@@ -107,4 +107,4 @@ Atmoswing can be used with a command lines interface. This makes it possible to 
 --proxy=<host[:port]>  Use proxy on given port
 --proxy-user=<user[:password]>  Proxy user and password
 
-
+A scheduled task can be added on ther server (ex: Task Scheduler on Windows or Cron task on Linux)
