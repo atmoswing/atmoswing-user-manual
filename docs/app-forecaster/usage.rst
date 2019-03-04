@@ -96,15 +96,15 @@ Compute a forecast automatically on a server
 
 Atmoswing can be used with a command lines interface. This makes it possible to automate forecasts on a server. The options are as follows:
 
--h, --help  This help text
+-h, --help  Displays the help of command line options
 -c, --config  Configure the forecaster
--v, --version  Show version number and quit
+-v, --version  Displays the software version
 -f, --batch-file=file  Batch file to use for the forecast (full path)
 -n, --forecast-now  Run forecast for the latest available data
 -p, --forecast-past=nb_days  Run forecast for the given number of past days
--d, --forecast-date=date  YYYYMMDDHH Run forecast for a specified date
--l, --log-level=n  Set a log level (0: minimum, 1: errors, 2: warnings (default), 3: verbose)
---proxy=host  HOST[:PORT] Use proxy on given port
---proxy-user=user  USER[:PASSWORD] Proxy user and password
+-d, --forecast-date=<YYYYMMDDHH>  Run forecast for a specified date
+-l, --log-level=n  Set the log level (0: minimum, 1: errors, 2: warnings (default), 3: verbose)
+--proxy=<host[:port]>  Use proxy on given port
+--proxy-user=<user[:password]>  Proxy user and password
 
 
