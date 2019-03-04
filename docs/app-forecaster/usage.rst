@@ -98,13 +98,13 @@ Atmoswing can be used with a command lines interface. This makes it possible to 
 
 -h, --help  This help text
 -c, --config  Configure the forecaster
--f, --batch-file=<str>  Batch file to use for the forecast (full path)
--n, --forecast-now  Run forecast for the latest available data
--p, --forecast-past=<str>  Run forecast for the given number of past days
--d, --forecast-date=<str>  YYYYMMDDHH Run forecast for a specified date
 -v, --version  Show version number and quit
--l, --log-level=<str>  Set a log level (0: minimum, 1: errors, 2: warnings (default), 3: verbose)
---proxy=<str>  HOST[:PORT] Use proxy on given port
---proxy-user=<str>  USER[:PASSWORD] Proxy user and password
+-f, --batch-file=file  Batch file to use for the forecast (full path)
+-n, --forecast-now  Run forecast for the latest available data
+-p, --forecast-past=nb_days  Run forecast for the given number of past days
+-d, --forecast-date=date  YYYYMMDDHH Run forecast for a specified date
+-l, --log-level=n  Set a log level (0: minimum, 1: errors, 2: warnings (default), 3: verbose)
+--proxy=host  HOST[:PORT] Use proxy on given port
+--proxy-user=user  USER[:PASSWORD] Proxy user and password
 
 
