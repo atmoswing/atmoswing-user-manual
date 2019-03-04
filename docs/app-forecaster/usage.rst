@@ -3,8 +3,8 @@ Usage
 
 .. todo:: write
 
-Compute a forecast using the graphical interface
-------------------------------------------------
+Graphical user interface
+------------------------
 
 This tool allows you to do the following actions:
 
@@ -91,10 +91,10 @@ When the list of models has been modified and we want to keep it by default, it 
    :align: middle
 
 
-Compute a forecast automatically on a server
---------------------------------------------
+Command line interface
+----------------------
 
-Atmoswing can be used with a command lines interface. This makes it possible to automate forecasts on a server. The options are as follows:
+Atmoswing can be used with a command line interface. This makes it possible to automate forecasts on a server. The options are as follows:
 
 -h, --help  Displays the help of command line options
 -c, --config  Configure the forecaster
