@@ -3,29 +3,55 @@ Usage
 
 .. todo:: write
 
+The visualization software has the interface shown below. This tool allows you to view the files produced by the calculation software.
+
 .. image:: img/frame-viewer.png
+
+The toolbar allows the following actions:
+
+|icon_open| Open a forecast file
+ 
+|icon_run| Run the current forecast
+  
+|icon_map_select| Select a station on the map
+
+|icon_map_zoom_in| Zoom in on the map
+
+|icon_map_zoom_out| Zoom out on the map
+
+|icon_map_move| Move the map
+
+|icon_map_fit| Adjust the map to all elements
+
+|icon_frame_distributions| Open distribution charts
+
+|icon_frame_analogs| Open the list of analogues
+
+|icon_preferences| Open the interface for setting preferences
+
+.. |icon_open| image:: img/icon_open.png
+
+.. |icon_run| image:: img/icon_run.png
+
+.. |icon_map_select| image:: img/icon_map_select.png
+
+.. |icon_map_zoom_in| image:: img/icon_map_zoom_in.png
+
+.. |icon_map_zoom_out| image:: img/icon_map_zoom_out.png
+
+.. |icon_map_move| image:: img/icon_map_move.png
+
+.. |icon_map_fit| image:: img/icon_map_fit.png
+
+.. |icon_frame_distributions| image:: img/icon_frame_distributions.png
+
+.. |icon_frame_analogs| image:: img/icon_frame_analogs.png
+
+.. |icon_preferences| image:: img/icon_preferences.png
+
 
 .. image:: img/frame-viewer-rings.png
 
-.. image:: img/icon_open.png
-
-.. image:: img/icon_run.png
-
-.. image:: img/icon_map_select.png
-
-.. image:: img/icon_map_zoom_in.png
-
-.. image:: img/icon_map_zoom_out.png
-
-.. image:: img/icon_map_move.png
-
-.. image:: img/icon_map_fit.png
-
-.. image:: img/icon_frame_distributions.png
-
-.. image:: img/icon_frame_analogs.png
-
-.. image:: img/icon_preferences.png
 
 .. image:: img/frame-plot-criteria-distrib.png
 
