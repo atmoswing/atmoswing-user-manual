@@ -60,7 +60,7 @@ It is possible to open |icon_open_s| several model results, but they must have t
 .. |icon_open_s| image:: img/icon_open.png
    :width: 32
    :height: 32
-   :scale: 50
+   :scale: 75
    :align: middle
 
 The first visualization offered to the user when he opens a file is a summary of the next deadlines (Figure below). At the location of each station a circular band is displayed with one box per deadline. The colours assigned to each trap are proportional to the expected value for the deadline in question. This representation provides a quick overview of the coming days and makes it easy to identify a possible event. An alternative view of this map allows you to display the forecasts by maturity (Figure above). This representation helps to better distinguish spatialization from precipitation, as well as to quickly access the values of certain quantiles. The choice of the deadline is made using the cursor above the map.
@@ -137,7 +137,7 @@ The distribution of the analogy criterion is also available in the same window t
 .. |icon_frame_distributions_s| image:: img/icon_frame_distributions.png
    :width: 32
    :height: 32
-   :scale: 50
+   :scale: 75
    :align: middle
 
 
@@ -151,6 +151,6 @@ Details of similar dates and their associated criteria and precipitation are ava
 .. |icon_frame_analogs_s| image:: img/icon_frame_analogs.png
    :width: 32
    :height: 32
-   :scale: 50
+   :scale: 75
    :align: middle
    
