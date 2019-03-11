@@ -10,7 +10,6 @@ The Optimizer manual is divided into the following topics:
 .. toctree::
    :maxdepth: 2
    
-   app-optimizer/installation
    app-optimizer/usage
    app-optimizer/genetic-algorithms
    app-optimizer/preferences

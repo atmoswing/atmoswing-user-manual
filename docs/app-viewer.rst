@@ -10,7 +10,6 @@ The Viewer manual is divided into the following topics:
 .. toctree::
    :maxdepth: 2
    
-   app-viewer/installation
    app-viewer/usage
    app-viewer/preferences
 

@@ -10,7 +10,6 @@ The Downscaler manual is divided into the following topics:
 .. toctree::
    :maxdepth: 2
    
-   app-downscaler/installation
    app-downscaler/usage
    app-downscaler/preferences
 
