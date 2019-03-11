@@ -13,9 +13,9 @@ The optimization by genetic algorithms is controlled by many parameters. To faci
 
 --ga-config=<1-5>  Operators presets 
 
-Providing the following numbers (1-5) to the option ga-config is equivalent to these corresponding presets (for example, ``--ga-config=2`` corresponds to the multiscale mutation with predefined options):
+For all presets, the following options are identical: ``--ga-conv-steps 30`` ``--ga-pop-size 500`` ``--ga-interm-gen 0.5`` ``--ga-ope-nat-sel 0`` ``--ga-ope-coup-sel 2`` ``--ga-ope-cross 7`` ``--ga-cross-bin-pt-nb 2`` ``--ga-cross-bin-share-b 1``
 
-``--ga-conv-steps 30`` ``--ga-pop-size 500`` ``--ga-interm-gen 0.5`` ``--ga-ope-nat-sel 0`` ``--ga-ope-coup-sel 2`` ``--ga-ope-cross 7`` ``--ga-cross-bin-pt-nb 2`` ``--ga-cross-bin-share-b 1``
+The difference between the presets concerns the mutation operator. Providing the following numbers (1-5) to the option ga-config is equivalent to these corresponding presets:
 
 1. Chromosome of adaptive search radius: ``--ga-ope-mut 8``
 2. Multiscale mutation: ``--ga-ope-mut 9`` ``--ga-mut-multi-scale-p 0.1``
