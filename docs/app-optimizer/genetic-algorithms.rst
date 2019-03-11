@@ -13,17 +13,15 @@ The optimization by genetic algorithms is controlled by many parameters. To faci
 
 --ga-config=<1-5>  Operators presets 
 
-Providing the following numbers (1-5) to the option ga-config is equivalent to these corresponding presets (for example, --ga-config=2 corresponds to the multiscale mutation with predefined options):
+Providing the following numbers (1-5) to the option ga-config is equivalent to these corresponding presets (for example, ``--ga-config=2`` corresponds to the multiscale mutation with predefined options):
 
 ``--ga-conv-steps 30 --ga-pop-size 500 --ga-interm-gen 0.5 --ga-ope-nat-sel 0 --ga-ope-coup-sel 2 --ga-ope-cross 7 --ga-cross-bin-pt-nb 2 --ga-cross-bin-share-b 1``
 
 1. Chromosome of adaptive search radius: ``--ga-ope-mut 8``
-2. Multiscale mutation: ``--ga-ope-mut 9 --ga-mut-multi-scale-p 0.1``
-3. Nonuniform mutation (pmut=0.1, Gmr=50, w=0.1): ``--ga-ope-mut 4 --ga-mut-non-uni-p 0.1 --ga-mut-non-uni-gens 50 --ga-mut-non-uni-min-r 0.1``
-4. Nonuniform mutation (pmut=0.1, Gmr=100, w=0.1): ``--ga-ope-mut 4 --ga-mut-non-uni-p 0.1 --ga-mut-non-uni-gens 100 --ga-mut-non-uni-min-r 0.1``
-5. Nonuniform mutation (pmut=0.2, Gmr=100, w=0.1): ``--ga-ope-mut 4 --ga-mut-non-uni-p 0.2 --ga-mut-non-uni-gens 100 --ga-mut-non-uni-min-r 0.1``
-
-Enter: ``run`` here
+2. Multiscale mutation: ``--ga-ope-mut 9`` ``--ga-mut-multi-scale-p 0.1``
+3. Nonuniform mutation (pmut=0.1, Gmr=50, w=0.1): ``--ga-ope-mut 4`` ``--ga-mut-non-uni-p 0.1`` ``--ga-mut-non-uni-gens 50`` ``--ga-mut-non-uni-min-r 0.1``
+4. Nonuniform mutation (pmut=0.1, Gmr=100, w=0.1): ``--ga-ope-mut 4`` ``--ga-mut-non-uni-p 0.1`` ``--ga-mut-non-uni-gens 100`` ``--ga-mut-non-uni-min-r 0.1``
+5. Nonuniform mutation (pmut=0.2, Gmr=100, w=0.1): ``--ga-ope-mut 4`` ``--ga-mut-non-uni-p 0.2`` ``--ga-mut-non-uni-gens 100`` ``--ga-mut-non-uni-min-r 0.1``
 
 Any of these options can be overridden by specifying it along with ga-config.
 
