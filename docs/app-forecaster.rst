@@ -109,6 +109,7 @@ Atmoswing can be used with a command line interface. This makes it possible to a
 A scheduled task can be added on ther server (ex: Task Scheduler on Windows or Cron task on Linux).
 
 
+
 .. toctree::
    :maxdepth: 2
    :hidden:

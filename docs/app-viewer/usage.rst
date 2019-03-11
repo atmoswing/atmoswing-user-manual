@@ -69,7 +69,7 @@ The first visualization offered to the user when he opens a file is a summary of
 
 
 Sidebar
-*******
+~~~~~~~
 
 To the left of the map is a sidebar to control the map display. 
 
@@ -105,7 +105,7 @@ To the left of the map is a sidebar to control the map display.
 
 
 Display of the time series
-**************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 When a station is selected (on the map or in the drop-down list on the sidebar), the graph of the expected time series is displayed (Figure below). This graph corresponds to the model selected at the time of clicking on the station. The display options (in the upper left panel) are as follows:
 
@@ -124,7 +124,7 @@ The lower left panel is the list of old forecasts. These are automatically impor
 
 
 Display of the distributions
-****************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Rainfall distributions are accessible via the |icon_frame_distributions_s| button on the toolbar. These allow the distribution of all analogues to be compared with the best 5 or 10 (Figure below). The display options are similar to those of the time series at the stations (previous section). The model, station and deadline must be selected in the upper part of the window.
 
@@ -142,7 +142,7 @@ The distribution of the analogy criterion is also available in the same window t
 
 
 Display of the analog dates
-***************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Details of similar dates and their associated criteria and precipitation are available through the |icon_frame_analogs_s| button on the toolbar. This tool (Figure below) allows you to analyze similar dates and measured precipitation. The model, station and deadline must be selected in the upper part of the window. It is possible to sort the list by each of the columns by clicking on it. The first click ranks the values in ascending order and the second in descending order.
 
