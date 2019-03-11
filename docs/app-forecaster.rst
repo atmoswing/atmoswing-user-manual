@@ -6,7 +6,8 @@ The Forecaster
 .. toctree::
    :maxdepth: 2
    
-   app-forecaster
+   self
+   app-forecaster/preferences
 
 
 Graphical user interface
