@@ -9,6 +9,8 @@ During this data processing, Gumbel adjustments are automatically made to calcul
 
 The interface for generating the rainfall database is accessible through the Tools / Bluid predictand DB menu.
 
+.. image:: img/frame-predictand-db-generator.png
+
 The first step is to choose the type of database to generate. The options are as follows:
 
 * Predictand parameter:
