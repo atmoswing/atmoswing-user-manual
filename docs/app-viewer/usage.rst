@@ -76,7 +76,8 @@ To the left of the map is a sidebar to control the map display.
 **Forecasts**: Choice of model and display. All open models are displayed in the upper box. The lower left box changes the color scale, and the one on the right is the choice of the quantile to display (20%, 60% or 90%).
 
 .. image:: img/panel-forecasts.png
-
+   :align: center
+   
 **GIS layers**: Choice of display of open GIS layers. For the different layers, it is possible to change the following properties, if available:
 
 * Visibility - whether the layer is visible or not by default.
@@ -85,31 +86,71 @@ To the left of the map is a sidebar to control the map display.
 * The thickness of the line - for the lines or perimeters of polygons.
 
 .. image:: img/panel-layers.png
-
+   :align: center
+   
 **Alarms**: Potentially critical situations. The different rows of the grid correspond to the different open models and the columns to the available deadlines. The displayed colors correspond to the highest ratio (rain value normalized by the rain of a selected return time) of all stations.
 
 .. image:: img/panel-alarms.png
+   :align: center
 
 **Station selection**: Select the station to display the time series. Alternative to selection on the map.
 
 .. image:: img/panel-stations.png
+   :align: center
 
 **Forecast caption**: Map legend. Display of the dates corresponding to the different boxes of the circular bands, as well as the color bar.
 
 .. image:: img/panel-caption.png
+   :align: center
 
 
 Display of the time series
 **************************
 
+When a station is selected (on the map or in the drop-down list on the sidebar), the graph of the expected time series is displayed (Figure below). This graph corresponds to the model selected at the time of clicking on the station. The display options (in the upper left panel) are as follows:
 
+- The 3 classical quantiles (20%, 60%, 90%) in the form of thick blue lines.
+- Every tenth of a quantile as a grey surface
+- All analogues in the form of small grey crosses
+- The 10 best analogues as yellow - orange - red crosses. The colors are proportional to the rows of the analogs. Red is for the best analog and yellow for the 10th.
+- The 5 best analogues according to the same principle.
+- The value of the return time of 10 years in the form of a red line.
+- The values of different return times.
+- Traces of the old forecasts.
 
-
-.. image:: img/frame-plot-criteria-distrib.png
-
-.. image:: img/frame-plot-precip-distrib.png
-
-.. image:: img/frame-list-analogs.png
+The lower left panel is the list of old forecasts. These are automatically imported before the graph is displayed. 
 
 .. image:: img/frame-plot-timeseries.png
 
+
+Display of the distributions
+****************************
+
+Rainfall distributions are accessible via the |icon_frame_distributions_s| button on the toolbar. These allow the distribution of all analogues to be compared with the best 5 or 10 (Figure below). The display options are similar to those of the time series at the stations (previous section). The model, station and deadline must be selected in the upper part of the window.
+
+.. image:: img/frame-plot-precip-distrib.png
+
+The distribution of the analogy criterion is also available in the same window through the tab located above the graph (Figure below). This distribution makes it possible to identify possible discontinuities in the values of the criteria and thus to increase the number of credits to the best analogues.
+
+.. image:: img/frame-plot-criteria-distrib.png
+
+.. |icon_frame_distributions_s| image:: img/icon_frame_distributions.png
+   :width: 32
+   :height: 32
+   :scale: 50
+   :align: middle
+
+
+Display of the analog dates
+***************************
+
+Details of similar dates and their associated criteria and precipitation are available through the |icon_frame_analogs_s| button on the toolbar. This tool (Figure below) allows you to analyze similar dates and measured precipitation. The model, station and deadline must be selected in the upper part of the window. It is possible to sort the list by each of the columns by clicking on it. The first click ranks the values in ascending order and the second in descending order.
+
+.. image:: img/frame-list-analogs.png
+
+.. |icon_frame_analogs_s| image:: img/icon_frame_analogs.png
+   :width: 32
+   :height: 32
+   :scale: 50
+   :align: middle
+   
