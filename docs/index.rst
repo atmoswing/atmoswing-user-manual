@@ -24,6 +24,7 @@ The Optimizer implements different optimization techniques, such as a sequential
 
    getting-started
    app-forecaster
+   app-forecaster/preferences
    app-viewer
    app-downscaler
    app-optimizer

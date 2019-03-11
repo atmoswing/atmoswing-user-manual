@@ -3,14 +3,6 @@
 The Forecaster
 ==============
 
-.. contents::
-   :depth: 2
-   
-.. toctree::
-   :maxdepth: 2
-   
-   app-forecaster/preferences
-
 
 Graphical user interface
 ------------------------
