@@ -6,6 +6,6 @@
    :maxdepth: 2
    :hidden:
    
-   self
+   app-forecaster/usage
    app-forecaster/preferences
    
