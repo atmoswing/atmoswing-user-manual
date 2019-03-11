@@ -9,25 +9,16 @@ The visualization software has the interface shown below. This tool allows you t
 
 The toolbar allows the following actions:
 
-|icon_open| Open a forecast file
- 
-|icon_run| Run the current forecast
-  
-|icon_map_select| Select a station on the map
-
-|icon_map_zoom_in| Zoom in on the map
-
-|icon_map_zoom_out| Zoom out on the map
-
-|icon_map_move| Move the map
-
-|icon_map_fit| Adjust the map to all elements
-
-|icon_frame_distributions| Open distribution charts
-
-|icon_frame_analogs| Open the list of analogues
-
-|icon_preferences| Open the interface for setting preferences
+- |icon_open| Open a forecast file
+- |icon_run| Run the current forecast
+- |icon_map_select| Select a station on the map
+- |icon_map_zoom_in| Zoom in on the map
+- |icon_map_zoom_out| Zoom out on the map
+- |icon_map_move| Move the map
+- |icon_map_fit| Adjust the map to all elements
+- |icon_frame_distributions| Open distribution charts
+- |icon_frame_analogs| Open the list of analogues
+- |icon_preferences| Open the interface for setting preferences
 
 .. |icon_open| image:: img/icon_open.png
 
