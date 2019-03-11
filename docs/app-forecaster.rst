@@ -6,7 +6,7 @@ The Forecaster
 .. toctree::
    :maxdepth: 2
    
-   app-forecaster/usage
+   app-forecaster
    app-forecaster/preferences
 
 
