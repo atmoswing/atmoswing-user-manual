@@ -16,11 +16,9 @@ This tool allows you to do the following actions:
 
 The toolbar allows the following actions:
 
-|icon_run| Run the forecast for the chosen date and time.
-
-|icon_stop| Stop the current calculations.
-
-|icon_preferences| Open the interface for setting preferences.
+- |icon_run| Run the forecast for the chosen date and time.
+- |icon_stop| Stop the current calculations.
+- |icon_preferences| Open the interface for setting preferences.
 
 .. |icon_run| image:: img/icon_run.png
    :align: middle
