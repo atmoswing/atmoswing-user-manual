@@ -7,7 +7,6 @@ The Forecaster
    :maxdepth: 2
    
    app-forecaster
-   app-forecaster/preferences
 
 
 Graphical user interface
