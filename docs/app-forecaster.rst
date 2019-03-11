@@ -1,5 +1,3 @@
-.. _app-forecaster:
-
 .. include:: app-forecaster/usage
 
 .. toctree::
