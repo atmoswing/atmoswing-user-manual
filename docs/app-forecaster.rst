@@ -3,10 +3,12 @@
 The Forecaster
 ==============
 
+.. contents::
+   :depth: 2
+   
 .. toctree::
    :maxdepth: 2
    
-   self
    app-forecaster/preferences
 
 
