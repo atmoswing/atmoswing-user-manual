@@ -1,6 +1,6 @@
 .. _app-forecaster:
 
-.. include:: app-forecaster/usage
+.. include:: app-forecaster/usage.rst
 
 .. toctree::
    :maxdepth: 2
