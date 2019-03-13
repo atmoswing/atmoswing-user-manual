@@ -1,3 +1,5 @@
+.. _predictand-db:
+
 Predictand DB
 =============
 
