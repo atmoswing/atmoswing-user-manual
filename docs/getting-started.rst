@@ -11,5 +11,6 @@ This section is divided into the following topics:
    :maxdepth: 2
    
    getting-started/installation
+   getting-started/analog-methods
    getting-started/configure-am
    

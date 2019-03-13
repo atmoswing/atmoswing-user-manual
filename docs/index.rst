@@ -6,7 +6,7 @@
 AtmoSwing's user documentation
 ==============================
 
-Analog methods (AMs) allow for the prediction of local meteorological variables of interest (predictand) such as the daily precipitation, on the basis of synoptic variables (predictors). They can rely on outputs of numerical weather prediction models in the context of operational forecasting or outputs of climate models in the context of climate impact studies. AMs require low computing capacity and have demonstrated a useful potential for application in several contexts. 
+:ref:`Analog methods (AMs) <analog-methods>` allow for the prediction of local meteorological variables of interest (predictand) such as the daily precipitation, on the basis of synoptic variables (predictors). They can rely on outputs of numerical weather prediction models in the context of operational forecasting or outputs of climate models in the context of climate impact studies. AMs require low computing capacity and have demonstrated a useful potential for application in several contexts. 
 
 AtmoSwing is an open source software written in C++ that implements AMs in a flexible manner so that different variants can be handled dynamically. It comprises four tools: a Forecaster that performs operational forecasts, a Viewer for displaying the results, a Downscaler for climate studies, and an Optimizer for inferring the relationship between the predictand and predictors. 
 
