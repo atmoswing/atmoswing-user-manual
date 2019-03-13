@@ -1,6 +1,6 @@
-.. _configure-am:
+.. _using-atmoswing:
 
-Configure an analog method
-==========================
+Using AtmoSwing
+===============
 
 .. todo:: write
