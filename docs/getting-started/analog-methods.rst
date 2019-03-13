@@ -32,42 +32,32 @@ Subsequently, [BenDaoud2016]_ introduced an additional level of analogy between 
 .. table:: Some analogue methods listed by increasing complexity. P0 is the preselection (PC: on calendar basis, that is +-60 days around the target date), L1, L2 and L3 are the subsequent levels of analogy. The meteorological variables are: SLP -- mean sea level pressure, Z -- geopotential height, T -- air temperature, W -- vertical velocity, MI -- moisture index, which is the product of the relative humidity at the given pressure level and the total water column. The analogy criterion is S1 for SLP and Z and RMSE for the other variables.
    :widths: auto
 
-   =============  =============  =============  =============  =============  ===============
-      Method           P0             L1             L2             L3          Reference
-   =============  =============  =============  =============  =============  =============== 
-   2Z             PC             Z1000\@12h                                   [Bontron2004]_
+   ==================  =============  =============  ===============  ============= 
+         Method              P0             L1             L2              L3         
+   ==================  =============  =============  ===============  =============  
+   | 2Z                PC             | Z1000\@12h                                   
+   | [Bontron2004]_                   | Z500\@24h                                                   
+   ------------------  -------------  -------------  ---------------  ------------- 
+   | 4Z                PC             | Z1000\@06h                                   
+   | [Horton2017b]_                   | Z1000\@30h
+                                      | Z700\@24h
+                                      | Z500\@12h
+   ------------------  -------------  -------------  ---------------  -------------  
+   | 2Z-2MI            PC             | Z1000\@12h   MI850\@12+24h                
+   | [Bontron2004]_                   | Z500\@24h
+   ------------------  -------------  -------------  ---------------  ------------- 
+   | 4Z-2MI            PC             | Z1000\@30h   | MI700\@24h                    
+   | [Horton2017b]_                   | Z850\@12h    | MI600\@12h
+                                      | Z700\@24h 
+                                      | Z400\@12h
+   ------------------  -------------  -------------  ---------------  ------------- 
+   | PT-2Z-4MI         | T925\@36h    | Z1000\@12h   | MI925\@12+24h                
+   | [BenDaoud2016]_   | T600\@12h    | Z500\@24h    | MI700\@12+24h
+   ------------------  -------------  -------------  ---------------  ------------- 
+   | PT-2Z-4W-4MI      | T925\@36h    | Z1000\@12h   | W850\@06-24h   MI925\@12+24h  
+   | [BenDaoud2016]_   | T600\@12h    | Z500\@24h    | MI700\@12+24h
+   ==================  =============  =============  ===============  =============  
    
-                                 Z500\@24h                                                   
-   -------------  -------------  -------------  -------------  -------------  ---------------
-   4Z             PC             Z1000\@06h                                   [Horton2017b]_
-   
-                                 Z1000\@30h
-				 
-                                 Z700\@24h
-				 
-                                 Z500\@12h
-   -------------  -------------  -------------  -------------  -------------  --------------- 
-   2Z-2MI         PC             Z1000\@12h     MI850\@12+24h                 [Bontron2004]_
-   
-                                 Z500\@24h
-   -------------  -------------  -------------  -------------  -------------  ---------------
-   4Z-2MI         PC             Z1000\@30h     MI700\@24h                    [Horton2017b]_
-   
-                                 Z850\@12h      MI600\@12h
-				 
-                                 Z700\@24h 
-				 
-                                 Z400\@12h
-   -------------  -------------  -------------  -------------  -------------  ---------------
-   PT-2Z-4MI      T925\@36h      Z1000\@12h     MI925\@12+24h                 [BenDaoud2016]_
-   
-                  T600\@12h      Z500\@24h      MI700\@12+24h
-   -------------  -------------  -------------  -------------  -------------  ---------------
-   PT-2Z-4W-4MI   T925\@36h      Z1000\@12h     W850\@06-24h   MI925\@12+24h  [BenDaoud2016]_
-   
-                  T600\@12h      Z500\@24h      MI700\@12+24h
-   =============  =============  =============  =============  =============  ===============
-
 
 .. [Horton2018] Horton, P., & Brönnimann, S. (2018). Impact of global atmospheric reanalyses on statistical precipitation downscaling. Climate Dynamics. http://doi.org/10.1007/s00382-018-4442-6
 .. [Bontron2004] Bontron, G. (2004). Prévision quantitative des précipitations: Adaptation probabiliste par recherche d’analogues. Utilisation des Réanalyses NCEP/NCAR et application aux précipitations du Sud-Est de la France. Institut National Polytechnique de Grenoble.
