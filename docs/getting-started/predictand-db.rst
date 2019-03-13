@@ -40,7 +40,7 @@ Next, a couple of paths must be provided:
 
 * The predictand catalog: `a catalog (xml file) <#predictand-catalog>`_ is required to provide some metadata on the different timeseries.
 * The predictand data directory: the directoy containing the original predictand files.
-* The file patterns description directory: the directoy containing `files defining the structure <#predictand-structure>`_ of the original predictand files.
+* The file patterns description directory: the directoy containing `files defining the structure <#predictand-file-structure>`_ of the original predictand files.
 * The destination directory: where the resulting file will be saved.
 
 
