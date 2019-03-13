@@ -10,10 +10,10 @@ The first method developed with NR-1 by [Bontron2004]_ is based on the analogy o
 The 2Z method consists of the following steps: firstly, to cope with seasonal effects, candidate dates are extracted from the archive period within a period of four months centered around the target date, for every year of the archive (PC: preselection on calendar basis in Table below). Then, the analogy of the atmospheric circulation of a target date with every day from the preselection set (excluding a period of +-30 days around the target date along with the VP) is assessed by processing the S1 criterion ([Teweles1954]_ [Brown2012]_), which is a comparison of gradients, over a defined spatial window (the domain on which the predictors are compared). S1 is processed on each level and the average is then considered, here with the same weights.
 
 .. math::
-    S1=100 \\frac {\\displaystyle \\sum_{i} \\vert \\Delta\\hat{z}_{i} - \\Delta z_{i} \\vert}
-{\\displaystyle \\sum_{i} max\\left\\lbrace \\vert \\Delta\\hat{z}_{i} \\vert , \\vert \\Delta z_{i} \\vert \\right\\rbrace }
+    S1=100 \frac {\displaystyle \sum_{i} \vert \Delta\hat{z}_{i} - \Delta z_{i} \vert}
+{\displaystyle \sum_{i} max\left\lbrace \vert \Delta\hat{z}_{i} \vert , \vert \Delta z_{i} \vert \right\rbrace }
 
-where :math:`\\Delta \\hat{z}_{i}$` is the difference in geopotential height between the i-th pair of adjacent points of gridded data describing the target situation, and :math:`\\Delta z_{i}$` is the corresponding observed geopotential height difference in the candidate situation. The smaller the values S1 are, the more similar the pressure fields. This criterion, being processed on gradients, is insensitive to biases in the considered predictors, as long as the circulation is correctly represented.
+where :math:`\Delta \hat{z}_{i}$` is the difference in geopotential height between the i-th pair of adjacent points of gridded data describing the target situation, and :math:`\Delta z_{i}$` is the corresponding observed geopotential height difference in the candidate situation. The smaller the values S1 are, the more similar the pressure fields. This criterion, being processed on gradients, is insensitive to biases in the considered predictors, as long as the circulation is correctly represented.
 
 The N1 dates, where N1 is a parameter to be calibrated, with the lowest values of S1 are considered as analogues to the target date. Then, the daily observed precipitation values of the N1 selected dates provide the empirical conditional distribution, considered as the probabilistic prediction for the target date.
 
