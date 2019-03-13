@@ -115,6 +115,21 @@ The predictand catalog provides some metadata on the predictand timeseries. It c
 
     </atmoswing>
 
+The dataset is described by the following data:
+
+* id: a name given to the dataset (short)
+* name: the full name of the dataset
+* description: additional description (optional)
+* parameter: the measured parameter (see above; ex: Precipitation)
+* unit: the unit of the measure (ex: mm)
+* temporal_resolution: the temporal resolution (see above; ex: Daily)
+* spatial_aggregation: the spatial aggregation (see above; ex: Station)
+* time_zone: time zone of the measurement time (ex: 0 for UTC)
+* start: first time step of all stations DD/MM/YYYY (ex: 01/01/1864)
+* end: last time step of all stations DD/MM/YYYY (ex: 31/12/2015)
+* first_time_step: first time step (ex: 0)
+* nan: representation of nan values
+* coordinate_system: the coordinate system (ex: EPSG:21781)
 
 
 Predictand file structure
