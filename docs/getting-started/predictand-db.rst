@@ -12,7 +12,7 @@ The interface for generating the precipitation database is accessible through th
 .. image:: img/frame-predictand-db-generator.png
    :align: center
 
-The first step is to choose the type of database to generate. The options are as follows:
+The first step consists in choosing the type of database to generate. The options are as follows:
 
 * Predictand parameter:
    * Precipitation
@@ -30,6 +30,29 @@ The first step is to choose the type of database to generate. The options are as
    * Station
    * Groupment
    * Catchment
+
+The resulting file will contain the raw predictand data, but can also contain transformed data when working with precipitation. The possible transformations are:
+
+* A normalization of the precipitation amount by a chosen return period value (often 10 years)
+* A transformation by the square root of the later values (see [Bontron2004]_)
+
+Next, a couple of paths must be provided:
+
+* The predictand catalog: `a catalog (xml file) <#predictand-catalog>`_ is required to provide some metadata on the different timeseries.
+* The predictand data directory: the directoy containing the original predictand files.
+* The file patterns description directory: the directoy containing `files defining the structure <#predictand-structure>`_ of the original predictand files.
+* The destination directory: where the resulting file will be saved.
+
+
+Predictand catalog
+------------------
+
+
+Predictand file structure
+-------------------------
+
+
+
 
 The selected database type will then be searched in the catalogue. It is therefore the latter that determines which network and which stations to include in the selection. The catalogue also contains information on the station's positioning and measurement periods. Finally, the data files and their structure are also determined by this same catalogue. The files will be searched in the directory entered in the first field (Select the predictand data directory). The structure defines how to read data files. This structure is described in files, located in the folder given under Select the directory containing the file patterns description.
 
@@ -85,3 +108,4 @@ The structure describing such data files is as follows:
   </atmoswing>
 
 .. [Horton2017] Horton, P., Obled, C., & Jaboyedoff, M. (2017). The analogue method for precipitation prediction: finding better analogue situations at a sub-daily time step. Hydrology and Earth System Sciences, 21, 3307–3323. http://doi.org/10.5194/hess-21-3307-2017
+.. [Bontron2004] Bontron, G. (2004). Prévision quantitative des précipitations: Adaptation probabiliste par recherche d’analogues. Utilisation des Réanalyses NCEP/NCAR et application aux précipitations du Sud-Est de la France. Institut National Polytechnique de Grenoble.
