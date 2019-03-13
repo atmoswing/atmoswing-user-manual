@@ -29,34 +29,34 @@ To constrain the seasonal effect, [BenDaoud2016]_ replaced the calendar preselec
 
 Subsequently, [BenDaoud2016]_ introduced an additional level of analogy between the circulation and the moisture analogy (PT-2Z-4W-4MI, Table below), based on the vertical velocity at 850 hPa (W850). This AM, named "SANDHY" for Stepwise Analogue Downscaling method for Hydrology ([BenDaoud2016]_ [Caillouet2016]_), was primarily developed for large and relatively flat/lowland catchments in France (Saône, Seine). It has also been applied to the whole France territory by [Radanovics2013]_ with ERA-40 and by [Caillouet2016]_ with 20CR-V2b.
 
-
 .. table:: Some analogue methods listed by increasing complexity. P0 is the preselection (PC: on calendar basis, that is +-60 days around the target date), L1, L2 and L3 are the subsequent levels of analogy. The meteorological variables are: SLP -- mean sea level pressure, Z -- geopotential height, T -- air temperature, W -- vertical velocity, MI -- moisture index, which is the product of the relative humidity at the given pressure level and the total water column. The analogy criterion is S1 for SLP and Z and RMSE for the other variables.
-	
-    =============  =============  =============  =============  =============  ===============
-       Method           P0             L1             L2             L3          Reference
-    =============  =============  =============  =============  =============  =============== 
-    2Z             PC             Z1000@12h                                    [Bontron2004]_
-                                  Z500@24h
-    -------------  -------------  -------------  -------------  -------------  ---------------
-    4Z             PC             Z1000@06h                                    [Horton2017b]_
-                                  Z1000@30h
-                                  Z700@24h
-                                  Z500@12h
-    -------------  -------------  -------------  -------------  -------------  --------------- 
-    2Z-2MI         PC             Z1000@12h      MI850@12+24h                  [Bontron2004]_
-                                  Z500@24h
-    -------------  -------------  -------------  -------------  -------------  ---------------
-    4Z-2MI         PC             Z1000@30h      MI700@24h                     [Horton2017b]_
-                                  Z850@12h       MI600@12h
-                                  Z700@24h 
-                                  Z400@12h
-    -------------  -------------  -------------  -------------  -------------  ---------------
-    PT-2Z-4MI     T925@36h        Z1000@12h      MI925@12+24h                  [BenDaoud2016]_
-                  T600@12h        Z500@24h       MI700@12+24h
-    -------------  -------------  -------------  -------------  -------------  ---------------
-    PT-2Z-4W-4MI  T925@36h        Z1000@12h      W850@06-24h    MI925@12+24h   [BenDaoud2016]_
-                  T600@12h        Z500@24h       MI700@12+24h
-    =============  =============  =============  =============  =============  ===============
+   :widths: auto
+
+   =============  =============  =============  =============  =============  ===============
+      Method           P0             L1             L2             L3          Reference
+   =============  =============  =============  =============  =============  =============== 
+   2Z             PC             Z1000\@12h                                   [Bontron2004]_
+                                 Z500\@24h
+   -------------  -------------  -------------  -------------  -------------  ---------------
+   4Z             PC             Z1000\@06h                                   [Horton2017b]_
+                                 Z1000\@30h
+                                 Z700\@24h
+                                 Z500\@12h
+   -------------  -------------  -------------  -------------  -------------  --------------- 
+   2Z-2MI         PC             Z1000\@12h     MI850\@12+24h                 [Bontron2004]_
+                                 Z500\@24h
+   -------------  -------------  -------------  -------------  -------------  ---------------
+   4Z-2MI         PC             Z1000\@30h     MI700\@24h                    [Horton2017b]_
+                                 Z850\@12h      MI600\@12h
+                                 Z700\@24h 
+                                 Z400\@12h
+   -------------  -------------  -------------  -------------  -------------  ---------------
+   PT-2Z-4MI      T925\@36h      Z1000\@12h     MI925\@12+24h                 [BenDaoud2016]_
+                  T600\@12h      Z500\@24h      MI700\@12+24h
+   -------------  -------------  -------------  -------------  -------------  ---------------
+   PT-2Z-4W-4MI   T925\@36h      Z1000\@12h     W850\@06-24h   MI925\@12+24h  [BenDaoud2016]_
+                  T600\@12h      Z500\@24h      MI700\@12+24h
+   =============  =============  =============  =============  =============  ===============
 
 
 .. [Horton2018] Horton, P., & Brönnimann, S. (2018). Impact of global atmospheric reanalyses on statistical precipitation downscaling. Climate Dynamics. http://doi.org/10.1007/s00382-018-4442-6
