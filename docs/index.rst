@@ -20,7 +20,6 @@ AtmoSwing is an open source software written in C++ that implements AMs in a fle
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
    getting-started
    app-forecaster
