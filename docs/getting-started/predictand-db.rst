@@ -47,6 +47,75 @@ Next, a couple of paths must be provided:
 Predictand catalog
 ------------------
 
+The predictand catalog provides some metadata on the predictand timeseries. It consists in a xml file such as:
+
+.. code:: xml
+
+    <?xml version="1.0" encoding="UTF-8" ?>
+
+    <atmoswing version="1.0">
+      <dataset>
+        <id>MeteoSwiss-Switzerland</id>
+        <name>MeteoSwiss daily rainfall measurements for Switzerland</name>
+        <description>Daily precipitation measurements for Switzerland</description>
+        <parameter>Precipitation</parameter>
+        <unit>mm</unit>
+        <temporal_resolution>Daily</temporal_resolution>
+        <spatial_aggregation>Station</spatial_aggregation>
+        <time_zone>0</time_zone>
+        <start note="first value of all stations">01/01/1864</start>
+        <end note="last value of all stations">31/12/2015</end>
+        <first_time_step>0</first_time_step>
+        <nan>-</nan>
+        <coordinate_system>EPSG:21781</coordinate_system>
+
+        <stations>
+          <station>
+            <id>1</id>
+            <name>Aarberg</name>
+            <official_id>ABE</official_id>
+            <x_coordinate>588051</x_coordinate>
+            <y_coordinate>209518</y_coordinate>
+            <height>493</height>
+            <file_name>ABE_rre150d0_data.txt</file_name>
+            <file_pattern>MeteoSwiss_IDAweb_bulletin</file_pattern>
+            <start>01/01/1900</start>
+            <end>31/12/2015</end>
+          </station>
+          <station>
+            <id>2</id>
+            <name>L’Abergement</name>
+            <official_id>ABG</official_id>
+            <x_coordinate>527540</x_coordinate>
+            <y_coordinate>178770</y_coordinate>
+            <height>645</height>
+            <file_name>ABG_rre150d0_data.txt</file_name>
+            <file_pattern>MeteoSwiss_IDAweb_bulletin</file_pattern>
+            <start>01/01/1961</start>
+            <end>31/12/2015</end>
+          </station>
+          
+          ...
+          
+          <station>
+            <id>301</id>
+            <name>Zweisimmen</name>
+            <official_id>ZWE</official_id>
+            <x_coordinate>595870</x_coordinate>
+            <y_coordinate>155480</y_coordinate>
+            <height>1015</height>
+            <file_name>ZWE_rre150d0_data.txt</file_name>
+            <file_pattern>MeteoSwiss_IDAweb_bulletin</file_pattern>
+            <start>01/01/1901</start>
+            <end>31/12/2015</end>
+          </station>
+
+        </stations>
+      </dataset>
+
+    </atmoswing>
+
+
 
 Predictand file structure
 -------------------------
@@ -54,7 +123,7 @@ Predictand file structure
 
 
 
-The selected database type will then be searched in the catalogue. It is therefore the latter that determines which network and which stations to include in the selection. The catalogue also contains information on the station's positioning and measurement periods. Finally, the data files and their structure are also determined by this same catalogue. The files will be searched in the directory entered in the first field (Select the predictand data directory). The structure defines how to read data files. This structure is described in files, located in the folder given under Select the directory containing the file patterns description.
+It is therefore the latter that determines which network and which stations to include in the selection. The catalogue also contains information on the station's positioning and measurement periods. Finally, the data files and their structure are also determined by this same catalogue. The files will be searched in the directory entered in the first field (Select the predictand data directory). The structure defines how to read data files. This structure is described in files, located in the folder given under Select the directory containing the file patterns description.
 
 After execution, a NetCDF file containing all the data necessary for the software is created in the chosen directory. This file also includes the station properties and allows us to do without the predictand catalogue for further operations.
 
