@@ -6,7 +6,7 @@ Reanalyses
 Supported reanalyses
 --------------------
 
-AtmoSwing can read the following reanalyses (with the corresponding id to use):
+A description of the different reanalyses and the assessment of the impact of the dataset selection are presented in [Horton2018]_. AtmoSwing can read the following reanalyses (with the corresponding id to use):
 
 NCEP_Reanalysis_v1
   NCEP/NCAR Reanalysis 1
@@ -62,3 +62,5 @@ Additionally to the multiple reanalyses supported, AtmoSwing allows to use a gen
 * Yearly files with the year in the file name
 * All the files in a directory. The files need to be named in order to be sorted chronologically.
 
+
+.. [Horton2018] Horton, P., & Brönnimann, S. (2018). Impact of global atmospheric reanalyses on statistical precipitation downscaling. Climate Dynamics. http://doi.org/10.1007/s00382-018-4442-6
