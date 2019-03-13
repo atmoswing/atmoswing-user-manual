@@ -3,15 +3,14 @@
 Predictand DB
 =============
 
-.. todo:: write
+The preditand data (e.g. precipitation) must be prepared for use in AtmoSwing. A tool provided along AtmoSwing allows for the 'database' generation. Database generation consists of extracting data from text files and combining them into a NetCDF file.
 
-The precipitation database must be generated again when adding years of measurements. Database generation consists of extracting data from text files and combining them into a NetCDF file.
+During this data processing, Gumbel adjustments are automatically made to calculate the precipitation values corresponding to different return periods.
 
-During this data processing, Gumbel adjustments are automatically made to calculate the precipitation values corresponding to different return times.
-
-The interface for generating the rainfall database is accessible through the Tools / Bluid predictand DB menu.
+The interface for generating the precipitation database is accessible through the 'Tools / Build predictand DB' menu from any AtmoSwing software.
 
 .. image:: img/frame-predictand-db-generator.png
+   :align: center
 
 The first step is to choose the type of database to generate. The options are as follows:
 
@@ -23,10 +22,10 @@ The first step is to choose the type of database to generate. The options are as
 * Temporal resolution:
    * 24 hours
    * 6 hours
-   * 1-hr MTW (moving time window)
-   * 3-hr MTW (moving time window)
-   * 6-hr MTW (moving time window)
-   * 12-hr MTW (moving time window)
+   * 1-hr MTW (moving time window, see [Horton2017]_)
+   * 3-hr MTW (moving time window, see [Horton2017]_)
+   * 6-hr MTW (moving time window, see [Horton2017]_)
+   * 12-hr MTW (moving time window, see [Horton2017]_)
 * Spatial aggregation:
    * Station
    * Groupment
@@ -85,3 +84,4 @@ The structure describing such data files is as follows:
     </pattern>
   </atmoswing>
 
+.. [Horton2017] Horton, P., Obled, C., & Jaboyedoff, M. (2017). The analogue method for precipitation prediction: finding better analogue situations at a sub-daily time step. Hydrology and Earth System Sciences, 21, 3307–3323. http://doi.org/10.5194/hess-21-3307-2017
