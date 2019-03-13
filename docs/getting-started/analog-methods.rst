@@ -64,11 +64,6 @@ Subsequently, [BenDaoud2016]_ introduced an additional level of analogy between 
 .. [Horton2017b] Horton, P., Obled, C., & Jaboyedoff, M. (2017). The analogue method for precipitation prediction: finding better analogue situations at a sub-daily time step. Hydrology and Earth System Sciences, 21, 3307–3323. http://doi.org/10.5194/hess-21-3307-2017
 .. [BenDaoud2016] Horton, P., Obled, C., & Jaboyedoff, M. (2017). The analogue method for precipitation prediction: finding better analogue situations at a sub-daily time step. Hydrology and Earth System Sciences, 21, 3307–3323. http://doi.org/10.5194/hess-21-3307-2017
 .. [Teweles1954] Teweles, S., & Wobus, H. B. (1954). Verification of prognostic charts. Bulletin of the American Meteorological Society, 35, 455–463.
-.. [Brown2012] Teweles, S., & Wobus, H. B. (1954). Verification of prognostic charts. Bulletin of the American Meteorological Society, 35, 455–463.
-.. [Zorita1999] Teweles, S., & Wobus, H. B. (1954). Verification of prognostic charts. Bulletin of the American Meteorological Society, 35, 455–463.
-.. [Timbal2001a] Teweles, S., & Wobus, H. B. (1954). Verification of prognostic charts. Bulletin of the American Meteorological Society, 35, 455–463.
-.. [Martin2014b] Teweles, S., & Wobus, H. B. (1954). Verification of prognostic charts. Bulletin of the American Meteorological Society, 35, 455–463.
-.. [Caillouet2016] Teweles, S., & Wobus, H. B. (1954). Verification of prognostic charts. Bulletin of the American Meteorological Society, 35, 455–463.
-.. [Radanovics2013] Teweles, S., & Wobus, H. B. (1954). Verification of prognostic charts. Bulletin of the American Meteorological Society, 35, 455–463.
-.. [Rienecker2011] Teweles, S., & Wobus, H. B. (1954). Verification of prognostic charts. Bulletin of the American Meteorological Society, 35, 455–463.
-.. [Dayon2015] Teweles, S., & Wobus, H. B. (1954). Verification of prognostic charts. Bulletin of the American Meteorological Society, 35, 455–463.
+.. [Brown2012] Brown, B. G., Gilleland, E., & Ebert, E. E. (2012). Forecasts of Spatial Fields. In I. T. Jolliffe & D. B. Stephenson (Eds.), Forecast Verification (pp. 95–117). Wiley. http://doi.org/10.1002/9781119960003.ch6
+.. [Caillouet2016] Caillouet, L., Vidal, J.-P., Sauquet, E., & Graff, B. (2016). Probabilistic precipitation and temperature downscaling of the Twentieth Century Reanalysis over France. Climate of the Past, 12(3), 635–662. http://doi.org/10.5194/cp-12-635-2016
+.. [Radanovics2013] Radanovics, S., Vidal, J.-P., Sauquet, E., Ben Daoud, A., & Bontron, G. (2013). Optimising predictor domains for spatially coherent precipitation downscaling. Hydrology and Earth System Sciences, 17(10), 4189–4208. http://doi.org/10.5194/hess-17-4189-2013
