@@ -272,7 +272,7 @@ When using an elaborated predictor, the data must go through a preprocessing rou
     
 In this case, there is a new ``<preprocessing>`` block containing:
 
-* ``<preprocessing_method>``: The preprocessing method to use.
+* ``<preprocessing_method>``: The :ref:`preprocessing method<preprocessing>` to use.
 * ``<preprocessing_data>``: The predictor data to preprocess defined by ``<dataset_id>``, ``<data_id>``, ``<level>``, and ``<time>``.
 * The rest of the parameters ``<spatial_window>``, ``<criteria>``, and ``<weight>`` are common for the preprocessed predictors.
 
