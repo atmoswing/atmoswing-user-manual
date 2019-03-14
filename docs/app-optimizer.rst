@@ -13,4 +13,5 @@ The Optimizer manual is divided into the following topics:
    app-optimizer/usage
    app-optimizer/genetic-algorithms
    app-optimizer/preferences
+   app-optimizer/parameters-file
 

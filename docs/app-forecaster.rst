@@ -12,4 +12,5 @@ The Forecaster manual is divided into the following topics:
    
    app-forecaster/usage
    app-forecaster/preferences
+   app-forecaster/parameters-file
    
