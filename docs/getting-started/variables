@@ -3,9 +3,65 @@
 Variables
 =========
 
+The different existing datasets do not name the meteorological variables the same way. AtmoSwing can interact with many datasets and has several of their variables defined. These datasets often provides different products, for example for different types of level (isobaric, isentropic, surface, etc). As some variable can be defined for different levels (e.g. temperature), the product/level must be specified. Thus, the selection of a variable in the parameters file is defined as ``level/variable``, such as ``pressure/z`` for the geopotential on pressure levels, or ``isentropic/t`` for the temperature on isentropic levels.
+
+The following sections define first the different levels, then some common variables to most datasets, and finally list the available variables for the different datasets.
 
 Differentiating subsets/levels
 ------------------------------
+
+The level can usually be defined using different terms. The provided terms are interchangeables.
+
+**Pressure level**:
+
+* pressure_level
+* pressure_levels
+* pressure
+* press
+* isobaric
+* pl
+* pgbh
+* pgbhnl
+* pgb
+
+**Isentropic level**:
+
+* isentropic_level
+* isentropic
+* potential_temperature
+* pt
+* ipvh
+* ipv
+
+**Surface**:
+
+* surface
+* surf
+* ground
+* sfc
+* sf
+
+**'Flux' level**:
+
+* surface_fluxes
+* fluxes
+* flux
+* flxf06
+* flx
+
+**Column level**:
+
+* total_column
+* column
+* tc
+* entire_atmosphere
+* ea
+
+**Potential vorticity**:
+* potential_vorticity
+* pv
+* pv_surface
+* epv
 
 
 Common variables
@@ -13,8 +69,8 @@ Common variables
 
 
 
-Available variables from the reanalyses
----------------------------------------
+Available variables from datasets
+---------------------------------
 
 The following variables are defined in AtmoSwing for the different reanalyses:
 
