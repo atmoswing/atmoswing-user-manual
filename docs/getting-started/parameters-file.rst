@@ -134,10 +134,6 @@ The common basic structure is illustrated below for the 2Z-2MI method (first lev
           <station_id>1,2,3,4,5</station_id>
         </predictand>
       </analog_values>
-      <evaluation>
-        <score>CRPSS</score>
-        <time_array>simple</time_array>
-      </evaluation>
     </atmoswing>
 
 
@@ -151,6 +147,18 @@ The content of ``<description>`` is mainly relevant for the Forecaster, where re
 * ``<specific_tag>``: A tag to identify the specific settings. This is usually the name of the region for which the method was calibrated.
 * ``<specific_tag_display>``: A more descriptive text for the provided ``<specific_tag>`` above.
 * ``<description>``: A possible additionnal description.
+
+Example:
+
+.. code-block:: xml
+
+  <description>
+    <method_id>2Z-2MI</method_id>
+    <method_id_display>Classic humidity</method_id_display>
+    <specific_tag>CH</specific_tag>
+    <specific_tag_display>all stations</specific_tag_display>
+    <description>Classic analogy on the atmospheric circulation and the moisture</description>
+  </description>
 
 Content 'time_properties'
 -------------------------
@@ -210,12 +218,42 @@ The content of ``<time_array_analogs>`` defines the temporal properties of the a
 * ``<interval_days>``: Number of days to select around the target date for every year. Usually: 60
 * ``<exclude_days>``: Number of days to exclude around the target date for the same year. Usually: 30
 
+Example:
+
+.. code-block:: xml
+
+  <time_properties>
+    <archive_period>
+      <start>01.01.1981</start>
+      <end>31.12.2010</end>
+    </archive_period>
+    <time_step>24</time_step>
+    <time_array_target>
+      <time_array>simple</time_array>
+    </time_array_target>
+    <time_array_analogs>
+      <time_array>days_interval</time_array>
+      <interval_days>60</interval_days>
+      <exclude_days>30</exclude_days>
+    </time_array_analogs>
+  </time_properties>
+
 
 Content 'analog_dates'
 ----------------------
 
 The content of ``<analog_dates>`` defines the analogy for a given analogy level. Several analogy levels can be successively defined by adding more ``<analog_dates>`` blocks one after the other. Every new level (block) will then subsample from the previous level.
 
+.. code-block:: xml
+
+  <analog_dates>
+    ...
+  </analog_dates>
+  <analog_dates>
+    ...
+  </analog_dates>
+  
+  
 Element 'analogs_number'
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -225,7 +263,48 @@ The tag ``<analogs_number>`` defined the number of analogs to select for the giv
 Element 'predictor'
 ~~~~~~~~~~~~~~~~~~~
 
-The element ``<predictor>`` provides information about the predictor, the spatial window and the criteria to use. Several predictors can be used together in an analogy level and are provided by adding more ``<predictor>`` blocks one after the other. The ``<predictor>`` element must define:
+The element ``<predictor>`` provides information about the predictor, the spatial window and the criteria to use. Several predictors can be used together in an analogy level and are provided by adding more ``<predictor>`` blocks one after the other. 
+
+Example:
+
+.. code-block:: xml
+
+    <predictor>
+      <preload>1</preload>
+      <dataset_id>ECMWF_ERA_interim</dataset_id>
+      <data_id>press/hgt</data_id>
+      <level>1000</level>
+      <time>12</time>
+      <spatial_window>
+        <x_min>-2.25</x_min>
+        <x_points_nb>22</x_points_nb>
+        <x_step>0.75</x_step>
+        <y_min>40.5</y_min>
+        <y_points_nb>11</y_points_nb>
+        <y_step>0.75</y_step>
+      </spatial_window>
+      <criteria>S1</criteria>
+      <weight>0.5</weight>
+    </predictor>
+    <predictor>
+      <preload>1</preload>
+      <dataset_id>ECMWF_ERA_interim</dataset_id>
+      <data_id>press/hgt</data_id>
+      <level>500</level>
+      <time>24</time>
+      <spatial_window>
+        <x_min>-2.25</x_min>
+        <x_points_nb>22</x_points_nb>
+        <x_step>0.75</x_step>
+        <y_min>40.5</y_min>
+        <y_points_nb>11</y_points_nb>
+        <y_step>0.75</y_step>
+      </spatial_window>
+      <criteria>S1</criteria>
+      <weight>0.5</weight>
+    </predictor>
+
+The ``<predictor>`` element must define:
 
 * ``<preload>``: Defines if the data must be loaded in memory or not (0/1; optional)
 * ``<dataset_id>``: Defines the dataset to be used (:ref:`see the reanalyses list<reanalyses>`)
@@ -237,7 +316,7 @@ The element ``<predictor>`` provides information about the predictor, the spatia
 * ``<weight>``: Weight to give to the predictor when averaging the different criteria values from the different predictors of a level of analogy (ex: 0.6). Optional: if not provided, an equal weight is given to all predictors.
 * ``<spatial_window>``: The spatial window on which the predictor variable is compared by means on the criterion. The window is defined by its minimum X (``<x_min>``) and Y (``<y_min>``) coordinates, the number of points in the direction of higher values (``<x_points_nb>`` and ``<y_points_nb>``) and the desired resolution (``<x_step>`` and ``<y_step>``).
 
-When using an elaborated predictor, the data must go through a preprocessing routine. In this case, the structure is a bit different and can look like this:
+When using an elaborated predictor, the data must go through a preprocessing routine. In this case, the structure is a bit different and can look like this (several predictors can also be defined one after the other):
 
 .. code-block:: xml
 
@@ -287,3 +366,12 @@ Specification of the target predictand timeseries:
 
 * ``<station_id>``: :ref:`Station id<predictand-db>` or list of station ids (separated by commas)
 
+Example:
+
+.. code-block:: xml
+
+  <analog_values>
+    <predictand>
+      <station_id>1,2,3,4,5</station_id>
+    </predictand>
+  </analog_values>
