@@ -43,11 +43,13 @@ Next, a couple of paths must be provided:
 * The file patterns description directory: the directoy containing `files defining the structure <#predictand-file-structure>`_ of the original predictand files.
 * The destination directory: where the resulting file will be saved.
 
+After execution, a NetCDF file containing all the data necessary for the software is created in the chosen directory. This file also includes the station properties and timeseries.
+
 
 Predictand catalog
 ------------------
 
-The predictand catalog provides some metadata on the predictand timeseries. It consists in a xml file such as:
+The predictand catalog provides some metadata on the predictand timeseries. It is only required to create the predictand database and is not used anymore afterwards. It consists in a xml file such as:
 
 .. code-block:: xml
 
@@ -148,23 +150,19 @@ Then, every timeseries (named here 'station', even if they are not representing 
 Predictand file structure
 -------------------------
 
+It was chosen not to force users to transform their data into a specific format, but to let them describe the structure of the files. This must be done using files describing the structure of the original timeseries. The structure file defines how to read data files and is described in text files. However, a restriction is imposed: a data file must contain only one time series (single station), or structure files must be defined to read a specific column.
+
+Files can be structured in two common types:
+
+* Delimited by tabs (``tabsdelimited``)
+* With constant line width (``constantwidth``)
+
+An option (``parsetime``) allows to read the date/time entries, or ignore them. Reading this information allows an automatic check of the correct consistency of the dates between what the software thinks it is reading and what it is actually reading. It is therefore recommended to enable this option (``<parse_time>1</parse_time>``).
 
 
 
-It is therefore the latter that determines which network and which stations to include in the selection. The catalogue also contains information on the station's positioning and measurement periods. Finally, the data files and their structure are also determined by this same catalogue. The files will be searched in the directory entered in the first field (Select the predictand data directory). The structure defines how to read data files. This structure is described in files, located in the folder given under Select the directory containing the file patterns description.
 
-After execution, a NetCDF file containing all the data necessary for the software is created in the chosen directory. This file also includes the station properties and allows us to do without the predictand catalogue for further operations.
 
-Precipitation file structure
-
-It was chosen not to force the user to transform his data into a specific format, but to let him describe the structure of his files. This must be done using files describing the structure of the series. However, a restriction is imposed: a data file must contain only one time series (single station).
-
-Files can be structured in two common modes:
-
-* Delimited by tabs (tabsdelimited)
-* With constant line width (constantwidth)
-
-An option (parsetime) allows you to read the time information, or ignore it. Reading this information allows an automatic check of the correct consistency of the dates between what the software thinks it is reading and what it is actually reading. It is therefore recommended to activate this option (parsetime = 1).
 
 This type defines structured files in a very simple way, either with date elements (year, month, day) and data separated by tabs (see example below). The files contain exactly 2 header lines.
 
