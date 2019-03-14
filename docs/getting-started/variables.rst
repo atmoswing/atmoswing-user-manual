@@ -3,7 +3,7 @@
 Variables
 =========
 
-The different existing datasets do not name the meteorological variables the same way. AtmoSwing can interact with many datasets and has several of their variables defined. These datasets often provides different products, for example for different types of level (isobaric, isentropic, surface, etc). As some variable can be defined for different levels (e.g. temperature), the product/level must be specified. Thus, the selection of a variable in the parameters file is defined as ``level/variable``, such as ``pressure/z`` for the geopotential on pressure levels, or ``isentropic/t`` for the temperature on isentropic levels. As different levels types and variables are present for different datasets, they can be named differently in AtmoSwing. For example ``pressure/z``, ``pl/h``, and ``isobaric/hgt`` are identical.
+The different existing datasets do not name the meteorological variables the same way. AtmoSwing can interact with many datasets and has several of their variables defined. These datasets often provides different products, for example for different types of level (isobaric, isentropic, surface, etc). As some variable can be defined for different levels (e.g. temperature), the product/level must be specified. Thus, the selection of a variable in the parameters file is defined as ``level/variable``, such as ``pressure/z`` for the geopotential on pressure levels, or ``isentropic/t`` for the temperature on isentropic levels. As different levels types and variables are present for different datasets, they can be named differently in AtmoSwing. For example ``pressure/z``, ``pl/h``, and ``isobaric/hgt`` are identical. The name of the level (or product) has to be the same as the name of the corresponding subfolder. For example, someone using NCEP/NCAR Reanalysis 1 and having a subfolder 'pressure' should then use ``pressure/z`` for the geopotential height.
 
 The following sections define first the different levels, then some common variables to most datasets, and finally list the available variables for the different datasets.
 
@@ -383,31 +383,204 @@ ECMWF ERA-interim
 ECMWF ERA 20th Century
 ~~~~~~~~~~~~~~~~~~~~~~
 
+**For pressure levels**:
+
+* Geopotential
+* Temperature
+* Relative humidity
+* Vertical velocity
+
+**For surface**:
+
+* Total column water
+* Total precipitation
+* Sea level pressure
+
+
 ECMWF Coupled ERA 20th Century
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**For pressure levels**:
+
+* Geopotential
+* Temperature
+* Relative humidity
+* Vertical velocity
+
+**For surface**:
+
+* Total column water
+* Total precipitation
+* Sea level pressure
+
 
 NASA MERRA-2
 ~~~~~~~~~~~~
 
+**For product 'inst6_3d_ana_Np'**:
+
+* Geopotential height
+* Air temperature
+* Sea-level pressure
+
+
 NASA MERRA-2 subset
 ~~~~~~~~~~~~~~~~~~
  
+**For product 'inst6_3d_ana_Np'**:
+
+* Geopotential height
+* Specific humidity
+* Air temperature
+* Sea-level pressure
+* Eastward wind component
+* Northward wind component
+* Surface pressure (``ps``)
+
+**For product 'inst3_3d_asm_Np'**:
+
+* Ertel's potential vorticity
+* Vertical pressure velocity
+* Relative humidity after moist
+* Sea level pressure
+* Air temperature
+
+**For product 'inst1_2d_int_Nx'**:
+
+* Total precipitable ice water (``tqi``)
+* Total precipitable liquid water (``tql``)
+* Total precipitable water vapor (``tqv``)
+
+**For product 'inst1_2d_asm_Nx'**:
+
+* Total precipitable ice water (``tqi``)
+* Total precipitable liquid water (``tql``)
+* Total precipitable water vapor (``tqv``)
+* 10-meter air temperature (``t10m``)
+
+**For product 'tavg1_2d_flx_Nx'**:
+
+* Total surface precipitation flux
+
+**For product 'tavg1_2d_lnd_Nx'**:
+
+* Total precipitation land; bias corrected
+
+
 JMA JRA-55 subset
 ~~~~~~~~~~~~~~~~~
 
+**For pressure levels** (anl_p125):
+
+* Geopotential height
+* Relative humidity
+* Temperature
+* Vertical velocity
+
+**For the surface** (anl_surf125):
+
+* Pressure reduced to MSL
+
+**For the total column** (anl_column125):
+
+* Precipitable water
+
+**For isentropic levels**:
+
+* Potential vorticity
+* Geopotential Height
+
+**For the product 'fcst_phy2m125'**:
+
+* Total precipitation 3h (``tprat3h``)
+* Total precipitation 6h (``tprat6h``)
+
+
 JMA JRA-55C subset
 ~~~~~~~~~~~~~~~~~~
-  
+
+**For pressure levels** (anl_p125):
+
+* Geopotential height
+* Relative humidity
+* Temperature
+* Vertical velocity
+
+**For the surface** (anl_surf125):
+
+* Pressure reduced to MSL
+
+**For the total column** (anl_column125):
+
+* Precipitable water
+
+**For isentropic levels**:
+
+* Potential vorticity
+* Geopotential Height
+
+**For the product 'fcst_phy2m125'**:
+
+* Total precipitation 3h (``tprat3h``)
+* Total precipitation 6h (``tprat6h``)
+
+
 NOAA 20CR v2c
 ~~~~~~~~~~~~~
 
+**For pressure levels**:
+
+* Air Temperature
+* Geopotential
+* Vertical velocity
+* Relative Humidity
+* Specific Humidity
+* Specific Humidity
+* U-Wind
+* V-Wind
+
+**For the surface**:
+
+* Precipitable water
+* Sea level pressure
+
+**For surface fluxes**:
+
+* Precipitation rate
+
+
 NOAA 20CR v2c ensemble
 ~~~~~~~~~~~~~~~~~~~~~~
-  
+
+**For the product 'analysis'**:
+
+* Sea level pressure
+* Precipitable water
+* Vertical velocity at 500 hPa (``omega500``)
+* Relative Humidity at 850 hPa (``rh850``)
+* Relative Humidity at the pressure level 0.995 times the surface pressure (``rh9950``)
+* Air Temperature at 850 hPa(``t850``)
+* Air Temperature at the pressure level 0.995 times the surface pressure (``t9950``)
+* Geopotential height at 200 hPa (``z200``)
+* Geopotential height at 500 hPa (``z500``)
+* Geopotential height at 1000 hPa (``z1000``)
+
+**For the product 'first_guess'**:
+
+* Precipitation rate
+
+
 NOAA OISST v2
 ~~~~~~~~~~~~~
+
+There are no product/level definition for this dataset
+
+* Sea Surface Temperature (``sst``)
+* Sea Surface Temperature Anomaly (``sst_anom``)
+
 
 Generic NetCDF
 ~~~~~~~~~~~~~~
 
+The generic dataset is different from the other datasets. There is no predefined variables. You have to use the same name as the variable name in the NetCDF file. 
   
