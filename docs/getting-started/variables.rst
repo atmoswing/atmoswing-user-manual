@@ -7,6 +7,9 @@ The different existing datasets do not name the meteorological variables the sam
 
 The following sections define first the different levels, then some common variables to most datasets, and finally list the available variables for the different datasets.
 
+.. contents:: Content of this section
+
+
 Differentiating subsets/levels
 ------------------------------
 
@@ -163,8 +166,8 @@ Some variables are defined with different names (aliases) across the datasets:
 * ``prectot``
 
 
-Available variables from datasets
----------------------------------
+Variables from datasets
+-----------------------
 
 The following variables are defined in AtmoSwing for the different reanalyses:
 
