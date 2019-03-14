@@ -119,32 +119,32 @@ The predictand catalog provides some metadata on the predictand timeseries. It i
 
 The dataset is described by the following data:
 
-* ``id``: a name given to the dataset (short)
-* ``name``: the full name of the dataset
-* ``description``: additional description (optional)
-* ``parameter``: the measured parameter (see above; ex: Precipitation)
-* ``unit``: the unit of the measure (ex: mm)
-* ``temporal_resolution``: the temporal resolution (see above; ex: Daily)
-* ``spatial_aggregation``: the spatial aggregation (see above; ex: Station)
-* ``time_zone``: time zone of the measurement time (ex: 0 for UTC)
-* ``start``: first time step of all stations DD/MM/YYYY (ex: 01/01/1864)
-* ``end``: last time step of all stations DD/MM/YYYY (ex: 31/12/2015)
-* ``first_time_step``: first time step (ex: 0)
-* ``nan``: representation of nan values
-* ``coordinate_system``: the coordinate system (ex: EPSG:21781)
+* ``<id>``: a name given to the dataset (short)
+* ``<name>``: the full name of the dataset
+* ``<description>``: additional description (optional)
+* ``<parameter>``: the measured parameter (see above; ex: Precipitation)
+* ``<unit>``: the unit of the measure (ex: mm)
+* ``<temporal_resolution>``: the temporal resolution (see above; ex: Daily)
+* ``<spatial_aggregation>``: the spatial aggregation (see above; ex: Station)
+* ``<time_zone>``: time zone of the measurement time (ex: 0 for UTC)
+* ``<start>``: first time step of all stations DD/MM/YYYY (ex: 01/01/1864)
+* ``<end>``: last time step of all stations DD/MM/YYYY (ex: 31/12/2015)
+* ``<first_time_step>``: first time step (ex: 0)
+* ``<nan>``: representation of nan values
+* ``<coordinate_system>``: the coordinate system (ex: EPSG:21781)
 
 Then, every timeseries (named here 'station', even if they are not representing a station) must be detailed under a ``<station>`` tag in the ``<stations>`` list. For every station, the following information can/must be provided:
 
-* ``id``: a unique (for the considered catalog) id (int) to identify the station in AtmoSwing
-* ``name``: the name of the station
-* ``official_id``: an eventual official id (optional)
-* ``x_coordinate``: the X coordinate (in the coordinate system defined for the dataset)
-* ``y_coordinate``: the Y coordinate (in the coordinate system defined for the dataset)
-* ``height``: the station height (optional)
-* ``file_name``: the file name containing the original data
-* ``file_pattern``: `the pattern describing the data file structure <#predictand-file-structure>`_
-* ``start``: the start of the timeseries DD/MM/YYYY
-* ``end``: the end of the timeseries DD/MM/YYYY
+* ``<id>``: a unique (for the considered catalog) id (int) to identify the station in AtmoSwing
+* ``<name>``: the name of the station
+* ``<official_id>``: an eventual official id (optional)
+* ``<x_coordinate>``: the X coordinate (in the coordinate system defined for the dataset)
+* ``<y_coordinate>``: the Y coordinate (in the coordinate system defined for the dataset)
+* ``<height>``: the station height (optional)
+* ``<file_name>``: the file name containing the original data
+* ``<file_pattern>``: `the pattern describing the data file structure <#predictand-file-structure>`_
+* ``<start>``: the start of the timeseries DD/MM/YYYY
+* ``<end>``: the end of the timeseries DD/MM/YYYY
 
 
 Predictand file structure
@@ -152,34 +152,34 @@ Predictand file structure
 
 It was chosen not to force users to transform their data into a specific format, but to let them describe the structure of the files. This must be done using files describing the structure of the original timeseries. The structure file defines how to read data files and is described in text files. However, a restriction is imposed: a data file must contain only one time series (single station), or structure files must be defined to read a specific column.
 
-Files can be structured in two common types:
+Files can be structured (``<structure_type>``) in two common types:
 
 * Delimited by tabs (``tabsdelimited``)
 * With constant line width (``constantwidth``)
 
-An option (``parsetime``) allows to read the date/time entries, or ignore them. Reading this information allows an automatic check of the correct consistency of the dates between what the software thinks it is reading and what it is actually reading. It is therefore recommended to enable this option (``<parse_time>1</parse_time>``).
+An option (``<parsetime>``) allows to read the date/time entries, or ignore them. Reading this information allows an automatic check of the correct consistency of the dates between what the software thinks it is reading and what it is actually reading. It is therefore recommended to enable this option (``<parse_time>1</parse_time>``).
 
+Several files are installed with AtmoSwing and can be found in the 'data/ascii_file_patterns' directory, or `online in the repository <https://github.com/atmoswing/atmoswing/tree/master/data/ascii_file_patterns>`_.
 
+Example of the type 'delimited by tabs'
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
-
-
-This type defines structured files in a very simple way, either with date elements (year, month, day) and data separated by tabs (see example below). The files contain exactly 2 header lines.
+This type defines structured files in a very simple way, eventually with date entries (year, month, day) and data separated by tabs (see example below). The files contain exactly 2 header lines:
 
 .. code-block:: text
 
 	Timeseries processed by XY for the YZ project.
 	average from station(s) : 8080 8010 
-	1961	1	1	6.600000
-	1961	1	2	2.600000
-	1961	1	3	21.500000
-	1961	1	4	4.500000
-	1961	1	5	0.000000
-	1961	1	6	5.800000
-	1961	1	7	0.000000
-	1961	1	8	3.400000
-	1961	1	9	0.000000
-	1961	1	10	1.500000
+	1961	1	1	6.6
+	1961	1	2	2.6
+	1961	1	3	21.5
+	1961	1	4	4.5
+	1961	1	5	0.0
+	1961	1	6	5.8
+	1961	1	7	0.0
+	1961	1	8	3.4
+	1961	1	9	0.0
+	1961	1	10	1.5
 
 The structure describing such data files is as follows:
 
@@ -201,6 +201,51 @@ The structure describing such data files is as follows:
       </data>
     </pattern>
   </atmoswing>
+
+
+Example of the type 'constant line width'
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Predictand files are here structured as constant line width.
+
+.. code-block:: text
+
+    ...
+    ...
+    stn    time           rre150d0
+    ABG    19610101            4.3
+    ABG    19610102           10.2
+    ABG    19610103           14.1
+    ABG    19610104            2.4
+    ABG    19610105            2.6
+    ABG    19610106            3.7
+    ABG    19610107            0.0
+    ABG    19610108            6.5
+    ABG    19610109            0.0
+    ABG    19610110           10.7
+
+
+The structure describing such data files is as follows:
+
+.. code-block:: xml
+
+    <?xml version="1.0" encoding="UTF-8" ?>
+    <atmoswing version="1.0">
+      <pattern id="MeteoSwiss_IDAweb_bulletin" name="MeteoSwiss data pattern from IDAweb">
+        <structure_type>constant_width</structure_type>
+        <header_lines>3</header_lines>
+        <parse_time>1</parse_time>
+        <time>
+          <year char_start="8" char_end="11"/>
+          <month char_start="12" char_end="13"/>
+          <day char_start="14" char_end="15"/>
+        </time>
+        <data>
+          <value char_start="25" char_end="30"/>
+        </data>
+      </pattern>
+    </atmoswing>
+
 
 .. [Horton2017] Horton, P., Obled, C., & Jaboyedoff, M. (2017). The analogue method for precipitation prediction: finding better analogue situations at a sub-daily time step. Hydrology and Earth System Sciences, 21, 3307–3323. http://doi.org/10.5194/hess-21-3307-2017
 .. [Bontron2004] Bontron, G. (2004). Prévision quantitative des précipitations: Adaptation probabiliste par recherche d’analogues. Utilisation des Réanalyses NCEP/NCAR et application aux précipitations du Sud-Est de la France. Institut National Polytechnique de Grenoble.
