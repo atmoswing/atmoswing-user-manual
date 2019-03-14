@@ -168,8 +168,8 @@ Available variables from datasets
 
 The following variables are defined in AtmoSwing for the different reanalyses:
 
-NCEP_Reanalysis_v1
-~~~~~~~~~~~~~~~~~~
+NCEP/NCAR Reanalysis 1
+~~~~~~~~~~~~~~~~~~~~~~
 
 On pressure levels:
 
@@ -237,9 +237,8 @@ For the 'surface fluxes':
 * Meridional Gravity Wave Stress (``vgwd``)
 
 
-NCEP_Reanalysis_v2
-~~~~~~~~~~~~~~~~~~
-
+NCEP/DOE Reanalysis 2
+~~~~~~~~~~~~~~~~~~~~~
 
 On pressure levels:
 
@@ -287,43 +286,43 @@ For the 'surface fluxes':
 * Meridional Gravity Wave Stress (``vgwd``)
 
 
-NCEP_CFSR
+NCEP CFSR
 ~~~~~~~~~
 
-NCEP_CFSR_subset
+NCEP CFSR subset
 ~~~~~~~~~~~~~~~~
 
-ECMWF_ERA_interim
+ECMWF ERA-interim
 ~~~~~~~~~~~~~~~~~
   
-ECMWF_ERA_20C
-~~~~~~~~~~~~~
+ECMWF ERA 20th Century
+~~~~~~~~~~~~~~~~~~~~~~
 
-ECMWF_CERA_20C
-~~~~~~~~~~~~~~
+ECMWF Coupled ERA 20th Century
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-NASA_MERRA_2
+NASA MERRA-2
 ~~~~~~~~~~~~
 
-NASA_MERRA_2_subset
+NASA MERRA-2 subset
 ~~~~~~~~~~~~~~~~~~
  
-JMA_JRA_55_subset
+JMA JRA-55 subset
 ~~~~~~~~~~~~~~~~~
 
-JMA_JRA_55C_subset
+JMA JRA-55C subset
 ~~~~~~~~~~~~~~~~~~
   
-NOAA_20CR_v2c
+NOAA 20CR v2c
 ~~~~~~~~~~~~~
 
-NOAA_20CR_v2c_ens
-~~~~~~~~~~~~~~~~~
+NOAA 20CR v2c ensemble
+~~~~~~~~~~~~~~~~~~~~~~
   
-NOAA_OISST_v2
+NOAA OISST v2
 ~~~~~~~~~~~~~
 
-GenericNetcdf
-~~~~~~~~~~~~~
+Generic NetCDF
+~~~~~~~~~~~~~~
 
   
