@@ -143,3 +143,35 @@ The content of ``<time_array_analogs>`` defines the temporal properties of the a
 * ``<exclude_days>``: Number of days to exclude around the target date for the same year. Usually: 30
 
 
+Content 'analog_dates'
+----------------------
+
+The content of ``<analog_dates>`` defines the analogy for a given analogy level. Several analogy levels can be successively defined by adding more ``<analog_dates>`` blocks one after the other. Every new level (block) will then subsample from the previous level.
+
+Element 'analogs_number'
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+The tag ``<analogs_number>`` defined the number of analogs to select for the given analogy level.
+
+
+Element 'predictor'
+~~~~~~~~~~~~~~~~~~~
+
+The element ``<predictor>`` provides information about the predictor, the spatial window and the criteria to use. Several predictors can be used together in an analogy level and are provided by adding more ``<predictor>`` blocks one after the other. The ``<predictor>`` element must define:
+
+* ``<preload>``: Defines if the data must be loaded in memory or not (0/1; optional)
+* ``<dataset_id>``: Defines the dataset to be used (:ref:`see the reanalyses list<reanalyses>`)
+* ``<data_id>``: hgt</data_id>
+* ``<level>``: 500</level>
+* ``<time>``: 24</time>
+* ``<criteria>``: S1</criteria>
+* ``<weight>``: 0.6</weight>
+
+
+* ``<spatial_window>``: 
+* ``<x_min>``: -10</x_min>
+* ``<x_points_nb>``: 9</x_points_nb>
+* ``<x_step>``: 2.5</x_step>
+* ``* ``<y_min>``: 30</y_min>
+* ``<y_points_nb>``: 5</y_points_nb>
+* ``<y_step>``: 2.5</y_step>
