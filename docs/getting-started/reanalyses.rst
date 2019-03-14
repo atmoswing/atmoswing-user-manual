@@ -28,7 +28,7 @@ A description of the different reanalyses and the assessment of the impact of th
 Generic dataset
 ---------------
 
-Additionally to the multiple reanalyses supported, AtmoSwing allows to use a generic dataset as NetCDF files. The files can be organized as follows (AtmoSwing will look for possible matches):
+Additionally to the multiple reanalyses supported, AtmoSwing allows to use a generic dataset as NetCDF files (``GenericNetcdf``). The files can be organized as follows (AtmoSwing will look for possible matches):
 
 * A single file with the name of the desired predictor variable (ex: rh.nc)
 * Yearly files with the year in the file name
