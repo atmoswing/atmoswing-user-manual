@@ -14,6 +14,7 @@ This section is divided into the following topics:
    getting-started/analog-methods
    getting-started/using-atmoswing
    getting-started/data
+   getting-started/preprocessing
    getting-started/analogy-criteria
    getting-started/parameters-file
    
