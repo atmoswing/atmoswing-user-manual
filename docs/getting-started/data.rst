@@ -8,6 +8,7 @@ This section describes the data required for AtmoSwing. It is divided into the f
 .. toctree::
    :maxdepth: 2
    
-   reanalyses
    predictand-db
+   reanalyses
+   variables
    
