@@ -43,7 +43,7 @@ The level can usually be defined using different terms. The provided terms are i
 
 **'Flux' level**:
 
-* ````surface_fluxes``
+* ``surface_fluxes``
 * ``fluxes``
 * ``flux``
 * ``flxf06``
@@ -198,20 +198,94 @@ On the surface:
 For the 'surface fluxes':
 
 * Air Temperature 2m
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-
-
-
+* Potential evaporation rate (``pevpr``)
+* Specific humidity at 2m (``shum``)
+* Soil moisture (0-10cm) (``soilw0-10``)
+* Soil moisture (10-200cm) (``soilw10-200``)
+* Skin Temperature (``sktmp``)
+* Temperature of 0-10cm layer (``tmp0-10``)
+* Temperature of 10-200cm layer (``tmp10-200``)
+* Temperature at 300cm (``tmp300``)
+* U-wind at 10 m
+* V-wind at 10 m
+* Water equiv. of snow dept (``weasd``)
+* Maximum temperature at 2m (``tmax2m``)
+* Minimum temperature at 2m (``tmin2m``)
+* Cloud forcing net longwave flux (``cfnlf``)
+* Cloud forcing net solar flux (``cfnsf``)
+* Convective precipitation rate (``cprat``)
+* Clear sky downward longwave flux (``csdlf``)
+* Clear sky downward solar flux (``csdsf``)
+* Clear sky upward solar flux at surface (``csusf``)
+* Downward longwave radiation flux (``dlwrf``)
+* Downward solar radiation flux (``dswrf``)
+* Ground heat flux (``gflux``)
+* Latent heat net flux (``lhtfl``)
+* Near IR beam downward solar flux (``nbdsf``)
+* Near IR diffuse downward solar flux (``nddsf``)
+* Net longwave radiation (``nlwrs``)
+* Net shortwave radiation (``nswrs``)
+* Precipitation rate
+* Sensible heat net flux (``shtfl``)
+* Momentum flux (zonal) (``uflx``)
+* Zonal gravity wave stress (``ugwd``)
+* Upward Longwave Radiation Flux (``ulwrf``)
+* Upward Solar Radiation Flux (``uswrf``)
+* Visible Beam Downward Solar Flux (``vbdsf``)
+* Visible Diffuse Downward Solar Flux (``vddsf``)
+* Momentum Flux, v-component (``vflx``)
+* Meridional Gravity Wave Stress (``vgwd``)
 
 
 NCEP_Reanalysis_v2
 ~~~~~~~~~~~~~~~~~~
+
+
+On pressure levels:
+
+* Air Temperature
+* Geopotential height
+* Relative Humidity
+* Vertical Velocity
+* U-Wind
+* V-Wind
+
+On the surface:
+
+* Precipitable water
+* Pressure
+* Sea level pressure
+
+For the 'surface fluxes':
+
+* Air Temperature 2m
+* Specific humidity at 2m (``shum``)
+* Maximum temperature at 2m (``tmax2m``)
+* Minimum temperature at 2m (``tmin2m``)
+* Skin Temperature (``sktmp``)
+* Soil moisture (0-10cm) (``soilw0-10``)
+* Soil moisture (10-200cm) (``soilw10-200``)
+* Temperature of 0-10cm layer (``tmp0-10``)
+* Temperature of 10-200cm layer (``tmp10-200``)
+* U-wind at 10 m
+* V-wind at 10 m
+* Water equiv. of snow dept (``weasd``)
+* Convective precipitation rate (``cprat``)
+* Downward longwave radiation flux (``dlwrf``)
+* Downward solar radiation flux (``dswrf``)
+* Ground heat flux (``gflux``)
+* Latent heat net flux (``lhtfl``)
+* Potential evaporation rate (``pevpr``)
+* Precipitation rate
+* Sensible heat net flux (``shtfl``)
+* Total cloud cover (``tcdc``)
+* Momentum flux (zonal) (``uflx``)
+* Zonal gravity wave stress (``ugwd``)
+* Upward Longwave Radiation Flux (``ulwrf``)
+* Upward Solar Radiation Flux (``uswrf``)
+* Momentum Flux (meridional) (``vflx``)
+* Meridional Gravity Wave Stress (``vgwd``)
+
 
 NCEP_CFSR
 ~~~~~~~~~
