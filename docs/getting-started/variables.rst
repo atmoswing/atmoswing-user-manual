@@ -173,6 +173,39 @@ NCEP_Reanalysis_v1
 
 On pressure levels:
 
+* Air Temperature
+* Geopotential height
+* Relative Humidity
+* Specific Humidity
+* Vertical Velocity
+* U-Wind
+* V-Wind
+
+On the surface:
+
+* Air Temperature
+* Surface lifted index (lftx)
+* Best (4-layer) lifted index (lftx4)
+* Vertical velocity
+* Potential temperature (pottmp)
+* Precipitable water
+* Pressure
+* Relative humidity
+* Sea level pressure
+* U-wind
+* V-wind
+
+For the 'surface fluxes':
+
+* Air Temperature 2m
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+
 
 
 
