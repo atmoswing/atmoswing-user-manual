@@ -131,6 +131,19 @@ The dataset is described by the following data:
 * **nan**: representation of nan values
 * **coordinate_system**: the coordinate system (ex: EPSG:21781)
 
+Then, every timeseries (named here 'station', even if they are not representing a station) must be detailed under a ``<station>`` tag in the ``<stations>`` list. For every station, the following information can/must be provided:
+
+* **id**: a unique (for the considered catalog) id (int) to identify the station in AtmoSwing
+* **name**: the name of the station
+* **official_id**: an eventual official id (optional)
+* **x_coordinate**: the X coordinate (in the coordinate system defined for the dataset)
+* **y_coordinate**: the Y coordinate (in the coordinate system defined for the dataset)
+* **height**: the station height (optional)
+* **file_name**: the file name containing the original data
+* **file_pattern**: `the pattern describing the data file structure <#predictand-file-structure>`_
+* **start**: the start of the timeseries DD/MM/YYYY
+* **end**: the end of the timeseries DD/MM/YYYY
+
 
 Predictand file structure
 -------------------------
