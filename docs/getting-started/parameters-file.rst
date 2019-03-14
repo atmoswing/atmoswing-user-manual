@@ -101,10 +101,12 @@ Element 'archive_period'
 The content of ``<archive_period>`` defines the archive period where the analog situations will be extracted. Two options are possible:
 
 Providing the exact dates:
+
 * ``<start>``: Start of the archive period (ex: 01.01.1981)
 * ``<end>``: End of the archive period (ex: 31.12.2010)
 
 Or only providing the years:
+
 * ``<start_year>``: Start of the archive period (ex: 1962)
 * ``<end_year>``: End of the archive period (ex: 2008)
 
@@ -121,6 +123,7 @@ The content of ``<time_array_target>`` defines the temporal properties of the ta
 * ``<time_array>``: Type of time selection.
 
 The type can be one of the following:
+
 * simple: standard full temporal selection
 * DJF: Winter (Dec-Feb)
 * MAM: Spring (Mar-May)
