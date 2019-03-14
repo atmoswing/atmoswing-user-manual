@@ -161,10 +161,10 @@ The element ``<predictor>`` provides information about the predictor, the spatia
 
 * ``<preload>``: Defines if the data must be loaded in memory or not (0/1; optional)
 * ``<dataset_id>``: Defines the dataset to be used (:ref:`see the reanalyses list<reanalyses>`)
-* ``<data_id>``: Defines the variable to be used (:ref:`see the reanalyses list<reanalyses>`)
+* ``<data_id>``: Defines the variable to be used (:ref:`see the variables list<variables>`)
 * ``<level>``: Selection of the predictor level (ex: 500 for 500 hPa or 0 for surface)
 * ``<time>``: Selection of the predictor time (ex: 12 for 12h UTC) 
-* ``<criteria>``: Criteria to use (ex: S1)
+* ``<criteria>``: Criteria to use (ex: S1; :ref:`see the list of criteria<analogy-criteria>`)
 * ``<weight>``: Weight to give to the predictor when averaging the different criteria values from the different predictors of a level of analogy. (ex: 0.6)
 
 
