@@ -169,7 +169,7 @@ Some variables are defined with different names (aliases) across the datasets:
 Variables from datasets
 -----------------------
 
-The following variables are defined in AtmoSwing for the different reanalyses:
+The following variables are defined in AtmoSwing for the different reanalyses. When no data id is provided, one can use one of the variants define above.
 
 NCEP/NCAR Reanalysis 1
 ~~~~~~~~~~~~~~~~~~~~~~
