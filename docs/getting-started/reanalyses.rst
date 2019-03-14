@@ -53,6 +53,7 @@ NOAA_OISST_v2
 GenericNetcdf
   A generic NetCDF dataset
 
+
 Generic dataset
 ---------------
 
@@ -61,6 +62,6 @@ Additionally to the multiple reanalyses supported, AtmoSwing allows to use a gen
 * A single file with the name of the desired predictor variable (ex: rh.nc)
 * Yearly files with the year in the file name
 * All the files in a directory. The files need to be named in order to be sorted chronologically.
-
-
+  
+  
 .. [Horton2018] Horton, P., & Brönnimann, S. (2018). Impact of global atmospheric reanalyses on statistical precipitation downscaling. Climate Dynamics. http://doi.org/10.1007/s00382-018-4442-6
