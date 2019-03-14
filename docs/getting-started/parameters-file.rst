@@ -12,11 +12,11 @@ The common basic structure is illustrated below and explained later.
     <?xml version="1.0" encoding="UTF-8"?>
     <atmoswing version="1.0" target="optimizer">
       <description>
-        <method_id>2Z</method_id>
-        <method_id_display>Classic circulation</method_id_display>
-        <specific_tag>my region</specific_tag>
-        <specific_tag_display>groupment of interest</specific_tag_display>
-        <description>Classic analogy on the atmospheric circulation (2 levels)</description>
+        <method_id>2Z-2MI</method_id>
+        <method_id_display>Classic humidity</method_id_display>
+        <specific_tag>CH</specific_tag>
+        <specific_tag_display>all stations</specific_tag_display>
+        <description>Classic analogy on the atmospheric circulation and the moisture</description>
       </description>
       <time_properties>
         <archive_period>
@@ -34,18 +34,18 @@ The common basic structure is illustrated below and explained later.
         </time_array_analogs>
       </time_properties>
       <analog_dates>
-        <analogs_number>40</analogs_number>
+        <analogs_number>75</analogs_number>
         <predictor>
           <preload>1</preload>
-          <dataset_id>GenericNetcdf</dataset_id>
-          <data_id>pl/z</data_id>
+          <dataset_id>ECMWF_ERA_interim</dataset_id>
+          <data_id>press/hgt</data_id>
           <level>1000</level>
           <time>12</time>
           <spatial_window>
-            <x_min>0.75</x_min>
-            <x_points_nb>27</x_points_nb>
+            <x_min>-2.25</x_min>
+            <x_points_nb>22</x_points_nb>
             <x_step>0.75</x_step>
-            <y_min>42.75</y_min>
+            <y_min>40.5</y_min>
             <y_points_nb>11</y_points_nb>
             <y_step>0.75</y_step>
           </spatial_window>
@@ -54,15 +54,15 @@ The common basic structure is illustrated below and explained later.
         </predictor>
         <predictor>
           <preload>1</preload>
-          <dataset_id>GenericNetcdf</dataset_id>
-          <data_id>pl/z</data_id>
+          <dataset_id>ECMWF_ERA_interim</dataset_id>
+          <data_id>press/hgt</data_id>
           <level>500</level>
           <time>24</time>
           <spatial_window>
-            <x_min>0.75</x_min>
-            <x_points_nb>27</x_points_nb>
+            <x_min>-2.25</x_min>
+            <x_points_nb>22</x_points_nb>
             <x_step>0.75</x_step>
-            <y_min>42.75</y_min>
+            <y_min>40.5</y_min>
             <y_points_nb>11</y_points_nb>
             <y_step>0.75</y_step>
           </spatial_window>
@@ -70,12 +70,76 @@ The common basic structure is illustrated below and explained later.
           <weight>0.5</weight>
         </predictor>
       </analog_dates>
+      <analog_dates>
+        <analogs_number>25</analogs_number>
+        <predictor>
+          <preload>1</preload>
+          <preprocessing>
+            <preprocessing_method>HumidityIndex</preprocessing_method>
+            <preprocessing_data>
+              <dataset_id>ECMWF_ERA_interim</dataset_id>
+              <data_id>press/rh</data_id>
+              <level>850</level>
+              <time>12</time>
+            </preprocessing_data>
+            <preprocessing_data>
+              <dataset_id>ECMWF_ERA_interim</dataset_id>
+              <data_id>surf/tcw</data_id>
+              <level>0</level>
+              <time>12</time>
+            </preprocessing_data>
+          </preprocessing>
+          <spatial_window>
+            <x_min>6</x_min>
+            <x_points_nb>1</x_points_nb>
+            <x_step>0.75</x_step>
+            <y_min>45.75</y_min>
+            <y_points_nb>1</y_points_nb>
+            <y_step>0.75</y_step>
+          </spatial_window>
+          <criteria>RMSE</criteria>
+          <weight>0.5</weight>
+        </predictor>
+        <predictor>
+          <preload>1</preload>
+          <preprocessing>
+            <preprocessing_method>HumidityIndex</preprocessing_method>
+            <preprocessing_data>
+              <dataset_id>ECMWF_ERA_interim</dataset_id>
+              <data_id>press/rh</data_id>
+              <level>850</level>
+              <time>24</time>
+            </preprocessing_data>
+            <preprocessing_data>
+              <dataset_id>ECMWF_ERA_interim</dataset_id>
+              <data_id>surf/tcw</data_id>
+              <level>0</level>
+              <time>24</time>
+            </preprocessing_data>
+          </preprocessing>
+          <spatial_window>
+            <x_min>6</x_min>
+            <x_points_nb>1</x_points_nb>
+            <x_step>0.75</x_step>
+            <y_min>45.75</y_min>
+            <y_points_nb>1</y_points_nb>
+            <y_step>0.75</y_step>
+          </spatial_window>
+          <criteria>RMSE</criteria>
+          <weight>0.5</weight>
+        </predictor>
+      </analog_dates>
       <analog_values>
         <predictand>
-          <station_id>9</station_id>
+          <station_id>1,2,3,4,5</station_id>
         </predictand>
       </analog_values>
+      <evaluation>
+        <score>CRPSS</score>
+        <time_array>simple</time_array>
+      </evaluation>
     </atmoswing>
+
 
 Content 'description'
 ---------------------
