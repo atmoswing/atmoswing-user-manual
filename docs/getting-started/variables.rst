@@ -35,34 +35,34 @@ The level can usually be defined using different terms. The provided terms are i
 
 **Surface**:
 
-* surface
-* surf
-* ground
-* sfc
-* sf
+* ``surface``
+* ``surf``
+* ``ground``
+* ``sfc``
+* ``sf``
 
 **'Flux' level**:
 
-* surface_fluxes
-* fluxes
-* flux
-* flxf06
-* flx
+* ````surface_fluxes``
+* ``fluxes``
+* ``flux``
+* ``flxf06``
+* ``flx``
 
 **Column level**:
 
-* total_column
-* column
-* tc
-* entire_atmosphere
-* ea
+* ``total_column``
+* ``column``
+* ``tc``
+* ``entire_atmosphere``
+* ``ea``
 
 **Potential vorticity**:
 
-* potential_vorticity
-* pv
-* pv_surface
-* epv
+* ``potential_vorticity``
+* ``pv``
+* ``pv_surface``
+* ``epv``
 
 
 Common variables
@@ -72,95 +72,95 @@ Some variables are defined with different names (aliases) across the datasets:
 
 **Geopotential**:
 
-* z
-* h
-* zg
+* ``z``
+* ``h``
+* ``zg``
 
 **Geopotential height**:
 
-* z
-* h
-* zg
-* hgt
+* ``z``
+* ``h``
+* ``zg``
+* ``hgt``
 
 **Air temperature**:
 
-* t
-* temp
-* tmp
-* ta
-* air
+* ``t``
+* ``temp``
+* ``tmp``
+* ``ta``
+* ``air``
 
 **Relative humidity**:
 
-* rh
-* rhum
-* hur
-* r
+* ``rh``
+* ``rhum``
+* ``hur``
+* ``r``
 
 **Specific humidity**:
 
-* sh
-* shum
-* hus
-* q
-* qv
+* ``sh``
+* ``shum``
+* ``hus``
+* ``q``
+* ``qv``
 
 **Vertical velocity**:
 
-* w
-* vvel
-* wap
-* omega
+* ``w``
+* ``vvel``
+* ``wap``
+* ``omega``
 
 **Precipitable water**:
 
-* pwat
-* p_wat
-* tcw
-* pr_wtr
-* prwtr
+* ``pwat``
+* ``p_wat``
+* ``tcw``
+* ``pr_wtr``
+* ``prwtr``
 
 **Pressure**:
 
-* pressure
-* press
-* pres
+* ``pressure``
+* ``press``
+* ``pres``
 
 **Sea level pressure**:
 
-* slp
-* mslp
-* psl
-* prmsl
-* msl
+* ``slp``
+* ``mslp``
+* ``psl``
+* ``prmsl``
+* ``msl``
 
 **U wind component**:
 
-* u
-* ua
-* ugrd
-* u_grd
-* uwnd
+* ``u``
+* ``ua``
+* ``ugrd``
+* ``u_grd``
+* ``uwnd``
 
 **V wind component**:
 
-* v
-* va
-* vgrd
-* v_grd
-* vwnd
+* ``v``
+* ``va``
+* ``vgrd``
+* ``v_grd``
+* ``vwnd``
 
 **PV**:
 
-* pv
-* pvort
-* epv
+* ``pv``
+* ``pvort``
+* ``epv``
 
 **Total precipitation**:
 
-* tp
-* prectot
+* ``tp``
+* ``prectot``
 
 
 Available variables from datasets
@@ -184,10 +184,10 @@ On pressure levels:
 On the surface:
 
 * Air Temperature
-* Surface lifted index (lftx)
-* Best (4-layer) lifted index (lftx4)
+* Surface lifted index (``lftx``)
+* Best (4-layer) lifted index (``lftx4``)
 * Vertical velocity
-* Potential temperature (pottmp)
+* Potential temperature (``pottmp``)
 * Precipitable water
 * Pressure
 * Relative humidity
