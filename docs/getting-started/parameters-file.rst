@@ -42,7 +42,6 @@ The common basic structure is illustrated below and explained later.
           <level>1000</level>
           <time>12</time>
           <spatial_window>
-            <grid_type>regular</grid_type>
             <x_min>0.75</x_min>
             <x_points_nb>27</x_points_nb>
             <x_step>0.75</x_step>
@@ -60,7 +59,6 @@ The common basic structure is illustrated below and explained later.
           <level>500</level>
           <time>24</time>
           <spatial_window>
-            <grid_type>regular</grid_type>
             <x_min>0.75</x_min>
             <x_points_nb>27</x_points_nb>
             <x_step>0.75</x_step>
@@ -174,3 +172,15 @@ The element ``<predictor>`` provides information about the predictor, the spatia
 * ``<criteria>``: Criteria to use (ex: S1; :ref:`see the list of criteria<analogy-criteria>`)
 * ``<weight>``: Weight to give to the predictor when averaging the different criteria values from the different predictors of a level of analogy (ex: 0.6). Optional: if not provided, an equal weight is given to all predictors.
 * ``<spatial_window>``: The spatial window on which the predictor variable is compared by means on the criterion. The window is defined by its minimum X (``<x_min>``) and Y (``<y_min>``) coordinates, the number of points in the direction of higher values (``<x_points_nb>`` and ``<y_points_nb>``) and the desired resolution (``<x_step>`` and ``<y_step>``).
+
+
+Content 'analog_values'
+-----------------------
+
+Element 'predictand'
+~~~~~~~~~~~~~~~~~~~
+
+Specification of the target predictand timeseries:
+
+* ``<station_id>``: :ref:`Station id<predictand-db>` or list of station ids (separated by commas)
+
