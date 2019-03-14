@@ -6,6 +6,7 @@ Parameters file
 The parameters files are important elements in AtmoSwing as they define the structure of the analog method to use. It is where one defines the datasets, the predictor variables, the number of analogy levels, the spatial windows, etc...  Some elements vary between the Forecaster, the Optimizer and the Downscaler. The common basic structure is given below:
 
 .. code-block:: xml
+
     <?xml version="1.0" encoding="UTF-8"?>
     <atmoswing version="1.0" target="optimizer">
       <description>
