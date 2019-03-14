@@ -95,25 +95,44 @@ Content 'time_properties'
 
 The content of ``<time_properties>`` defines the archive period and other temporal properties.
 
-**``<archive_period>``** : Defines the archive period where the analog situations will be extracted. 
+Element 'archive_period'
+~~~~~~~~~~~~~~~~~~~~~~~~
 
-* ``<archive_period>``: Defines the archive period where the analog situations will be extracted. 
+The content of ``<archive_period>`` defines the archive period where the analog situations will be extracted. Two options are possible:
 
-Two options are possible:
+Providing the exact dates:
+* ``<start>``: Start of the archive period (ex: 01.01.1981)
+* ``<end>``: End of the archive period (ex: 31.12.2010)
 
-* providing the exact dates:
-    * ``<start>``: Start of the archive period (ex: 01.01.1981)
-    * ``<end>``: End of the archive period (ex: 31.12.2010)
-* or only providing the years:
-    * ``<start_year>``: Start of the archive period (ex: 1962)
-    * ``<end_year>``: End of the archive period (ex: 2008)
+Or only providing the years:
+* ``<start_year>``: Start of the archive period (ex: 1962)
+* ``<end_year>``: End of the archive period (ex: 2008)
 
-* ``<time_step>``: The time step of the predictand (ex: 24), and thus of the method
+Element 'time_step'
+~~~~~~~~~~~~~~~~~~~
 
-* ``<time_array_target>``: Time properties of the target
-    * ``<time_array>``: Type of time selection:
-        * simple: standard full temporal selection
-        * 
+The ``<time_step>`` is time step of the predictand (ex: 24), and thus of the method
+
+Element 'time_array_target'
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The content of ``<time_array_target>`` defines the temporal properties of the target
+
+* ``<time_array>``: Type of time selection.
+
+The type can be one of the following:
+* simple: standard full temporal selection
+* DJF: Winter (Dec-Feb)
+* MAM: Spring (Mar-May)
+* JJA: Summer (Jun-Aug)
+* SON: Fall (Sep-Nov)
+* predictand_thresholds: Selection of days based on a predictand threshold (ex: days with more than x mm of precipitation)
+* Month_to_Month: Flexible selection of a period from one month to another month (ex: April_to_July, January_to_September, September_to_March)
+
+
+Element 'time_array_analogs'
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 * ``<time_array_analogs>``:
     * ``<time_array>``:days_interval</time_array>
     * ``<interval_days>``:60</interval_days>
