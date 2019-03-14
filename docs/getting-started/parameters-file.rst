@@ -91,20 +91,27 @@ The content of ``<description>`` is mainly relevant for the Forecaster, where re
 * ``<description>``: A possible additionnal description.
 
 Content 'time_properties'
----------------------
+-------------------------
 
 The content of ``<time_properties>`` defines the archive period and other temporal properties.
 
-* ``<archive_period>``: Defines the archive period where the analog situations will be extracted. Two options are possible: 
-    * providing the exact dates:
-        * ``<start>``: Start of the archive period (ex: 01.01.1981)
-        * ``<end>``: End of the archive period (ex: 31.12.2010)
-    * or only providing the years:
-        * ``<start_year>``: Start of the archive period (ex: 1962)
-        * ``<end_year>``: End of the archive period (ex: 2008)
-* ``<time_step>``:24</time_step>
-* ``<time_array_target>``:
-    * ``<time_array>``:simple</time_array>
+* ``<archive_period>``: Defines the archive period where the analog situations will be extracted. 
+
+Two options are possible:
+
+* providing the exact dates:
+    * ``<start>``: Start of the archive period (ex: 01.01.1981)
+    * ``<end>``: End of the archive period (ex: 31.12.2010)
+* or only providing the years:
+    * ``<start_year>``: Start of the archive period (ex: 1962)
+    * ``<end_year>``: End of the archive period (ex: 2008)
+
+* ``<time_step>``: The time step of the predictand (ex: 24), and thus of the method
+
+* ``<time_array_target>``: Time properties of the target
+    * ``<time_array>``: Type of time selection:
+        * simple: standard full temporal selection
+        * 
 * ``<time_array_analogs>``:
     * ``<time_array>``:days_interval</time_array>
     * ``<interval_days>``:60</interval_days>
