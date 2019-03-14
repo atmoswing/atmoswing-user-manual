@@ -3,7 +3,7 @@
 Getting started
 ===============
 
-You will find here some documentation about the required data for AtmoSwing. This document can also be downloaded as a pdf or epub using the bottom left menu.
+You will find here some documentation on how to get started with AtmoSwing. This document can also be downloaded as a pdf or epub using the bottom left menu.
 
 This section is divided into the following topics:
 
