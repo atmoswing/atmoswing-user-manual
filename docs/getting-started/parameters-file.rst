@@ -95,6 +95,8 @@ Content 'time_properties'
 
 The content of ``<time_properties>`` defines the archive period and other temporal properties.
 
+**``<archive_period>``** : Defines the archive period where the analog situations will be extracted. 
+
 * ``<archive_period>``: Defines the archive period where the analog situations will be extracted. 
 
 Two options are possible:
