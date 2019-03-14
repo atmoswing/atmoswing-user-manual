@@ -237,6 +237,45 @@ The element ``<predictor>`` provides information about the predictor, the spatia
 * ``<weight>``: Weight to give to the predictor when averaging the different criteria values from the different predictors of a level of analogy (ex: 0.6). Optional: if not provided, an equal weight is given to all predictors.
 * ``<spatial_window>``: The spatial window on which the predictor variable is compared by means on the criterion. The window is defined by its minimum X (``<x_min>``) and Y (``<y_min>``) coordinates, the number of points in the direction of higher values (``<x_points_nb>`` and ``<y_points_nb>``) and the desired resolution (``<x_step>`` and ``<y_step>``).
 
+When using an elaborated predictor, the data must go through a preprocessing routine. In this case, the structure is a bit different and can look like this:
+
+.. code-block:: xml
+
+    <predictor>
+      <preload>1</preload>
+      <preprocessing>
+        <preprocessing_method>HumidityIndex</preprocessing_method>
+        <preprocessing_data>
+          <dataset_id>ECMWF_ERA_interim</dataset_id>
+          <data_id>press/rh</data_id>
+          <level>850</level>
+          <time>24</time>
+        </preprocessing_data>
+        <preprocessing_data>
+          <dataset_id>ECMWF_ERA_interim</dataset_id>
+          <data_id>surf/tcw</data_id>
+          <level>0</level>
+          <time>24</time>
+        </preprocessing_data>
+      </preprocessing>
+      <spatial_window>
+        <x_min>6</x_min>
+        <x_points_nb>1</x_points_nb>
+        <x_step>0.75</x_step>
+        <y_min>45.75</y_min>
+        <y_points_nb>1</y_points_nb>
+        <y_step>0.75</y_step>
+      </spatial_window>
+      <criteria>RMSE</criteria>
+      <weight>0.5</weight>
+    </predictor>
+    
+In this case, there is a new ``<preprocessing>`` block containing:
+
+* ``<preprocessing_method>``: The preprocessing method to use.
+* ``<preprocessing_data>``: The predictor data to preprocess defined by ``<dataset_id>``, ``<data_id>``, ``<level>``, and ``<time>``.
+* The rest of the parameters ``<spatial_window>``, ``<criteria>``, and ``<weight>`` are common for the preprocessed predictors.
+
 
 Content 'analog_values'
 -----------------------
