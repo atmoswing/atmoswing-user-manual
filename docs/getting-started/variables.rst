@@ -70,20 +70,20 @@ Common variables
 
 Some variables are defined with different names (aliases) across the datasets:
 
-Geopotential
+**Geopotential**:
 
 * z
 * h
 * zg
 
-Geopotential height
+**Geopotential height**:
 
 * z
 * h
 * zg
 * hgt
 
-Air temperature
+**Air temperature**:
 
 * t
 * temp
@@ -91,14 +91,14 @@ Air temperature
 * ta
 * air
 
-Relative humidity
+**Relative humidity**:
 
 * rh
 * rhum
 * hur
 * r
 
-Specific humidity
+**Specific humidity**:
 
 * sh
 * shum
@@ -106,14 +106,14 @@ Specific humidity
 * q
 * qv
 
-Vertical velocity
+**Vertical velocity**:
 
 * w
 * vvel
 * wap
 * omega
 
-Precipitable water
+**Precipitable water**:
 
 * pwat
 * p_wat
@@ -121,13 +121,13 @@ Precipitable water
 * pr_wtr
 * prwtr
 
-Pressure
+**Pressure**:
 
 * pressure
 * press
 * pres
 
-Sea level pressure
+**Sea level pressure**:
 
 * slp
 * mslp
@@ -135,7 +135,7 @@ Sea level pressure
 * prmsl
 * msl
 
-U wind component
+**U wind component**:
 
 * u
 * ua
@@ -143,7 +143,7 @@ U wind component
 * u_grd
 * uwnd
 
-V wind component
+**V wind component**:
 
 * v
 * va
@@ -151,13 +151,13 @@ V wind component
 * v_grd
 * vwnd
 
-PV
+**PV**:
 
 * pv
 * pvort
 * epv
 
-Total precipitation
+**Total precipitation**:
 
 * tp
 * prectot
