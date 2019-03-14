@@ -171,7 +171,7 @@ The following variables are defined in AtmoSwing for the different reanalyses:
 NCEP/NCAR Reanalysis 1
 ~~~~~~~~~~~~~~~~~~~~~~
 
-On pressure levels:
+**For pressure levels**:
 
 * Air Temperature
 * Geopotential height
@@ -181,7 +181,7 @@ On pressure levels:
 * U-Wind
 * V-Wind
 
-On the surface:
+**For the surface**:
 
 * Air Temperature
 * Surface lifted index (``lftx``)
@@ -195,7 +195,7 @@ On the surface:
 * U-wind
 * V-wind
 
-For the 'surface fluxes':
+**For the 'surface fluxes'**:
 
 * Air Temperature 2m
 * Potential evaporation rate (``pevpr``)
@@ -240,7 +240,7 @@ For the 'surface fluxes':
 NCEP/DOE Reanalysis 2
 ~~~~~~~~~~~~~~~~~~~~~
 
-On pressure levels:
+**For pressure levels**:
 
 * Air Temperature
 * Geopotential height
@@ -249,13 +249,13 @@ On pressure levels:
 * U-Wind
 * V-Wind
 
-On the surface:
+**For the surface**:
 
 * Precipitable water
 * Pressure
 * Sea level pressure
 
-For the 'surface fluxes':
+**For the 'surface fluxes'**:
 
 * Air Temperature 2m
 * Specific humidity at 2m (``shum``)
@@ -289,12 +289,97 @@ For the 'surface fluxes':
 NCEP CFSR
 ~~~~~~~~~
 
+**For pressure levels** (``pgbh``):
+
+* Geopotential height
+* Precipitable water
+* Mean sea level pressure
+* Relative humidity
+* Temperature
+
+
 NCEP CFSR subset
 ~~~~~~~~~~~~~~~~
 
+**For pressure levels**:
+
+* Geopotential height
+* Geopotential height anomaly (``gpa``)
+* Relative humidity
+* Specific humidity
+* Temperature
+* Vertical Velocity
+* Eastward wind
+* Northward wind
+* Atmosphere horizontal velocity potential (``vpot``)
+* 5-wave geopotential height (``5wavh``)
+* 5-wave geopotential height anomaly (``5wava``)
+* Atmosphere absolute vorticity (``absv``)
+* Cloud water mixing ratio (``clwmr``)
+* Atmosphere horizontal streamfunction (``strm``)
+
+**For the total column**:
+
+* Relative humidity
+* Cloud water (``cwat``)
+* Atmosphere water vapor content (``pwat``)
+
+
 ECMWF ERA-interim
 ~~~~~~~~~~~~~~~~~
-  
+
+**For pressure levels**:
+
+* Divergence (``d``)
+* Potential vorticity
+* Specific humidity
+* Relative humidity
+* Temperature
+* U component of wind
+* V component of wind
+* Vorticity (relative) (``vo``)
+* Vertical velocity
+* Geopotential
+
+**For isentropic levels**:
+
+* Divergence (``d``)
+* Montgomery potential (``mont``)
+* Pressure
+* Potential vorticity
+* Specific humidity
+* U component of wind
+* V component of wind
+* Vorticity (relative) (``vo``)
+
+**For surface**:
+
+* 2 metre dewpoint temperature (``d2m``)
+* Sea level pressure (``msl``)
+* Snow depth (``sd``)
+* Sea surface temperature (``sst``)
+* 2 metre temperature (``t2m``)
+* Total column water
+* Total column water vapour (``tcwv``)
+* 10 metre U wind component (``u10``)
+* 10 metre V wind component (``v10``)
+* Total precipitation
+* Convective available potential energy (``cape``)
+* Instantaneous moisture flux (``ie``)
+* Surface net solar radiation (``ssr``)
+* Surface solar radiation downwards (``ssrd``)
+* Surface net thermal radiation (``str``)
+* Surface thermal radiation downwards (``strd``)
+
+**For PV levels**:
+
+* Pressure
+* Potential temperature (``pt``)
+* U component of wind
+* V component of wind
+* Geopotential
+
+
 ECMWF ERA 20th Century
 ~~~~~~~~~~~~~~~~~~~~~~
 
