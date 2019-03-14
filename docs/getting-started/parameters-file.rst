@@ -118,27 +118,28 @@ The ``<time_step>`` is time step of the predictand (ex: 24), and thus of the met
 Element 'time_array_target'
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The content of ``<time_array_target>`` defines the temporal properties of the target
+The content of ``<time_array_target>`` defines the temporal properties of the target.
 
 * ``<time_array>``: Type of time selection.
 
 The type can be one of the following:
 
-* simple: standard full temporal selection
-* DJF: Winter (Dec-Feb)
-* MAM: Spring (Mar-May)
-* JJA: Summer (Jun-Aug)
-* SON: Fall (Sep-Nov)
-* predictand_thresholds: Selection of days based on a predictand threshold (ex: days with more than x mm of precipitation)
-* Month_to_Month: Flexible selection of a period from one month to another month (ex: April_to_July, January_to_September, September_to_March)
+* ``simple``: standard full temporal selection
+* ``DJF``: Winter (Dec-Feb)
+* ``MAM``: Spring (Mar-May)
+* ``JJA``: Summer (Jun-Aug)
+* ``SON``: Fall (Sep-Nov)
+* ``predictand_thresholds``: Selection of days based on a predictand threshold (ex: days with more than x mm of precipitation)
+* ``Month_to_Month``: Flexible selection of a period from one month to another month (ex: April_to_July, January_to_September, September_to_March)
 
 
 Element 'time_array_analogs'
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* ``<time_array_analogs>``:
-    * ``<time_array>``:days_interval</time_array>
-    * ``<interval_days>``:60</interval_days>
-    * ``<exclude_days>``:30</exclude_days>
+The content of ``<time_array_analogs>`` defines the temporal properties of the analog selection. It is usually defined as a days interval (period of four months centered around the target date) using +-60 days around the target date. When working in a perfect prognosis framework, 30 days around the target date are excluded for the same year as the target date.
+
+* ``<time_array>``: Type of time array. ``days_interval`` should be used.
+* ``<interval_days>``: Number of days to select around the target date for every year. Usually: 60
+* ``<exclude_days>``: Number of days to exclude around the target date for the same year. Usually: 30
 
 
