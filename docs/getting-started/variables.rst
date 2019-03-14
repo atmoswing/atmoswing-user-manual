@@ -1,7 +1,7 @@
 .. _variables:
 
-Variables
-=========
+Predictor variables
+===================
 
 The different existing datasets do not name the meteorological variables the same way. AtmoSwing can interact with many datasets and has several of their variables defined. These datasets often provides different products, for example for different types of level (isobaric, isentropic, surface, etc). As some variable can be defined for different levels (e.g. temperature), the product/level must be specified. Thus, the selection of a variable in the parameters file is defined as ``level/variable``, such as ``pressure/z`` for the geopotential on pressure levels, or ``isentropic/t`` for the temperature on isentropic levels. As different levels types and variables are present for different datasets, they can be named differently in AtmoSwing. For example ``pressure/z``, ``pl/h``, and ``isobaric/hgt`` are identical. The name of the level (or product) has to be the same as the name of the corresponding subfolder. For example, someone using NCEP/NCAR Reanalysis 1 and having a subfolder 'pressure' should then use ``pressure/z`` for the geopotential height.
 
