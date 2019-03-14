@@ -49,7 +49,7 @@ Predictand catalog
 
 The predictand catalog provides some metadata on the predictand timeseries. It consists in a xml file such as:
 
-.. code:: xml
+.. code-block:: xml
 
     <?xml version="1.0" encoding="UTF-8" ?>
 
@@ -155,7 +155,7 @@ An option (parsetime) allows you to read the time information, or ignore it. Rea
 
 This type defines structured files in a very simple way, either with date elements (year, month, day) and data separated by tabs (see example below). The files contain exactly 2 header lines.
 
-.. code:: text
+.. code-block:: text
 
 	Timeseries processed by XY for the YZ project.
 	average from station(s) : 8080 8010 
@@ -172,7 +172,7 @@ This type defines structured files in a very simple way, either with date elemen
 
 The structure describing such data files is as follows:
 
-.. code:: xml
+.. code-block:: xml
 
   <?xml version="1.0" encoding="UTF-8" ?>
   <atmoswing version="1.0">
