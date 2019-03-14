@@ -3,6 +3,8 @@
 Preprocessing routines
 ======================
 
+Some elaborated variables need to be preprocessed, such as the moisture index. Thus, different preprocessing routines are available in AtmoSwing.
+
 The main preprocessing routines implemented are:
 
 * Addition (``Addition``): add (point-wise) all the provided predictors.
