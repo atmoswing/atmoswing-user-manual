@@ -132,6 +132,12 @@ The type can be one of the following:
 * ``predictand_thresholds``: Selection of days based on a predictand threshold (ex: days with more than x mm of precipitation)
 * ``Month_to_Month``: Flexible selection of a period from one month to another month (ex: April_to_July, January_to_September, September_to_March)
 
+In case of a selection based on a predictand threshold (``predictand_thresholds``), the following element must be specified:
+
+* ``<predictand_serie_name>``: selection of the raw (´´data_raw´´) or normalized data (´´data_normalized´´)
+* ``<predictand_min_threshold>``: Minimum threshold value
+* ``<predictand_max_threshold>``: Maximum threshold value
+
 
 Element 'time_array_analogs'
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -164,14 +170,7 @@ The element ``<predictor>`` provides information about the predictor, the spatia
 * ``<data_id>``: Defines the variable to be used (:ref:`see the variables list<variables>`)
 * ``<level>``: Selection of the predictor level (ex: 500 for 500 hPa or 0 for surface)
 * ``<time>``: Selection of the predictor time (ex: 12 for 12h UTC) 
+* ``<members>``: Number of members to select (optional; only for ensemble datasets) 
 * ``<criteria>``: Criteria to use (ex: S1; :ref:`see the list of criteria<analogy-criteria>`)
-* ``<weight>``: Weight to give to the predictor when averaging the different criteria values from the different predictors of a level of analogy. (ex: 0.6)
-
-
-* ``<spatial_window>``: 
-* ``<x_min>``: -10</x_min>
-* ``<x_points_nb>``: 9</x_points_nb>
-* ``<x_step>``: 2.5</x_step>
-* ``* ``<y_min>``: 30</y_min>
-* ``<y_points_nb>``: 5</y_points_nb>
-* ``<y_step>``: 2.5</y_step>
+* ``<weight>``: Weight to give to the predictor when averaging the different criteria values from the different predictors of a level of analogy (ex: 0.6). Optional: if not provided, an equal weight is given to all predictors.
+* ``<spatial_window>``: The spatial window on which the predictor variable is compared by means on the criterion. The window is defined by its minimum X (``<x_min>``) and Y (``<y_min>``) coordinates, the number of points in the direction of higher values (``<x_points_nb>`` and ``<y_points_nb>``) and the desired resolution (``<x_step>`` and ``<y_step>``).
