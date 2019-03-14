@@ -14,24 +14,24 @@ The level can usually be defined using different terms. The provided terms are i
 
 **Pressure level**:
 
-* pressure_level
-* pressure_levels
-* pressure
-* press
-* isobaric
-* pl
-* pgbh
-* pgbhnl
-* pgb
+* ``pressure_level``
+* ``pressure_levels``
+* ``pressure``
+* ``press``
+* ``isobaric``
+* ``pl``
+* ``pgbh``
+* ``pgbhnl``
+* ``pgb``
 
 **Isentropic level**:
 
-* isentropic_level
-* isentropic
-* potential_temperature
-* pt
-* ipvh
-* ipv
+* ``isentropic_level``
+* ``isentropic``
+* ``potential_temperature``
+* ``pt``
+* ``ipvh``
+* ``ipv``
 
 **Surface**:
 
