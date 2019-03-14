@@ -1,0 +1,72 @@
+.. _variables:
+
+Variables
+=========
+
+
+Differentiating subsets/levels
+------------------------------
+
+
+Common variables
+----------------
+
+
+
+Available variables from the reanalyses
+---------------------------------------
+
+The following variables are defined in AtmoSwing for the different reanalyses:
+
+NCEP_Reanalysis_v1
+~~~~~~~~~~~~~~~~~~
+
+On pressure levels:
+
+
+
+
+
+NCEP_Reanalysis_v2
+~~~~~~~~~~~~~~~~~~
+
+NCEP_CFSR
+~~~~~~~~~
+
+NCEP_CFSR_subset
+~~~~~~~~~~~~~~~~
+
+ECMWF_ERA_interim
+~~~~~~~~~~~~~~~~~
+  
+ECMWF_ERA_20C
+~~~~~~~~~~~~~
+
+ECMWF_CERA_20C
+~~~~~~~~~~~~~~
+
+NASA_MERRA_2
+~~~~~~~~~~~~
+
+NASA_MERRA_2_subset
+~~~~~~~~~~~~~~~~~~
+ 
+JMA_JRA_55_subset
+~~~~~~~~~~~~~~~~~
+
+JMA_JRA_55C_subset
+~~~~~~~~~~~~~~~~~~
+  
+NOAA_20CR_v2c
+~~~~~~~~~~~~~
+
+NOAA_20CR_v2c_ens
+~~~~~~~~~~~~~~~~~
+  
+NOAA_OISST_v2
+~~~~~~~~~~~~~
+
+GenericNetcdf
+~~~~~~~~~~~~~
+
+  
