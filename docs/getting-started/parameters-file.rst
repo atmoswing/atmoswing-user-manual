@@ -5,7 +5,7 @@ Parameters file
 
 The parameters files are important elements in AtmoSwing as they define the structure of the analog method to use. It is where one defines the datasets, the predictor variables, the number of analogy levels, the spatial windows, etc...  Some elements vary between the Forecaster, the Optimizer and the Downscaler, and thus the target must be specified in the root tag (ex: ``<atmoswing version="1.0" target="optimizer">``).
 
-The common basic structure is illustrated below and explained later.
+The common basic structure is illustrated below for the 2Z-2MI method (first level of analogy on the geopotential height and second on the moisture index) and explained later.
 
 .. code-block:: xml
 
