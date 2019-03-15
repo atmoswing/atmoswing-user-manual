@@ -12,6 +12,7 @@ This tool allows to do the following actions:
 * Define the list of methods to be performed automatically (also in command line mode)
 
 .. image:: img/frame-forecaster.png
+   :align: center
 
 The toolbar allows the following actions:
 
