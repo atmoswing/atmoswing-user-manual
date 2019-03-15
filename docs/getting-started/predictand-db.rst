@@ -5,8 +5,6 @@ Predictand DB
 
 The preditand data (e.g. precipitation) must be prepared for use in AtmoSwing. A tool provided along AtmoSwing allows for the 'database' generation. Database generation consists of extracting data from text files and combining them into a NetCDF file.
 
-During this data processing, Gumbel adjustments are automatically made to calculate the precipitation values corresponding to different return periods.
-
 The interface for generating the precipitation database is accessible through the 'Tools / Build predictand DB' menu from any AtmoSwing software.
 
 .. image:: img/frame-predictand-db-generator.png
@@ -31,7 +29,7 @@ The first step consists in choosing the type of database to generate. The option
    * Groupment
    * Catchment
 
-The resulting file will contain the raw predictand data, but can also contain transformed data when working with precipitation. The possible transformations are:
+The resulting file will contain the raw predictand data, but can also contain transformed data when working with precipitation. During the data processing, Gumbel adjustments are automatically made to calculate the precipitation values corresponding to different return periods. It is important to note that this normalized data will be used for the calibration of the method, but the raw data is used in the Forecaster and the Downscaler. The possible transformations are then:
 
 * A normalization of the precipitation amount by a chosen return period value (often 10 years)
 * A transformation by the square root of the later values (see [Bontron2004]_)
