@@ -9,6 +9,7 @@ Main interface
 The visualization software has the interface shown below. This tool allows you to view the files produced by the calculation software.
 
 .. image:: img/frame-viewer.png
+   :align: center
 
 The toolbar allows the following actions:
 
@@ -66,6 +67,7 @@ It is possible to open |icon_open_s| several model results, but they must have t
 The first visualization offered to the user when he opens a file is a summary of the next deadlines (Figure below). At the location of each station a circular band is displayed with one box per deadline. The colours assigned to each trap are proportional to the expected value for the deadline in question. This representation provides a quick overview of the coming days and makes it easy to identify a possible event. An alternative view of this map allows you to display the forecasts by maturity (Figure above). This representation helps to better distinguish spatialization from precipitation, as well as to quickly access the values of certain quantiles. The choice of the deadline is made using the cursor above the map.
 
 .. image:: img/frame-viewer-rings.png
+   :align: center
 
 
 Sidebar
@@ -121,6 +123,7 @@ When a station is selected (on the map or in the drop-down list on the sidebar),
 The lower left panel is the list of old forecasts. These are automatically imported before the graph is displayed. 
 
 .. image:: img/frame-plot-timeseries.png
+   :align: center
 
 
 Display of the distributions
@@ -129,10 +132,12 @@ Display of the distributions
 Rainfall distributions are accessible via the |icon_frame_distributions_s| button on the toolbar. These allow the distribution of all analogues to be compared with the best 5 or 10 (Figure below). The display options are similar to those of the time series at the stations (previous section). The model, station and deadline must be selected in the upper part of the window.
 
 .. image:: img/frame-plot-precip-distrib.png
+   :align: center
 
 The distribution of the analogy criterion is also available in the same window through the tab located above the graph (Figure below). This distribution makes it possible to identify possible discontinuities in the values of the criteria and thus to increase the number of credits to the best analogues.
 
 .. image:: img/frame-plot-criteria-distrib.png
+   :align: center
 
 .. |icon_frame_distributions_s| image:: img/icon_frame_distributions.png
    :width: 32
@@ -147,6 +152,7 @@ Display of the analog dates
 Details of similar dates and their associated criteria and precipitation are available through the |icon_frame_analogs_s| button on the toolbar. This tool (Figure below) allows you to analyze similar dates and measured precipitation. The model, station and deadline must be selected in the upper part of the window. It is possible to sort the list by each of the columns by clicking on it. The first click ranks the values in ascending order and the second in descending order.
 
 .. image:: img/frame-list-analogs.png
+   :align: center
 
 .. |icon_frame_analogs_s| image:: img/icon_frame_analogs.png
    :width: 32
