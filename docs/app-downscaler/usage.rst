@@ -4,6 +4,8 @@ Usage
 .. todo:: write
 
 .. image:: img/frame-downscaler.png
+   :align: center
+
 
 .. image:: img/icon_run.png
 
