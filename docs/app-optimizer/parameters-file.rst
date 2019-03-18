@@ -1,7 +1,7 @@
 .. _parameters-file-optimizer:
 
-Parameters file for the Optimizer
-=================================
+Optimizer's parameters file
+===========================
 
 .. todo:: write
 
