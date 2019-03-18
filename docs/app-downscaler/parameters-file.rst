@@ -1,7 +1,7 @@
 .. _parameters-file-downscaler:
 
-Parameters file for the Downscaler
-==================================
+Downscaler's parameters file
+============================
 
 .. todo:: write
 
