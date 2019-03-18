@@ -29,10 +29,7 @@ The first step consists in choosing the type of database to generate. The option
    * Groupment
    * Catchment
 
-The resulting file will contain the raw predictand data, but can also contain transformed data when working with precipitation. During the data processing, Gumbel adjustments are automatically made to calculate the precipitation values corresponding to different return periods. It is important to note that this normalized data will be used for the calibration of the method, but the raw data is used in the Forecaster and the Downscaler. The possible transformations are then:
-
-* A normalization of the precipitation amount by a chosen return period value (often 10 years)
-* A transformation by the square root of the later values (see [Bontron2004]_)
+The resulting file will contain the raw predictand data, but can also contain transformed data depending on the predictand variable (see section `Transformed data`_).
 
 Next, a couple of paths must be provided:
 
@@ -42,6 +39,25 @@ Next, a couple of paths must be provided:
 * The destination directory: where the resulting file will be saved.
 
 After execution, a NetCDF file containing all the data necessary for the software is created in the chosen directory. This file also includes the station properties and timeseries.
+
+
+Transformed data
+----------------
+
+In addition to the raw predictand data, the resluting NetCDF file can also contain transformed data. The available options depend on the predictand variable. It is important to note that this normalized data will be used for the calibration of the method, but the raw data is used in the Forecaster and the Downscaler.
+
+Precipitation
+~~~~~~~~~~~~~
+
+During the data processing, Gumbel adjustments are automatically made to calculate the precipitation values corresponding to different return periods. The possible transformations are then:
+
+* A normalization of the precipitation amount by a chosen return period value (often 10 years)
+* A transformation by the square root of the later values (see [Bontron2004]_)
+
+Lightnings
+~~~~~~~~~~
+
+The lightning data can be transformed using : log10( N + 1 )
 
 
 Predictand catalog
