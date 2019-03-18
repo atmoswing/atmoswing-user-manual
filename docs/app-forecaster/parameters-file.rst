@@ -1,7 +1,7 @@
 .. _parameters-file-forecaster:
 
-Parameters file for the Forecaster
-==================================
+Forecaster's parameters file
+============================
 
 .. todo:: write
 
