@@ -79,6 +79,8 @@ Some variables are defined with different names (aliases) across the datasets:
 * ``h``
 * ``zg``
 
+When loading geopotential data, AtmoSwing automatically converts it to geopotential height.
+
 **Geopotential height**:
 
 * ``z``
