@@ -215,6 +215,8 @@ Element 'time_array_analogs'
 The content of ``<time_array_analogs>`` defines the temporal properties of the analog selection. It is usually defined as a days interval (period of four months centered around the target date) using +-60 days around the target date. When working in a perfect prognosis framework, 30 days around the target date are excluded for the same year as the target date.
 
 * ``<time_array>``: Type of time selection.
+* ``<interval_days>``: Number of days to select around the target date for every year when using ``days_interval``. Usually: 60
+* ``<exclude_days>``: Number of days to exclude around the target date for the same year. This has to be provided whatever type of time array is selected. Usually: 30
 
 The type can be one of the following:
 
@@ -225,9 +227,6 @@ The type can be one of the following:
 * ``JJA``: Summer (Jun-Aug)
 * ``SON``: Fall (Sep-Nov)
 * ``Month_to_Month``: Flexible selection of a period from one month to another month (ex: April_to_July, January_to_September, September_to_March)
-
-* ``<interval_days>``: Number of days to select around the target date for every year when using ``days_interval``. Usually: 60
-* ``<exclude_days>``: Number of days to exclude around the target date for the same year. This has to be provided whatever type of time array is selected. Usually: 30
 
 Example:
 
