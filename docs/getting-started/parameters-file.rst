@@ -250,6 +250,18 @@ Example:
     </time_array_analogs>
   </time_properties>
 
+Another example using a specific period:
+
+.. code-block:: xml
+
+    <time_array_target>
+      <time_array>April_to_September</time_array>
+    </time_array_target>
+    <time_array_analogs>
+      <time_array>April_to_September</time_array>
+      <exclude_days>30</exclude_days>
+    </time_array_analogs>
+
 
 Content 'analog_dates'
 ----------------------
