@@ -228,6 +228,8 @@ The type can be one of the following:
 * ``SON``: Fall (Sep-Nov)
 * ``Month_to_Month``: Flexible selection of a period from one month to another month (ex: April_to_July, January_to_September, September_to_March)
 
+However, when selecting a season or a specific period for the analogs time array, the same option must be selected for the target time array.
+
 Example:
 
 .. code-block:: xml
