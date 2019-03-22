@@ -9,7 +9,7 @@ Batch file properties
 Different directories must be specified for operational forecasting:
 
 * Directory containing the parameters files: contains the :ref:`xml parameters files (defining by the method parameters)<parameters-file-forecaster>`
-* Directory containing the predictand DB: contains the :ref:`xNetCDF file generated from the predictand data<predictand-db>`.
+* Directory containing the predictand DB: contains the :ref:`NetCDF file generated from the predictand data<predictand-db>`.
 * Directory containing the archive predictors: predictor describing the candidate situations (for example :ref:`reanalyses<reanalyses>`).
 * Directory to save downloaded real-time predictors: the operational NWP model outputs. Subdirectories are automatically created for each date according to a year/month/day structure.
 * Directory to save the forecast outputs (NetCDF): location where the results are stored. Subdirectories are also generated for each date.
@@ -21,11 +21,11 @@ Different directories must be specified for operational forecasting:
 Log options
 -----------
 
-Log preferences are specific to each tool. They define the display of the log window and the level of reported log:
+Log preferences control the display of the log window and the level (importance) of reported messages:
 
-1. Only errors - recommended as long as everything goes as planned.
+1. Errors only - recommended as long as everything goes as planned.
 2. Errors and warnings - some warnings help to be vigilant in case of problems. However, there might be warnings even during normal operation.
-3. All messages - all operations are reported, which is an unnecessary amount of information during normal operation. As a result, important messages are hidden in the standard operating flow, the program is slowed down and its memory usage increases. This option is useful for identifying the source of an error in case of problems.
+3. Verbose - all operations are reported, which is an unnecessary amount of information during normal operation. As a result, important messages might be hidden in a large amount of messages. This option is only useful to identify where AtmoSwing is failing.
 
 .. image:: img/preferences-general-log.png
    :align: center
@@ -36,7 +36,7 @@ Internet proxy
 The proxy configuration contains the following elements:
 
 * Proxy activation - if necessary.
-* Proxy properties - provide the address, port, user name and password.
+* Proxy properties - the proxy address, port, the user name and password.
 
 .. image:: img/preferences-general-proxy.png
    :align: center
