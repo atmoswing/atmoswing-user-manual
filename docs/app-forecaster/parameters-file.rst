@@ -6,7 +6,7 @@ Forecaster's parameters file
 The parameters files for the Forecaster are based on the :ref:`generic parameters file for AtmoSwing<parameters-file>`, but has some specific elements for the operational forecasting. An example is provided at the bottom of the page.
 
 
-Example of a parameter file for the Forecaster:
+Example of a parameters file for the Forecaster:
 
 .. code-block:: xml
 
