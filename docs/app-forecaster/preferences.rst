@@ -63,8 +63,8 @@ Predictor download
 
 Options for automatic predictor download. The choices are:
 
-* Number of attempts on previous data if the desired data cannot be downloaded; this number must be greater than 2 to ensure proper operation of the forecast tool. Indeed, the latest model results are never instantly accessible, but after a delay of several hours. In this case, we must take the most recent data available.
-* Number of parallel downloads - parallel requests reduce download times. However, be careful not to put a too large number (5 being sufficient), at the risk of being excluded from the data server. It is currently recommended to do only one download at a time (put 1 in the field).
+* Maximum number of previous time steps if download fails - number of attempts on data issued earlier if the desired data cannot be downloaded; this number must be greater than 2 to ensure proper operation of the Forecaster. Indeed, the latest NWP outputs are never instantly accessible, but after a certain delay. In this case, the most recent available data must be used.
+* Maximum parallel requests number - parallel requests reduce the download time. However, be careful not to use too many requests (5 being sufficient), at the risk of being excluded from the data provider.
 
 .. image:: img/preferences-adv-downloads.png
    :align: center
@@ -72,10 +72,10 @@ Options for automatic predictor download. The choices are:
 Advanced options
 ~~~~~~~~~~~~~~~~
 
-Different options specific to the software's behavior:
+Different options can control the software's behavior:
 
 * Enable or disable the reactivity of the graphical interface. This option must always be enabled for standard use.
-* Allow multiple instances of the forecasting software.
+* Allow multiple instances of the Forecaster (not really useful).
 
 .. image:: img/preferences-adv-advancedoptions.png
    :align: center
@@ -83,11 +83,11 @@ Different options specific to the software's behavior:
 Multithreading
 ~~~~~~~~~~~~~~
 
-Options communes pour l'utilisation de threads. Les options sont:
+Options for using multiple threads:
 
-* Activation - permet un gain en performance dans les calculs, mais peut devenir instable sur Windows (donc déconseillé).
-* Nombre de threads - à choisir en fonction du processeur de l'ordinateur. Le nombre optimal de threads pour l'ordinateur utilisé est proposé automatiquement par le logiciel.
-* La priorité des threads - permet de définir quelles sont les ressources que les threads peuvent disposer en concurrence avec les autres processus en cours.
+* Allow multithreading - allows a gain in performance for the calculations (recommended).
+* Maximum number of threads - to be chosen according to the computer's CPU. The optimal number of threads for the computer in use is automatically proposed by the software.
+* Threads priority - allows to define the priority of the threads in competition with other ongoing processes.
 
 .. image:: img/preferences-adv-multithreading.png
    :align: center
@@ -95,10 +95,10 @@ Options communes pour l'utilisation de threads. Les options sont:
 Processing options
 ~~~~~~~~~~~~~~~~~~
 
-These options influence the core of the calculation of the analogy search. They do not change the result, but the calculation time. The choices are as follows:
+These options influence how the search for analogs is performed, which has no impact on the results, only on the calculation time. The choices are as follows:
 
-* Multithreaded - as long as the computer has at least two processors. This is clearly the fastest version, and it is even faster when the computer has processors. But, as mentioned above, calculations can become unstable on Windows and this option is therefore not recommended for Windows.
-* Standard (Insertion in the date table) - this option is the second fastest and is perfectly stable (therefore recommended). The approach is to limit the size of the date vector to the desired number of analogues and to insert new dates as long as the analogy score is better than those already present.
+* Multithreaded - as long as the computer has at least two processors. This is by far the fastest version.
+* Standard - this option is slower than the previous one as it uses a single thread. The approach is to limit the size of the date vector to the desired number of analogues and to insert new dates as long as the analogy score is better than those already present.
 
 .. image:: img/preferences-adv-processing.png
    :align: center
@@ -106,7 +106,7 @@ These options influence the core of the calculation of the analogy search. They 
 User specific paths
 ~~~~~~~~~~~~~~~~~~~
 
-Indication of some paths used and automatically defined according to the OS: working directory, logs of the logs of the forecast and visualization software, files of the preferences of the forecast and visualization software.
+Some paths automatically defined according to the OS: working directory, log file, and preferences file.
 
 .. image:: img/preferences-adv-userpaths.png
    :align: center
