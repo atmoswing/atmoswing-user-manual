@@ -46,7 +46,10 @@ Advanced options
 
 The advanced options are automatically configured and usually do not need to be changed.
 
-Graphical User Interface (GUI) options: Adjusts the behavior of the interface and its means of communication with the user. Saves calculation time by disabling dialog boxes. The choices are:
+Graphical User Interface (GUI) options
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Adjusts the behavior of the interface and its means of communication with the user. Saves calculation time by disabling dialog boxes. The choices are:
 
 * Silent - no dialog box is displayed. The user must therefore keep an eye on the log window to detect any error. This option is only useful for very intensive calculations.
 * Standard - recommended for standard use.
@@ -55,7 +58,10 @@ Graphical User Interface (GUI) options: Adjusts the behavior of the interface an
 .. image:: img/preferences-adv-gui.png
    :align: center
    
-Predictor Download: Options for automatic predictor download. The choices are:
+Predictor download
+~~~~~~~~~~~~~~~~~~
+
+Options for automatic predictor download. The choices are:
 
 * Number of attempts on previous data if the desired data cannot be downloaded; this number must be greater than 2 to ensure proper operation of the forecast tool. Indeed, the latest model results are never instantly accessible, but after a delay of several hours. In this case, we must take the most recent data available.
 * Number of parallel downloads - parallel requests reduce download times. However, be careful not to put a too large number (5 being sufficient), at the risk of being excluded from the data server. It is currently recommended to do only one download at a time (put 1 in the field).
@@ -63,7 +69,10 @@ Predictor Download: Options for automatic predictor download. The choices are:
 .. image:: img/preferences-adv-downloads.png
    :align: center
    
-Advanced options: Different options specific to the software's behavior:
+Advanced options
+~~~~~~~~~~~~~~~~
+
+Different options specific to the software's behavior:
 
 * Enable or disable the reactivity of the graphical interface. This option must always be enabled for standard use.
 * Allow multiple instances of the forecasting software.
@@ -71,7 +80,10 @@ Advanced options: Different options specific to the software's behavior:
 .. image:: img/preferences-adv-advancedoptions.png
    :align: center
    
-Multithreading: options communes pour l'utilisation de threads. Les options sont:
+Multithreading
+~~~~~~~~~~~~~~
+
+Options communes pour l'utilisation de threads. Les options sont:
 
 * Activation - permet un gain en performance dans les calculs, mais peut devenir instable sur Windows (donc déconseillé).
 * Nombre de threads - à choisir en fonction du processeur de l'ordinateur. Le nombre optimal de threads pour l'ordinateur utilisé est proposé automatiquement par le logiciel.
@@ -80,7 +92,10 @@ Multithreading: options communes pour l'utilisation de threads. Les options sont
 .. image:: img/preferences-adv-multithreading.png
    :align: center
    
-Processing options: These options influence the core of the calculation of the analogy search. They do not change the result, but the calculation time. The choices are as follows:
+Processing options
+~~~~~~~~~~~~~~~~~~
+
+These options influence the core of the calculation of the analogy search. They do not change the result, but the calculation time. The choices are as follows:
 
 * Multithreaded - as long as the computer has at least two processors. This is clearly the fastest version, and it is even faster when the computer has processors. But, as mentioned above, calculations can become unstable on Windows and this option is therefore not recommended for Windows.
 * Standard (Insertion in the date table) - this option is the second fastest and is perfectly stable (therefore recommended). The approach is to limit the size of the date vector to the desired number of analogues and to insert new dates as long as the analogy score is better than those already present.
@@ -88,7 +103,10 @@ Processing options: These options influence the core of the calculation of the a
 .. image:: img/preferences-adv-processing.png
    :align: center
    
-Current user paths: Indication of some paths used and automatically defined according to the OS: working directory, logs of the logs of the forecast and visualization software, files of the preferences of the forecast and visualization software.
+User specific paths
+~~~~~~~~~~~~~~~~~~~
+
+Indication of some paths used and automatically defined according to the OS: working directory, logs of the logs of the forecast and visualization software, files of the preferences of the forecast and visualization software.
 
 .. image:: img/preferences-adv-userpaths.png
    :align: center
