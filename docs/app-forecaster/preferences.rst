@@ -1,18 +1,19 @@
 Preferences
 ===========
 
-.. todo:: write
+The preferences frame can be opened from the menu Options / Preferences of the main interface.
 
 Batch file properties
 ---------------------
 
-Different directories must be specified for real-time forecasting:
+Different directories must be specified for operational forecasting:
 
-* Directory containing the forecast parameter files - contains the xml files defining by the method parameters
-* Directory containing the predictors archives.
-* Directory for recording downloaded predictors. Subdirectories are automatically created for each date according to the Year/Month/Day tree structure.
-* Directory for recording forecast results - location where these results are stored. Subdirectories are also generated for each date.
-* Directory containing the precipitation database - this database is a NetCDF file.
+* Directory containing the parameters files: contains the :ref:`xml parameters files (defining by the method parameters)<parameters-file-forecaster>`
+* Directory containing the predictand DB: contains the :ref:`xNetCDF file generated from the predictand data<predictand-db>`.
+* Directory containing the archive predictors: predictor describing the candidate situations (for example :ref:`reanalyses<reanalyses>`).
+* Directory to save downloaded real-time predictors: the operational NWP model outputs. Subdirectories are automatically created for each date according to a year/month/day structure.
+* Directory to save the forecast outputs (NetCDF): location where the results are stored. Subdirectories are also generated for each date.
+* Directory to save the forecast exports (xml): location where the synthesis xml file is saved.
 
 .. image:: img/preferences-paths-forecasting.png
    :align: center
