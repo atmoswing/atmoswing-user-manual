@@ -58,6 +58,9 @@ For the operational forecasting, two datasets are needed: the NWP outputs and th
       </analog_dates>
 
 
+Full example
+------------
+
 Example of a parameters file for the Forecaster:
 
 .. code-block:: xml
