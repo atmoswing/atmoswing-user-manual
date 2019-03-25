@@ -3,7 +3,59 @@
 Forecaster's parameters file
 ============================
 
-The parameters files for the Forecaster are based on the :ref:`generic parameters file for AtmoSwing<parameters-file>`, but has some specific elements for the operational forecasting. An example is provided at the bottom of the page.
+The parameters files for the Forecaster are based on the :ref:`generic parameters file for AtmoSwing<parameters-file>`, but has some specific elements for the operational forecasting as detailed below. An full example is provided at the bottom of the page.
+
+Root node
+---------
+
+The ``target`` property of the root node needs to be ``forecaster``.
+
+.. code-block:: xml
+
+    <atmoswing version="1.0" target="forecaster">
+
+Content 'time_properties'
+-------------------------
+
+The ``<time_properties>`` property has no ``<time_array_target>`` element, but a ``<lead_time_days>`` element.
+
+.. code-block:: xml
+
+      <time_properties>
+        ...
+        <lead_time>
+          <lead_time_days>0,1,2,3,4,5</lead_time_days>
+        </lead_time>
+        ...
+      </time_properties>
+
+Content 'analog_dates'
+----------------------
+
+The content of ``<analog_dates>`` is mainly similar to the basic parameters file structure. The differences are:
+
+* ``<analogs_number>``: The number of analogs to extract is not a unique number as in the generic parameters file, but one value has to be provided for each lead time. The number of analogs to extract can thus increase with the lead time to take into account the increasing uncertainty of the NWP outputs.
+
+For the operational forecasting, two datasets are needed: the NWP outputs and the archive dataset:
+
+* ``<realtime_dataset_id>``: NWP outputs dataset
+* ``<realtime_data_id>``: Name of the variable in the NWP outputs dataset
+* ``<archive_dataset_id>``: Archive dataset
+* ``<archive_data_id>``: Name of the variable in the archive dataset
+
+.. code-block:: xml
+
+      <analog_dates>
+        <analogs_number>50,50,70,110,230,490</analogs_number>
+        <predictor>
+          <realtime_dataset_id>NWS_GFS_Forecast</realtime_dataset_id>
+          <realtime_data_id>hgt</realtime_data_id>
+          <archive_dataset_id>NCEP_Reanalysis_v1</archive_dataset_id>
+          <archive_data_id>hgt</archive_data_id>
+          ...
+        </predictor>
+        ...
+      </analog_dates>
 
 
 Example of a parameters file for the Forecaster:
