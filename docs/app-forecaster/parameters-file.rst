@@ -3,7 +3,7 @@
 Forecaster's parameters file
 ============================
 
-The parameters files for the Forecaster are based on the :ref:`generic parameters file for AtmoSwing<parameters-file>`, but has some specific elements for the operational forecasting as detailed below. An full example is provided at the bottom of the page.
+The parameters files for the Forecaster are based on the :ref:`generic parameters file for AtmoSwing<parameters-file>`, but has some specific elements for the operational forecasting as detailed below. An `full example`_ is provided at the bottom of the page.
 
 Root node
 ---------
