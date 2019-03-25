@@ -17,7 +17,7 @@ The ``target`` property of the root node needs to be ``forecaster``.
 Content 'time_properties'
 -------------------------
 
-The ``<time_properties>`` property has no ``<time_array_target>`` element, but a ``<lead_time_days>`` element.
+The ``<time_properties>`` property has no ``<time_array_target>`` element, but a ``<lead_time_days>`` element listing the lead times to process.
 
 .. code-block:: xml
 
@@ -32,7 +32,7 @@ The ``<time_properties>`` property has no ``<time_array_target>`` element, but a
 Content 'analog_dates'
 ----------------------
 
-The content of ``<analog_dates>`` is mainly similar to the basic parameters file structure. The differences are:
+The content of ``<analog_dates>`` is mostly similar to the basic parameters file structure. The differences are:
 
 * ``<analogs_number>``: The number of analogs to extract is not a unique number as in the generic parameters file, but one value has to be provided for each lead time. The number of analogs to extract can thus increase with the lead time to take into account the increasing uncertainty of the NWP outputs.
 
