@@ -155,4 +155,100 @@ The details of the analogue dates and their associated criterion and predictand 
    :height: 32
    :scale: 75
    :align: middle
-   
+
+
+Workspaces
+----------
+
+AtmoSwing Viewer relies on workspaces to allow changing of region or configuration. A workspace is a xml file containing the paths to the GIS layers and their rendering options, as well as the forecast files location and other properties that can be defined in the preferences. 
+
+From the menu File, you can:
+
+* Open a workspace
+* Save the workspace
+* Save the workspace as
+* Create a new workspace
+
+The creation of a new workspace is guided by a wizard to define:
+
+1. The location of the workspace file
+2. The path to the forecasts directory
+3. The base map for the project. 
+
+The base map options are:
+
+* Custom layers
+* Terrain from Google maps
+* Map from Google maps
+* Map from Openstreetmap
+* Map from ArcGIS Mapserver
+* Satellite imagery from Google maps
+* Satellite imagery from VirtualEarth
+
+The workspace file does not need (and should not be) directly edited. Its structure is as follows:
+
+.. code-block:: xml
+
+   <?xml version="1.0" encoding="UTF-8"?>
+   <atmoswing version="1.0" target="viewer">
+     <coordinate_system>EPSG:21781</coordinate_system>
+     <forecast_directory>D:\_OwnCloud\AtmoSwing\CH-VS</forecast_directory>
+     <colorbar_max_value>50</colorbar_max_value>
+     <plot_time_series_past_days_nb>5</plot_time_series_past_days_nb>
+     <panel_alarms_return_period>10</panel_alarms_return_period>
+     <panel_alarms_quantile>0.900000</panel_alarms_quantile>
+     <layers>
+       <layer>
+         <path>D:\_CloudStation\AtmoSwing\GIS data\CH - Rhone\regions.shp</path>
+         <type>vector</type>
+         <transparency>0</transparency>
+         <visibility>1</visibility>
+         <line_width>2</line_width>
+         <line_color>rgb(0, 0, 0)</line_color>
+         <fill_color>rgb(0, 0, 0)</fill_color>
+         <brush_style>106</brush_style>
+       </layer>
+       <layer>
+         <path>D:\_CloudStation\AtmoSwing\GIS data\CH - Rhone\lakes.shp</path>
+         <type>vector</type>
+         <transparency>0</transparency>
+         <visibility>1</visibility>
+         <line_width>1</line_width>
+         <line_color>rgb(0, 128, 255)</line_color>
+         <fill_color>rgb(0, 128, 255)</fill_color>
+         <brush_style>100</brush_style>
+       </layer>
+       <layer>
+         <path>D:\_CloudStation\AtmoSwing\GIS data\CH - Rhone\hydrography.shp</path>
+         <type>vector</type>
+         <transparency>0</transparency>
+         <visibility>1</visibility>
+         <line_width>1</line_width>
+         <line_color>rgb(0, 128, 255)</line_color>
+         <fill_color>rgb(0, 0, 0)</fill_color>
+         <brush_style>100</brush_style>
+       </layer>
+       <layer>
+         <path>D:\_CloudStation\AtmoSwing\GIS data\CH - Rhone\catchments.shp</path>
+         <type>vector</type>
+         <transparency>0</transparency>
+         <visibility>0</visibility>
+         <line_width>1</line_width>
+         <line_color>rgb(255, 255, 0)</line_color>
+         <fill_color>rgb(0, 0, 0)</fill_color>
+         <brush_style>106</brush_style>
+       </layer>
+       <layer>
+         <path>D:\_CloudStation\AtmoSwing\GIS data\CH - Rhone\SRTM\CH.tif</path>
+         <type>raster</type>
+         <transparency>0</transparency>
+         <visibility>1</visibility>
+         <line_width>0</line_width>
+         <line_color></line_color>
+         <fill_color></fill_color>
+         <brush_style>0</brush_style>
+       </layer>
+     </layers>
+   </atmoswing>
+
+
