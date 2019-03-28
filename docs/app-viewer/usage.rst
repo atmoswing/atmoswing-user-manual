@@ -199,7 +199,7 @@ The workspace file does not need (and should not be) directly edited. Its struct
      <panel_alarms_quantile>0.900000</panel_alarms_quantile>
      <layers>
        <layer>
-         <path>D:\_CloudStation\AtmoSwing\GIS data\CH - Rhone\regions.shp</path>
+         <path>D:\AtmoSwing\GIS data\CH - Rhone\regions.shp</path>
          <type>vector</type>
          <transparency>0</transparency>
          <visibility>1</visibility>
@@ -209,7 +209,7 @@ The workspace file does not need (and should not be) directly edited. Its struct
          <brush_style>106</brush_style>
        </layer>
        <layer>
-         <path>D:\_CloudStation\AtmoSwing\GIS data\CH - Rhone\lakes.shp</path>
+         <path>D:\AtmoSwing\GIS data\CH - Rhone\lakes.shp</path>
          <type>vector</type>
          <transparency>0</transparency>
          <visibility>1</visibility>
@@ -219,7 +219,7 @@ The workspace file does not need (and should not be) directly edited. Its struct
          <brush_style>100</brush_style>
        </layer>
        <layer>
-         <path>D:\_CloudStation\AtmoSwing\GIS data\CH - Rhone\hydrography.shp</path>
+         <path>D:\AtmoSwing\GIS data\CH - Rhone\hydrography.shp</path>
          <type>vector</type>
          <transparency>0</transparency>
          <visibility>1</visibility>
@@ -229,7 +229,7 @@ The workspace file does not need (and should not be) directly edited. Its struct
          <brush_style>100</brush_style>
        </layer>
        <layer>
-         <path>D:\_CloudStation\AtmoSwing\GIS data\CH - Rhone\catchments.shp</path>
+         <path>D:\AtmoSwing\GIS data\CH - Rhone\catchments.shp</path>
          <type>vector</type>
          <transparency>0</transparency>
          <visibility>0</visibility>
@@ -239,7 +239,7 @@ The workspace file does not need (and should not be) directly edited. Its struct
          <brush_style>106</brush_style>
        </layer>
        <layer>
-         <path>D:\_CloudStation\AtmoSwing\GIS data\CH - Rhone\SRTM\CH.tif</path>
+         <path>D:\AtmoSwing\GIS data\CH - Rhone\SRTM\CH.tif</path>
          <type>raster</type>
          <transparency>0</transparency>
          <visibility>1</visibility>
