@@ -1,12 +1,10 @@
 Usage
 =====
 
-.. todo:: write
-
 Main interface
 --------------
 
-The visualization software has the interface shown below. This tool allows you to view the files produced by the calculation software.
+AtmoSwing Viewer has the interface shown below. It allows viewing the files produced by the Forecaster. The forecasts are first explored through the main interface on a map. Different graphs are then available to display more details.
 
 .. image:: img/frame-viewer.png
    :align: center
@@ -14,15 +12,15 @@ The visualization software has the interface shown below. This tool allows you t
 The toolbar allows the following actions:
 
 - |icon_open| Open a forecast file
-- |icon_run| Run the current forecast
+- |icon_run| Run the current forecast (calls the Forecaster)
 - |icon_map_select| Select a station on the map
-- |icon_map_zoom_in| Zoom in on the map
-- |icon_map_zoom_out| Zoom out on the map
-- |icon_map_move| Move the map
-- |icon_map_fit| Adjust the map to all elements
-- |icon_frame_distributions| Open distribution charts
+- |icon_map_zoom_in| Zoom in
+- |icon_map_zoom_out| Zoom out
+- |icon_map_move| Pan the map
+- |icon_map_fit| Adjust the map to all stations
+- |icon_frame_distributions| Open the distribution charts
 - |icon_frame_analogs| Open the list of analogues
-- |icon_preferences| Open the interface for setting preferences
+- |icon_preferences| Open the preferences
 
 .. |icon_open| image:: img/icon_open.png
    :align: middle
@@ -54,9 +52,7 @@ The toolbar allows the following actions:
 .. |icon_preferences| image:: img/icon_preferences.png
    :align: middle
 
-The results are first explored through the main interface on a map. Different graphs are then available to view more details.
-
-It is possible to open |icon_open_s| several model results, but they must have the same base date. If forecasts corresponding to a date (or time) other than the files already opened are loaded, they will be closed.
+It is possible to open |icon_open_s| several forecast files, but they must have the same reference date (issued at the same lead time). If forecasts corresponding to another date (or time) are already opened, they will be closed.
 
 .. |icon_open_s| image:: img/icon_open.png
    :width: 32
@@ -64,7 +60,7 @@ It is possible to open |icon_open_s| several model results, but they must have t
    :scale: 75
    :align: middle
 
-The first visualization offered to the user when he opens a file is a summary of the next deadlines (Figure below). At the location of each station a circular band is displayed with one box per deadline. The colours assigned to each trap are proportional to the expected value for the deadline in question. This representation provides a quick overview of the coming days and makes it easy to identify a possible event. An alternative view of this map allows you to display the forecasts by maturity (Figure above). This representation helps to better distinguish spatialization from precipitation, as well as to quickly access the values of certain quantiles. The choice of the deadline is made using the cursor above the map.
+The first visualization is a summary of the next lead times (Figure below). At the location of each station a circular band is displayed with one box per lead time. The colours assigned to each slice illustrate the expected value for the lead time in question. This representation provides a quick overview of the coming days and makes it easy to identify a possible event. The same map can also be displayed for a specific lead time (Figure above). The choice of the lead time is made using the cursor above the map.
 
 .. image:: img/frame-viewer-rings.png
    :align: center
