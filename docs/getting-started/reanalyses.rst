@@ -19,7 +19,7 @@ A description of the different reanalyses and the assessment of the impact of th
 * NOAA Twentieth Century Reanalysis v2c: ``NOAA_20CR_v2c``
 * NOAA Twentieth Century Reanalysis v2c ensemble: ``NOAA_20CR_v2c_ens``
 * NOAA Optimum Interpolation Sea Surface Temperature, version 2: ``NOAA_OISST_v2``
-* A generic NetCDF dataset: ``GenericNetcdf``
+* :ref:`A generic NetCDF dataset <generic-dataset>`: ``GenericNetcdf``
 
 
 .. [Horton2018] Horton, P., & Brönnimann, S. (2018). Impact of global atmospheric reanalyses on statistical precipitation downscaling. Climate Dynamics. http://doi.org/10.1007/s00382-018-4442-6
