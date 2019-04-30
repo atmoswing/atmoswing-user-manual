@@ -30,7 +30,4 @@ One must specify:
 
 * ``dir_origin``: the main directory containing the original files
 * ``dir_target``: the main directory to save the resulting files
-* ``files_list``: a list of the files to transform containing the following entries:
-    * the subdirectory containing the original files (for example ``pressure`` or ``surface_analysis``
-    * the name of the variable in the original files
-    * the name given to the variable in the resulting file.
+* ``files_list``: a list of the files to transform containing the following entries: 1) the subdirectory containing the original files (for example ``pressure`` or ``surface_analysis``), 2) the name of the variable in the original files, 3) the name given to the variable in the resulting file.
