@@ -11,6 +11,8 @@ This section is divided into the following topics:
    :maxdepth: 2
    
    getting-started/installation
+   getting-started/versioning-support
+   getting-started/release-notes
    getting-started/analog-methods
    getting-started/using-atmoswing
    getting-started/data
