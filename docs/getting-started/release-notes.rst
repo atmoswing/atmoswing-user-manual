@@ -4,9 +4,9 @@ Release notes
 =============
 
 
-
 v2.1.0
 ------
+23.05.2019
 
 ### Added
 
@@ -19,6 +19,7 @@ v2.1.0
 
 v2.0.1
 ------
+12.12.2018
 
 ### Added
 
@@ -32,6 +33,7 @@ v2.0.1
 
 v2.0.0
 ------
+19.11.2018
 
 ### Added
 
@@ -45,6 +47,7 @@ v2.0.0
 
 v1.5.0
 ------
+30.01.2017
 
 ### Added
 
@@ -57,6 +60,7 @@ v1.5.0
 
 v1.4.3
 ------
+21.07.2016
 
 ### Added
 
@@ -69,6 +73,7 @@ v1.4.3
 
 v1.4.2
 ------
+18.08.2015
 
 ### Added
 
@@ -93,6 +98,7 @@ v1.4.2
 
 v1.4.1
 ------
+19.03.2015
 
 ### Added
 
@@ -109,8 +115,6 @@ v1.4.1
 * Updating the command line interface.
 * Forcing UTF-8 in the netCDF files.
 * Changing file version specification into major.minor
-* Removing TiCPP in order to use the native xml handling from wxWidgets.
-* Merging asCatalog and asCatalogPredictands.
 
 ### Fixed
 
@@ -127,6 +131,7 @@ v1.4.1
 
 v1.4.0
 ------
+02.03.2015
 
 ### Added
 
@@ -142,6 +147,8 @@ v1.4.0
 * Update to the new GFS URLs and format.
 * Adding a message in order to specify the selected models.
 * Removal of the coordinate system specification for the predictors.
+* Removing TiCPP in order to use the native xml handling from wxWidgets.
+* Merging asCatalog and asCatalogPredictands.
 
 ### Fixed
 
@@ -151,6 +158,7 @@ v1.4.0
 
 v1.3.3
 ------
+12.01.2015
 
 ### Added
 
@@ -186,6 +194,7 @@ v1.3.3
 
 v1.3.2
 ------
+01.09.2014
 
 ### Added
 
@@ -217,6 +226,7 @@ v1.3.2
 
 v1.3.1
 ------
+13.05.2014
 
 ### Changed
 
@@ -229,6 +239,7 @@ v1.3.1
 
 v1.3.0
 ------
+06.05.2014
 
 ### Added
 
@@ -256,22 +267,17 @@ v1.3.0
 
 v1.2.0
 ------
+26.02.2014
 
 ### Added
 
-* The predictand DB is now generalized to data other than precipitation.
-* The Forecaster is now working with various predictands.
 * Addition of the Calibrator source code.
-* Addition of the option to build the Forecaster in CL without GUI.
 * Addition of the rank histogram (Talagrand diagram)
 * Addition of CRPS decomposition after Hersbach (2000).
 * Addition of the generation of xml parameters files after the calibration.
 
 ### Changed
 
-* Improvement of the CMake build process.
-* Better management of the NaNs during processing.
-* Significant changes in order to generalize the predictand DB class.
 * The catalogs were removed for the predictors classes and new specific data classes were generated.
 * Removing predictand database properties from parameters for calibration.
 * Changing predictors file names.
@@ -282,11 +288,6 @@ v1.2.0
 
 ### Fixed
 
-* Fix of a change in GDAL regarding GRIB2 files origin.
-* Changing the order of includes in the asFileNetcdf class.
-* Unwanted slashes in paths under Linux were removed.
-* The viewer is now building again.
-* Fix of some bugs in unit tests.
 * Fix of format errors in the GFS urls.
 * Fix of an issue related to preprocessed predictors.
 * Logging of the url was discarded due to formatting issues leading to crashes.
@@ -306,14 +307,37 @@ v1.2.0
 * Removal of intermediate results printing.
 
 
-v1.0.3
+v1.1.0
 ------
+30.10.2013
 
 ### Added
 
-* Export of forecast text files from the time series plot.
-* Possibility to cancel the current forecast processing.
-* Better control of the log targets in the command-line mode.
+* The predictand DB is now generalized to data other than precipitation.
+* The Forecaster is now working with various predictands.
+* Addition of the option to build the Forecaster in CL without GUI.
+
+### Changed
+
+* Improvement of the CMake build process.
+* Better management of the NaNs during processing.
+* Significant changes in order to generalize the predictand DB class.
+
+### Fixed
+
+* Fix of a change in GDAL regarding GRIB2 files origin.
+* Changing the order of includes in the asFileNetcdf class.
+* Unwanted slashes in paths under Linux were removed.
+* The viewer is now building again.
+* Fix of some bugs in unit tests.
+
+
+v1.0.3
+------
+18.10.2012
+
+### Added
+
 * Addition of data preloading functionality and data pointer sharing
 * Preprocessing of the humidity flux and other variables combination.
 * Addition of multithreading in the 2nd and following levels of analogy.
@@ -327,12 +351,6 @@ v1.0.3
 
 ### Changed
 
-* Faster check of previously existing forecast files: load predictand DB only when needed.
-* Change from q30 to q20 in the precipitation distribution
-* Display of the considered quantile and return period for the alarms panel
-* Better frame size restoration with maximization detection.
-* Data import from netCDF files is less sensitive to the data type.
-* Much faster import of forecast files.
 * Some clean-up of unused code.
 * Simplification of the file names of intermediate results.
 * Better management of the threads.
@@ -347,11 +365,6 @@ v1.0.3
 
 ### Fixed
 
-* An error in the proxy port was fixed.
-* Preference « /Plot/PastDaysNb » was sometimes 3 or 5. Set 3 everywhere.
-* Do not load the same past forecasts twice in time series plots.
-* The forecasting launch from the viewer has been fixed.
-* Removal of the message box in the CL forecast.
 * Addition of a critical section on the config pointer.
 * Addition of critical sections for TiCPP.
 * Addition of critical sections for NetCDF.
@@ -361,3 +374,52 @@ v1.0.3
 * Bug fixed in the enumeration of units
 * NetCDF file class may have badly estimated the array size.
 * Fix of memory filling by logging in the time array class.
+
+
+v1.0.2
+------
+27.01.2012
+
+### Added
+
+* Better control of the log targets in the command-line mode.
+
+### Changed
+
+* Data import from netCDF files is less sensitive to the data type.
+* Much faster import of forecast files.
+
+### Fixed
+
+* The forecasting launch from the viewer has been fixed.
+* Removal of the message box in the CL forecast.
+
+
+v1.0.1
+------
+22.11.2011
+
+### Added
+
+* Export of forecast text files from the time series plot.
+* Possibility to cancel the current forecast processing.
+
+### Changed
+
+* Faster check of previously existing forecast files: load predictand DB only when needed.
+* Change from q30 to q20 in the precipitation distribution
+* Display of the considered quantile and return period for the alarms panel
+* Better frame size restoration with maximization detection.
+
+### Fixed
+
+* An error in the proxy port was fixed.
+* Preference « /Plot/PastDaysNb » was sometimes 3 or 5. Set 3 everywhere.
+* Do not load the same past forecasts twice in time series plots.
+
+
+v1.0.0
+------
+09.11.2011
+
+First official release
