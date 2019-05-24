@@ -10,7 +10,7 @@ v2.1.0
 ------
 23.05.2019
 
-*Added*
+**Added**
 
 * Support of GRIB1 files with ecCodes.
 * Adding a generic NetCDF predictor class.
@@ -30,7 +30,7 @@ v2.1.0
 * Support non trivial time arrays for data loading and missing files.
 * Supporting more complex predictor hours.
 
-*Changed*
+**Changed**
 
 * Migrating from g2clib to ecCodes.
 * Improving support for NaNs.
@@ -55,7 +55,7 @@ v2.1.0
 * Improving use of config.
 * Auto generate the dependencies for Debian packages.
 
-*Fixed*
+**Fixed**
 
 * Fixing minimum domain size for S1 and S2.
 * Fixing time issue with the 6-hrly time step.
@@ -69,16 +69,16 @@ v2.0.1
 ------
 12.12.2018
 
-*Added*
+**Added**
 
 * Adding definition of a continuous validation period.
 
-*Changed*
+**Changed**
 
 * Using https on nomads.
 * Setting the installer creation as optional.
 
-*Fixed*
+**Fixed**
 
 * Fixing About panel size and Ubuntu dependencies.
 * Fixing CMake issues.
@@ -88,7 +88,7 @@ v2.0.0
 ------
 19.11.2018
 
-*Added*
+**Added**
 
 * Addition (merge) of the code of the optimization with genetic algorithms to the main repository.
 * Creation of the Downscaler.
@@ -109,7 +109,7 @@ v2.0.0
 * Adding capacity to read some unregistered predictor variables.
 * Adding GAs presets.
 
-*Changed*
+**Changed**
 
 * Code moved to GitHub.
 * Adding continuous integration (Travis CI and AppVeyor).
@@ -141,7 +141,7 @@ v2.0.0
 * Defaulting to 1 member.
 * Saving results from Monte Carlo analysis.
 
-*Fixed*
+**Fixed**
 
 * Fix archive length check with ensemble datasets.
 * Fixing an issue of grid resolution when loading data.
@@ -161,7 +161,7 @@ v1.5.0
 ------
 30.01.2017
 
-*Added*
+**Added**
 
 * Addition of the CFSR v2 dataset.
 * Addition of the MERRA2 dataset.
@@ -175,7 +175,7 @@ v1.5.0
 * Addition of the average preprocessing.
 * Addition of the Monte-Carlo approach from the Optimizer.
 
-*Changed*
+**Changed**
 
 * Refactoring predictor data classes.
 * Addition of support for the T382 truncature.
@@ -198,7 +198,7 @@ v1.5.0
 * Better handling of intermediate resulting files.
 * Improving predictor datasets reading.
 
-*Fixed*
+**Fixed**
 
 * Fix of a bug when the area is 2 points wide.
 * Fix of a bug for regular and irregular grids.
@@ -212,7 +212,7 @@ v1.4.3
 ------
 21.07.2016
 
-*Added*
+**Added**
 
 * The new NCEP R1 archive format is now supported.
 * Preloading of multiple data IDs.
@@ -224,7 +224,7 @@ v1.4.3
 * Improving notifictations when loading failed.
 * NCEP R2 tested.
 
-*Changed*
+**Changed**
 
 * Renaming Calibrator into Optimizer.
 * Parsing NaNs as string to handle non-numerical cases for predictands.
@@ -240,7 +240,7 @@ v1.4.3
 * New management of predictor data for realtime series.
 * Using Grib2c instead of GDAL for Grib files, and data loading refactoring.
 
-*Fixed*
+**Fixed**
 
 * Fixed unit test issues.
 * Applying code inspection recommendations.
@@ -251,12 +251,12 @@ v1.4.2
 ------
 18.08.2015
 
-*Added*
+**Added**
 
 * Addition of the 300hPa level for GFS.
 * Highlight the optimal method for the station in the distribution plot and the analogs list.
 
-*Changed*
+**Changed**
 
 * Newly created workspace now opens automatically.
 * Do not load already loaded forecasts.
@@ -265,7 +265,7 @@ v1.4.2
 * Improving CL usage.
 * Reload forecasts previously processed if an export is required.
 
-*Fixed*
+**Fixed**
 
 * Removal of a forecast from the GUI now works as expected.
 * Removing Projection specification from WMS files.
@@ -277,12 +277,12 @@ v1.4.1
 ------
 19.03.2015
 
-*Added*
+**Added**
 
 * Addition of the export options to the command line configuration.
 * Addition of an overall progress display.
 
-*Changed*
+**Changed**
 
 * No need to reload forecasts after processing.
 * Improving the display of former forecast files.
@@ -293,7 +293,7 @@ v1.4.1
 * Forcing UTF-8 in the netCDF files.
 * Changing file version specification into major.minor
 
-*Fixed*
+**Fixed**
 
 * Debugging accents issue under Linux.
 * Removing « using namespace std » in order to keep a clean namespace resolution.
@@ -310,7 +310,7 @@ v1.4.0
 ------
 02.03.2015
 
-*Added*
+**Added**
 
 * Addition of the export of a synthetic xml file.
 * Addition of a tree control for the forecasts in the viewer.
@@ -319,7 +319,7 @@ v1.4.0
 * Specification of the station IDs for specific parameters files.
 * New xml format for most files.
 
-*Changed*
+**Changed**
 
 * Update to the new GFS URLs and format.
 * Adding a message in order to specify the selected models.
@@ -327,7 +327,7 @@ v1.4.0
 * Removing TiCPP in order to use the native xml handling from wxWidgets.
 * Merging asCatalog and asCatalogPredictands.
 
-*Fixed*
+**Fixed**
 
 * Cleaning up processing and use of quantiles.
 * No need to reload forecasts after processing.
@@ -337,7 +337,7 @@ v1.3.3
 ------
 12.01.2015
 
-*Added*
+**Added**
 
 * Addition of buttons in the viewer frame to go backward and forward in time.
 * Workspaces can now be saved to an xml file.
@@ -345,7 +345,7 @@ v1.3.3
 * Addition of a control on the changes of the workspace to save before closing.
 * Addition of a configuration option in the forecaster.
 
-*Changed*
+**Changed**
 
 * Separation of the preferences.
 * Definition of the preferences in the workspace.
@@ -355,7 +355,7 @@ v1.3.3
 * Hide the elevation information when not available.
 * Changing the name of the U/V axis into X/Y to help users.
 
-*Fixed*
+**Fixed**
 
 * Cleanup of the forecaster config options.
 * Cleanup of the calibrator config options.
@@ -373,7 +373,7 @@ v1.3.2
 ------
 01.09.2014
 
-*Added*
+**Added**
 
 * Introduction of workspaces for the viewer.
 * Addition of WMS basemaps layers.
@@ -381,7 +381,7 @@ v1.3.2
 * Addition of the ability to optimize on multiple time series together.
 * Addition of the CRPS reliability skill score and removal of F0 loading methods.
 
-*Changed*
+**Changed**
 
 * Improvement of the rank histogram with bootstraping.
 * Increase of boostraping to 10’000 for the rank histrogram.
@@ -389,7 +389,7 @@ v1.3.2
 * Improving performance by reducing reallocation.
 * Changing the MergeCouplesAndMultiply method into FormerHumidityIndex.
 
-*Fixed*
+**Fixed**
 
 * Fix of the paths for CUDA files.
 * Fix of a linking issue with the viewer.
@@ -405,11 +405,11 @@ v1.3.1
 ------
 13.05.2014
 
-*Changed*
+**Changed**
 
 * Merge of the various CMake files into one project.
 
-*Fixed*
+**Fixed**
 
 * Debugging the new build process under Linux.
 
@@ -418,7 +418,7 @@ v1.3.0
 ------
 06.05.2014
 
-*Added*
+**Added**
 
 * Implementation of GPU processing
 * Addition of a predictand pattern file.
@@ -426,12 +426,12 @@ v1.3.0
 * Addition of CPack files.
 * Addition of a unit test on gradients preprocessing.
 
-*Changed*
+**Changed**
 
 * The archive and calibration periods can now start in the middle of a year.
 * Better check the requested time limits when loading predictor data.
 
-*Fixed*
+**Fixed**
 
 * Removing a memory leak when aborting the app initialization.
 * Correction of the data ordering in the forecast results.
@@ -446,14 +446,14 @@ v1.2.0
 ------
 26.02.2014
 
-*Added*
+**Added**
 
 * Addition of the Calibrator source code.
 * Addition of the rank histogram (Talagrand diagram)
 * Addition of CRPS decomposition after Hersbach (2000).
 * Addition of the generation of xml parameters files after the calibration.
 
-*Changed*
+**Changed**
 
 * The catalogs were removed for the predictors classes and new specific data classes were generated.
 * Removing predictand database properties from parameters for calibration.
@@ -463,7 +463,7 @@ v1.2.0
 * Check fields in the parameters file of the forecaster and the calibrator.
 * Change of the version message in CL.
 
-*Fixed*
+**Fixed**
 
 * Fix of format errors in the GFS urls.
 * Fix of an issue related to preprocessed predictors.
@@ -488,19 +488,19 @@ v1.1.0
 ------
 30.10.2013
 
-*Added*
+**Added**
 
 * The predictand DB is now generalized to data other than precipitation.
 * The Forecaster is now working with various predictands.
 * Addition of the option to build the Forecaster in CL without GUI.
 
-*Changed*
+**Changed**
 
 * Improvement of the CMake build process.
 * Better management of the NaNs during processing.
 * Significant changes in order to generalize the predictand DB class.
 
-*Fixed*
+**Fixed**
 
 * Fix of a change in GDAL regarding GRIB2 files origin.
 * Changing the order of includes in the asFileNetcdf class.
@@ -513,7 +513,7 @@ v1.0.3
 ------
 18.10.2012
 
-*Added*
+**Added**
 
 * Addition of data preloading functionality and data pointer sharing
 * Preprocessing of the humidity flux and other variables combination.
@@ -526,7 +526,7 @@ v1.0.3
 * Addition of an option to stop calculation when there is NaN in data.
 * Addition of bad allocation catching.
 
-*Changed*
+**Changed**
 
 * Some clean-up of unused code.
 * Simplification of the file names of intermediate results.
@@ -540,7 +540,7 @@ v1.0.3
 * Insertion of many supplementary assertions.
 * Clean-up of config paths default values.
 
-*Fixed*
+**Fixed**
 
 * Addition of a critical section on the config pointer.
 * Addition of critical sections for TiCPP.
@@ -557,16 +557,16 @@ v1.0.2
 ------
 27.01.2012
 
-*Added*
+**Added**
 
 * Better control of the log targets in the command-line mode.
 
-*Changed*
+**Changed**
 
 * Data import from netCDF files is less sensitive to the data type.
 * Much faster import of forecast files.
 
-*Fixed*
+**Fixed**
 
 * The forecasting launch from the viewer has been fixed.
 * Removal of the message box in the CL forecast.
@@ -576,19 +576,19 @@ v1.0.1
 ------
 22.11.2011
 
-*Added*
+**Added**
 
 * Export of forecast text files from the time series plot.
 * Possibility to cancel the current forecast processing.
 
-*Changed*
+**Changed**
 
 * Faster check of previously existing forecast files: load predictand DB only when needed.
 * Change from q30 to q20 in the precipitation distribution
 * Display of the considered quantile and return period for the alarms panel
 * Better frame size restoration with maximization detection.
 
-*Fixed*
+**Fixed**
 
 * An error in the proxy port was fixed.
 * Preference « /Plot/PastDaysNb » was sometimes 3 or 5. Set 3 everywhere.
