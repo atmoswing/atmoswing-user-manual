@@ -3,6 +3,17 @@ Usage
 
 The Forecaster allows to process an analog method based on the the latest available NWP outputs or for a given date. The real-time forecast calculation can be performed by a standard computer, without special resources. The forecast can be executed on demand through a graphical user interface or can be automated through the use of a command line interface. Both aspects are explained hereafter.
 
+Requirements
+------------
+
+The Forecaster needs:
+
+* :ref:`A predictand database <predictand-db>`
+* :ref:`Operational predictors from NWP outputs <data-forecaster>`
+* :ref:`A predictors archive (e.g. a reanalysis dataset) <reanalyses>`
+* :ref:`Parameters files defining the properties of the method. <parameters-file-forecaster>`
+
+
 Graphical user interface
 ------------------------
 
