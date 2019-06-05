@@ -13,6 +13,22 @@ The Forecaster needs:
 * :ref:`A predictors archive (e.g. a reanalysis dataset) <reanalyses>`
 * :ref:`Parameters files defining the properties of the method. <parameters-file-forecaster>`
 
+Outputs
+-------
+
+The Forecaster produces NetCDF files containing:
+
+* Values of the predictand for the different lead times
+* Analog dates
+* Values of the analogy criteria
+* The target dates (lead times)
+* The number of analogs for the different lead times
+* Some reference values (e.g. precipitation for different return periods)
+* Some station metadata (id, name, coordinates, height)
+
+There is one file per variant of the analog method containing data for all stations of the database.
+
+A synthetic xml can also be generated (optional) to ease the integration of synthetic data on a web platform for example.
 
 Graphical user interface
 ------------------------
