@@ -16,7 +16,7 @@ The Forecaster needs:
 Outputs
 -------
 
-The Forecaster produces NetCDF files containing:
+The Forecaster produces **NetCDF files** containing:
 
 * Values of the predictand for the different lead times
 * Analog dates
@@ -28,7 +28,7 @@ The Forecaster produces NetCDF files containing:
 
 There is one file per variant of the analog method containing data for all stations of the database.
 
-A synthetic xml can also be generated (optional) to ease the integration of synthetic data on a web platform for example.
+A **synthetic xml file** can also be generated (optional) to ease the integration of synthetic data on a web platform for example.
 
 Graphical user interface
 ------------------------
