@@ -11,5 +11,6 @@ This section describes the data required for AtmoSwing. It is divided into the f
    predictand-db
    reanalyses
    generic-dataset
+   data-operational
    variables
    
