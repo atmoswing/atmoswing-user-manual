@@ -3,10 +3,8 @@
 Forecaster specific data
 ========================
 
-The Forecaster needs the following data:
+AtmoSwing Forecaster can read the following NWP outputs (with the corresponding id to use):
 
-* The predictand datbase
-* An archive of the predictor variables, for example a reanalysis dataset
-* ...
-
+* NWS GFS forecasts (downloaded from nomads): ``NWS_GFS_Forecast``
+* ECMWF IFS forecasts (no automatic download): ``ECMWF_IFS_GRIB_Forecast``
  
