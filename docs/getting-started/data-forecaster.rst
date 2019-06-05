@@ -1,4 +1,4 @@
-.. _data-operational:
+.. _data-forecaster:
 
 Forecaster specific data
 ========================
