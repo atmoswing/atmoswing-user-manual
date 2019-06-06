@@ -18,9 +18,9 @@ Outputs
 
 The Forecaster produces **NetCDF files** containing:
 
-* Values of the predictand for the different lead times
-* Analog dates
-* Values of the analogy criteria
+* The values of the predictand for the different lead times
+* The analog dates
+* The values of the analogy criteria
 * The target dates (lead times)
 * The number of analogs for the different lead times
 * Some reference values (e.g. precipitation for different return periods)
