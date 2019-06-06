@@ -1,6 +1,8 @@
 Usage
 =====
 
+The Viewer relies on `workspaces`_ (defined in files), where the path of the forecast files is specified as well as the GIS layers and other display options. 
+
 Main interface
 --------------
 
