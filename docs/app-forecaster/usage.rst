@@ -20,7 +20,7 @@ The Forecaster needs:
 Outputs
 -------
 
-The Forecaster produces **NetCDF files** containing:
+The Forecaster produces compressed **NetCDF files** containing:
 
 * The values of the predictand for the different lead times
 * The analog dates
