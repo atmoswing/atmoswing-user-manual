@@ -13,4 +13,5 @@ The Downscaler manual is divided into the following topics:
    app-downscaler/usage
    app-downscaler/preferences
    app-downscaler/parameters-file
+   getting-started/data-downscaler
 

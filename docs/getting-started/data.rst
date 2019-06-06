@@ -12,5 +12,6 @@ This section describes the data required for AtmoSwing. It is divided into the f
    reanalyses
    generic-dataset
    data-forecaster
+   data-downscaler
    variables
    
