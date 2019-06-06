@@ -30,6 +30,8 @@ There is one file per variant of the analog method containing data for all stati
 
 A **synthetic xml file** can also be generated (optional) to ease the integration of synthetic data on a web platform for example.
 
+The files are saved in a date based directory structure (for example 2019/04/23). The Viewer follows the same rules to automatically look for new forecasts. To ease the distribution of the forecasts, the output directory can be synchronized by means of a file sharing client (for example `ownCloud <https://owncloud.org/>`_ or Dropbox).
+
 Graphical user interface
 ------------------------
 
