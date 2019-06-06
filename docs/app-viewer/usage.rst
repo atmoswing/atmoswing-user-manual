@@ -3,7 +3,7 @@ Usage
 
 The Viewer relies on `workspaces`_ (defined in files), where the path to the forecast files is specified as well as the GIS layers and other display options. It is thus possible to easily change from one region to another.
 
-For a given region, the forecasts can be separated/gathered based on an :ref:`identifier specified in the parameters files. <parameters-file#content-description>` (``<method_id>``).
+For a given region, the forecasts can be separated/gathered based on an :ref:`identifier specified in the parameters files. <content-description>` (``<method_id>``).
 
 Main interface
 --------------
