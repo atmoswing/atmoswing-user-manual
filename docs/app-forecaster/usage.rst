@@ -3,6 +3,10 @@ Usage
 
 The Forecaster allows to process an analog method based on the the latest available NWP outputs or for a given date. The real-time forecast calculation can be performed by a standard computer, without special resources. The forecast can be executed on demand through a graphical user interface or can be automated through the use of a command line interface. Both aspects are explained hereafter.
 
+By default, the Forecaster processes the last available forecast. However, it can also process a forecast for a given day in the past, provided the NWP outputs are available locally or remotely, or it can be executed to process the last x days. This options can also be executed once a day by a task manager to fill eventual gaps in the previous days. If the forecasts are already present, no computing resources are used.
+
+A batch file can be provided to the GUI or the CLI. It contains the data and export paths as well as the analog methods to be applied (defined themselves in the xml parameters files). Automatic tasks can thus execute the Forecaster successively with different options, for example for different regions. The results can be saved in different directories, or in the same ones. 
+
 Requirements
 ------------
 
