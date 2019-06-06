@@ -3,7 +3,10 @@ Usage
 
 The Viewer relies on `workspaces`_ (defined in files), where the path to the forecast files is specified as well as the GIS layers and other display options. It is thus possible to easily change from one region to another.
 
-For a given region, the forecasts can be separated/gathered based on an :ref:`identifier specified in the parameters files. <parameters-file>` (``<method_id>``).
+For a given region, the forecasts can be separated/gathered based on an :ref:`identifier specified in the parameters files. <parameters-file>` (``<method_id>``). The Viewer will manage this information as follows:
+
+* ``<method_id>``: all forecast files with the same ``<method_id>`` will be aggregated in the Viewer and labelled according to ``<method_id_display>``.
+* ``<specific_tag>``: all subregion-specific methods (defined by ``<specific_tag>`` and labelled according to ``<specific_tag_display>``) but having the same ``<method_id>`` will be listed under the same heading. These specific forecasts for a subregion/basin are defined by specific parameters, and therefore have dates that may differ from other subregions. When one of these subregions is selected in the Viewer, the forecast for that specific method is displayed and the precipitation values for the other subregions (but for the same method) are grayed-out. When the header of the list is selected (i.e. the method), a summary of the optimal forecasts for each subregion is displayed (i.e. with analog dates that may differ from one subregion to another).
 
 Main interface
 --------------
