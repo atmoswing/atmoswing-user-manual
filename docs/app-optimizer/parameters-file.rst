@@ -87,6 +87,20 @@ You must provide the name of the score to use. Options are:
 * The Verification Rank Histogram (Talagrand Diagram): ``RankHistogram``
 * Reliability of the Verification Rank Histogram (Talagrand Diagram): ``RankHistogramReliability``
 
+Element 'time_array'
+~~~~~~~~~~~~~~~~~~~
+
+The ``<time_array>`` element must be provided. It should however be set to ``simple``.
+
+Other optional properties
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Other options can be added to specify how the score should be processed.
+
+* ``<threshold>0.5</threshold>``: Threshold to use for the processing of scores relying on thresholds exceedence, such as the contingency table.
+* ``<quantile>0.9</quantile>``: Quantile to use for the processing of scores relying on a single value rather than the distribution.
+* ``<on_mean>1</on_mean>``: Specifies to process the score on the mean of the analogs rather that a quantile (see above). For example, when used with the score ``MSE``. The value 1 has no meaning other than "true".
+
 Calibration parameters file
 ===========================
 
@@ -149,6 +163,135 @@ Full example
 ------------
 
 .. code-block:: xml
+
+    <?xml version="1.0" encoding="UTF-8" ?>
+    <atmoswing version="1.0" target="calibrator">
+      <description>
+        <method_id>PD-A4Z</method_id>
+        <method_id_display>Enhanced circulation</method_id_display>
+        <specific_tag>CH</specific_tag>
+        <specific_tag_display>all stations</specific_tag_display>
+        <description>Enhanced analogy on the atmospheric circulation (4 levels)</description>
+      </description>
+      <time_properties>
+        <archive_period>
+          <start_year>1981</start_year>
+          <end_year>2010</end_year>
+        </archive_period>
+        <calibration_period>
+          <start_year>1981</start_year>
+          <end_year>2010</end_year>
+        </calibration_period>
+        <validation_period>
+          <years>1985, 1990, 1995, 2000, 2005, 2010</years>
+        </validation_period>
+        <time_step>24</time_step>
+        <time_array_target>
+          <time_array>simple</time_array>
+        </time_array_target>
+        <time_array_analogs>
+          <time_array>days_interval</time_array>
+          <interval_days method="fixed">60</interval_days>
+          <exclude_days>30</exclude_days>
+        </time_array_analogs>
+      </time_properties>
+      <analog_dates>
+        <analogs_number min="10" max="100" step="5" method="minmax"></analogs_number>
+        <predictor>
+          <preload>1</preload>
+          <preprocessing>
+            <preprocessing_method>SimpleGradients</preprocessing_method>
+            <preprocessing_data>
+              <dataset_id>ECMWF_ERA5</dataset_id>
+              <data_id>pressure/z</data_id>
+              <level>1000</level>
+              <time>6</time>
+            </preprocessing_data>
+          </preprocessing>
+          <spatial_window>
+            <x_min min="-10" max="10" step="0.25" method="minmax"></x_min>
+            <x_points_nb min="2" max="120" step="1" method="minmax"></x_points_nb>
+            <x_step>0.25</x_step>
+            <y_min min="35" max="50" step="0.25" method="minmax"></y_min>
+            <y_points_nb min="2" max="90" step="1" method="minmax"></y_points_nb>
+            <y_step>0.25</y_step>
+          </spatial_window>
+          <criteria>S1</criteria>
+        </predictor>
+        <predictor>
+          <preload>1</preload>
+          <preprocessing>
+            <preprocessing_method>SimpleGradients</preprocessing_method>
+            <preprocessing_data>
+              <dataset_id>ECMWF_ERA5</dataset_id>
+              <data_id>pressure/z</data_id>
+              <level>1000</level>
+              <time>30</time>
+            </preprocessing_data>
+          </preprocessing>
+          <spatial_window>
+            <x_min min="-10" max="10" step="0.25" method="minmax"></x_min>
+            <x_points_nb min="2" max="120" step="1" method="minmax"></x_points_nb>
+            <x_step>0.25</x_step>
+            <y_min min="35" max="50" step="0.25" method="minmax"></y_min>
+            <y_points_nb min="2" max="90" step="1" method="minmax"></y_points_nb>
+            <y_step>0.25</y_step>
+          </spatial_window>
+          <criteria>S1</criteria>
+        </predictor>
+        <predictor>
+          <preload>1</preload>
+          <preprocessing>
+            <preprocessing_method>SimpleGradients</preprocessing_method>
+            <preprocessing_data>
+              <dataset_id>ECMWF_ERA5</dataset_id>
+              <data_id>pressure/z</data_id>
+              <level>700</level>
+              <time>24</time>
+            </preprocessing_data>
+          </preprocessing>
+          <spatial_window>
+            <x_min min="-10" max="10" step="0.25" method="minmax"></x_min>
+            <x_points_nb min="2" max="120" step="1" method="minmax"></x_points_nb>
+            <x_step>0.25</x_step>
+            <y_min min="35" max="50" step="0.25" method="minmax"></y_min>
+            <y_points_nb min="2" max="90" step="1" method="minmax"></y_points_nb>
+            <y_step>0.25</y_step>
+          </spatial_window>
+          <criteria>S1</criteria>
+        </predictor>
+        <predictor>
+          <preload>1</preload>
+          <preprocessing>
+            <preprocessing_method>SimpleGradients</preprocessing_method>
+            <preprocessing_data>
+              <dataset_id>ECMWF_ERA5</dataset_id>
+              <data_id>pressure/z</data_id>
+              <level>500</level>
+              <time>12</time>
+            </preprocessing_data>
+          </preprocessing>
+          <spatial_window>
+            <x_min min="-10" max="10" step="0.25" method="minmax"></x_min>
+            <x_points_nb min="2" max="120" step="1" method="minmax"></x_points_nb>
+            <x_step>0.25</x_step>
+            <y_min min="35" max="50" step="0.25" method="minmax"></y_min>
+            <y_points_nb min="2" max="90" step="1" method="minmax"></y_points_nb>
+            <y_step>0.25</y_step>
+          </spatial_window>
+          <criteria>S1</criteria>
+        </predictor>
+      </analog_dates>
+      <analog_values>
+        <predictand>
+          <station_id min="1" max="100" step="1" method="minmax"></station_id>
+        </predictand>
+      </analog_values>
+      <evaluation>
+        <score>CRPS</score>
+        <time_array>simple</time_array>
+      </evaluation>
+    </atmoswing>
 
 
       
