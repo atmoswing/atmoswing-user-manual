@@ -3,9 +3,11 @@
 Genetic algorithms
 ==================
 
-.. todo:: write
+The sequential calibration has strong limitations: (i) it cannot automatically choose the pressure levels and temporal windows (hour of the day) for a given meteorological variable, (ii) it cannot handle dependencies between parameters, and (iii) it cannot easily handle new degrees of freedom. For this reason, genetic algorithms (GAs) were implemented in AtmoSwing Optimizer to perform a global optimization of AMs. This allows for optimization of all parameters jointly in a fully automatic and objective way. See more details in [Horton2017]_.
 
-See more details in: Horton, P., Jaboyedoff, M., & Obled, C. (2017). Global Optimization of an Analog Method by Means of Genetic Algorithms. Monthly Weather Review, 145(4), 1275–1294. http://doi.org/10.1175/MWR-D-16-0093.1
+Genetic algorithms are very powerful, but very demanding in terms of computational capacity. They require thousands assessments to evolve towards the global optimum, and thus should be used on a cluster rather than a single computer.
+
+Many options and operator variants are available for genetic algorithms. Based on systematic tests detailed in [Horton2017]_, some options presets were established in order to ease the use to genetic algorithms in AtmoSwing. These presets are listed below and all options are provided further down.
 
 
 Options presets
@@ -130,3 +132,6 @@ The different operators can be controlled with the following options:
 --ga-mut-non-uni-min-r=<0-1>  Non uniform mutation - minimum rate
 
 --ga-mut-multi-scale-p=<0-1>  Multi-scale mutation - probability
+
+
+.. [Horton2017] Horton, P., Jaboyedoff, M., & Obled, C. (2017). Global Optimization of an Analog Method by Means of Genetic Algorithms. Monthly Weather Review, 145(4), 1275–1294. http://doi.org/10.1175/MWR-D-16-0093.1
