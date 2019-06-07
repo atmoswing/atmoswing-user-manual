@@ -20,13 +20,13 @@
 # -- Project information -----------------------------------------------------
 
 project = 'AtmoSwing'
-copyright = '2018, Pascal Horton'
+copyright = '2019, Pascal Horton'
 author = 'Pascal Horton'
 
 # The short X.Y version
-version = '2.0'
+version = '2.1'
 # The full version, including alpha/beta/rc tags
-release = '2.0.0'
+release = '2.1.0'
 
 
 # -- General configuration ---------------------------------------------------
