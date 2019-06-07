@@ -73,7 +73,7 @@ The main interface of the Optimizer is as follows.
 
 The toolbar allows the following actions:
 
-- |icon_run| Run the forecast for the chosen date and time.
+- |icon_run| Start the optimization.
 - |icon_stop| Stop the current calculations.
 - |icon_preferences| Define the preferences.
 
