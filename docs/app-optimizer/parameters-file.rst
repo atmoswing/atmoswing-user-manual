@@ -97,8 +97,8 @@ Other optional properties
 
 Other options can be added to specify how the score should be processed.
 
-* ``<threshold>0.5</threshold>``: Threshold to use for the processing of scores relying on thresholds exceedence, such as the contingency table.
-* ``<quantile>0.9</quantile>``: Quantile to use for the processing of scores relying on a single value rather than the distribution.
+* ``<threshold>``: Threshold to use for the processing of scores relying on thresholds exceedence, such as the contingency table. Example: ``<threshold>0.5</threshold>``
+* ``<quantile>``: Quantile to use for the processing of scores relying on a single value rather than the distribution. Example: ``<quantile>0.9</quantile>``
 * ``<on_mean>1</on_mean>``: Specifies to process the score on the mean of the analogs rather that a quantile (see above). For example, when used with the score ``MSE``. The value 1 has no meaning other than "true".
 
 Calibration parameters file
