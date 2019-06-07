@@ -139,7 +139,7 @@ The Optimizer also has a command line interface, which is the prefered way of us
 --ve-step=<step_nb>  Variables exploration: step to process
 --mc-runs-nb=<runs_nb>  Monte Carlo: number of runs
 --ga-  All GAs options are described on the :ref:`genetic algorithms <genetic-algorithms>` page
--n, --threads-nb=<n> Number of threads to use
+-n, --threads-nb=<n>  Number of threads to use
 -l, --local  Work in local directory
 -s, --silent  Silent mode
 -l, --log-level=<n>  Set the log level (0: minimum, 1: errors, 2: warnings (default), 3: verbose)
