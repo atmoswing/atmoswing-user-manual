@@ -298,5 +298,70 @@ Full example
 Optimization parameters file
 ============================
 
+The optimization parameters file defines the parameters to be optimized and the range of the authorized values. There are different aspects to this:
+
+* Defining the range of numerical values: you must provide a ``lowerlimit`` value of the parameter, an ``upperlimit`` value and an ``iteration`` value. For example:
+
+.. code-block:: xml
+
+    <x_min lowerlimit="-10.5" upperlimit="10.5" iteration="0.75" lock="0"></x_min>
+
+* Defining a list of values: the content of the node will then be parsed as an array. For example:
+
+.. code-block:: xml
+
+    <level method="array" lock="0">0, 300, 500, 850, 1000</level>
+
+* The ``lock`` property allows to fix a value that will not be optimized even if ``lowerlimit`` and ``upperlimit`` values are defined for example. You then need to provide a value for the parameter. For example:
+
+.. code-block:: xml
+
+    <time lowerlimit="0" upperlimit="30" iteration="6" lock="1">18</time>
+    
+Root node
+---------
+
+The ``target`` property of the root node needs to be ``optimizer``.
+
+.. code-block:: xml
+
+    <atmoswing version="1.0" target="optimizer">
+
+Content 'analog_dates'
+----------------------
+
+The content of ``<analog_dates>`` is mostly similar to the basic parameters file structure, but the parameters to calibrate need to be specified.
 
 
+Element ‘analogs_number’
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Example:
+
+.. code-block:: xml
+
+      <analogs_number lowerlimit="5" upperlimit="80" iteration="1" lock="0"></analogs_number>
+
+Element ‘predictor’
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Example:
+
+.. code-block:: xml
+
+    <predictor>
+      <preload>1</preload>
+      <dataset_id>GenericNetcdf</dataset_id>
+	  <data_id method="array" lock="0">pl/r, pl/t, pl/u, pl/v, pl/z, sfa/msl</data_id>
+      <level method="array" lock="0">0, 300, 500, 850, 1000</level>
+	  <time lowerlimit="0" upperlimit="30" iteration="6" lock="0"></time>
+      <spatial_window>
+        <x_min lowerlimit="-10.5" upperlimit="10.5" iteration="0.75" lock="0"></x_min>
+        <x_points_nb lowerlimit="1" upperlimit="40" iteration="1" lock="0"></x_points_nb>
+        <x_step>0.75</x_step>
+        <y_min lowerlimit="35.25" upperlimit="50.25" iteration="0.75" lock="0"></y_min>
+        <y_points_nb lowerlimit="1" upperlimit="30" iteration="1" lock="0"></y_points_nb>
+        <y_step>0.75</y_step>
+      </spatial_window>
+      <criteria method="array" lock="0">MD, RMSE, S0, S1, S2</criteria>
+    </predictor>
