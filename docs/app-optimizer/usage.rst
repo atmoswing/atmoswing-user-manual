@@ -37,7 +37,7 @@ Based on the classic calibration
 The classic calibration is detailed on :ref:`another page<classic-calibration>`.
 
 * **Classic calibration**: The :ref:`classic calibration <classic-calibration>`
-* **Classic+ calibration**: A variant of the classic calibration with some improvements (:ref:`also detailed here<classic-calibration>`).
+* **Classic+ calibration**: A :ref:`variant of the classic calibration<classic-calibration>` with some improvements.
 * **Variables exploration Classic+**: Using the classic+ calibration to systematically explore a list of variables / levels / hours.
 
 Global optimization
