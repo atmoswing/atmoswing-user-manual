@@ -93,28 +93,23 @@ You need to provide:
 * The predictand DB
 * The directory containing the predictors for the archive period
 * The directory to save the results
-* All the options for the selected calibration method (in the Options tab)
+* All the options for the selected calibration method (in the Options tab; see below)
 
-
+There is one tab to define the options of the classic calibration, the variables exploration and the Monte-Carlo simulations. The details of the options are given on the page of the :ref:`another page<classic-calibration>`.
 
 .. image:: img/frame-optimizer-options-calib.png
    :align: center
-   
+
+The other tab provides numerous options for genetic algorithms. The details of the options are given on the page of the :ref:`genetic algorithms <genetic-algorithms>`.
+
 .. image:: img/frame-optimizer-options-gas.png
    :align: center
-   
-
-
-
-
-
-
 
 
 Command line interface
 ----------------------
 
-The Downscaler also has a command line interface. The options are as follows:
+The Optimizer also has a command line interface, which is the prefered way of using it. The options are as follows:
 
 -h, --help  Displays the help of command line options
 -v, --version  Displays the software version
