@@ -11,6 +11,7 @@ The Optimizer manual is divided into the following topics:
    :maxdepth: 2
    
    app-optimizer/usage
+   app-optimizer/classic-calibration
    app-optimizer/genetic-algorithms
    app-optimizer/preferences
    app-optimizer/parameters-file
