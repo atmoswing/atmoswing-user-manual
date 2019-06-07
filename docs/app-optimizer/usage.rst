@@ -16,19 +16,6 @@ The Optimizer needs:
 * :ref:`A predictors archive (e.g. a reanalysis dataset) <reanalyses>`
 * :ref:`Parameters files defining the properties of the method. <parameters-file-optimizer>`
 
-Outputs
--------
-
-The Optimizer produces different files:
-
-* A text file with the resulting best parameters set and the skill score (...best_parameters.txt).
-* A text file with all the tested parameters set and their correponding skill score (...tested_parameters.txt).
-* An xml file with the best parameters set (to be used further by AtmoSwing; ...best_parameters.xml).
-* A NetCDF file containing the analog dates (AnalogDates...nc) both for the calibration and validation periods.
-* A NetCDF file containing the analog values (AnalogValues...nc) both for the calibration and validation periods.
-* A NetCDF file containing the performance scores (Scores...nc) both for the calibration and validation periods.
-
-
 Calibration methods
 -------------------
 
@@ -63,6 +50,17 @@ Random exploration of the parameters space
 
 * **Monte-Carlo simulations**: An exploration of the parameters space by means of Monte-Carlo simulations. These simulations were found to be limited in terms of ability to find reasonnable parameters sets for even moderately AMs.
 
+Outputs
+-------
+
+The Optimizer produces different files:
+
+* A text file with the resulting best parameters set and the skill score (...best_parameters.txt).
+* A text file with all the tested parameters set and their correponding skill score (...tested_parameters.txt).
+* An xml file with the best parameters set (to be used further by AtmoSwing; ...best_parameters.xml).
+* A NetCDF file containing the analog dates (AnalogDates...nc) both for the calibration and validation periods.
+* A NetCDF file containing the analog values (AnalogValues...nc) both for the calibration and validation periods.
+* A NetCDF file containing the performance scores (Scores...nc) both for the calibration and validation periods.
 
 Graphical user interface
 ------------------------
