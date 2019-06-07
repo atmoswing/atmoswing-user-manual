@@ -36,7 +36,7 @@ The content of ``<analog_dates>`` is mostly similar to the basic parameters file
 
 * ``<analogs_number>``: The number of analogs to extract is not a unique number as in the generic parameters file, but one value has to be provided for each lead time. The number of analogs to extract can thus increase with the lead time to take into account the increasing uncertainty of the NWP outputs.
 
-For the operational forecasting, two datasets are needed: the NWP outputs and the archive dataset:
+For the operational forecasting, two predictor datasets are needed: the NWP outputs and the archive dataset:
 
 * ``<realtime_dataset_id>``: NWP outputs dataset
 * ``<realtime_data_id>``: Name of the variable in the NWP outputs dataset
