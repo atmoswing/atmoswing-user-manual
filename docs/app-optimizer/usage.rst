@@ -88,7 +88,7 @@ The toolbar allows the following actions:
    
 You need to provide:
 
-* The `calibration method <calibration-methods>`_ to use
+* Select one of the  `calibration methods`_
 * :ref:`The parameters file <parameters-file-optimizer>`
 * The predictand DB
 * The directory containing the predictors for the archive period
