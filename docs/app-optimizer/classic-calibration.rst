@@ -1,3 +1,5 @@
+.. _classic-calibration:
+
 Classic calibration
 ===================
 
