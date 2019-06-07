@@ -27,13 +27,13 @@ The content of ``<downscaling_period>`` defines the target period. It works as t
 
 Providing the exact dates:
 
-* ``<start>``: Start of the archive period (ex: 01.01.2050)
-* ``<end>``: End of the archive period (ex: 31.12.2099)
+* ``<start>``: Start of the target period (ex: 01.01.2050)
+* ``<end>``: End of the target period (ex: 31.12.2099)
 
 Or only providing the years:
 
-* ``<start_year>``: Start of the archive period (ex: 2050)
-* ``<end_year>``: End of the archive period (ex: 2099)
+* ``<start_year>``: Start of the target period (ex: 2050)
+* ``<end_year>``: End of the target period (ex: 2099)
 
 Content 'analog_dates'
 ----------------------
