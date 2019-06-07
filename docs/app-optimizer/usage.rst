@@ -93,6 +93,7 @@ You need to provide:
 * The predictand DB
 * The directory containing the predictors for the archive period
 * The directory to save the results
+* All the options for the selected calibration method (in the Options tab)
 
 
 
