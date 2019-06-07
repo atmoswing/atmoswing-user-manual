@@ -121,22 +121,24 @@ The Optimizer also has a command line interface, which is the prefered way of us
 --skip-valid  Skip the validation calculation
 --no-duplicate-dates  Do not allow to keep several times the same analog dates (e.g. for ensembles)
 --calibration-method  Choice of the calibration method: 
-                      * ``single``: single assessment
-                      * ``classic``: classic calibration
-                      * ``classicp``: classic+ calibration
-                      * ``varexplocp``: variables exploration classic+
-                      * ``montecarlo``: Monte Carlo
-                      * ``ga: genetic``: algorithms
-                      * ``evalscores``: evaluate all scores
-                      * ``onlyvalues``: evaluate all scores
-                      * ``onlydates``: evaluate all scores
+
+                        * ``single``: single assessment
+                        * ``classic``: classic calibration
+                        * ``classicp``: classic+ calibration
+                        * ``varexplocp``: variables exploration classic+
+                        * ``montecarlo``: Monte Carlo
+                        * ``ga: genetic``: algorithms
+                        * ``evalscores``: evaluate all scores
+                        * ``onlyvalues``: evaluate all scores
+                        * ``onlydates``: evaluate all scores
+
 --cp-resizing-iteration  Classic plus: resizing iteration
 --cp-lat-step  Classic plus: steps in latitudes for the relevance map
 --cp-lon-step  Classic plus: steps in longitudes for the relevance map
 --cp-proceed-sequentially  Classic plus: proceed sequentially
 --ve-step  Variables exploration: step to process
 --mc-runs-nb  Monte Carlo: number of runs
---ga-*  All GAs options are described on the `genetic algorithms`_ page
+--ga-  All GAs options are described on the :ref:`genetic algorithms <genetic-algorithms>` page
 -n, --threads-nb=n  Number of threads to use
 -l, --local  Work in local directory
 -s, --silent  Silent mode
