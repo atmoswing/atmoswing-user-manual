@@ -67,14 +67,14 @@ The Downscaler also has a command line interface. The options are as follows:
 
 -h, --help  Displays the help of command line options
 -v, --version  Displays the software version
--r, --run-number=nb  A given run number
--f, --file-parameters=file  File containing the downscaling parameters
---predictand-db=file  The predictand DB
---station-id=id  The predictand station ID
---dir-archive-predictors=dir  The archive predictors directory
---dir-scenario-predictors=dir  The scenario predictors directory
---downscaling-method=classic  Choice of the downscaling method (classic: classic downscaling)
--n, --threads-nb=n  Number of threads to use
+-r, --run-number=<nb>  A given run number
+-f, --file-parameters=<file>  File containing the downscaling parameters
+--predictand-db=<file>  The predictand DB
+--station-id=<id>  The predictand station ID
+--dir-archive-predictors=<dir>  The archive predictors directory
+--dir-scenario-predictors=<dir>  The scenario predictors directory
+--downscaling-method=<method>  Choice of the downscaling method (classic: classic downscaling)
+-n, --threads-nb=<n>  Number of threads to use
 -s, --silent  Silent mode
 -l, --local  Work in local directory
--l, --log-level=n  Set the log level (0: minimum, 1: errors, 2: warnings (default), 3: verbose)
+-l, --log-level=<n>  Set the log level (0: minimum, 1: errors, 2: warnings (default), 3: verbose)
