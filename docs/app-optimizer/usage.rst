@@ -29,17 +29,74 @@ The Optimizer produces different files:
 * A NetCDF file containing the performance scores (Scores...nc) both for the calibration and validation periods.
 
 
+Calibration methods
+-------------------
+
+The Optimizer provides different approaches listed below.
+
+Evaluation only approaches
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+These methods do not seek to improve the parameters of the AM. They allow some assessments using the provided parameters.
+
+* **Single assessment**: This approach processes the AM as described in the provided parameters file and assesses the defined score.
+* **Evaluation of all scores**: Similar as above, but assesses all the implemented scores.
+* **Only predictand values**: Does not process a performance score, but processes the AM and save the analog values into a file.
+* **Only analog dates (and criteria)**: Does not process a performance score, neither assign predictand values to the analog dates. It only saves the analog dates identified by the defined AM into a file.
+
+Based on the classic calibration
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The classic calibration is detailed on :ref:`another page<classic-calibration>`.
+
+* **Classic calibration**: The `classic calibration`_
+* **Classic+ calibration**: A variant of the classic calibration with some improvements (:ref:`also detailed here<classic-calibration>`).
+* **Variables exploration Classic+**: Using the classic+ calibration to systematically explore a list of variables / levels / hours.
+
+Global optimization
+~~~~~~~~~~~~~~~~~~~
+
+* **Genetic algorithms**: The optimization by means of `genetic algorithms`_.
+
+Random exploration of the parameters space
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* **Monte-Carlo simulations**: An exploration of the parameters space by means of Monte-Carlo simulations. These simulations were found to be limited in terms of ability to find reasonnable parameters sets for even moderately AMs.
+
+
 Graphical user interface
 ------------------------
 
 The main interface of the Optimizer is as follows.
 
-
-
-
-
 .. image:: img/frame-optimizer-controls.png
    :align: center
+
+
+The toolbar allows the following actions:
+
+- |icon_run| Run the forecast for the chosen date and time.
+- |icon_stop| Stop the current calculations.
+- |icon_preferences| Define the preferences.
+
+.. |icon_run| image:: img/icon_run.png
+   :align: middle
+   
+.. |icon_stop| image:: img/icon_stop.png
+   :align: middle
+
+.. |icon_preferences| image:: img/icon_preferences.png
+   :align: middle
+   
+You need to provide:
+
+* The `calibration method <calibration-methods>`_ to use
+* :ref:`The parameters file <parameters-file-optimizer>`
+* The predictand DB
+* The directory containing the predictors for the archive period
+* The directory to save the results
+
+
 
 .. image:: img/frame-optimizer-options-calib.png
    :align: center
@@ -47,9 +104,29 @@ The main interface of the Optimizer is as follows.
 .. image:: img/frame-optimizer-options-gas.png
    :align: center
    
-.. image:: img/icon_run.png
-   
-.. image:: img/icon_stop.png
-   
-.. image:: img/icon_preferences.png
-   
+
+
+
+
+
+
+
+
+Command line interface
+----------------------
+
+The Downscaler also has a command line interface. The options are as follows:
+
+-h, --help  Displays the help of command line options
+-v, --version  Displays the software version
+-r, --run-number=nb  A given run number
+-f, --file-parameters=file  File containing the downscaling parameters
+--predictand-db=file  The predictand DB
+--station-id=id  The predictand station ID
+--dir-archive-predictors=dir  The archive predictors directory
+--dir-scenario-predictors=dir  The scenario predictors directory
+--downscaling-method=classic  Choice of the downscaling method (classic: classic downscaling)
+-n, --threads-nb=n  Number of threads to use
+-s, --silent  Silent mode
+-l, --local  Work in local directory
+-l, --log-level=n  Set the log level (0: minimum, 1: errors, 2: warnings (default), 3: verbose)
