@@ -137,7 +137,7 @@ The Optimizer also has a command line interface, which is the prefered way of us
 --cp-lon-step=step  Classic plus: steps in longitudes for the relevance map
 --cp-proceed-sequentially  Classic plus: proceed sequentially
 --ve-step=step_nb  Variables exploration: step to process
---mc-runs-nb=n  Monte Carlo: number of runs
+--mc-runs-nb=runs_nb  Monte Carlo: number of runs
 --ga-  All GAs options are described on the :ref:`genetic algorithms <genetic-algorithms>` page
 -n, --threads-nb=n  Number of threads to use
 -l, --local  Work in local directory
