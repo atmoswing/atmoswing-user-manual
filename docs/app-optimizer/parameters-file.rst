@@ -365,3 +365,89 @@ Example:
       </spatial_window>
       <criteria method="array" lock="0">MD, RMSE, S0, S1, S2</criteria>
     </predictor>
+
+
+Full example
+------------
+
+.. code-block:: xml
+
+    <?xml version="1.0" encoding="UTF-8" ?>
+    <atmoswing version="1.0" target="optimizer">
+      <description>
+        <method_id>PD-A1Xo</method_id>
+        <method_id_display>1 level optimized</method_id_display>
+        <specific_tag>CH</specific_tag>
+        <specific_tag_display>1 station</specific_tag_display>
+        <description>1 level optimize</description>
+      </description>
+      <time_properties>
+        <archive_period>
+          <start_year>1981</start_year>
+          <end_year>2010</end_year>
+        </archive_period>
+        <calibration_period>
+          <start_year>1981</start_year>
+          <end_year>2010</end_year>
+        </calibration_period>
+        <validation_period>
+          <years>1985, 1990, 1995, 2000, 2005, 2010</years>
+        </validation_period>
+        <time_step>24</time_step>
+        <time_array_target>
+          <time_array>simple</time_array>
+        </time_array_target>
+        <time_array_analogs>
+          <time_array>days_interval</time_array>
+          <interval_days lock="1">60</interval_days>
+          <exclude_days>30</exclude_days>
+        </time_array_analogs>
+      </time_properties>
+      <analog_dates>
+        <analogs_number lowerlimit="5" upperlimit="150" iteration="1" lock="0"></analogs_number>
+        <predictor>
+          <preload>1</preload>
+          <dataset_id>GenericNetcdf</dataset_id>
+          <data_id method="array" lock="0">pl/r, pl/t, pl/u, pl/v, pl/z, sfa/msl</data_id>
+          <level method="array" lock="0">0, 300, 500, 850, 1000</level>
+          <time lowerlimit="0" upperlimit="30" iteration="6" lock="0"></time>
+          <spatial_window>
+            <x_min lowerlimit="-10.5" upperlimit="10.5" iteration="0.75" lock="0"></x_min>
+            <x_points_nb lowerlimit="1" upperlimit="40" iteration="1" lock="0"></x_points_nb>
+            <x_step>0.75</x_step>
+            <y_min lowerlimit="35.25" upperlimit="50.25" iteration="0.75" lock="0"></y_min>
+            <y_points_nb lowerlimit="1" upperlimit="30" iteration="1" lock="0"></y_points_nb>
+            <y_step>0.75</y_step>
+          </spatial_window>
+          <criteria method="array" lock="0">MD, RMSE, S0, S1, S2</criteria>
+        </predictor>
+      </analog_dates>
+      <analog_dates>
+        <analogs_number lowerlimit="5" upperlimit="80" iteration="1" lock="0"></analogs_number>
+        <predictor>
+          <preload>1</preload>
+          <dataset_id>GenericNetcdf</dataset_id>
+          <data_id method="array" lock="0">pl/r, pl/t, pl/u, pl/v, pl/z, sfa/msl</data_id>
+          <level method="array" lock="0">0, 300, 500, 850, 1000</level>
+          <time lowerlimit="0" upperlimit="30" iteration="6" lock="0"></time>
+          <spatial_window>
+            <x_min lowerlimit="-10.5" upperlimit="10.5" iteration="0.75" lock="0"></x_min>
+            <x_points_nb lowerlimit="1" upperlimit="40" iteration="1" lock="0"></x_points_nb>
+            <x_step>0.75</x_step>
+            <y_min lowerlimit="35.25" upperlimit="50.25" iteration="0.75" lock="0"></y_min>
+            <y_points_nb lowerlimit="1" upperlimit="30" iteration="1" lock="0"></y_points_nb>
+            <y_step>0.75</y_step>
+          </spatial_window>
+          <criteria method="array" lock="0">MD, RMSE, S0, S1, S2</criteria>
+        </predictor>
+      </analog_dates>
+      <analog_values>
+        <predictand>
+          <station_id>0</station_id>
+        </predictand>
+      </analog_values>
+      <evaluation>
+        <score>CRPS</score>
+        <time_array>simple</time_array>
+      </evaluation>
+    </atmoswing>
