@@ -34,7 +34,7 @@ Calibration methods
 
 The Optimizer provides different approaches listed below.
 
-Evaluation only approaches
+Evaluation-only approaches
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 These methods do not seek to improve the parameters of the AM. They allow some assessments using the provided parameters.
@@ -49,14 +49,14 @@ Based on the classic calibration
 
 The classic calibration is detailed on :ref:`another page<classic-calibration>`.
 
-* **Classic calibration**: The `classic calibration`_
+* **Classic calibration**: The :ref:`classic calibration <classic-calibration>`
 * **Classic+ calibration**: A variant of the classic calibration with some improvements (:ref:`also detailed here<classic-calibration>`).
 * **Variables exploration Classic+**: Using the classic+ calibration to systematically explore a list of variables / levels / hours.
 
 Global optimization
 ~~~~~~~~~~~~~~~~~~~
 
-* **Genetic algorithms**: The optimization by means of `genetic algorithms`_.
+* **Genetic algorithms**: The optimization by means of :ref:`genetic algorithms <genetic-algorithms>`.
 
 Random exploration of the parameters space
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
