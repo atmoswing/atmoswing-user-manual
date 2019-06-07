@@ -1,3 +1,5 @@
+.. _genetic-algorithms:
+
 Genetic algorithms
 ==================
 
