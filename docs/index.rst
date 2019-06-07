@@ -27,7 +27,6 @@ AtmoSwing is an open source software written in C++ that implements AMs in a fle
    app-viewer
    app-downscaler
    app-optimizer
-   faq
 
 
 Indices and tables
