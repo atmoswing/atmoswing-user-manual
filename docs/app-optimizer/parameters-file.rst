@@ -45,6 +45,47 @@ Or providing a list of years (distributed on the calibration period):
 
 * ``<years>``: List of years (ex: 1985, 1990, 1995, 2000, 2005, 2010)
 
+Content 'evaluation'
+--------------------
+
+The Optimizer has a ``<evaluation>`` node to specify the score to use and other characteristics:
+
+.. code-block:: xml
+
+  <evaluation>
+    <score>CRPS</score>
+    <time_array>simple</time_array>
+  </evaluation>
+  
+Element 'score'
+~~~~~~~~~~~~~~~
+
+You must provide the name of the score to use. Options are:
+
+* CRPSS (Continuous ranked probability skill score): ``CRPSS``
+* CRPS (Continuous ranked probability score): ``CRPS``
+* CRPS accuracy: ``CRPSaccuracy``
+* CRPS sharpness: ``CRPSsharpness``
+* CRPS reliability: ``CRPSreliability``
+* CRPS potential: ``CRPSpotential``
+* Absolute difference of the frequency of null values: ``DF0``
+* Proportion correct (contingency table): ``PC``
+* Threat score (contingency table): ``TS``
+* Bias (contingency table): ``BIAS``
+* False alarm ratio (contingency table): ``FARA``
+* Hit rate (contingency table): ``H``
+* False alarm rate (contingency table): ``F``
+* Heidke skill score (contingency table): ``HSS``
+* Pierce skill score (contingency table): ``PSS``
+* Gilbert skill score (contingency table): ``GSS``
+* Mean absolute error: ``MAE``
+* Mean squared error: ``MSE``
+* Root mean squared error: ``RMSE``
+* Brier score: ``BS``
+* Brier skill score: ``BSS``
+* Stable equitable error in probability space: ``SEEPS``
+* The Verification Rank Histogram (Talagrand Diagram): ``RankHistogram``
+* Reliability of the Verification Rank Histogram (Talagrand Diagram): ``RankHistogramReliability``
 
 Calibration parameters file
 ===========================
@@ -103,7 +144,13 @@ Example:
         <y_points_nb min="2" max="90" step="1" method="minmax"></y_points_nb>
         <y_step>0.25</y_step>
       </spatial_window>
-      
+
+Full example
+------------
+
+.. code-block:: xml
+
+
       
 Optimization parameters file
 ============================
