@@ -120,6 +120,7 @@ The Optimizer also has a command line interface, which is the prefered way of us
 --dir-predictors=<dir>  The predictors directory
 --skip-valid  Skip the validation calculation
 --no-duplicate-dates  Do not allow to keep several times the same analog dates (e.g. for ensembles)
+--dump-predictor-data   Dump predictor data to binary files to reduce RAM usage
 --calibration-method=<method>  Choice of the calibration method: 
 
                         * ``single``: single assessment
