@@ -18,7 +18,7 @@ AtmoSwing is open-source software written in C++ that implements AMs in a flexib
 
 :ref:`The Optimizer <app-optimizer>` implements different optimization techniques, such as a semiautomatic sequential approach, Monte Carlo simulations, and a global optimization technique, using genetic algorithms. Establishing a statistical relationship between predictors and predictands is computationally intensive because it requires numerous assessments over decades. To this end, the code was highly optimized for computing efficiency, is parallelized (using multiple threads), and scales well on a Linux cluster. This procedure is only required to establish the statistical relationship, which can then be used for forecasting or downscaling at a low computing cost.
 
-Reference article: `Horton, P.: AtmoSwing: Analog Technique Model for Statistical Weather forecastING and downscalING (v2.1.0), Geosci. Model Dev., 12, 2915-2940, https://doi.org/10.5194/gmd-12-2915-2019, 2019 <https://www.geosci-model-dev.net/12/2915/2019/gmd-12-2915-2019.html>`_.
+**Reference article**: `Horton, P.: AtmoSwing: Analog Technique Model for Statistical Weather forecastING and downscalING (v2.1.0), Geosci. Model Dev., 12, 2915-2940, https://doi.org/10.5194/gmd-12-2915-2019, 2019 <https://www.geosci-model-dev.net/12/2915/2019/gmd-12-2915-2019.html>`_.
 
 
 .. toctree::
