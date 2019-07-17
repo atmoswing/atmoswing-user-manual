@@ -5,6 +5,33 @@ Release notes
 
 The following release notes list the main changes to AtmoSwing. Many small changes are not listed and can be tracked down in the commits.
 
+v2.1.1
+------
+17.07.2019
+
+**Added**
+
+* Addition of predictor data dumping to binary files (to reduce RAM usage).
+* Allow loading from dumped predictor data (and keep in RAM).
+* Option for replacing NaNs by -9999 (save processing time).
+* Addition of a bash script to install libraries on a server.
+
+**Changed**
+
+* Refactoring of the CUDA implementation.
+* Updating GFS urls.
+* Improving Eigen usage.
+* Testing downscaling parameters.
+* Speeding up Grib files loading.
+* Adding information to error messages.
+
+**Fixed**
+
+* Fixing Viewer issues to find the forecast files.
+* Fixing missing node (on_mean) when parsing xml files for the calibrator.
+* Fixing a log path issue.
+* Fixing a memory leak due to ecCodes index not deleted.
+* Fixing a bug when interval days are not used.
 
 v2.1.0
 ------
