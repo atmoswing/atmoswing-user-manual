@@ -5,10 +5,11 @@ Reanalyses
 
 A description of the different reanalyses and the assessment of the impact of the dataset selection are presented in [Horton2018]_. AtmoSwing can read the following reanalyses (with the corresponding id to use):
 
-* NCEP/NCAR Reanalysis 1: ``NCEP_Reanalysis_v1``
-* NCEP/DOE Reanalysis 1: ``NCEP_Reanalysis_v2``
+* NCEP/NCAR Reanalysis 1: ``NCEP_R1``
+* NCEP/DOE Reanalysis 1: ``NCEP_R2``
 * NCEP CFSR original Grib files: ``NCEP_CFSR``
 * NCEP CFSR `subset from NCAR/UCAR <http://rda.ucar.edu/datasets/ds093.0/index.html#!cgi-bin/datasets/getSubset?dsnum=093.0&action=customize&_da=y>`_ as netcdf files: ``NCEP_CFSR_subset``
+* ECMWF ERA5: ``ECMWF_ERA5``
 * ECMWF ERA-interim: ``ECMWF_ERA_interim``
 * ECMWF ERA 20th Century: ``ECMWF_ERA_20C``
 * ECMWF Coupled ERA 20th Century: ``ECMWF_CERA_20C``
