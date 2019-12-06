@@ -5,6 +5,36 @@ Release notes
 
 The following release notes list the main changes to AtmoSwing. Many small changes are not listed and can be tracked down in the commits.
 
+v2.1.2
+------
+08.12.2019
+
+**Added**
+
+* Efficient GPU processing with CUDA.
+* Ability to fully resume optimizations with GAs operators values.
+* Parameters that were already assessed during the optimization are not assessed again.
+* Parameters that are close to other parameters with poor skills are not assessed again.
+* Addition of the Google benchmark framework for testing CUDA implementation.
+
+**Changed**
+
+* The optimization workflow has been simplified.
+* Check for previous optimization convergence before loading data.
+* Transitioning to Google code style.
+* The dataset "NCEP_Reanalysis_v1" has been renamed to "NCEP_R1".
+* The dataset "NCEP_Reanalysis_v2" has been renamed to "NCEP_R2".
+* Some redundant tests have been removed.
+* Addition of tests for the datasets.
+* Changes in some libraries versions.
+
+**Fixed**
+
+* Error with weights in optimization initialization (when all weights = 0).
+* Optimization resuming might have started from an older file.
+* Some (rarely used) variables definition in some reanalyses were wrong.
+* Fixed an issue with latitudes axis when resampling.
+
 v2.1.1
 ------
 17.07.2019
