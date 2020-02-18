@@ -5,11 +5,6 @@ Verification scores
 
 The Optimizer has different verification scores implemented:
 
-two different kinds of parameters files. One type for the classic(+) calibration (see `calibration parameters file`_) and another for the optimization (GAs and Monte-Carlo simulations; see `optimization parameters file`_). However, some attributes are similar for both of them.
-
-
-You must provide the name of the score to use. Options are:
-
 * CRPSS (Continuous ranked probability skill score): ``CRPSS``
 * CRPS (Continuous ranked probability score): ``CRPS``
 * CRPS accuracy: ``CRPSaccuracy``

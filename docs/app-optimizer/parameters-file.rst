@@ -62,7 +62,7 @@ The Optimizer has a ``<evaluation>`` node to specify the score to use and other 
 Element 'score'
 ^^^^^^^^^^^^^^^
 
-You must provide the name of the score to use. Options are provided here: `verification scores`_
+You must provide the name of the score to use. Options are provided here: :ref:`verification scores<verification-scores>`
 
 Element 'time_array'
 ^^^^^^^^^^^^^^^^^^^^
