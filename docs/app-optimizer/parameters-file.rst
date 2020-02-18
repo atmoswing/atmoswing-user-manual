@@ -5,14 +5,16 @@ Optimizer's parameters file
 
 The Optimizer has two different kinds of parameters files. One type for the classic(+) calibration (see `calibration parameters file`_) and another for the optimization (GAs and Monte-Carlo simulations; see `optimization parameters file`_). However, some attributes are similar for both of them.
 
+Shared properties
+-----------------
 
 Content 'time_properties'
--------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The content of ``<time_properties>`` is globally similar to the standard parameters file, to the exception of a ``<calibration_period>`` and a ``<validation_period>`` element.
 
 Element 'calibration_period'
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The content of ``<calibration_period>`` defines the target period on which the method is trained. It works as the ``<archive_period>`` element. Two options are possible:
 
@@ -27,7 +29,7 @@ Or only providing the years:
 * ``<end_year>``: End of the calibration period (ex: 2010)
 
 Element 'validation_period'
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The content of ``<validation_period>`` defines the independent period that is reserved for validation. 
 
@@ -46,7 +48,7 @@ Or providing a list of years (distributed on the calibration period):
 * ``<years>``: List of years (ex: 1985, 1990, 1995, 2000, 2005, 2010)
 
 Content 'evaluation'
---------------------
+~~~~~~~~~~~~~~~~~~~~
 
 The Optimizer has a ``<evaluation>`` node to specify the score to use and other characteristics:
 
@@ -58,42 +60,17 @@ The Optimizer has a ``<evaluation>`` node to specify the score to use and other 
   </evaluation>
   
 Element 'score'
-~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^
 
-You must provide the name of the score to use. Options are:
-
-* CRPSS (Continuous ranked probability skill score): ``CRPSS``
-* CRPS (Continuous ranked probability score): ``CRPS``
-* CRPS accuracy: ``CRPSaccuracy``
-* CRPS sharpness: ``CRPSsharpness``
-* CRPS reliability: ``CRPSreliability``
-* CRPS potential: ``CRPSpotential``
-* Absolute difference of the frequency of null values: ``DF0``
-* Proportion correct (contingency table): ``PC``
-* Threat score (contingency table): ``TS``
-* Bias (contingency table): ``BIAS``
-* False alarm ratio (contingency table): ``FARA``
-* Hit rate (contingency table): ``H``
-* False alarm rate (contingency table): ``F``
-* Heidke skill score (contingency table): ``HSS``
-* Pierce skill score (contingency table): ``PSS``
-* Gilbert skill score (contingency table): ``GSS``
-* Mean absolute error: ``MAE``
-* Mean squared error: ``MSE``
-* Root mean squared error: ``RMSE``
-* Brier score: ``BS``
-* Brier skill score: ``BSS``
-* Stable equitable error in probability space: ``SEEPS``
-* The Verification Rank Histogram (Talagrand Diagram): ``RankHistogram``
-* Reliability of the Verification Rank Histogram (Talagrand Diagram): ``RankHistogramReliability``
+You must provide the name of the score to use. Options are provided here: `verification scores`_
 
 Element 'time_array'
-~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^
 
 The ``<time_array>`` element must be provided. It should however be set to ``simple``.
 
 Other optional properties
-~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Other options can be added to specify how the score should be processed.
 
@@ -102,7 +79,7 @@ Other options can be added to specify how the score should be processed.
 * ``<on_mean>1</on_mean>``: Specifies to process the score on the mean of the analogs rather that a quantile (see above). For example, when used with the score ``MSE``. The value 1 has no meaning other than "true".
 
 Calibration parameters file
-===========================
+---------------------------
 
 The calibration parameters file defines the parameters to be calibrated and the range of the authorized values. There are different methods possible to define these options:
 
@@ -121,7 +98,7 @@ The calibration parameters file defines the parameters to be calibrated and the 
 * ``fixed``: should not be calibrated even if ``min`` and ``max`` values are defined. You then need to provide a value for the parameter.
 
 Root node
----------
+~~~~~~~~~
 
 The ``target`` property of the root node needs to be ``calibrator``.
 
@@ -130,12 +107,12 @@ The ``target`` property of the root node needs to be ``calibrator``.
     <atmoswing version="1.0" target="calibrator">
 
 Content 'analog_dates'
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~
 
 The content of ``<analog_dates>`` is mostly similar to the basic parameters file structure, but the parameters to calibrate need to be specified.
 
 Element ‘analogs_number’
-~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 Example:
 
@@ -144,7 +121,7 @@ Example:
       <analogs_number min="10" max="100" step="5" method="minmax"></analogs_number>
 
 Element ‘spatial_window’
-~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 Example:
 
@@ -160,7 +137,7 @@ Example:
       </spatial_window>
 
 Full example
-------------
+~~~~~~~~~~~~
 
 .. code-block:: xml
 
@@ -296,7 +273,7 @@ Full example
 
       
 Optimization parameters file
-============================
+----------------------------
 
 The optimization parameters file defines the parameters to be optimized and the range of the authorized values. There are different aspects to this:
 
@@ -319,7 +296,7 @@ The optimization parameters file defines the parameters to be optimized and the 
     <time lowerlimit="0" upperlimit="30" iteration="6" lock="1">18</time>
     
 Root node
----------
+~~~~~~~~~
 
 The ``target`` property of the root node needs to be ``optimizer``.
 
@@ -328,13 +305,13 @@ The ``target`` property of the root node needs to be ``optimizer``.
     <atmoswing version="1.0" target="optimizer">
 
 Content 'analog_dates'
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~
 
 The content of ``<analog_dates>`` is mostly similar to the basic parameters file structure, but the parameters to calibrate need to be specified.
 
 
 Element ‘analogs_number’
-~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 Example:
 
@@ -343,7 +320,7 @@ Example:
       <analogs_number lowerlimit="5" upperlimit="80" iteration="1" lock="0"></analogs_number>
 
 Element ‘predictor’
-~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^
 
 Example:
 
@@ -368,7 +345,7 @@ Example:
 
 
 Full example
-------------
+~~~~~~~~~~~~
 
 .. code-block:: xml
 

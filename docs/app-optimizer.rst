@@ -14,5 +14,6 @@ The Optimizer manual is divided into the following topics:
    app-optimizer/classic-calibration
    app-optimizer/genetic-algorithms
    app-optimizer/preferences
+   app-optimizer/verification-scores
    app-optimizer/parameters-file
 
