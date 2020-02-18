@@ -3,7 +3,7 @@
 The Downscaler
 ==============
 
-You will find here the documentation for AtmoSwing Downscaler. This document can also be downloaded as a pdf or epub using the bottom left menu.
+This section contains the documentation for AtmoSwing Downscaler. This document can also be downloaded as a pdf or epub using the bottom left menu.
 
 The Downscaler manual is divided into the following topics:
 
