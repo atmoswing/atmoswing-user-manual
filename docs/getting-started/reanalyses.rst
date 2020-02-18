@@ -15,16 +15,14 @@ A description of the different reanalyses and the assessment of the impact of th
    * Use the original file names (yearly files)
 * ECMWF ERA5: ``ECMWF_ERA5``
    * Use the original variable name in the file name (ex: z for geopotential)
-   * Can be structured as follows:
-      * Single file (ex: z.nc)
-      * Yearly files (ex: z.1998.nc)
-      * Something else, but must be isolated in a directory
+   * Can be structured as a single file (ex: z.nc)
+   * Can be structured as yearly files (ex: z.1998.nc)
+   * Can be structured differently, but must be isolated in a directory.
 * ECMWF ERA-interim: ``ECMWF_ERA_interim``
    * Use the original variable name in the file name (ex: z for geopotential)
-   * Can be structured as follows:
-      * Single file (ex: z.nc)
-      * Yearly files (ex: z.1998.nc)
-      * Something else, but must be isolated in a directory
+   * Can be structured as a single file (ex: z.nc)
+   * Can be structured as yearly files (ex: z.1998.nc)
+   * Can be structured differently, but must be isolated in a directory.
 * ECMWF ERA 20th Century: ``ECMWF_ERA_20C``
    * Must be 1 file per variable with the original variable name in the file name (ex: z.nc)
 * ECMWF Coupled ERA 20th Century: ``ECMWF_CERA_20C``
