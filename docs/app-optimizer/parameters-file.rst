@@ -3,7 +3,7 @@
 Optimizer's parameters file
 ===========================
 
-The Optimizer has two different kinds of parameters files. One type for the classic(+) calibration (see `calibration parameters file`_) and another for the optimization (GAs and Monte-Carlo simulations; see `optimization parameters file`_). However, some attributes are similar for both of them.
+The Optimizer has two different kinds of parameter files. One type for the classic(+) calibration (see `calibration parameters file`_) and another for the optimization (GAs and Monte-Carlo simulations; see `optimization parameters file`_). However, some attributes are identical for both of them.
 
 Shared properties
 -----------------
@@ -23,7 +23,7 @@ Providing the exact dates:
 * ``<start>``: Start of the calibration period (ex: 01.01.1981)
 * ``<end>``: End of the calibration period (ex: 31.12.2010)
 
-Or only providing the years:
+Alternatively, only providing the years:
 
 * ``<start_year>``: Start of the calibration period (ex: 1981)
 * ``<end_year>``: End of the calibration period (ex: 2010)
@@ -34,7 +34,7 @@ Element 'validation_period'
 The content of ``<validation_period>`` defines the independent period that is reserved for validation. 
 
 .. warning::
-    The validation period must be covered by the calibration period (to correctly load the required data). AtmoSwing then handles the validation period by excluding it from the calibration period. Once again: the validation period must not provide dates that is not covered by the calibration period.
+    The validation period must be covered by the calibration period (to correctly load the required data). AtmoSwing then handles the validation period by excluding it from the calibration period. Once again: the validation period must not provide dates that are not covered by the calibration period.
     
 Two options are possible:
 
@@ -43,7 +43,7 @@ Providing a range of years:
 * ``<start_year>``: Start of the validation period (ex: 2001)
 * ``<end_year>``: End of the validation period (ex: 2010)
 
-Or providing a list of years (distributed on the calibration period):
+Alternatively, providing a list of years (distributed on the calibration period):
 
 * ``<years>``: List of years (ex: 1985, 1990, 1995, 2000, 2005, 2010)
 
@@ -62,7 +62,7 @@ The Optimizer has a ``<evaluation>`` node to specify the score to use and other 
 Element 'score'
 ^^^^^^^^^^^^^^^
 
-You must provide the name of the score to use. Options are provided here: :ref:`verification scores<verification-scores>`
+The name of the score to use must be provided. Options are listed here: :ref:`verification scores<verification-scores>`
 
 Element 'time_array'
 ^^^^^^^^^^^^^^^^^^^^
@@ -74,7 +74,7 @@ Other optional properties
 
 Other options can be added to specify how the score should be processed.
 
-* ``<threshold>``: Threshold to use for the processing of scores relying on thresholds exceedence, such as the contingency table. Example: ``<threshold>0.5</threshold>``
+* ``<threshold>``: Threshold to use for the processing of scores relying on thresholds exceedance, such as the contingency table. Example: ``<threshold>0.5</threshold>``
 * ``<quantile>``: Quantile to use for the processing of scores relying on a single value rather than the distribution. Example: ``<quantile>0.9</quantile>``
 * ``<on_mean>1</on_mean>``: Specifies to process the score on the mean of the analogs rather that a quantile (see above). For example, when used with the score ``MSE``. The value 1 has no meaning other than "true".
 
@@ -95,7 +95,7 @@ The calibration parameters file defines the parameters to be calibrated and the 
 
     <station_id method="array">1,5,6,12,35</station_id>
 
-* ``fixed``: should not be calibrated even if ``min`` and ``max`` values are defined. You then need to provide a value for the parameter.
+* ``fixed``: should not be calibrated even if ``min`` and ``max`` values are defined. A value for the parameter must then be provided.
 
 Root node
 ~~~~~~~~~
@@ -277,7 +277,7 @@ Optimization parameters file
 
 The optimization parameters file defines the parameters to be optimized and the range of the authorized values. There are different aspects to this:
 
-* Defining the range of numerical values: you must provide a ``lowerlimit`` value of the parameter, an ``upperlimit`` value and an ``iteration`` value. For example:
+* Defining the range of numerical values: a ``lowerlimit`` value of the parameter, an ``upperlimit`` value, and an ``iteration`` value must be provided. For example:
 
 .. code-block:: xml
 
@@ -289,7 +289,7 @@ The optimization parameters file defines the parameters to be optimized and the 
 
     <level method="array" lock="0">0, 300, 500, 850, 1000</level>
 
-* The ``lock`` property allows to fix a value that will not be optimized even if ``lowerlimit`` and ``upperlimit`` values are defined for example. You then need to provide a value for the parameter. For example:
+* The ``lock`` property allows to fix a value that will not be optimized even if ``lowerlimit`` and ``upperlimit`` values are defined, for example. You then need to provide a value for the parameter. For example:
 
 .. code-block:: xml
 

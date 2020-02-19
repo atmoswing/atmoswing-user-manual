@@ -34,7 +34,7 @@ Content 'analog_dates'
 
 The content of ``<analog_dates>`` is mostly similar to the basic parameters file structure. The differences are:
 
-* ``<analogs_number>``: The number of analogs to extract is not a unique number as in the generic parameters file, but one value has to be provided for each lead time. The number of analogs to extract can thus increase with the lead time to take into account the increasing uncertainty of the NWP outputs.
+* ``<analogs_number>``: The number of analogs to extract is not a single number as in the generic parameters file, but one value has to be provided for each lead time. The number of analogs to extract can thus increase with the lead time to take into account the increasing uncertainty of the NWP outputs.
 
 For the operational forecasting, two predictor datasets are needed: the NWP outputs and the archive dataset:
 

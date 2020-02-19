@@ -1,10 +1,10 @@
 Usage
 =====
 
-The Downscaler allows the AMs to be used in a climatic context, either for climate reconstruction or for climate change impact studies. When used for future climate impact, the user must pay close attention to the selected predictors, so that they are able to represent the climate change signal. This is a relatively new field of application of AMs.
+The Downscaler allows the AMs to be used in a climatic context, either for climate reconstruction or for climate change impact studies. When used for future climate impact, the user must pay close attention to the selected predictors, so that they can represent the climate change signal. It is a relatively new field of application of AMs.
 
 .. warning::
-    The Downscaler is the last addition to AtmoSwing and has therefore not been tested/used as intensively as the other tools. You might encounter some bugs. Please report them as `GitHub issues <https://github.com/atmoswing/atmoswing/issues>`_ or contact directly the developer.
+    The Downscaler is the last addition to AtmoSwing and has therefore not been tested/used as intensively as the other tools. Some bugs might be encountered. Please report them as `GitHub issues <https://github.com/atmoswing/atmoswing/issues>`_ or contact the developer directly.
 
 Requirements
 ------------
@@ -25,7 +25,7 @@ The Downscaler produces compressed **NetCDF files** containing:
 * The analog dates
 * The values of the analogy criteria
 * The target dates
-* Some reference values (e.g. precipitation for different return periods)
+* Some reference values (e.g., precipitation for different return periods)
 * Some station metadata (id, name, coordinates, height)
 
 Graphical user interface
@@ -51,7 +51,7 @@ The toolbar allows the following actions:
 .. |icon_preferences| image:: img/icon_preferences.png
    :align: middle
    
-You need to provide:
+What is needed:
 
 * :ref:`The parameters file for downscaling <parameters-file-downscaler>`
 * The predictand DB

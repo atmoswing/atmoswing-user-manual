@@ -1,12 +1,12 @@
 Usage
 =====
 
-The Viewer relies on `workspaces`_ (defined in files), where the path to the forecast files is specified as well as the GIS layers and other display options. It is thus possible to easily change from one region to another.
+The Viewer relies on `workspaces`_ (defined in files), where the path to the forecast files is specified as well as the GIS layers and other display options. It is thus possible to quickly change from one region to another.
 
 For a given region, the forecasts can be separated/gathered based on an :ref:`identifier specified in the parameters files. <parameters-file>` (``<method_id>``). The Viewer will manage this information as follows:
 
-* ``<method_id>``: all forecast files with the same ``<method_id>`` will be aggregated in the Viewer and labelled according to ``<method_id_display>``.
-* ``<specific_tag>``: all subregion-specific methods (defined by ``<specific_tag>`` and labelled according to ``<specific_tag_display>``) but having the same ``<method_id>`` will be listed under the same heading. These specific forecasts for a subregion/basin are defined by specific parameters, and therefore have dates that may differ from other subregions. When one of these subregions is selected in the Viewer, the forecast for that specific method is displayed and the precipitation values for the other subregions (but for the same method) are grayed-out. When the header of the list is selected (i.e. the method), a summary of the optimal forecasts for each subregion is displayed (i.e. with analog dates that may differ from one subregion to another).
+* ``<method_id>``: all forecast files with the same ``<method_id>`` will be aggregated in the Viewer and labeled according to ``<method_id_display>``.
+* ``<specific_tag>``: all subregion-specific methods (defined by ``<specific_tag>`` and labelled according to ``<specific_tag_display>``) but having the same ``<method_id>`` will be listed under the same heading. These specific forecasts for a subregion/basin are defined by specific parameters, and therefore have dates that may differ from other subregions. When one of these subregions is selected in the Viewer, the forecast for that specific method is displayed and the precipitation values for the other subregions (but for the same method) are grayed-out. When the header of the list is selected (i.e., the method), a summary of the optimal forecasts for each subregion is displayed (i.e., with analog dates that may differ from one subregion to another).
 
 Main interface
 --------------
@@ -67,7 +67,7 @@ It is possible to open |icon_open_s| several forecast files, but they must have 
    :scale: 75
    :align: middle
 
-The first visualization is a summary of the next lead times (Figure below). At the location of each station a circular band is displayed with one box per lead time. The colours assigned to each slice illustrate the expected value for the lead time in question. This representation provides a quick overview of the coming days and makes it easy to identify a possible event. The same map can also be displayed for a specific lead time (Figure above). The choice of the lead time is made using the cursor above the map.
+The first visualization is a summary of the next lead times (Figure below). At the location of each station, a circular band is displayed with one box per lead time. The colors assigned to each slice illustrate the expected value for the lead time in question. This representation provides a quick overview of the coming days and makes it easy to identify a possible event. The same map can also be displayed for a specific lead time (Figure above). The choice of the lead time is made using the cursor above the map.
 
 .. image:: img/frame-viewer-rings.png
    :align: center
@@ -78,12 +78,12 @@ Sidebar
 
 The sidebar on the left-hand side of the map provides some information and controls.
 
-**Forecasts**: Choice of method and its representation. All open methods are displayed in the upper box. The lower left box changes the color scale, and the lower right one offers the choice of the quantile to display (20%, 60% or 90%).
+**Forecasts**: Choice of method and its representation. All open methods are displayed in the upper box. The lower left box changes the color scale, and the lower right one offers the choice of the quantile to display (20%, 60%, or 90%).
 
 .. image:: img/panel-forecasts.png
    :align: center
    
-**GIS layers**: Display options for the opened GIS layers (right click). It is possible to change the following properties of the different layers, if available:
+**GIS layers**: Display options for the opened GIS layers (right-click). It is possible to change the following properties of the different layers, if available:
 
 * Visibility - whether the layer is visible or not.
 * Transparency - 0% is opaque and 100% is fully transparent.
@@ -98,7 +98,7 @@ The sidebar on the left-hand side of the map provides some information and contr
 .. image:: img/panel-alarms.png
    :align: center
 
-**Station selection**: Select the station to display the time series. Alternative to selection on the map.
+**Station selection**: Select the station to display the time series. An alternative to selection on the map.
 
 .. image:: img/panel-stations.png
    :align: center
@@ -114,12 +114,12 @@ Display of the time series
 
 When a station is selected (on the map or in the drop-down list on the sidebar), the graph of the expected time series is displayed (Figure below). This graph corresponds to the selected method when clicking on the station. The display options (in the upper left panel) are as follows:
 
-- The 3 classical quantiles (20%, 60%, 90%) in the form of thick blue lines.
+- The three classical quantiles (20%, 60%, 90%) in the form of thick blue lines.
 - Every tenth of a quantile as a grey surface
-- All analogues in the form of small grey crosses
-- The 10 best analogues as yellow - orange - red crosses. The colors are proportional to the rows of the analogs. Red is for the best analog and yellow for the 10th.
-- The 5 best analogues according to the same principle.
-- The value for a 10 years return period in the form of a red line.
+- All analogs in the form of small grey crosses
+- The ten best analogs as yellow - orange - red crosses. The colors are proportional to the rows of the analogs. Red is for the best analog and yellow for the 10th.
+- The five best analogs according to the same principle.
+- The value for a ten years return period in the form of a red line.
 - The values of different return periods.
 - Traces of the previous forecasts.
 
@@ -132,12 +132,12 @@ The lower left panel is the list of the previous forecasts. These are automatica
 Display of the distributions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Rainfall distributions are accessible via the |icon_frame_distributions_s| button on the toolbar. It allows to plot the distribution of all analogues comparatively to the best 5 or 10 (Figure below). The display options are similar to those of the time series (previous section). The method, station and lead time must be selected in the upper part of the window.
+Rainfall distributions are accessible via the |icon_frame_distributions_s| button on the toolbar. It allows plotting the distribution of all analogs comparatively to the best 5 or 10 (Figure below). The display options are similar to those of the time series (previous section). The method, station, and lead time must be selected in the upper part of the window.
 
 .. image:: img/frame-plot-precip-distrib.png
    :align: center
 
-The distribution of the analogy criterion is also available in the same window through the tab located above the graph (Figure below). This distribution makes it possible to identify possible discontinuities in the values of the criteria and thus to increase the confidence into the best analogues.
+The distribution of the analogy criterion is also available in the same window through the tab located above the graph (Figure below). This distribution makes it possible to identify possible discontinuities in the values of the criteria and thus to increase the confidence in the best analogs.
 
 .. image:: img/frame-plot-criteria-distrib.png
    :align: center
@@ -152,7 +152,7 @@ The distribution of the analogy criterion is also available in the same window t
 Display of the analog dates
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The details of the analogue dates and their associated criterion and predictand values (Figure below) are available through the |icon_frame_analogs_s| button on the toolbar. The method, station and lead time must be selected in the upper part of the window. It is possible to sort the list by each of the columns by clicking on it. The first click ranks the values in ascending order and the second in descending order.
+The details of the analog dates and their associated criterion and predictand values (Figure below) are available through the |icon_frame_analogs_s| button on the toolbar. The method, station, and lead time must be selected in the upper part of the window. It is possible to sort the list by each of the columns by clicking on it. The first click ranks the values in ascending order and the second in descending order.
 
 .. image:: img/frame-list-analogs.png
    :align: center
@@ -167,9 +167,9 @@ The details of the analogue dates and their associated criterion and predictand 
 Workspaces
 ----------
 
-AtmoSwing Viewer relies on workspaces to allow changing of region or configuration. A workspace is a xml file containing the paths to the GIS layers and their rendering options, as well as the forecast files location and other properties that can be defined in the preferences. 
+AtmoSwing Viewer relies on workspaces to allow changing of region or configuration. A workspace is an xml file containing the paths to the GIS layers and their rendering options, as well as the forecast files location and other properties that can be defined in the preferences. 
 
-From the menu File, you can:
+The menu File allows to:
 
 * Open a workspace
 * Save the workspace
@@ -187,7 +187,7 @@ The base map options are:
 * Custom layers
 * Terrain from Google maps
 * Map from Google maps
-* Map from Openstreetmap
+* Map from OpenStreetMap
 * Map from ArcGIS Mapserver
 * Satellite imagery from Google maps
 * Satellite imagery from VirtualEarth

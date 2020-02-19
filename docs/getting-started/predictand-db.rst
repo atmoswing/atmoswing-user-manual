@@ -3,7 +3,7 @@
 Predictand DB
 =============
 
-The preditand data (e.g. precipitation) must be prepared for use in AtmoSwing. A tool provided along AtmoSwing allows for the 'database' generation. Database generation consists of extracting data from text files and combining them into a NetCDF file.
+The preditand data (e.g., precipitation) must be prepared for use in AtmoSwing. A tool provided along AtmoSwing allows for the 'database' generation. Database generation consists of extracting data from text files and combining them into a NetCDF file.
 
 The interface for generating the precipitation database is accessible through the 'Tools / Build predictand DB' menu from any AtmoSwing software.
 
@@ -33,18 +33,18 @@ The resulting file will contain the raw predictand data, but can also contain tr
 
 Next, a couple of paths must be provided:
 
-* The predictand catalog: `a catalog (xml file) <#predictand-catalog>`_ is required to provide some metadata on the different timeseries.
+* The predictand catalog: `a catalog (xml file) <#predictand-catalog>`_ is required to provide some metadata on the different time series.
 * The predictand data directory: the directoy containing the original predictand files.
 * The file patterns description directory: the directoy containing `files defining the structure <#predictand-file-structure>`_ of the original predictand files.
 * The destination directory: where the resulting file will be saved.
 
-After execution, a NetCDF file containing all the data necessary for the software is created in the chosen directory. This file also includes the station properties and timeseries.
+After execution, a NetCDF file containing all the data necessary for the software is created in the chosen directory. This file also includes the station properties and time series.
 
 
 Transformed data
 ----------------
 
-In addition to the raw predictand data, the resluting NetCDF file can also contain transformed data. The available options depend on the predictand variable. It is important to note that this normalized data will be used for the calibration of the method, but the raw data is used in the Forecaster and the Downscaler.
+In addition to the raw predictand data, the resulting NetCDF file can also contain transformed data. The available options depend on the predictand variable. It is important to note that this normalized data will be used for the calibration of the method, but the raw data is used in the Forecaster and the Downscaler.
 
 Precipitation
 ~~~~~~~~~~~~~
@@ -57,13 +57,13 @@ During the data processing, Gumbel adjustments are automatically made to calcula
 Lightnings
 ~~~~~~~~~~
 
-The lightning data can be transformed using : log10( N + 1 )
+The lightning data can be transformed using: log10( N + 1 )
 
 
 Predictand catalog
 ------------------
 
-The predictand catalog provides some metadata on the predictand timeseries. It is only required to create the predictand database and is not used anymore afterwards. It consists in a xml file such as:
+The predictand catalog provides some metadata on the predictand time series. It is only required to create the predictand database and is not used anymore afterward. It consists of an xml file such as:
 
 .. code-block:: xml
 
@@ -147,7 +147,7 @@ The dataset is described by the following data:
 * ``<nan>``: representation of nan values
 * ``<coordinate_system>``: the coordinate system (ex: EPSG:21781)
 
-Then, every timeseries (named here 'station', even if they are not representing a station) must be detailed under a ``<station>`` tag in the ``<stations>`` list. For every station, the following information can/must be provided:
+Then, every time series (named here 'station', even if they are not representing a station) must be detailed under a ``<station>`` tag in the ``<stations>`` list. For every station, the following information can/must be provided:
 
 * ``<id>``: a unique (for the considered catalog) id (int) to identify the station in AtmoSwing
 * ``<name>``: the name of the station
@@ -157,28 +157,28 @@ Then, every timeseries (named here 'station', even if they are not representing 
 * ``<height>``: the station height (optional)
 * ``<file_name>``: the file name containing the original data
 * ``<file_pattern>``: `the pattern describing the data file structure <#predictand-file-structure>`_
-* ``<start>``: the start of the timeseries DD/MM/YYYY
-* ``<end>``: the end of the timeseries DD/MM/YYYY
+* ``<start>``: the start of the time series DD/MM/YYYY
+* ``<end>``: the end of the time series DD/MM/YYYY
 
 
 Predictand file structure
 -------------------------
 
-It was chosen not to force users to transform their data into a specific format, but to let them describe the structure of the files. This must be done using files describing the structure of the original timeseries. The structure file defines how to read data files and is described in text files. However, a restriction is imposed: a data file must contain only one time series (single station), or structure files must be defined to read a specific column.
+It was chosen not to force users to transform their data into a specific format but to let them describe the structure of the files. It must be done using files describing the structure of the original time series. The structure file defines how to read data files and is described in text files. However, a restriction is imposed: a data file must contain only one time series (single station), or structure files must be defined to read a specific column.
 
 Files can be structured (``<structure_type>``) in two common types:
 
 * Delimited by tabs (``tabsdelimited``)
 * With constant line width (``constantwidth``)
 
-An option (``<parsetime>``) allows to read the date/time entries, or ignore them. Reading this information allows an automatic check of the correct consistency of the dates between what the software thinks it is reading and what it is actually reading. It is therefore recommended to enable this option (``<parse_time>1</parse_time>``).
+An option (``<parsetime>``) allows reading the date/time entries or ignore them. Reading this information allows an automatic check of the correct consistency of the dates between what the software thinks it is reading and what it is actually reading. It is therefore recommended to enable this option (``<parse_time>1</parse_time>``).
 
 Several files are installed with AtmoSwing and can be found in the 'data/ascii_file_patterns' directory, or `online in the repository <https://github.com/atmoswing/atmoswing/tree/master/data/ascii_file_patterns>`_.
 
 Example of the type 'delimited by tabs'
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This type defines structured files in a very simple way, eventually with date entries (year, month, day) and data separated by tabs (see example below). The files contain exactly 2 header lines:
+This type straightforwardly defines structured files, eventually with date entries (year, month, day) and data separated by tabs (see example below). The files contain exactly two header lines:
 
 .. code-block:: text
 

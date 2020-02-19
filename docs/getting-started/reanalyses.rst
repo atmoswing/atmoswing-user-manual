@@ -42,6 +42,10 @@ A description of the different reanalyses and the assessment of the impact of th
 * NOAA Optimum Interpolation Sea Surface Temperature, version 2: ``NOAA_OISST_v2``
    * Use the original file names (single files -- ex: sst_1deg.nc)
 * :ref:`A generic NetCDF dataset <generic-dataset>`: ``GenericNetcdf``
+   * Use the original variable name in the file name (ex: z for geopotential)
+   * Can be structured as a single file (ex: z.nc)
+   * Can be structured as yearly files (ex: z.1998.nc)
+   * Can be structured differently, but must be isolated in a directory.
 
 
 .. [Horton2018] Horton, P., & Brönnimann, S. (2018). Impact of global atmospheric reanalyses on statistical precipitation downscaling. Climate Dynamics. http://doi.org/10.1007/s00382-018-4442-6

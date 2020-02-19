@@ -8,14 +8,14 @@ Versioning scheme
 
 AtmoSwing follows a versioning structure with version numbers as MAJOR.MINOR.PATCH. The rules are the following:
 
-1. MAJOR version: major changes in the overall structure or addition of a new tool,
-2. MINOR version: addition of functionality that might be backwards-incompatible,
-3. PATCH version: backwards-compatible bug fixes and small improvements.
+1. MAJOR version: significant changes in the overall structure or addition of a new tool,
+2. MINOR version: addition of functionality that might be backward-incompatible,
+3. PATCH version: backward-compatible bug fixes and small improvements.
 
 Support Policy
 --------------
 
-When a new version is published, the development of previous versions is not continued, except for LTS (Long Term Support) releases, where bug fixes are provided for 2 years.
+When a new version is published, the development of previous versions is not continued, except for LTS (Long Term Support) releases, where bug fixes are provided for two years.
 
 =======  ==========  =============== 
 Version  Release     Bug Fixes Until

@@ -3,7 +3,7 @@
 Generic dataset
 ===============
 
-Additionally to the multiple reanalyses supported, AtmoSwing allows to use a generic dataset as NetCDF files (``GenericNetcdf``). The files can be organized as follows (AtmoSwing will look for possible matches):
+In addition to the multiple reanalyses supported, AtmoSwing allows using a generic dataset as NetCDF files (``GenericNetcdf``). The files can be organized as follows (AtmoSwing will look for possible matches):
 
 * A single file with the name of the desired predictor variable (ex: rh.nc)
 * Yearly files with the year in the file name
@@ -12,14 +12,14 @@ Additionally to the multiple reanalyses supported, AtmoSwing allows to use a gen
 File structure
 --------------
 
-The file needs to have 4 dimensions:
+The file needs to have four dimensions:
 
 * lat: latitude
 * lon: longitude
 * level: needs to be defined even if there is no level (set to 0 in this case)
 * time: needs to be expressed as Modified Julian Date (``days since 1858-11-17 00:00:00.0 +0:00``)
 
-The generic dataset is different from the other datasets as there is no predefined variables. The name given to the variable must also be used in the xml parameters file.
+The generic dataset is different from the other datasets as there are no predefined variables. The name given to the variable must also be used in the xml parameters file.
 
 Generate generic datasets
 -------------------------
@@ -28,8 +28,8 @@ The `AtmoSwing Python toolbox repository <https://github.com/atmoswing/tools-py>
  
 One must specify:
 
-* ``dir_origin``: the main directory containing the original files
-* ``dir_target``: the main directory to save the resulting files
+* ``dir_origin``: the directory containing the original files
+* ``dir_target``: the directory to save the resulting files
 * ``files_list``: a list of the files to transform containing the following entries: 1) the subdirectory containing the original files (for example ``pressure`` or ``surface_analysis``), 2) the name of the variable in the original files, 3) the name given to the variable in the resulting file.
 
-The scripts and the different modules might need to be modified to suite other input formats or structures.
+The scripts and the different modules might need to be modified to suit other input formats or structures.

@@ -3,7 +3,7 @@
 Parameters file
 ===============
 
-The parameters files are important elements in AtmoSwing as they define the structure of the analog method to use. It is where one defines the datasets, the predictor variables, the number of analogy levels, the spatial windows, etc...  Some elements vary between the Forecaster, the Optimizer and the Downscaler, and thus the target must be specified in the root tag (ex: ``<atmoswing version="1.0" target="optimizer">``).
+The parameters files are essential elements in AtmoSwing as they define the structure of the analog method to use. It is where one defines the datasets, the predictor variables, the number of analogy levels, the spatial windows, etc...  Some elements vary between the Forecaster, the Optimizer, and the Downscaler, and thus the target must be specified in the root tag (ex: ``<atmoswing version="1.0" target="optimizer">``).
 
 The common basic structure is illustrated below for the 2Z-2MI method (first level of analogy on the geopotential height and second on the moisture index) and explained later.
 
@@ -175,7 +175,7 @@ Providing the exact dates:
 * ``<start>``: Start of the archive period (ex: 01.01.1981)
 * ``<end>``: End of the archive period (ex: 31.12.2010)
 
-Or only providing the years:
+Alternatively, only providing the years:
 
 * ``<start_year>``: Start of the archive period (ex: 1962)
 * ``<end_year>``: End of the archive period (ex: 2008)
@@ -183,7 +183,7 @@ Or only providing the years:
 Element 'time_step'
 ~~~~~~~~~~~~~~~~~~~
 
-The ``<time_step>`` is time step of the predictand (ex: 24), and thus of the method
+The ``<time_step>`` is time step of the predictand (ex: 24), and thus of the method.
 
 Element 'time_array_target'
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -202,7 +202,7 @@ The type can be one of the following:
 * ``predictand_thresholds``: Selection of days based on a predictand threshold (ex: days with more than x mm of precipitation)
 * ``Month_to_Month``: Flexible selection of a period from one month to another month (ex: April_to_July, January_to_September, September_to_March)
 
-In case of a selection based on a predictand threshold (``predictand_thresholds``), the following element must be specified:
+In case of a selection based on a predictand threshold (``predictand_thresholds``), the following elements must be specified:
 
 * ``<predictand_serie_name>``: selection of the raw (´´data_raw´´) or normalized data (´´data_normalized´´)
 * ``<predictand_min_threshold>``: Minimum threshold value
@@ -212,11 +212,11 @@ In case of a selection based on a predictand threshold (``predictand_thresholds`
 Element 'time_array_analogs'
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The content of ``<time_array_analogs>`` defines the temporal properties of the analog selection. It is usually defined as a days interval (period of four months centered around the target date) using +-60 days around the target date. When working in a perfect prognosis framework, 30 days around the target date are excluded for the same year as the target date.
+The content of ``<time_array_analogs>`` defines the temporal properties of the analog selection. It is usually defined as a days interval (four months centered around the target date) using +-60 days around the target date. When working in a perfect prognosis framework, 30 days around the target date are excluded for the same year as the target date.
 
 * ``<time_array>``: Type of time selection.
 * ``<interval_days>``: Number of days to select around the target date for every year when using ``days_interval``. Usually: 60
-* ``<exclude_days>``: Number of days to exclude around the target date for the same year. This has to be provided whatever type of time array is selected. Usually: 30
+* ``<exclude_days>``: Number of days to exclude around the target date for the same year. It has to be provided whatever type of time array is selected. Usually: 30
 
 The type can be one of the following:
 
@@ -287,7 +287,7 @@ The tag ``<analogs_number>`` defined the number of analogs to select for the giv
 Element 'predictor'
 ~~~~~~~~~~~~~~~~~~~
 
-The element ``<predictor>`` provides information about the predictor, the spatial window and the criteria to use. Several predictors can be used together in an analogy level and are provided by adding more ``<predictor>`` blocks one after the other. 
+The element ``<predictor>`` provides information about the predictor, the spatial window, and the criteria to use. Several predictors can be used together in an analogy level and are provided by adding more ``<predictor>`` blocks one after the other. 
 
 Example:
 
@@ -337,7 +337,7 @@ The ``<predictor>`` element must define:
 * ``<time>``: Selection of the predictor time (ex: 12 for 12h UTC) 
 * ``<members>``: Number of members to select (optional; only for ensemble datasets) 
 * ``<criteria>``: Criteria to use (ex: S1; :ref:`see the list of criteria<analogy-criteria>`)
-* ``<weight>``: Weight to give to the predictor when averaging the different criteria values from the different predictors of a level of analogy (ex: 0.6). Optional: if not provided, an equal weight is given to all predictors.
+* ``<weight>``: Weight to give to the predictor when averaging the different criteria values from the different predictors of a level of analogy (ex: 0.6). Optional: if not provided, equal weight is given to all predictors.
 * ``<spatial_window>``: The spatial window on which the predictor variable is compared by means on the criterion. The window is defined by its minimum X (``<x_min>``) and Y (``<y_min>``) coordinates, the number of points in the direction of higher values (``<x_points_nb>`` and ``<y_points_nb>``) and the desired resolution (``<x_step>`` and ``<y_step>``).
 
 When using an elaborated predictor, the data must go through a preprocessing routine. In this case, the structure is a bit different and can look like this (several predictors can also be defined one after the other):

@@ -1,11 +1,11 @@
 Usage
 =====
 
-The Forecaster allows to process an analog method based on the the latest available NWP outputs or for a given date. The real-time forecast calculation can be performed by a standard computer, without special resources. The forecast can be executed on demand through a graphical user interface or can be automated through the use of a command line interface. Both aspects are explained hereafter.
+The Forecaster allows processing an analog method based on the latest available NWP outputs or for a given date. The real-time forecast calculation can be performed by a standard computer without specific resources. The forecast can be executed on demand through a graphical user interface or can be automated through the use of a command-line interface. Both aspects are explained hereafter.
 
-By default, the Forecaster processes the last available forecast. However, it can also process a forecast for a given day in the past, provided the NWP outputs are available locally or remotely, or it can be executed to process the last x days. This options can also be executed once a day by a task manager to fill eventual gaps in the previous days. If the forecasts are already present, no computing resources are used.
+By default, the Forecaster processes the last available forecast. However, it can also process a forecast for a given day in the past, provided the NWP outputs are available locally or remotely, or it can be executed to process the last x days. These options can also be executed once a day by a task manager to fill eventual gaps in the previous days. If the forecasts are already present, no computing resources are used.
 
-A batch file can be provided to the GUI or the CLI. It contains the data and export paths as well as the analog methods to be applied (defined themselves in the xml parameters files). Automatic tasks can thus execute the Forecaster successively with different options, for example for different regions. The results can be saved in different directories, or in the same ones. 
+A batch file can be provided to the GUI or the CLI. It contains the data and export paths as well as the analog methods to be applied (defined themselves in the xml parameter files). Automatic tasks can thus execute the Forecaster successively with different options, for example, for different regions. The results can be saved in different directories, or the same ones. 
 
 Requirements
 ------------
@@ -27,14 +27,14 @@ The Forecaster produces compressed **NetCDF files** containing:
 * The values of the analogy criteria
 * The target dates (lead times)
 * The number of analogs for the different lead times
-* Some reference values (e.g. precipitation for different return periods)
+* Some reference values (e.g., precipitation for different return periods)
 * Some station metadata (id, name, coordinates, height)
 
 There is one file per variant of the analog method containing data for all stations of the database.
 
-A **synthetic xml file** can also be generated (optional) to ease the integration of synthetic data on a web platform for example.
+A **synthetic xml file** can also be generated (optional) to ease the integration of synthetic data on a web platform, for example.
 
-The files are saved in a date based directory structure (for example 2019/04/23). The Viewer follows the same rules to automatically look for new forecasts. To ease the distribution of the forecasts, the output directory can be synchronized by means of a file sharing client (for example `ownCloud <https://owncloud.org/>`_ or Dropbox).
+The files are saved in a date-based directory structure (for example, 2019/04/23). The Viewer follows the same rules to look for new forecasts automatically. The output directory can be synchronized by means of a file-sharing client to distribute the forecasts (for example, `ownCloud <https://owncloud.org/>`_ or Dropbox).
 
 Graphical user interface
 ------------------------
@@ -79,7 +79,7 @@ To perform a forecast, one must:
    :scale: 50
    :align: middle
    
-The processed analog methods are those listed in the lower half of the interface. The methods can differ in terms of structure or parameters for example to be adapted for a subregion. The methods are executed one after the other. A |icon_bullet_yellow| icon means that the model is being processed, |icon_bullet_green| that the calculations have been successfully performed and |icon_bullet_red| that the forecast has failed for this method.
+The processed analog methods are those listed in the lower half of the interface. The methods can differ in terms of structure or parameters, for example, to be adapted for a subregion. The methods are executed one after the other. A |icon_bullet_yellow| icon means that the model is being processed, |icon_bullet_green| that the calculations have been successfully performed and |icon_bullet_red| that the forecast has failed for this method.
 
 .. |icon_bullet_green| image:: img/icon-bullet_green.png
    :width: 24
@@ -103,9 +103,9 @@ The processed analog methods are those listed in the lower half of the interface
 Define the list of methods
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The list of analog methods can be completed or methods can be deleted. A method here is a specific parameterization of an analog method optimal for a leadtime or a region. It is represented in the graphical user interface by a choice of a parameters file. An entry can be removed with the |icon_close| icon and new ones can be added using the |icon_plus| icon below the list.
+The list of analog methods can be completed, or methods can be deleted. A method here is a specific parameterization of an analog method optimal for a lead time or a region. It is represented in the graphical user interface by choice of a parameters file. An entry can be removed with the |icon_close| icon, and new ones can be added using the |icon_plus| icon below the list.
 
-When the list of methods has been modified and should be kept as default, it is necessary to save it, otherwise the list will be reset during the software restart. This is done by the menu 'File / Save batch file'.
+When the list of methods has been modified and should be kept as default, it is necessary to save it (menu 'File / Save batch file'); otherwise, the list will be reset at the software restart.
 
 .. |icon_close| image:: img/icon-close.png
    :width: 24
@@ -123,9 +123,9 @@ When the list of methods has been modified and should be kept as default, it is 
 Command line interface
 ----------------------
 
-The Forecaster also has a command line interface. This makes it possible to automate forecasts on a server. A scheduled task can then be added on a server (ex: Task Scheduler on Windows or Cron task on Linux). The options are as follows:
+The Forecaster also has a command-line interface, which makes it possible to automate forecasts on a server. A scheduled task can then be added on a server (ex: Task Scheduler on Windows or Cron task on Linux). The options are as follows:
 
--h, --help  Displays the help of command line options
+-h, --help  Displays the help of command-line options
 -c, --config  Configure the forecaster
 -v, --version  Displays the software version
 -f, --batch-file=<file>  Batch file to use for the forecast (full path)

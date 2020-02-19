@@ -3,9 +3,9 @@
 Predictor variables
 ===================
 
-The different existing datasets do not name the meteorological variables the same way. AtmoSwing can interact with many datasets and has several of their variables defined. These datasets often provides different products, for example for different types of level (isobaric, isentropic, surface, etc). As some variable can be defined for different levels (e.g. temperature), the product/level must be specified. Thus, the selection of a variable in the parameters file is defined as ``level/variable``, such as ``pressure/z`` for the geopotential on pressure levels, or ``isentropic/t`` for the temperature on isentropic levels. As different levels types and variables are present for different datasets, they can be named differently in AtmoSwing. For example ``pressure/z``, ``pl/h``, and ``isobaric/hgt`` are identical. The name of the level (or product) has to be the same as the name of the corresponding subfolder. For example, someone using NCEP/NCAR Reanalysis 1 and having a subfolder 'pressure' should then use ``pressure/z`` for the geopotential height.
+The different existing datasets do not name the meteorological variables the same way. AtmoSwing can interact with many datasets and has several of their variables defined. These datasets often provide different products, for example, for different types of levels (isobaric, isentropic, surface, etc.). As some variables can be defined for different levels (e.g., temperature), the product/level must be specified. Thus, the selection of a variable in the parameters file is defined as ``level/variable``, such as ``pressure/z`` for the geopotential on pressure levels, or ``isentropic/t`` for the temperature on isentropic levels. As different level types and variables are present for different datasets, they can be named differently in AtmoSwing. For example ``pressure/z``, ``pl/h``, and ``isobaric/hgt`` are identical. The name of the level (or product) has to be the same as the name of the corresponding subfolder. For example, someone using NCEP/NCAR Reanalysis 1 and having a subfolder 'pressure' should then use ``pressure/z`` for the geopotential height.
 
-The following sections define first the different levels, then some common variables to most datasets, and finally list the available variables for the different datasets.
+The following sections define first the different levels, then some common variables to most datasets, and finally, list the available variables for the different datasets.
 
 .. contents:: Content of this section
 
@@ -13,7 +13,7 @@ The following sections define first the different levels, then some common varia
 Differentiating subsets/levels
 ------------------------------
 
-The level can usually be defined using different terms. The provided terms are interchangeables.
+The level can usually be defined using different terms. The provided terms are interchangeable.
 
 **Pressure level**:
 
@@ -359,15 +359,15 @@ ECMWF ERA-interim
 
 **For surface**:
 
-* 2 metre dewpoint temperature (``d2m``)
+* 2 meter dewpoint temperature (``d2m``)
 * Sea level pressure (``msl``)
 * Snow depth (``sd``)
 * Sea surface temperature (``sst``)
-* 2 metre temperature (``t2m``)
+* 2 meter temperature (``t2m``)
 * Total column water
-* Total column water vapour (``tcwv``)
-* 10 metre U wind component (``u10``)
-* 10 metre V wind component (``v10``)
+* Total column water vapor (``tcwv``)
+* 10 meter U wind component (``u10``)
+* 10 meter V wind component (``v10``)
 * Total precipitation
 * Convective available potential energy (``cape``)
 * Instantaneous moisture flux (``ie``)
@@ -578,7 +578,7 @@ NOAA 20CR v2c ensemble
 NOAA OISST v2
 ~~~~~~~~~~~~~
 
-There are no product/level definition for this dataset
+There are no product/level definition for this dataset.
 
 * Sea Surface Temperature (``sst``)
 * Sea Surface Temperature Anomaly (``sst_anom``)
@@ -587,5 +587,5 @@ There are no product/level definition for this dataset
 Generic NetCDF
 ~~~~~~~~~~~~~~
 
-The generic dataset is different from the other datasets. There is no predefined variables. You have to use the same name as the variable name in the NetCDF file. 
+The generic dataset is different from the other datasets. There is no predefined variables. The variable name needs to be used in the in the NetCDF file. 
   

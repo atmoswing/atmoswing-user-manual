@@ -3,7 +3,7 @@ Usage
 
 The Optimizer implements different optimization techniques, such as a semi-automatic sequential approach, Monte-Carlo simulations, and a global optimization technique using genetic algorithms. Establishing a statistical relationship between predictors and predictands is computationally intensive because it requires numerous assessments over decades.
 
-The calibration of the AM is usually performed in a perfect prognosis framework. Perfect prognosis uses observed or reanalyzed data to calibrate the relationship between predictors and predictands. As a result, perfect prognosis yields relationships that are as close as possible to the natural links between predictors and predictands. However, there are no perfect models and even reanalysis data may contain biases that cannot be ignored. Thus, the considered predictors should be as robust as possible, i.e., they should have minimal dependency on the model.
+The calibration of the AM is usually performed in a perfect prognosis framework. Perfect prognosis uses observed or reanalyzed data to calibrate the relationship between predictors and predictands. As a result, perfect prognosis yields relationships that are as close as possible to the natural links between predictors and predictands. However, there are no perfect models, and even reanalysis data may contain biases that cannot be ignored. Thus, the considered predictors should be as robust as possible, i.e., they should have minimal dependency on the model.
 
 A statistical relationship is established with a trial and error approach by processing a forecast for every day of a calibration period. A certain number of days close to the target date are excluded to consider only independent candidate days. Validating the parameters of AMs on an independent validation period is very important to avoid over-parametrization and to ensure that the statistical relationship is valid for another period. In order to account for climate change and the evolution of measuring techniques, it is recommended that a noncontinuous period for validation should be used, distributed over the entire archive. AtmoSwing's users can thus specify a list of the years to set apart for the validation that are removed from possible candidate situations. At the end of the optimization, the validation score is processed automatically.
 
@@ -43,12 +43,12 @@ The classic calibration is detailed on :ref:`another page<classic-calibration>`.
 Global optimization
 ~~~~~~~~~~~~~~~~~~~
 
-* **Genetic algorithms**: The optimization by means of :ref:`genetic algorithms <genetic-algorithms>`.
+* **Genetic algorithms**: The optimization using :ref:`genetic algorithms <genetic-algorithms>`.
 
 Random exploration of the parameters space
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* **Monte-Carlo simulations**: An exploration of the parameters space by means of Monte-Carlo simulations. These simulations were found to be limited in terms of ability to find reasonnable parameters sets for even moderately AMs.
+* **Monte-Carlo simulations**: An exploration of the parameters space using Monte-Carlo simulations. These simulations were found to be limited in terms of ability to find reasonable parameters sets for even moderately AMs.
 
 Outputs
 -------
@@ -56,7 +56,7 @@ Outputs
 The Optimizer produces different files:
 
 * A text file with the resulting best parameters set and the skill score ([...]best_parameters.txt).
-* A text file with all the tested parameters set and their correponding skill score ([...]tested_parameters.txt).
+* A text file with all the assessed parameters set and their corresponding skill score ([...]tested_parameters.txt).
 * An xml file with the best parameters set (to be used further by AtmoSwing; [...]best_parameters.xml).
 * A NetCDF file containing the analog dates (AnalogDates[...].nc) both for the calibration and validation periods.
 * A NetCDF file containing the analog values (AnalogValues[...].nc) both for the calibration and validation periods.
@@ -86,7 +86,7 @@ The toolbar allows the following actions:
 .. |icon_preferences| image:: img/icon_preferences.png
    :align: middle
    
-You need to provide:
+What is needed:
 
 * Select one of the  `calibration methods`_
 * :ref:`The parameters file <parameters-file-optimizer>`
@@ -95,7 +95,7 @@ You need to provide:
 * The directory to save the results
 * All the options for the selected calibration method (in the Options tab; see below)
 
-There is one tab to define the options of the classic calibration, the variables exploration and the Monte-Carlo simulations. The details of the options are given on the page of the :ref:`another page<classic-calibration>`.
+There is one tab to define the options of the classic calibration, the variables exploration, and the Monte-Carlo simulations. The details of the options are given on the page of the :ref:`another page<classic-calibration>`.
 
 .. image:: img/frame-optimizer-options-calib.png
    :align: center
