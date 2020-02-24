@@ -12,12 +12,12 @@ AtmoSwing Forecaster can read the following NWP outputs (with the corresponding 
     ECMWF IFS is not yet fully implemented. 
 
 Specify the domain to be downloaded
-===================================
+-----------------------------------
 
 .. warning::
     When choosing GFS, the predictors are downloaded for the European domain by default: longitude from -20° to 30° and latitude from 30° to 70°. The domain can be changed in the AtmoSwingForecaster.ini file.
 
-The default domain and levels to be downloaded are specified in the URLs in AtmoSwingForecaster.ini (under your profile directory; typically C:\Users\<username>\AppData\Roaming\AtmoSwing for Windows or .AtmoSwing for Linux/OSX). The domain is adjusted by changing the values of ``leftlon=-20&rightlon=30&toplat=70&bottomlat=30``, and the levels with ``lev_XXX_mb=on``.
+The default domain and levels to be downloaded are specified in the URLs in AtmoSwingForecaster.ini (under your profile directory; typically C:\\Users\\<username>\\AppData\\Roaming\\AtmoSwing for Windows or .AtmoSwing for Linux/OSX). The domain is adjusted by changing the values of ``leftlon=-20&rightlon=30&toplat=70&bottomlat=30``, and the levels with ``lev_XXX_mb=on``.
 
 .. code-block:: none
 
