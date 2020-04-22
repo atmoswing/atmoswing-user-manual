@@ -136,3 +136,71 @@ The Forecaster also has a command-line interface, which makes it possible to aut
 --proxy=<host[:port]>  Use proxy on given port
 --proxy-user=<user[:password]>  Proxy user and password
 
+
+Docker image
+------------
+
+A Docker image is available on DockerHub: https://hub.docker.com/r/atmoswing/forecaster
+
+You can get it with: ``docker pull atmoswing/forecaster``
+
+The docker container for AtmoSwing Forecaster uses the same options that the `command line interface` (to the exception of the ``--config`` option). However, different directories need to be mounted in the docker container to allow AtmoSwing accessing the data and saving outputs. The necessary direcories are (along with the proposed path in the docker container):
+
+* config and log files: ``/app/config``
+* resulting files: ``/app/results``
+* exports (forecasts synthesis): ``/app/exports``
+* parameters files: ``/app/params```
+* predictors archives: ``/app/predictors/archive`` -> can be readonly 
+* predictors realtime (eventually downloaded): ``/app/predictors/realtime``
+* predictands: ``/app/predictands`` -> can be readonly 
+
+For example, on Windows, the command can be (don't forget to allow Docker destktop to access the desired disk):
+
+.. code-block:: guess
+
+   docker run `
+      --mount type=bind,source=D:\AtmoSwing\config,target=/app/config `
+      --mount type=bind,source=D:\AtmoSwing\results,target=/app/results `
+      --mount type=bind,source=D:\AtmoSwing\exports,target=/app/exports `
+      --mount type=bind,source=D:\AtmoSwing\params,target=/app/params `
+      --mount type=bind,source=D:\Data\ERA5,target=/app/predictors/archive,readonly `
+      --mount type=bind,source=D:\AtmoSwing\predictors,target=/app/predictors/realtime `
+      --mount type=bind,source=D:\AtmoSwing\predictands,target=/app/predictands,readonly `
+      atmoswing/forecaster:latest -f /app/params/batch-docker.asfb -n
+
+Or, on Linux:
+
+.. code-block:: guess
+
+   docker run \
+      --mount type=bind,source=/path/for/config,target=/app/config \
+      --mount type=bind,source=/path/for/atmoswing/outputs,target=/app/results \
+      --mount type=bind,source=/path/for/atmoswing/exports,target=/app/exports \
+      --mount type=bind,source=/path/to/parameter/files,target=/app/params \
+      --mount type=bind,source=/path/to/archive/predictors/dir,target=/app/predictors/archive,readonly \
+      --mount type=bind,source=/path/to/realtime/predictors/dir,target=/app/predictors/realtime,readonly \
+      --mount type=bind,source=/path/to/predictands/dir,target=/app/predictands,readonly \
+      atmoswing/forecaster:latest -f /app/params/batch-docker.asfb -n
+
+Then, the batch file needs to contain the mounted directories in the docker container. If you changed the target directories above, you need to adapt them below as well. The batch file should look like:
+
+.. code-block:: xml
+
+   <?xml version="1.0" encoding="UTF-8"?>
+   <atmoswing version="1.0" target="forecaster">
+     <forecasts_output_directory>/app/results</forecasts_output_directory>
+     <exports_output_directory>/app/exports</exports_output_directory>
+     <parameters_files_directory>/app/params</parameters_files_directory>
+     <predictors_archive_directory>/app/predictors/archive</predictors_archive_directory>
+     <predictors_realtime_directory>/app/predictors/realtime</predictors_realtime_directory>
+     <predictand_db_directory>/app/predictands</predictand_db_directory>
+     <export_synthetic_xml>1</export_synthetic_xml>
+     <forecasts>
+       <filename>PC-4Z_Region1.xml</filename>
+       <filename>PC-4Z_Region2.xml</filename>
+       <filename>PC-4Z-2MI_Region1.xml</filename>
+       <filename>PC-4Z-2MI_Region2.xml</filename>
+       ...
+     </forecasts>
+   </atmoswing>
+
