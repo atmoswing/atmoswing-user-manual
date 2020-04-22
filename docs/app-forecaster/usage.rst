@@ -142,9 +142,9 @@ Docker image
 
 A Docker image is available on DockerHub: https://hub.docker.com/r/atmoswing/forecaster
 
-You can get it with: ``docker pull atmoswing/forecaster``
+Get it with: ``docker pull atmoswing/forecaster``
 
-The docker container for AtmoSwing Forecaster uses the same options that the `command line interface` (to the exception of the ``--config`` option). However, different directories need to be mounted in the docker container to allow AtmoSwing accessing the data and saving outputs. The necessary direcories are (along with the proposed path in the docker container):
+The docker container for AtmoSwing Forecaster uses the same options that the `command line interface` (to the exception of the ``--config`` option). However, different directories need to be mounted in the docker container to allow AtmoSwing accessing the data and saving outputs. The necessary directories are (along with the proposed path in the docker container):
 
 * config and log files: ``/app/config``
 * resulting files: ``/app/results``
@@ -154,7 +154,7 @@ The docker container for AtmoSwing Forecaster uses the same options that the `co
 * predictors realtime (eventually downloaded): ``/app/predictors/realtime``
 * predictands: ``/app/predictands`` -> can be readonly 
 
-For example, on Windows, the command can be (don't forget to allow Docker destktop to access the desired disk):
+For example, on Windows, the command can be (don't forget to allow Docker desktop to access the desired disk):
 
 .. code-block:: guess
 
