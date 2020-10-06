@@ -5,6 +5,46 @@ Release notes
 
 The following release notes list the main changes to AtmoSwing. Many small changes are not listed and can be tracked down in the commits.
 
+v2.1.3
+------
+13.07.2020
+
+**Added**
+
+* Addition of Dockerfiles for the creation of Docker images.
+* Addition of the mean and the sd in the parameters for standardisation.
+* Standardisation for operational forecasting.
+* Handling a single 'number of analogs' for operational forecasting.
+* Handling forecasts without reference axis.
+* Addition of the mean of the analogs to the aggregated forecast xml.
+* Addition of the lead time hour to the aggregated results.
+* Addition of synthetic text (csv) export of the forecast.
+* Allowing a percentage of missing predictor data.
+
+**Changed**
+
+* Simplification of resulting parameters storage.
+* Reduction of optimization memory footprint.
+* Reduction of padding in structures to save memory.
+* Disabling using GAs history by default.
+* Changes in dependencies management.
+* Refactoring predictor files download.
+* Enabling optional downloading of predictor files.
+* Standardisation after data loading.
+* Changing output extension of forecast files to nc.
+* Changing the specification of the forecast synthetic exports.
+* Allowing NaNs to propagate in the forecast.
+* Updating to Proj 7.
+* Changing indentation back to 4.
+
+**Fixed**
+
+* Fixing GFS urls.
+* Avoid crash and display an error when desired latitude was not found.
+* Addition of the standardisation specification in resulting parameters.
+* Fixing issue when the reference axis is NaN.
+* Fixing lead times in plots.
+
 v2.1.2
 ------
 08.12.2019
