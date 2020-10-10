@@ -5,6 +5,19 @@ Release notes
 
 The following release notes list the main changes to AtmoSwing. Many small changes are not listed and can be tracked down in the commits.
 
+v2.1.4
+------
+09.10.2020
+
+**Changed**
+
+* Refactored time axis management in predictors loading.
+
+**Fixed**
+
+* Fixed an issue with missing dates in the FVG dataset.
+* Fixed an issue with NaNs in the standardization.
+
 v2.1.3
 ------
 13.07.2020
