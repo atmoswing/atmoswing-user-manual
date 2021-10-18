@@ -173,7 +173,7 @@ Files can be structured (``<structure_type>``) in two common types:
 
 An option (``<parsetime>``) allows reading the date/time entries or ignore them. Reading this information allows an automatic check of the correct consistency of the dates between what the software thinks it is reading and what it is actually reading. It is therefore recommended to enable this option (``<parse_time>1</parse_time>``).
 
-Several files are installed with AtmoSwing and can be found in the 'data/ascii_file_patterns' directory, or `online in the repository <https://github.com/atmoswing/atmoswing/tree/master/data/ascii_file_patterns>`_.
+Several files are installed with AtmoSwing and can be found in the 'data/file_patterns' directory, or `online in the repository <https://github.com/atmoswing/atmoswing/tree/master/data/file_patterns>`_.
 
 Example of the type 'delimited by tabs'
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
