@@ -21,7 +21,7 @@ When a new version is published, the development of previous versions is not con
 Version  Release     Bug Fixes Until
 =======  ==========  ===============
 2.0      19.11.2018  23.05.2019
-2.1 LTS  23.05.2019  23.05.2021
+2.1 LTS  23.05.2019  23.05.2023
 =======  ==========  ===============
 
 
