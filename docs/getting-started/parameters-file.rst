@@ -384,7 +384,7 @@ Content 'analog_values'
 -----------------------
 
 Element 'predictand'
-~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
 
 Specification of the target predictand timeseries:
 

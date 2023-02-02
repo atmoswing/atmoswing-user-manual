@@ -430,7 +430,7 @@ NASA MERRA-2
 
 
 NASA MERRA-2 subset
-~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
  
 **For product 'inst6_3d_ana_Np'**:
 
