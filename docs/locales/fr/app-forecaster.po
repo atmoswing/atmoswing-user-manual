@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: AtmoSwing 2.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-02 13:22+0100\n"
-"PO-Revision-Date: 2023-02-02 13:49+0100\n"
+"PO-Revision-Date: 2023-02-02 14:01+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -19,9 +19,8 @@ msgstr ""
 "X-Generator: Poedit 3.2.2\n"
 
 #: ../../app-forecaster.rst:4
-#, fuzzy
 msgid "The Forecaster"
-msgstr "Le prévisionniste"
+msgstr "Le Forecaster"
 
 #: ../../app-forecaster.rst:6
 #, fuzzy
@@ -39,9 +38,8 @@ msgid "The Forecaster manual is divided into the following topics:"
 msgstr "Le manuel Forecaster est divisé en plusieurs rubriques :"
 
 #: ../../app-forecaster/parameters-file.rst:4
-#, fuzzy
 msgid "Forecaster's parameters file"
-msgstr "Fichier des paramètres du prévisionniste"
+msgstr "Fichier des paramètres du Forecaster"
 
 #: ../../app-forecaster/parameters-file.rst:6
 #, fuzzy
@@ -57,7 +55,6 @@ msgstr ""
 "comme détaillé ci-dessous. Un `exemple complet`_ est fourni en bas de page."
 
 #: ../../app-forecaster/parameters-file.rst:9
-#, fuzzy
 msgid "Root node"
 msgstr "Nœud racine"
 
@@ -67,9 +64,8 @@ msgid "The ``target`` property of the root node needs to be ``forecaster``."
 msgstr "La propriété \"target\" du noeud racine doit être \"forecaster\"."
 
 #: ../../app-forecaster/parameters-file.rst:18
-#, fuzzy
 msgid "Content 'time_properties'"
-msgstr "Contenu \"Propriétés temporelles\""
+msgstr "Contenu \"time_properties\""
 
 #: ../../app-forecaster/parameters-file.rst:20
 #, fuzzy
@@ -81,9 +77,8 @@ msgstr ""
 "mais un élément ``<lead_time_days>`` listant les délais à traiter."
 
 #: ../../app-forecaster/parameters-file.rst:33
-#, fuzzy
 msgid "Content 'analog_dates'"
-msgstr "Contenu \"dates analogiques\""
+msgstr "Contenu \"dates analogues\""
 
 #: ../../app-forecaster/parameters-file.rst:35
 #, fuzzy
@@ -416,7 +411,6 @@ msgid "Allow multiple instances of the Forecaster."
 msgstr "Autoriser les instances multiples du Forecaster."
 
 #: ../../app-forecaster/preferences.rst:84
-#, fuzzy
 msgid "Multithreading"
 msgstr "Multithreading"
 
@@ -922,7 +916,6 @@ msgid "Proxy user and password"
 msgstr "Utilisateur et mot de passe du proxy"
 
 #: ../../app-forecaster/usage.rst:141
-#, fuzzy
 msgid "Docker image"
 msgstr "Image Docker"
 
@@ -1006,7 +999,6 @@ msgstr ""
 "le bureau de Docker à accéder au disque souhaité) :"
 
 #: ../../app-forecaster/usage.rst:171
-#, fuzzy
 msgid "Or, on Linux:"
 msgstr "Ou, sur Linux :"
 
