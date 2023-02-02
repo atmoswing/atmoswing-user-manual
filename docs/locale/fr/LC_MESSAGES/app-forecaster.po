@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: AtmoSwing 2.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-02 13:22+0100\n"
-"PO-Revision-Date: 2023-02-02 14:01+0100\n"
+"PO-Revision-Date: 2023-02-02 14:23+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -23,7 +23,6 @@ msgid "The Forecaster"
 msgstr "Le Forecaster"
 
 #: ../../app-forecaster.rst:6
-#, fuzzy
 msgid ""
 "This section contains the documentation for AtmoSwing Forecaster. This "
 "document can also be downloaded as a pdf or epub using the bottom left menu."
@@ -33,9 +32,8 @@ msgstr ""
 "le menu en bas à gauche."
 
 #: ../../app-forecaster.rst:8
-#, fuzzy
 msgid "The Forecaster manual is divided into the following topics:"
-msgstr "Le manuel Forecaster est divisé en plusieurs rubriques :"
+msgstr "Le manuel du Forecaster est divisé en plusieurs rubriques :"
 
 #: ../../app-forecaster/parameters-file.rst:4
 msgid "Forecaster's parameters file"
