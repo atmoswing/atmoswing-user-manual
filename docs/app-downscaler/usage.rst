@@ -14,7 +14,7 @@ The Downscaler needs:
 * :ref:`A predictand database <predictand-db>`
 * :ref:`Predictors from the target period <data-downscaler>`
 * :ref:`A predictors archive (e.g. a reanalysis dataset) <reanalyses>`
-* :ref:`Parameters files defining the properties of the method. <parameters-file-downscaler>`
+* :ref:`Parameters file defining the properties of the method. <parameters-file-downscaler>`
 
 Outputs
 -------

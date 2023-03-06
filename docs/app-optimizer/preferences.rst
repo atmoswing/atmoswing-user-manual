@@ -9,7 +9,7 @@ Directories
 Different directories must be specified:
 
 * Directory containing the archive predictors (for example :ref:`reanalyses<reanalyses>`).
-* Directory containing the predictand DB: contains the :ref:`NetCDF file generated from the predictand data<predictand-db>`.
+* Directory containing the predictand DB (:ref:`NetCDF file generated from the predictand data<predictand-db>`).
 
 .. image:: img/preferences-general-dirs.png
    :align: center

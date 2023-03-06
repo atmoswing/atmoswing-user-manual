@@ -10,7 +10,7 @@ Different directories must be specified:
 
 * Directory containing the archive predictors: predictor describing the candidate situations (for example :ref:`reanalyses<reanalyses>`).
 * Directory containing the scenario predictors: predictor describing the target situations (for example :ref:`CMIP5 or CORDEX<data-downscaler>`).
-* Directory containing the predictand DB: contains the :ref:`NetCDF file generated from the predictand data<predictand-db>`.
+* Directory containing the predictand DB (:ref:`NetCDF file generated from the predictand data<predictand-db>`).
 
 .. image:: img/preferences-general-dirs.png
    :align: center

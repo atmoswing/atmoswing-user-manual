@@ -3,11 +3,11 @@
 Genetic algorithms
 ==================
 
-The sequential calibration has substantial limitations: (i) it cannot automatically choose the pressure levels and temporal windows (hour of the day) for a given meteorological variable, (ii) it cannot handle dependencies between parameters, and (iii) it cannot easily handle new degrees of freedom. For this reason, genetic algorithms (GAs) were implemented in AtmoSwing Optimizer to perform a global optimization of AMs. It allows for the optimization of all parameters jointly in a fully automatic and objective way. See more details in [Horton2017]_.
+The sequential or classic calibration has substantial limitations: (i) it cannot automatically choose the pressure levels and temporal windows (hour of the day) for a given meteorological variable, (ii) it cannot handle dependencies between parameters, and (iii) it cannot easily handle new degrees of freedom. For this reason, genetic algorithms (GAs) were implemented in AtmoSwing Optimizer to perform a global optimization of AMs. It allows for the optimization of all parameters jointly in a fully automatic and objective way. See more details in [Horton2017]_.
 
-Genetic algorithms are powerful but very demanding in terms of computational capacity. They require thousands of assessments to evolve towards the global optimum and thus should be used on a cluster rather than a single computer.
+Genetic algorithms are powerful but very demanding in terms of computational capacity. They require thousands of assessments to evolve towards the global optimum and should thus be used on a cluster rather than a single computer.
 
-Many options and operator variants are available for genetic algorithms. Based on systematic tests detailed in [Horton2017]_, some presets were established in order to ease the use of genetic algorithms in AtmoSwing. These presets are listed below, and all options are provided further down.
+Many options and operator variants are available for genetic algorithms. Based on systematic tests detailed in [Horton2017]_, some presets were established in order to ease the use of genetic algorithms in AtmoSwing Optimizer. These presets are listed below, and all options are provided further down.
 
 
 Options presets
@@ -19,7 +19,7 @@ Many options and operator variants control the optimization by genetic algorithm
 
 For all presets, the following options are identical: ``--ga-conv-steps=30`` ``--ga-pop-size=500`` ``--ga-interm-gen=0.5`` ``--ga-ope-nat-sel=0`` ``--ga-ope-coup-sel=2`` ``--ga-ope-cross=7`` ``--ga-cross-bin-pt-nb=2`` ``--ga-cross-bin-share-b=1``
 
-The difference between the presets concerns the mutation operator. Providing the following numbers (1-5) to the option ga-config is equivalent to these corresponding presets:
+The difference between the presets concerns the mutation operator. Providing the following numbers (1-5) to the option ``--ga-config`` is equivalent to these corresponding presets:
 
 1. Chromosome of adaptive search radius: ``--ga-ope-mut=8``
 2. Multiscale mutation: ``--ga-ope-mut=9`` ``--ga-mut-multi-scale-p=0.1``
@@ -27,7 +27,7 @@ The difference between the presets concerns the mutation operator. Providing the
 4. Nonuniform mutation (pmut=0.1, Gmr=100, w=0.1): ``--ga-ope-mut=4`` ``--ga-mut-non-uni-p=0.1`` ``--ga-mut-non-uni-gens=100`` ``--ga-mut-non-uni-min-r=0.1``
 5. Nonuniform mutation (pmut=0.2, Gmr=100, w=0.1): ``--ga-ope-mut=4`` ``--ga-mut-non-uni-p=0.2`` ``--ga-mut-non-uni-gens=100`` ``--ga-mut-non-uni-min-r=0.1``
 
-Any of these options can be overridden by specifying it along with ga-config.
+Any of these options can be overridden by specifying it along with ``--ga-config``.
 
 
 All options

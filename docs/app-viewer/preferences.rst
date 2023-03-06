@@ -1,6 +1,7 @@
 Preferences
 ===========
 
+The preferences frame can be opened from the menu Options / Preferences of the main interface.
 Workspace
 ---------
 
@@ -11,7 +12,7 @@ The directory where the forecasts are stored must be provided:
 .. image:: img/preferences-viewer-dir.png
    :align: center
 
-The maximum predictand value for the color range defines the value for which red is assigned when colors are not standardized. The second option is the number of days of previous forecasts to be displayed as traces in the time series plots. Three days are recommended.
+The maximum predictand value for the color range defines the value for which red is assigned when colors are not standardized. The second option is the number of days of previous forecasts to be displayed as traces in the time series plots. Three to five days are recommended.
 
 .. image:: img/preferences-viewer-displayoptions.png
    :align: center
@@ -50,7 +51,7 @@ The proxy configuration contains the following elements:
 Advanced
 --------
 
-Allow multiple instances of the Viewer.
+Allow multiple instances of the Viewer, for example to display and compare different forecasts in separate windows.
 
 .. image:: img/preferences-adv-multiinstances.png
    :align: center

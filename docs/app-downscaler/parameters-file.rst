@@ -1,9 +1,9 @@
 .. _parameters-file-downscaler:
 
-Downscaler's parameters file
-============================
+Downscaler parameters file
+==========================
 
-The parameters files for the Downscaler are based on the :ref:`generic parameters file for AtmoSwing<parameters-file>`, but has some specific elements as detailed below. A `full example`_ is provided at the bottom of the page.
+The parameters file for the Downscaler is based on the :ref:`generic parameters file for AtmoSwing<parameters-file>`, but has some specific elements as detailed below. A `full example`_ is provided at the bottom of the page.
 
 Root node
 ---------

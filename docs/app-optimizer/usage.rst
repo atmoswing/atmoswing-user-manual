@@ -5,7 +5,7 @@ The Optimizer implements different optimization techniques, such as a semi-autom
 
 The calibration of the AM is usually performed in a perfect prognosis framework. Perfect prognosis uses observed or reanalyzed data to calibrate the relationship between predictors and predictands. As a result, perfect prognosis yields relationships that are as close as possible to the natural links between predictors and predictands. However, there are no perfect models, and even reanalysis data may contain biases that cannot be ignored. Thus, the considered predictors should be as robust as possible, i.e., they should have minimal dependency on the model.
 
-A statistical relationship is established with a trial and error approach by processing a forecast for every day of a calibration period. A certain number of days close to the target date are excluded to consider only independent candidate days. Validating the parameters of AMs on an independent validation period is very important to avoid over-parametrization and to ensure that the statistical relationship is valid for another period. In order to account for climate change and the evolution of measuring techniques, it is recommended that a noncontinuous period for validation should be used, distributed over the entire archive. AtmoSwing's users can thus specify a list of the years to set apart for the validation that are removed from possible candidate situations. At the end of the optimization, the validation score is processed automatically.
+A statistical relationship is established with a trial and error approach by processing a forecast for every day of a calibration period. A certain number of days close to the target date are excluded to consider only independent candidate days. Validating the parameters of AMs on an independent validation period is very important to avoid over-parametrization and to ensure that the statistical relationship is valid for another period. In order to account for climate change and the evolution of measuring techniques, it is recommended that a noncontinuous period for validation should be used, distributed over the entire archive (for example, every 5th year). AtmoSwing users can thus specify a list of the years to set apart for the validation that are removed from possible candidate situations. At the end of the optimization, the validation score is processed automatically.
 
 Requirements
 ------------
@@ -34,7 +34,7 @@ These methods do not seek to improve the parameters of the AM. They allow some a
 Based on the classic calibration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The classic calibration is detailed on :ref:`another page<classic-calibration>`.
+The classic calibration is detailed :ref:`here<classic-calibration>`.
 
 * **Classic calibration**: The :ref:`classic calibration <classic-calibration>`
 * **Classic+ calibration**: A :ref:`variant of the classic calibration<classic-calibration>` with some improvements.
@@ -57,7 +57,7 @@ The Optimizer produces different files:
 
 * A text file with the resulting best parameters set and the skill score ([...]best_parameters.txt).
 * A text file with all the assessed parameters set and their corresponding skill score ([...]tested_parameters.txt).
-* An xml file with the best parameters set (to be used further by AtmoSwing; [...]best_parameters.xml).
+* An xml file with the best parameters set (to be used further by AtmoSwing Forecaster; [...]best_parameters.xml).
 * A NetCDF file containing the analog dates (AnalogDates[...].nc) both for the calibration and validation periods.
 * A NetCDF file containing the analog values (AnalogValues[...].nc) both for the calibration and validation periods.
 * A NetCDF file containing the performance scores (Scores[...].nc) both for the calibration and validation periods.
@@ -90,12 +90,12 @@ What is needed:
 
 * Select one of the  `calibration methods`_
 * :ref:`The parameters file <parameters-file-optimizer>`
-* The predictand DB
-* The directory containing the predictors for the archive period
+* :ref:`The predictand database <predictand-db>`
+* The directory containing the :ref:`predictors for the archive period <reanalyses>`
 * The directory to save the results
 * All the options for the selected calibration method (in the Options tab; see below)
 
-There is one tab to define the options of the classic calibration, the variables exploration, and the Monte-Carlo simulations. The details of the options are given on the page of the :ref:`another page<classic-calibration>`.
+There is one tab to define the options of the classic calibration, the variables exploration, and the Monte-Carlo simulations. The details of the options are given :ref:`here<classic-calibration>`.
 
 .. image:: img/frame-optimizer-options-calib.png
    :align: center

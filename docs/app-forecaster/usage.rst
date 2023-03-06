@@ -1,9 +1,9 @@
 Usage
 =====
 
-The Forecaster allows processing an analog method based on the latest available NWP outputs or for a given date. The real-time forecast calculation can be performed by a standard computer without specific resources. The forecast can be executed on demand through a graphical user interface or can be automated through the use of a command-line interface. Both aspects are explained hereafter.
+The Forecaster allows processing an analog method based on the latest available NWP outputs or for a given date. The real-time forecast calculation can be performed by a standard computer without specific resources. The forecast can be executed on demand through a graphical user interface (GUI) or can be automated through the use of a command-line interface (CLI). Both aspects are explained hereafter.
 
-By default, the Forecaster processes the last available forecast. However, it can also process a forecast for a given day in the past, provided the NWP outputs are available locally or remotely, or it can be executed to process the last x days. These options can also be executed once a day by a task manager to fill eventual gaps in the previous days. If the forecasts are already present, no computing resources are used.
+By default, the Forecaster processes the latest available forecast. However, it can also process a forecast for a given day in the past, provided the NWP outputs are available locally or remotely, or it can be executed to process the last x days. These options can also be executed once a day by a task manager to fill eventual gaps in the previous days. If the forecasts are already present, no computing resources are used.
 
 A batch file can be provided to the GUI or the CLI. It contains the data and export paths as well as the analog methods to be applied (defined themselves in the xml parameter files). Automatic tasks can thus execute the Forecaster successively with different options, for example, for different regions. The results can be saved in different directories, or the same ones. 
 
@@ -28,13 +28,13 @@ The Forecaster produces compressed **NetCDF files** containing:
 * The target dates (lead times)
 * The number of analogs for the different lead times
 * Some reference values (e.g., precipitation for different return periods)
-* Some station metadata (id, name, coordinates, height)
+* Some station metadata (ID, name, coordinates, height)
 
 There is one file per variant of the analog method containing data for all stations of the database.
 
 A **synthetic xml file** can also be generated (optional) to ease the integration of synthetic data on a web platform, for example.
 
-The files are saved in a date-based directory structure (for example, 2019/04/23). The Viewer follows the same rules to look for new forecasts automatically. The output directory can be synchronized by means of a file-sharing client to distribute the forecasts (for example, `ownCloud <https://owncloud.org/>`_ or Dropbox).
+The files are saved in a date-based directory structure (for example, 2019/04/23). The Viewer follows the same rules to look for new forecasts automatically. The output directory can be synchronized by means of a file-sharing client to distribute the forecasts.
 
 Graphical user interface
 ------------------------
@@ -144,15 +144,15 @@ A Docker image is available on DockerHub: https://hub.docker.com/r/atmoswing/for
 
 Get it with: ``docker pull atmoswing/forecaster``
 
-The docker container for AtmoSwing Forecaster uses the same options that the `command line interface` (to the exception of the ``--config`` option). However, different directories need to be mounted in the docker container to allow AtmoSwing accessing the data and saving outputs. The necessary directories are (along with the proposed path in the docker container):
+The docker container for AtmoSwing Forecaster uses the same options than the `command line interface` (to the exception of the ``--config`` option). However, different directories need to be mounted in the docker container to allow AtmoSwing accessing the data and saving outputs. The necessary directories are (along with the proposed path in the docker container):
 
 * config and log files: ``/app/config``
 * resulting files: ``/app/results``
 * exports (forecasts synthesis): ``/app/exports``
-* parameters files: ``/app/params```
-* predictors archives: ``/app/predictors/archive`` -> can be readonly 
+* parameters files: ``/app/params``
+* predictors archives: ``/app/predictors/archive`` -> can be read-only 
 * predictors realtime (eventually downloaded): ``/app/predictors/realtime``
-* predictands: ``/app/predictands`` -> can be readonly 
+* predictands: ``/app/predictands`` -> can be read-only 
 
 For example, on Windows, the command can be (don't forget to allow Docker desktop to access the desired disk):
 

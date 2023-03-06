@@ -1,9 +1,9 @@
 .. _parameters-file-optimizer:
 
-Optimizer's parameters file
-===========================
+Optimizer parameters file
+=========================
 
-The Optimizer has two different kinds of parameter files. One type for the classic(+) calibration (see `calibration parameters file`_) and another for the optimization (GAs and Monte-Carlo simulations; see `optimization parameters file`_). However, some attributes are identical for both of them.
+The Optimizer has two different kinds of parameter files. One type for the classic and classic+ calibration (see `calibration parameters file`_) and another for the optimization techniques using genetic algorithms or Monte-Carlo simulations (see `optimization parameters file`_). However, some attributes are identical for both of them.
 
 Shared properties
 -----------------
@@ -11,7 +11,7 @@ Shared properties
 Content 'time_properties'
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The content of ``<time_properties>`` is globally similar to the standard parameters file, to the exception of a ``<calibration_period>`` and a ``<validation_period>`` element.
+The content of ``<time_properties>`` is globally similar to the :ref:`standard parameters file<parameters-file>`, to the exception of a ``<calibration_period>`` and a ``<validation_period>`` element.
 
 Element 'calibration_period'
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -38,14 +38,14 @@ The content of ``<validation_period>`` defines the independent period that is re
     
 Two options are possible:
 
-Providing a range of years:
+Providing a list of years (distributed over the calibration period):
+
+* ``<years>``: List of years (ex: 1985, 1990, 1995, 2000, 2005, 2010)
+
+Alternatively, providing a range of years:
 
 * ``<start_year>``: Start of the validation period (ex: 2001)
 * ``<end_year>``: End of the validation period (ex: 2010)
-
-Alternatively, providing a list of years (distributed on the calibration period):
-
-* ``<years>``: List of years (ex: 1985, 1990, 1995, 2000, 2005, 2010)
 
 Content 'evaluation'
 ~~~~~~~~~~~~~~~~~~~~
@@ -78,8 +78,8 @@ Other options can be added to specify how the score should be processed.
 * ``<quantile>``: Quantile to use for the processing of scores relying on a single value rather than the distribution. Example: ``<quantile>0.9</quantile>``
 * ``<on_mean>1</on_mean>``: Specifies to process the score on the mean of the analogs rather that a quantile (see above). For example, when used with the score ``MSE``. The value 1 has no meaning other than "true".
 
-Calibration parameters file
----------------------------
+Classic calibration parameters file
+-----------------------------------
 
 The calibration parameters file defines the parameters to be calibrated and the range of the authorized values. There are different methods possible to define these options:
 
@@ -109,12 +109,11 @@ The ``target`` property of the root node needs to be ``calibrator``.
 Content 'analog_dates'
 ~~~~~~~~~~~~~~~~~~~~~~
 
-The content of ``<analog_dates>`` is mostly similar to the basic parameters file structure, but the parameters to calibrate need to be specified.
+The content of ``<analog_dates>`` is mostly similar to the :ref:`standard parameters file structure<parameters-file>`, but the parameters to calibrate need to be specified.
 
 Element ‘analogs_number’
 ^^^^^^^^^^^^^^^^^^^^^^^^
-
-Example:
+This element varies the number of analog situations Ni to consider, for example:
 
 .. code-block:: xml
 
@@ -123,7 +122,7 @@ Example:
 Element ‘spatial_window’
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Example:
+This element defines the extent of the spatial window for each predictor, for example:
 
 .. code-block:: xml
 
@@ -275,7 +274,7 @@ Full example
 Optimization parameters file
 ----------------------------
 
-The optimization parameters file defines the parameters to be optimized and the range of the authorized values. There are different aspects to this:
+The optimization parameters file used for genetic algorithms or Monte Carlo simulations defines the parameters to be optimized and the range of the authorized values. There are different aspects to this:
 
 * Defining the range of numerical values: a ``lowerlimit`` value of the parameter, an ``upperlimit`` value, and an ``iteration`` value must be provided. For example:
 
@@ -307,13 +306,13 @@ The ``target`` property of the root node needs to be ``optimizer``.
 Content 'analog_dates'
 ~~~~~~~~~~~~~~~~~~~~~~
 
-The content of ``<analog_dates>`` is mostly similar to the basic parameters file structure, but the parameters to calibrate need to be specified.
+The content of ``<analog_dates>`` is mostly similar to the :ref:`standard parameters file structure<parameters-file>`, but the parameters to calibrate need to be specified.
 
 
 Element ‘analogs_number’
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Example:
+This element varies the number of analog situations Ni to consider, for example:
 
 .. code-block:: xml
 
