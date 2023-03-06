@@ -3,7 +3,7 @@
 Parameters file
 ===============
 
-The parameters files are essential elements in AtmoSwing as they define the structure of the analog method to use. It is where one defines the datasets, the predictor variables, the number of analogy levels, the spatial windows, etc...  Some elements vary between the Forecaster, the Optimizer, and the Downscaler, and thus the target must be specified in the root tag (ex: ``<atmoswing version="1.0" target="optimizer">``).
+The parameters files are essential elements in AtmoSwing as they define the structure of the analog method to use. It is where one defines the datasets, the predictor variables, the number of analogy levels, the spatial windows, etc...  Some elements vary between the Forecaster, the Optimizer, and the Downscaler, and thus the target module must be specified in the root tag (ex: ``<atmoswing version="1.0" target="optimizer">``).
 
 The common basic structure is illustrated below for the 2Z-2MI method (first level of analogy on the geopotential height and second on the moisture index) and explained later.
 
@@ -142,7 +142,7 @@ Content 'description'
 
 The content of ``<description>`` is mainly relevant for the Forecaster, where results are aggregated by methods for different regions.
 
-* ``<method_id>``: An id given to the method (ex: 2Z)
+* ``<method_id>``: An ID given to the method (ex: 2Z)
 * ``<method_id_display>``: The name of the method (ex: Classic circulation)
 * ``<specific_tag>``: A tag to identify the specific settings. This is usually the name of the region for which the method was calibrated.
 * ``<specific_tag_display>``: A more descriptive text for the provided ``<specific_tag>`` above.
@@ -183,7 +183,7 @@ Alternatively, only providing the years:
 Element 'time_step'
 ~~~~~~~~~~~~~~~~~~~
 
-The ``<time_step>`` is time step of the predictand (ex: 24), and thus of the method.
+The ``<time_step>`` is time step in hours of the predictand (ex: 24), and thus of the method.
 
 Element 'time_array_target'
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -388,7 +388,7 @@ Element 'predictand'
 
 Specification of the target predictand timeseries:
 
-* ``<station_id>``: :ref:`Station id<predictand-db>` or list of station ids (separated by commas)
+* ``<station_id>``: :ref:`Station ID<predictand-db>` or list of station IDs (separated by commas)
 
 Example:
 

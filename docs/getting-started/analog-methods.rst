@@ -3,11 +3,11 @@
 Some analog methods
 ===================
 
-Different variants of the AM are presented here. These methods have varying degrees of complexity and comprise one or more subsequent levels of analogy with predictor variables of different kinds. The following content comes from [Horton2018]_.
+Different variants of AMs are presented here. These methods have varying degrees of complexity and comprise one or more subsequent levels of analogy with predictor variables of different kinds. The following content comes from [Horton2018]_.
 
 The first method developed with NCEP/NCAR Reanalysis 1 by [Bontron2004]_ is based on the analogy of synoptic circulation on the geopotential height at two pressure levels (Z1000 at +12 h and Z500 at +24 h) and is known here as 2Z.
 	
-The 2Z method consists of the following steps: firstly, to cope with seasonal effects, candidate dates are extracted from the archive period within four months centered around the target date, for every year of the archive (PC: preselection on a calendar basis in Table below). Then, the analogy of the atmospheric circulation of a target date with every day from the preselection set (excluding +-30 days around the target date and an eventual validation period) is assessed by processing the S1 criterion ([Teweles1954]_ [Brown2012]_), which is a comparison of gradients, over a defined spatial window (the domain on which the predictors are compared). S1 is processed on each level, and the average is then considered, here with the same weights.
+The 2Z method consists of the following steps: firstly, to cope with seasonal effects, candidate dates are extracted from the archive period within four months centered around the target date, for every year of the archive (PC: preselection on a calendar basis in Table below). Then, the analogy of the atmospheric circulation of a target date with every day from the preselection set (excluding +-30 days around the target date and an eventual validation period) is assessed by processing the S1 criterion ([Teweles1954]_, [Brown2012]_), which is a comparison of gradients, over a defined spatial window (the domain on which the predictors are compared). S1 is processed on each level, and the average is then considered, here with the same weights.
 
 .. math::
     S1=100 \frac {\displaystyle \sum_{i} \vert \Delta\hat{z}_{i} - \Delta z_{i} \vert} {\displaystyle \sum_{i} max\left\lbrace \vert \Delta\hat{z}_{i} \vert , \vert \Delta z_{i} \vert \right\rbrace }

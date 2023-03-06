@@ -25,4 +25,3 @@ The following preprocessing routines are usually not used directly (or are autom
 * Real curvature (``RealCurvature``): processing of real 'curvature' between adjacent grid points (using the horizontal distance). This preprocessing method is automatically used when the analogy criterion is ``S2``.
 * Simple curvature with Gaussian weights (``SimpleCurvatureWithGaussianWeights``): same as before, but with a weighting of the spatial field by a gaussian 'hat'-shaped pattern.
 * Real curvature with Gaussian weights (``RealCurvatureWithGaussianWeights``): same as before, but with a weighting of the spatial field by a gaussian 'hat'-shaped pattern.
-* Merge by half and multiply (``MergeByHalfAndMultiply``): not meant to be used anymore.

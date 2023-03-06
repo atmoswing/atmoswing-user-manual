@@ -5,7 +5,7 @@ Predictand DB
 
 The preditand data (e.g., precipitation) must be prepared for use in AtmoSwing. A tool provided along AtmoSwing allows for the 'database' generation. Database generation consists of extracting data from text files and combining them into a NetCDF file.
 
-The interface for generating the precipitation database is accessible through the 'Tools / Build predictand DB' menu from any AtmoSwing software.
+The interface for generating the precipitation database is accessible through the 'Tools / Build predictand DB' menu from any AtmoSwing module.
 
 .. image:: img/frame-predictand-db-generator.png
    :align: center
@@ -34,8 +34,8 @@ The resulting file will contain the raw predictand data, but can also contain tr
 Next, a couple of paths must be provided:
 
 * The predictand catalog: `a catalog (xml file) <#predictand-catalog>`_ is required to provide some metadata on the different time series.
-* The predictand data directory: the directoy containing the original predictand files.
-* The file patterns description directory: the directoy containing `files defining the structure <#predictand-file-structure>`_ of the original predictand files.
+* The predictand data directory: the directory containing the original predictand files.
+* The file patterns description directory: the directory containing `files defining the structure <#predictand-file-structure>`_ of the original predictand files.
 * The destination directory: where the resulting file will be saved.
 
 After execution, a NetCDF file containing all the data necessary for the software is created in the chosen directory. This file also includes the station properties and time series.
@@ -52,7 +52,7 @@ Precipitation
 During the data processing, Gumbel adjustments are automatically made to calculate the precipitation values corresponding to different return periods. The possible transformations are then:
 
 * A normalization of the precipitation amount by a chosen return period value (often 10 years)
-* A transformation by the square root of the later values (see [Bontron2004]_)
+* A transformation by the square root of the normalized precipitation amounts (see [Bontron2004]_)
 
 Lightnings
 ~~~~~~~~~~
@@ -63,7 +63,7 @@ The lightning data can be transformed using: log10( N + 1 )
 Predictand catalog
 ------------------
 
-The predictand catalog provides some metadata on the predictand time series. It is only required to create the predictand database and is not used anymore afterward. It consists of an xml file such as:
+The predictand catalog provides some metadata on the predictand time series. It is only required to create the predictand database and is not used afterwards. It consists of an xml file such as:
 
 .. code-block:: xml
 
@@ -145,13 +145,13 @@ The dataset is described by the following data:
 * ``<end>``: last time step of all stations DD/MM/YYYY (ex: 31/12/2015)
 * ``<first_time_step>``: first time step (ex: 0)
 * ``<nan>``: representation of nan values
-* ``<coordinate_system>``: the coordinate system (ex: EPSG:21781)
+* ``<coordinate_system>``: the EPSG code of the coordinate system (ex: EPSG:21781)
 
 Then, every time series (named here 'station', even if they are not representing a station) must be detailed under a ``<station>`` tag in the ``<stations>`` list. For every station, the following information can/must be provided:
 
-* ``<id>``: a unique (for the considered catalog) id (int) to identify the station in AtmoSwing
+* ``<id>``: a unique ID (integer) to identify the station in AtmoSwing (unique number for the considered catalog)
 * ``<name>``: the name of the station
-* ``<official_id>``: an eventual official id (optional)
+* ``<official_id>``: an eventual official ID (optional)
 * ``<x_coordinate>``: the X coordinate (in the coordinate system defined for the dataset)
 * ``<y_coordinate>``: the Y coordinate (in the coordinate system defined for the dataset)
 * ``<height>``: the station height (optional)

@@ -1,7 +1,7 @@
 .. _parameters-file-forecaster:
 
-Forecaster's parameters file
-============================
+Forecaster parameters file
+==========================
 
 The parameters files for the Forecaster are based on the :ref:`generic parameters file for AtmoSwing<parameters-file>`, but has some specific elements for the operational forecasting as detailed below. A `full example`_ is provided at the bottom of the page.
 
@@ -17,7 +17,7 @@ The ``target`` property of the root node needs to be ``forecaster``.
 Content 'time_properties'
 -------------------------
 
-The ``<time_properties>`` property has no ``<time_array_target>`` element, but a ``<lead_time_days>`` element listing the lead times to process.
+The ``<time_properties>`` property has no ``<time_array_target>`` element, but a ``<lead_time_days>`` element listing the lead times (in days) to process.
 
 .. code-block:: xml
 
@@ -90,7 +90,7 @@ Example of a parameters file for the Forecaster:
         </time_array_analogs>
       </time_properties>
       <analog_dates>
-        <analogs_number>53,53,73,113,233,493</analogs_number>
+        <analogs_number>50,50,70,110,230,490</analogs_number>
         <predictor>
           <realtime_dataset_id>NWS_GFS_Forecast</realtime_dataset_id>
           <realtime_data_id>hgt</realtime_data_id>

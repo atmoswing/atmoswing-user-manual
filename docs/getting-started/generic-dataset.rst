@@ -24,7 +24,7 @@ The generic dataset is different from the other datasets as there are no predefi
 Generate generic datasets
 -------------------------
 
-The `AtmoSwing Python toolbox repository <https://github.com/atmoswing/tools-py>`_ contains scripts to convert some reanalyses to the generic format (for example `scripts/createGenericFromERAI.py <https://github.com/atmoswing/tools-py/blob/master/scripts/createGenericFromERAI.py>`_). 
+The `AtmoSwing Python toolbox repository <https://github.com/atmoswing/atmoswing-python-toolbox>`_ contains scripts to convert some reanalyses to the generic format (for example `scripts/createGenericFromERAI.py <https://github.com/atmoswing/atmoswing-python-toolbox/blob/main/examples/create_generic_from_ERAI.py>`_). 
  
 One must specify:
 
@@ -32,4 +32,4 @@ One must specify:
 * ``dir_target``: the directory to save the resulting files
 * ``files_list``: a list of the files to transform containing the following entries: 1) the subdirectory containing the original files (for example ``pressure`` or ``surface_analysis``), 2) the name of the variable in the original files, 3) the name given to the variable in the resulting file.
 
-The scripts and the different modules might need to be modified to suit other input formats or structures.
+The scripts might need to be modified to suit other input formats or structures.

@@ -44,7 +44,7 @@ The level can usually be defined using different terms. The provided terms are i
 * ``sfc``
 * ``sf``
 
-**'Flux' level**:
+**Flux level**:
 
 * ``surface_fluxes``
 * ``fluxes``
@@ -171,7 +171,7 @@ When loading geopotential data, AtmoSwing automatically converts it to geopotent
 Variables from datasets
 -----------------------
 
-The following variables are defined in AtmoSwing for the different reanalyses. When no data id is provided, one can use one of the variants define above.
+The following variables are defined in AtmoSwing for the different reanalyses. When no data ID is provided, one can use one of the variants define above.
 
 NCEP/NCAR Reanalysis 1
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -200,7 +200,7 @@ NCEP/NCAR Reanalysis 1
 * U-wind
 * V-wind
 
-**For the 'surface fluxes'**:
+**For the surface fluxes**:
 
 * Air Temperature 2m
 * Potential evaporation rate (``pevpr``)
@@ -260,7 +260,7 @@ NCEP/DOE Reanalysis 2
 * Pressure
 * Sea level pressure
 
-**For the 'surface fluxes'**:
+**For the surface fluxes**:
 
 * Air Temperature 2m
 * Specific humidity at 2m (``shum``)
@@ -495,7 +495,7 @@ JMA JRA-55 subset
 * Potential vorticity
 * Geopotential Height
 
-**For the product 'fcst_phy2m125'**:
+**For product 'fcst_phy2m125'**:
 
 * Total precipitation 3h (``tprat3h``)
 * Total precipitation 6h (``tprat6h``)
@@ -524,7 +524,7 @@ JMA JRA-55C subset
 * Potential vorticity
 * Geopotential Height
 
-**For the product 'fcst_phy2m125'**:
+**For product 'fcst_phy2m125'**:
 
 * Total precipitation 3h (``tprat3h``)
 * Total precipitation 6h (``tprat6h``)
@@ -587,5 +587,4 @@ There are no product/level definition for this dataset.
 Generic NetCDF
 ~~~~~~~~~~~~~~
 
-The generic dataset is different from the other datasets. There is no predefined variables. The variable name needs to be used in the in the NetCDF file. 
-  
+The generic dataset is different from the other datasets. There is no predefined variables. The variable name needs to be used in the NetCDF file.

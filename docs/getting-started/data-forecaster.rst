@@ -3,13 +3,11 @@
 Forecaster specific data
 ========================
 
-AtmoSwing Forecaster can read the following NWP outputs (with the corresponding id to use):
+AtmoSwing Forecaster can read the following NWP outputs (with the corresponding ID to use):
 
-* NWS GFS forecasts (downloaded from nomads): ``NWS_GFS_Forecast``
+* NWS GFS forecasts (automatically downloaded from `NOMADS <https://nomads.ncep.noaa.gov/>`_): ``NWS_GFS_Forecast``
 * ECMWF IFS forecasts (no automatic download): ``ECMWF_IFS_GRIB_Forecast``
 
-.. warning::
-    ECMWF IFS is not yet fully implemented. 
 
 Specify the domain to download
 ------------------------------

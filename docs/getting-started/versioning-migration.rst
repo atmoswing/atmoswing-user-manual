@@ -33,5 +33,5 @@ v2.0 to v2.1
 
 **Parameters files**
 
-* Changes to the reanalyses ``dataset_id``. Check the new values under :ref:`the reanalyses page<reanalyses>`.
+* Changes to the reanalyses ``dataset_id``. Check the new values under the :ref:`reanalyses page<reanalyses>`.
 

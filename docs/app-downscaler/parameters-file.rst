@@ -72,7 +72,7 @@ Example of a parameters file for the Downscaler:
       <description>
         <method_id>2Z</method_id>
         <method_id_display>Classic circulation</method_id_display>
-        <specific_tag>somwhere</specific_tag>
+        <specific_tag>somewhere</specific_tag>
         <specific_tag_display>groupment of interest</specific_tag_display>
         <description>Classic analogy on the atmospheric circulation (2 levels)</description>
       </description>
