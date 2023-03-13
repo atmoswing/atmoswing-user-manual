@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: AtmoSwing 2.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-13 22:03+0100\n"
-"PO-Revision-Date: 2023-03-13 23:12+0100\n"
+"PO-Revision-Date: 2023-03-13 23:22+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -19,56 +19,50 @@ msgstr ""
 "X-Generator: Poedit 3.2.2\n"
 
 #: ../../getting-started.rst:4
-#, fuzzy
 msgid "Getting started"
-msgstr "Pour commencer"
+msgstr "Démarrer"
 
 #: ../../getting-started.rst:6
-#, fuzzy
 msgid ""
 "This section contains documentation on how to get started with AtmoSwing. "
 "This document can also be downloaded as a pdf or epub using the bottom left "
 "menu."
 msgstr ""
-"Cette section contient de la documentation sur la façon de démarrer avec "
+"Cette section contient la documentation sur la façon de démarrer avec "
 "AtmoSwing. Ce document peut également être téléchargé au format pdf ou epub "
 "en utilisant le menu en bas à gauche."
 
 #: ../../getting-started.rst:8
-#, fuzzy
 msgid "This section is divided into the following topics:"
 msgstr "Cette section est divisée en plusieurs rubriques :"
 
 #: ../../getting-started/analog-methods.rst:4
-#, fuzzy
 msgid "Some analog methods"
-msgstr "Quelques méthodes analogiques"
+msgstr "Quelques méthodes des analogues"
 
 #: ../../getting-started/analog-methods.rst:6
-#, fuzzy
 msgid ""
 "Different variants of AMs are presented here. These methods have varying "
 "degrees of complexity and comprise one or more subsequent levels of analogy "
 "with predictor variables of different kinds. The following content comes "
 "from [Horton2018]_."
 msgstr ""
-"Différentes variantes d'AM sont présentées ici. Ces méthodes ont des degrés "
-"de complexité variables et comprennent un ou plusieurs niveaux ultérieurs "
-"d'analogie avec des variables prédictives de différentes natures. Le contenu "
-"suivant provient de [Horton2018]_."
+"Différentes variantes de méthode des analogues sont présentées ici. Ces "
+"méthodes ont des degrés de complexité variables et comprennent un ou "
+"plusieurs niveaux d'analogie avec des variables de différentes natures. Le "
+"contenu suivant provient de [Horton2018]_."
 
 #: ../../getting-started/analog-methods.rst:8
-#, fuzzy
 msgid ""
 "The first method developed with NCEP/NCAR Reanalysis 1 by [Bontron2004]_ is "
 "based on the analogy of synoptic circulation on the geopotential height at "
 "two pressure levels (Z1000 at +12 h and Z500 at +24 h) and is known here as "
 "2Z."
 msgstr ""
-"La première méthode développée avec NCEP/NCAR Reanalysis 1 par "
+"La première méthode développée avec les reanalyses NCEP/NCAR 1 par "
 "[Bontron2004]_ est basée sur l'analogie de la circulation synoptique sur la "
 "hauteur du géopotentiel à deux niveaux de pression (Z1000 à +12 h et Z500 à "
-"+24 h) et est connue ici sous le nom de 2Z."
+"+24 h) et est ici nommée 2Z."
 
 #: ../../getting-started/analog-methods.rst:10
 #, fuzzy

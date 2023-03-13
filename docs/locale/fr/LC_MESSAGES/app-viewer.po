@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: AtmoSwing 2.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-13 22:03+0100\n"
-"PO-Revision-Date: 2023-03-13 22:49+0100\n"
+"PO-Revision-Date: 2023-03-13 23:33+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -19,9 +19,8 @@ msgstr ""
 "X-Generator: Poedit 3.2.2\n"
 
 #: ../../app-viewer.rst:4
-#, fuzzy
 msgid "The Viewer"
-msgstr "Le téléspectateur"
+msgstr "Le Viewer"
 
 #: ../../app-viewer.rst:6
 #, fuzzy
@@ -34,12 +33,10 @@ msgstr ""
 "bas à gauche."
 
 #: ../../app-viewer.rst:8
-#, fuzzy
 msgid "The Viewer manual is divided into the following topics:"
-msgstr "Le manuel de la visionneuse est divisé en plusieurs rubriques :"
+msgstr "Le manuel du Viewer est divisé en plusieurs rubriques :"
 
 #: ../../app-viewer/preferences.rst:2
-#, fuzzy
 msgid "Preferences"
 msgstr "Préférences"
 
@@ -54,9 +51,8 @@ msgstr ""
 "d'outils."
 
 #: ../../app-viewer/preferences.rst:7
-#, fuzzy
 msgid "Workspace"
-msgstr "Espace de travail"
+msgstr "Espace de travail (workspace)"
 
 #: ../../app-viewer/preferences.rst:9
 #, fuzzy
@@ -102,12 +98,10 @@ msgstr ""
 "d'événements importants."
 
 #: ../../app-viewer/preferences.rst:27
-#, fuzzy
 msgid "General"
 msgstr "Général"
 
 #: ../../app-viewer/preferences.rst:30
-#, fuzzy
 msgid "Log options"
 msgstr "Options du journal (log)"
 
@@ -150,7 +144,6 @@ msgstr ""
 "AtmoSwing est défaillant."
 
 #: ../../app-viewer/preferences.rst:42
-#, fuzzy
 msgid "Internet proxy"
 msgstr "Proxy Internet"
 
@@ -164,12 +157,10 @@ msgstr ""
 "du proxy contient les éléments suivants :"
 
 #: ../../app-viewer/preferences.rst:46
-#, fuzzy
 msgid "Proxy activation - if necessary."
 msgstr "Activation du proxy - si nécessaire."
 
 #: ../../app-viewer/preferences.rst:47
-#, fuzzy
 msgid ""
 "Proxy properties - the proxy address, port, the user name, and password."
 msgstr ""
@@ -177,22 +168,18 @@ msgstr ""
 "le mot de passe."
 
 #: ../../app-viewer/preferences.rst:53
-#, fuzzy
 msgid "Advanced"
 msgstr "Avancé"
 
 #: ../../app-viewer/preferences.rst:55
-#, fuzzy
 msgid ""
 "Allow multiple instances of the Viewer, for example to display and compare "
 "different forecasts in separate windows."
 msgstr ""
-"Permettre l'utilisation de plusieurs instances de la visionneuse, par "
-"exemple pour afficher et comparer différentes prévisions dans des fenêtres "
-"distinctes."
+"Permettre l'utilisation de plusieurs instances du Viewer, par exemple pour "
+"afficher et comparer différentes prévisions dans des fenêtres distinctes."
 
 #: ../../app-viewer/preferences.rst:60
-#, fuzzy
 msgid ""
 "Some paths automatically defined according to the OS: working directory, log "
 "file, and preferences file."
@@ -202,7 +189,6 @@ msgstr ""
 "de préférences."
 
 #: ../../app-viewer/usage.rst:2
-#, fuzzy
 msgid "Usage"
 msgstr "Utilisation"
 
@@ -270,7 +256,6 @@ msgstr ""
 "sous-région à l'autre)."
 
 #: ../../app-viewer/usage.rst:12
-#, fuzzy
 msgid "Main interface"
 msgstr "Interface principale"
 
@@ -288,77 +273,62 @@ msgstr ""
 "graphiques sont ensuite disponibles pour afficher plus de détails."
 
 #: ../../app-viewer/usage.rst:19
-#, fuzzy
 msgid "The toolbar allows the following actions:"
 msgstr "La barre d'outils permet d'effectuer les actions suivantes :"
 
 #: ../../app-viewer/usage.rst:21
-#, fuzzy
 msgid "|icon_open| Open a forecast file"
-msgstr "|Ouvrir un fichier de prévisions"
+msgstr "|icon_open| Ouvrir un fichier de prévisions"
 
 #: ../../app-viewer/usage.rst:32
-#, fuzzy
 msgid "icon_open"
 msgstr "icon_open"
 
 #: ../../app-viewer/usage.rst:22
-#, fuzzy
 msgid "|icon_run| Run the current forecast (calls the Forecaster)"
-msgstr "|Lancer la prévision en cours (appelle le Forecaster)"
+msgstr "|icon_run| Démarrer la prévision en cours (appelle le Forecaster)"
 
 #: ../../app-viewer/usage.rst:35
-#, fuzzy
 msgid "icon_run"
 msgstr "icon_run"
 
 #: ../../app-viewer/usage.rst:23
-#, fuzzy
 msgid "|icon_map_select| Select a station on the map"
-msgstr "|Sélection d'une station sur la carte"
+msgstr "|icon_map_select| Sélectionner une station sur la carte"
 
 #: ../../app-viewer/usage.rst:38
-#, fuzzy
 msgid "icon_map_select"
 msgstr "icon_map_select"
 
 #: ../../app-viewer/usage.rst:24
-#, fuzzy
 msgid "|icon_map_zoom_in| Zoom in"
 msgstr "|icon_map_zoom_in| Zoom avant"
 
 #: ../../app-viewer/usage.rst:41
-#, fuzzy
 msgid "icon_map_zoom_in"
 msgstr "icon_map_zoom_in"
 
 #: ../../app-viewer/usage.rst:25
-#, fuzzy
 msgid "|icon_map_zoom_out| Zoom out"
 msgstr "|icon_map_zoom_out| Zoom arrière"
 
 #: ../../app-viewer/usage.rst:44
-#, fuzzy
 msgid "icon_map_zoom_out"
 msgstr "icon_map_zoom_out"
 
 #: ../../app-viewer/usage.rst:26
-#, fuzzy
 msgid "|icon_map_move| Pan the map"
-msgstr "|icon_map_move| Panoramique de la carte"
+msgstr "|icon_map_move| Déplacer de la carte"
 
 #: ../../app-viewer/usage.rst:47
-#, fuzzy
 msgid "icon_map_move"
 msgstr "icon_map_move"
 
 #: ../../app-viewer/usage.rst:27
-#, fuzzy
 msgid "|icon_map_fit| Adjust the map to all stations"
 msgstr "|icon_map_fit| Ajuster la carte à toutes les stations"
 
 #: ../../app-viewer/usage.rst:50
-#, fuzzy
 msgid "icon_map_fit"
 msgstr "icon_map_fit"
 
@@ -378,19 +348,16 @@ msgid "|icon_frame_analogs| Open the list of analogues"
 msgstr "|icon_frame_analogs| Ouvrir la liste des analogues"
 
 #: ../../app-viewer/usage.rst:56
-#, fuzzy
 msgid "icon_frame_analogs"
-msgstr "cadre_analogique"
+msgstr "icon_frame_analogs"
 
 #: ../../app-viewer/usage.rst:30
-#, fuzzy
 msgid "|icon_preferences| Open the preferences"
 msgstr "|icon_preferences| Ouvrir les préférences"
 
 #: ../../app-viewer/usage.rst:59
-#, fuzzy
 msgid "icon_preferences"
-msgstr "icône_préférences"
+msgstr "icon_preferences"
 
 #: ../../app-viewer/usage.rst:62
 #, fuzzy
@@ -406,7 +373,6 @@ msgstr ""
 "fermées."
 
 #: ../../app-viewer/usage.rst:64
-#, fuzzy
 msgid "icon_open_s"
 msgstr "icon_open_s"
 
@@ -431,7 +397,6 @@ msgstr ""
 "s'effectue à l'aide du curseur situé au-dessus de la carte."
 
 #: ../../app-viewer/usage.rst:77
-#, fuzzy
 msgid "Sidebar"
 msgstr "Barre latérale"
 
@@ -606,7 +571,6 @@ msgstr ""
 "ci sont automatiquement importées lors de l'affichage du graphique."
 
 #: ../../app-viewer/usage.rst:133
-#, fuzzy
 msgid "Display of the distributions"
 msgstr "Affichage des distributions"
 
@@ -627,7 +591,6 @@ msgstr ""
 "être sélectionnés dans la partie supérieure de la fenêtre."
 
 #: ../../app-viewer/usage.rst:145
-#, fuzzy
 msgid "icon_frame_distributions_s"
 msgstr "icon_frame_distributions_s"
 
@@ -670,14 +633,12 @@ msgstr ""
 "ordre décroissant."
 
 #: ../../app-viewer/usage.rst:160
-#, fuzzy
 msgid "icon_frame_analogs_s"
 msgstr "icon_frame_analogs_s"
 
 #: ../../app-viewer/usage.rst:168
-#, fuzzy
 msgid "Workspaces"
-msgstr "Espace de travail"
+msgstr "Espace de travail (workspace)"
 
 #: ../../app-viewer/usage.rst:170
 #, fuzzy
@@ -694,94 +655,76 @@ msgstr ""
 "peuvent être définies dans les préférences."
 
 #: ../../app-viewer/usage.rst:172
-#, fuzzy
 msgid "The menu File allows to:"
-msgstr "Le menu Fichier permet de"
+msgstr "Le menu Fichier permet de:"
 
 #: ../../app-viewer/usage.rst:174
-#, fuzzy
 msgid "Open a workspace"
 msgstr "Ouvrir un espace de travail"
 
 #: ../../app-viewer/usage.rst:175
-#, fuzzy
 msgid "Save the workspace"
 msgstr "Sauvegarder l'espace de travail"
 
 #: ../../app-viewer/usage.rst:176
-#, fuzzy
 msgid "Save the workspace as"
 msgstr "Enregistrer l'espace de travail sous"
 
 #: ../../app-viewer/usage.rst:177
-#, fuzzy
 msgid "Create a new workspace"
 msgstr "Créer un nouvel espace de travail"
 
 #: ../../app-viewer/usage.rst:179
-#, fuzzy
 msgid "The creation of a new workspace is guided by a wizard to define:"
 msgstr ""
 "La création d'un nouvel espace de travail est guidée par un assistant qui "
 "permet de le définir :"
 
 #: ../../app-viewer/usage.rst:181
-#, fuzzy
 msgid "The location of the workspace file"
 msgstr "Emplacement du fichier de l'espace de travail"
 
 #: ../../app-viewer/usage.rst:182
-#, fuzzy
 msgid "The path to the forecasts directory"
 msgstr "Chemin d'accès au répertoire des prévisions"
 
 #: ../../app-viewer/usage.rst:183
-#, fuzzy
 msgid "The base map for the project."
 msgstr "La carte de base du projet."
 
 #: ../../app-viewer/usage.rst:185
-#, fuzzy
 msgid "The base map options are:"
 msgstr "Les options de la carte de base sont les suivantes :"
 
 #: ../../app-viewer/usage.rst:187
-#, fuzzy
 msgid "Custom layers"
 msgstr "Couches personnalisées"
 
 #: ../../app-viewer/usage.rst:188
-#, fuzzy
 msgid "Terrain from Google maps"
 msgstr "Terrain à partir de Google maps"
 
 #: ../../app-viewer/usage.rst:189
-#, fuzzy
 msgid "Map from Google maps"
 msgstr "Carte de Google maps"
 
 #: ../../app-viewer/usage.rst:190
-#, fuzzy
 msgid "Map from OpenStreetMap"
 msgstr "Carte de OpenStreetMap"
 
 #: ../../app-viewer/usage.rst:191
-#, fuzzy
 msgid "Map from ArcGIS Mapserver"
 msgstr "Carte à partir d'ArcGIS Mapserver"
 
 #: ../../app-viewer/usage.rst:192
-#, fuzzy
 msgid "Satellite imagery from Google maps"
-msgstr "Imagerie satellite de Google maps"
+msgstr "Images satellite de Google maps"
 
 #: ../../app-viewer/usage.rst:193
-#, fuzzy
 msgid "Satellite imagery from VirtualEarth"
-msgstr "Images satellites de VirtualEarth"
+msgstr "Images satellite de VirtualEarth"
 
 #: ../../app-viewer/usage.rst:195
-#, fuzzy
 msgid ""
 "The workspace file does not need to be directly edited. The changes can be "
 "made through the interface and the workspace saved again. Its structure is "

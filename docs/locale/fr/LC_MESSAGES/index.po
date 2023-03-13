@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: AtmoSwing 2.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-13 22:03+0100\n"
-"PO-Revision-Date: 2023-03-13 23:03+0100\n"
+"PO-Revision-Date: 2023-03-13 23:27+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -23,12 +23,10 @@ msgid "Content"
 msgstr "Contenu"
 
 #: ../../index.rst:5
-#, fuzzy
 msgid "AtmoSwing's user documentation"
-msgstr "Documentation de l'utilisateur d'AtmoSwing"
+msgstr "Documentation utilisateur d'AtmoSwing"
 
 #: ../../index.rst:7
-#, fuzzy
 msgid ""
 ":ref:`Analog methods (AMs) <analog-methods>` are statistical weather "
 "forecasting methods, which use synoptic-scale predictors to search in the "
@@ -39,19 +37,18 @@ msgid ""
 "require low computing capacity and have demonstrated useful potential for "
 "application in several contexts."
 msgstr ""
-":ref:`Méthodes analogiques (MA) <analog-methods>` sont des méthodes "
+":ref:`Les méthodes d'analogues (MAs) <analog-methods>` sont des méthodes "
 "statistiques de prévision météorologique, qui utilisent des prédicteurs à "
 "l'échelle synoptique pour rechercher dans le passé des jours similaires à un "
 "jour cible afin de déduire le prédictand d'intérêt, tel que les "
-"précipitations quotidiennes. Elles peuvent s'appuyer sur les résultats des "
+"précipitations journalières. Elles peuvent s'appuyer sur les résultats des "
 "modèles de prévision numérique du temps (PNT) dans le contexte des "
 "prévisions opérationnelles ou sur les résultats des modèles climatiques dans "
-"le contexte des études d'impact sur le climat. Les AM nécessitent une faible "
+"le contexte des études d'impact climatiques. Les MAs requièrent une faible "
 "capacité de calcul et ont démontré un potentiel d'application utile dans "
 "plusieurs contextes."
 
 #: ../../index.rst:9
-#, fuzzy
 msgid ""
 "AtmoSwing is open-source software written in C++ that implements AMs in a "
 "flexible way so that different variants can be handled dynamically. It "
@@ -60,12 +57,12 @@ msgid ""
 "the Optimizer to establish the relationship between predictands and "
 "predictors."
 msgstr ""
-"AtmoSwing est un logiciel libre écrit en C++ qui met en œuvre les AM de "
-"manière flexible afin que différentes variantes puissent être gérées de "
-"manière dynamique. Il comprend quatre modules : le Forecaster pour les "
-"prévisions opérationnelles, le Viewer pour afficher les résultats, le "
-"Downscaler pour les études climatiques et l'Optimizer pour établir la "
-"relation entre les prédictands et les prédicteurs."
+"AtmoSwing est un logiciel libre écrit en C++ qui met en œuvre les MAs de "
+"manière flexible permettant une gestion dynamique de différentes variantes. "
+"Il comprend quatre modules : le Forecaster pour les prévisions "
+"opérationnelles, le Viewer pour afficher les résultats, le Downscaler pour "
+"les études climatiques et l'Optimizer pour établir la relation statistique "
+"entre les prédictands et les prédicteurs."
 
 #: ../../index.rst:11
 #, fuzzy
@@ -157,7 +154,6 @@ msgstr ""
 "www.geosci-model-dev.net/12/2915/2019/gmd-12-2915-2019.html>`_."
 
 #: ../../index.rst:34
-#, fuzzy
 msgid "Indices and tables"
 msgstr "Indices et tableaux"
 
