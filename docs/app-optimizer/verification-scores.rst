@@ -3,7 +3,7 @@
 Verification scores
 ===================
 
-The Optimizer has different verification scores implemented:
+The Optimizer has different verification scores implemented. The most often used for precipitation is the CRPS. The options are:
 
 * CRPSS (Continuous ranked probability skill score): ``CRPSS``
 * CRPS (Continuous ranked probability score): ``CRPS``

@@ -1,7 +1,8 @@
 Preferences
 ===========
 
-The preferences frame can be opened from the menu Options / Preferences of the main interface.
+The preferences frame can be opened from the menu Options / Preferences of the main interface or with a button from the toolbar.
+
 Workspace
 ---------
 
@@ -40,7 +41,7 @@ Log preferences control the display of the log window and the level (importance)
 Internet proxy
 ~~~~~~~~~~~~~~
 
-The proxy configuration contains the following elements:
+If required, proxy options can be provided. The proxy configuration contains the following elements:
 
 * Proxy activation - if necessary.
 * Proxy properties - the proxy address, port, the user name, and password.

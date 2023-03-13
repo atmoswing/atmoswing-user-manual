@@ -192,7 +192,7 @@ The base map options are:
 * Satellite imagery from Google maps
 * Satellite imagery from VirtualEarth
 
-The workspace file does not need (and should not be) directly edited. Its structure is as follows:
+The workspace file does not need to be directly edited. The changes can be made through the interface and the workspace saved again. Its structure is as follows:
 
 .. code-block:: xml
 

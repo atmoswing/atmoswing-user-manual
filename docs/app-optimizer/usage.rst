@@ -5,7 +5,7 @@ The Optimizer implements different optimization techniques, such as a semi-autom
 
 The calibration of the AM is usually performed in a perfect prognosis framework. Perfect prognosis uses observed or reanalyzed data to calibrate the relationship between predictors and predictands. As a result, perfect prognosis yields relationships that are as close as possible to the natural links between predictors and predictands. However, there are no perfect models, and even reanalysis data may contain biases that cannot be ignored. Thus, the considered predictors should be as robust as possible, i.e., they should have minimal dependency on the model.
 
-A statistical relationship is established with a trial and error approach by processing a forecast for every day of a calibration period. A certain number of days close to the target date are excluded to consider only independent candidate days. Validating the parameters of AMs on an independent validation period is very important to avoid over-parametrization and to ensure that the statistical relationship is valid for another period. In order to account for climate change and the evolution of measuring techniques, it is recommended that a noncontinuous period for validation should be used, distributed over the entire archive (for example, every 5th year). AtmoSwing users can thus specify a list of the years to set apart for the validation that are removed from possible candidate situations. At the end of the optimization, the validation score is processed automatically.
+A statistical relationship is established with a trial and error approach by processing a forecast for every day of a calibration period. A certain number of days close to the target date are excluded to consider only independent candidate days. Validating the parameters of AMs on an independent validation period is very important to avoid over-parametrization and to ensure that the statistical relationship is valid for another period. In order to account for climate change and the evolution of measuring techniques, it is recommended that a noncontinuous period for validation should be used, distributed over the entire archive (for example, every 5th year). AtmoSwing users can thus specify a list of the years to set apart for the validation that are removed from possible candidate situations. At the end of the optimization, the validation score is processed automatically. The different verification scores available are detailed :ref:`here<verification-scores>`.
 
 Requirements
 ------------
@@ -24,12 +24,12 @@ The Optimizer provides different approaches listed below.
 Evaluation-only approaches
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-These methods do not seek to improve the parameters of the AM. They allow some assessments using the provided parameters.
+These methods do not seek to improve the parameters of the AM. They allow some assessments using the provided parameters. The different verification scores available are detailed :ref:`here<verification-scores>`.
 
 * **Single assessment**: This approach processes the AM as described in the provided parameters file and assesses the defined score.
 * **Evaluation of all scores**: Similar as above, but assesses all the implemented scores.
-* **Only predictand values**: Does not process a performance score, but processes the AM and save the analog values into a file.
-* **Only analog dates (and criteria)**: Does not process a performance score, neither assign predictand values to the analog dates. It only saves the analog dates identified by the defined AM into a file.
+* **Only predictand values**: Does not process a skill score, but processes the AM and save the analog values into a file.
+* **Only analog dates (and criteria)**: Does not process a skill score, neither assign predictand values to the analog dates. It only saves the analog dates identified by the defined AM into a file.
 
 Based on the classic calibration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -48,7 +48,7 @@ Global optimization
 Random exploration of the parameters space
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* **Monte-Carlo simulations**: An exploration of the parameters space using Monte-Carlo simulations. These simulations were found to be limited in terms of ability to find reasonable parameters sets for even moderately AMs.
+* **Monte-Carlo simulations**: An exploration of the parameters space using Monte-Carlo simulations. These simulations were found to be limited in terms of ability to find reasonable parameters sets for even moderately complex AMs (1-2 levels of analogy with a few predictors).
 
 Outputs
 -------
@@ -57,10 +57,11 @@ The Optimizer produces different files:
 
 * A text file with the resulting best parameters set and the skill score ([...]best_parameters.txt).
 * A text file with all the assessed parameters set and their corresponding skill score ([...]tested_parameters.txt).
-* An xml file with the best parameters set (to be used further by AtmoSwing Forecaster; [...]best_parameters.xml).
+* An xml file with the best parameters set (to be used further by AtmoSwing Forecaster/Downscaler; [...]best_parameters.xml).
 * A NetCDF file containing the analog dates (AnalogDates[...].nc) both for the calibration and validation periods.
 * A NetCDF file containing the analog values (AnalogValues[...].nc) both for the calibration and validation periods.
-* A NetCDF file containing the performance scores (Scores[...].nc) both for the calibration and validation periods.
+* A NetCDF file containing the skill scores (Scores[...].nc) both for the calibration and validation periods.
+
 
 Graphical user interface
 ------------------------
@@ -139,8 +140,8 @@ The Optimizer also has a command line interface, which is the prefered way of us
 --cp-proceed-sequentially  Classic plus: proceed sequentially
 --ve-step=<step_nb>  Variables exploration: step to process
 --mc-runs-nb=<runs_nb>  Monte Carlo: number of runs
---ga-  All GAs options are described on the :ref:`genetic algorithms <genetic-algorithms>` page
+--ga-xxxxx=<value>  All GAs options are described on the :ref:`genetic algorithms <genetic-algorithms>` page
 -n, --threads-nb=<n>  Number of threads to use
 -l, --local  Work in local directory
 -s, --silent  Silent mode
--l, --log-level=<n>  Set the log level (0: minimum, 1: errors, 2: warnings (default), 3: verbose)
+--log-level=<n>  Set the log level (0: minimum, 1: errors, 2: warnings (default), 3: verbose)

@@ -3,7 +3,7 @@
 Classic calibration
 ===================
 
-The calibration procedure that we call "sequential" or "classic" was elaborated by [Bontron2004]_ (see also [Radanovics2013]_ and [BenDaoud2016]_). It is a semi-automatic procedure that optimizes the spatial windows in which the predictors are compared and the number of analogs for every level of analogy. The different analogy levels (e.g., the atmospheric circulation or moisture index) are calibrated sequentially. The procedure consists of the following steps [Bontron2004]_:
+The calibration procedure that we call "sequential" or "classic" was elaborated by [Bontron2004]_ (see also [Radanovics2013]_ and [BenDaoud2016]_). It is a semi-automatic procedure that optimizes the spatial windows in which the predictors are compared and the number of analogs are systematically assessed for every level of analogy. The different analogy levels (e.g., the atmospheric circulation or moisture index) are calibrated sequentially. The procedure consists of the following steps [Bontron2004]_:
 
 1. Manual selection of the following parameters:
 
@@ -40,5 +40,5 @@ These additional steps often result in spatial windows that are slightly differe
 
 
 .. [Bontron2004] Bontron, G. (2004). Prévision quantitative des précipitations: Adaptation probabiliste par recherche d’analogues. Utilisation des Réanalyses NCEP/NCAR et application aux précipitations du Sud-Est de la France. Institut National Polytechnique de Grenoble.
-.. [BenDaoud2016] Horton, P., Obled, C., & Jaboyedoff, M. (2017). The analogue method for precipitation prediction: finding better analogue situations at a sub-daily time step. Hydrology and Earth System Sciences, 21, 3307–3323. http://doi.org/10.5194/hess-21-3307-2017
+.. [BenDaoud2016] Ben Daoud, A., Sauquet, E., Bontron, G., Obled, C., & Lang, M. (2016). Daily quantitative precipitation forecasts based on the analogue method: improvements and application to a French large river basin. Atmospheric Research, 169, 147–159. https://doi.org/10.1016/j.atmosres.2015.09.015
 .. [Radanovics2013] Radanovics, S., Vidal, J.-P., Sauquet, E., Ben Daoud, A., & Bontron, G. (2013). Optimising predictor domains for spatially coherent precipitation downscaling. Hydrology and Earth System Sciences, 17(10), 4189–4208. http://doi.org/10.5194/hess-17-4189-2013

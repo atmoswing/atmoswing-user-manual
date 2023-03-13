@@ -1,7 +1,7 @@
 Preferences
 ===========
 
-The preferences frame can be opened from the menu Options / Preferences of the main interface.
+The preferences frame can be opened from the menu Options / Preferences of the main interface or with a button from the toolbar.
 
 Directories
 -----------

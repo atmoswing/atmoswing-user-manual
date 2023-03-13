@@ -3,7 +3,7 @@
 Optimizer parameters file
 =========================
 
-The Optimizer has two different kinds of parameter files. One type for the classic and classic+ calibration (see `calibration parameters file`_) and another for the optimization techniques using genetic algorithms or Monte-Carlo simulations (see `optimization parameters file`_). However, some attributes are identical for both of them.
+The Optimizer has two different kinds of parameter files. One type for the classic and classic+ calibration (see `Classic calibration parameters file`_) and another for the optimization techniques using genetic algorithms or Monte-Carlo simulations (see `optimization parameters file`_). However, some attributes are identical for both of them.
 
 Shared properties
 -----------------
@@ -67,7 +67,7 @@ The name of the score to use must be provided. Options are listed here: :ref:`ve
 Element 'time_array'
 ^^^^^^^^^^^^^^^^^^^^
 
-The ``<time_array>`` element must be provided. It should however be set to ``simple``.
+The ``<time_array>`` element must be provided. It should however be set to ``simple`` as there are no other options available yet.
 
 Other optional properties
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -122,7 +122,7 @@ This element varies the number of analog situations Ni to consider, for example:
 Element ‘spatial_window’
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-This element defines the extent of the spatial window for each predictor, for example:
+This element defines the extent of the spatial window for each predictor. ``<x_min>`` and ``<y_min>`` are the minimum longitude and latitude respectively, ``<x_points_nb>`` and ``<y_points_nb>`` are the number of points from the predictor grid to use on the longitude and latitude axes, respectively. ``<x_step>`` and ``<y_step>`` are the longitude/latitude resolutions to use. This window needs to be defined for each predictor.
 
 .. code-block:: xml
 
@@ -288,12 +288,12 @@ The optimization parameters file used for genetic algorithms or Monte Carlo simu
 
     <level method="array" lock="0">0, 300, 500, 850, 1000</level>
 
-* The ``lock`` property allows to fix a value that will not be optimized even if ``lowerlimit`` and ``upperlimit`` values are defined, for example. You then need to provide a value for the parameter. For example:
+* The ``lock`` property allows to fix a value that will not be optimized even if ``lowerlimit`` and ``upperlimit`` values are defined, for example. You then need to provide a value for the parameter. It can be used to temporarily disable the calibration of a parameter. For example:
 
 .. code-block:: xml
 
     <time lowerlimit="0" upperlimit="30" iteration="6" lock="1">18</time>
-    
+
 Root node
 ~~~~~~~~~
 
@@ -320,6 +320,8 @@ This element varies the number of analog situations Ni to consider, for example:
 
 Element ‘predictor’
 ^^^^^^^^^^^^^^^^^^^
+
+.. TODO: Provide some explanation for this code block.
 
 Example:
 

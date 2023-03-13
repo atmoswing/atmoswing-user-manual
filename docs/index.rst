@@ -35,4 +35,6 @@ Indices and tables
 
 * :ref:`genindex`
 * :ref:`modindex`
-* :ref:`search`
+
+.. TODO: Index and tables seem not to be implemented (neither online nor in the PDF.
+.. TODO: In the PDF the bibliography is not handled correctly since there same references are repeated several times. Bibliography not ordered alphabetically and chronologically.

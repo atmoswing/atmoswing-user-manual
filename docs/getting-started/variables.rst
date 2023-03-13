@@ -9,6 +9,7 @@ The following sections define first the different levels, then some common varia
 
 .. contents:: Content of this section
 
+.. TODO: remove the main heading from the content list, i.e., starting the list with the Differentiation subsets/levels heading
 
 Differentiating subsets/levels
 ------------------------------

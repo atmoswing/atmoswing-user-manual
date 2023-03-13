@@ -36,6 +36,8 @@ The main interface of the Downscaler is as follows.
 .. image:: img/frame-downscaler.png
    :align: center
 
+.. TODO: Replace the figure with a new screenshot (typo already corrected in GUI but not in figure)
+
 The toolbar allows the following actions:
 
 - |icon_run| Start the calculations.
@@ -77,4 +79,4 @@ The Downscaler also has a command line interface. The options are as follows:
 -n, --threads-nb=<n>  Number of threads to use
 -s, --silent  Silent mode
 -l, --local  Work in local directory
--l, --log-level=<n>  Set the log level (0: minimum, 1: errors, 2: warnings (default), 3: verbose)
+--log-level=<n>  Set the log level (0: minimum, 1: errors, 2: warnings (default), 3: verbose)

@@ -25,15 +25,15 @@ Element 'downscaling_period'
 
 The content of ``<downscaling_period>`` defines the target period. It works as the ``<archive_period>`` element. Two options are possible:
 
-Providing the exact dates:
-
-* ``<start>``: Start of the target period (ex: 01.01.2050)
-* ``<end>``: End of the target period (ex: 31.12.2099)
-
-Or only providing the years:
+Providing the years :
 
 * ``<start_year>``: Start of the target period (ex: 2050)
 * ``<end_year>``: End of the target period (ex: 2099)
+
+Or the exact dates:
+
+* ``<start>``: Start of the target period (ex: 01.10.2050)
+* ``<end>``: End of the target period (ex: 31.09.2099)
 
 Content 'analog_dates'
 ----------------------

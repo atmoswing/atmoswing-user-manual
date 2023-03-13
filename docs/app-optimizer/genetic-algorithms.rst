@@ -37,14 +37,14 @@ The different operators can be controlled with the following options:
 
 --ga-ope-nat-sel=<0-1>  Operator choice for natural selection: 
 
-                        0. ratio elitism
+                        0. ratio elitism (default)
                         1. tournament selection
                         
 --ga-ope-coup-sel=<0-4>  Operator choice for couples selection:
 
                          0. rank pairing
                          1. random
-                         2. roulette wheel on rank
+                         2. roulette wheel on rank (default)
                          3. roulette wheel on score
                          4. tournament competition
                          
@@ -57,7 +57,7 @@ The different operators can be controlled with the following options:
                       4. limited blending
                       5. linear crossover
                       6. heuristic crossover
-                      7. binary-like crossover
+                      7. binary-like crossover (default)
                       8. linear interpolation
                       9. free interpolation
                       
@@ -75,63 +75,63 @@ The different operators can be controlled with the following options:
                      9. multi-scale
                      10. no mutation
                      
---ga-pop-size=<int>  Size of the population
+--ga-pop-size=<int>  Size of the population (default 500)
 
---ga-conv-steps=<int>  Number of generations for convergence
+--ga-conv-steps=<int>  Number of generations for convergence (default 30)
 
---ga-interm-gen=<0-1>  Ratio of the intermediate generation
+--ga-interm-gen=<0-1>  Ratio of the intermediate generation (default 0.5)
 
---ga-nat-sel-tour-p=<0-1>  Natural selection - tournament probability
+--ga-nat-sel-tour-p=<0-1>  Natural selection - tournament probability (default 0.9)
 
---ga-coup-sel-tour-nb=<2/3>  Couples selection - tournament candidates (2/3)
+--ga-coup-sel-tour-nb=<2/3>  Couples selection - tournament candidates (2/3) (default 3)
 
---ga-cross-mult-pt-nb=<int>  Standard crossover - number of points
+--ga-cross-mult-pt-nb=<int>  Standard crossover - number of points (default 3)
 
---ga-cross-blen-pt-nb=<int>  Blending crossover - number of points
+--ga-cross-blen-pt-nb=<int>  Blending crossover - number of points (default 3)
 
---ga-cross-blen-share-b=<1/0>  Blending crossover - beta shared (1/0)
+--ga-cross-blen-share-b=<1/0>  Blending crossover - beta shared (1/0) (default 1)
 
---ga-cross-lin-pt-nb=<int>  Linear crossover - number of points
+--ga-cross-lin-pt-nb=<int>  Linear crossover - number of points (default 2)
 
---ga-cross-heur-pt-nb=<int>  Heuristic crossover - number of points
+--ga-cross-heur-pt-nb=<int>  Heuristic crossover - number of points (default 2)
 
---ga-cross-heur-share-b=<1/0>  Heuristic crossover - beta shared (1/0)
+--ga-cross-heur-share-b=<1/0>  Heuristic crossover - beta shared (1/0) (default 1)
 
---ga-cross-bin-pt-nb=<int>  Binary-like crossover - number of points
+--ga-cross-bin-pt-nb=<int>  Binary-like crossover - number of points (default 2)
 
---ga-cross-bin-share-b=<1/0>  Binary-like crossover - beta shared (1/0)
+--ga-cross-bin-share-b=<1/0>  Binary-like crossover - beta shared (1/0) (default 1)
 
---ga-mut-unif-cst-p=<0-1>  Uniform mutation - probability
+--ga-mut-unif-cst-p=<0-1>  Uniform mutation - probability (default 0.2)
 
---ga-mut-norm-cst-p=<0-1>  Normal mutation - probability
+--ga-mut-norm-cst-p=<0-1>  Normal mutation - probability (default 0.2)
 
---ga-mut-norm-cst-dev=<sd>  Normal mutation - standard deviation
+--ga-mut-norm-cst-dev=<sd>  Normal mutation - standard deviation (default 0.1)
 
---ga-mut-unif-var-gens=<int>  Variable uniform mutation - generations nb
+--ga-mut-unif-var-gens=<int>  Variable uniform mutation - generations nb (default 50)
 
---ga-mut-unif-var-p-strt=<0-1>  Variable uniform mutation - starting probability
+--ga-mut-unif-var-p-strt=<0-1>  Variable uniform mutation - starting probability (default 0.5)
 
---ga-mut-unif-var-p-end=<0-1>  Variable uniform mutation - end probability
+--ga-mut-unif-var-p-end=<0-1>  Variable uniform mutation - end probability (default 0.01)
 
---ga-mut-norm-var-gens-p=<int>  Variable normal mutation - generations nb for probability
+--ga-mut-norm-var-gens-p=<int>  Variable normal mutation - generations nb for probability (default 50)
 
---ga-mut-norm-var-gens-d=<int>  Variable normal mutation - generations nb for std deviation
+--ga-mut-norm-var-gens-d=<int>  Variable normal mutation - generations nb for std deviation (default 50)
 
---ga-mut-norm-var-p-strt=<0-1>  Variable normal mutation - starting probability
+--ga-mut-norm-var-p-strt=<0-1>  Variable normal mutation - starting probability (default 0.5)
 
---ga-mut-norm-var-p-end=<0-1>  Variable normal mutation - end probability
+--ga-mut-norm-var-p-end=<0-1>  Variable normal mutation - end probability (default 0.05)
 
---ga-mut-norm-var-d-strt=<sd>  Variable normal mutation - starting std deviation
+--ga-mut-norm-var-d-strt=<sd>  Variable normal mutation - starting std deviation (default 0.5)
 
---ga-mut-norm-var-d-end=<sd>  Variable normal mutation - end std deviation
+--ga-mut-norm-var-d-end=<sd>  Variable normal mutation - end std deviation (default 0.01)
 
---ga-mut-non-uni-p=<0-1>  Non uniform mutation - probability
+--ga-mut-non-uni-p=<0-1>  Non uniform mutation - probability (default 0.1-0.2)
 
---ga-mut-non-uni-gens=<int>  Non uniform mutation - generations nb
+--ga-mut-non-uni-gens=<int>  Non uniform mutation - generations nb (default 50-100)
 
---ga-mut-non-uni-min-r=<0-1>  Non uniform mutation - minimum rate
+--ga-mut-non-uni-min-r=<0-1>  Non uniform mutation - minimum rate (default 0.1)
 
---ga-mut-multi-scale-p=<0-1>  Multi-scale mutation - probability
+--ga-mut-multi-scale-p=<0-1>  Multi-scale mutation - probability (default 0.1)
 
 
 .. [Horton2017] Horton, P., Jaboyedoff, M., & Obled, C. (2017). Global Optimization of an Analog Method by Means of Genetic Algorithms. Monthly Weather Review, 145(4), 1275–1294. http://doi.org/10.1175/MWR-D-16-0093.1

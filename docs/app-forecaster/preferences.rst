@@ -1,7 +1,7 @@
 Preferences
 ===========
 
-The preferences frame can be opened from the menu Options / Preferences of the main interface.
+The preferences frame can be opened from the menu Options / Preferences of the main interface or with a button from the toolbar.
 
 Batch file properties
 ---------------------
@@ -11,9 +11,10 @@ Different directories must be specified for operational forecasting:
 * Directory containing the parameters files: contains the :ref:`xml parameters files (defining by the method parameters)<parameters-file-forecaster>`
 * Directory containing the predictand DB: contains the :ref:`NetCDF file generated from the predictand data<predictand-db>`.
 * Directory containing the archive predictors: predictor describing the candidate situations (for example :ref:`reanalyses<reanalyses>`).
-* Directory to save downloaded real-time predictors: the operational NWP model outputs. Subdirectories are automatically created for each date according to a year/month/day structure.
+* Directory to save downloaded real-time predictors: the operational NWP model outputs. Subdirectories are automatically created for each date according to a year/month/day structure (respectively \\ on Windows).
 * Directory to save the forecast outputs (NetCDF): location where the results are stored. Subdirectories are also generated for each date.
 * Directory to save the forecast exports (xml): location where the synthesis xml file is saved.
+
 
 .. image:: img/preferences-paths-forecasting.png
    :align: center
@@ -65,6 +66,7 @@ Options for automatic predictor download. The choices are:
 
 * Maximum number of previous time steps if the download fails - number of attempts on data issued earlier if the desired data cannot be downloaded; this number must be greater than 2 to ensure proper operation of the Forecaster. Indeed, the latest NWP outputs are never instantly accessible, but after a certain delay. In this case, the most recent available data must be used.
 * Maximum parallel requests number - parallel requests reduce the download time. However, be careful not to use too many requests (5 being sufficient), at the risk of being excluded from the data provider.
+* Restrict downloads to needed lead times (enabled by default) - will only download the data needed to process the forecast (skipping unused time steps).
 
 .. image:: img/preferences-adv-downloads.png
    :align: center
