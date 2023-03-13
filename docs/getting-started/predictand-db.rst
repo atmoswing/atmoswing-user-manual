@@ -218,7 +218,7 @@ The structure describing such data files is as follows:
 
 
 Example of the type 'constant line width'
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Predictand files are here structured as constant line width.
 

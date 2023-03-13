@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AtmoSwing 2.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-02 13:22+0100\n"
-"PO-Revision-Date: 2023-02-02 14:23+0100\n"
+"POT-Creation-Date: 2023-03-13 22:03+0100\n"
+"PO-Revision-Date: 2023-03-13 22:45+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -19,10 +19,12 @@ msgstr ""
 "X-Generator: Poedit 3.2.2\n"
 
 #: ../../app-forecaster.rst:4
+#, fuzzy
 msgid "The Forecaster"
 msgstr "Le Forecaster"
 
 #: ../../app-forecaster.rst:6
+#, fuzzy
 msgid ""
 "This section contains the documentation for AtmoSwing Forecaster. This "
 "document can also be downloaded as a pdf or epub using the bottom left menu."
@@ -32,11 +34,13 @@ msgstr ""
 "le menu en bas à gauche."
 
 #: ../../app-forecaster.rst:8
+#, fuzzy
 msgid "The Forecaster manual is divided into the following topics:"
 msgstr "Le manuel du Forecaster est divisé en plusieurs rubriques :"
 
 #: ../../app-forecaster/parameters-file.rst:4
-msgid "Forecaster's parameters file"
+#, fuzzy
+msgid "Forecaster parameters file"
 msgstr "Fichier des paramètres du Forecaster"
 
 #: ../../app-forecaster/parameters-file.rst:6
@@ -53,6 +57,7 @@ msgstr ""
 "comme détaillé ci-dessous. Un `exemple complet`_ est fourni en bas de page."
 
 #: ../../app-forecaster/parameters-file.rst:9
+#, fuzzy
 msgid "Root node"
 msgstr "Nœud racine"
 
@@ -62,6 +67,7 @@ msgid "The ``target`` property of the root node needs to be ``forecaster``."
 msgstr "La propriété \"target\" du noeud racine doit être \"forecaster\"."
 
 #: ../../app-forecaster/parameters-file.rst:18
+#, fuzzy
 msgid "Content 'time_properties'"
 msgstr "Contenu \"time_properties\""
 
@@ -69,14 +75,17 @@ msgstr "Contenu \"time_properties\""
 #, fuzzy
 msgid ""
 "The ``<time_properties>`` property has no ``<time_array_target>`` element, "
-"but a ``<lead_time_days>`` element listing the lead times to process."
+"but a ``<lead_time_days>`` element listing the lead times (in days) to "
+"process."
 msgstr ""
-"La propriété ``<time_properties>` n'a pas d'élément ``<time_array_target>`, "
-"mais un élément ``<lead_time_days>`` listant les délais à traiter."
+"La propriété ``<time_properties>`` n'a pas d'élément "
+"``<time_array_target>``, mais un élément ``<lead_time_days>` listant les "
+"délais (en jours) de traitement."
 
 #: ../../app-forecaster/parameters-file.rst:33
+#, fuzzy
 msgid "Content 'analog_dates'"
-msgstr "Contenu \"dates analogues\""
+msgstr "Contenu 'analog_dates'"
 
 #: ../../app-forecaster/parameters-file.rst:35
 #, fuzzy
@@ -147,6 +156,7 @@ msgid "Example of a parameters file for the Forecaster:"
 msgstr "Exemple d'un fichier de paramètres pour le Forecaster :"
 
 #: ../../app-forecaster/preferences.rst:2
+#, fuzzy
 msgid "Preferences"
 msgstr "Préférences"
 
@@ -154,10 +164,11 @@ msgstr "Préférences"
 #, fuzzy
 msgid ""
 "The preferences frame can be opened from the menu Options / Preferences of "
-"the main interface."
+"the main interface or with a button from the toolbar."
 msgstr ""
 "Le cadre des préférences peut être ouvert à partir du menu Options / "
-"Préférences de l'interface principale."
+"Préférences de l'interface principale ou à l'aide d'un bouton de la barre "
+"d'outils."
 
 #: ../../app-forecaster/preferences.rst:7
 #, fuzzy
@@ -205,11 +216,12 @@ msgstr ""
 msgid ""
 "Directory to save downloaded real-time predictors: the operational NWP model "
 "outputs. Subdirectories are automatically created for each date according to "
-"a year/month/day structure."
+"a year/month/day structure (respectively \\\\ on Windows)."
 msgstr ""
-"Répertoire pour sauvegarder les prédicteurs en temps réel téléchargés : les "
-"sorties du modèle opérationnel NWP. Des sous-répertoires sont "
-"automatiquement créés pour chaque date selon une structure année/mois/jour."
+"Répertoire pour enregistrer les variables prédicteurs en temps réel "
+"téléchargées : les sorties du modèle NWP opérationnel. Des sous-répertoires "
+"sont automatiquement créés pour chaque date selon une structure année/mois/"
+"jour (respectivement sous Windows)."
 
 #: ../../app-forecaster/preferences.rst:15
 #, fuzzy
@@ -230,11 +242,12 @@ msgstr ""
 "Répertoire pour sauvegarder les exportations de prévisions (xml) : "
 "emplacement où le fichier xml de synthèse est sauvegardé."
 
-#: ../../app-forecaster/preferences.rst:22
+#: ../../app-forecaster/preferences.rst:23
+#, fuzzy
 msgid "Log options"
 msgstr "Options du journal (log)"
 
-#: ../../app-forecaster/preferences.rst:24
+#: ../../app-forecaster/preferences.rst:25
 #, fuzzy
 msgid ""
 "Log preferences control the display of the log window and the level "
@@ -243,12 +256,12 @@ msgstr ""
 "Les préférences de journal contrôlent l'affichage de la fenêtre de journal "
 "et le niveau (importance) des messages rapportés :"
 
-#: ../../app-forecaster/preferences.rst:26
+#: ../../app-forecaster/preferences.rst:27
 #, fuzzy
 msgid "Errors only - recommended as long as everything goes as planned."
 msgstr "Erreurs uniquement - recommandé tant que tout se passe comme prévu."
 
-#: ../../app-forecaster/preferences.rst:27
+#: ../../app-forecaster/preferences.rst:28
 #, fuzzy
 msgid ""
 "Errors and warnings - some warnings help to be vigilant in case of problems. "
@@ -258,7 +271,7 @@ msgstr ""
 "vigilant en cas de problème. Cependant, il peut y avoir des avertissements "
 "même pendant un fonctionnement normal."
 
-#: ../../app-forecaster/preferences.rst:28
+#: ../../app-forecaster/preferences.rst:29
 #, fuzzy
 msgid ""
 "Verbose - all operations are reported, which is an unnecessary amount of "
@@ -272,22 +285,22 @@ msgstr ""
 "de messages. Cette option n'est utile que pour identifier les endroits où "
 "AtmoSwing est défaillant."
 
-#: ../../app-forecaster/preferences.rst:34
+#: ../../app-forecaster/preferences.rst:35
 #, fuzzy
 msgid "Internet proxy"
 msgstr "Proxy Internet"
 
-#: ../../app-forecaster/preferences.rst:36
+#: ../../app-forecaster/preferences.rst:37
 #, fuzzy
 msgid "The proxy configuration contains the following elements:"
 msgstr "La configuration du proxy contient les éléments suivants :"
 
-#: ../../app-forecaster/preferences.rst:38
+#: ../../app-forecaster/preferences.rst:39
 #, fuzzy
 msgid "Proxy activation - if necessary."
 msgstr "Activation du proxy - si nécessaire."
 
-#: ../../app-forecaster/preferences.rst:39
+#: ../../app-forecaster/preferences.rst:40
 #, fuzzy
 msgid ""
 "Proxy properties - the proxy address, port, the user name, and password."
@@ -295,12 +308,13 @@ msgstr ""
 "Propriétés du proxy - l'adresse du proxy, le port, le nom d'utilisateur et "
 "le mot de passe."
 
-#: ../../app-forecaster/preferences.rst:45
-#: ../../app-forecaster/preferences.rst:73
+#: ../../app-forecaster/preferences.rst:46
+#: ../../app-forecaster/preferences.rst:75
+#, fuzzy
 msgid "Advanced options"
 msgstr "Options avancées"
 
-#: ../../app-forecaster/preferences.rst:47
+#: ../../app-forecaster/preferences.rst:48
 #, fuzzy
 msgid ""
 "The advanced options are automatically configured and usually do not need to "
@@ -309,12 +323,12 @@ msgstr ""
 "Les options avancées sont configurées automatiquement et n'ont généralement "
 "pas besoin d'être modifiées."
 
-#: ../../app-forecaster/preferences.rst:50
+#: ../../app-forecaster/preferences.rst:51
 #, fuzzy
 msgid "Graphical User Interface (GUI) options"
 msgstr "Options de l'interface utilisateur graphique (GUI)"
 
-#: ../../app-forecaster/preferences.rst:52
+#: ../../app-forecaster/preferences.rst:53
 #, fuzzy
 msgid ""
 "Options to control the behavior of the interface and its means of "
@@ -325,7 +339,7 @@ msgstr ""
 "de communication avec l'utilisateur. Permet de gagner du temps de calcul en "
 "désactivant les boîtes de dialogue. Les choix sont les suivants :"
 
-#: ../../app-forecaster/preferences.rst:54
+#: ../../app-forecaster/preferences.rst:55
 #, fuzzy
 msgid ""
 "Silent - no dialog box is displayed. The user must, therefore, keep an eye "
@@ -336,29 +350,29 @@ msgstr ""
 "donc garder un œil sur la fenêtre de journal pour détecter toute erreur. "
 "Cette option n'est utile que pour les calculs très intensifs."
 
-#: ../../app-forecaster/preferences.rst:55
+#: ../../app-forecaster/preferences.rst:56
 #, fuzzy
 msgid "Standard - recommended for regular use."
 msgstr "Standard - recommandé pour une utilisation régulière."
 
-#: ../../app-forecaster/preferences.rst:56
+#: ../../app-forecaster/preferences.rst:57
 #, fuzzy
 msgid "Verbose - a bit more verbose than the Standard option."
 msgstr "Verbose - un peu plus verbeux que l'option Standard."
 
-#: ../../app-forecaster/preferences.rst:62
+#: ../../app-forecaster/preferences.rst:63
 #, fuzzy
 msgid "Predictor download"
 msgstr "Téléchargement du prédicteur"
 
-#: ../../app-forecaster/preferences.rst:64
+#: ../../app-forecaster/preferences.rst:65
 #, fuzzy
 msgid "Options for automatic predictor download. The choices are:"
 msgstr ""
 "Options pour le téléchargement du prédicteur automatique. Les choix sont les "
 "suivants :"
 
-#: ../../app-forecaster/preferences.rst:66
+#: ../../app-forecaster/preferences.rst:67
 #, fuzzy
 msgid ""
 "Maximum number of previous time steps if the download fails - number of "
@@ -376,7 +390,7 @@ msgstr ""
 "délai. Dans ce cas, les données disponibles les plus récentes doivent être "
 "utilisées."
 
-#: ../../app-forecaster/preferences.rst:67
+#: ../../app-forecaster/preferences.rst:68
 #, fuzzy
 msgid ""
 "Maximum parallel requests number - parallel requests reduce the download "
@@ -388,13 +402,24 @@ msgstr ""
 "requêtes (5 étant suffisantes), au risque d'être exclu du fournisseur de "
 "données."
 
-#: ../../app-forecaster/preferences.rst:75
+#: ../../app-forecaster/preferences.rst:69
+#, fuzzy
+msgid ""
+"Restrict downloads to needed lead times (enabled by default) - will only "
+"download the data needed to process the forecast (skipping unused time "
+"steps)."
+msgstr ""
+"Limiter les téléchargements aux délais nécessaires (activée par défaut) - ne "
+"téléchargera que les données nécessaires au traitement de la prévision (en "
+"ignorant les délais non utilisés)."
+
+#: ../../app-forecaster/preferences.rst:77
 #, fuzzy
 msgid "Different options can control the software's behavior:"
 msgstr ""
 "Différentes options permettent de contrôler le comportement du logiciel :"
 
-#: ../../app-forecaster/preferences.rst:77
+#: ../../app-forecaster/preferences.rst:79
 #, fuzzy
 msgid ""
 "Enable or disable the reactivity of the graphical interface. This option "
@@ -403,21 +428,22 @@ msgstr ""
 "Activez ou désactivez la réactivité de l'interface graphique. Cette option "
 "doit toujours être activée pour une utilisation régulière."
 
-#: ../../app-forecaster/preferences.rst:78
+#: ../../app-forecaster/preferences.rst:80
 #, fuzzy
 msgid "Allow multiple instances of the Forecaster."
 msgstr "Autoriser les instances multiples du Forecaster."
 
-#: ../../app-forecaster/preferences.rst:84
+#: ../../app-forecaster/preferences.rst:86
+#, fuzzy
 msgid "Multithreading"
 msgstr "Multithreading"
 
-#: ../../app-forecaster/preferences.rst:86
+#: ../../app-forecaster/preferences.rst:88
 #, fuzzy
 msgid "Options for using multiple threads:"
 msgstr "Options pour l'utilisation de plusieurs fils :"
 
-#: ../../app-forecaster/preferences.rst:88
+#: ../../app-forecaster/preferences.rst:90
 #, fuzzy
 msgid ""
 "Allow multithreading - allows a gain in performance for the calculations "
@@ -426,7 +452,7 @@ msgstr ""
 "Autoriser le multithreading - permet un gain de performance pour les calculs "
 "(recommandé)."
 
-#: ../../app-forecaster/preferences.rst:89
+#: ../../app-forecaster/preferences.rst:91
 #, fuzzy
 msgid ""
 "Maximum number of threads - to be chosen according to the computer's CPU. "
@@ -437,7 +463,7 @@ msgstr ""
 "logiciel propose automatiquement le nombre optimal de threads pour "
 "l'ordinateur utilisé."
 
-#: ../../app-forecaster/preferences.rst:90
+#: ../../app-forecaster/preferences.rst:92
 #, fuzzy
 msgid ""
 "Threads priority - allows defining the priority of the threads in "
@@ -446,12 +472,12 @@ msgstr ""
 "Priorité des threads - permet de définir la priorité des threads en "
 "compétition avec les autres processus en cours."
 
-#: ../../app-forecaster/preferences.rst:96
+#: ../../app-forecaster/preferences.rst:98
 #, fuzzy
 msgid "Processing options"
 msgstr "Options de traitement"
 
-#: ../../app-forecaster/preferences.rst:98
+#: ../../app-forecaster/preferences.rst:100
 #, fuzzy
 msgid ""
 "These options influence how the search for analogs is performed, which has "
@@ -462,7 +488,7 @@ msgstr ""
 "effectuée, ce qui n'a aucun impact sur les résultats, mais uniquement sur le "
 "temps de calcul. Les choix sont les suivants :"
 
-#: ../../app-forecaster/preferences.rst:100
+#: ../../app-forecaster/preferences.rst:102
 #, fuzzy
 msgid ""
 "Multithreaded - as long as the computer has at least two processors. It is "
@@ -471,7 +497,7 @@ msgstr ""
 "Multithreaded - pour autant que l'ordinateur possède au moins deux "
 "processeurs. Il s'agit de la version la plus rapide."
 
-#: ../../app-forecaster/preferences.rst:101
+#: ../../app-forecaster/preferences.rst:103
 #, fuzzy
 msgid ""
 "Standard - this option is slower than the previous one as it uses a single "
@@ -480,12 +506,12 @@ msgstr ""
 "Standard - cette option est plus lente que la précédente car elle utilise un "
 "seul thread."
 
-#: ../../app-forecaster/preferences.rst:107
+#: ../../app-forecaster/preferences.rst:109
 #, fuzzy
 msgid "User specific paths"
 msgstr "Chemins d'accès spécifiques aux utilisateurs"
 
-#: ../../app-forecaster/preferences.rst:109
+#: ../../app-forecaster/preferences.rst:111
 #, fuzzy
 msgid ""
 "Some paths automatically defined according to the OS: working directory, log "
@@ -496,6 +522,7 @@ msgstr ""
 "de préférences."
 
 #: ../../app-forecaster/usage.rst:2
+#, fuzzy
 msgid "Usage"
 msgstr "Utilisation"
 
@@ -506,21 +533,21 @@ msgid ""
 "available NWP outputs or for a given date. The real-time forecast "
 "calculation can be performed by a standard computer without specific "
 "resources. The forecast can be executed on demand through a graphical user "
-"interface or can be automated through the use of a command-line interface. "
-"Both aspects are explained hereafter."
+"interface (GUI) or can be automated through the use of a command-line "
+"interface (CLI). Both aspects are explained hereafter."
 msgstr ""
 "Le Forecaster permet de traiter une méthode analogique basée sur les "
 "dernières sorties NWP disponibles ou pour une date donnée. Le calcul de la "
 "prévision en temps réel peut être effectué par un ordinateur standard sans "
 "ressources spécifiques. La prévision peut être exécutée à la demande par le "
-"biais d'une interface utilisateur graphique ou peut être automatisée par "
-"l'utilisation d'une interface de ligne de commande. Les deux aspects sont "
-"expliqués ci-après."
+"biais d'une interface utilisateur graphique (GUI) ou peut être automatisée "
+"par l'utilisation d'une interface de ligne de commande (CLI). Ces deux "
+"aspects sont expliqués ci-après."
 
 #: ../../app-forecaster/usage.rst:6
 #, fuzzy
 msgid ""
-"By default, the Forecaster processes the last available forecast. However, "
+"By default, the Forecaster processes the latest available forecast. However, "
 "it can also process a forecast for a given day in the past, provided the NWP "
 "outputs are available locally or remotely, or it can be executed to process "
 "the last x days. These options can also be executed once a day by a task "
@@ -554,6 +581,7 @@ msgstr ""
 "répertoires, ou dans les mêmes."
 
 #: ../../app-forecaster/usage.rst:11
+#, fuzzy
 msgid "Requirements"
 msgstr "Exigences"
 
@@ -590,6 +618,7 @@ msgstr ""
 "<parameters-file-forecaster>`"
 
 #: ../../app-forecaster/usage.rst:21
+#, fuzzy
 msgid "Outputs"
 msgstr "Sorties"
 
@@ -606,7 +635,7 @@ msgstr "Les valeurs du prédicand pour les différents délais d'exécution"
 #: ../../app-forecaster/usage.rst:26
 #, fuzzy
 msgid "The analog dates"
-msgstr "Les dates analogiques"
+msgstr "Contenu 'analog_dates'"
 
 #: ../../app-forecaster/usage.rst:27
 #, fuzzy
@@ -633,8 +662,8 @@ msgstr ""
 
 #: ../../app-forecaster/usage.rst:31
 #, fuzzy
-msgid "Some station metadata (id, name, coordinates, height)"
-msgstr "Quelques métadonnées de la station (id, nom, coordonnées, hauteur)"
+msgid "Some station metadata (ID, name, coordinates, height)"
+msgstr "Quelques métadonnées de la station (ID, nom, coordonnées, hauteur)"
 
 #: ../../app-forecaster/usage.rst:33
 #, fuzzy
@@ -661,15 +690,13 @@ msgid ""
 "The files are saved in a date-based directory structure (for example, "
 "2019/04/23). The Viewer follows the same rules to look for new forecasts "
 "automatically. The output directory can be synchronized by means of a file-"
-"sharing client to distribute the forecasts (for example, `ownCloud <https://"
-"owncloud.org/>`_ or Dropbox)."
+"sharing client to distribute the forecasts."
 msgstr ""
 "Les fichiers sont enregistrés dans une structure de répertoire basée sur la "
 "date (par exemple, 2019/04/23). Le Viewer suit les mêmes règles pour "
 "rechercher automatiquement les nouvelles prévisions. Le répertoire de sortie "
-"peut être synchronisé au moyen d'un client de partage de fichiers pour "
-"distribuer les prévisions (par exemple, `ownCloud <https://owncloud.org/>`_ "
-"ou Dropbox)."
+"peut être synchronisé à l'aide d'un client de partage de fichiers pour "
+"distribuer les prévisions."
 
 #: ../../app-forecaster/usage.rst:40
 #, fuzzy
@@ -914,6 +941,7 @@ msgid "Proxy user and password"
 msgstr "Utilisateur et mot de passe du proxy"
 
 #: ../../app-forecaster/usage.rst:141
+#, fuzzy
 msgid "Docker image"
 msgstr "Image Docker"
 
@@ -934,18 +962,18 @@ msgstr "Obtenez-le avec : ``docker pull atmoswing/forecaster``"
 #: ../../app-forecaster/usage.rst:147
 #, fuzzy
 msgid ""
-"The docker container for AtmoSwing Forecaster uses the same options that the "
+"The docker container for AtmoSwing Forecaster uses the same options than the "
 "`command line interface` (to the exception of the ``--config`` option). "
 "However, different directories need to be mounted in the docker container to "
 "allow AtmoSwing accessing the data and saving outputs. The necessary "
 "directories are (along with the proposed path in the docker container):"
 msgstr ""
 "Le conteneur docker pour AtmoSwing Forecaster utilise les mêmes options que "
-"l'interface en ligne de commande (à l'exception de l'option ``--config``). "
+"l'interface de ligne de commande (à l'exception de l'option `--config`). "
 "Cependant, différents répertoires doivent être montés dans le conteneur "
 "docker pour permettre à AtmoSwing d'accéder aux données et de sauvegarder "
-"les sorties. Les répertoires nécessaires sont (ainsi que le chemin proposé "
-"dans le conteneur docker) :"
+"les résultats. Les répertoires nécessaires sont les suivants (avec le chemin "
+"proposé dans le conteneur docker) :"
 
 #: ../../app-forecaster/usage.rst:149
 #, fuzzy
@@ -964,14 +992,14 @@ msgstr "exports (synthèse des prévisions) : ``/app/exports``"
 
 #: ../../app-forecaster/usage.rst:152
 #, fuzzy
-msgid "parameters files: ``/app/params```"
+msgid "parameters files: ``/app/params``"
 msgstr "fichiers de paramètres : ``/app/params``"
 
 #: ../../app-forecaster/usage.rst:153
 #, fuzzy
-msgid "predictors archives: ``/app/predictors/archive`` -> can be readonly"
+msgid "predictors archives: ``/app/predictors/archive`` -> can be read-only"
 msgstr ""
-"archives des prédicteurs : ``/app/predictors/archive`` -> peut être en "
+"archives des prédicteurs : `/app/predictors/archive`` -> peut être en "
 "lecture seule"
 
 #: ../../app-forecaster/usage.rst:154
@@ -984,8 +1012,8 @@ msgstr ""
 
 #: ../../app-forecaster/usage.rst:155
 #, fuzzy
-msgid "predictands: ``/app/predictands`` -> can be readonly"
-msgstr "predictands : ``/app/predictands`` -> peut être en lecture seule"
+msgid "predictands: ``/app/predictands`` -> can be read-only"
+msgstr "predictands : ``app/predictands`` -> peut être en lecture seule"
 
 #: ../../app-forecaster/usage.rst:157
 #, fuzzy
@@ -997,6 +1025,7 @@ msgstr ""
 "le bureau de Docker à accéder au disque souhaité) :"
 
 #: ../../app-forecaster/usage.rst:171
+#, fuzzy
 msgid "Or, on Linux:"
 msgstr "Ou, sur Linux :"
 

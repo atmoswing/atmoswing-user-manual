@@ -1,0 +1,2147 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, Pascal Horton
+# This file is distributed under the same license as the AtmoSwing package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: AtmoSwing 2.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-13 22:03+0100\n"
+"PO-Revision-Date: 2023-03-13 22:47+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.2.2\n"
+
+#: ../../app-optimizer.rst:4
+#, fuzzy
+msgid "The Optimizer"
+msgstr "L'optimiseur"
+
+#: ../../app-optimizer.rst:6
+#, fuzzy
+msgid ""
+"This section contains the documentation for AtmoSwing Optimizer. This "
+"document can also be downloaded as a pdf or epub using the bottom left menu."
+msgstr ""
+"Cette section contient la documentation relative à l'Optimiseur AtmoSwing. "
+"Ce document peut également être téléchargé au format pdf ou epub en "
+"utilisant le menu en bas à gauche."
+
+#: ../../app-optimizer.rst:8
+#, fuzzy
+msgid "The Optimizer manual is divided into the following topics:"
+msgstr "Le manuel de l'Optimizer est divisé en plusieurs rubriques :"
+
+#: ../../app-optimizer/classic-calibration.rst:4
+#, fuzzy
+msgid "Classic calibration"
+msgstr "Calibrage classique"
+
+#: ../../app-optimizer/classic-calibration.rst:6
+#, fuzzy
+msgid ""
+"The calibration procedure that we call \"sequential\" or \"classic\" was "
+"elaborated by [Bontron2004]_ (see also [Radanovics2013]_ and "
+"[BenDaoud2016]_). It is a semi-automatic procedure that optimizes the "
+"spatial windows in which the predictors are compared and the number of "
+"analogs are systematically assessed for every level of analogy. The "
+"different analogy levels (e.g., the atmospheric circulation or moisture "
+"index) are calibrated sequentially. The procedure consists of the following "
+"steps [Bontron2004]_:"
+msgstr ""
+"La procédure de calibration que nous appelons \" séquentielle \" ou \" "
+"classique \" a été élaborée par [Bontron2004]_ (voir aussi [Radanovics2013]_ "
+"et [BenDaoud2016]_). Il s'agit d'une procédure semi-automatique qui optimise "
+"les fenêtres spatiales dans lesquelles les prédicteurs sont comparés et le "
+"nombre d'analogues est systématiquement évalué pour chaque niveau "
+"d'analogie. Les différents niveaux d'analogie (par exemple, la circulation "
+"atmosphérique ou l'indice d'humidité) sont calibrés séquentiellement. La "
+"procédure comprend les étapes suivantes [Bontron2004]_ :"
+
+#: ../../app-optimizer/classic-calibration.rst:8
+#, fuzzy
+msgid "Manual selection of the following parameters:"
+msgstr "Sélection manuelle des paramètres suivants :"
+
+#: ../../app-optimizer/classic-calibration.rst:10
+#, fuzzy
+msgid "Meteorological variable"
+msgstr "Variable météorologique"
+
+#: ../../app-optimizer/classic-calibration.rst:11
+#, fuzzy
+msgid "Pressure level"
+msgstr "Niveau de pression"
+
+#: ../../app-optimizer/classic-calibration.rst:12
+#, fuzzy
+msgid "Temporal window (hour of the day)"
+msgstr "Fenêtre temporelle (heure de la journée)"
+
+#: ../../app-optimizer/classic-calibration.rst:13
+#, fuzzy
+msgid "Number of analogs"
+msgstr "Nombre d'analogues"
+
+#: ../../app-optimizer/classic-calibration.rst:15
+#, fuzzy
+msgid "For every level of analogy:"
+msgstr "Pour chaque niveau d'analogie :"
+
+#: ../../app-optimizer/classic-calibration.rst:17
+#, fuzzy
+msgid ""
+"Identification of the most skilled unitary cell (four points for the "
+"geopotential height when using the S1 criteria and one point otherwise) of "
+"the predictor data over a large domain. Every point or cell of the full "
+"domain is assessed based on the predictors of the current level of analogy."
+msgstr ""
+"Identification de la cellule unitaire la plus qualifiée (quatre points pour "
+"la hauteur géopotentielle lorsqu'on utilise les critères S1 et un point "
+"sinon) des données prédicteurs sur un grand domaine. Chaque point ou cellule "
+"du domaine complet est évalué sur la base des prédicteurs du niveau actuel "
+"d'analogie."
+
+#: ../../app-optimizer/classic-calibration.rst:18
+#, fuzzy
+msgid ""
+"From this most skilled cell, the spatial window is expanded by successive "
+"iterations in the direction of the most significant performance gain until "
+"no further improvement is possible (up to the user-specified maximum spatial "
+"window)."
+msgstr ""
+"À partir de cette cellule la plus qualifiée, la fenêtre spatiale est élargie "
+"par itérations successives dans la direction du gain de performance le plus "
+"significatif jusqu'à ce qu'aucune amélioration supplémentaire ne soit "
+"possible (jusqu'à la fenêtre spatiale maximale spécifiée par l'utilisateur)."
+
+#: ../../app-optimizer/classic-calibration.rst:19
+#, fuzzy
+msgid ""
+"The number of analog situations Ni, which was initially set to an arbitrary "
+"value, is then reconsidered and optimized for the current level of analogy."
+msgstr ""
+"Le nombre de situations analogiques Ni, qui a été initialement fixé à une "
+"valeur arbitraire, est ensuite reconsidéré et optimisé pour le niveau "
+"d'analogie actuel."
+
+#: ../../app-optimizer/classic-calibration.rst:21
+#, fuzzy
+msgid ""
+"A new level of analogy can then be added based on other variables such as "
+"the moisture index at chosen pressure levels and hours of the day. The "
+"procedure starts again from step 2 (calibration of the spatial window and "
+"the number of analogs) for the new level. The parameters calibrated for the "
+"previous analogy levels are fixed and do not change."
+msgstr ""
+"Un nouveau niveau d'analogie peut ensuite être ajouté sur la base d'autres "
+"variables telles que l'indice d'humidité à des niveaux de pression et des "
+"heures de la journée choisis. La procédure recommence à partir de l'étape 2 "
+"(calibrage de la fenêtre spatiale et du nombre d'analogues) pour le nouveau "
+"niveau. Les paramètres calibrés pour les niveaux d'analogie précédents sont "
+"fixes et ne changent pas."
+
+#: ../../app-optimizer/classic-calibration.rst:23
+#, fuzzy
+msgid ""
+"Finally, the numbers of analogs for the different levels of analogy are "
+"reassessed. It is performed iteratively by varying the number of analogs of "
+"each level systematically."
+msgstr ""
+"Enfin, les nombres d'analogues pour les différents niveaux d'analogie sont "
+"réévalués. Elle est effectuée de manière itérative en faisant varier "
+"systématiquement le nombre d'analogues de chaque niveau."
+
+#: ../../app-optimizer/classic-calibration.rst:25
+#, fuzzy
+msgid ""
+"The calibration is performed in successive steps for a limited number of "
+"parameters to minimize error functions or maximize skill scores. Except for "
+"the number of analogs, previously calibrated parameters are generally not "
+"reassessed. The benefit of this method is that it is relatively fast, it "
+"provides acceptable results, and it has low computing requirements."
+msgstr ""
+"Le calibrage est effectué par étapes successives pour un nombre limité de "
+"paramètres afin de minimiser les fonctions d'erreur ou de maximiser les "
+"scores de compétence. À l'exception du nombre d'analogues, les paramètres "
+"précédemment calibrés ne sont généralement pas réévalués. L'avantage de "
+"cette méthode est qu'elle est relativement rapide, qu'elle fournit des "
+"résultats acceptables et qu'elle a de faibles exigences en matière de calcul."
+
+#: ../../app-optimizer/classic-calibration.rst:29
+#, fuzzy
+msgid "Classic+ calibration"
+msgstr "Étalonnage classique+"
+
+#: ../../app-optimizer/classic-calibration.rst:31
+#, fuzzy
+msgid ""
+"Small improvements were incorporated into this method in AtmoSwing "
+"Optimizer, then termed as \"classic+\", by allowing the spatial windows to "
+"perform other moves, such as:"
+msgstr ""
+"De petites améliorations ont été incorporées à cette méthode dans AtmoSwing "
+"Optimizer, alors appelé \"classic+\", en permettant aux fenêtres spatiales "
+"d'effectuer d'autres mouvements, tels que :"
+
+#: ../../app-optimizer/classic-calibration.rst:33
+#, fuzzy
+msgid "an increase in 2 simultaneous directions,"
+msgstr "une augmentation dans 2 directions simultanées,"
+
+#: ../../app-optimizer/classic-calibration.rst:34
+#, fuzzy
+msgid "a decrease in 1 or 2 simultaneous directions,"
+msgstr "une diminution dans 1 ou 2 directions simultanées,"
+
+#: ../../app-optimizer/classic-calibration.rst:35
+#, fuzzy
+msgid "an expansion or contraction (in every direction),"
+msgstr "une expansion ou une contraction (dans toutes les directions),"
+
+#: ../../app-optimizer/classic-calibration.rst:36
+#, fuzzy
+msgid ""
+"a shift of the window (without resizing) in 8 directions (including "
+"diagonals), and finally"
+msgstr ""
+"un déplacement de la fenêtre (sans redimensionnement) dans 8 directions (y "
+"compris les diagonales), et enfin"
+
+#: ../../app-optimizer/classic-calibration.rst:37
+#, fuzzy
+msgid ""
+"all the above, but with a factor of 2, 3, or more. For example, an increase "
+"by two grid points in one (or more) direction is assessed. It allows "
+"skipping one size that may not be optimal."
+msgstr ""
+"tout ce qui précède, mais avec un facteur de 2, 3, ou plus. Par exemple, une "
+"augmentation de deux points de grille dans une (ou plusieurs) direction est "
+"évaluée. Cela permet de sauter une taille qui n'est peut-être pas optimale."
+
+#: ../../app-optimizer/classic-calibration.rst:39
+#, fuzzy
+msgid ""
+"These additional steps often result in spatial windows that are slightly "
+"different. The performance gain is rather marginal for reanalyses with a low "
+"resolution such as NR-1, but might be more consistent for reanalyses with "
+"higher resolutions due to the presence of more local minima."
+msgstr ""
+"Ces étapes supplémentaires aboutissent souvent à des fenêtres spatiales "
+"légèrement différentes. Le gain de performance est plutôt marginal pour les "
+"réanalyses à basse résolution telles que NR-1, mais pourrait être plus "
+"conséquent pour les réanalyses à plus haute résolution en raison de la "
+"présence de plus de minima locaux."
+
+#: ../../app-optimizer/classic-calibration.rst:42
+#, fuzzy
+msgid ""
+"Bontron, G. (2004). Prévision quantitative des précipitations: Adaptation "
+"probabiliste par recherche d’analogues. Utilisation des Réanalyses NCEP/NCAR "
+"et application aux précipitations du Sud-Est de la France. Institut National "
+"Polytechnique de Grenoble."
+msgstr ""
+"Bontron, G. (2004). Prévision quantitative des précipitations : Adaptation "
+"probabiliste par recherche d'analogues. Utilisation des Réanalyses NCEP/NCAR "
+"et application aux précipitations du Sud-Est de la France. Institut National "
+"Polytechnique de Grenoble."
+
+#: ../../app-optimizer/classic-calibration.rst:43
+#, fuzzy
+msgid ""
+"Ben Daoud, A., Sauquet, E., Bontron, G., Obled, C., & Lang, M. (2016). Daily "
+"quantitative precipitation forecasts based on the analogue method: "
+"improvements and application to a French large river basin. Atmospheric "
+"Research, 169, 147–159. https://doi.org/10.1016/j.atmosres.2015.09.015"
+msgstr ""
+"Ben Daoud, A., Sauquet, E., Bontron, G., Obled, C., & Lang, M. (2016). "
+"Prévisions quantitatives journalières de précipitations basées sur la "
+"méthode analogique : améliorations et application à un grand bassin "
+"hydrographique français. Atmospheric Research, 169, 147-159. https://doi."
+"org/10.1016/j.atmosres.2015.09.015"
+
+#: ../../app-optimizer/classic-calibration.rst:44
+#, fuzzy
+msgid ""
+"Radanovics, S., Vidal, J.-P., Sauquet, E., Ben Daoud, A., & Bontron, G. "
+"(2013). Optimising predictor domains for spatially coherent precipitation "
+"downscaling. Hydrology and Earth System Sciences, 17(10), 4189–4208. http://"
+"doi.org/10.5194/hess-17-4189-2013"
+msgstr ""
+"Radanovics, S., Vidal, J.-P., Sauquet, E., Ben Daoud, A., & Bontron, G. "
+"(2013). Optimisation des domaines de prédiction pour la réduction d'échelle "
+"spatialement cohérente des précipitations. Hydrology and Earth System "
+"Sciences, 17(10), 4189-4208. http://doi.org/10.5194/hess-17-4189-2013"
+
+#: ../../app-optimizer/genetic-algorithms.rst:4
+#, fuzzy
+msgid "Genetic algorithms"
+msgstr "Algorithmes génétiques"
+
+#: ../../app-optimizer/genetic-algorithms.rst:6
+#, fuzzy
+msgid ""
+"The sequential or classic calibration has substantial limitations: (i) it "
+"cannot automatically choose the pressure levels and temporal windows (hour "
+"of the day) for a given meteorological variable, (ii) it cannot handle "
+"dependencies between parameters, and (iii) it cannot easily handle new "
+"degrees of freedom. For this reason, genetic algorithms (GAs) were "
+"implemented in AtmoSwing Optimizer to perform a global optimization of AMs. "
+"It allows for the optimization of all parameters jointly in a fully "
+"automatic and objective way. See more details in [Horton2017]_."
+msgstr ""
+"L'étalonnage séquentiel ou classique présente des limites importantes : (i) "
+"il ne peut pas choisir automatiquement les niveaux de pression et les "
+"fenêtres temporelles (heure de la journée) pour une variable météorologique "
+"donnée, (ii) il ne peut pas gérer les dépendances entre les paramètres et "
+"(iii) il ne peut pas facilement gérer de nouveaux degrés de liberté. C'est "
+"pourquoi des algorithmes génétiques (AG) ont été mis en œuvre dans AtmoSwing "
+"Optimizer pour réaliser une optimisation globale des AM. Cela permet "
+"d'optimiser tous les paramètres conjointement de manière entièrement "
+"automatique et objective. Voir plus de détails dans [Horton2017]_."
+
+#: ../../app-optimizer/genetic-algorithms.rst:8
+#, fuzzy
+msgid ""
+"Genetic algorithms are powerful but very demanding in terms of computational "
+"capacity. They require thousands of assessments to evolve towards the global "
+"optimum and should thus be used on a cluster rather than a single computer."
+msgstr ""
+"Les algorithmes génétiques sont puissants mais très exigeants en termes de "
+"capacité de calcul. Ils nécessitent des milliers d'évaluations pour évoluer "
+"vers l'optimum global et doivent donc être utilisés sur un cluster plutôt "
+"que sur un seul ordinateur."
+
+#: ../../app-optimizer/genetic-algorithms.rst:10
+#, fuzzy
+msgid ""
+"Many options and operator variants are available for genetic algorithms. "
+"Based on systematic tests detailed in [Horton2017]_, some presets were "
+"established in order to ease the use of genetic algorithms in AtmoSwing "
+"Optimizer. These presets are listed below, and all options are provided "
+"further down."
+msgstr ""
+"De nombreuses options et variantes d'opérateurs sont disponibles pour les "
+"algorithmes génétiques. Sur la base de tests systématiques détaillés dans "
+"[Horton2017]_, certains préréglages ont été établis afin de faciliter "
+"l'utilisation des algorithmes génétiques dans AtmoSwing Optimizer. Ces "
+"préréglages sont listés ci-dessous, et toutes les options sont fournies plus "
+"loin."
+
+#: ../../app-optimizer/genetic-algorithms.rst:14
+#, fuzzy
+msgid "Options presets"
+msgstr "Options des préreglages"
+
+#: ../../app-optimizer/genetic-algorithms.rst:16
+#, fuzzy
+msgid ""
+"Many options and operator variants control the optimization by genetic "
+"algorithms. Recommended configurations were predefined in presets."
+msgstr ""
+"De nombreuses options et variantes d'opérateurs contrôlent l'optimisation "
+"par les algorithmes génétiques. Les configurations recommandées sont "
+"prédéfinies dans des préréglages."
+
+#: ../../app-optimizer/genetic-algorithms.rst:18
+#, fuzzy
+msgid "Operators presets"
+msgstr "Présélections des opérateurs"
+
+#: ../../app-optimizer/genetic-algorithms.rst:20
+#, fuzzy
+msgid ""
+"For all presets, the following options are identical: ``--ga-conv-steps=30`` "
+"``--ga-pop-size=500`` ``--ga-interm-gen=0.5`` ``--ga-ope-nat-sel=0`` ``--ga-"
+"ope-coup-sel=2`` ``--ga-ope-cross=7`` ``--ga-cross-bin-pt-nb=2`` ``--ga-"
+"cross-bin-share-b=1``"
+msgstr ""
+"Pour tous les préréglages, les options suivantes sont identiques : ``ga-conv-"
+"steps=30`` ``ga-pop-size=500`` ``-interm-gen=0.5`` ``ga-ope-nat-sel=0`` ``-"
+"ope-coup-sel=2`` ``ga-ope-cross=7`` ``ga-cross-bin-pt-nb=2`` ``ga-cross-bin-"
+"share-b=1``"
+
+#: ../../app-optimizer/genetic-algorithms.rst:22
+#, fuzzy
+msgid ""
+"The difference between the presets concerns the mutation operator. Providing "
+"the following numbers (1-5) to the option ``--ga-config`` is equivalent to "
+"these corresponding presets:"
+msgstr ""
+"La différence entre les préréglages concerne l'opérateur de mutation. "
+"Fournir les nombres suivants (1-5) à l'option ``--ga-config`` est équivalent "
+"à ces préréglages correspondants :"
+
+#: ../../app-optimizer/genetic-algorithms.rst:24
+#, fuzzy
+msgid "Chromosome of adaptive search radius: ``--ga-ope-mut=8``"
+msgstr "Chromosome du rayon de recherche adaptatif : ``--ga-ope-mut=8``"
+
+#: ../../app-optimizer/genetic-algorithms.rst:25
+#, fuzzy
+msgid "Multiscale mutation: ``--ga-ope-mut=9`` ``--ga-mut-multi-scale-p=0.1``"
+msgstr ""
+"Mutation multi-échelle : ``-ga-ope-mut=9`` ``ga-mut-multi-scale-p=0.1``"
+
+#: ../../app-optimizer/genetic-algorithms.rst:26
+#, fuzzy
+msgid ""
+"Nonuniform mutation (pmut=0.1, Gmr=50, w=0.1): ``--ga-ope-mut=4`` ``--ga-mut-"
+"non-uni-p=0.1`` ``--ga-mut-non-uni-gens=50`` ``--ga-mut-non-uni-min-r=0.1``"
+msgstr ""
+"Mutation non uniforme (pmut=0,1, Gmr=50, w=0,1) : ``--ga-ope-mut=4`` ``--ga-"
+"mut-non-uni-p=0.1`` ``--ga-mut-non-uni-gens=50`` ``--ga-mut-non-uni-min-"
+"r=0.1``"
+
+#: ../../app-optimizer/genetic-algorithms.rst:27
+#, fuzzy
+msgid ""
+"Nonuniform mutation (pmut=0.1, Gmr=100, w=0.1): ``--ga-ope-mut=4`` ``--ga-"
+"mut-non-uni-p=0.1`` ``--ga-mut-non-uni-gens=100`` ``--ga-mut-non-uni-min-"
+"r=0.1``"
+msgstr ""
+"Mutation non uniforme (pmut=0,1, Gmr=100, w=0,1) : ``--ga-ope-mut=4`` ``--ga-"
+"mut-non-uni-p=0.1`` ``--ga-mut-non-uni-gens=100`` ``--ga-mut-non-uni-min-"
+"r=0.1``"
+
+#: ../../app-optimizer/genetic-algorithms.rst:28
+#, fuzzy
+msgid ""
+"Nonuniform mutation (pmut=0.2, Gmr=100, w=0.1): ``--ga-ope-mut=4`` ``--ga-"
+"mut-non-uni-p=0.2`` ``--ga-mut-non-uni-gens=100`` ``--ga-mut-non-uni-min-"
+"r=0.1``"
+msgstr ""
+"Mutation non uniforme (pmut=0,2, Gmr=100, w=0,1) : ``--ga-ope-mut=4`` ``--ga-"
+"mut-non-uni-p=0.2`` ``--ga-mut-non-uni-gens=100`` ``--ga-mut-non-uni-min-"
+"r=0.1``"
+
+#: ../../app-optimizer/genetic-algorithms.rst:30
+#, fuzzy
+msgid ""
+"Any of these options can be overridden by specifying it along with ``--ga-"
+"config``."
+msgstr ""
+"Chacune de ces options peut être surchargée en la spécifiant avec `--ga-"
+"config``."
+
+#: ../../app-optimizer/genetic-algorithms.rst:34
+#, fuzzy
+msgid "All options"
+msgstr "Tables options"
+
+#: ../../app-optimizer/genetic-algorithms.rst:36
+#, fuzzy
+msgid "The different operators can be controlled with the following options:"
+msgstr ""
+"Les différents opérateurs peuvent être contrôlés avec les options suivantes :"
+
+#: ../../app-optimizer/genetic-algorithms.rst:38
+#, fuzzy
+msgid "Operator choice for natural selection:"
+msgstr "Choix de l'opérateur pour la sélection naturelle :"
+
+#: ../../app-optimizer/genetic-algorithms.rst:40
+#, fuzzy
+msgid "ratio elitism (default)"
+msgstr "ratio d'élitisme (par défaut)"
+
+#: ../../app-optimizer/genetic-algorithms.rst:41
+#, fuzzy
+msgid "tournament selection"
+msgstr "sélection du tournoi"
+
+#: ../../app-optimizer/genetic-algorithms.rst:43
+#, fuzzy
+msgid "Operator choice for couples selection:"
+msgstr "Choix de l'opérateur pour la sélection des couples :"
+
+#: ../../app-optimizer/genetic-algorithms.rst:45
+#, fuzzy
+msgid "rank pairing"
+msgstr "couplage de rangs"
+
+#: ../../app-optimizer/genetic-algorithms.rst:46
+#, fuzzy
+msgid "random"
+msgstr "aléatoire"
+
+#: ../../app-optimizer/genetic-algorithms.rst:47
+#, fuzzy
+msgid "roulette wheel on rank (default)"
+msgstr "roulette sur le rang (par défaut)"
+
+#: ../../app-optimizer/genetic-algorithms.rst:48
+#, fuzzy
+msgid "roulette wheel on score"
+msgstr "roulette sur le score"
+
+#: ../../app-optimizer/genetic-algorithms.rst:49
+#, fuzzy
+msgid "tournament competition"
+msgstr "tournoi de compétition"
+
+#: ../../app-optimizer/genetic-algorithms.rst:51
+#, fuzzy
+msgid "Operator choice for chromosome crossover:"
+msgstr "Choix de l'opérateur pour le croisement de chromosomes :"
+
+#: ../../app-optimizer/genetic-algorithms.rst:53
+#, fuzzy
+msgid "single point crossover"
+msgstr "croisement à point unique"
+
+#: ../../app-optimizer/genetic-algorithms.rst:54
+#, fuzzy
+msgid "double points crossover"
+msgstr "double point crossover"
+
+#: ../../app-optimizer/genetic-algorithms.rst:55
+#, fuzzy
+msgid "multiple points crossover"
+msgstr "croisement de points multiples"
+
+#: ../../app-optimizer/genetic-algorithms.rst:56
+#, fuzzy
+msgid "uniform crossover"
+msgstr "croisement uniforme"
+
+#: ../../app-optimizer/genetic-algorithms.rst:57
+#, fuzzy
+msgid "limited blending"
+msgstr "mélange limité"
+
+#: ../../app-optimizer/genetic-algorithms.rst:58
+#, fuzzy
+msgid "linear crossover"
+msgstr "filtre linéaire"
+
+#: ../../app-optimizer/genetic-algorithms.rst:59
+#, fuzzy
+msgid "heuristic crossover"
+msgstr "croisement heuristique"
+
+#: ../../app-optimizer/genetic-algorithms.rst:60
+#, fuzzy
+msgid "binary-like crossover (default)"
+msgstr "croisement de type binaire (par défaut)"
+
+#: ../../app-optimizer/genetic-algorithms.rst:61
+#, fuzzy
+msgid "linear interpolation"
+msgstr "interpolation linéaire"
+
+#: ../../app-optimizer/genetic-algorithms.rst:62
+#, fuzzy
+msgid "free interpolation"
+msgstr "interpolation libre"
+
+#: ../../app-optimizer/genetic-algorithms.rst:64
+#, fuzzy
+msgid "Operator choice for mutation:"
+msgstr "Choix de l'opérateur pour la mutation :"
+
+#: ../../app-optimizer/genetic-algorithms.rst:66
+#, fuzzy
+msgid "random uniform constant"
+msgstr "aléatoire uniforme constante"
+
+#: ../../app-optimizer/genetic-algorithms.rst:67
+#, fuzzy
+msgid "random uniform variable"
+msgstr "variable aléatoire uniforme"
+
+#: ../../app-optimizer/genetic-algorithms.rst:68
+#, fuzzy
+msgid "random normal constant"
+msgstr "aléatoire normal constant"
+
+#: ../../app-optimizer/genetic-algorithms.rst:69
+#, fuzzy
+msgid "random normal variable"
+msgstr "variable normale aléatoire"
+
+#: ../../app-optimizer/genetic-algorithms.rst:70
+#, fuzzy
+msgid "non-uniform"
+msgstr "non-uniforme"
+
+#: ../../app-optimizer/genetic-algorithms.rst:71
+#, fuzzy
+msgid "self-adaptation rate"
+msgstr "taux d'auto-adaptation"
+
+#: ../../app-optimizer/genetic-algorithms.rst:72
+#, fuzzy
+msgid "self-adaptation radius"
+msgstr "rayon d'auto-adaptation"
+
+#: ../../app-optimizer/genetic-algorithms.rst:73
+#, fuzzy
+msgid "self-adaptation rate chromosome"
+msgstr "taux d'auto-adaptation chromosome"
+
+#: ../../app-optimizer/genetic-algorithms.rst:74
+#, fuzzy
+msgid "self-adaptation radius chromosome"
+msgstr "chromosome à rayon d'auto-adaptation"
+
+#: ../../app-optimizer/genetic-algorithms.rst:75
+#, fuzzy
+msgid "multi-scale"
+msgstr "multi-échelle"
+
+#: ../../app-optimizer/genetic-algorithms.rst:76
+#, fuzzy
+msgid "no mutation"
+msgstr "pas de mutation"
+
+#: ../../app-optimizer/genetic-algorithms.rst:78
+#, fuzzy
+msgid "Size of the population (default 500)"
+msgstr "Taille de la population (par défaut 500)"
+
+#: ../../app-optimizer/genetic-algorithms.rst:80
+#, fuzzy
+msgid "Number of generations for convergence (default 30)"
+msgstr "Nombre de générations pour la convergence (par défaut 30)"
+
+#: ../../app-optimizer/genetic-algorithms.rst:82
+#, fuzzy
+msgid "Ratio of the intermediate generation (default 0.5)"
+msgstr "Ratio de la génération intermédiaire (par défaut 0,5)"
+
+#: ../../app-optimizer/genetic-algorithms.rst:84
+#, fuzzy
+msgid "Natural selection - tournament probability (default 0.9)"
+msgstr "Sélection naturelle - probabilité de tournoi (par défaut 0.9)"
+
+#: ../../app-optimizer/genetic-algorithms.rst:86
+#, fuzzy
+msgid "Couples selection - tournament candidates (2/3) (default 3)"
+msgstr "Sélection des couples - candidats au tournoi (2/3) (par défaut 3)"
+
+#: ../../app-optimizer/genetic-algorithms.rst:88
+#, fuzzy
+msgid "Standard crossover - number of points (default 3)"
+msgstr "Croisement standard - nombre de points (par défaut 3)"
+
+#: ../../app-optimizer/genetic-algorithms.rst:90
+#, fuzzy
+msgid "Blending crossover - number of points (default 3)"
+msgstr "Croisement de mélange - nombre de points (par défaut 3)"
+
+#: ../../app-optimizer/genetic-algorithms.rst:92
+#, fuzzy
+msgid "Blending crossover - beta shared (1/0) (default 1)"
+msgstr "Mélange croisé - bêta partagé (1/0) (valeur par défaut : 1)"
+
+#: ../../app-optimizer/genetic-algorithms.rst:94
+#, fuzzy
+msgid "Linear crossover - number of points (default 2)"
+msgstr "Croisement linéaire - nombre de points (par défaut 2)"
+
+#: ../../app-optimizer/genetic-algorithms.rst:96
+#, fuzzy
+msgid "Heuristic crossover - number of points (default 2)"
+msgstr "Croisement heuristique - nombre de points (par défaut 2)"
+
+#: ../../app-optimizer/genetic-algorithms.rst:98
+#, fuzzy
+msgid "Heuristic crossover - beta shared (1/0) (default 1)"
+msgstr "Croisement heuristique - bêta partagé (1/0) (par défaut 1)"
+
+#: ../../app-optimizer/genetic-algorithms.rst:100
+#, fuzzy
+msgid "Binary-like crossover - number of points (default 2)"
+msgstr "Croisement de type binaire - nombre de points (par défaut 2)"
+
+#: ../../app-optimizer/genetic-algorithms.rst:102
+#, fuzzy
+msgid "Binary-like crossover - beta shared (1/0) (default 1)"
+msgstr ""
+"Croisement de type binaire - bêta partagé (1/0) (valeur par défaut : 1)"
+
+#: ../../app-optimizer/genetic-algorithms.rst:104
+#, fuzzy
+msgid "Uniform mutation - probability (default 0.2)"
+msgstr "Mutation uniforme - probabilité (par défaut 0,2)"
+
+#: ../../app-optimizer/genetic-algorithms.rst:106
+#, fuzzy
+msgid "Normal mutation - probability (default 0.2)"
+msgstr "Mutation normale - probabilité (par défaut 0,2)"
+
+#: ../../app-optimizer/genetic-algorithms.rst:108
+#, fuzzy
+msgid "Normal mutation - standard deviation (default 0.1)"
+msgstr "Mutation normale - écart-type (par défaut 0,1)"
+
+#: ../../app-optimizer/genetic-algorithms.rst:110
+#, fuzzy
+msgid "Variable uniform mutation - generations nb (default 50)"
+msgstr "Variable mutation uniforme - générations nb (par défaut 50)"
+
+#: ../../app-optimizer/genetic-algorithms.rst:112
+#, fuzzy
+msgid "Variable uniform mutation - starting probability (default 0.5)"
+msgstr "Mutation uniforme variable - probabilité de départ (par défaut 0,5)"
+
+#: ../../app-optimizer/genetic-algorithms.rst:114
+#, fuzzy
+msgid "Variable uniform mutation - end probability (default 0.01)"
+msgstr "Mutation uniforme variable - probabilité de fin (par défaut 0,01)"
+
+#: ../../app-optimizer/genetic-algorithms.rst:116
+#, fuzzy
+msgid "Variable normal mutation - generations nb for probability (default 50)"
+msgstr ""
+"Variable mutation normale - générations nb pour la probabilité (par défaut "
+"50)"
+
+#: ../../app-optimizer/genetic-algorithms.rst:118
+#, fuzzy
+msgid ""
+"Variable normal mutation - generations nb for std deviation (default 50)"
+msgstr ""
+"Variable mutation normale - générations nb pour l'écart-type (par défaut 50)"
+
+#: ../../app-optimizer/genetic-algorithms.rst:120
+#, fuzzy
+msgid "Variable normal mutation - starting probability (default 0.5)"
+msgstr "Variable mutation normale - probabilité de départ (par défaut 0,5)"
+
+#: ../../app-optimizer/genetic-algorithms.rst:122
+#, fuzzy
+msgid "Variable normal mutation - end probability (default 0.05)"
+msgstr "Variable mutation normale - probabilité de fin (par défaut 0.05)"
+
+#: ../../app-optimizer/genetic-algorithms.rst:124
+#, fuzzy
+msgid "Variable normal mutation - starting std deviation (default 0.5)"
+msgstr "Variable mutation normale - écart-type de départ (par défaut 0,5)"
+
+#: ../../app-optimizer/genetic-algorithms.rst:126
+#, fuzzy
+msgid "Variable normal mutation - end std deviation (default 0.01)"
+msgstr "Variable mutation normale - écart-type final (par défaut 0,01)"
+
+#: ../../app-optimizer/genetic-algorithms.rst:128
+#, fuzzy
+msgid "Non uniform mutation - probability (default 0.1-0.2)"
+msgstr "Mutation non uniforme - probabilité (par défaut 0,1-0,2)"
+
+#: ../../app-optimizer/genetic-algorithms.rst:130
+#, fuzzy
+msgid "Non uniform mutation - generations nb (default 50-100)"
+msgstr "Mutation non uniforme - générations nb (par défaut 50-100)"
+
+#: ../../app-optimizer/genetic-algorithms.rst:132
+#, fuzzy
+msgid "Non uniform mutation - minimum rate (default 0.1)"
+msgstr "Mutation non uniforme - taux minimum (par défaut 0,1)"
+
+#: ../../app-optimizer/genetic-algorithms.rst:134
+#, fuzzy
+msgid "Multi-scale mutation - probability (default 0.1)"
+msgstr "Mutation multi-échelle - probabilité (par défaut 0,1)"
+
+#: ../../app-optimizer/genetic-algorithms.rst:137
+#, fuzzy
+msgid ""
+"Horton, P., Jaboyedoff, M., & Obled, C. (2017). Global Optimization of an "
+"Analog Method by Means of Genetic Algorithms. Monthly Weather Review, "
+"145(4), 1275–1294. http://doi.org/10.1175/MWR-D-16-0093.1"
+msgstr ""
+"Horton, P., Jaboyedoff, M., & Obled, C. (2017). Optimisation globale d'une "
+"méthode analogique au moyen d'algorithmes génétiques. Monthly Weather "
+"Review, 145(4), 1275-1294. http://doi.org/10.1175/MWR-D-16-0093.1"
+
+#: ../../app-optimizer/parameters-file.rst:4
+#, fuzzy
+msgid "Optimizer parameters file"
+msgstr "Fichier de paramètres de l'optimiseur"
+
+#: ../../app-optimizer/parameters-file.rst:6
+#, fuzzy
+msgid ""
+"The Optimizer has two different kinds of parameter files. One type for the "
+"classic and classic+ calibration (see `Classic calibration parameters "
+"file`_) and another for the optimization techniques using genetic algorithms "
+"or Monte-Carlo simulations (see `optimization parameters file`_). However, "
+"some attributes are identical for both of them."
+msgstr ""
+"L'Optimizer dispose de deux types de fichiers de paramètres. Un type pour la "
+"calibration classique et classique+ (voir `Fichier de paramètres de "
+"calibration classique`_) et un autre pour les techniques d'optimisation "
+"utilisant des algorithmes génétiques ou des simulations de Monte-Carlo (voir "
+"`Fichier de paramètres d'optimisation`_). Cependant, certains attributs sont "
+"identiques pour les deux."
+
+#: ../../app-optimizer/parameters-file.rst:9
+#, fuzzy
+msgid "Shared properties"
+msgstr "Propriétés partagées"
+
+#: ../../app-optimizer/parameters-file.rst:12
+#, fuzzy
+msgid "Content 'time_properties'"
+msgstr "Contenu \"time_properties\""
+
+#: ../../app-optimizer/parameters-file.rst:14
+#, fuzzy
+msgid ""
+"The content of ``<time_properties>`` is globally similar to the :ref:"
+"`standard parameters file<parameters-file>`, to the exception of a "
+"``<calibration_period>`` and a ``<validation_period>`` element."
+msgstr ""
+"Le contenu de ``<time_properties>`` est globalement similaire au fichier :"
+"ref:`standard parameters file<parameters-file>`, à l'exception d'un élément "
+"``<calibration_period>` et d'un élément ``<validation_period>`."
+
+#: ../../app-optimizer/parameters-file.rst:17
+#, fuzzy
+msgid "Element 'calibration_period'"
+msgstr "Élément \"période d'étalonnage\""
+
+#: ../../app-optimizer/parameters-file.rst:19
+#, fuzzy
+msgid ""
+"The content of ``<calibration_period>`` defines the target period on which "
+"the method is trained. It works as the ``<archive_period>`` element. Two "
+"options are possible:"
+msgstr ""
+"Le contenu de ``<calibration_period>` définit la période cible sur laquelle "
+"la méthode est entraînée. Il fonctionne comme l'élément ``<archive_period>`. "
+"Deux options sont possibles :"
+
+#: ../../app-optimizer/parameters-file.rst:21
+#, fuzzy
+msgid "Providing the exact dates:"
+msgstr "En fournissant les dates exactes :"
+
+#: ../../app-optimizer/parameters-file.rst:23
+#, fuzzy
+msgid "``<start>``: Start of the calibration period (ex: 01.01.1981)"
+msgstr "``<start>`` : Début de la période d'étalonnage (ex : 01.01.1981)"
+
+#: ../../app-optimizer/parameters-file.rst:24
+#, fuzzy
+msgid "``<end>``: End of the calibration period (ex: 31.12.2010)"
+msgstr "``<end>`` : Fin de la période d'étalonnage (ex : 31.12.2010)"
+
+#: ../../app-optimizer/parameters-file.rst:26
+#, fuzzy
+msgid "Alternatively, only providing the years:"
+msgstr "Il est également possible de ne fournir que les années :"
+
+#: ../../app-optimizer/parameters-file.rst:28
+#, fuzzy
+msgid "``<start_year>``: Start of the calibration period (ex: 1981)"
+msgstr "``<start_year>`` : Début de la période d'étalonnage (ex : 1981)"
+
+#: ../../app-optimizer/parameters-file.rst:29
+#, fuzzy
+msgid "``<end_year>``: End of the calibration period (ex: 2010)"
+msgstr "``<end_year>`` : Fin de la période d'étalonnage (ex : 2010)"
+
+#: ../../app-optimizer/parameters-file.rst:32
+#, fuzzy
+msgid "Element 'validation_period'"
+msgstr "Élément 'validation_period'"
+
+#: ../../app-optimizer/parameters-file.rst:34
+#, fuzzy
+msgid ""
+"The content of ``<validation_period>`` defines the independent period that "
+"is reserved for validation."
+msgstr ""
+"Le contenu de ``<validation_period>`` définit la période indépendante qui "
+"est réservée à la validation."
+
+#: ../../app-optimizer/parameters-file.rst:37
+#, fuzzy
+msgid ""
+"The validation period must be covered by the calibration period (to "
+"correctly load the required data). AtmoSwing then handles the validation "
+"period by excluding it from the calibration period. Once again: the "
+"validation period must not provide dates that are not covered by the "
+"calibration period."
+msgstr ""
+"La période de validation doit être couverte par la période d'étalonnage "
+"(pour charger correctement les données requises). AtmoSwing traite alors la "
+"période de validation en l'excluant de la période d'étalonnage. Encore une "
+"fois : la période de validation ne doit pas fournir de dates qui ne sont pas "
+"couvertes par la période d'étalonnage."
+
+#: ../../app-optimizer/parameters-file.rst:39
+#, fuzzy
+msgid "Two options are possible:"
+msgstr "Deux options sont possibles :"
+
+#: ../../app-optimizer/parameters-file.rst:41
+#, fuzzy
+msgid "Providing a list of years (distributed over the calibration period):"
+msgstr "Fournir une liste d'années (réparties sur la période d'étalonnage) :"
+
+#: ../../app-optimizer/parameters-file.rst:43
+#, fuzzy
+msgid "``<years>``: List of years (ex: 1985, 1990, 1995, 2000, 2005, 2010)"
+msgstr "``<years>`` : Liste d'années (ex : 1985, 1990, 1995, 2000, 2005, 2010)"
+
+#: ../../app-optimizer/parameters-file.rst:45
+#, fuzzy
+msgid "Alternatively, providing a range of years:"
+msgstr "Il est également possible de fournir une fourchette d'années :"
+
+#: ../../app-optimizer/parameters-file.rst:47
+#, fuzzy
+msgid "``<start_year>``: Start of the validation period (ex: 2001)"
+msgstr "``<start_year>`` : Début de la période de validation (ex : 2001)"
+
+#: ../../app-optimizer/parameters-file.rst:48
+#, fuzzy
+msgid "``<end_year>``: End of the validation period (ex: 2010)"
+msgstr "``<end_year>`` : Fin de la période de validation (ex : 2010)"
+
+#: ../../app-optimizer/parameters-file.rst:51
+#, fuzzy
+msgid "Content 'evaluation'"
+msgstr "Contenu \"évaluation\""
+
+#: ../../app-optimizer/parameters-file.rst:53
+#, fuzzy
+msgid ""
+"The Optimizer has a ``<evaluation>`` node to specify the score to use and "
+"other characteristics:"
+msgstr ""
+"L'Optimiseur possède un noeud ``<evaluation>`` pour spécifier le score à "
+"utiliser et d'autres caractéristiques :"
+
+#: ../../app-optimizer/parameters-file.rst:63
+#, fuzzy
+msgid "Element 'score'"
+msgstr "Élément \"score\""
+
+#: ../../app-optimizer/parameters-file.rst:65
+#, fuzzy
+msgid ""
+"The name of the score to use must be provided. Options are listed here: :ref:"
+"`verification scores<verification-scores>`"
+msgstr ""
+"Le nom du score à utiliser doit être fourni. Les options sont listées ici : :"
+"ref:`score de vérification<verification-scores>`"
+
+#: ../../app-optimizer/parameters-file.rst:68
+#, fuzzy
+msgid "Element 'time_array'"
+msgstr "Élément 'time_array'"
+
+#: ../../app-optimizer/parameters-file.rst:70
+#, fuzzy
+msgid ""
+"The ``<time_array>`` element must be provided. It should however be set to "
+"``simple`` as there are no other options available yet."
+msgstr ""
+"L'élément ``<time_array>`` doit être fourni. Il doit cependant être "
+"positionné à ``simple`` car il n'y a pas d'autres options disponibles pour "
+"l'instant."
+
+#: ../../app-optimizer/parameters-file.rst:73
+#, fuzzy
+msgid "Other optional properties"
+msgstr "Autres propriétés facultatives"
+
+#: ../../app-optimizer/parameters-file.rst:75
+#, fuzzy
+msgid ""
+"Other options can be added to specify how the score should be processed."
+msgstr ""
+"D'autres options peuvent être ajoutées pour spécifier comment le score doit "
+"être traité."
+
+#: ../../app-optimizer/parameters-file.rst:77
+#, fuzzy
+msgid ""
+"``<threshold>``: Threshold to use for the processing of scores relying on "
+"thresholds exceedance, such as the contingency table. Example: "
+"``<threshold>0.5</threshold>``"
+msgstr ""
+"``<threshold>`` : Seuil à utiliser pour le traitement des scores reposant "
+"sur le dépassement de seuils, comme le tableau de contingence. Exemple : "
+"``0<threshold>.5``</threshold>"
+
+#: ../../app-optimizer/parameters-file.rst:78
+#, fuzzy
+msgid ""
+"``<quantile>``: Quantile to use for the processing of scores relying on a "
+"single value rather than the distribution. Example: ``<quantile>0.9</"
+"quantile>``"
+msgstr ""
+"``<quantile>`` : Quantile à utiliser pour le traitement des scores reposant "
+"sur une seule valeur plutôt que sur la distribution. Exemple : "
+"``0<quantile>.9``</quantile>"
+
+#: ../../app-optimizer/parameters-file.rst:79
+#, fuzzy
+msgid ""
+"``<on_mean>1</on_mean>``: Specifies to process the score on the mean of the "
+"analogs rather that a quantile (see above). For example, when used with the "
+"score ``MSE``. The value 1 has no meaning other than \"true\"."
+msgstr ""
+"``<on_mean>1</on_mean>`` : Spécifie de traiter le score sur la moyenne des "
+"analogues plutôt que sur un quantile (voir ci-dessus). Par exemple, "
+"lorsqu'il est utilisé avec le score ``MSE``. La valeur 1 n'a pas d'autre "
+"signification que \"vrai\"."
+
+#: ../../app-optimizer/parameters-file.rst:82
+#, fuzzy
+msgid "Classic calibration parameters file"
+msgstr "Fichier de paramètres d'étalonnage classique"
+
+#: ../../app-optimizer/parameters-file.rst:84
+#, fuzzy
+msgid ""
+"The calibration parameters file defines the parameters to be calibrated and "
+"the range of the authorized values. There are different methods possible to "
+"define these options:"
+msgstr ""
+"Le fichier des paramètres d'étalonnage définit les paramètres à étalonner et "
+"la plage des valeurs autorisées. Il y a différentes méthodes possibles pour "
+"définir ces options :"
+
+#: ../../app-optimizer/parameters-file.rst:86
+#, fuzzy
+msgid ""
+"``minmax`` (the most used): you must provide a ``min`` value of the "
+"parameter, a ``max`` value and a ``step`` value. For example:"
+msgstr ""
+"``minmax`` (le plus utilisé) : vous devez fournir une valeur ``min`` du "
+"paramètre, une valeur ``max`` et une valeur ``step``. Par exemple :"
+
+#: ../../app-optimizer/parameters-file.rst:92
+#, fuzzy
+msgid ""
+"``array``: the content of the node will then be parsed as an array. For "
+"example:"
+msgstr ""
+"``array`` : le contenu du noeud sera alors analysé comme un tableau. Par "
+"exemple :"
+
+#: ../../app-optimizer/parameters-file.rst:98
+#, fuzzy
+msgid ""
+"``fixed``: should not be calibrated even if ``min`` and ``max`` values are "
+"defined. A value for the parameter must then be provided."
+msgstr ""
+"``fixed`` : ne doit pas être calibré même si des valeurs ``min`` et ``max`` "
+"sont définies. Une valeur pour le paramètre doit alors être fournie."
+
+#: ../../app-optimizer/parameters-file.rst:101
+#: ../../app-optimizer/parameters-file.rst:298
+#, fuzzy
+msgid "Root node"
+msgstr "Nœud racine"
+
+#: ../../app-optimizer/parameters-file.rst:103
+#, fuzzy
+msgid "The ``target`` property of the root node needs to be ``calibrator``."
+msgstr "La propriété \"cible\" du noeud racine doit être \"calibrateur\"."
+
+#: ../../app-optimizer/parameters-file.rst:110
+#: ../../app-optimizer/parameters-file.rst:307
+#, fuzzy
+msgid "Content 'analog_dates'"
+msgstr "Contenu 'analog_dates'"
+
+#: ../../app-optimizer/parameters-file.rst:112
+#: ../../app-optimizer/parameters-file.rst:309
+#, fuzzy
+msgid ""
+"The content of ``<analog_dates>`` is mostly similar to the :ref:`standard "
+"parameters file structure<parameters-file>`, but the parameters to calibrate "
+"need to be specified."
+msgstr ""
+"Le contenu de ``<analog_dates>`` est en grande partie similaire à la "
+"structure du fichier de paramètres standard :ref:`<parameters-file>`, mais "
+"les paramètres à calibrer doivent être spécifiés."
+
+#: ../../app-optimizer/parameters-file.rst:115
+#: ../../app-optimizer/parameters-file.rst:313
+#, fuzzy
+msgid "Element ‘analogs_number’"
+msgstr "Élément 'analogs_number'"
+
+#: ../../app-optimizer/parameters-file.rst:116
+#: ../../app-optimizer/parameters-file.rst:315
+#, fuzzy
+msgid ""
+"This element varies the number of analog situations Ni to consider, for "
+"example:"
+msgstr ""
+"Cet élément fait varier le nombre de situations analogiques à prendre en "
+"compte, par exemple :"
+
+#: ../../app-optimizer/parameters-file.rst:123
+#, fuzzy
+msgid "Element ‘spatial_window’"
+msgstr "Élément 'fenêtre spatiale'"
+
+#: ../../app-optimizer/parameters-file.rst:125
+#, fuzzy
+msgid ""
+"This element defines the extent of the spatial window for each predictor. "
+"``<x_min>`` and ``<y_min>`` are the minimum longitude and latitude "
+"respectively, ``<x_points_nb>`` and ``<y_points_nb>`` are the number of "
+"points from the predictor grid to use on the longitude and latitude axes, "
+"respectively. ``<x_step>`` and ``<y_step>`` are the longitude/latitude "
+"resolutions to use. This window needs to be defined for each predictor."
+msgstr ""
+"Cet élément définit l'étendue de la fenêtre spatiale pour chaque prédicteur. "
+"``<x_min>`` et ``<y_min>`` sont respectivement la longitude et la latitude "
+"minimales, ``<x_points_nb>`` et ``<y_points_nb>`` sont le nombre de points "
+"de la grille du prédicteur à utiliser sur les axes de longitude et de "
+"latitude, respectivement. ``<x_step>`` et ``<y_step>`` sont les résolutions "
+"longitude/latitude à utiliser. Cette fenêtre doit être définie pour chaque "
+"prédicteur."
+
+#: ../../app-optimizer/parameters-file.rst:139
+#: ../../app-optimizer/parameters-file.rst:349
+#, fuzzy
+msgid "Full example"
+msgstr "Exemple complet"
+
+#: ../../app-optimizer/parameters-file.rst:275
+#, fuzzy
+msgid "Optimization parameters file"
+msgstr "Fichier des paramètres d'optimisation"
+
+#: ../../app-optimizer/parameters-file.rst:277
+#, fuzzy
+msgid ""
+"The optimization parameters file used for genetic algorithms or Monte Carlo "
+"simulations defines the parameters to be optimized and the range of the "
+"authorized values. There are different aspects to this:"
+msgstr ""
+"Le fichier des paramètres d'optimisation utilisé pour les algorithmes "
+"génétiques ou les simulations de Monte Carlo définit les paramètres à "
+"optimiser et la fourchette des valeurs autorisées. Il comporte plusieurs "
+"aspects :"
+
+#: ../../app-optimizer/parameters-file.rst:279
+#, fuzzy
+msgid ""
+"Defining the range of numerical values: a ``lowerlimit`` value of the "
+"parameter, an ``upperlimit`` value, and an ``iteration`` value must be "
+"provided. For example:"
+msgstr ""
+"Définir la plage de valeurs numériques : une valeur \"limite inférieure\" du "
+"paramètre, une valeur \"limite supérieure\" et une valeur \"d'itération\" "
+"doivent être fournies. Par exemple :"
+
+#: ../../app-optimizer/parameters-file.rst:285
+#, fuzzy
+msgid ""
+"Defining a list of values: the content of the node will then be parsed as an "
+"array. For example:"
+msgstr ""
+"Définir une liste de valeurs : le contenu du nœud sera alors analysé comme "
+"un tableau. Par exemple :"
+
+#: ../../app-optimizer/parameters-file.rst:291
+#, fuzzy
+msgid ""
+"The ``lock`` property allows to fix a value that will not be optimized even "
+"if ``lowerlimit`` and ``upperlimit`` values are defined, for example. You "
+"then need to provide a value for the parameter. It can be used to "
+"temporarily disable the calibration of a parameter. For example:"
+msgstr ""
+"La propriété ``lock`` permet de fixer une valeur qui ne sera pas optimisée "
+"même si les valeurs ``limite inférieure`` et ``limite supérieure`` sont "
+"définies, par exemple. Vous devez alors fournir une valeur pour le "
+"paramètre. Il peut être utilisé pour désactiver temporairement la "
+"calibration d'un paramètre. Par exemple, il peut être utilisé pour "
+"désactiver temporairement l'étalonnage d'un paramètre :"
+
+#: ../../app-optimizer/parameters-file.rst:300
+#, fuzzy
+msgid "The ``target`` property of the root node needs to be ``optimizer``."
+msgstr "La propriété \"cible\" du noeud racine doit être \"optimiseur\"."
+
+#: ../../app-optimizer/parameters-file.rst:322
+#, fuzzy
+msgid "Element ‘predictor’"
+msgstr "Élément \"prédicteur\""
+
+#: ../../app-optimizer/parameters-file.rst:326
+#, fuzzy
+msgid "Example:"
+msgstr "Exemple :"
+
+#: ../../app-optimizer/preferences.rst:2
+#, fuzzy
+msgid "Preferences"
+msgstr "Préférences"
+
+#: ../../app-optimizer/preferences.rst:4
+#, fuzzy
+msgid ""
+"The preferences frame can be opened from the menu Options / Preferences of "
+"the main interface or with a button from the toolbar."
+msgstr ""
+"Le cadre des préférences peut être ouvert à partir du menu Options / "
+"Préférences de l'interface principale ou à l'aide d'un bouton de la barre "
+"d'outils."
+
+#: ../../app-optimizer/preferences.rst:7
+#, fuzzy
+msgid "Directories"
+msgstr "Répertoires"
+
+#: ../../app-optimizer/preferences.rst:9
+#, fuzzy
+msgid "Different directories must be specified:"
+msgstr "Des répertoires différents doivent être spécifiés :"
+
+#: ../../app-optimizer/preferences.rst:11
+#, fuzzy
+msgid ""
+"Directory containing the archive predictors (for example :ref:"
+"`reanalyses<reanalyses>`)."
+msgstr ""
+"Répertoire contenant les prédicteurs de l'archive (par exemple :ref:"
+"`reanalyses<reanalyses>`)."
+
+#: ../../app-optimizer/preferences.rst:12
+#, fuzzy
+msgid ""
+"Directory containing the predictand DB (:ref:`NetCDF file generated from the "
+"predictand data<predictand-db>`)."
+msgstr ""
+"Répertoire contenant la base de données du prédictand (:ref:`NetCDF file "
+"generated from the predictand data<predictand-db>`)."
+
+#: ../../app-optimizer/preferences.rst:17
+#, fuzzy
+msgid ""
+"An additional directory can be specified to save optional intermediate "
+"files, for example, between levels of analogy."
+msgstr ""
+"Un répertoire supplémentaire peut être spécifié pour enregistrer des "
+"fichiers intermédiaires facultatifs, par exemple entre les niveaux "
+"d'analogie."
+
+#: ../../app-optimizer/preferences.rst:24
+#, fuzzy
+msgid "Log options"
+msgstr "Options du journal (log)"
+
+#: ../../app-optimizer/preferences.rst:26
+#, fuzzy
+msgid ""
+"Log preferences control the display of the log window and the level "
+"(importance) of reported messages:"
+msgstr ""
+"Les préférences de journal contrôlent l'affichage de la fenêtre de journal "
+"et le niveau (importance) des messages rapportés :"
+
+#: ../../app-optimizer/preferences.rst:28
+#, fuzzy
+msgid "Errors only - recommended as long as everything goes as planned."
+msgstr "Erreurs uniquement - recommandé tant que tout se passe comme prévu."
+
+#: ../../app-optimizer/preferences.rst:29
+#, fuzzy
+msgid ""
+"Errors and warnings - some warnings help to be vigilant in case of problems. "
+"However, there might be warnings even during regular operation."
+msgstr ""
+"Erreurs et avertissements - certains avertissements permettent d'être "
+"vigilant en cas de problème. Cependant, il peut y avoir des avertissements "
+"même pendant un fonctionnement normal."
+
+#: ../../app-optimizer/preferences.rst:30
+#, fuzzy
+msgid ""
+"Verbose - all operations are reported, which is an unnecessary amount of "
+"information during regular operation. As a result, important messages might "
+"be hidden in a large number of messages. This option is only useful to "
+"identify where AtmoSwing is failing."
+msgstr ""
+"Verbose - toutes les opérations sont signalées, ce qui représente une "
+"quantité inutile d'informations lors d'une opération régulière. Par "
+"conséquent, des messages importants peuvent être cachés dans un grand nombre "
+"de messages. Cette option n'est utile que pour identifier les endroits où "
+"AtmoSwing est défaillant."
+
+#: ../../app-optimizer/preferences.rst:36
+#, fuzzy
+msgid "Graphical User Interface (GUI) options"
+msgstr "Options de l'interface utilisateur graphique (GUI)"
+
+#: ../../app-optimizer/preferences.rst:38
+#, fuzzy
+msgid ""
+"Options to control the behavior of the interface and its means of "
+"communication with the user. Saves calculation time by disabling dialog "
+"boxes. The choices are:"
+msgstr ""
+"Options permettant de contrôler le comportement de l'interface et ses moyens "
+"de communication avec l'utilisateur. Permet de gagner du temps de calcul en "
+"désactivant les boîtes de dialogue. Les choix sont les suivants :"
+
+#: ../../app-optimizer/preferences.rst:40
+#, fuzzy
+msgid ""
+"Silent - no dialog box is displayed. The user must, therefore, keep an eye "
+"on the log window to detect any error. This option is only useful for very "
+"intensive calculations."
+msgstr ""
+"Silencieux - aucune boîte de dialogue n'est affichée. L'utilisateur doit "
+"donc garder un œil sur la fenêtre de journal pour détecter toute erreur. "
+"Cette option n'est utile que pour les calculs très intensifs."
+
+#: ../../app-optimizer/preferences.rst:41
+#, fuzzy
+msgid "Standard - recommended for regular use."
+msgstr "Standard - recommandé pour une utilisation régulière."
+
+#: ../../app-optimizer/preferences.rst:42
+#, fuzzy
+msgid "Verbose - a bit more verbose than the Standard option."
+msgstr "Verbose - un peu plus verbeux que l'option Standard."
+
+#: ../../app-optimizer/preferences.rst:48
+#, fuzzy
+msgid "Multithreading"
+msgstr "Multithreading"
+
+#: ../../app-optimizer/preferences.rst:50
+#, fuzzy
+msgid "Options for using multiple threads:"
+msgstr "Options pour l'utilisation de plusieurs fils :"
+
+#: ../../app-optimizer/preferences.rst:52
+#, fuzzy
+msgid ""
+"Allow multithreading - allows a gain in performance for the calculations "
+"(recommended)."
+msgstr ""
+"Autoriser le multithreading - permet un gain de performance pour les calculs "
+"(recommandé)."
+
+#: ../../app-optimizer/preferences.rst:53
+#, fuzzy
+msgid ""
+"Maximum number of threads - to be chosen according to the computer's CPU. "
+"The software automatically proposes the optimal number of threads for the "
+"computer in use."
+msgstr ""
+"Nombre maximal de threads - à choisir en fonction du CPU de l'ordinateur. Le "
+"logiciel propose automatiquement le nombre optimal de threads pour "
+"l'ordinateur utilisé."
+
+#: ../../app-optimizer/preferences.rst:54
+#, fuzzy
+msgid ""
+"Threads priority - allows defining the priority of the threads in "
+"competition with other ongoing processes."
+msgstr ""
+"Priorité des threads - permet de définir la priorité des threads en "
+"compétition avec les autres processus en cours."
+
+#: ../../app-optimizer/preferences.rst:60
+#, fuzzy
+msgid "Processing options"
+msgstr "Options de traitement"
+
+#: ../../app-optimizer/preferences.rst:62
+#, fuzzy
+msgid ""
+"These options influence how the search for analogs is performed, which has "
+"no impact on the results, only on the calculation time. The choices are as "
+"follows:"
+msgstr ""
+"Ces options influencent la manière dont la recherche d'analogues est "
+"effectuée, ce qui n'a aucun impact sur les résultats, mais uniquement sur le "
+"temps de calcul. Les choix sont les suivants :"
+
+#: ../../app-optimizer/preferences.rst:64
+#, fuzzy
+msgid ""
+"Multithreaded - as long as the computer has at least two processors. It is "
+"the fastest version."
+msgstr ""
+"Multithreaded - pour autant que l'ordinateur possède au moins deux "
+"processeurs. Il s'agit de la version la plus rapide."
+
+#: ../../app-optimizer/preferences.rst:65
+#, fuzzy
+msgid ""
+"Standard - this option is slower than the previous one as it uses a single "
+"thread."
+msgstr ""
+"Standard - cette option est plus lente que la précédente car elle utilise un "
+"seul thread."
+
+#: ../../app-optimizer/preferences.rst:71
+#, fuzzy
+msgid "User-specific paths"
+msgstr "Chemins d'accès spécifiques aux utilisateurs"
+
+#: ../../app-optimizer/preferences.rst:73
+#, fuzzy
+msgid ""
+"Some paths automatically defined according to the OS: working directory, log "
+"file, and preferences file."
+msgstr ""
+"Certains chemins sont définis automatiquement en fonction du système "
+"d'exploitation : le répertoire de travail, le fichier journal et le fichier "
+"de préférences."
+
+#: ../../app-optimizer/usage.rst:2
+#, fuzzy
+msgid "Usage"
+msgstr "Utilisation"
+
+#: ../../app-optimizer/usage.rst:4
+#, fuzzy
+msgid ""
+"The Optimizer implements different optimization techniques, such as a semi-"
+"automatic sequential approach, Monte-Carlo simulations, and a global "
+"optimization technique using genetic algorithms. Establishing a statistical "
+"relationship between predictors and predictands is computationally intensive "
+"because it requires numerous assessments over decades."
+msgstr ""
+"L'Optimiseur met en œuvre différentes techniques d'optimisation, telles "
+"qu'une approche séquentielle semi-automatique, des simulations de Monte-"
+"Carlo et une technique d'optimisation globale utilisant des algorithmes "
+"génétiques. L'établissement d'une relation statistique entre les prédicteurs "
+"et les prédictands est gourmand en ressources informatiques car il nécessite "
+"de nombreuses évaluations sur plusieurs décennies."
+
+#: ../../app-optimizer/usage.rst:6
+#, fuzzy
+msgid ""
+"The calibration of the AM is usually performed in a perfect prognosis "
+"framework. Perfect prognosis uses observed or reanalyzed data to calibrate "
+"the relationship between predictors and predictands. As a result, perfect "
+"prognosis yields relationships that are as close as possible to the natural "
+"links between predictors and predictands. However, there are no perfect "
+"models, and even reanalysis data may contain biases that cannot be ignored. "
+"Thus, the considered predictors should be as robust as possible, i.e., they "
+"should have minimal dependency on the model."
+msgstr ""
+"La calibration de l'AM est généralement effectuée dans un cadre de pronostic "
+"parfait. Le pronostic parfait utilise des données observées ou réanalysées "
+"pour calibrer la relation entre les prédicteurs et les prédictands. En "
+"conséquence, le pronostic parfait produit des relations qui sont aussi "
+"proches que possible des liens naturels entre les prédicteurs et les "
+"prédictands. Cependant, il n'existe pas de modèles parfaits, et même les "
+"données de réanalyse peuvent contenir des biais qui ne peuvent être ignorés. "
+"Ainsi, les prédicteurs considérés doivent être aussi robustes que possible, "
+"c'est-à-dire qu'ils doivent avoir une dépendance minimale vis-à-vis du "
+"modèle."
+
+#: ../../app-optimizer/usage.rst:8
+#, fuzzy
+msgid ""
+"A statistical relationship is established with a trial and error approach by "
+"processing a forecast for every day of a calibration period. A certain "
+"number of days close to the target date are excluded to consider only "
+"independent candidate days. Validating the parameters of AMs on an "
+"independent validation period is very important to avoid over-"
+"parametrization and to ensure that the statistical relationship is valid for "
+"another period. In order to account for climate change and the evolution of "
+"measuring techniques, it is recommended that a noncontinuous period for "
+"validation should be used, distributed over the entire archive (for example, "
+"every 5th year). AtmoSwing users can thus specify a list of the years to set "
+"apart for the validation that are removed from possible candidate "
+"situations. At the end of the optimization, the validation score is "
+"processed automatically. The different verification scores available are "
+"detailed :ref:`here<verification-scores>`."
+msgstr ""
+"Une relation statistique est établie par tâtonnement en traitant une "
+"prévision pour chaque jour d'une période d'étalonnage. Un certain nombre de "
+"jours proches de la date cible sont exclus afin de ne prendre en compte que "
+"les jours candidats indépendants. Il est très important de valider les "
+"paramètres des AM sur une période de validation indépendante afin d'éviter "
+"une paramétrisation excessive et de s'assurer que la relation statistique "
+"est valable pour une autre période. Afin de tenir compte des changements "
+"climatiques et de l'évolution des techniques de mesure, il est recommandé "
+"d'utiliser une période de validation non continue, répartie sur l'ensemble "
+"des archives (par exemple, tous les 5 ans). Les utilisateurs d'AtmoSwing "
+"peuvent ainsi spécifier une liste d'années à mettre à part pour la "
+"validation qui sont retirées des situations candidates possibles. A la fin "
+"de l'optimisation, le score de validation est traité automatiquement. Les "
+"différents scores de vérification disponibles sont détaillés :ref:"
+"`ici<verification-scores>`."
+
+#: ../../app-optimizer/usage.rst:11
+#, fuzzy
+msgid "Requirements"
+msgstr "Exigences"
+
+#: ../../app-optimizer/usage.rst:13
+#, fuzzy
+msgid "The Optimizer needs:"
+msgstr "L'optimiseur a besoin :"
+
+#: ../../app-optimizer/usage.rst:15
+#, fuzzy
+msgid ":ref:`A predictand database <predictand-db>`"
+msgstr ":ref:`Une base de données de prédicteurs <predictand-db>`"
+
+#: ../../app-optimizer/usage.rst:16
+#, fuzzy
+msgid ":ref:`A predictors archive (e.g. a reanalysis dataset) <reanalyses>`"
+msgstr ""
+":ref:`Une archive de prédicteurs (par exemple un jeu de données de "
+"réanalyse) <reanalyses>`"
+
+#: ../../app-optimizer/usage.rst:17
+#, fuzzy
+msgid ""
+":ref:`Parameters files defining the properties of the method. <parameters-"
+"file-optimizer>`"
+msgstr ""
+":ref:`Fichiers de paramètres définissant les propriétés de la méthode. "
+"<parameters-file-optimizer>`"
+
+#: ../../app-optimizer/usage.rst:20
+#, fuzzy
+msgid "Calibration methods"
+msgstr "Méthodes d'étalonnage"
+
+#: ../../app-optimizer/usage.rst:22
+#, fuzzy
+msgid "The Optimizer provides different approaches listed below."
+msgstr "L'Optimizer propose différentes approches, énumérées ci-dessous."
+
+#: ../../app-optimizer/usage.rst:25
+#, fuzzy
+msgid "Evaluation-only approaches"
+msgstr "Approches basées sur l'évaluation"
+
+#: ../../app-optimizer/usage.rst:27
+#, fuzzy
+msgid ""
+"These methods do not seek to improve the parameters of the AM. They allow "
+"some assessments using the provided parameters. The different verification "
+"scores available are detailed :ref:`here<verification-scores>`."
+msgstr ""
+"Ces méthodes ne cherchent pas à améliorer les paramètres de l'AM. Elles "
+"permettent certaines évaluations à l'aide des paramètres fournis. Les "
+"différents scores de vérification disponibles sont détaillés :ref:"
+"`ici<verification-scores>`."
+
+#: ../../app-optimizer/usage.rst:29
+#, fuzzy
+msgid ""
+"**Single assessment**: This approach processes the AM as described in the "
+"provided parameters file and assesses the defined score."
+msgstr ""
+"**Évaluation unique** : Cette approche traite l'AM comme décrit dans le "
+"fichier de paramètres fourni et évalue le score défini."
+
+#: ../../app-optimizer/usage.rst:30
+#, fuzzy
+msgid ""
+"**Evaluation of all scores**: Similar as above, but assesses all the "
+"implemented scores."
+msgstr ""
+"**Evaluation de tous les scores** : Identique au précédent, mais évalue tous "
+"les scores mis en œuvre."
+
+#: ../../app-optimizer/usage.rst:31
+#, fuzzy
+msgid ""
+"**Only predictand values**: Does not process a skill score, but processes "
+"the AM and save the analog values into a file."
+msgstr ""
+"**Uniquement les valeurs prédictives** : Ne traite pas de score de "
+"compétence, mais traite l'AM et enregistre les valeurs analogiques dans un "
+"fichier."
+
+#: ../../app-optimizer/usage.rst:32
+#, fuzzy
+msgid ""
+"**Only analog dates (and criteria)**: Does not process a skill score, "
+"neither assign predictand values to the analog dates. It only saves the "
+"analog dates identified by the defined AM into a file."
+msgstr ""
+"**Uniquement les dates analogiques (et les critères)** : Ne traite pas de "
+"score de compétence et n'attribue pas de valeurs prédictives aux dates "
+"analogiques. Il enregistre uniquement les dates analogiques identifiées par "
+"l'AM défini dans un fichier."
+
+#: ../../app-optimizer/usage.rst:35
+#, fuzzy
+msgid "Based on the classic calibration"
+msgstr "Basé sur l'étalonnage classique"
+
+#: ../../app-optimizer/usage.rst:37
+#, fuzzy
+msgid "The classic calibration is detailed :ref:`here<classic-calibration>`."
+msgstr "L'étalonnage classique est détaillé :ref:`ici<classic-calibration>`."
+
+#: ../../app-optimizer/usage.rst:39
+#, fuzzy
+msgid ""
+"**Classic calibration**: The :ref:`classic calibration <classic-calibration>`"
+msgstr ""
+"**Calibrage classique** : Le :ref:`étalonnage classique <classic-"
+"calibration>`"
+
+#: ../../app-optimizer/usage.rst:40
+#, fuzzy
+msgid ""
+"**Classic+ calibration**: A :ref:`variant of the classic calibration<classic-"
+"calibration>` with some improvements."
+msgstr ""
+"**Calibrage classique+ : Une :ref:`variante de la calibration "
+"classique<classic-calibration>` avec quelques améliorations."
+
+#: ../../app-optimizer/usage.rst:41
+#, fuzzy
+msgid ""
+"**Variables exploration Classic+**: Using the classic+ calibration to "
+"systematically explore a list of variables / levels / hours."
+msgstr ""
+"**Exploration de variables Classic+** : Utilisation de la calibration "
+"classic+ pour explorer systématiquement une liste de variables / niveaux / "
+"heures."
+
+#: ../../app-optimizer/usage.rst:44
+#, fuzzy
+msgid "Global optimization"
+msgstr "Optimisation globale"
+
+#: ../../app-optimizer/usage.rst:46
+#, fuzzy
+msgid ""
+"**Genetic algorithms**: The optimization using :ref:`genetic algorithms "
+"<genetic-algorithms>`."
+msgstr ""
+"**Agorithmes génétiques** : L'optimisation utilisant :ref:``algorithmes "
+"génétiques <genetic-algorithms>`."
+
+#: ../../app-optimizer/usage.rst:49
+#, fuzzy
+msgid "Random exploration of the parameters space"
+msgstr "Exploration aléatoire de l'espace des paramètres"
+
+#: ../../app-optimizer/usage.rst:51
+#, fuzzy
+msgid ""
+"**Monte-Carlo simulations**: An exploration of the parameters space using "
+"Monte-Carlo simulations. These simulations were found to be limited in terms "
+"of ability to find reasonable parameters sets for even moderately complex "
+"AMs (1-2 levels of analogy with a few predictors)."
+msgstr ""
+"**Simulations de Monte-Carlo** : Exploration de l'espace des paramètres à "
+"l'aide de simulations de Monte-Carlo. Ces simulations se sont révélées "
+"limitées en termes de capacité à trouver des ensembles de paramètres "
+"raisonnables pour des AM même modérément complexes (1 à 2 niveaux d'analogie "
+"avec quelques prédicteurs)."
+
+#: ../../app-optimizer/usage.rst:54
+#, fuzzy
+msgid "Outputs"
+msgstr "Sorties"
+
+#: ../../app-optimizer/usage.rst:56
+#, fuzzy
+msgid "The Optimizer produces different files:"
+msgstr "L'Optimiseur produit différents fichiers :"
+
+#: ../../app-optimizer/usage.rst:58
+#, fuzzy
+msgid ""
+"A text file with the resulting best parameters set and the skill score "
+"([...]best_parameters.txt)."
+msgstr ""
+"Un fichier texte avec le meilleur jeu de paramètres résultant et le score de "
+"compétence ([...]best_parameters.txt)."
+
+#: ../../app-optimizer/usage.rst:59
+#, fuzzy
+msgid ""
+"A text file with all the assessed parameters set and their corresponding "
+"skill score ([...]tested_parameters.txt)."
+msgstr ""
+"Un fichier texte contenant tous les paramètres évalués et leur score de "
+"compétence correspondant ([...]tested_parameters.txt)."
+
+#: ../../app-optimizer/usage.rst:60
+#, fuzzy
+msgid ""
+"An xml file with the best parameters set (to be used further by AtmoSwing "
+"Forecaster/Downscaler; [...]best_parameters.xml)."
+msgstr ""
+"Un fichier xml avec les meilleurs paramètres (à utiliser par AtmoSwing "
+"Forecaster/Downscaler ; [...]best_parameters.xml)."
+
+#: ../../app-optimizer/usage.rst:61
+#, fuzzy
+msgid ""
+"A NetCDF file containing the analog dates (AnalogDates[...].nc) both for the "
+"calibration and validation periods."
+msgstr ""
+"Un fichier NetCDF contenant les dates analogiques (AnalogDates[...].nc) pour "
+"les périodes d'étalonnage et de validation."
+
+#: ../../app-optimizer/usage.rst:62
+#, fuzzy
+msgid ""
+"A NetCDF file containing the analog values (AnalogValues[...].nc) both for "
+"the calibration and validation periods."
+msgstr ""
+"Un fichier NetCDF contenant les valeurs analogiques (AnalogValues[...].nc) "
+"pour les périodes d'étalonnage et de validation."
+
+#: ../../app-optimizer/usage.rst:63
+#, fuzzy
+msgid ""
+"A NetCDF file containing the skill scores (Scores[...].nc) both for the "
+"calibration and validation periods."
+msgstr ""
+"Un fichier NetCDF contenant les scores de compétence (Scores[...].nc) pour "
+"les périodes de calibration et de validation."
+
+#: ../../app-optimizer/usage.rst:67
+#, fuzzy
+msgid "Graphical user interface"
+msgstr "Interface utilisateur graphique"
+
+#: ../../app-optimizer/usage.rst:69
+#, fuzzy
+msgid "The main interface of the Optimizer is as follows."
+msgstr "L'interface principale de l'Optimiseur est la suivante."
+
+#: ../../app-optimizer/usage.rst:75
+#, fuzzy
+msgid "The toolbar allows the following actions:"
+msgstr "La barre d'outils permet d'effectuer les actions suivantes :"
+
+#: ../../app-optimizer/usage.rst:77
+#, fuzzy
+msgid "|icon_run| Start the optimization."
+msgstr "|icon_run| Démarrer l'optimisation."
+
+#: ../../app-optimizer/usage.rst:81
+#, fuzzy
+msgid "icon_run"
+msgstr "icon_run"
+
+#: ../../app-optimizer/usage.rst:78
+#, fuzzy
+msgid "|icon_stop| Stop the current calculations."
+msgstr "|icon_stop| Arrête les calculs en cours."
+
+#: ../../app-optimizer/usage.rst:84
+#, fuzzy
+msgid "icon_stop"
+msgstr "icône_stop"
+
+#: ../../app-optimizer/usage.rst:79
+#, fuzzy
+msgid "|icon_preferences| Define the preferences."
+msgstr "|icon_preferences| Définir les préférences."
+
+#: ../../app-optimizer/usage.rst:87
+#, fuzzy
+msgid "icon_preferences"
+msgstr "icône_préférences"
+
+#: ../../app-optimizer/usage.rst:90
+#, fuzzy
+msgid "What is needed:"
+msgstr "Ce qui est nécessaire :"
+
+#: ../../app-optimizer/usage.rst:92
+#, fuzzy
+msgid "Select one of the  `calibration methods`_"
+msgstr "Sélectionnez l'une des `méthodes d'étalonnage`_"
+
+#: ../../app-optimizer/usage.rst:93
+#, fuzzy
+msgid ":ref:`The parameters file <parameters-file-optimizer>`"
+msgstr ":ref:`Le fichier de paramètres <parameters-file-optimizer>`"
+
+#: ../../app-optimizer/usage.rst:94
+#, fuzzy
+msgid ":ref:`The predictand database <predictand-db>`"
+msgstr ":ref:`La base de données des prédicteurs <predictand-db>`"
+
+#: ../../app-optimizer/usage.rst:95
+#, fuzzy
+msgid ""
+"The directory containing the :ref:`predictors for the archive period "
+"<reanalyses>`"
+msgstr ""
+"Le répertoire contenant les prédicteurs :ref:` pour la période d'archivage "
+"<reanalyses>`"
+
+#: ../../app-optimizer/usage.rst:96
+#, fuzzy
+msgid "The directory to save the results"
+msgstr "Le répertoire pour sauvegarder les résultats"
+
+#: ../../app-optimizer/usage.rst:97
+#, fuzzy
+msgid ""
+"All the options for the selected calibration method (in the Options tab; see "
+"below)"
+msgstr ""
+"Toutes les options de la méthode d'étalonnage sélectionnée (dans l'onglet "
+"Options ; voir ci-dessous)"
+
+#: ../../app-optimizer/usage.rst:99
+#, fuzzy
+msgid ""
+"There is one tab to define the options of the classic calibration, the "
+"variables exploration, and the Monte-Carlo simulations. The details of the "
+"options are given :ref:`here<classic-calibration>`."
+msgstr ""
+"Un onglet permet de définir les options de la calibration classique, de "
+"l'exploration des variables et des simulations de Monte-Carlo. Les détails "
+"des options sont donnés :ref:`ici<classic-calibration>`."
+
+#: ../../app-optimizer/usage.rst:104
+#, fuzzy
+msgid ""
+"The other tab provides numerous options for genetic algorithms. The details "
+"of the options are given on the page of the :ref:`genetic algorithms "
+"<genetic-algorithms>`."
+msgstr ""
+"L'autre onglet fournit de nombreuses options pour les algorithmes "
+"génétiques. Le détail des options est donné sur la page de la :ref:"
+"`algorithmes génétiques <genetic-algorithms>`."
+
+#: ../../app-optimizer/usage.rst:111
+#, fuzzy
+msgid "Command line interface"
+msgstr "Interface de ligne de commande"
+
+#: ../../app-optimizer/usage.rst:113
+#, fuzzy
+msgid ""
+"The Optimizer also has a command line interface, which is the prefered way "
+"of using it. The options are as follows:"
+msgstr ""
+"L'Optimiseur dispose également d'une interface en ligne de commande, qui est "
+"le moyen préféré de l'utiliser. Les options sont les suivantes :"
+
+#: ../../app-optimizer/usage.rst:115
+#, fuzzy
+msgid "Displays the help of command line options"
+msgstr "Affiche l'aide des options de la ligne de commande"
+
+#: ../../app-optimizer/usage.rst:116
+#, fuzzy
+msgid "Displays the software version"
+msgstr "Affiche la version du logiciel"
+
+#: ../../app-optimizer/usage.rst:117
+#, fuzzy
+msgid "A given run number"
+msgstr "Un numéro de manche donné"
+
+#: ../../app-optimizer/usage.rst:118
+#, fuzzy
+msgid "File containing the parameters"
+msgstr "Fichier contenant les paramètres"
+
+#: ../../app-optimizer/usage.rst:119
+#, fuzzy
+msgid "The predictand DB"
+msgstr "Le prédicteur DB"
+
+#: ../../app-optimizer/usage.rst:120
+#, fuzzy
+msgid "The predictand station ID"
+msgstr "L'ID de la station du prédicteur"
+
+#: ../../app-optimizer/usage.rst:121
+#, fuzzy
+msgid "The predictors directory"
+msgstr "Le répertoire des prédicteurs"
+
+#: ../../app-optimizer/usage.rst:122
+#, fuzzy
+msgid "Skip the validation calculation"
+msgstr "Sauter le calcul de validation"
+
+#: ../../app-optimizer/usage.rst:123
+#, fuzzy
+msgid ""
+"Do not allow to keep several times the same analog dates (e.g. for ensembles)"
+msgstr ""
+"Ne pas permettre de garder plusieurs fois les mêmes dates analogues (par "
+"exemple pour les ensembles)"
+
+#: ../../app-optimizer/usage.rst:124
+#, fuzzy
+msgid "Dump predictor data to binary files to reduce RAM usage"
+msgstr ""
+"Transfert des données du prédicteur vers des fichiers binaires pour réduire "
+"l'utilisation de la RAM"
+
+#: ../../app-optimizer/usage.rst:125
+#, fuzzy
+msgid "Choice of the calibration method:"
+msgstr "Choix de la méthode d'étalonnage :"
+
+#: ../../app-optimizer/usage.rst:127
+#, fuzzy
+msgid "``single``: single assessment"
+msgstr "``single`` : évaluation unique"
+
+#: ../../app-optimizer/usage.rst:128
+#, fuzzy
+msgid "``classic``: classic calibration"
+msgstr "``classic`` : étalonnage classique"
+
+#: ../../app-optimizer/usage.rst:129
+#, fuzzy
+msgid "``classicp``: classic+ calibration"
+msgstr "``classicp`` : classic+ calibration"
+
+#: ../../app-optimizer/usage.rst:130
+#, fuzzy
+msgid "``varexplocp``: variables exploration classic+"
+msgstr "``varexplocp`` : l'exploration des variables classique+"
+
+#: ../../app-optimizer/usage.rst:131
+#, fuzzy
+msgid "``montecarlo``: Monte Carlo"
+msgstr "``montecarlo`` : Monte Carlo"
+
+#: ../../app-optimizer/usage.rst:132
+#, fuzzy
+msgid "``ga: genetic``: algorithms"
+msgstr "``ga : génétique`` : algorithmes"
+
+#: ../../app-optimizer/usage.rst:133
+#, fuzzy
+msgid "``evalscores``: evaluate all scores"
+msgstr "``evalscores`` : évalue tous les scores"
+
+#: ../../app-optimizer/usage.rst:134
+#, fuzzy
+msgid "``onlyvalues``: evaluate all scores"
+msgstr "``onlyvalues`` : évaluer tous les scores"
+
+#: ../../app-optimizer/usage.rst:135
+#, fuzzy
+msgid "``onlydates``: evaluate all scores"
+msgstr "``onlydates`` : évaluer tous les scores"
+
+#: ../../app-optimizer/usage.rst:137
+#, fuzzy
+msgid "Classic plus: resizing iteration"
+msgstr "Un plus classique : l'itération de redimensionnement"
+
+#: ../../app-optimizer/usage.rst:138
+#, fuzzy
+msgid "Classic plus: steps in latitudes for the relevance map"
+msgstr "Classic plus : étapes en latitudes pour la carte de pertinence"
+
+#: ../../app-optimizer/usage.rst:139
+#, fuzzy
+msgid "Classic plus: steps in longitudes for the relevance map"
+msgstr "Classic plus : étapes en longitudes pour la carte de pertinence"
+
+#: ../../app-optimizer/usage.rst:140
+#, fuzzy
+msgid "Classic plus: proceed sequentially"
+msgstr "Classique plus : procéder de manière séquentielle"
+
+#: ../../app-optimizer/usage.rst:141
+#, fuzzy
+msgid "Variables exploration: step to process"
+msgstr "Exploration des variables : de l'étape au processus"
+
+#: ../../app-optimizer/usage.rst:142
+#, fuzzy
+msgid "Monte Carlo: number of runs"
+msgstr "Monte Carlo : nombre d'exécutions"
+
+#: ../../app-optimizer/usage.rst:143
+#, fuzzy
+msgid ""
+"All GAs options are described on the :ref:`genetic algorithms <genetic-"
+"algorithms>` page"
+msgstr ""
+"Toutes les options des GAs sont décrites sur la page :ref:`genetic "
+"algorithms <genetic-algorithms>`"
+
+#: ../../app-optimizer/usage.rst:144
+#, fuzzy
+msgid "Number of threads to use"
+msgstr "Nombre de threads à utiliser"
+
+#: ../../app-optimizer/usage.rst:145
+#, fuzzy
+msgid "Work in local directory"
+msgstr "Travail dans le répertoire local"
+
+#: ../../app-optimizer/usage.rst:146
+#, fuzzy
+msgid "Silent mode"
+msgstr "Mode silencieux"
+
+#: ../../app-optimizer/usage.rst:147
+#, fuzzy
+msgid ""
+"Set the log level (0: minimum, 1: errors, 2: warnings (default), 3: verbose)"
+msgstr ""
+"Définir le niveau du journal (0 : minimum, 1 : erreurs, 2 : avertissements "
+"(par défaut), 3 : verbeux)"
+
+#: ../../app-optimizer/verification-scores.rst:4
+#, fuzzy
+msgid "Verification scores"
+msgstr "Notes de vérification"
+
+#: ../../app-optimizer/verification-scores.rst:6
+#, fuzzy
+msgid ""
+"The Optimizer has different verification scores implemented. The most often "
+"used for precipitation is the CRPS. The options are:"
+msgstr ""
+"L'Optimizer dispose de différents scores de vérification. Le plus souvent "
+"utilisé pour les précipitations est le CRPS. Les options sont les suivantes :"
+
+#: ../../app-optimizer/verification-scores.rst:8
+#, fuzzy
+msgid "CRPSS (Continuous ranked probability skill score): ``CRPSS``"
+msgstr ""
+"CRPSS (Score de compétence en probabilité classée continue) : ``CRPSS``"
+
+#: ../../app-optimizer/verification-scores.rst:9
+#, fuzzy
+msgid "CRPS (Continuous ranked probability score): ``CRPS``"
+msgstr "CRPS (Continuous ranked probability score) : ``CRPS``"
+
+#: ../../app-optimizer/verification-scores.rst:10
+#, fuzzy
+msgid "CRPS accuracy: ``CRPSaccuracy``"
+msgstr "Précision du CRPS : \"CRPSaccuracy\""
+
+#: ../../app-optimizer/verification-scores.rst:11
+#, fuzzy
+msgid "CRPS sharpness: ``CRPSsharpness``"
+msgstr "Netteté CRPS : ``CRPSsharpness`` (Netteté CRPS)"
+
+#: ../../app-optimizer/verification-scores.rst:12
+#, fuzzy
+msgid "CRPS reliability: ``CRPSreliability``"
+msgstr "Fiabilité du CRPS : ``CRPSreliability`` (fiabilité du CRPS)"
+
+#: ../../app-optimizer/verification-scores.rst:13
+#, fuzzy
+msgid "CRPS potential: ``CRPSpotential``"
+msgstr "Potentiel du SPCR : \"Potentiel du SPCR\""
+
+#: ../../app-optimizer/verification-scores.rst:14
+#, fuzzy
+msgid "Absolute difference of the frequency of null values: ``DF0``"
+msgstr "Différence absolue de la fréquence des valeurs nulles : ``DF0``"
+
+#: ../../app-optimizer/verification-scores.rst:15
+#, fuzzy
+msgid "Proportion correct (contingency table): ``PC``"
+msgstr "Proportion correcte (tableau de contingence) : ``PC``"
+
+#: ../../app-optimizer/verification-scores.rst:16
+#, fuzzy
+msgid "Threat score (contingency table): ``TS``"
+msgstr "Score de menace (tableau de contingence) : ``TS``"
+
+#: ../../app-optimizer/verification-scores.rst:17
+#, fuzzy
+msgid "Bias (contingency table): ``BIAS``"
+msgstr "Biais (tableau de contingence) : ``BIAS``"
+
+#: ../../app-optimizer/verification-scores.rst:18
+#, fuzzy
+msgid "False alarm ratio (contingency table): ``FARA``"
+msgstr "Rapport de fausses alarmes (tableau de contingence) : ``FARA``"
+
+#: ../../app-optimizer/verification-scores.rst:19
+#, fuzzy
+msgid "Hit rate (contingency table): ``H``"
+msgstr "Taux de réussite (tableau de contingence) : ``H``"
+
+#: ../../app-optimizer/verification-scores.rst:20
+#, fuzzy
+msgid "False alarm rate (contingency table): ``F``"
+msgstr "Taux de fausses alarmes (tableau de contingence) : ``F``"
+
+#: ../../app-optimizer/verification-scores.rst:21
+#, fuzzy
+msgid "Heidke skill score (contingency table): ``HSS``"
+msgstr "Score de compétence de Heidke (tableau de contingence) : ``HSS``"
+
+#: ../../app-optimizer/verification-scores.rst:22
+#, fuzzy
+msgid "Pierce skill score (contingency table): ``PSS``"
+msgstr "Score de compétence de Pierce (tableau de contingence) : ``PSS``"
+
+#: ../../app-optimizer/verification-scores.rst:23
+#, fuzzy
+msgid "Gilbert skill score (contingency table): ``GSS``"
+msgstr "Score de compétence Gilbert (tableau de contingence) : ``GSS``"
+
+#: ../../app-optimizer/verification-scores.rst:24
+#, fuzzy
+msgid "Mean absolute error: ``MAE``"
+msgstr "Erreur absolue moyenne : \"EAM\""
+
+#: ../../app-optimizer/verification-scores.rst:25
+#, fuzzy
+msgid "Mean squared error: ``MSE``"
+msgstr "Erreur quadratique moyenne : \"EQM\""
+
+#: ../../app-optimizer/verification-scores.rst:26
+#, fuzzy
+msgid "Root mean squared error: ``RMSE``"
+msgstr "Erreur quadratique moyenne : \"RMSE\""
+
+#: ../../app-optimizer/verification-scores.rst:27
+#, fuzzy
+msgid "Brier score: ``BS``"
+msgstr "Score Brier : \"BS\""
+
+#: ../../app-optimizer/verification-scores.rst:28
+#, fuzzy
+msgid "Brier skill score: ``BSS``"
+msgstr "Score de compétence Brier : \" BSS \""
+
+#: ../../app-optimizer/verification-scores.rst:29
+#, fuzzy
+msgid "Stable equitable error in probability space: ``SEEPS``"
+msgstr "Erreur équitable stable dans l'espace de probabilité : ``SEEPS`''"
+
+#: ../../app-optimizer/verification-scores.rst:30
+#, fuzzy
+msgid "The Verification Rank Histogram (Talagrand Diagram): ``RankHistogram``"
+msgstr ""
+"L'histogramme des rangs de vérification (diagramme de Talagrand) : "
+"``RankHistogram``"
+
+#: ../../app-optimizer/verification-scores.rst:31
+#, fuzzy
+msgid ""
+"Reliability of the Verification Rank Histogram (Talagrand Diagram): "
+"``RankHistogramReliability``"
+msgstr ""
+"Fiabilité de l'histogramme des rangs de vérification (diagramme de "
+"Talagrand) : ``RankHistogrammeReliability`` (Histogramme des rangs)"

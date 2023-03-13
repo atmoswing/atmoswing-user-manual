@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AtmoSwing 2.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-02 13:22+0100\n"
-"PO-Revision-Date: 2023-02-02 13:59+0100\n"
+"POT-Creation-Date: 2023-03-13 22:03+0100\n"
+"PO-Revision-Date: 2023-03-13 22:44+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -19,10 +19,12 @@ msgstr ""
 "X-Generator: Poedit 3.2.2\n"
 
 #: ../../app-downscaler.rst:4
+#, fuzzy
 msgid "The Downscaler"
 msgstr "Le Downscaler"
 
 #: ../../app-downscaler.rst:6
+#, fuzzy
 msgid ""
 "This section contains the documentation for AtmoSwing Downscaler. This "
 "document can also be downloaded as a pdf or epub using the bottom left menu."
@@ -32,26 +34,27 @@ msgstr ""
 "le menu en bas à gauche."
 
 #: ../../app-downscaler.rst:8
+#, fuzzy
 msgid "The Downscaler manual is divided into the following topics:"
 msgstr "Le manuel du Downscaler est divisé en plusieurs rubriques :"
 
 #: ../../app-downscaler/parameters-file.rst:4
 #, fuzzy
-msgid "Downscaler's parameters file"
-msgstr "Fichier de paramètres du downscaler"
+msgid "Downscaler parameters file"
+msgstr "Fichier de paramètres du Downscaler"
 
 #: ../../app-downscaler/parameters-file.rst:6
 #, fuzzy
 msgid ""
-"The parameters files for the Downscaler are based on the :ref:`generic "
+"The parameters file for the Downscaler is based on the :ref:`generic "
 "parameters file for AtmoSwing<parameters-file>`, but has some specific "
 "elements as detailed below. A `full example`_ is provided at the bottom of "
 "the page."
 msgstr ""
-"Les fichiers de paramètres pour le Downscaler sont basés sur le :ref:"
-"`fichier de paramètres générique pour AtmoSwing<parameters-file>`, mais "
-"comporte quelques éléments spécifiques comme détaillé ci-dessous. Un "
-"`exemple complet`_ est fourni en bas de page."
+"Le fichier de paramètres pour le Downscaler est basé sur le :ref:`fichier de "
+"paramètres générique pour AtmoSwing<parameters-file>`, mais possède quelques "
+"éléments spécifiques détaillés ci-dessous. Un `exemple complet`_ est fourni "
+"au bas de la page."
 
 #: ../../app-downscaler/parameters-file.rst:9
 #, fuzzy
@@ -66,7 +69,7 @@ msgstr "La propriété \"target\" du noeud racine doit être \"downscaler\"."
 #: ../../app-downscaler/parameters-file.rst:19
 #, fuzzy
 msgid "Content 'time_properties'"
-msgstr "Contenu \"Propriétés temporelles\""
+msgstr "Contenu \"time_properties\""
 
 #: ../../app-downscaler/parameters-file.rst:21
 #, fuzzy
@@ -94,38 +97,38 @@ msgstr ""
 
 #: ../../app-downscaler/parameters-file.rst:28
 #, fuzzy
-msgid "Providing the exact dates:"
-msgstr "En fournissant les dates exactes :"
+msgid "Providing the years :"
+msgstr "Au fil des années :"
 
 #: ../../app-downscaler/parameters-file.rst:30
-#, fuzzy
-msgid "``<start>``: Start of the target period (ex: 01.01.2050)"
-msgstr "``<start>`` : Début de la période cible (ex : 01.01.2050)"
-
-#: ../../app-downscaler/parameters-file.rst:31
-#, fuzzy
-msgid "``<end>``: End of the target period (ex: 31.12.2099)"
-msgstr "``<end>`` : Fin de la période cible (ex : 31.12.2099)"
-
-#: ../../app-downscaler/parameters-file.rst:33
-#, fuzzy
-msgid "Or only providing the years:"
-msgstr "Ou seulement en fournissant les années :"
-
-#: ../../app-downscaler/parameters-file.rst:35
 #, fuzzy
 msgid "``<start_year>``: Start of the target period (ex: 2050)"
 msgstr "``<start_year>`` : Début de la période cible (ex : 2050)"
 
-#: ../../app-downscaler/parameters-file.rst:36
+#: ../../app-downscaler/parameters-file.rst:31
 #, fuzzy
 msgid "``<end_year>``: End of the target period (ex: 2099)"
 msgstr "``<end_year>`` : Fin de la période cible (ex : 2099)"
 
+#: ../../app-downscaler/parameters-file.rst:33
+#, fuzzy
+msgid "Or the exact dates:"
+msgstr "Ou les dates exactes :"
+
+#: ../../app-downscaler/parameters-file.rst:35
+#, fuzzy
+msgid "``<start>``: Start of the target period (ex: 01.10.2050)"
+msgstr "``<start>`` : Début de la période cible (ex : 01.10.2050)"
+
+#: ../../app-downscaler/parameters-file.rst:36
+#, fuzzy
+msgid "``<end>``: End of the target period (ex: 31.09.2099)"
+msgstr "``<end>`` : Fin de la période cible (ex : 31.09.2099)"
+
 #: ../../app-downscaler/parameters-file.rst:39
 #, fuzzy
 msgid "Content 'analog_dates'"
-msgstr "Contenu \"dates analogiques\""
+msgstr "Contenu 'analog_dates'"
 
 #: ../../app-downscaler/parameters-file.rst:41
 #, fuzzy
@@ -172,6 +175,7 @@ msgid "Example of a parameters file for the Downscaler:"
 msgstr "Exemple d'un fichier de paramètres pour le Downscaler :"
 
 #: ../../app-downscaler/preferences.rst:2
+#, fuzzy
 msgid "Preferences"
 msgstr "Préférences"
 
@@ -179,12 +183,14 @@ msgstr "Préférences"
 #, fuzzy
 msgid ""
 "The preferences frame can be opened from the menu Options / Preferences of "
-"the main interface."
+"the main interface or with a button from the toolbar."
 msgstr ""
 "Le cadre des préférences peut être ouvert à partir du menu Options / "
-"Préférences de l'interface principale."
+"Préférences de l'interface principale ou à l'aide d'un bouton de la barre "
+"d'outils."
 
 #: ../../app-downscaler/preferences.rst:7
+#, fuzzy
 msgid "Directories"
 msgstr "Répertoires"
 
@@ -214,12 +220,11 @@ msgstr ""
 #: ../../app-downscaler/preferences.rst:13
 #, fuzzy
 msgid ""
-"Directory containing the predictand DB: contains the :ref:`NetCDF file "
-"generated from the predictand data<predictand-db>`."
+"Directory containing the predictand DB (:ref:`NetCDF file generated from the "
+"predictand data<predictand-db>`)."
 msgstr ""
-"Répertoire contenant la base de données des prédicteurs : contient le "
-"fichier :ref:`NetCDF généré à partir des données des prédicteurs<predictand-"
-"db>`."
+"Répertoire contenant la base de données du prédictand (:ref:`NetCDF file "
+"generated from the predictand data<predictand-db>`)."
 
 #: ../../app-downscaler/preferences.rst:18
 #, fuzzy
@@ -232,6 +237,7 @@ msgstr ""
 "d'analogie."
 
 #: ../../app-downscaler/preferences.rst:24
+#, fuzzy
 msgid "Log options"
 msgstr "Options du journal (log)"
 
@@ -399,6 +405,7 @@ msgstr ""
 "de préférences."
 
 #: ../../app-downscaler/usage.rst:2
+#, fuzzy
 msgid "Usage"
 msgstr "Utilisation"
 
@@ -434,6 +441,7 @@ msgstr ""
 "développeur."
 
 #: ../../app-downscaler/usage.rst:10
+#, fuzzy
 msgid "Requirements"
 msgstr "Exigences"
 
@@ -462,13 +470,14 @@ msgstr ""
 #: ../../app-downscaler/usage.rst:17
 #, fuzzy
 msgid ""
-":ref:`Parameters files defining the properties of the method. <parameters-"
+":ref:`Parameters file defining the properties of the method. <parameters-"
 "file-downscaler>`"
 msgstr ""
-":ref:`Fichiers de paramètres définissant les propriétés de la méthode. "
+":ref:`Fichier de paramètres définissant les propriétés de la méthode. "
 "<parameters-file-downscaler>`"
 
 #: ../../app-downscaler/usage.rst:20
+#, fuzzy
 msgid "Outputs"
 msgstr "Sorties"
 
@@ -485,7 +494,7 @@ msgstr "Les valeurs du prédicteur pour la période cible"
 #: ../../app-downscaler/usage.rst:25
 #, fuzzy
 msgid "The analog dates"
-msgstr "Les dates analogiques"
+msgstr "Contenu 'analog_dates'"
 
 #: ../../app-downscaler/usage.rst:26
 #, fuzzy
@@ -520,79 +529,79 @@ msgstr "Interface utilisateur graphique"
 msgid "The main interface of the Downscaler is as follows."
 msgstr "L'interface principale du Downscaler est la suivante."
 
-#: ../../app-downscaler/usage.rst:39
+#: ../../app-downscaler/usage.rst:41
 #, fuzzy
 msgid "The toolbar allows the following actions:"
 msgstr "La barre d'outils permet d'effectuer les actions suivantes :"
 
-#: ../../app-downscaler/usage.rst:41
+#: ../../app-downscaler/usage.rst:43
 #, fuzzy
 msgid "|icon_run| Start the calculations."
 msgstr "|icon_run| Lancez les calculs."
 
-#: ../../app-downscaler/usage.rst:45
+#: ../../app-downscaler/usage.rst:47
 #, fuzzy
 msgid "icon_run"
 msgstr "icon_run"
 
-#: ../../app-downscaler/usage.rst:42
+#: ../../app-downscaler/usage.rst:44
 #, fuzzy
 msgid "|icon_stop| Stop the current calculations."
 msgstr "|icon_stop| Arrête les calculs en cours."
 
-#: ../../app-downscaler/usage.rst:48
+#: ../../app-downscaler/usage.rst:50
 #, fuzzy
 msgid "icon_stop"
 msgstr "icône_stop"
 
-#: ../../app-downscaler/usage.rst:43
+#: ../../app-downscaler/usage.rst:45
 #, fuzzy
 msgid "|icon_preferences| Define the preferences."
 msgstr "|icon_preferences| Définir les préférences."
 
-#: ../../app-downscaler/usage.rst:51
+#: ../../app-downscaler/usage.rst:53
 #, fuzzy
 msgid "icon_preferences"
 msgstr "icône_préférences"
 
-#: ../../app-downscaler/usage.rst:54
+#: ../../app-downscaler/usage.rst:56
 #, fuzzy
 msgid "What is needed:"
 msgstr "Ce qui est nécessaire :"
 
-#: ../../app-downscaler/usage.rst:56
+#: ../../app-downscaler/usage.rst:58
 #, fuzzy
 msgid ":ref:`The parameters file for downscaling <parameters-file-downscaler>`"
 msgstr ""
 ":ref:`Le fichier de paramètres pour la réduction d'échelle <parameters-file-"
 "downscaler>`"
 
-#: ../../app-downscaler/usage.rst:57 ../../app-downscaler/usage.rst:72
+#: ../../app-downscaler/usage.rst:59 ../../app-downscaler/usage.rst:74
 #, fuzzy
 msgid "The predictand DB"
 msgstr "Le prédicteur DB"
 
-#: ../../app-downscaler/usage.rst:58
+#: ../../app-downscaler/usage.rst:60
 #, fuzzy
 msgid "The directory containing the predictors for the archive period"
 msgstr "Le répertoire contenant les prédicteurs pour la période d'archive"
 
-#: ../../app-downscaler/usage.rst:59
+#: ../../app-downscaler/usage.rst:61
 #, fuzzy
 msgid "The directory containing the predictors for the target period"
 msgstr "Le répertoire contenant les prédicteurs pour la période cible"
 
-#: ../../app-downscaler/usage.rst:60
+#: ../../app-downscaler/usage.rst:62
 #, fuzzy
 msgid "The directory to save the downscaling results"
 msgstr "Le répertoire pour sauvegarder les résultats de la réduction d'échelle"
 
-#: ../../app-downscaler/usage.rst:64
+#: ../../app-downscaler/usage.rst:66
 #, fuzzy
 msgid "Command line interface"
 msgstr "Interface de ligne de commande"
 
-#: ../../app-downscaler/usage.rst:66
+#: ../../app-downscaler/usage.rst:68
 #, fuzzy
 msgid ""
 "The Downscaler also has a command line interface. The options are as follows:"
@@ -600,64 +609,64 @@ msgstr ""
 "Le Downscaler dispose également d'une interface de ligne de commande. Les "
 "options sont les suivantes :"
 
-#: ../../app-downscaler/usage.rst:68
+#: ../../app-downscaler/usage.rst:70
 #, fuzzy
 msgid "Displays the help of command line options"
 msgstr "Affiche l'aide des options de la ligne de commande"
 
-#: ../../app-downscaler/usage.rst:69
+#: ../../app-downscaler/usage.rst:71
 #, fuzzy
 msgid "Displays the software version"
 msgstr "Affiche la version du logiciel"
 
-#: ../../app-downscaler/usage.rst:70
+#: ../../app-downscaler/usage.rst:72
 #, fuzzy
 msgid "A given run number"
 msgstr "Un numéro de manche donné"
 
-#: ../../app-downscaler/usage.rst:71
+#: ../../app-downscaler/usage.rst:73
 #, fuzzy
 msgid "File containing the downscaling parameters"
 msgstr "Fichier contenant les paramètres de réduction d'échelle"
 
-#: ../../app-downscaler/usage.rst:73
+#: ../../app-downscaler/usage.rst:75
 #, fuzzy
 msgid "The predictand station ID"
 msgstr "L'ID de la station du prédicteur"
 
-#: ../../app-downscaler/usage.rst:74
+#: ../../app-downscaler/usage.rst:76
 #, fuzzy
 msgid "The archive predictors directory"
 msgstr "Le répertoire des prédicteurs de l'archive"
 
-#: ../../app-downscaler/usage.rst:75
+#: ../../app-downscaler/usage.rst:77
 #, fuzzy
 msgid "The scenario predictors directory"
 msgstr "Le répertoire des prédicteurs du scénario"
 
-#: ../../app-downscaler/usage.rst:76
+#: ../../app-downscaler/usage.rst:78
 #, fuzzy
 msgid "Choice of the downscaling method (classic: classic downscaling)"
 msgstr ""
 "Choix de la méthode de réduction d'échelle (classique : réduction d'échelle "
 "classique)"
 
-#: ../../app-downscaler/usage.rst:77
+#: ../../app-downscaler/usage.rst:79
 #, fuzzy
 msgid "Number of threads to use"
 msgstr "Nombre de threads à utiliser"
 
-#: ../../app-downscaler/usage.rst:78
+#: ../../app-downscaler/usage.rst:80
 #, fuzzy
 msgid "Silent mode"
 msgstr "Mode silencieux"
 
-#: ../../app-downscaler/usage.rst:79
+#: ../../app-downscaler/usage.rst:81
 #, fuzzy
 msgid "Work in local directory"
 msgstr "Travail dans le répertoire local"
 
-#: ../../app-downscaler/usage.rst:80
+#: ../../app-downscaler/usage.rst:82
 #, fuzzy
 msgid ""
 "Set the log level (0: minimum, 1: errors, 2: warnings (default), 3: verbose)"
