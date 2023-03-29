@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'AtmoSwing'
-copyright = '2019, Pascal Horton'
+copyright = '2023, Pascal Horton'
 author = 'Pascal Horton'
 
 # The short X.Y version
@@ -33,7 +33,7 @@ release = '2.1.0'
 
 # If your documentation needs a minimal Sphinx version, state it here.
 #
-# needs_sphinx = '1.0'
+needs_sphinx = '1.8'
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
@@ -92,6 +92,8 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+html_css_files = ['custom.css']
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
