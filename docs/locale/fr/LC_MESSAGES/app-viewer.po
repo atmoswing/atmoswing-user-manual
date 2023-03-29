@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: AtmoSwing 2.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-13 22:03+0100\n"
-"PO-Revision-Date: 2023-03-29 14:22+0200\n"
+"PO-Revision-Date: 2023-03-29 15:07+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -462,7 +462,7 @@ msgstr ""
 
 #: ../../app-viewer/usage.rst:113
 msgid "Display of the time series"
-msgstr "Affichage de la série temporelle"
+msgstr "Affichage des série temporelles"
 
 #: ../../app-viewer/usage.rst:115
 msgid ""
@@ -594,7 +594,7 @@ msgstr "icon_frame_analogs_s"
 
 #: ../../app-viewer/usage.rst:168
 msgid "Workspaces"
-msgstr "Espace de travail (workspace)"
+msgstr "Espaces de travail (workspace)"
 
 #: ../../app-viewer/usage.rst:170
 msgid ""
