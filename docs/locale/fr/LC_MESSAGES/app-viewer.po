@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: AtmoSwing 2.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-13 22:03+0100\n"
-"PO-Revision-Date: 2023-03-13 23:33+0100\n"
+"PO-Revision-Date: 2023-03-29 14:17+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -23,7 +23,6 @@ msgid "The Viewer"
 msgstr "Le Viewer"
 
 #: ../../app-viewer.rst:6
-#, fuzzy
 msgid ""
 "This section contains the documentation for AtmoSwing Viewer. This document "
 "can also be downloaded as a pdf or epub using the bottom left menu."
@@ -41,12 +40,11 @@ msgid "Preferences"
 msgstr "Préférences"
 
 #: ../../app-viewer/preferences.rst:4
-#, fuzzy
 msgid ""
 "The preferences frame can be opened from the menu Options / Preferences of "
 "the main interface or with a button from the toolbar."
 msgstr ""
-"Le cadre des préférences peut être ouvert à partir du menu Options / "
+"La fenêtre des préférences peut être ouvert à partir du menu Options / "
 "Préférences de l'interface principale ou à l'aide d'un bouton de la barre "
 "d'outils."
 
@@ -55,22 +53,20 @@ msgid "Workspace"
 msgstr "Espace de travail (workspace)"
 
 #: ../../app-viewer/preferences.rst:9
-#, fuzzy
 msgid ""
 "The propertied defined under this tab are specific for the workspace "
 "currently opened."
 msgstr ""
 "Les propriétés définies sous cet onglet sont spécifiques à l'espace de "
-"travail actuellement ouvert."
+"travail (workspace) actuellement ouvert."
 
 #: ../../app-viewer/preferences.rst:11
-#, fuzzy
 msgid "The directory where the forecasts are stored must be provided:"
 msgstr ""
-"Le répertoire dans lequel les prévisions sont stockées doit être indiqué :"
+"Le répertoire dans lequel les prévisions sont enregistrées doit être "
+"indiqué :"
 
 #: ../../app-viewer/preferences.rst:16
-#, fuzzy
 msgid ""
 "The maximum predictand value for the color range defines the value for which "
 "red is assigned when colors are not standardized. The second option is the "
@@ -80,11 +76,10 @@ msgstr ""
 "La valeur maximale du prédictand pour la gamme de couleurs définit la valeur "
 "pour laquelle le rouge est attribué lorsque les couleurs ne sont pas "
 "normalisées. La deuxième option est le nombre de jours de prévisions "
-"antérieures à afficher sous forme de traces dans les tracés de séries "
+"antérieures à afficher sous forme de traces dans les graphiques de séries "
 "temporelles. Trois à cinq jours sont recommandés."
 
 #: ../../app-viewer/preferences.rst:21
-#, fuzzy
 msgid ""
 "Alarm panel options: The alarm panel displays the highest value of all "
 "stations by lead time and method. The options are the return period for "
@@ -92,9 +87,9 @@ msgid ""
 "remaining vigilant as to the possible occurrence of important events."
 msgstr ""
 "Options du panneau d'alarme : Le panneau d'alarme affiche la valeur la plus "
-"élevée de toutes les stations par délai et par méthode. Les options sont la "
-"période de retour pour la normalisation et le quantile à afficher. Le "
-"quantile 0,9 permet de rester vigilant quant à l'occurrence éventuelle "
+"élevée de toutes les stations par échéance et par méthode. Les options sont "
+"la période de retour pour la normalisation et le quantile à afficher. Le "
+"quantile 0.9 permet de rester vigilant quant à l'occurrence éventuelle "
 "d'événements importants."
 
 #: ../../app-viewer/preferences.rst:27
@@ -106,21 +101,18 @@ msgid "Log options"
 msgstr "Options du journal (log)"
 
 #: ../../app-viewer/preferences.rst:32
-#, fuzzy
 msgid ""
 "Log preferences control the display of the log window and the level "
 "(importance) of reported messages:"
 msgstr ""
-"Les préférences de journal contrôlent l'affichage de la fenêtre de journal "
-"et le niveau (importance) des messages rapportés :"
+"Les préférences de journal (log) contrôlent l'affichage de la fenêtre du "
+"journal et le niveau (importance) des messages rapportés :"
 
 #: ../../app-viewer/preferences.rst:34
-#, fuzzy
 msgid "Errors only - recommended as long as everything goes as planned."
 msgstr "Erreurs uniquement - recommandé tant que tout se passe comme prévu."
 
 #: ../../app-viewer/preferences.rst:35
-#, fuzzy
 msgid ""
 "Errors and warnings - some warnings help to be vigilant in case of problems. "
 "However, there might be warnings even during regular operation."
@@ -130,7 +122,6 @@ msgstr ""
 "même pendant un fonctionnement normal."
 
 #: ../../app-viewer/preferences.rst:36
-#, fuzzy
 msgid ""
 "Verbose - all operations are reported, which is an unnecessary amount of "
 "information during regular operation. As a result, important messages might "
@@ -141,14 +132,13 @@ msgstr ""
 "quantité inutile d'informations lors d'une opération régulière. Par "
 "conséquent, des messages importants peuvent être cachés dans un grand nombre "
 "de messages. Cette option n'est utile que pour identifier les endroits où "
-"AtmoSwing est défaillant."
+"AtmoSwing rencontre des problèmes."
 
 #: ../../app-viewer/preferences.rst:42
 msgid "Internet proxy"
 msgstr "Proxy Internet"
 
 #: ../../app-viewer/preferences.rst:44
-#, fuzzy
 msgid ""
 "If required, proxy options can be provided. The proxy configuration contains "
 "the following elements:"
@@ -193,31 +183,28 @@ msgid "Usage"
 msgstr "Utilisation"
 
 #: ../../app-viewer/usage.rst:4
-#, fuzzy
 msgid ""
 "The Viewer relies on `workspaces`_ (defined in xml files), where the path to "
 "the forecast files is specified as well as the GIS layers and other display "
 "options. It is thus possible to quickly change from one region to another."
 msgstr ""
-"Le Viewer s'appuie sur des \"espaces de travail\" (définis dans des fichiers "
-"xml), où sont spécifiés le chemin d'accès aux fichiers de prévision, les "
-"couches SIG et d'autres options d'affichage. Il est ainsi possible de passer "
-"rapidement d'une région à l'autre."
+"Le Viewer s'appuie sur des \"espaces de travail\" (`workspaces`_ ; définis "
+"dans des fichiers xml), où sont spécifiés le chemin d'accès aux fichiers de "
+"prévision, les couches SIG et d'autres options d'affichage. Il est ainsi "
+"possible de passer rapidement d'une région à l'autre."
 
 #: ../../app-viewer/usage.rst:6
-#, fuzzy
 msgid ""
 "For a given region, the forecasts can be separated/gathered based on an :ref:"
 "`identifier specified in the parameters files. <parameters-file>` "
 "(``<method_id>``). The Viewer will manage this information as follows:"
 msgstr ""
 "Pour une région donnée, les prévisions peuvent être séparées/rassemblées sur "
-"la base d'un identifiant :ref:` spécifié dans les fichiers de paramètres. "
-"<parameters-file>(``<method_id>``). Le visualisateur gère ces informations "
-"de la manière suivante :"
+"la base d'un :ref:` identifiant spécifié dans les fichiers de paramètres. "
+"<parameters-file>(``<method_id>``). Le Viewer gère ces informations de la "
+"manière suivante :"
 
 #: ../../app-viewer/usage.rst:8
-#, fuzzy
 msgid ""
 "``<method_id>``: all forecast files with the same ``<method_id>`` will be "
 "aggregated in the Viewer and labeled according to ``<method_id_display>``."
@@ -227,7 +214,6 @@ msgstr ""
 "``<method_id_display>``."
 
 #: ../../app-viewer/usage.rst:9
-#, fuzzy
 msgid ""
 "``<specific_tag>``: all subregion-specific methods (defined by "
 "``<specific_tag>`` and labelled according to ``<specific_tag_display>``) but "
@@ -244,15 +230,15 @@ msgstr ""
 "``<specific_tag>`` : toutes les méthodes spécifiques à une sous-région "
 "(définies par ``<specific_tag>` et étiquetées selon "
 "``<specific_tag_display>`) mais ayant le même ``<method_id>`` seront "
-"répertoriées sous le même titre. Ces prévisions spécifiques pour une sous-"
-"région/bassin sont définies par des paramètres spécifiques et ont donc des "
-"dates analogiques qui peuvent différer de celles des autres sous-régions. "
-"Lorsque l'une de ces sous-régions est sélectionnée dans la visionneuse, la "
+"répertoriées sous la même catégorie. Ces prévisions spécifiques pour une "
+"sous-région/bassin sont définies par des paramètres spécifiques et ont donc "
+"des dates analogues qui peuvent différer de celles des autres sous-régions. "
+"Lorsque l'une de ces sous-régions est sélectionnée dans le Viewer, la "
 "prévision pour cette méthode spécifique est affichée et les valeurs de "
 "précipitations pour les autres sous-régions (mais pour la même méthode) sont "
-"grisées. Lorsque l'en-tête de la liste est sélectionné (c'est-à-dire la "
+"grisées. Lorsque l'en-tête de la liste est sélectionnée (c'est-à-dire la "
 "méthode), un résumé des prévisions optimales pour chaque sous-région est "
-"affiché (c'est-à-dire avec des dates analogiques qui peuvent différer d'une "
+"affiché (c'est-à-dire avec des dates analogues qui peuvent différer d'une "
 "sous-région à l'autre)."
 
 #: ../../app-viewer/usage.rst:12
@@ -260,7 +246,6 @@ msgid "Main interface"
 msgstr "Interface principale"
 
 #: ../../app-viewer/usage.rst:14
-#, fuzzy
 msgid ""
 "AtmoSwing Viewer has the interface shown below. It allows viewing the files "
 "produced by the Forecaster. The forecasts are first explored through the "
@@ -269,7 +254,7 @@ msgid ""
 msgstr ""
 "L'interface d'AtmoSwing Viewer est présentée ci-dessous. Il permet de "
 "visualiser les fichiers produits par le Forecaster. Les prévisions sont "
-"d'abord explorées à travers l'interface principale sur une carte. Différents "
+"d'abord présentées dans l'interface principale sur une carte. Différents "
 "graphiques sont ensuite disponibles pour afficher plus de détails."
 
 #: ../../app-viewer/usage.rst:19
@@ -333,17 +318,14 @@ msgid "icon_map_fit"
 msgstr "icon_map_fit"
 
 #: ../../app-viewer/usage.rst:28
-#, fuzzy
 msgid "|icon_frame_distributions| Open the distribution charts"
-msgstr "|icon_frame_distributions| Ouvrir les diagrammes de distribution"
+msgstr "|icon_frame_distributions| Ouvrir les graphiques des distributions"
 
 #: ../../app-viewer/usage.rst:53
-#, fuzzy
 msgid "icon_frame_distributions"
-msgstr "distributions de cadres d'icônes"
+msgstr "icon_frame_distributions"
 
 #: ../../app-viewer/usage.rst:29
-#, fuzzy
 msgid "|icon_frame_analogs| Open the list of analogues"
 msgstr "|icon_frame_analogs| Ouvrir la liste des analogues"
 
@@ -360,24 +342,22 @@ msgid "icon_preferences"
 msgstr "icon_preferences"
 
 #: ../../app-viewer/usage.rst:62
-#, fuzzy
 msgid ""
 "It is possible to open |icon_open_s| several forecast files, but they must "
 "have the same reference date (issued at the same lead time). If forecasts "
 "corresponding to another date (or time) are already opened, they will be "
 "closed."
 msgstr ""
-"Il est possible d'ouvrir plusieurs fichiers de prévisions, mais ils doivent "
-"avoir la même date de référence (émis au même moment). Si des prévisions "
-"correspondant à une autre date (ou heure) sont déjà ouvertes, elles seront "
-"fermées."
+"Il est possible d'ouvrir |icon_open_s| plusieurs fichiers de prévisions, "
+"mais ils doivent avoir la même date de référence (échéance de base). Si des "
+"prévisions correspondant à une autre date (ou heure) sont déjà ouvertes, "
+"elles seront fermées."
 
 #: ../../app-viewer/usage.rst:64
 msgid "icon_open_s"
 msgstr "icon_open_s"
 
 #: ../../app-viewer/usage.rst:70
-#, fuzzy
 msgid ""
 "The first visualization is a summary of the next lead times (Figure below). "
 "At the location of each station, a circular band is displayed with one box "
@@ -387,21 +367,20 @@ msgid ""
 "The same map can also be displayed for a specific lead time (Figure above). "
 "The choice of the lead time is made using the cursor above the map."
 msgstr ""
-"La première visualisation est un résumé des prochains délais (figure ci-"
-"dessous). À l'emplacement de chaque station, une bande circulaire est "
-"affichée avec une case par délai. Les couleurs attribuées à chaque tranche "
-"illustrent la valeur attendue pour le délai en question. Cette "
+"La première visualisation est un résumé des prochaines échéances (figure ci-"
+"dessous). Une bande circulaire avec une case par échéance est affichée à "
+"l'emplacement de chaque station. Les couleurs attribuées à chaque tranche "
+"illustrent la valeur attendue pour l'échéance en question. Cette "
 "représentation donne un aperçu rapide des jours à venir et permet "
 "d'identifier facilement un événement possible. La même carte peut également "
-"être affichée pour un délai spécifique (figure ci-dessus). Le choix du délai "
-"s'effectue à l'aide du curseur situé au-dessus de la carte."
+"être affichée pour une échéance spécifique (figure ci-dessus). Le choix de "
+"l'échéance s'effectue à l'aide du curseur situé au-dessus de la carte."
 
 #: ../../app-viewer/usage.rst:77
 msgid "Sidebar"
 msgstr "Barre latérale"
 
 #: ../../app-viewer/usage.rst:79
-#, fuzzy
 msgid ""
 "The sidebar on the left-hand side of the map provides some information and "
 "controls."
@@ -410,7 +389,6 @@ msgstr ""
 "des contrôles."
 
 #: ../../app-viewer/usage.rst:81
-#, fuzzy
 msgid ""
 "**Forecasts**: Choice of method and its representation. All open methods are "
 "displayed in the upper box. The lower left box changes the color scale, and "
@@ -418,12 +396,11 @@ msgid ""
 "or 90%)."
 msgstr ""
 "**Prévisions** : Choix de la méthode et de sa représentation. Toutes les "
-"méthodes ouvertes sont affichées dans la case supérieure. La case inférieure "
-"gauche modifie l'échelle de couleurs, et la case inférieure droite permet de "
-"choisir le quantile à afficher (20 %, 60 % ou 90 %)."
+"méthodes ouvertes sont affichées dans la partie supérieure. La partie "
+"inférieure gauche modifie l'échelle de couleurs, et la partie inférieure "
+"droite permet de choisir le quantile à afficher (20%, 60% ou 90%)."
 
 #: ../../app-viewer/usage.rst:86
-#, fuzzy
 msgid ""
 "**GIS layers**: Display options for the opened GIS layers (right-click). It "
 "is possible to change the following properties of the different layers, if "
@@ -431,33 +408,28 @@ msgid ""
 msgstr ""
 "**Couches SIG** : Options d'affichage pour les couches SIG ouvertes (clic "
 "droit). Il est possible de modifier les propriétés suivantes des différentes "
-"couches, si elles sont disponibles :"
+"couches, si disponible :"
 
 #: ../../app-viewer/usage.rst:88
-#, fuzzy
 msgid "Visibility - whether the layer is visible or not."
 msgstr "Visibilité - si la couche est visible ou non."
 
 #: ../../app-viewer/usage.rst:89
-#, fuzzy
 msgid "Transparency - 0% is opaque and 100% is fully transparent."
 msgstr "Transparence - 0% is opaque et 100% is entièrement transparent."
 
 #: ../../app-viewer/usage.rst:90
-#, fuzzy
 msgid "Color - it is applied to the layer features (lines & fill)."
 msgstr ""
-"Couleur - elle est appliquée aux caractéristiques du calque (lignes et "
+"Couleur - elle est appliquée aux éléments de la couche (lignes et "
 "remplissage)."
 
 #: ../../app-viewer/usage.rst:91
-#, fuzzy
 msgid "The thickness of the line - for the lines or perimeters of polygons."
 msgstr ""
 "L'épaisseur de la ligne - pour les lignes ou les périmètres des polygones."
 
 #: ../../app-viewer/usage.rst:96
-#, fuzzy
 msgid ""
 "**Alarms**: Shows the potentially critical situations. The different rows of "
 "the grid correspond to the different open methods and the columns to the "
@@ -467,22 +439,20 @@ msgid ""
 msgstr ""
 "**Alarmes** : Affiche les situations potentiellement critiques. Les "
 "différentes lignes de la grille correspondent aux différentes méthodes "
-"ouvertes et les colonnes aux délais disponibles. Les couleurs affichées "
-"correspondent à la valeur la plus élevée de toutes les stations (cas le plus "
-"défavorable ; valeur des précipitations normalisée par la pluie d'une "
+"ouvertes et les colonnes aux échéances disponibles. Les couleurs affichées "
+"correspondent à la valeur la plus élevée pour toutes les stations (cas le "
+"plus défavorable ; valeur des précipitations normalisée par la pluie d'une "
 "période de retour sélectionnée)."
 
 #: ../../app-viewer/usage.rst:101
-#, fuzzy
 msgid ""
 "**Station selection**: Select the station to display the time series. An "
 "alternative to selection on the map."
 msgstr ""
-"**Sélection de la station** : Sélectionner la station pour afficher la série "
-"temporelle. Une alternative à la sélection sur la carte."
+"**Sélection de la station** : Sélectionner une station pour afficher sa "
+"série temporelle. Une alternative à la sélection sur la carte."
 
 #: ../../app-viewer/usage.rst:106
-#, fuzzy
 msgid ""
 "**Forecast caption**: Display of the dates corresponding to the different "
 "boxes of the circular bands, as well as the color bar."
@@ -491,12 +461,10 @@ msgstr ""
 "différentes cases des bandes circulaires, ainsi que de la barre de couleur."
 
 #: ../../app-viewer/usage.rst:113
-#, fuzzy
 msgid "Display of the time series"
 msgstr "Affichage de la série temporelle"
 
 #: ../../app-viewer/usage.rst:115
-#, fuzzy
 msgid ""
 "When a station is selected (on the map or in the drop-down list on the "
 "sidebar), the graph of the expected time series is displayed (Figure below). "
@@ -510,26 +478,22 @@ msgstr ""
 "(dans le panneau supérieur gauche) sont les suivantes :"
 
 #: ../../app-viewer/usage.rst:117
-#, fuzzy
 msgid ""
 "The three classical quantiles (20%, 60%, 90%) in the form of thick blue "
 "lines."
 msgstr ""
-"Les trois quantiles classiques (20 %, 60 %, 90 %) sous forme de lignes "
-"bleues épaisses."
+"Les trois quantiles classiques (20%, 60%, 90%) sous forme de lignes bleues "
+"épaisses."
 
 #: ../../app-viewer/usage.rst:118
-#, fuzzy
 msgid "Every tenth of a quantile as a grey surface"
 msgstr "Chaque dixième de quantile comme surface grise"
 
 #: ../../app-viewer/usage.rst:119
-#, fuzzy
 msgid "All analogs in the form of small grey crosses"
-msgstr "Tous les analogues sous forme de petites croix grises"
+msgstr "Toutes les valeurs analogues sous forme de petites croix grises"
 
 #: ../../app-viewer/usage.rst:120
-#, fuzzy
 msgid ""
 "The ten best analogs as yellow - orange - red crosses. The colors are "
 "proportional to the rows of the analogs. Red is for the best analog and "
@@ -537,32 +501,27 @@ msgid ""
 msgstr ""
 "Les dix meilleurs analogues sont représentés par des croix jaunes - orange - "
 "rouges. Les couleurs sont proportionnelles aux rangs des analogues. Le rouge "
-"correspond au meilleur analogue et le jaune au dixième."
+"correspond à la meilleure analogue et le jaune au dixième rang."
 
 #: ../../app-viewer/usage.rst:121
-#, fuzzy
 msgid "The five best analogs according to the same principle."
 msgstr "Les cinq meilleurs analogues selon le même principe."
 
 #: ../../app-viewer/usage.rst:122
-#, fuzzy
 msgid "The value for a ten years return period in the form of a red line."
 msgstr ""
 "La valeur pour une période de retour de dix ans sous la forme d'une ligne "
 "rouge."
 
 #: ../../app-viewer/usage.rst:123
-#, fuzzy
 msgid "The values of different return periods."
 msgstr "Les valeurs des différentes périodes de retour."
 
 #: ../../app-viewer/usage.rst:124
-#, fuzzy
 msgid "Traces of the previous forecasts."
 msgstr "Traces des prévisions précédentes."
 
 #: ../../app-viewer/usage.rst:126
-#, fuzzy
 msgid ""
 "The lower left panel is the list of the previous forecasts. These are "
 "automatically imported when displaying the graph."
@@ -575,7 +534,6 @@ msgid "Display of the distributions"
 msgstr "Affichage des distributions"
 
 #: ../../app-viewer/usage.rst:135
-#, fuzzy
 msgid ""
 "Rainfall distributions are accessible via the |icon_frame_distributions_s| "
 "button on the toolbar. It allows plotting the distribution of all analogs "
@@ -584,18 +542,18 @@ msgid ""
 "and lead time must be selected in the upper part of the window."
 msgstr ""
 "Les distributions de précipitations sont accessibles via le bouton |"
-"icon_frame_distributions_s| de la barre d'outils. Il permet de tracer la "
-"distribution de tous les analogues par rapport aux 5 ou 10 meilleurs (figure "
-"ci-dessous). Les options d'affichage sont similaires à celles des séries "
-"temporelles (section précédente). La méthode, la station et le délai doivent "
-"être sélectionnés dans la partie supérieure de la fenêtre."
+"icon_frame_distributions_s| de la barre d'outils. La fenêtre permet de "
+"tracer la distribution de toutes les analogues par rapport aux 5 ou 10 "
+"meilleures (figure ci-dessous). Les options d'affichage sont similaires à "
+"celles des séries temporelles (section précédente). La méthode, la station "
+"et l'échéance doivent être sélectionnés dans la partie supérieure de la "
+"fenêtre."
 
 #: ../../app-viewer/usage.rst:145
 msgid "icon_frame_distributions_s"
 msgstr "icon_frame_distributions_s"
 
 #: ../../app-viewer/usage.rst:140
-#, fuzzy
 msgid ""
 "The distribution of the analogy criterion is also available in the same "
 "window through the tab located above the graph (Figure below). This "
@@ -604,18 +562,16 @@ msgid ""
 "analogs."
 msgstr ""
 "La distribution du critère d'analogie est également disponible dans la même "
-"fenêtre à travers l'onglet situé au-dessus du graphique (Figure ci-dessous). "
-"Cette distribution permet d'identifier d'éventuelles discontinuités dans les "
-"valeurs des critères et ainsi d'augmenter la confiance dans les meilleurs "
+"fenêtre par l'onglet situé au-dessus du graphique (Figure ci-dessous). Cette "
+"distribution permet d'identifier d'éventuelles discontinuités dans les "
+"valeurs des critères et ainsi d'accroître la confiance dans les meilleures "
 "analogues."
 
 #: ../../app-viewer/usage.rst:153
-#, fuzzy
 msgid "Display of the analog dates"
-msgstr "Affichage des dates analogiques"
+msgstr "Affichage des dates analogues"
 
 #: ../../app-viewer/usage.rst:155
-#, fuzzy
 msgid ""
 "The details of the analog dates and their associated criterion and "
 "predictand values (Figure below) are available through the |"
@@ -624,13 +580,13 @@ msgid ""
 "sort the list by each of the columns by clicking on it. The first click "
 "ranks the values in ascending order and the second in descending order."
 msgstr ""
-"Les détails des dates analogiques et les valeurs de critère et de prédictand "
+"Les détails des dates analogues et les valeurs de critère et de prédictand "
 "qui leur sont associées (figure ci-dessous) sont disponibles via le bouton |"
-"icon_frame_analogs_s| de la barre d'outils. La méthode, la station et le "
-"délai doivent être sélectionnés dans la partie supérieure de la fenêtre. Il "
-"est possible de trier la liste par chacune des colonnes en cliquant dessus. "
-"Le premier clic classe les valeurs par ordre croissant et le second par "
-"ordre décroissant."
+"icon_frame_analogs_s| de la barre d'outils. La méthode, la station et "
+"l'échéance doivent être sélectionnés dans la partie supérieure de la "
+"fenêtre. Il est possible de trier la liste par chacune des colonnes en "
+"cliquant dessus. Le premier clic classe les valeurs par ordre croissant et "
+"le second par ordre décroissant."
 
 #: ../../app-viewer/usage.rst:160
 msgid "icon_frame_analogs_s"
@@ -641,18 +597,17 @@ msgid "Workspaces"
 msgstr "Espace de travail (workspace)"
 
 #: ../../app-viewer/usage.rst:170
-#, fuzzy
 msgid ""
 "AtmoSwing Viewer relies on workspaces to allow changing of region or "
 "configuration. A workspace is an xml file containing the paths to the GIS "
 "layers and their rendering options, as well as the forecast files location "
 "and other properties that can be defined in the preferences."
 msgstr ""
-"AtmoSwing Viewer s'appuie sur des espaces de travail pour permettre de "
-"changer de région ou de configuration. Un espace de travail est un fichier "
-"xml contenant les chemins d'accès aux couches SIG et leurs options de rendu, "
-"ainsi que l'emplacement des fichiers de prévision et d'autres propriétés qui "
-"peuvent être définies dans les préférences."
+"AtmoSwing Viewer s'appuie sur des espaces de travail (workspaces) pour "
+"permettre de changer de région ou de configuration. Un espace de travail est "
+"un fichier xml contenant les chemins d'accès aux couches SIG et leurs "
+"options de rendu, ainsi que l'emplacement des fichiers de prévision et "
+"d'autres propriétés qui peuvent être définies dans les préférences."
 
 #: ../../app-viewer/usage.rst:172
 msgid "The menu File allows to:"
@@ -678,7 +633,7 @@ msgstr "Créer un nouvel espace de travail"
 msgid "The creation of a new workspace is guided by a wizard to define:"
 msgstr ""
 "La création d'un nouvel espace de travail est guidée par un assistant qui "
-"permet de le définir :"
+"permet de définir :"
 
 #: ../../app-viewer/usage.rst:181
 msgid "The location of the workspace file"
