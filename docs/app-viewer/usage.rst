@@ -15,6 +15,7 @@ AtmoSwing Viewer has the interface shown below. It allows viewing the files prod
 
 .. image:: img/frame-viewer.png
    :align: center
+|br|
 
 The toolbar allows the following actions:
 
@@ -71,7 +72,7 @@ The first visualization is a summary of the next lead times (Figure below). At t
 
 .. image:: img/frame-viewer-rings.png
    :align: center
-
+|br|
 
 Sidebar
 ~~~~~~~
@@ -82,7 +83,8 @@ The sidebar on the left-hand side of the map provides some information and contr
 
 .. image:: img/panel-forecasts.png
    :align: center
-   
+|br|
+
 **GIS layers**: Display options for the opened GIS layers (right-click). It is possible to change the following properties of the different layers, if available:
 
 * Visibility - whether the layer is visible or not.
@@ -92,22 +94,25 @@ The sidebar on the left-hand side of the map provides some information and contr
 
 .. image:: img/panel-layers.png
    :align: center
-   
+|br|
+
 **Alarms**: Shows the potentially critical situations. The different rows of the grid correspond to the different open methods and the columns to the available lead times. The displayed colors correspond to the highest value of all stations (worst case; precipitation value normalized by the rain of a selected return period).
 
 .. image:: img/panel-alarms.png
    :align: center
+|br|
 
 **Station selection**: Select the station to display the time series. An alternative to selection on the map.
 
 .. image:: img/panel-stations.png
    :align: center
+|br|
 
 **Forecast caption**: Display of the dates corresponding to the different boxes of the circular bands, as well as the color bar.
 
 .. image:: img/panel-caption.png
    :align: center
-
+|br|
 
 Display of the time series
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -127,7 +132,7 @@ The lower left panel is the list of the previous forecasts. These are automatica
 
 .. image:: img/frame-plot-timeseries.png
    :align: center
-
+|br|
 
 Display of the distributions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -136,11 +141,13 @@ Rainfall distributions are accessible via the |icon_frame_distributions_s| butto
 
 .. image:: img/frame-plot-precip-distrib.png
    :align: center
+|br|
 
 The distribution of the analogy criterion is also available in the same window through the tab located above the graph (Figure below). This distribution makes it possible to identify possible discontinuities in the values of the criteria and thus to increase the confidence in the best analogs.
 
 .. image:: img/frame-plot-criteria-distrib.png
    :align: center
+|br|
 
 .. |icon_frame_distributions_s| image:: img/icon_frame_distributions.png
    :width: 32
@@ -156,6 +163,7 @@ The details of the analog dates and their associated criterion and predictand va
 
 .. image:: img/frame-list-analogs.png
    :align: center
+|br|
 
 .. |icon_frame_analogs_s| image:: img/icon_frame_analogs.png
    :width: 32
@@ -258,4 +266,4 @@ The workspace file does not need to be directly edited. The changes can be made 
      </layers>
    </atmoswing>
 
-
+.. |br| raw:: html
