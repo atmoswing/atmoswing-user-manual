@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: AtmoSwing 2.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-30 14:05+0200\n"
-"PO-Revision-Date: 2023-03-30 14:13+0200\n"
+"PO-Revision-Date: 2023-03-30 14:53+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -2213,12 +2213,10 @@ msgid ":ref:`See details here <generic-dataset>`"
 msgstr ":ref:`Voir les détails ici <generic-dataset>`"
 
 #: ../../getting-started/using-atmoswing.rst:4
-#, fuzzy
 msgid "Using AtmoSwing"
 msgstr "Utilisation d'AtmoSwing"
 
 #: ../../getting-started/using-atmoswing.rst:6
-#, fuzzy
 msgid "AtmoSwing can be used for different purposes:"
 msgstr "AtmoSwing peut être utilisé à différentes fins :"
 
@@ -2362,207 +2360,166 @@ msgstr ""
 "termes proposés sont interchangeables."
 
 #: ../../getting-started/variables.rst:19
-#, fuzzy
 msgid "**Pressure level**:"
 msgstr "**Niveau de pression** :"
 
 #: ../../getting-started/variables.rst:21
-#, fuzzy
 msgid "``pressure_level``"
-msgstr "``niveau_de_pression_``"
+msgstr "``pressure_level``"
 
 #: ../../getting-started/variables.rst:22
-#, fuzzy
 msgid "``pressure_levels``"
-msgstr "``niveaux_de_pression_``"
+msgstr "``pressure_levels``"
 
 #: ../../getting-started/variables.rst:23 ../../getting-started/variables.rst:132
-#, fuzzy
 msgid "``pressure``"
-msgstr "``pression``"
+msgstr "``pressure``"
 
 #: ../../getting-started/variables.rst:24 ../../getting-started/variables.rst:133
-#, fuzzy
 msgid "``press``"
 msgstr "``press``"
 
 #: ../../getting-started/variables.rst:25
-#, fuzzy
 msgid "``isobaric``"
-msgstr "``Isobarique``"
+msgstr "``isobaric``"
 
 #: ../../getting-started/variables.rst:26
-#, fuzzy
 msgid "``pl``"
 msgstr "``pl``"
 
 #: ../../getting-started/variables.rst:27
-#, fuzzy
 msgid "``pgbh``"
 msgstr "``pgbh``"
 
 #: ../../getting-started/variables.rst:28
-#, fuzzy
 msgid "``pgbhnl``"
 msgstr "``pgbhnl``"
 
 #: ../../getting-started/variables.rst:29
-#, fuzzy
 msgid "``pgb``"
 msgstr "``pgb``"
 
 #: ../../getting-started/variables.rst:31
-#, fuzzy
 msgid "**Isentropic level**:"
 msgstr "**Niveau isentropique** :"
 
 #: ../../getting-started/variables.rst:33
-#, fuzzy
 msgid "``isentropic_level``"
-msgstr "``niveau_isentropique``"
+msgstr "``isentropic_level``"
 
 #: ../../getting-started/variables.rst:34
-#, fuzzy
 msgid "``isentropic``"
-msgstr "``isentropique``"
+msgstr "``isentropic``"
 
 #: ../../getting-started/variables.rst:35
-#, fuzzy
 msgid "``potential_temperature``"
-msgstr "``température_potentielle``"
+msgstr "``potential_temperature``"
 
 #: ../../getting-started/variables.rst:36
-#, fuzzy
 msgid "``pt``"
 msgstr "``pt``"
 
 #: ../../getting-started/variables.rst:37
-#, fuzzy
 msgid "``ipvh``"
 msgstr "``ipvh``"
 
 #: ../../getting-started/variables.rst:38
-#, fuzzy
 msgid "``ipv``"
 msgstr "``ipv``"
 
 #: ../../getting-started/variables.rst:40
-#, fuzzy
 msgid "**Surface**:"
 msgstr "**Surface** :"
 
 #: ../../getting-started/variables.rst:42
-#, fuzzy
 msgid "``surface``"
 msgstr "``surface``"
 
 #: ../../getting-started/variables.rst:43
-#, fuzzy
 msgid "``surf``"
 msgstr "``surf``"
 
 #: ../../getting-started/variables.rst:44
-#, fuzzy
 msgid "``ground``"
-msgstr "``terrain``"
+msgstr "``ground``"
 
 #: ../../getting-started/variables.rst:45
-#, fuzzy
 msgid "``sfc``"
 msgstr "``sfc``"
 
 #: ../../getting-started/variables.rst:46
-#, fuzzy
 msgid "``sf``"
 msgstr "``sf``"
 
 #: ../../getting-started/variables.rst:48
-#, fuzzy
 msgid "**Flux level**:"
 msgstr "**Niveau de flux** :"
 
 #: ../../getting-started/variables.rst:50
-#, fuzzy
 msgid "``surface_fluxes``"
-msgstr "``flux_de_surface_``"
+msgstr "``surface_fluxes``"
 
 #: ../../getting-started/variables.rst:51
-#, fuzzy
 msgid "``fluxes``"
 msgstr "``fluxes``"
 
 #: ../../getting-started/variables.rst:52
-#, fuzzy
 msgid "``flux``"
 msgstr "``flux``"
 
 #: ../../getting-started/variables.rst:53
-#, fuzzy
 msgid "``flxf06``"
 msgstr "``flxf06``"
 
 #: ../../getting-started/variables.rst:54
-#, fuzzy
 msgid "``flx``"
 msgstr "``flx``"
 
 #: ../../getting-started/variables.rst:56
-#, fuzzy
 msgid "**Column level**:"
 msgstr "**Niveau de colonne** :"
 
 #: ../../getting-started/variables.rst:58
-#, fuzzy
 msgid "``total_column``"
-msgstr "``colonne_totale``"
+msgstr "``total_column``"
 
 #: ../../getting-started/variables.rst:59
-#, fuzzy
 msgid "``column``"
-msgstr "``colonne``"
+msgstr "``column``"
 
 #: ../../getting-started/variables.rst:60
-#, fuzzy
 msgid "``tc``"
 msgstr "``tc``"
 
 #: ../../getting-started/variables.rst:61
-#, fuzzy
 msgid "``entire_atmosphere``"
-msgstr "``atmosphère_intégrale``"
+msgstr "``entire_atmosphere``"
 
 #: ../../getting-started/variables.rst:62
-#, fuzzy
 msgid "``ea``"
 msgstr "``ea``"
 
 #: ../../getting-started/variables.rst:64
-#, fuzzy
 msgid "**Potential vorticity**:"
 msgstr "**Vorticité potentielle** :"
 
 #: ../../getting-started/variables.rst:66
-#, fuzzy
 msgid "``potential_vorticity``"
-msgstr "``vorticité_potentielle_``"
+msgstr "``potential_vorticity``"
 
 #: ../../getting-started/variables.rst:67 ../../getting-started/variables.rst:162
-#, fuzzy
 msgid "``pv``"
 msgstr "``pv``"
 
 #: ../../getting-started/variables.rst:68
-#, fuzzy
 msgid "``pv_surface``"
 msgstr "``pv_surface``"
 
 #: ../../getting-started/variables.rst:69 ../../getting-started/variables.rst:164
-#, fuzzy
 msgid "``epv``"
 msgstr "``epv``"
 
 #: ../../getting-started/variables.rst:73
-#, fuzzy
 msgid "Common variables"
 msgstr "Variables communes"
 
@@ -2575,22 +2532,18 @@ msgstr ""
 "ensembles de données :"
 
 #: ../../getting-started/variables.rst:77
-#, fuzzy
 msgid "**Geopotential**:"
 msgstr "**Géopotentiel** :"
 
 #: ../../getting-started/variables.rst:79 ../../getting-started/variables.rst:87
-#, fuzzy
 msgid "``z``"
 msgstr "``z``"
 
 #: ../../getting-started/variables.rst:80 ../../getting-started/variables.rst:88
-#, fuzzy
 msgid "``h``"
 msgstr "``h``"
 
 #: ../../getting-started/variables.rst:81 ../../getting-started/variables.rst:89
-#, fuzzy
 msgid "``zg``"
 msgstr "``zg``"
 
@@ -2604,277 +2557,222 @@ msgstr ""
 "automatiquement en hauteur géopotentielle."
 
 #: ../../getting-started/variables.rst:85
-#, fuzzy
 msgid "**Geopotential height**:"
 msgstr "**Hauteur géopotentielle** :"
 
 #: ../../getting-started/variables.rst:90
-#, fuzzy
 msgid "``hgt``"
 msgstr "``hgt``"
 
 #: ../../getting-started/variables.rst:92
-#, fuzzy
 msgid "**Air temperature**:"
 msgstr "**Température de l'air** :"
 
 #: ../../getting-started/variables.rst:94
-#, fuzzy
 msgid "``t``"
 msgstr "``t``"
 
 #: ../../getting-started/variables.rst:95
-#, fuzzy
 msgid "``temp``"
 msgstr "``temp``"
 
 #: ../../getting-started/variables.rst:96
-#, fuzzy
 msgid "``tmp``"
 msgstr "``tmp``"
 
 #: ../../getting-started/variables.rst:97
-#, fuzzy
 msgid "``ta``"
 msgstr "``ta``"
 
 #: ../../getting-started/variables.rst:98
-#, fuzzy
 msgid "``air``"
 msgstr "``air``"
 
 #: ../../getting-started/variables.rst:100
-#, fuzzy
 msgid "**Relative humidity**:"
 msgstr "**Humidité relative** :"
 
 #: ../../getting-started/variables.rst:102
-#, fuzzy
 msgid "``rh``"
 msgstr "``rh``"
 
 #: ../../getting-started/variables.rst:103
-#, fuzzy
 msgid "``rhum``"
 msgstr "``rhum``"
 
 #: ../../getting-started/variables.rst:104
-#, fuzzy
 msgid "``hur``"
 msgstr "``hur``"
 
 #: ../../getting-started/variables.rst:105
-#, fuzzy
 msgid "``r``"
 msgstr "``r``"
 
 #: ../../getting-started/variables.rst:107
-#, fuzzy
 msgid "**Specific humidity**:"
 msgstr "**Humidité spécifique** :"
 
 #: ../../getting-started/variables.rst:109
-#, fuzzy
 msgid "``sh``"
 msgstr "``sh``"
 
 #: ../../getting-started/variables.rst:110
-#, fuzzy
 msgid "``shum``"
 msgstr "``shum``"
 
 #: ../../getting-started/variables.rst:111
-#, fuzzy
 msgid "``hus``"
 msgstr "``hus``"
 
 #: ../../getting-started/variables.rst:112
-#, fuzzy
 msgid "``q``"
 msgstr "``q``"
 
 #: ../../getting-started/variables.rst:113
-#, fuzzy
 msgid "``qv``"
 msgstr "``qv``"
 
 #: ../../getting-started/variables.rst:115
-#, fuzzy
 msgid "**Vertical velocity**:"
 msgstr "**Vitesse verticale** :"
 
 #: ../../getting-started/variables.rst:117
-#, fuzzy
 msgid "``w``"
 msgstr "``w``"
 
 #: ../../getting-started/variables.rst:118
-#, fuzzy
 msgid "``vvel``"
 msgstr "``vvel``"
 
 #: ../../getting-started/variables.rst:119
-#, fuzzy
 msgid "``wap``"
-msgstr "``wap''"
+msgstr "``wap``"
 
 #: ../../getting-started/variables.rst:120
-#, fuzzy
 msgid "``omega``"
-msgstr "``oméga``"
+msgstr "``omega``"
 
 #: ../../getting-started/variables.rst:122
-#, fuzzy
 msgid "**Precipitable water**:"
-msgstr "**Eau précipitée** :"
+msgstr "**Eau précipitable** :"
 
 #: ../../getting-started/variables.rst:124
-#, fuzzy
 msgid "``pwat``"
 msgstr "``pwat``"
 
 #: ../../getting-started/variables.rst:125
-#, fuzzy
 msgid "``p_wat``"
 msgstr "``p_wat``"
 
 #: ../../getting-started/variables.rst:126
-#, fuzzy
 msgid "``tcw``"
 msgstr "``tcw``"
 
 #: ../../getting-started/variables.rst:127
-#, fuzzy
 msgid "``pr_wtr``"
 msgstr "``pr_wtr``"
 
 #: ../../getting-started/variables.rst:128
-#, fuzzy
 msgid "``prwtr``"
 msgstr "``prwtr``"
 
 #: ../../getting-started/variables.rst:130
-#, fuzzy
 msgid "**Pressure**:"
 msgstr "**Pression** :"
 
 #: ../../getting-started/variables.rst:134
-#, fuzzy
 msgid "``pres``"
 msgstr "``pres``"
 
 #: ../../getting-started/variables.rst:136
-#, fuzzy
 msgid "**Sea level pressure**:"
 msgstr "**Pression au niveau de la mer** :"
 
 #: ../../getting-started/variables.rst:138
-#, fuzzy
 msgid "``slp``"
 msgstr "``slp``"
 
 #: ../../getting-started/variables.rst:139
-#, fuzzy
 msgid "``mslp``"
 msgstr "``mslp``"
 
 #: ../../getting-started/variables.rst:140
-#, fuzzy
 msgid "``psl``"
 msgstr "``psl``"
 
 #: ../../getting-started/variables.rst:141
-#, fuzzy
 msgid "``prmsl``"
 msgstr "``prmsl``"
 
 #: ../../getting-started/variables.rst:142
-#, fuzzy
 msgid "``msl``"
 msgstr "``msl``"
 
 #: ../../getting-started/variables.rst:144
-#, fuzzy
 msgid "**U wind component**:"
-msgstr "**Composante éolienne de l'UE** :"
+msgstr "**Composante U du vent** :"
 
 #: ../../getting-started/variables.rst:146
-#, fuzzy
 msgid "``u``"
 msgstr "``u``"
 
 #: ../../getting-started/variables.rst:147
-#, fuzzy
 msgid "``ua``"
 msgstr "``ua``"
 
 #: ../../getting-started/variables.rst:148
-#, fuzzy
 msgid "``ugrd``"
 msgstr "``ugrd``"
 
 #: ../../getting-started/variables.rst:149
-#, fuzzy
 msgid "``u_grd``"
 msgstr "``u_grd``"
 
 #: ../../getting-started/variables.rst:150
-#, fuzzy
 msgid "``uwnd``"
 msgstr "``uwnd``"
 
 #: ../../getting-started/variables.rst:152
-#, fuzzy
 msgid "**V wind component**:"
-msgstr "**V composante du vent** :"
+msgstr "**Composante V du vent** :"
 
 #: ../../getting-started/variables.rst:154
-#, fuzzy
 msgid "``v``"
 msgstr "``v``"
 
 #: ../../getting-started/variables.rst:155
-#, fuzzy
 msgid "``va``"
 msgstr "``va``"
 
 #: ../../getting-started/variables.rst:156
-#, fuzzy
 msgid "``vgrd``"
 msgstr "``vgrd``"
 
 #: ../../getting-started/variables.rst:157
-#, fuzzy
 msgid "``v_grd``"
 msgstr "``v_grd``"
 
 #: ../../getting-started/variables.rst:158
-#, fuzzy
 msgid "``vwnd``"
 msgstr "``vwnd``"
 
 #: ../../getting-started/variables.rst:160
-#, fuzzy
 msgid "**PV**:"
 msgstr "**PV** :"
 
 #: ../../getting-started/variables.rst:163
-#, fuzzy
 msgid "``pvort``"
 msgstr "``pvort``"
 
 #: ../../getting-started/variables.rst:166
-#, fuzzy
 msgid "**Total precipitation**:"
 msgstr "**Précipitations totales** :"
 
 #: ../../getting-started/variables.rst:168
-#, fuzzy
 msgid "``tp``"
 msgstr "``tp``"
 
 #: ../../getting-started/variables.rst:169
-#, fuzzy
 msgid "``prectot``"
 msgstr "``prectot``"
 
@@ -2902,13 +2800,11 @@ msgstr "Réanalyse NCEP/NCAR 1"
 #: ../../getting-started/variables.rst:310 ../../getting-started/variables.rst:337
 #: ../../getting-started/variables.rst:392 ../../getting-started/variables.rst:409
 #: ../../getting-started/variables.rst:537
-#, fuzzy
 msgid "**For pressure levels**:"
 msgstr "**Pour les niveaux de pression** :"
 
 #: ../../getting-started/variables.rst:182 ../../getting-started/variables.rst:192
 #: ../../getting-started/variables.rst:251 ../../getting-started/variables.rst:539
-#, fuzzy
 msgid "Air Temperature"
 msgstr "Température de l'air"
 
@@ -2916,25 +2812,21 @@ msgstr "Température de l'air"
 #: ../../getting-started/variables.rst:300 ../../getting-started/variables.rst:312
 #: ../../getting-started/variables.rst:428 ../../getting-started/variables.rst:438
 #: ../../getting-started/variables.rst:481 ../../getting-started/variables.rst:510
-#, fuzzy
 msgid "Geopotential height"
 msgstr "Hauteur géopotentielle"
 
 #: ../../getting-started/variables.rst:184 ../../getting-started/variables.rst:253
 #: ../../getting-started/variables.rst:542
-#, fuzzy
 msgid "Relative Humidity"
 msgstr "Humidité relative"
 
 #: ../../getting-started/variables.rst:185 ../../getting-started/variables.rst:543
 #: ../../getting-started/variables.rst:544
-#, fuzzy
 msgid "Specific Humidity"
 msgstr "Humidité spécifique"
 
 #: ../../getting-started/variables.rst:186 ../../getting-started/variables.rst:254
 #: ../../getting-started/variables.rst:317
-#, fuzzy
 msgid "Vertical Velocity"
 msgstr "Vitesse verticale"
 
@@ -2952,7 +2844,6 @@ msgstr "V-Wind"
 
 #: ../../getting-started/variables.rst:190 ../../getting-started/variables.rst:258
 #: ../../getting-started/variables.rst:548
-#, fuzzy
 msgid "**For the surface**:"
 msgstr "**Pour la surface** :"
 
@@ -2970,7 +2861,6 @@ msgstr "Meilleur indice de soulèvement (4 couches) (``lftx4``)"
 #: ../../getting-started/variables.rst:397 ../../getting-started/variables.rst:414
 #: ../../getting-started/variables.rst:484 ../../getting-started/variables.rst:513
 #: ../../getting-started/variables.rst:541
-#, fuzzy
 msgid "Vertical velocity"
 msgstr "Vitesse verticale"
 
@@ -2983,13 +2873,11 @@ msgstr "Température potentielle (``pottmp``)"
 #: ../../getting-started/variables.rst:301 ../../getting-started/variables.rst:492
 #: ../../getting-started/variables.rst:521 ../../getting-started/variables.rst:550
 #: ../../getting-started/variables.rst:564
-#, fuzzy
 msgid "Precipitable water"
 msgstr "Eau précipitable"
 
 #: ../../getting-started/variables.rst:198 ../../getting-started/variables.rst:261
 #: ../../getting-started/variables.rst:354 ../../getting-started/variables.rst:382
-#, fuzzy
 msgid "Pressure"
 msgstr "Pression"
 
@@ -2998,15 +2886,13 @@ msgstr "Pression"
 #: ../../getting-started/variables.rst:342 ../../getting-started/variables.rst:396
 #: ../../getting-started/variables.rst:413 ../../getting-started/variables.rst:482
 #: ../../getting-started/variables.rst:511
-#, fuzzy
 msgid "Relative humidity"
-msgstr "Humidités relatives"
+msgstr "Humidité relative"
 
 #: ../../getting-started/variables.rst:200 ../../getting-started/variables.rst:262
 #: ../../getting-started/variables.rst:403 ../../getting-started/variables.rst:420
 #: ../../getting-started/variables.rst:451 ../../getting-started/variables.rst:551
 #: ../../getting-started/variables.rst:563
-#, fuzzy
 msgid "Sea level pressure"
 msgstr "Pression au niveau de la mer"
 
@@ -3021,52 +2907,42 @@ msgid "V-wind"
 msgstr "V-wind"
 
 #: ../../getting-started/variables.rst:204 ../../getting-started/variables.rst:264
-#, fuzzy
 msgid "**For the surface fluxes**:"
 msgstr "**Pour les flux de surface** :"
 
 #: ../../getting-started/variables.rst:206 ../../getting-started/variables.rst:266
-#, fuzzy
 msgid "Air Temperature 2m"
 msgstr "Température de l'air 2m"
 
 #: ../../getting-started/variables.rst:207 ../../getting-started/variables.rst:283
-#, fuzzy
 msgid "Potential evaporation rate (``pevpr``)"
 msgstr "Taux d'évaporation potentiel (``pevpr``)"
 
 #: ../../getting-started/variables.rst:208 ../../getting-started/variables.rst:267
-#, fuzzy
 msgid "Specific humidity at 2m (``shum``)"
 msgstr "Humidité spécifique à 2m (``shum``)"
 
 #: ../../getting-started/variables.rst:209 ../../getting-started/variables.rst:271
-#, fuzzy
 msgid "Soil moisture (0-10cm) (``soilw0-10``)"
 msgstr "Humidité du sol (0-10cm) (``soilw0-10``)"
 
 #: ../../getting-started/variables.rst:210 ../../getting-started/variables.rst:272
-#, fuzzy
 msgid "Soil moisture (10-200cm) (``soilw10-200``)"
 msgstr "Humidité du sol (10-200cm) (``soilw10-200``)"
 
 #: ../../getting-started/variables.rst:211 ../../getting-started/variables.rst:270
-#, fuzzy
 msgid "Skin Temperature (``sktmp``)"
-msgstr "Température de la peau (``sktmp``)"
+msgstr "Température de surface (``sktmp``)"
 
 #: ../../getting-started/variables.rst:212 ../../getting-started/variables.rst:273
-#, fuzzy
 msgid "Temperature of 0-10cm layer (``tmp0-10``)"
 msgstr "Température de la couche 0-10cm (``tmp0-10``)"
 
 #: ../../getting-started/variables.rst:213 ../../getting-started/variables.rst:274
-#, fuzzy
 msgid "Temperature of 10-200cm layer (``tmp10-200``)"
 msgstr "Température de la couche 10-200cm (``tmp10-200``)"
 
 #: ../../getting-started/variables.rst:214
-#, fuzzy
 msgid "Temperature at 300cm (``tmp300``)"
 msgstr "Température à 300 cm (``tmp300``)"
 
@@ -3081,17 +2957,14 @@ msgid "V-wind at 10 m"
 msgstr "Vent V à 10 m"
 
 #: ../../getting-started/variables.rst:217 ../../getting-started/variables.rst:277
-#, fuzzy
 msgid "Water equiv. of snow dept (``weasd``)"
-msgstr "Équivalent en eau de la quantité de neige (``weasd``)"
+msgstr "Équivalent en eau de la neige (``weasd``)"
 
 #: ../../getting-started/variables.rst:218 ../../getting-started/variables.rst:268
-#, fuzzy
 msgid "Maximum temperature at 2m (``tmax2m``)"
 msgstr "Température maximale à 2m (``tmax2m``)"
 
 #: ../../getting-started/variables.rst:219 ../../getting-started/variables.rst:269
-#, fuzzy
 msgid "Minimum temperature at 2m (``tmin2m``)"
 msgstr "Température minimale à 2m (``tmin2m``)"
 
@@ -3803,66 +3676,54 @@ msgstr ""
 "ans."
 
 #: ../../getting-started/versioning-migration.rst:21
-#, fuzzy
 msgid "Version"
 msgstr "Version"
 
 #: ../../getting-started/versioning-migration.rst:21
-#, fuzzy
 msgid "Release"
 msgstr "Distribution"
 
 #: ../../getting-started/versioning-migration.rst:21
-#, fuzzy
 msgid "Bug Fixes Until"
 msgstr "Corrections de bugs jusqu'à"
 
 #: ../../getting-started/versioning-migration.rst:23
-#, fuzzy
 msgid "2.0"
 msgstr "2.0"
 
 #: ../../getting-started/versioning-migration.rst:23
-#, fuzzy
 msgid "19.11.2018"
 msgstr "19.11.2018"
 
 #: ../../getting-started/versioning-migration.rst:23
 #: ../../getting-started/versioning-migration.rst:24
-#, fuzzy
 msgid "23.05.2019"
 msgstr "23.05.2019"
 
 #: ../../getting-started/versioning-migration.rst:24
-#, fuzzy
 msgid "2.1 LTS"
 msgstr "2.1 LTS"
 
 #: ../../getting-started/versioning-migration.rst:24
 msgid "23.05.2023"
-msgstr ""
+msgstr "23.05.2023"
 
 #: ../../getting-started/versioning-migration.rst:29
-#, fuzzy
 msgid "Upgrade Guide"
-msgstr "Mise à niveau du guide"
+msgstr "Guide de mise à niveau"
 
 #: ../../getting-started/versioning-migration.rst:32
-#, fuzzy
 msgid "v2.0 to v2.1"
 msgstr "v2.0 à v2.1"
 
 #: ../../getting-started/versioning-migration.rst:34
-#, fuzzy
 msgid "**Parameters files**"
 msgstr "**Fichiers de paramètres**"
 
 #: ../../getting-started/versioning-migration.rst:36
-#, fuzzy
 msgid ""
 "Changes to the reanalyses ``dataset_id``. Check the new values under the :ref:"
 "`reanalyses page<reanalyses>`."
 msgstr ""
 "Changements dans le ``dataset_id`` des réanalyses. Vérifiez les nouvelles "
 "valeurs sous :ref:`reanalyses page<reanalyses>`."
-
