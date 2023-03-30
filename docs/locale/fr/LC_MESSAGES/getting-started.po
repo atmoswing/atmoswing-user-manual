@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: AtmoSwing 2.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-13 22:03+0100\n"
-"PO-Revision-Date: 2023-03-13 23:22+0100\n"
+"PO-Revision-Date: 2023-03-30 11:50+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -28,9 +28,9 @@ msgid ""
 "This document can also be downloaded as a pdf or epub using the bottom left "
 "menu."
 msgstr ""
-"Cette section contient la documentation sur la façon de démarrer avec "
-"AtmoSwing. Ce document peut également être téléchargé au format pdf ou epub "
-"en utilisant le menu en bas à gauche."
+"Cette section contient la documentation sur la mise en route d'AtmoSwing. Ce "
+"document peut également être téléchargé au format pdf ou epub en utilisant "
+"le menu en bas à gauche."
 
 #: ../../getting-started.rst:8
 msgid "This section is divided into the following topics:"
@@ -92,7 +92,6 @@ msgstr ""
 "à chaque niveau, puis la moyenne est considérée, ici avec les mêmes poids."
 
 #: ../../getting-started/analog-methods.rst:12
-#, fuzzy
 msgid ""
 "S1=100 \\frac {\\displaystyle \\sum_{i} \\vert \\Delta\\hat{z}_{i} - \\Delta "
 "z_{i} \\vert} {\\displaystyle \\sum_{i} max\\left\\lbrace \\vert "
@@ -669,40 +668,33 @@ msgstr ""
 "d'être triés chronologiquement."
 
 #: ../../getting-started/generic-dataset.rst:13
-#, fuzzy
 msgid "File structure"
 msgstr "Structure du fichier"
 
 #: ../../getting-started/generic-dataset.rst:15
-#, fuzzy
 msgid "The file needs to have four dimensions:"
 msgstr "Le fichier doit avoir quatre dimensions :"
 
 #: ../../getting-started/generic-dataset.rst:17
-#, fuzzy
 msgid "lat: latitude"
 msgstr "lat : latitude"
 
 #: ../../getting-started/generic-dataset.rst:18
-#, fuzzy
 msgid "lon: longitude"
 msgstr "lon : longitude"
 
 #: ../../getting-started/generic-dataset.rst:19
-#, fuzzy
 msgid ""
 "level: needs to be defined even if there is no level (set to 0 in this case)"
 msgstr ""
-"niveau : doit être défini même s'il n'y a pas de niveau (fixé à 0 dans ce "
-"cas)"
+"level : doit être défini même s'il n'y a pas de niveau (fixé à 0 dans ce cas)"
 
 #: ../../getting-started/generic-dataset.rst:20
-#, fuzzy
 msgid ""
 "time: needs to be expressed as Modified Julian Date (``days since 1858-11-17 "
 "00:00:00.0 +0:00``)"
 msgstr ""
-"time : doit être exprimé en date julienne modifiée (``jours depuis "
+"time : doit être défini en tant que Modified Julian Date (``days since "
 "1858-11-17 00:00:00.0 +0:00``)"
 
 #: ../../getting-started/generic-dataset.rst:22
@@ -737,17 +729,14 @@ msgstr ""
 "toolbox/blob/main/examples/create_generic_from_ERAI.py>`_)."
 
 #: ../../getting-started/generic-dataset.rst:29
-#, fuzzy
 msgid "One must specify:"
 msgstr "Il faut préciser :"
 
 #: ../../getting-started/generic-dataset.rst:31
-#, fuzzy
 msgid "``dir_origin``: the directory containing the original files"
 msgstr "``dir_origin`` : le répertoire contenant les fichiers originaux"
 
 #: ../../getting-started/generic-dataset.rst:32
-#, fuzzy
 msgid "``dir_target``: the directory to save the resulting files"
 msgstr ""
 "``dir_target`` : le répertoire dans lequel les fichiers résultants doivent "
@@ -777,7 +766,6 @@ msgstr ""
 "formats ou structures d'entrée."
 
 #: ../../getting-started/installation.rst:4
-#, fuzzy
 msgid "Installation"
 msgstr "Installation"
 
@@ -812,7 +800,6 @@ msgstr ""
 "utilisation sur des serveurs via une interface de ligne de commande."
 
 #: ../../getting-started/installation.rst:13
-#, fuzzy
 msgid "Windows"
 msgstr "Windows"
 
@@ -826,7 +813,6 @@ msgstr ""
 "contient l'exécutable sans l'installateur."
 
 #: ../../getting-started/installation.rst:19
-#, fuzzy
 msgid "Linux"
 msgstr "Linux"
 
@@ -843,7 +829,6 @@ msgstr ""
 "wiki>`_."
 
 #: ../../getting-started/parameters-file.rst:4
-#, fuzzy
 msgid "Parameters file"
 msgstr "Fichier de paramètres"
 
@@ -877,9 +862,8 @@ msgstr ""
 "l'indice d'humidité) et expliquée plus loin."
 
 #: ../../getting-started/parameters-file.rst:141
-#, fuzzy
 msgid "Content 'description'"
-msgstr "Contenu \"description"
+msgstr "Contenu 'description'"
 
 #: ../../getting-started/parameters-file.rst:143
 #, fuzzy
@@ -892,12 +876,10 @@ msgstr ""
 "régions."
 
 #: ../../getting-started/parameters-file.rst:145
-#, fuzzy
 msgid "``<method_id>``: An ID given to the method (ex: 2Z)"
 msgstr "``<method_id>`` : Un identifiant donné à la méthode (ex : 2Z)"
 
 #: ../../getting-started/parameters-file.rst:146
-#, fuzzy
 msgid ""
 "``<method_id_display>``: The name of the method (ex: Classic circulation)"
 msgstr ""
@@ -923,7 +905,6 @@ msgstr ""
 "``<specific_tag>`` fourni ci-dessus."
 
 #: ../../getting-started/parameters-file.rst:149
-#, fuzzy
 msgid "``<description>``: A possible additionnal description."
 msgstr "``<description>`` : Une description supplémentaire possible."
 
@@ -931,14 +912,12 @@ msgstr "``<description>`` : Une description supplémentaire possible."
 #: ../../getting-started/parameters-file.rst:233
 #: ../../getting-started/parameters-file.rst:292
 #: ../../getting-started/parameters-file.rst:393
-#, fuzzy
 msgid "Example:"
 msgstr "Exemple :"
 
 #: ../../getting-started/parameters-file.rst:164
-#, fuzzy
 msgid "Content 'time_properties'"
-msgstr "Contenu \"time_properties\""
+msgstr "Contenu 'time_properties'"
 
 #: ../../getting-started/parameters-file.rst:166
 #, fuzzy
@@ -950,9 +929,8 @@ msgstr ""
 "d'autres propriétés temporelles."
 
 #: ../../getting-started/parameters-file.rst:169
-#, fuzzy
 msgid "Element 'archive_period'"
-msgstr "Élément \"archive_period\" (période d'archivage)"
+msgstr "Élément 'archive_period'"
 
 #: ../../getting-started/parameters-file.rst:171
 #, fuzzy
@@ -994,9 +972,8 @@ msgid "``<end_year>``: End of the archive period (ex: 2008)"
 msgstr "``<end_year>`` : Fin de la période d'archivage (ex : 2008)"
 
 #: ../../getting-started/parameters-file.rst:184
-#, fuzzy
 msgid "Element 'time_step'"
-msgstr "Élément \"time_step"
+msgstr "Élément 'time_step'"
 
 #: ../../getting-started/parameters-file.rst:186
 #, fuzzy
@@ -1029,36 +1006,30 @@ msgstr "``<time_array>`` : Type de sélection de temps."
 
 #: ../../getting-started/parameters-file.rst:195
 #: ../../getting-started/parameters-file.rst:221
-#, fuzzy
 msgid "The type can be one of the following:"
 msgstr "Le type peut être l'un des suivants :"
 
 #: ../../getting-started/parameters-file.rst:197
-#, fuzzy
 msgid "``simple``: standard full temporal selection"
 msgstr "``simple`` : sélection temporelle complète standard"
 
 #: ../../getting-started/parameters-file.rst:198
 #: ../../getting-started/parameters-file.rst:225
-#, fuzzy
 msgid "``DJF``: Winter (Dec-Feb)"
 msgstr "``DJF`` : Hiver (déc.-fév.)"
 
 #: ../../getting-started/parameters-file.rst:199
 #: ../../getting-started/parameters-file.rst:226
-#, fuzzy
 msgid "``MAM``: Spring (Mar-May)"
 msgstr "``MAM`` : Printemps (mars-mai)"
 
 #: ../../getting-started/parameters-file.rst:200
 #: ../../getting-started/parameters-file.rst:227
-#, fuzzy
 msgid "``JJA``: Summer (Jun-Aug)"
 msgstr "``JJA`` : Été (juin-août)"
 
 #: ../../getting-started/parameters-file.rst:201
 #: ../../getting-started/parameters-file.rst:228
-#, fuzzy
 msgid "``SON``: Fall (Sep-Nov)"
 msgstr "``SON`` : Automne (sept-nov)"
 
@@ -1100,12 +1071,10 @@ msgstr ""
 "(''data_raw'') ou normalisées (''data_normalized'')"
 
 #: ../../getting-started/parameters-file.rst:208
-#, fuzzy
 msgid "``<predictand_min_threshold>``: Minimum threshold value"
 msgstr "``<predictand_min_threshold>`` : Valeur minimale du seuil"
 
 #: ../../getting-started/parameters-file.rst:209
-#, fuzzy
 msgid "``<predictand_max_threshold>``: Maximum threshold value"
 msgstr "``<predictand_max_threshold>`` : Valeur maximale du seuil"
 
@@ -1159,7 +1128,6 @@ msgstr ""
 "cible."
 
 #: ../../getting-started/parameters-file.rst:224
-#, fuzzy
 msgid "``simple``: full temporal selection"
 msgstr "``simple`` : sélection temporelle complète"
 
@@ -1180,7 +1148,6 @@ msgid "Another example using a specific period:"
 msgstr "Autre exemple d'utilisation d'une période spécifique :"
 
 #: ../../getting-started/parameters-file.rst:267
-#, fuzzy
 msgid "Content 'analog_dates'"
 msgstr "Contenu 'analog_dates'"
 
@@ -1199,9 +1166,8 @@ msgstr ""
 "niveau précédent."
 
 #: ../../getting-started/parameters-file.rst:282
-#, fuzzy
 msgid "Element 'analogs_number'"
-msgstr "Élément \"analogs_number\" (nombre d'analogues)"
+msgstr "Élément 'analogs_number'"
 
 #: ../../getting-started/parameters-file.rst:284
 #, fuzzy
@@ -1213,9 +1179,8 @@ msgstr ""
 "pour le niveau d'analogie donné."
 
 #: ../../getting-started/parameters-file.rst:288
-#, fuzzy
 msgid "Element 'predictor'"
-msgstr "Élément \"prédicteur"
+msgstr "Élément 'predictor'"
 
 #: ../../getting-started/parameters-file.rst:290
 #, fuzzy
@@ -1231,12 +1196,10 @@ msgstr ""
 "des blocs ``<predictor>`` les uns après les autres."
 
 #: ../../getting-started/parameters-file.rst:331
-#, fuzzy
 msgid "The ``<predictor>`` element must define:"
 msgstr "L'élément ``<predictor>`` doit définir :"
 
 #: ../../getting-started/parameters-file.rst:333
-#, fuzzy
 msgid ""
 "``<preload>``: Defines if the data must be loaded in memory or not (0/1; "
 "optional)"
@@ -1245,7 +1208,6 @@ msgstr ""
 "non (0/1 ; optionnel)"
 
 #: ../../getting-started/parameters-file.rst:334
-#, fuzzy
 msgid ""
 "``<dataset_id>``: Defines the dataset to be used (:ref:`see the reanalyses "
 "list<reanalyses>`)"
@@ -1254,7 +1216,6 @@ msgstr ""
 "des réanalyses<reanalyses>`)"
 
 #: ../../getting-started/parameters-file.rst:335
-#, fuzzy
 msgid ""
 "``<data_id>``: Defines the variable to be used (:ref:`see the variables "
 "list<variables>`)"
@@ -1263,7 +1224,6 @@ msgstr ""
 "variables<variables>`)"
 
 #: ../../getting-started/parameters-file.rst:336
-#, fuzzy
 msgid ""
 "``<level>``: Selection of the predictor level (ex: 500 for 500 hPa or 0 for "
 "surface)"
@@ -1272,9 +1232,9 @@ msgstr ""
 "pour la surface)"
 
 #: ../../getting-started/parameters-file.rst:337
-#, fuzzy
 msgid "``<time>``: Selection of the predictor time (ex: 12 for 12h UTC)"
-msgstr "``<time>`` : Sélection du temps du prédicteur (ex : 12 pour 12h UTC)"
+msgstr ""
+"``<time>`` : Sélection de l'instant du prédicteur (ex : 12 pour 12h UTC)"
 
 #: ../../getting-started/parameters-file.rst:338
 #, fuzzy
@@ -1366,14 +1326,12 @@ msgstr ""
 "sont communs aux prédicteurs prétraités."
 
 #: ../../getting-started/parameters-file.rst:384
-#, fuzzy
 msgid "Content 'analog_values'"
-msgstr "Contenu \"valeurs_analogiques"
+msgstr "Contenu 'analog_values'"
 
 #: ../../getting-started/parameters-file.rst:387
-#, fuzzy
 msgid "Element 'predictand'"
-msgstr "Élément \"prédicteur"
+msgstr "Élément 'predictand'"
 
 #: ../../getting-started/parameters-file.rst:389
 #, fuzzy
@@ -1428,15 +1386,13 @@ msgstr ""
 "Les options sont les suivantes :"
 
 #: ../../getting-started/predictand-db.rst:18
-#, fuzzy
 msgid "Predictand parameter:"
 msgstr "Paramètre du prédictand :"
 
 #: ../../getting-started/predictand-db.rst:16
 #: ../../getting-started/predictand-db.rst:50
-#, fuzzy
 msgid "Precipitation"
-msgstr "Précipitations"
+msgstr "Precipitation (Précipitations)"
 
 #: ../../getting-started/predictand-db.rst:17
 #: ../../getting-started/variables.rst:304
@@ -1446,33 +1402,27 @@ msgstr "Précipitations"
 #: ../../getting-started/variables.rst:412
 #: ../../getting-started/variables.rst:483
 #: ../../getting-started/variables.rst:512
-#, fuzzy
 msgid "Temperature"
-msgstr "Température"
+msgstr "Temperature (Température)"
 
 #: ../../getting-started/predictand-db.rst:18
 #: ../../getting-started/predictand-db.rst:58
-#, fuzzy
 msgid "Lightnings"
-msgstr "Éclairs"
+msgstr "Lightnings (Éclairs)"
 
 #: ../../getting-started/predictand-db.rst:19
-#, fuzzy
 msgid "Other"
-msgstr "Autre"
+msgstr "Other (Autre)"
 
 #: ../../getting-started/predictand-db.rst:25
-#, fuzzy
 msgid "Temporal resolution:"
 msgstr "Résolution temporelle :"
 
 #: ../../getting-started/predictand-db.rst:21
-#, fuzzy
 msgid "24 hours"
 msgstr "24 heures"
 
 #: ../../getting-started/predictand-db.rst:22
-#, fuzzy
 msgid "6 hours"
 msgstr "6 heures"
 
@@ -1497,24 +1447,20 @@ msgid "12-hr MTW (moving time window, see [Horton2017]_)"
 msgstr "12-hr MTW (moving time window, voir [Horton2017]_)"
 
 #: ../../getting-started/predictand-db.rst:30
-#, fuzzy
 msgid "Spatial aggregation:"
 msgstr "Agrégation spatiale :"
 
 #: ../../getting-started/predictand-db.rst:28
-#, fuzzy
 msgid "Station"
-msgstr "Gare"
+msgstr "Station"
 
 #: ../../getting-started/predictand-db.rst:29
-#, fuzzy
 msgid "Groupment"
-msgstr "Groupement"
+msgstr "Groupment (Groupement)"
 
 #: ../../getting-started/predictand-db.rst:30
-#, fuzzy
 msgid "Catchment"
-msgstr "Bassin versant"
+msgstr "Catchment (Bassin versant)"
 
 #: ../../getting-started/predictand-db.rst:32
 #, fuzzy
@@ -1528,9 +1474,8 @@ msgstr ""
 "prédictand (voir la section `Données transformées`_)."
 
 #: ../../getting-started/predictand-db.rst:34
-#, fuzzy
 msgid "Next, a couple of paths must be provided:"
-msgstr "Ensuite, il faut prévoir quelques chemins d'accès :"
+msgstr "Ensuite, il faut fournir quelques chemins d'accès :"
 
 #: ../../getting-started/predictand-db.rst:36
 #, fuzzy
@@ -1580,7 +1525,6 @@ msgstr ""
 "comprend également les propriétés de la station et les séries temporelles."
 
 #: ../../getting-started/predictand-db.rst:45
-#, fuzzy
 msgid "Transformed data"
 msgstr "Données transformées"
 
@@ -1637,9 +1581,8 @@ msgstr ""
 "log10( N + 1 )"
 
 #: ../../getting-started/predictand-db.rst:64
-#, fuzzy
 msgid "Predictand catalog"
-msgstr "Catalogue des prédicteurs"
+msgstr "Catalogue des prédictands"
 
 #: ../../getting-started/predictand-db.rst:66
 #, fuzzy
@@ -2103,7 +2046,6 @@ msgstr ""
 "de \"chapeau\"."
 
 #: ../../getting-started/reanalyses.rst:4
-#, fuzzy
 msgid "Reanalyses"
 msgstr "Réanalyses"
 
@@ -2122,19 +2064,18 @@ msgstr ""
 #: ../../getting-started/reanalyses.rst:8
 #, fuzzy
 msgid "NCEP/NCAR Reanalysis 1: ``NCEP_R1``"
-msgstr "NCEP/NCAR Reanalysis 1 : ``NCEP_R1``"
+msgstr "NCEP/NCAR Reanalysis 1: ``NCEP_R1``"
 
 #: ../../getting-started/reanalyses.rst:9
 #: ../../getting-started/reanalyses.rst:11
 #: ../../getting-started/reanalyses.rst:15
-#, fuzzy
 msgid "Use the original file names (yearly files)"
 msgstr "Utiliser les noms de fichiers originaux (fichiers annuels)"
 
 #: ../../getting-started/reanalyses.rst:10
 #, fuzzy
 msgid "NCEP/DOE Reanalysis 1: ``NCEP_R2``"
-msgstr "Réanalyse NCEP/DOE 1 : \"NCEP_R2"
+msgstr "NCEP/DOE Reanalysis 1: ``NCEP_R2``"
 
 #: ../../getting-started/reanalyses.rst:12
 #, fuzzy
@@ -2160,7 +2101,6 @@ msgstr ""
 "netcdf files : ``NCEP_CFSR_subset_``"
 
 #: ../../getting-started/reanalyses.rst:19
-#, fuzzy
 msgid "ECMWF ERA5: ``ECMWF_ERA5``"
 msgstr "ECMWF ERA5 : ``ECMWF_ERA5``"
 
@@ -2198,14 +2138,12 @@ msgstr ""
 "répertoire."
 
 #: ../../getting-started/reanalyses.rst:24
-#, fuzzy
 msgid "ECMWF ERA-interim: ``ECMWF_ERA_interim``"
 msgstr "ECMWF ERA-interim : ``ECMWF_ERA_interim``"
 
 #: ../../getting-started/reanalyses.rst:26
-#, fuzzy
 msgid "ECMWF ERA 20th Century: ``ECMWF_ERA_20C``"
-msgstr "ECMWF ERA 20th Century : ``ECMWF_ERA_20C`` (en anglais)"
+msgstr "ECMWF ERA 20th Century : ``ECMWF_ERA_20C``"
 
 #: ../../getting-started/reanalyses.rst:27
 #, fuzzy

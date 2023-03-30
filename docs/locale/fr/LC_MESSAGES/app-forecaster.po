@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: AtmoSwing 2.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-13 22:03+0100\n"
-"PO-Revision-Date: 2023-03-30 11:28+0200\n"
+"PO-Revision-Date: 2023-03-30 11:38+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -62,7 +62,7 @@ msgstr "La propriété ``target`` du noeud racine doit être ``forecaster``."
 
 #: ../../app-forecaster/parameters-file.rst:18
 msgid "Content 'time_properties'"
-msgstr "Contenu ``time_properties``"
+msgstr "Contenu 'time_properties'"
 
 #: ../../app-forecaster/parameters-file.rst:20
 msgid ""
