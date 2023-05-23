@@ -204,7 +204,7 @@ The type can be one of the following:
 
 In case of a selection based on a predictand threshold (``predictand_thresholds``), the following elements must be specified:
 
-* ``<predictand_serie_name>``: selection of the raw (´´data_raw´´) or normalized data (´´data_normalized´´)
+* ``<predictand_serie_name>``: selection of the raw (``data_raw``) or normalized data (``data_normalized``)
 * ``<predictand_min_threshold>``: Minimum threshold value
 * ``<predictand_max_threshold>``: Maximum threshold value
 

@@ -1043,8 +1043,8 @@ msgstr ""
 #: ../../getting-started/parameters-file.rst:207
 #, fuzzy
 msgid ""
-"``<predictand_serie_name>``: selection of the raw (´´data_raw´´) or normalized "
-"data (´´data_normalized´´)"
+"``<predictand_serie_name>``: selection of the raw (``data_raw``) or normalized "
+"data (``data_normalized``)"
 msgstr ""
 "``<nom_de_la_série_de_prédiction>`` : sélection des données brutes "
 "(''data_raw'') ou normalisées (''data_normalized'')"

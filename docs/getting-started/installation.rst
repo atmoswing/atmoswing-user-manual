@@ -12,10 +12,10 @@ Executables can be downloaded on `AtmoSwing release page <https://github.com/atm
 Windows
 -------
 
-The .exe and .msi are Windows installers, and the .zip contains the executable without installer. 
+The .msi is a Windows installer, and the .zip contains the executable without installer. 
 
 
 Linux
 -----
 
-Executables are provided for a limited number of Ubuntu versions. It needs to be compiled for other Linux flavors. Instructions are provided on the `AtmoSwing wiki <https://github.com/atmoswing/atmoswing/wiki>`_.
+AtmoSwing needs to be compiled on Linux. Instructions are provided on the `AtmoSwing wiki <https://github.com/atmoswing/atmoswing/wiki>`_.
