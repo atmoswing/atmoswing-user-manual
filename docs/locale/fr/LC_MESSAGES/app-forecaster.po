@@ -622,28 +622,28 @@ msgid "The toolbar allows the following actions:"
 msgstr "La barre d'outils permet d'effectuer les actions suivantes :"
 
 #: ../../app-forecaster/usage.rst:52
-msgid "|icon-run| Run the forecast for the chosen date and time."
-msgstr "|icon-run| Lancer la prévision pour la date et l'heure choisies."
+msgid "|icon_run| Run the forecast for the chosen date and time."
+msgstr "|icon_run| Lancer la prévision pour la date et l'heure choisies."
 
 #: ../../app-forecaster/usage.rst:56
-msgid "icon-run"
-msgstr "icon-run"
+msgid "icon_run"
+msgstr "icon_run"
 
 #: ../../app-forecaster/usage.rst:53
-msgid "|icon-stop| Stop the current calculations."
-msgstr "|icon-stop| Arrêter les calculs en cours."
+msgid "|icon_stop| Stop the current calculations."
+msgstr "|icon_stop| Arrêter les calculs en cours."
 
 #: ../../app-forecaster/usage.rst:59
-msgid "icon-stop"
-msgstr "icon-stop"
+msgid "icon_stop"
+msgstr "icon_stop"
 
 #: ../../app-forecaster/usage.rst:54
-msgid "|icon-preferences| Define the preferences."
-msgstr "|icon-preferences| Définir les préférences."
+msgid "|icon_preferences| Define the preferences."
+msgstr "|icon_preferences| Définir les préférences."
 
 #: ../../app-forecaster/usage.rst:62
-msgid "icon-preferences"
-msgstr "icon-preferences"
+msgid "icon_preferences"
+msgstr "icon_preferences"
 
 #: ../../app-forecaster/usage.rst:65
 msgid "To perform a forecast, one must:"
@@ -665,15 +665,15 @@ msgstr "icon_update"
 
 #: ../../app-forecaster/usage.rst:68
 msgid ""
-"Start the forecast calculation by clicking on the |icon-run_s| icon in the "
+"Start the forecast calculation by clicking on the |icon_run_s| icon in the "
 "toolbar."
 msgstr ""
-"Lancez le calcul de la prévision en cliquant sur l'icône |icon-run_s| dans la "
+"Lancez le calcul de la prévision en cliquant sur l'icône |icon_run_s| dans la "
 "barre d'outils."
 
 #: ../../app-forecaster/usage.rst:76
-msgid "icon-run_s"
-msgstr "icon-run_s"
+msgid "icon_run_s"
+msgstr "icon_run_s"
 
 #: ../../app-forecaster/usage.rst:82
 msgid ""

@@ -40,17 +40,17 @@ The main interface of the Downscaler is as follows.
 
 The toolbar allows the following actions:
 
-- |icon-run| Start the calculations.
-- |icon-stop| Stop the current calculations.
-- |icon-preferences| Define the preferences.
+- |icon_run| Start the calculations.
+- |icon_stop| Stop the current calculations.
+- |icon_preferences| Define the preferences.
 
-.. |icon-run| image:: img/icon-run.png
+.. |icon_run| image:: img/icon-run.png
    :align: middle
    
-.. |icon-stop| image:: img/icon-stop.png
+.. |icon_stop| image:: img/icon-stop.png
    :align: middle
 
-.. |icon-preferences| image:: img/icon-preferences.png
+.. |icon_preferences| image:: img/icon-preferences.png
    :align: middle
    
 What is needed:

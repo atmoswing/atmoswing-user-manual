@@ -53,13 +53,13 @@ The toolbar allows the following actions:
 - |icon_stop| Stop the current calculations.
 - |icon_preferences| Define the preferences.
 
-.. |icon_run| image:: img/icon_run.png
+.. |icon_run| image:: img/icon-run.png
    :align: middle
    
-.. |icon_stop| image:: img/icon_stop.png
+.. |icon_stop| image:: img/icon-stop.png
    :align: middle
 
-.. |icon_preferences| image:: img/icon_preferences.png
+.. |icon_preferences| image:: img/icon-preferences.png
    :align: middle
 
 To perform a forecast, one must:
@@ -73,7 +73,7 @@ To perform a forecast, one must:
    :scale: 70
    :align: middle
 
-.. |icon_run_s| image:: img/icon_run.png
+.. |icon_run_s| image:: img/icon-run.png
    :width: 32
    :height: 32
    :scale: 50

@@ -18,50 +18,46 @@ AtmoSwing Viewer has the interface shown below. It allows viewing the files prod
 
 The toolbar allows the following actions:
 
-- |icon-open| Open a forecast file
-- |icon-run| Run the current forecast (calls the Forecaster)
-- |icon-map-select| Select a station on the map
-- |icon-map-zoom-in| Zoom in
-- |icon-map-zoom-out| Zoom out
-- |icon-map-move| Pan the map
-- |icon-map-fit| Adjust the map to all stations
-- |icon-frame-distributions| Open the distribution charts
-- |icon-frame-analogs| Open the list of analogues
-- |icon-preferences| Open the preferences
+- |icon_open| Open a forecast file
+- |icon_map-select| Select a station on the map
+- |icon_map-zoom-in| Zoom in
+- |icon_map-zoom-out| Zoom out
+- |icon_map-move| Pan the map
+- |icon_map-fit| Adjust the map to all stations
+- |icon_frame-distributions| Open the distribution charts
+- |icon_frame-analogs| Open the list of analogues
+- |icon_preferences| Open the preferences
 
-.. |icon-open| image:: img/icon-open.png
-   :align: middle
-   
-.. |icon-run| image:: img/icon-run.png
+.. |icon_open| image:: img/icon-open.png
    :align: middle
 
-.. |icon-map-select| image:: img/icon-map-select.png
+.. |icon_map-select| image:: img/icon-map-select.png
    :align: middle
 
-.. |icon-map-zoom-in| image:: img/icon-map-zoom-in.png
+.. |icon_map-zoom-in| image:: img/icon-map-zoom-in.png
    :align: middle
 
-.. |icon-map-zoom-out| image:: img/icon-map-zoom-out.png
+.. |icon_map-zoom-out| image:: img/icon-map-zoom-out.png
    :align: middle
 
-.. |icon-map-move| image:: img/icon-map-move.png
+.. |icon_map-move| image:: img/icon-map-move.png
    :align: middle
 
-.. |icon-map-fit| image:: img/icon-map-fit.png
+.. |icon_map-fit| image:: img/icon-map-fit.png
    :align: middle
 
-.. |icon-frame-distributions| image:: img/icon-frame-distributions.png
+.. |icon_frame-distributions| image:: img/icon-frame-distributions.png
    :align: middle
 
-.. |icon-frame-analogs| image:: img/icon-frame-analogs.png
+.. |icon_frame-analogs| image:: img/icon-frame-analogs.png
    :align: middle
 
-.. |icon-preferences| image:: img/icon-preferences.png
+.. |icon_preferences| image:: img/icon-preferences.png
    :align: middle
 
-It is possible to open |icon-open_s| several forecast files, but they must have the same reference date (issued at the same lead time). If forecasts corresponding to another date (or time) are already opened, they will be closed.
+It is possible to open |icon_open_s| several forecast files, but they must have the same reference date (issued at the same lead time). If forecasts corresponding to another date (or time) are already opened, they will be closed.
 
-.. |icon-open_s| image:: img/icon-open.png
+.. |icon_open_s| image:: img/icon-open.png
    :width: 32
    :height: 32
    :scale: 75
@@ -132,7 +128,7 @@ The lower left panel is the list of the previous forecasts. These are automatica
 Display of the distributions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Rainfall distributions are accessible via the |icon-frame-distributions_s| button on the toolbar. It allows plotting the distribution of all analogs comparatively to the best 5 or 10 (Figure below). The display options are similar to those of the time series (previous section). The method, station, and lead time must be selected in the upper part of the window.
+Rainfall distributions are accessible via the |icon_frame_distributions_s| button on the toolbar. It allows plotting the distribution of all analogs comparatively to the best 5 or 10 (Figure below). The display options are similar to those of the time series (previous section). The method, station, and lead time must be selected in the upper part of the window.
 
 .. image:: img/frame-plot-precip-distrib.png
    :align: center
@@ -142,7 +138,7 @@ The distribution of the analogy criterion is also available in the same window t
 .. image:: img/frame-plot-criteria-distrib.png
    :align: center
 
-.. |icon-frame-distributions_s| image:: img/icon-frame-distributions.png
+.. |icon_frame_distributions_s| image:: img/icon-frame-distributions.png
    :width: 32
    :height: 32
    :scale: 75
@@ -152,12 +148,12 @@ The distribution of the analogy criterion is also available in the same window t
 Display of the analog dates
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The details of the analog dates and their associated criterion and predictand values (Figure below) are available through the |icon-frame-analogs_s| button on the toolbar. The method, station, and lead time must be selected in the upper part of the window. It is possible to sort the list by each of the columns by clicking on it. The first click ranks the values in ascending order and the second in descending order.
+The details of the analog dates and their associated criterion and predictand values (Figure below) are available through the |icon_frame_analogs_s| button on the toolbar. The method, station, and lead time must be selected in the upper part of the window. It is possible to sort the list by each of the columns by clicking on it. The first click ranks the values in ascending order and the second in descending order.
 
 .. image:: img/frame-list-analogs.png
    :align: center
 
-.. |icon-frame-analogs_s| image:: img/icon-frame-analogs.png
+.. |icon_frame_analogs_s| image:: img/icon-frame-analogs.png
    :width: 32
    :height: 32
    :scale: 75

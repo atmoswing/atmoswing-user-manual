@@ -1731,32 +1731,32 @@ msgstr "La barre d'outils permet d'effectuer les actions suivantes :"
 
 #: ../../app-optimizer/usage.rst:77
 #, fuzzy
-msgid "|icon-run| Start the optimization."
-msgstr "|icon-run| Démarrer l'optimisation."
+msgid "|icon_run| Start the optimization."
+msgstr "|icon_run| Démarrer l'optimisation."
 
 #: ../../app-optimizer/usage.rst:81
 #, fuzzy
-msgid "icon-run"
-msgstr "icon-run"
+msgid "icon_run"
+msgstr "icon_run"
 
 #: ../../app-optimizer/usage.rst:78
 #, fuzzy
-msgid "|icon-stop| Stop the current calculations."
-msgstr "|icon-stop| Arrête les calculs en cours."
+msgid "|icon_stop| Stop the current calculations."
+msgstr "|icon_stop| Arrête les calculs en cours."
 
 #: ../../app-optimizer/usage.rst:84
 #, fuzzy
-msgid "icon-stop"
+msgid "icon_stop"
 msgstr "icône_stop"
 
 #: ../../app-optimizer/usage.rst:79
 #, fuzzy
-msgid "|icon-preferences| Define the preferences."
-msgstr "|icon-preferences| Définir les préférences."
+msgid "|icon_preferences| Define the preferences."
+msgstr "|icon_preferences| Définir les préférences."
 
 #: ../../app-optimizer/usage.rst:87
 #, fuzzy
-msgid "icon-preferences"
+msgid "icon_preferences"
 msgstr "icône_préférences"
 
 #: ../../app-optimizer/usage.rst:90
