@@ -15,7 +15,7 @@ The first step consists in choosing the type of database to generate. The option
 * Predictand parameter:
    * Precipitation
    * Temperature
-   * Lightnings
+   * Lightning
    * Other
 * Temporal resolution:
    * 24 hours
@@ -28,6 +28,7 @@ The first step consists in choosing the type of database to generate. The option
    * Station
    * Groupment
    * Catchment
+   * Region
 
 The resulting file will contain the raw predictand data, but can also contain transformed data depending on the predictand variable (see section `Transformed data`_).
 
@@ -54,8 +55,8 @@ During the data processing, Gumbel adjustments are automatically made to calcula
 * A normalization of the precipitation amount by a chosen return period value (often 10 years)
 * A transformation by the square root of the normalized precipitation amounts (see [Bontron2004]_)
 
-Lightnings
-~~~~~~~~~~
+Lightning
+~~~~~~~~~
 
 The lightning data can be transformed using: log10( N + 1 )
 
@@ -151,7 +152,7 @@ Then, every time series (named here 'station', even if they are not representing
 
 * ``<id>``: a unique ID (integer) to identify the station in AtmoSwing (unique number for the considered catalog)
 * ``<name>``: the name of the station
-* ``<official_id>``: an eventual official ID (optional)
+* ``<official_id>``: an official ID (optional)
 * ``<x_coordinate>``: the X coordinate (in the coordinate system defined for the dataset)
 * ``<y_coordinate>``: the Y coordinate (in the coordinate system defined for the dataset)
 * ``<height>``: the station height (optional)
