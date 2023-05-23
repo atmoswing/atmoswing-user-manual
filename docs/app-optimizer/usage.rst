@@ -74,17 +74,17 @@ The main interface of the Optimizer is as follows.
 
 The toolbar allows the following actions:
 
-- |icon_run| Start the optimization.
-- |icon_stop| Stop the current calculations.
-- |icon_preferences| Define the preferences.
+- |icon-run| Start the optimization.
+- |icon-stop| Stop the current calculations.
+- |icon-preferences| Define the preferences.
 
-.. |icon_run| image:: img/icon_run.png
+.. |icon-run| image:: img/icon-run.png
    :align: middle
    
-.. |icon_stop| image:: img/icon_stop.png
+.. |icon-stop| image:: img/icon-stop.png
    :align: middle
 
-.. |icon_preferences| image:: img/icon_preferences.png
+.. |icon-preferences| image:: img/icon-preferences.png
    :align: middle
    
 What is needed:

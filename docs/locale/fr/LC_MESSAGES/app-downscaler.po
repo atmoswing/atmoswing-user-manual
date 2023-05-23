@@ -536,32 +536,32 @@ msgstr "La barre d'outils permet d'effectuer les actions suivantes :"
 
 #: ../../app-downscaler/usage.rst:43
 #, fuzzy
-msgid "|icon_run| Start the calculations."
-msgstr "|icon_run| Lancez les calculs."
+msgid "|icon-run| Start the calculations."
+msgstr "|icon-run| Lancez les calculs."
 
 #: ../../app-downscaler/usage.rst:47
 #, fuzzy
-msgid "icon_run"
-msgstr "icon_run"
+msgid "icon-run"
+msgstr "icon-run"
 
 #: ../../app-downscaler/usage.rst:44
 #, fuzzy
-msgid "|icon_stop| Stop the current calculations."
-msgstr "|icon_stop| Arrête les calculs en cours."
+msgid "|icon-stop| Stop the current calculations."
+msgstr "|icon-stop| Arrête les calculs en cours."
 
 #: ../../app-downscaler/usage.rst:50
 #, fuzzy
-msgid "icon_stop"
+msgid "icon-stop"
 msgstr "icône_stop"
 
 #: ../../app-downscaler/usage.rst:45
 #, fuzzy
-msgid "|icon_preferences| Define the preferences."
-msgstr "|icon_preferences| Définir les préférences."
+msgid "|icon-preferences| Define the preferences."
+msgstr "|icon-preferences| Définir les préférences."
 
 #: ../../app-downscaler/usage.rst:53
 #, fuzzy
-msgid "icon_preferences"
+msgid "icon-preferences"
 msgstr "icône_préférences"
 
 #: ../../app-downscaler/usage.rst:56

@@ -262,100 +262,100 @@ msgid "The toolbar allows the following actions:"
 msgstr "La barre d'outils permet d'effectuer les actions suivantes :"
 
 #: ../../app-viewer/usage.rst:21
-msgid "|icon_open| Open a forecast file"
-msgstr "|icon_open| Ouvrir un fichier de prévisions"
+msgid "|icon-open| Open a forecast file"
+msgstr "|icon-open| Ouvrir un fichier de prévisions"
 
 #: ../../app-viewer/usage.rst:32
-msgid "icon_open"
-msgstr "icon_open"
+msgid "icon-open"
+msgstr "icon-open"
 
 #: ../../app-viewer/usage.rst:22
-msgid "|icon_run| Run the current forecast (calls the Forecaster)"
-msgstr "|icon_run| Démarrer la prévision en cours (appelle le Forecaster)"
+msgid "|icon-run| Run the current forecast (calls the Forecaster)"
+msgstr "|icon-run| Démarrer la prévision en cours (appelle le Forecaster)"
 
 #: ../../app-viewer/usage.rst:35
-msgid "icon_run"
-msgstr "icon_run"
+msgid "icon-run"
+msgstr "icon-run"
 
 #: ../../app-viewer/usage.rst:23
-msgid "|icon_map_select| Select a station on the map"
-msgstr "|icon_map_select| Sélectionner une station sur la carte"
+msgid "|icon-map-select| Select a station on the map"
+msgstr "|icon-map-select| Sélectionner une station sur la carte"
 
 #: ../../app-viewer/usage.rst:38
-msgid "icon_map_select"
-msgstr "icon_map_select"
+msgid "icon-map-select"
+msgstr "icon-map-select"
 
 #: ../../app-viewer/usage.rst:24
-msgid "|icon_map_zoom_in| Zoom in"
-msgstr "|icon_map_zoom_in| Zoom avant"
+msgid "|icon-map-zoom-in| Zoom in"
+msgstr "|icon-map-zoom-in| Zoom avant"
 
 #: ../../app-viewer/usage.rst:41
-msgid "icon_map_zoom_in"
-msgstr "icon_map_zoom_in"
+msgid "icon-map-zoom-in"
+msgstr "icon-map-zoom-in"
 
 #: ../../app-viewer/usage.rst:25
-msgid "|icon_map_zoom_out| Zoom out"
-msgstr "|icon_map_zoom_out| Zoom arrière"
+msgid "|icon-map-zoom-out| Zoom out"
+msgstr "|icon-map-zoom-out| Zoom arrière"
 
 #: ../../app-viewer/usage.rst:44
-msgid "icon_map_zoom_out"
-msgstr "icon_map_zoom_out"
+msgid "icon-map-zoom-out"
+msgstr "icon-map-zoom-out"
 
 #: ../../app-viewer/usage.rst:26
-msgid "|icon_map_move| Pan the map"
-msgstr "|icon_map_move| Déplacer de la carte"
+msgid "|icon-map-move| Pan the map"
+msgstr "|icon-map-move| Déplacer de la carte"
 
 #: ../../app-viewer/usage.rst:47
-msgid "icon_map_move"
-msgstr "icon_map_move"
+msgid "icon-map-move"
+msgstr "icon-map-move"
 
 #: ../../app-viewer/usage.rst:27
-msgid "|icon_map_fit| Adjust the map to all stations"
-msgstr "|icon_map_fit| Ajuster la carte à toutes les stations"
+msgid "|icon-map-fit| Adjust the map to all stations"
+msgstr "|icon-map-fit| Ajuster la carte à toutes les stations"
 
 #: ../../app-viewer/usage.rst:50
-msgid "icon_map_fit"
-msgstr "icon_map_fit"
+msgid "icon-map-fit"
+msgstr "icon-map-fit"
 
 #: ../../app-viewer/usage.rst:28
-msgid "|icon_frame_distributions| Open the distribution charts"
-msgstr "|icon_frame_distributions| Ouvrir les graphiques des distributions"
+msgid "|icon-frame-distributions| Open the distribution charts"
+msgstr "|icon-frame-distributions| Ouvrir les graphiques des distributions"
 
 #: ../../app-viewer/usage.rst:53
-msgid "icon_frame_distributions"
-msgstr "icon_frame_distributions"
+msgid "icon-frame-distributions"
+msgstr "icon-frame-distributions"
 
 #: ../../app-viewer/usage.rst:29
-msgid "|icon_frame_analogs| Open the list of analogues"
-msgstr "|icon_frame_analogs| Ouvrir la liste des analogues"
+msgid "|icon-frame-analogs| Open the list of analogues"
+msgstr "|icon-frame-analogs| Ouvrir la liste des analogues"
 
 #: ../../app-viewer/usage.rst:56
-msgid "icon_frame_analogs"
-msgstr "icon_frame_analogs"
+msgid "icon-frame-analogs"
+msgstr "icon-frame-analogs"
 
 #: ../../app-viewer/usage.rst:30
-msgid "|icon_preferences| Open the preferences"
-msgstr "|icon_preferences| Ouvrir les préférences"
+msgid "|icon-preferences| Open the preferences"
+msgstr "|icon-preferences| Ouvrir les préférences"
 
 #: ../../app-viewer/usage.rst:59
-msgid "icon_preferences"
-msgstr "icon_preferences"
+msgid "icon-preferences"
+msgstr "icon-preferences"
 
 #: ../../app-viewer/usage.rst:62
 msgid ""
-"It is possible to open |icon_open_s| several forecast files, but they must "
+"It is possible to open |icon-open_s| several forecast files, but they must "
 "have the same reference date (issued at the same lead time). If forecasts "
 "corresponding to another date (or time) are already opened, they will be "
 "closed."
 msgstr ""
-"Il est possible d'ouvrir |icon_open_s| plusieurs fichiers de prévisions, "
+"Il est possible d'ouvrir |icon-open_s| plusieurs fichiers de prévisions, "
 "mais ils doivent avoir la même date de référence (échéance de base). Si des "
 "prévisions correspondant à une autre date (ou heure) sont déjà ouvertes, "
 "elles seront fermées."
 
 #: ../../app-viewer/usage.rst:64
-msgid "icon_open_s"
-msgstr "icon_open_s"
+msgid "icon-open_s"
+msgstr "icon-open_s"
 
 #: ../../app-viewer/usage.rst:70
 msgid ""
@@ -535,14 +535,14 @@ msgstr "Affichage des distributions"
 
 #: ../../app-viewer/usage.rst:135
 msgid ""
-"Rainfall distributions are accessible via the |icon_frame_distributions_s| "
+"Rainfall distributions are accessible via the |icon-frame-distributions_s| "
 "button on the toolbar. It allows plotting the distribution of all analogs "
 "comparatively to the best 5 or 10 (Figure below). The display options are "
 "similar to those of the time series (previous section). The method, station, "
 "and lead time must be selected in the upper part of the window."
 msgstr ""
 "Les distributions de précipitations sont accessibles via le bouton |"
-"icon_frame_distributions_s| de la barre d'outils. La fenêtre permet de "
+"icon-frame-distributions_s| de la barre d'outils. La fenêtre permet de "
 "tracer la distribution de toutes les analogues par rapport aux 5 ou 10 "
 "meilleures (figure ci-dessous). Les options d'affichage sont similaires à "
 "celles des séries temporelles (section précédente). La méthode, la station "
@@ -550,8 +550,8 @@ msgstr ""
 "fenêtre."
 
 #: ../../app-viewer/usage.rst:145
-msgid "icon_frame_distributions_s"
-msgstr "icon_frame_distributions_s"
+msgid "icon-frame-distributions_s"
+msgstr "icon-frame-distributions_s"
 
 #: ../../app-viewer/usage.rst:140
 msgid ""
@@ -575,22 +575,22 @@ msgstr "Affichage des dates analogues"
 msgid ""
 "The details of the analog dates and their associated criterion and "
 "predictand values (Figure below) are available through the |"
-"icon_frame_analogs_s| button on the toolbar. The method, station, and lead "
+"icon-frame-analogs_s| button on the toolbar. The method, station, and lead "
 "time must be selected in the upper part of the window. It is possible to "
 "sort the list by each of the columns by clicking on it. The first click "
 "ranks the values in ascending order and the second in descending order."
 msgstr ""
 "Les détails des dates analogues et les valeurs de critère et de prédictand "
 "qui leur sont associées (figure ci-dessous) sont disponibles via le bouton |"
-"icon_frame_analogs_s| de la barre d'outils. La méthode, la station et "
+"icon-frame-analogs_s| de la barre d'outils. La méthode, la station et "
 "l'échéance doivent être sélectionnés dans la partie supérieure de la "
 "fenêtre. Il est possible de trier la liste par chacune des colonnes en "
 "cliquant dessus. Le premier clic classe les valeurs par ordre croissant et "
 "le second par ordre décroissant."
 
 #: ../../app-viewer/usage.rst:160
-msgid "icon_frame_analogs_s"
-msgstr "icon_frame_analogs_s"
+msgid "icon-frame-analogs_s"
+msgstr "icon-frame-analogs_s"
 
 #: ../../app-viewer/usage.rst:168
 msgid "Workspaces"
