@@ -3,25 +3,19 @@ Preferences
 
 The preferences frame can be opened from the menu Options / Preferences of the main interface or with a button from the toolbar.
 
-Directories
------------
+General options
+---------------
 
-Different directories must be specified:
+Language
+~~~~~~~~
 
-* Directory containing the archive predictors: predictor describing the candidate situations (for example :ref:`reanalyses<reanalyses>`).
-* Directory containing the scenario predictors: predictor describing the target situations (for example :ref:`CMIP5 or CORDEX<data-downscaler>`).
-* Directory containing the predictand DB (:ref:`NetCDF file generated from the predictand data<predictand-db>`).
+The language can be changed from the drop-down list. The change is effective after restarting the software.
 
-.. image:: img/preferences-general-dirs.png
-   :align: center
-   
-An additional directory can be specified to save optional intermediate files, for example between levels of analogy.
-
-.. image:: img/preferences-adv-workingdirs.png
+.. image:: img/preferences-general-language.png
    :align: center
 
 Log options
------------
+~~~~~~~~~~~
 
 Log preferences control the display of the log window and the level (importance) of reported messages:
 
@@ -32,8 +26,24 @@ Log preferences control the display of the log window and the level (importance)
 .. image:: img/preferences-general-log.png
    :align: center
 
+Directories
+~~~~~~~~~~~
+
+Different directories must be specified:
+
+* Directory containing the archive predictors: predictor describing the candidate situations (for example :ref:`reanalyses<reanalyses>`).
+* Directory containing the scenario predictors: predictor describing the target situations (for example :ref:`CMIP5 or CORDEX<data-downscaler>`).
+* Directory containing the predictand DB (:ref:`NetCDF file generated from the predictand data<predictand-db>`).
+
+.. image:: img/preferences-general-dirs.png
+   :align: center
+
+
+Advanced options
+----------------
+
 Graphical User Interface (GUI) options
---------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Options to control the behavior of the interface and its means of communication with the user. Saves calculation time by disabling dialog boxes. The choices are:
 
@@ -45,7 +55,7 @@ Options to control the behavior of the interface and its means of communication 
    :align: center
 
 Multithreading
---------------
+~~~~~~~~~~~~~~
 
 Options for using multiple threads:
 
@@ -57,7 +67,7 @@ Options for using multiple threads:
    :align: center
    
 Processing options
-------------------
+~~~~~~~~~~~~~~~~~~
 
 These options influence how the search for analogs is performed, which has no impact on the results, only on the calculation time. The choices are as follows:
 
@@ -66,9 +76,17 @@ These options influence how the search for analogs is performed, which has no im
 
 .. image:: img/preferences-adv-processing.png
    :align: center
-   
+
+Working directory
+~~~~~~~~~~~~~~~~~
+
+A working directory can be specified to save optional intermediate files, for example between levels of analogy.
+
+.. image:: img/preferences-adv-workingdirs.png
+   :align: center
+
 User-specific paths
--------------------
+~~~~~~~~~~~~~~~~~~~
 
 Some paths automatically defined according to the OS: working directory, log file, and preferences file.
    
