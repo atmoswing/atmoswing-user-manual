@@ -12,7 +12,9 @@ Many options and operator variants are available for genetic algorithms. Based o
 
 General options
 ---------------
-                     
+
+Some general options are provided below. The population size is the number of individuals in the population. The intermediate generation ratio is the ratio of individuals that are kept after natural selection. The convergence steps is the number of generations without improvement after which the algorithm stops. The use of batches allows to reduce the computational time by using batches of data instead of the whole dataset. The batch size is the number of days in each batch. The number of epochs is the number of times the whole dataset is used for the optimization. The batch size and the number of epochs are only used if batches are used (in which case the number of generations for convergence is not used).
+
 --ga-pop-size=<int>  Size of the population (default 500)
 
 --ga-interm-gen=<0-1>  Ratio of the intermediate generation (default 0.5)
