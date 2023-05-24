@@ -10,8 +10,25 @@ Genetic algorithms are powerful but very demanding in terms of computational cap
 Many options and operator variants are available for genetic algorithms. Based on systematic tests detailed in [Horton2017]_, some presets were established in order to ease the use of genetic algorithms in AtmoSwing Optimizer. These presets are listed below, and all options are provided further down.
 
 
-Options presets
+General options
 ---------------
+                     
+--ga-pop-size=<int>  Size of the population (default 500)
+
+--ga-interm-gen=<0-1>  Ratio of the intermediate generation (default 0.5)
+
+--ga-conv-steps=<int>  Number of generations for convergence (default 30)
+
+--ga-use-batches=<0/1>  Use batches
+
+--ga-batch-size=<int>  Size of the batches
+
+--ga-number-epochs=<int>  Number of epochs if using batches
+
+
+
+Operator options presets
+------------------------
 
 Many options and operator variants control the optimization by genetic algorithms. Recommended configurations were predefined in presets.
 
@@ -30,8 +47,8 @@ The difference between the presets concerns the mutation operator. Providing the
 Any of these options can be overridden by specifying it along with ``--ga-config``.
 
 
-All options
------------
+Operator options
+----------------
 
 The different operators can be controlled with the following options:
 
@@ -74,12 +91,7 @@ The different operators can be controlled with the following options:
                      8. self-adaptation radius chromosome
                      9. multi-scale
                      10. no mutation
-                     
---ga-pop-size=<int>  Size of the population (default 500)
 
---ga-conv-steps=<int>  Number of generations for convergence (default 30)
-
---ga-interm-gen=<0-1>  Ratio of the intermediate generation (default 0.5)
 
 --ga-nat-sel-tour-p=<0-1>  Natural selection - tournament probability (default 0.9)
 

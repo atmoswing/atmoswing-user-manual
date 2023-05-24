@@ -114,6 +114,10 @@ The Optimizer also has a command line interface, which is the prefered way of us
 
 -h, --help  Displays the help of command line options
 -v, --version  Displays the software version
+-s, --silent  Silent mode
+-l, --local  Work in local directory
+-n, --threads-nb=<n>  Number of threads to use
+-g, --gpus-nb=<n>  Number of gpus to use
 -r, --run-number=<nb>  A given run number
 -f, --file-parameters=<file>  File containing the parameters
 --predictand-db=<file>  The predictand DB
@@ -122,6 +126,9 @@ The Optimizer also has a command line interface, which is the prefered way of us
 --skip-valid  Skip the validation calculation
 --no-duplicate-dates  Do not allow to keep several times the same analog dates (e.g. for ensembles)
 --dump-predictor-data   Dump predictor data to binary files to reduce RAM usage
+--load-from-dumped-data  Load dumped predictor data into RAM (faster load)
+--replace-nans  Option to replace NaNs with -9999 (faster processing)
+--skip-nans-check  Do not check for NaNs (faster processing)
 --calibration-method=<method>  Choice of the calibration method: 
 
                         * ``single``: single assessment
@@ -141,7 +148,4 @@ The Optimizer also has a command line interface, which is the prefered way of us
 --ve-step=<step_nb>  Variables exploration: step to process
 --mc-runs-nb=<runs_nb>  Monte Carlo: number of runs
 --ga-xxxxx=<value>  All GAs options are described on the :ref:`genetic algorithms <genetic-algorithms>` page
--n, --threads-nb=<n>  Number of threads to use
--l, --local  Work in local directory
--s, --silent  Silent mode
 --log-level=<n>  Set the log level (0: minimum, 1: errors, 2: warnings (default), 3: verbose)

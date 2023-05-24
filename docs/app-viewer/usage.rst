@@ -181,7 +181,7 @@ Maps of the predictor fields (Figure below) are accessible via the |icon_frame_p
 .. |icon_map_cross| image:: img/icon-map-cross.png
    :width: 32
    :height: 32
-   :scale: 75
+   :scale: 50
    :align: middle
 
 
