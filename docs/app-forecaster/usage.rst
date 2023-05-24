@@ -29,10 +29,11 @@ The Forecaster produces compressed **NetCDF files** containing:
 * The number of analogs for the different lead times
 * Some reference values (e.g., precipitation for different return periods)
 * Some station metadata (ID, name, coordinates, height)
+* Some information about the predictors used along with the spatial windows
 
 There is one file per variant of the analog method containing data for all stations of the database.
 
-A **synthetic xml file** can also be generated (optional) to ease the integration of synthetic data on a web platform, for example.
+Some **exports** can also be generated (e.g. synthetic xml or csv files) to ease the integration of synthetic data on a web platform, for example.
 
 The files are saved in a date-based directory structure (for example, 2019/04/23). The Viewer follows the same rules to look for new forecasts automatically. The output directory can be synchronized by means of a file-sharing client to distribute the forecasts.
 
@@ -105,6 +106,8 @@ Define the list of methods
 
 The list of analog methods can be completed, or methods can be deleted. A method here is a specific parameterization of an analog method optimal for a lead time or a region. It is represented in the graphical user interface by choice of a parameters file. An entry can be removed with the |icon_close| icon, and new ones can be added using the |icon_plus| icon below the list.
 
+The entries can be edited by clicking on the |icon_edit| icon. A dialog box appears to set the parameters file name (only the name, not the full path). The parameters file must be located in the directory defined in the preferences. It is an XML file that can be edited with a text editor. The structure of the file is described in the :ref:`parameters file section <parameters-file-forecaster>`. If the file is not found, the |icon_warning| icon is shown. The |icon_info| icon allows displaying the description of the parameters file in a tooltip (no click needed). The |icon_details| icon allows displaying the content of the parameters file in a new frame (the content cannot be edited).
+
 When the list of methods has been modified and should be kept as default, it is necessary to save it (menu 'File / Save batch file'); otherwise, the list will be reset at the software restart.
 
 .. |icon_close| image:: img/icon-close.png
@@ -114,6 +117,30 @@ When the list of methods has been modified and should be kept as default, it is 
    :align: middle
 
 .. |icon_plus| image:: img/icon-plus.png
+   :width: 24
+   :height: 24
+   :scale: 70
+   :align: middle
+
+.. |icon_edit| image:: img/icon-edit.png
+   :width: 24
+   :height: 24
+   :scale: 70
+   :align: middle
+
+.. |icon_warning| image:: img/icon-warning.png
+   :width: 24
+   :height: 24
+   :scale: 70
+   :align: middle
+
+.. |icon_info| image:: img/icon-info.png
+   :width: 24
+   :height: 24
+   :scale: 70
+   :align: middle
+
+.. |icon_details| image:: img/icon-details.png
    :width: 24
    :height: 24
    :scale: 70
@@ -144,43 +171,28 @@ A Docker image is available on DockerHub: https://hub.docker.com/r/atmoswing/for
 
 Get it with: ``docker pull atmoswing/forecaster``
 
-The docker container for AtmoSwing Forecaster uses the same options than the `command line interface` (to the exception of the ``--config`` option). However, different directories need to be mounted in the docker container to allow AtmoSwing accessing the data and saving outputs. The necessary directories are (along with the proposed path in the docker container):
+The docker container for AtmoSwing Forecaster uses the same options than the `command line interface` (to the exception of the ``--config`` option). However, different directories need to be mounted in the docker container to allow AtmoSwing accessing the data and saving outputs. 
 
-* config and log files: ``/app/config``
-* resulting files: ``/app/results``
-* exports (forecasts synthesis): ``/app/exports``
-* parameters files: ``/app/params``
-* predictors archives: ``/app/predictors/archive`` -> can be read-only 
-* predictors realtime (eventually downloaded): ``/app/predictors/realtime``
-* predictands: ``/app/predictands`` -> can be read-only 
+The recommended way to use the docker container is to create a docker-compose file. An example is provided below:
 
-For example, on Windows, the command can be (don't forget to allow Docker desktop to access the desired disk):
+.. code-block:: yaml
 
-.. code-block:: guess
-
-   docker run `
-      --mount type=bind,source=D:\AtmoSwing\config,target=/app/config `
-      --mount type=bind,source=D:\AtmoSwing\results,target=/app/results `
-      --mount type=bind,source=D:\AtmoSwing\exports,target=/app/exports `
-      --mount type=bind,source=D:\AtmoSwing\params,target=/app/params `
-      --mount type=bind,source=D:\Data\ERA5,target=/app/predictors/archive,readonly `
-      --mount type=bind,source=D:\AtmoSwing\predictors,target=/app/predictors/realtime `
-      --mount type=bind,source=D:\AtmoSwing\predictands,target=/app/predictands,readonly `
-      atmoswing/forecaster:latest -f /app/params/batch-docker.asfb -n
-
-Or, on Linux:
-
-.. code-block:: guess
-
-   docker run \
-      --mount type=bind,source=/path/for/config,target=/app/config \
-      --mount type=bind,source=/path/for/atmoswing/outputs,target=/app/results \
-      --mount type=bind,source=/path/for/atmoswing/exports,target=/app/exports \
-      --mount type=bind,source=/path/to/parameter/files,target=/app/params \
-      --mount type=bind,source=/path/to/archive/predictors/dir,target=/app/predictors/archive,readonly \
-      --mount type=bind,source=/path/to/realtime/predictors/dir,target=/app/predictors/realtime,readonly \
-      --mount type=bind,source=/path/to/predictands/dir,target=/app/predictands,readonly \
-      atmoswing/forecaster:latest -f /app/params/batch-docker.asfb -n
+   version: "3"
+   services:
+   atmoswing_forecaster:
+      container_name: forecaster
+      image: "atmoswing/forecaster:latest"
+      working_dir: /app/home
+      user: "1000:1000"
+      volumes:
+         - /home/atmoswing/:/app/mount/
+         - /home/atmoswing/scratch/home:/app/home/
+         - /home/atmoswing/scratch/tmp:/tmp/
+      command: -f /app/mount/params/batch-file.xml -n
+      environment:
+         HOME: /app/home
+         ECCODES_DEFINITION_PATH: /usr/share/eccodes/definitions
+      network_mode: bridge
 
 Then, the batch file needs to contain the mounted directories in the docker container. If you changed the target directories above, you need to adapt them below as well. The batch file should look like:
 
@@ -188,19 +200,17 @@ Then, the batch file needs to contain the mounted directories in the docker cont
 
    <?xml version="1.0" encoding="UTF-8"?>
    <atmoswing version="1.0" target="forecaster">
-     <forecasts_output_directory>/app/results</forecasts_output_directory>
-     <exports_output_directory>/app/exports</exports_output_directory>
-     <parameters_files_directory>/app/params</parameters_files_directory>
-     <predictors_archive_directory>/app/predictors/archive</predictors_archive_directory>
-     <predictors_realtime_directory>/app/predictors/realtime</predictors_realtime_directory>
-     <predictand_db_directory>/app/predictands</predictand_db_directory>
-     <export_synthetic_xml>1</export_synthetic_xml>
-     <forecasts>
-       <filename>PC-4Z_Region1.xml</filename>
-       <filename>PC-4Z_Region2.xml</filename>
-       <filename>PC-4Z-2MI_Region1.xml</filename>
-       <filename>PC-4Z-2MI_Region2.xml</filename>
-       ...
-     </forecasts>
+   <forecasts_output_directory>/app/mount/forecasts</forecasts_output_directory>
+   <exports_output_directory>/app/mount/forecasts</exports_output_directory>
+   <parameters_files_directory>/app/mount/params</parameters_files_directory>
+   <predictors_archive_directory>/app/mount/predictors/archive/NR1</predictors_archive_directory>
+   <predictors_realtime_directory>/app/mount/predictors/realtime/GFS</predictors_realtime_directory>
+   <predictand_db_directory>/app/mount/predictands</predictand_db_directory>
+   <export_synthetic_xml>0</export_synthetic_xml>
+   <forecasts>
+      <filename>2Z_Alpes_du_Nord_24h.xml</filename>
+      <filename>2Z-2MI_Alpes_du_Nord_24h.xml</filename>
+      <filename>2Z_Alpes_du_Nord_6h.xml</filename>
+      <filename>2Z-2MI_Alpes_du_Nord_6h.xml</filename>
+   </forecasts>
    </atmoswing>
-

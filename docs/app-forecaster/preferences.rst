@@ -13,14 +13,26 @@ Different directories must be specified for operational forecasting:
 * Directory containing the archive predictors: predictor describing the candidate situations (for example :ref:`reanalyses<reanalyses>`).
 * Directory to save downloaded real-time predictors: the operational NWP model outputs. Subdirectories are automatically created for each date according to a year/month/day structure (respectively \\ on Windows).
 * Directory to save the forecast outputs (NetCDF): location where the results are stored. Subdirectories are also generated for each date.
-* Directory to save the forecast exports (xml): location where the synthesis xml file is saved.
+* Directory to save the forecast exports (xml/csv): location where the synthesis xml file is saved.
 
+In addition, the export format can be selected (for example, full XML or small CSV).
 
 .. image:: img/preferences-paths-forecasting.png
    :align: center
    
+General options
+---------------
+
+Language
+~~~~~~~~
+
+The language can be changed from the drop-down list. The change is effective after restarting the software.
+
+.. image:: img/preferences-general-language.png
+   :align: center
+
 Log options
------------
+~~~~~~~~~~~
 
 Log preferences control the display of the log window and the level (importance) of reported messages:
 
@@ -30,9 +42,9 @@ Log preferences control the display of the log window and the level (importance)
 
 .. image:: img/preferences-general-log.png
    :align: center
-   
+
 Internet proxy
---------------
+~~~~~~~~~~~~~~
 
 The proxy configuration contains the following elements:
 
@@ -41,7 +53,16 @@ The proxy configuration contains the following elements:
 
 .. image:: img/preferences-general-proxy.png
    :align: center
-   
+
+Libraries options
+~~~~~~~~~~~~~~~~~
+
+The path to the ecCodes definitions can be specified. These files are used to decode the GRIB files. The default path is automatically set during installation.
+
+.. image:: img/preferences-general-libraries.png
+   :align: center
+
+
 Advanced options
 ----------------
 
@@ -62,11 +83,7 @@ Options to control the behavior of the interface and its means of communication 
 Predictor download
 ~~~~~~~~~~~~~~~~~~
 
-Options for automatic predictor download. The choices are:
-
-* Maximum number of previous time steps if the download fails - number of attempts on data issued earlier if the desired data cannot be downloaded; this number must be greater than 2 to ensure proper operation of the Forecaster. Indeed, the latest NWP outputs are never instantly accessible, but after a certain delay. In this case, the most recent available data must be used.
-* Maximum parallel requests number - parallel requests reduce the download time. However, be careful not to use too many requests (5 being sufficient), at the risk of being excluded from the data provider.
-* Restrict downloads to needed lead times (enabled by default) - will only download the data needed to process the forecast (skipping unused time steps).
+Options for automatic predictor download. The "maximum number of previous time steps if the download fails" corresponds to the number of attempts to retrieve data issued earlier if the desired data cannot be downloaded; this number must be greater than 2 to ensure proper operation of the Forecaster. Indeed, the latest NWP outputs are never instantly accessible, but after a certain delay. In this case, the most recent available data must be used.
 
 .. image:: img/preferences-adv-downloads.png
    :align: center
