@@ -5,9 +5,163 @@ Release notes
 
 The following release notes list the main changes to AtmoSwing. Many small changes are not listed and can be tracked down in the commits.
 
+v3.0.7
+------
+20 May 2023
+
+**Fixed**
+
+* Fixing issue with 6-hourly forecasts.
+* Fixing missing level value to display ARPEGE data.
+
+v3.0.6
+------
+16 May 2023
+
+**Added**
+
+* New management of the parameters listing in the Forecaster.
+* Adding access to the parameter information in the Forecaster.
+* Adding menu entries for recent workspaces and batch files.
+* Adding buttons to reset the plots zoom extent in the Viewer.
+
+**Changed**
+
+* Replacing icons with SVG versions.
+
+**Fixed**
+
+* Fixing proxy parsing.
+
+v3.0.5
+------
+12 May 2023
+
+**Fixed**
+
+* The Forecaster returns a non 0 code when at least one forecast failed.
+* Fixing run time step of Arpege.
+
+v3.0.4
+------
+09 May 2023
+
+**Fixed**
+
+* Addition of missing translations related to vroomgis.
+
+v3.0.3
+------
+08 May 2023
+
+**Added**
+
+* Adding the location of the target in the predictors mapping.
+* Adding the batch file name in the Forecaster frame.
+
+**Fixed**
+
+* Fixing date issue in the predictors mapping.
+* Translating the frame labels.
+
+v3.0.2
+------
+18 Apr 2023
+
+**Fixed**
+
+* Fixing issue with the predictors mapping.
+
+v3.0.1
+------
+17 Apr 2023
+
+**Fixed**
+
+* Fixing issue with the predictors mapping.
+
+v3.0.0
+------
+17 Apr 2023
+
+**Added**
+
+* A new frame has been added to visualize the predictor fields (from NWP models and reanalyses). 
+    It allows comparing the predicted situation with the analog situations.
+* Real support of the 6-hourly forecasts in the Viewer.
+* Translation of all modules in French.
+* Adding path to ecCodes definitions in the preferences.
+* Docker: adding ecCodes definitions path to the environment variables.
+* Adding column water vapor variable.
+* Adding support and tests for the ARPEGE model outputs.
+* Adding options in the workspace to limit the time series length to be displayed.
+
+**Changed**
+
+* Removing inefficient mini-batch assessment on full period.
+* Improving mini-batches optimisation end.
+* Changing Forecaster batch file extension to xml.
+* Viewer workspaces now support relative paths for GIS layers.
+* Using std::runtime_error instead of custom exception macro.
+* Addition of predictor properties in the forecast result files.
+* Renaming the operational predictor dataset IDs.
+* Removing custom NaN management approach for C++ built-in approach.
+* Removing parallel download as it is disliked by data providers.
+
+**Fixed**
+
+* Fixing CUDA options issues.
+* Time units were missing in the predictand db.
+* Fixing issue with the epoch number after restoration.
+* Improving code based on Codacy analysis.
+* Fixing a potential crash in the Optimizer (when the predictor levels and times vary).
+* Fixing results csv export from plot.
+* Fixing issues with 6-hourly forecasts.
+
+v2.1.6
+------
+22 Nov 2022
+
+**Added**
+
+* A mini-batch approach has been implemented for Genetic Algorithms.
+* Adding a warning if the preload option if not enabled for calibration.
+* Adding local GFS dataset class to avoid downloading.
+
+**Changed**
+
+* Improvement of time units description in generated nc files.
+* Removing usage of temporary storage in GAs optimization.
+* Curl: disable certificate checks on Windows as not supported.
+* Code formatting.
+
+**Removed**
+
+* Removing the history approach in GAs optimisations (not efficient). 
+
+v2.1.5
+------
+11 Oct 2022
+
+**Changed**
+
+* Moved the dependencies management to conan
+* Simplified the areas management by removing the composite approach.
+* Some code clean up and code formatting.
+* Moved all CI workflows to GitHub actions.
+
+**Fixed**
+
+* The weights computed by the optimizer cannot take negative values.
+* Addition of S0 and S1 with normalization by the reference value.
+* GFS urls on nomads have been fixed.
+* Optimizer: fixed convergence check when previous results are loaded.
+* Optimizer: relaxed criteria for convergence in GAs (using tolerance).
+* Optimizer: fixed an issue with latitude values > 90° that were not corrected.
+
 v2.1.4
 ------
-09.10.2020
+09 Oct 2020
 
 **Changed**
 
@@ -20,7 +174,7 @@ v2.1.4
 
 v2.1.3
 ------
-13.07.2020
+13 Jul 2020
 
 **Added**
 
@@ -60,7 +214,7 @@ v2.1.3
 
 v2.1.2
 ------
-08.12.2019
+02 Dec 2019
 
 **Added**
 
@@ -90,7 +244,7 @@ v2.1.2
 
 v2.1.1
 ------
-17.07.2019
+17 Jul 2019
 
 **Added**
 
@@ -118,7 +272,7 @@ v2.1.1
 
 v2.1.0
 ------
-23.05.2019
+23 May 2019
 
 **Added**
 
@@ -177,7 +331,7 @@ v2.1.0
 
 v2.0.1
 ------
-12.12.2018
+12 Dec 2018
 
 **Added**
 
@@ -196,7 +350,7 @@ v2.0.1
 
 v2.0.0
 ------
-19.11.2018
+19 Nov 2018
 
 **Added**
 
@@ -269,7 +423,7 @@ v2.0.0
 
 v1.5.0
 ------
-30.01.2017
+30 Jan 2017
 
 **Added**
 
@@ -320,7 +474,7 @@ v1.5.0
 
 v1.4.3
 ------
-21.07.2016
+21 Jul 2016
 
 **Added**
 
@@ -359,7 +513,7 @@ v1.4.3
 
 v1.4.2
 ------
-18.08.2015
+18 Aug 2015
 
 **Added**
 
@@ -385,7 +539,7 @@ v1.4.2
 
 v1.4.1
 ------
-19.03.2015
+19 Mar 2015
 
 **Added**
 
@@ -418,7 +572,7 @@ v1.4.1
 
 v1.4.0
 ------
-02.03.2015
+02 Mar 2015
 
 **Added**
 
@@ -445,7 +599,7 @@ v1.4.0
 
 v1.3.3
 ------
-12.01.2015
+12 Jan 2015
 
 **Added**
 
@@ -481,7 +635,7 @@ v1.3.3
 
 v1.3.2
 ------
-01.09.2014
+01 Sep 2014
 
 **Added**
 
@@ -513,7 +667,7 @@ v1.3.2
 
 v1.3.1
 ------
-13.05.2014
+13 May 2014
 
 **Changed**
 
@@ -526,7 +680,7 @@ v1.3.1
 
 v1.3.0
 ------
-06.05.2014
+06 May 2014
 
 **Added**
 
@@ -554,7 +708,7 @@ v1.3.0
 
 v1.2.0
 ------
-26.02.2014
+26 Feb 2014
 
 **Added**
 
@@ -596,7 +750,7 @@ v1.2.0
 
 v1.1.0
 ------
-30.10.2013
+30 Oct 2013
 
 **Added**
 
@@ -621,7 +775,7 @@ v1.1.0
 
 v1.0.3
 ------
-18.10.2012
+18 Oct 2012
 
 **Added**
 
@@ -665,7 +819,7 @@ v1.0.3
 
 v1.0.2
 ------
-27.01.2012
+27 Jan 2012
 
 **Added**
 
@@ -684,7 +838,7 @@ v1.0.2
 
 v1.0.1
 ------
-22.11.2011
+22 Nov 2011
 
 **Added**
 
@@ -707,6 +861,6 @@ v1.0.1
 
 v1.0.0
 ------
-09.11.2011
+09 Nov 2011
 
 First official release

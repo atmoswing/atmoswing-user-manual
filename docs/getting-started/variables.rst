@@ -3,7 +3,7 @@
 Predictor variables
 ===================
 
-The different existing datasets do not name the meteorological variables the same way. AtmoSwing can interact with many datasets and has several of their variables defined. These datasets often provide different products, for example, for different types of levels (isobaric, isentropic, surface, etc.). As some variables can be defined for different levels (e.g., temperature), the product/level must be specified. Thus, the selection of a variable in the parameters file is defined as ``level/variable``, such as ``pressure/z`` for the geopotential on pressure levels, or ``isentropic/t`` for the temperature on isentropic levels. As different level types and variables are present for different datasets, they can be named differently in AtmoSwing. For example ``pressure/z``, ``pl/h``, and ``isobaric/hgt`` are identical. The name of the level (or product) has to be the same as the name of the corresponding subfolder. For example, someone using NCEP/NCAR Reanalysis 1 and having a subfolder 'pressure' should then use ``pressure/z`` for the geopotential height.
+The different existing datasets do not name the meteorological variables the same way. AtmoSwing can interact with many datasets and has several of their variables defined. These datasets often provide different products, for example, for different types of levels (isobaric, isentropic, surface, etc.). As some variables can be defined for different levels (e.g., temperature), the product/level may need to be specified. Thus, the selection of a variable in the parameters file can be defined as ``level/variable``, such as ``pressure/z`` for the geopotential on pressure levels, or ``isentropic/t`` for the temperature on isentropic levels. As different level types and variables are present for different datasets, they can be named differently in AtmoSwing. For example ``pressure/z``, ``pl/h``, and ``isobaric/hgt`` are identical. The name of the level (or product) has to be the same as the corresponding subfolder name. For example, someone using NCEP/NCAR Reanalysis 1 and having a subfolder 'pressure' should then use ``pressure/z`` for the geopotential height.
 
 The following sections define first the different levels, then some common variables to most datasets, and finally, list the available variables for the different datasets.
 
@@ -45,7 +45,7 @@ The level can usually be defined using different terms. The provided terms are i
 * ``sfc``
 * ``sf``
 
-**Flux level**:
+**Flux**:
 
 * ``surface_fluxes``
 * ``fluxes``
@@ -53,7 +53,7 @@ The level can usually be defined using different terms. The provided terms are i
 * ``flxf06``
 * ``flx``
 
-**Column level**:
+**Column**:
 
 * ``total_column``
 * ``column``
@@ -123,9 +123,16 @@ When loading geopotential data, AtmoSwing automatically converts it to geopotent
 
 * ``pwat``
 * ``p_wat``
-* ``tcw``
 * ``pr_wtr``
 * ``prwtr``
+
+**Total column water**:
+
+* ``tcw``
+
+**Total column water vapour**:
+
+* ``tcwv``
 
 **Pressure**:
 
@@ -331,6 +338,42 @@ NCEP CFSR subset
 * Atmosphere water vapor content (``pwat``)
 
 
+ECMWF ERA5
+~~~~~~~~~~~~~~~~~
+
+**For pressure levels**:
+
+* Divergence (``d``)
+* Potential vorticity
+* Specific humidity
+* Relative humidity
+* Temperature
+* U component of wind
+* V component of wind
+* Vorticity (relative) (``vo``)
+* Vertical velocity
+* Geopotential
+
+**For surface**:
+
+* 2 meter dewpoint temperature (``d2m``)
+* Sea level pressure (``msl``)
+* Snow depth (``sd``)
+* Sea surface temperature (``sst``)
+* 2 meter temperature (``t2m``)
+* Total column water (``tcw``)
+* Total column water vapor (``tcwv``)
+* 10 meter U wind component (``u10``)
+* 10 meter V wind component (``v10``)
+* Total precipitation (``tp``)
+* Convective available potential energy (``cape``)
+* Instantaneous moisture flux (``ie``)
+* Surface net solar radiation (``ssr``)
+* Surface solar radiation downwards (``ssrd``)
+* Surface net thermal radiation (``str``)
+* Surface thermal radiation downwards (``strd``)
+
+
 ECMWF ERA-interim
 ~~~~~~~~~~~~~~~~~
 
@@ -365,7 +408,7 @@ ECMWF ERA-interim
 * Snow depth (``sd``)
 * Sea surface temperature (``sst``)
 * 2 meter temperature (``t2m``)
-* Total column water
+* Total column water (``tcw``)
 * Total column water vapor (``tcwv``)
 * 10 meter U wind component (``u10``)
 * 10 meter V wind component (``v10``)
@@ -418,6 +461,35 @@ ECMWF Coupled ERA 20th Century
 * Total column water
 * Total precipitation
 * Sea level pressure
+
+
+ECMWF IFS
+~~~~~~~~~
+
+* Geopotential (``z``)
+* Geopotential height (``gh``)
+* Air temperature
+* Vertical velocity
+* Relative humidity
+* Specific humidity
+* U component of wind
+* V component of wind
+* Theta E (``thetaE``)
+* Theta ES (``thetaES``)
+* Total column water vapour (``tcwv``)
+* Precipitable water
+
+
+NWS GFS
+~~~~~~~
+
+* Geopotential height
+* Air temperature
+* Vertical velocity
+* Relative humidity
+* U component of wind
+* V component of wind
+* Precipitable water
 
 
 NASA MERRA-2
@@ -583,6 +655,16 @@ There are no product/level definition for this dataset.
 
 * Sea Surface Temperature (``sst``)
 * Sea Surface Temperature Anomaly (``sst_anom``)
+
+
+METEO-FRANCE ARPEGE
+~~~~~~~~~~~~~~~~~~~
+
+* Geopotential
+* Relative humidity
+* Total column water vapour
+* Air temperature
+* Vertical velocity
 
 
 Generic NetCDF

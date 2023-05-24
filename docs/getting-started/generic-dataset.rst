@@ -3,7 +3,12 @@
 Generic dataset
 ===============
 
-In addition to the multiple reanalyses supported, AtmoSwing allows using a generic dataset as NetCDF files (``GenericNetcdf``). The files can be organized as follows (AtmoSwing will look for possible matches):
+In addition to the multiple reanalyses supported, AtmoSwing allows using a generic dataset as NetCDF files. The dataset can be named as follows:
+
+* ``Generic``: simple name to be used mainly when the generic dataset is issued from a single source.
+* ``Generic[__]``: the name can also be composed of the term ``Generic`` and any other suffix. It allows specifying the source of the dataset (for example ``Generic_ERA5`` or ``Generic_CFSR``). This is mainly useful for the Viewer to differentiate the datasets.
+
+The files can be organized as follows (AtmoSwing will look for possible matches):
 
 * A single file with the name of the desired predictor variable (ex: rh.nc)
 * Yearly files with the year in the file name

@@ -41,7 +41,7 @@ A description of the different reanalyses and the assessment of the impact of th
    * Use the original file names (yearly files -- ex: z500_1956.nc)
 * NOAA Optimum Interpolation Sea Surface Temperature, version 2: ``NOAA_OISST_v2``
    * Use the original file names (single files -- ex: sst_1deg.nc)
-* :ref:`A generic NetCDF dataset <generic-dataset>`: ``GenericNetcdf``
+* :ref:`A generic NetCDF dataset <generic-dataset>`: ``Generic[__]``
    * Use the original variable name in the file name (ex: z for geopotential)
    * Can be structured as a single file (ex: z.nc)
    * Can be structured as yearly files (ex: z.1998.nc)
