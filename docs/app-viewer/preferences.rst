@@ -23,9 +23,41 @@ Alarm panel options: The alarm panel displays the highest value of all stations 
 .. image:: img/preferences-viewer-alarmspanel.png
    :align: center
 
+Maximum length of time series to display: The time series plots can be limited to a maximum number of lead times to hide too uncertain lead times. This limit has to be specified in a number of days for forecasts with a daily time step and hours for forecasts with a sub-daily time step. By default, no limit is applied.
+
+.. image:: img/preferences-viewer-time-series-length.png
+   :align: center
+
+
+Paths
+-----
+
+The paths to the predictor datasets must be provided along with their corresponding IDs to be found for the predictor maps.
+
+.. image:: img/preferences-paths-predictors.png
+   :align: center
+
+
+Colors
+------
+
+The path to the color palette files can be changed for each type of predictor. The default color tables are provided in the AtmoSwing installation directory. AtmoSwing can parse .rbg and .act files.
+
+.. image:: img/preferences-color-tables.png
+   :align: center
+
+
 General
 -------
    
+Language
+~~~~~~~~
+
+The language can be changed from the drop-down list. The change is effective after restarting the software.
+
+.. image:: img/preferences-general-language.png
+   :align: center
+
 Log options
 ~~~~~~~~~~~
 

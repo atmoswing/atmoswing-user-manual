@@ -199,18 +199,18 @@ Then, the batch file needs to contain the mounted directories in the docker cont
 .. code-block:: xml
 
    <?xml version="1.0" encoding="UTF-8"?>
-   <atmoswing version="1.0" target="forecaster">
-   <forecasts_output_directory>/app/mount/forecasts</forecasts_output_directory>
-   <exports_output_directory>/app/mount/forecasts</exports_output_directory>
-   <parameters_files_directory>/app/mount/params</parameters_files_directory>
-   <predictors_archive_directory>/app/mount/predictors/archive/NR1</predictors_archive_directory>
-   <predictors_realtime_directory>/app/mount/predictors/realtime/GFS</predictors_realtime_directory>
-   <predictand_db_directory>/app/mount/predictands</predictand_db_directory>
-   <export_synthetic_xml>0</export_synthetic_xml>
-   <forecasts>
-      <filename>2Z_Alpes_du_Nord_24h.xml</filename>
-      <filename>2Z-2MI_Alpes_du_Nord_24h.xml</filename>
-      <filename>2Z_Alpes_du_Nord_6h.xml</filename>
-      <filename>2Z-2MI_Alpes_du_Nord_6h.xml</filename>
-   </forecasts>
+      <atmoswing version="1.0" target="forecaster">
+      <forecasts_output_directory>/app/mount/forecasts</forecasts_output_directory>
+      <exports_output_directory>/app/mount/forecasts</exports_output_directory>
+      <parameters_files_directory>/app/mount/params</parameters_files_directory>
+      <predictors_archive_directory>/app/mount/predictors/archive/NR1</predictors_archive_directory>
+      <predictors_realtime_directory>/app/mount/predictors/realtime/GFS</predictors_realtime_directory>
+      <predictand_db_directory>/app/mount/predictands</predictand_db_directory>
+      <export_synthetic_xml>0</export_synthetic_xml>
+      <forecasts>
+         <filename>2Z_Alpes_du_Nord_24h.xml</filename>
+         <filename>2Z-2MI_Alpes_du_Nord_24h.xml</filename>
+         <filename>2Z_Alpes_du_Nord_6h.xml</filename>
+         <filename>2Z-2MI_Alpes_du_Nord_6h.xml</filename>
+      </forecasts>
    </atmoswing>

@@ -24,9 +24,9 @@ copyright = '2023, Pascal Horton'
 author = 'Pascal Horton'
 
 # The short X.Y version
-version = '2.1'
+version = '3.0'
 # The full version, including alpha/beta/rc tags
-release = '2.1.0'
+release = '3.0.x'
 
 
 # -- General configuration ---------------------------------------------------

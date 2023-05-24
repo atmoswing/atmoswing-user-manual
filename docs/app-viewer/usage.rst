@@ -19,37 +19,41 @@ AtmoSwing Viewer has the interface shown below. It allows viewing the files prod
 The toolbar allows the following actions:
 
 - |icon_open| Open a forecast file
-- |icon_map-select| Select a station on the map
-- |icon_map-zoom-in| Zoom in
-- |icon_map-zoom-out| Zoom out
-- |icon_map-move| Pan the map
-- |icon_map-fit| Adjust the map to all stations
-- |icon_frame-distributions| Open the distribution charts
-- |icon_frame-analogs| Open the list of analogues
+- |icon_map_select| Select a station on the map
+- |icon_map_zoom_in| Zoom in
+- |icon_map_zoom_out| Zoom out
+- |icon_map_move| Pan the map
+- |icon_map_fit| Adjust the map to all stations
+- |icon_frame_distributions| Open the distribution charts
+- |icon_frame_analogs| Open the list of analogues
+- |icon_frame_predictors| Open the predictors map
 - |icon_preferences| Open the preferences
 
 .. |icon_open| image:: img/icon-open.png
    :align: middle
 
-.. |icon_map-select| image:: img/icon-map-select.png
+.. |icon_map_select| image:: img/icon-map-select.png
    :align: middle
 
-.. |icon_map-zoom-in| image:: img/icon-map-zoom-in.png
+.. |icon_map_zoom_in| image:: img/icon-map-zoom-in.png
    :align: middle
 
-.. |icon_map-zoom-out| image:: img/icon-map-zoom-out.png
+.. |icon_map_zoom_out| image:: img/icon-map-zoom-out.png
    :align: middle
 
-.. |icon_map-move| image:: img/icon-map-move.png
+.. |icon_map_move| image:: img/icon-map-move.png
    :align: middle
 
-.. |icon_map-fit| image:: img/icon-map-fit.png
+.. |icon_map_fit| image:: img/icon-map-fit.png
    :align: middle
 
-.. |icon_frame-distributions| image:: img/icon-frame-distributions.png
+.. |icon_frame_distributions| image:: img/icon-frame-distributions.png
    :align: middle
 
-.. |icon_frame-analogs| image:: img/icon-frame-analogs.png
+.. |icon_frame_analogs| image:: img/icon-frame-analogs.png
+   :align: middle
+
+.. |icon_frame_predictors| image:: img/icon-frame-predictors.png
    :align: middle
 
 .. |icon_preferences| image:: img/icon-preferences.png
@@ -128,7 +132,7 @@ The lower left panel is the list of the previous forecasts. These are automatica
 Display of the distributions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Rainfall distributions are accessible via the |icon_frame_distributions_s| button on the toolbar. It allows plotting the distribution of all analogs comparatively to the best 5 or 10 (Figure below). The display options are similar to those of the time series (previous section). The method, station, and lead time must be selected in the upper part of the window.
+The predictand distributions are accessible via the |icon_frame_distributions_s| button on the toolbar. It allows plotting the distribution of all analogs comparatively to the best 5 or 10 (Figure below). The display options are similar to those of the time series (previous section). The method, station, and lead time must be selected in the upper part of the window.
 
 .. image:: img/frame-plot-precip-distrib.png
    :align: center
@@ -154,6 +158,27 @@ The details of the analog dates and their associated criterion and predictand va
    :align: center
 
 .. |icon_frame_analogs_s| image:: img/icon-frame-analogs.png
+   :width: 32
+   :height: 32
+   :scale: 75
+   :align: middle
+
+
+Display of the predictor fields
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Maps of the predictor fields (Figure below) are accessible via the |icon_frame_predictors_s| button on the toolbar. This map allows comparing the predictors for the target situation and the analog dates. The method, configuration, and predictors must be selected in the left panel. The lead time and the analog date are selected above the maps. The color scales and the map navigation are synchronized between both maps. The navigation synchronization can be disabled under the Tools menu (synchronize tools). The navigation tools are the same as for the main interface. An additional tool |icon_map_cross| is provided to display marks on both maps to help compare the location of some features. Each panel can also be hidden to display only one map using the toggle buttons in the gap between the maps. The color tables can be changed in the preferences. The path to the predictor data must be specified in the preferences.
+
+.. image:: img/frame-map-predictors.png
+   :align: center
+
+.. |icon_frame_predictors_s| image:: img/icon-frame-predictors.png
+   :width: 32
+   :height: 32
+   :scale: 75
+   :align: middle
+
+.. |icon_map_cross| image:: img/icon-map-cross.png
    :width: 32
    :height: 32
    :scale: 75
