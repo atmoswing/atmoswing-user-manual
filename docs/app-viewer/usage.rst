@@ -167,7 +167,16 @@ The details of the analog dates and their associated criterion and predictand va
 Display of the predictor fields
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Maps of the predictor fields (Figure below) are accessible via the |icon_frame_predictors_s| button on the toolbar. This map allows comparing the predictors for the target situation and the analog dates. The method, configuration, and predictors must be selected in the left panel. The lead time and the analog date are selected above the maps. The color scales and the map navigation are synchronized between both maps. The navigation synchronization can be disabled under the Tools menu (synchronize tools). The navigation tools are the same as for the main interface. An additional tool |icon_map_cross| is provided to display marks on both maps to help compare the location of some features. Each panel can also be hidden to display only one map using the toggle buttons in the gap between the maps. The color tables can be changed in the preferences. The path to the predictor data must be specified in the preferences.
+Maps of the predictor fields (Figure below) are accessible via the |icon_frame_predictors_s| button on the toolbar. This map allows comparing the predictors for the target situation and the analog dates. The options are as follows:
+
+* The method, configuration, and predictors must be selected in the left panel. 
+* The lead time and the analog date are selected above the maps. 
+* The color scales and the map navigation are synchronized between both maps. The navigation synchronization can be disabled under the Tools menu (synchronize tools). 
+* The navigation tools are the same as for the main interface. 
+* An additional tool |icon_map_cross| is provided to display marks on both maps to help compare the location of some features. 
+* Each panel can be hidden to display only one map using the toggle buttons in the gap between the maps. 
+* The color tables can be changed in the preferences. 
+* The path to the predictor data must be specified in the preferences.
 
 .. image:: img/frame-map-predictors.png
    :align: center
