@@ -1,22 +1,23 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2019, Pascal Horton
 # This file is distributed under the same license as the AtmoSwing package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: AtmoSwing 2.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-13 22:03+0100\n"
-"PO-Revision-Date: 2023-03-29 15:07+0200\n"
+"POT-Creation-Date: 2023-05-25 14:57+0200\n"
+"PO-Revision-Date: 2023-05-25 15:48+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"Generated-By: Babel 2.11.0\n"
+"X-Generator: Poedit 3.3.1\n"
 
 #: ../../app-viewer.rst:4
 msgid "The Viewer"
@@ -24,12 +25,12 @@ msgstr "Le Viewer"
 
 #: ../../app-viewer.rst:6
 msgid ""
-"This section contains the documentation for AtmoSwing Viewer. This document "
-"can also be downloaded as a pdf or epub using the bottom left menu."
+"This section contains the documentation for AtmoSwing Viewer. This document can "
+"also be downloaded as a pdf or epub using the bottom left menu."
 msgstr ""
-"Cette section contient la documentation pour AtmoSwing Viewer. Ce document "
-"peut également être téléchargé au format pdf ou epub en utilisant le menu en "
-"bas à gauche."
+"Cette section contient la documentation pour AtmoSwing Viewer. Ce document peut "
+"également être téléchargé au format pdf ou epub en utilisant le menu en bas à "
+"gauche."
 
 #: ../../app-viewer.rst:8
 msgid "The Viewer manual is divided into the following topics:"
@@ -41,8 +42,8 @@ msgstr "Préférences"
 
 #: ../../app-viewer/preferences.rst:4
 msgid ""
-"The preferences frame can be opened from the menu Options / Preferences of "
-"the main interface or with a button from the toolbar."
+"The preferences frame can be opened from the menu Options / Preferences of the "
+"main interface or with a button from the toolbar."
 msgstr ""
 "La fenêtre des préférences peut être ouvert à partir du menu Options / "
 "Préférences de l'interface principale ou à l'aide d'un bouton de la barre "
@@ -54,114 +55,166 @@ msgstr "Espace de travail (workspace)"
 
 #: ../../app-viewer/preferences.rst:9
 msgid ""
-"The propertied defined under this tab are specific for the workspace "
-"currently opened."
+"The propertied defined under this tab are specific for the workspace currently "
+"opened."
 msgstr ""
-"Les propriétés définies sous cet onglet sont spécifiques à l'espace de "
-"travail (workspace) actuellement ouvert."
+"Les propriétés définies sous cet onglet sont spécifiques à l'espace de travail "
+"(workspace) actuellement ouvert."
 
 #: ../../app-viewer/preferences.rst:11
 msgid "The directory where the forecasts are stored must be provided:"
 msgstr ""
-"Le répertoire dans lequel les prévisions sont enregistrées doit être "
-"indiqué :"
+"Le répertoire dans lequel les prévisions sont enregistrées doit être indiqué :"
 
 #: ../../app-viewer/preferences.rst:16
 msgid ""
-"The maximum predictand value for the color range defines the value for which "
-"red is assigned when colors are not standardized. The second option is the "
-"number of days of previous forecasts to be displayed as traces in the time "
-"series plots. Three to five days are recommended."
+"The maximum predictand value for the color range defines the value for which red "
+"is assigned when colors are not standardized. The second option is the number of "
+"days of previous forecasts to be displayed as traces in the time series plots. "
+"Three to five days are recommended."
 msgstr ""
 "La valeur maximale du prédictand pour la gamme de couleurs définit la valeur "
 "pour laquelle le rouge est attribué lorsque les couleurs ne sont pas "
-"normalisées. La deuxième option est le nombre de jours de prévisions "
-"antérieures à afficher sous forme de traces dans les graphiques de séries "
-"temporelles. Trois à cinq jours sont recommandés."
+"normalisées. La deuxième option est le nombre de jours de prévisions antérieures "
+"à afficher sous forme de traces dans les graphiques de séries temporelles. Trois "
+"à cinq jours sont recommandés."
 
 #: ../../app-viewer/preferences.rst:21
 msgid ""
-"Alarm panel options: The alarm panel displays the highest value of all "
-"stations by lead time and method. The options are the return period for "
-"normalization and the quantile to be displayed. The quantile 0.9 allows "
-"remaining vigilant as to the possible occurrence of important events."
+"Alarm panel options: The alarm panel displays the highest value of all stations "
+"by lead time and method. The options are the return period for normalization and "
+"the quantile to be displayed. The quantile 0.9 allows remaining vigilant as to "
+"the possible occurrence of important events."
 msgstr ""
 "Options du panneau d'alarme : Le panneau d'alarme affiche la valeur la plus "
-"élevée de toutes les stations par échéance et par méthode. Les options sont "
-"la période de retour pour la normalisation et le quantile à afficher. Le "
-"quantile 0.9 permet de rester vigilant quant à l'occurrence éventuelle "
-"d'événements importants."
+"élevée de toutes les stations par échéance et par méthode. Les options sont la "
+"période de retour pour la normalisation et le quantile à afficher. Le quantile "
+"0.9 permet de rester vigilant quant à l'occurrence éventuelle d'événements "
+"importants."
 
-#: ../../app-viewer/preferences.rst:27
+#: ../../app-viewer/preferences.rst:26
+msgid ""
+"Maximum length of time series to display: The time series plots can be limited "
+"to a maximum number of lead times to hide too uncertain lead times. This limit "
+"has to be specified in a number of days for forecasts with a daily time step and "
+"hours for forecasts with a sub-daily time step. By default, no limit is applied."
+msgstr ""
+"Longueur maximale de la série temporelle à afficher : Les graphiques des séries "
+"temporelles peuvent être limités à un nombre maximum d'échéances afin de masquer "
+"les échéances trop incertaines. Cette limite doit être spécifiée en nombre de "
+"jours pour les prévisions avec un pas de temps journalier et en heures pour les "
+"prévisions avec un pas de temps infra-journalier. Par défaut, aucune limite "
+"n'est appliquée."
+
+#: ../../app-viewer/preferences.rst:33
+msgid "Paths"
+msgstr "Chemins"
+
+#: ../../app-viewer/preferences.rst:35
+msgid ""
+"The paths to the predictor datasets must be provided along with their "
+"corresponding IDs to be found for the predictor maps."
+msgstr ""
+"Les chemins d'accès aux jeux de données de prédicteurs doivent être fournis, "
+"ainsi que les identifiants correspondants. Ces informations sont utilisées pour "
+"accéder aux données lors de l'affichage des cartes de prédicteurs."
+
+#: ../../app-viewer/preferences.rst:42
+msgid "Colors"
+msgstr "Couleurs"
+
+#: ../../app-viewer/preferences.rst:44
+msgid ""
+"The path to the color palette files can be changed for each type of predictor. "
+"The default color tables are provided in the AtmoSwing installation directory. "
+"AtmoSwing can parse .rbg and .act files."
+msgstr ""
+"Le chemin d'accès aux fichiers de la palette de couleurs peut être modifié pour "
+"chaque type de prédicteur. Les tables de couleurs par défaut sont fournies dans "
+"le répertoire d'installation d'AtmoSwing. AtmoSwing peut utiliser les fichiers ."
+"rbg et .act."
+
+#: ../../app-viewer/preferences.rst:51
 msgid "General"
 msgstr "Général"
 
-#: ../../app-viewer/preferences.rst:30
+#: ../../app-viewer/preferences.rst:54
+msgid "Language"
+msgstr "Langue"
+
+#: ../../app-viewer/preferences.rst:56
+msgid ""
+"The language can be changed from the drop-down list. The change is effective "
+"after restarting the software."
+msgstr ""
+"La langue peut être modifiée à partir de la liste déroulante. Le changement est "
+"effectif après le redémarrage du logiciel."
+
+#: ../../app-viewer/preferences.rst:62
 msgid "Log options"
 msgstr "Options du journal (log)"
 
-#: ../../app-viewer/preferences.rst:32
+#: ../../app-viewer/preferences.rst:64
 msgid ""
-"Log preferences control the display of the log window and the level "
-"(importance) of reported messages:"
+"Log preferences control the display of the log window and the level (importance) "
+"of reported messages:"
 msgstr ""
-"Les préférences de journal (log) contrôlent l'affichage de la fenêtre du "
-"journal et le niveau (importance) des messages rapportés :"
+"Les préférences de journal (log) contrôlent l'affichage de la fenêtre du journal "
+"et le niveau (importance) des messages rapportés :"
 
-#: ../../app-viewer/preferences.rst:34
+#: ../../app-viewer/preferences.rst:66
 msgid "Errors only - recommended as long as everything goes as planned."
 msgstr "Erreurs uniquement - recommandé tant que tout se passe comme prévu."
 
-#: ../../app-viewer/preferences.rst:35
+#: ../../app-viewer/preferences.rst:67
 msgid ""
 "Errors and warnings - some warnings help to be vigilant in case of problems. "
 "However, there might be warnings even during regular operation."
 msgstr ""
-"Erreurs et avertissements - certains avertissements permettent d'être "
-"vigilant en cas de problème. Cependant, il peut y avoir des avertissements "
-"même pendant un fonctionnement normal."
+"Erreurs et avertissements - certains avertissements permettent d'être vigilant "
+"en cas de problème. Cependant, il peut y avoir des avertissements même pendant "
+"un fonctionnement normal."
 
-#: ../../app-viewer/preferences.rst:36
+#: ../../app-viewer/preferences.rst:68
 msgid ""
 "Verbose - all operations are reported, which is an unnecessary amount of "
-"information during regular operation. As a result, important messages might "
-"be hidden in a large number of messages. This option is only useful to "
-"identify where AtmoSwing is failing."
+"information during regular operation. As a result, important messages might be "
+"hidden in a large number of messages. This option is only useful to identify "
+"where AtmoSwing is failing."
 msgstr ""
-"Verbose - toutes les opérations sont signalées, ce qui représente une "
-"quantité inutile d'informations lors d'une opération régulière. Par "
-"conséquent, des messages importants peuvent être cachés dans un grand nombre "
-"de messages. Cette option n'est utile que pour identifier les endroits où "
-"AtmoSwing rencontre des problèmes."
+"Verbose - toutes les opérations sont signalées, ce qui représente une quantité "
+"inutile d'informations lors d'une opération régulière. Par conséquent, des "
+"messages importants peuvent être cachés dans un grand nombre de messages. Cette "
+"option n'est utile que pour identifier les endroits où AtmoSwing rencontre des "
+"problèmes."
 
-#: ../../app-viewer/preferences.rst:42
+#: ../../app-viewer/preferences.rst:74
 msgid "Internet proxy"
 msgstr "Proxy Internet"
 
-#: ../../app-viewer/preferences.rst:44
+#: ../../app-viewer/preferences.rst:76
 msgid ""
-"If required, proxy options can be provided. The proxy configuration contains "
-"the following elements:"
+"If required, proxy options can be provided. The proxy configuration contains the "
+"following elements:"
 msgstr ""
-"Si nécessaire, des options de proxy peuvent être fournies. La configuration "
-"du proxy contient les éléments suivants :"
+"Si nécessaire, des options de proxy peuvent être fournies. La configuration du "
+"proxy contient les éléments suivants :"
 
-#: ../../app-viewer/preferences.rst:46
+#: ../../app-viewer/preferences.rst:78
 msgid "Proxy activation - if necessary."
 msgstr "Activation du proxy - si nécessaire."
 
-#: ../../app-viewer/preferences.rst:47
-msgid ""
-"Proxy properties - the proxy address, port, the user name, and password."
+#: ../../app-viewer/preferences.rst:79
+msgid "Proxy properties - the proxy address, port, the user name, and password."
 msgstr ""
-"Propriétés du proxy - l'adresse du proxy, le port, le nom d'utilisateur et "
-"le mot de passe."
+"Propriétés du proxy - l'adresse du proxy, le port, le nom d'utilisateur et le "
+"mot de passe."
 
-#: ../../app-viewer/preferences.rst:53
+#: ../../app-viewer/preferences.rst:85
 msgid "Advanced"
 msgstr "Avancé"
 
-#: ../../app-viewer/preferences.rst:55
+#: ../../app-viewer/preferences.rst:87
 msgid ""
 "Allow multiple instances of the Viewer, for example to display and compare "
 "different forecasts in separate windows."
@@ -169,14 +222,14 @@ msgstr ""
 "Permettre l'utilisation de plusieurs instances du Viewer, par exemple pour "
 "afficher et comparer différentes prévisions dans des fenêtres distinctes."
 
-#: ../../app-viewer/preferences.rst:60
+#: ../../app-viewer/preferences.rst:92
 msgid ""
 "Some paths automatically defined according to the OS: working directory, log "
 "file, and preferences file."
 msgstr ""
 "Certains chemins sont définis automatiquement en fonction du système "
-"d'exploitation : le répertoire de travail, le fichier journal et le fichier "
-"de préférences."
+"d'exploitation : le répertoire de travail, le fichier journal et le fichier de "
+"préférences."
 
 #: ../../app-viewer/usage.rst:2
 msgid "Usage"
@@ -184,12 +237,12 @@ msgstr "Utilisation"
 
 #: ../../app-viewer/usage.rst:4
 msgid ""
-"The Viewer relies on `workspaces`_ (defined in xml files), where the path to "
-"the forecast files is specified as well as the GIS layers and other display "
-"options. It is thus possible to quickly change from one region to another."
+"The Viewer relies on `workspaces`_ (defined in xml files), where the path to the "
+"forecast files is specified as well as the GIS layers and other display options. "
+"It is thus possible to quickly change from one region to another."
 msgstr ""
-"Le Viewer s'appuie sur des \"espaces de travail\" (`workspaces`_ ; définis "
-"dans des fichiers xml), où sont spécifiés le chemin d'accès aux fichiers de "
+"Le Viewer s'appuie sur des \"espaces de travail\" (`workspaces`_ ; définis dans "
+"des fichiers xml), où sont spécifiés le chemin d'accès aux fichiers de "
 "prévision, les couches SIG et d'autres options d'affichage. Il est ainsi "
 "possible de passer rapidement d'une région à l'autre."
 
@@ -199,8 +252,8 @@ msgid ""
 "`identifier specified in the parameters files. <parameters-file>` "
 "(``<method_id>``). The Viewer will manage this information as follows:"
 msgstr ""
-"Pour une région donnée, les prévisions peuvent être séparées/rassemblées sur "
-"la base d'un :ref:`identifiant spécifié dans les fichiers de paramètres. "
+"Pour une région donnée, les prévisions peuvent être séparées/rassemblées sur la "
+"base d'un :ref:`identifiant spécifié dans les fichiers de paramètres. "
 "<parameters-file>` (``<method_id>``). Le Viewer gère ces informations de la "
 "manière suivante :"
 
@@ -209,37 +262,35 @@ msgid ""
 "``<method_id>``: all forecast files with the same ``<method_id>`` will be "
 "aggregated in the Viewer and labeled according to ``<method_id_display>``."
 msgstr ""
-"``<method_id>`` : tous les fichiers de prévision ayant le même "
-"``<method_id>`` seront agrégés dans le Viewer et étiquetés selon "
-"``<method_id_display>``."
+"``<method_id>`` : tous les fichiers de prévision ayant le même ``<method_id>`` "
+"seront agrégés dans le Viewer et étiquetés selon ``<method_id_display>``."
 
 #: ../../app-viewer/usage.rst:9
 msgid ""
 "``<specific_tag>``: all subregion-specific methods (defined by "
 "``<specific_tag>`` and labelled according to ``<specific_tag_display>``) but "
 "having the same ``<method_id>`` will be listed under the same heading. These "
-"specific forecasts for a subregion/basin are defined by specific parameters, "
-"and therefore have analog dates that may differ from other subregions. When "
-"one of these subregions is selected in the Viewer, the forecast for that "
-"specific method is displayed and the precipitation values for the other "
-"subregions (but for the same method) are grayed-out. When the header of the "
-"list is selected (i.e., the method), a summary of the optimal forecasts for "
-"each subregion is displayed (i.e., with analog dates that may differ from "
-"one subregion to another)."
+"specific forecasts for a subregion/basin are defined by specific parameters, and "
+"therefore have analog dates that may differ from other subregions. When one of "
+"these subregions is selected in the Viewer, the forecast for that specific "
+"method is displayed and the precipitation values for the other subregions (but "
+"for the same method) are grayed-out. When the header of the list is selected (i."
+"e., the method), a summary of the optimal forecasts for each subregion is "
+"displayed (i.e., with analog dates that may differ from one subregion to "
+"another)."
 msgstr ""
-"``<specific_tag>`` : toutes les méthodes spécifiques à une sous-région "
-"(définies par ``<specific_tag>`` et étiquetées selon "
-"``<specific_tag_display>``) mais ayant le même ``<method_id>`` seront "
-"répertoriées sous la même catégorie. Ces prévisions spécifiques pour une "
-"sous-région/bassin sont définies par des paramètres spécifiques et ont donc "
-"des dates analogues qui peuvent différer de celles des autres sous-régions. "
-"Lorsque l'une de ces sous-régions est sélectionnée dans le Viewer, la "
-"prévision pour cette méthode spécifique est affichée et les valeurs de "
-"précipitations pour les autres sous-régions (mais pour la même méthode) sont "
-"grisées. Lorsque l'en-tête de la liste est sélectionnée (c'est-à-dire la "
-"méthode), un résumé des prévisions optimales pour chaque sous-région est "
-"affiché (c'est-à-dire avec des dates analogues qui peuvent différer d'une "
-"sous-région à l'autre)."
+"``<specific_tag>`` : toutes les méthodes spécifiques à une sous-région (définies "
+"par ``<specific_tag>`` et étiquetées selon ``<specific_tag_display>``) mais "
+"ayant le même ``<method_id>`` seront répertoriées sous la même catégorie. Ces "
+"prévisions spécifiques pour une sous-région/bassin sont définies par des "
+"paramètres spécifiques et ont donc des dates analogues qui peuvent différer de "
+"celles des autres sous-régions. Lorsque l'une de ces sous-régions est "
+"sélectionnée dans le Viewer, la prévision pour cette méthode spécifique est "
+"affichée et les valeurs de précipitations pour les autres sous-régions (mais "
+"pour la même méthode) sont grisées. Lorsque l'en-tête de la liste est "
+"sélectionnée (c'est-à-dire la méthode), un résumé des prévisions optimales pour "
+"chaque sous-région est affiché (c'est-à-dire avec des dates analogues qui "
+"peuvent différer d'une sous-région à l'autre)."
 
 #: ../../app-viewer/usage.rst:12
 msgid "Main interface"
@@ -248,14 +299,13 @@ msgstr "Interface principale"
 #: ../../app-viewer/usage.rst:14
 msgid ""
 "AtmoSwing Viewer has the interface shown below. It allows viewing the files "
-"produced by the Forecaster. The forecasts are first explored through the "
-"main interface on a map. Different graphs are then available to display more "
-"details."
+"produced by the Forecaster. The forecasts are first explored through the main "
+"interface on a map. Different graphs are then available to display more details."
 msgstr ""
-"L'interface d'AtmoSwing Viewer est présentée ci-dessous. Il permet de "
-"visualiser les fichiers produits par le Forecaster. Les prévisions sont "
-"d'abord présentées dans l'interface principale sur une carte. Différents "
-"graphiques sont ensuite disponibles pour afficher plus de détails."
+"L'interface d'AtmoSwing Viewer est présentée ci-dessous. Il permet de visualiser "
+"les fichiers produits par le Forecaster. Les prévisions sont d'abord présentées "
+"dans l'interface principale sur une carte. Différents graphiques sont ensuite "
+"disponibles pour afficher plus de détails."
 
 #: ../../app-viewer/usage.rst:19
 msgid "The toolbar allows the following actions:"
@@ -270,68 +320,68 @@ msgid "icon_open"
 msgstr "icon_open"
 
 #: ../../app-viewer/usage.rst:22
-msgid "|icon_run| Run the current forecast (calls the Forecaster)"
-msgstr "|icon_run| Démarrer la prévision en cours (appelle le Forecaster)"
+msgid "|icon_map_select| Select a station on the map"
+msgstr "|icon_map_select| Sélectionner une station sur la carte"
 
 #: ../../app-viewer/usage.rst:35
-msgid "icon_run"
-msgstr "icon_run"
+msgid "icon_map_select"
+msgstr "icon_map_select"
 
 #: ../../app-viewer/usage.rst:23
-msgid "|icon_map-select| Select a station on the map"
-msgstr "|icon_map-select| Sélectionner une station sur la carte"
+msgid "|icon_map_zoom_in| Zoom in"
+msgstr "|icon_map_zoom_in| Zoom avant"
 
 #: ../../app-viewer/usage.rst:38
-msgid "icon_map-select"
-msgstr "icon_map-select"
+msgid "icon_map_zoom_in"
+msgstr "icon_map_zoom_in"
 
 #: ../../app-viewer/usage.rst:24
-msgid "|icon_map-zoom-in| Zoom in"
-msgstr "|icon_map-zoom-in| Zoom avant"
+msgid "|icon_map_zoom_out| Zoom out"
+msgstr "|icon_map_zoom_out| Zoom arrière"
 
 #: ../../app-viewer/usage.rst:41
-msgid "icon_map-zoom-in"
-msgstr "icon_map-zoom-in"
+msgid "icon_map_zoom_out"
+msgstr "icon_map_zoom_out"
 
 #: ../../app-viewer/usage.rst:25
-msgid "|icon_map-zoom-out| Zoom out"
-msgstr "|icon_map-zoom-out| Zoom arrière"
+msgid "|icon_map_move| Pan the map"
+msgstr "|icon_map_move| Déplacer la carte"
 
 #: ../../app-viewer/usage.rst:44
-msgid "icon_map-zoom-out"
-msgstr "icon_map-zoom-out"
+msgid "icon_map_move"
+msgstr "icon_map_move"
 
 #: ../../app-viewer/usage.rst:26
-msgid "|icon_map-move| Pan the map"
-msgstr "|icon_map-move| Déplacer de la carte"
+msgid "|icon_map_fit| Adjust the map to all stations"
+msgstr "|icon_map_fit| Ajuster la carte à toutes les stations"
 
 #: ../../app-viewer/usage.rst:47
-msgid "icon_map-move"
-msgstr "icon_map-move"
+msgid "icon_map_fit"
+msgstr "icon_map_fit"
 
 #: ../../app-viewer/usage.rst:27
-msgid "|icon_map-fit| Adjust the map to all stations"
-msgstr "|icon_map-fit| Ajuster la carte à toutes les stations"
-
-#: ../../app-viewer/usage.rst:50
-msgid "icon_map-fit"
-msgstr "icon_map-fit"
-
-#: ../../app-viewer/usage.rst:28
 msgid "|icon_frame_distributions| Open the distribution charts"
 msgstr "|icon_frame_distributions| Ouvrir les graphiques des distributions"
 
-#: ../../app-viewer/usage.rst:53
+#: ../../app-viewer/usage.rst:50
 msgid "icon_frame_distributions"
 msgstr "icon_frame_distributions"
 
-#: ../../app-viewer/usage.rst:29
+#: ../../app-viewer/usage.rst:28
 msgid "|icon_frame_analogs| Open the list of analogues"
 msgstr "|icon_frame_analogs| Ouvrir la liste des analogues"
 
-#: ../../app-viewer/usage.rst:56
+#: ../../app-viewer/usage.rst:53
 msgid "icon_frame_analogs"
 msgstr "icon_frame_analogs"
+
+#: ../../app-viewer/usage.rst:29
+msgid "|icon_frame_predictors| Open the predictors map"
+msgstr "|icon_frame_predictors| Ouvrir la carte des prédicteurs"
+
+#: ../../app-viewer/usage.rst:56
+msgid "icon_frame_predictors"
+msgstr "icon_frame_predictors"
 
 #: ../../app-viewer/usage.rst:30
 msgid "|icon_preferences| Open the preferences"
@@ -343,15 +393,14 @@ msgstr "icon_preferences"
 
 #: ../../app-viewer/usage.rst:62
 msgid ""
-"It is possible to open |icon_open_s| several forecast files, but they must "
-"have the same reference date (issued at the same lead time). If forecasts "
-"corresponding to another date (or time) are already opened, they will be "
-"closed."
+"It is possible to open |icon_open_s| several forecast files, but they must have "
+"the same reference date (issued at the same lead time). If forecasts "
+"corresponding to another date (or time) are already opened, they will be closed."
 msgstr ""
-"Il est possible d'ouvrir |icon_open_s| plusieurs fichiers de prévisions, "
-"mais ils doivent avoir la même date de référence (échéance de base). Si des "
-"prévisions correspondant à une autre date (ou heure) sont déjà ouvertes, "
-"elles seront fermées."
+"Il est possible d'ouvrir |icon_open_s| plusieurs fichiers de prévisions, mais "
+"ils doivent avoir la même date de référence (échéance de base). Si des "
+"prévisions correspondant à une autre date (ou heure) sont déjà ouvertes, elles "
+"seront fermées."
 
 #: ../../app-viewer/usage.rst:64
 msgid "icon_open_s"
@@ -359,22 +408,22 @@ msgstr "icon_open_s"
 
 #: ../../app-viewer/usage.rst:70
 msgid ""
-"The first visualization is a summary of the next lead times (Figure below). "
-"At the location of each station, a circular band is displayed with one box "
-"per lead time. The colors assigned to each slice illustrate the expected "
-"value for the lead time in question. This representation provides a quick "
-"overview of the coming days and makes it easy to identify a possible event. "
-"The same map can also be displayed for a specific lead time (Figure above). "
-"The choice of the lead time is made using the cursor above the map."
+"The first visualization is a summary of the next lead times (Figure below). At "
+"the location of each station, a circular band is displayed with one box per lead "
+"time. The colors assigned to each slice illustrate the expected value for the "
+"lead time in question. This representation provides a quick overview of the "
+"coming days and makes it easy to identify a possible event. The same map can "
+"also be displayed for a specific lead time (Figure above). The choice of the "
+"lead time is made using the cursor above the map."
 msgstr ""
 "La première visualisation est un résumé des prochaines échéances (figure ci-"
 "dessous). Une bande circulaire avec une case par échéance est affichée à "
 "l'emplacement de chaque station. Les couleurs attribuées à chaque tranche "
-"illustrent la valeur attendue pour l'échéance en question. Cette "
-"représentation donne un aperçu rapide des jours à venir et permet "
-"d'identifier facilement un événement possible. La même carte peut également "
-"être affichée pour une échéance spécifique (figure ci-dessus). Le choix de "
-"l'échéance s'effectue à l'aide du curseur situé au-dessus de la carte."
+"illustrent la valeur attendue pour l'échéance en question. Cette représentation "
+"donne un aperçu rapide des jours à venir et permet d'identifier facilement un "
+"événement possible. La même carte peut également être affichée pour une échéance "
+"spécifique (figure ci-dessus). Le choix de l'échéance s'effectue à l'aide du "
+"curseur situé au-dessus de la carte."
 
 #: ../../app-viewer/usage.rst:77
 msgid "Sidebar"
@@ -385,25 +434,24 @@ msgid ""
 "The sidebar on the left-hand side of the map provides some information and "
 "controls."
 msgstr ""
-"La barre latérale située à gauche de la carte fournit des informations et "
-"des contrôles."
+"La barre latérale située à gauche de la carte fournit des informations et des "
+"contrôles."
 
 #: ../../app-viewer/usage.rst:81
 msgid ""
 "**Forecasts**: Choice of method and its representation. All open methods are "
-"displayed in the upper box. The lower left box changes the color scale, and "
-"the lower right one offers the choice of the quantile to display (20%, 60%, "
-"or 90%)."
+"displayed in the upper box. The lower left box changes the color scale, and the "
+"lower right one offers the choice of the quantile to display (20%, 60%, or 90%)."
 msgstr ""
 "**Prévisions** : Choix de la méthode et de sa représentation. Toutes les "
-"méthodes ouvertes sont affichées dans la partie supérieure. La partie "
-"inférieure gauche modifie l'échelle de couleurs, et la partie inférieure "
-"droite permet de choisir le quantile à afficher (20%, 60% ou 90%)."
+"méthodes ouvertes sont affichées dans la partie supérieure. La partie inférieure "
+"gauche modifie l'échelle de couleurs, et la partie inférieure droite permet de "
+"choisir le quantile à afficher (20%, 60% ou 90%)."
 
 #: ../../app-viewer/usage.rst:86
 msgid ""
-"**GIS layers**: Display options for the opened GIS layers (right-click). It "
-"is possible to change the following properties of the different layers, if "
+"**GIS layers**: Display options for the opened GIS layers (right-click). It is "
+"possible to change the following properties of the different layers, if "
 "available:"
 msgstr ""
 "**Couches SIG** : Options d'affichage pour les couches SIG ouvertes (clic "
@@ -415,50 +463,48 @@ msgid "Visibility - whether the layer is visible or not."
 msgstr "Visibilité - si la couche est visible ou non."
 
 #: ../../app-viewer/usage.rst:89
+#, python-format
 msgid "Transparency - 0% is opaque and 100% is fully transparent."
 msgstr "Transparence - 0% is opaque et 100% is entièrement transparent."
 
 #: ../../app-viewer/usage.rst:90
 msgid "Color - it is applied to the layer features (lines & fill)."
 msgstr ""
-"Couleur - elle est appliquée aux éléments de la couche (lignes et "
-"remplissage)."
+"Couleur - elle est appliquée aux éléments de la couche (lignes et remplissage)."
 
 #: ../../app-viewer/usage.rst:91
 msgid "The thickness of the line - for the lines or perimeters of polygons."
-msgstr ""
-"L'épaisseur de la ligne - pour les lignes ou les périmètres des polygones."
+msgstr "L'épaisseur de la ligne - pour les lignes ou les périmètres des polygones."
 
 #: ../../app-viewer/usage.rst:96
 msgid ""
-"**Alarms**: Shows the potentially critical situations. The different rows of "
-"the grid correspond to the different open methods and the columns to the "
-"available lead times. The displayed colors correspond to the highest value "
-"of all stations (worst case; precipitation value normalized by the rain of a "
-"selected return period)."
+"**Alarms**: Shows the potentially critical situations. The different rows of the "
+"grid correspond to the different open methods and the columns to the available "
+"lead times. The displayed colors correspond to the highest value of all stations "
+"(worst case; precipitation value normalized by the rain of a selected return "
+"period)."
 msgstr ""
-"**Alarmes** : Affiche les situations potentiellement critiques. Les "
-"différentes lignes de la grille correspondent aux différentes méthodes "
-"ouvertes et les colonnes aux échéances disponibles. Les couleurs affichées "
-"correspondent à la valeur la plus élevée pour toutes les stations (cas le "
-"plus défavorable ; valeur des précipitations normalisée par la pluie d'une "
-"période de retour sélectionnée)."
+"**Alarmes** : Affiche les situations potentiellement critiques. Les différentes "
+"lignes de la grille correspondent aux différentes méthodes ouvertes et les "
+"colonnes aux échéances disponibles. Les couleurs affichées correspondent à la "
+"valeur la plus élevée pour toutes les stations (cas le plus défavorable ; valeur "
+"des précipitations normalisée par la pluie d'une période de retour sélectionnée)."
 
 #: ../../app-viewer/usage.rst:101
 msgid ""
 "**Station selection**: Select the station to display the time series. An "
 "alternative to selection on the map."
 msgstr ""
-"**Sélection de la station** : Sélectionner une station pour afficher sa "
-"série temporelle. Une alternative à la sélection sur la carte."
+"**Sélection de la station** : Sélectionner une station pour afficher sa série "
+"temporelle. Une alternative à la sélection sur la carte."
 
 #: ../../app-viewer/usage.rst:106
 msgid ""
-"**Forecast caption**: Display of the dates corresponding to the different "
-"boxes of the circular bands, as well as the color bar."
+"**Forecast caption**: Display of the dates corresponding to the different boxes "
+"of the circular bands, as well as the color bar."
 msgstr ""
-"**Légende des prévisions** : Affichage des dates correspondant aux "
-"différentes cases des bandes circulaires, ainsi que de la barre de couleur."
+"**Légende des prévisions** : Affichage des dates correspondant aux différentes "
+"cases des bandes circulaires, ainsi que de la barre de couleur."
 
 #: ../../app-viewer/usage.rst:113
 msgid "Display of the time series"
@@ -466,21 +512,20 @@ msgstr "Affichage des série temporelles"
 
 #: ../../app-viewer/usage.rst:115
 msgid ""
-"When a station is selected (on the map or in the drop-down list on the "
-"sidebar), the graph of the expected time series is displayed (Figure below). "
-"This graph corresponds to the selected method when clicking on the station. "
-"The display options (in the upper left panel) are as follows:"
+"When a station is selected (on the map or in the drop-down list on the sidebar), "
+"the graph of the expected time series is displayed (Figure below). This graph "
+"corresponds to the selected method when clicking on the station. The display "
+"options (in the upper left panel) are as follows:"
 msgstr ""
-"Lorsqu'une station est sélectionnée (sur la carte ou dans la liste "
-"déroulante de la barre latérale), le graphique de la série temporelle "
-"attendue s'affiche (figure ci-dessous). Ce graphique correspond à la méthode "
-"sélectionnée lorsque l'on clique sur la station. Les options d'affichage "
-"(dans le panneau supérieur gauche) sont les suivantes :"
+"Lorsqu'une station est sélectionnée (sur la carte ou dans la liste déroulante de "
+"la barre latérale), le graphique de la série temporelle attendue s'affiche "
+"(figure ci-dessous). Ce graphique correspond à la méthode sélectionnée lorsque "
+"l'on clique sur la station. Les options d'affichage (dans le panneau supérieur "
+"gauche) sont les suivantes :"
 
 #: ../../app-viewer/usage.rst:117
 msgid ""
-"The three classical quantiles (20%, 60%, 90%) in the form of thick blue "
-"lines."
+"The three classical quantiles (20%, 60%, 90%) in the form of thick blue lines."
 msgstr ""
 "Les trois quantiles classiques (20%, 60%, 90%) sous forme de lignes bleues "
 "épaisses."
@@ -496,8 +541,8 @@ msgstr "Toutes les valeurs analogues sous forme de petites croix grises"
 #: ../../app-viewer/usage.rst:120
 msgid ""
 "The ten best analogs as yellow - orange - red crosses. The colors are "
-"proportional to the rows of the analogs. Red is for the best analog and "
-"yellow for the 10th."
+"proportional to the rows of the analogs. Red is for the best analog and yellow "
+"for the 10th."
 msgstr ""
 "Les dix meilleurs analogues sont représentés par des croix jaunes - orange - "
 "rouges. Les couleurs sont proportionnelles aux rangs des analogues. Le rouge "
@@ -510,8 +555,7 @@ msgstr "Les cinq meilleurs analogues selon le même principe."
 #: ../../app-viewer/usage.rst:122
 msgid "The value for a ten years return period in the form of a red line."
 msgstr ""
-"La valeur pour une période de retour de dix ans sous la forme d'une ligne "
-"rouge."
+"La valeur pour une période de retour de dix ans sous la forme d'une ligne rouge."
 
 #: ../../app-viewer/usage.rst:123
 msgid "The values of different return periods."
@@ -526,8 +570,8 @@ msgid ""
 "The lower left panel is the list of the previous forecasts. These are "
 "automatically imported when displaying the graph."
 msgstr ""
-"Le panneau inférieur gauche est la liste des prévisions précédentes. Celles-"
-"ci sont automatiquement importées lors de l'affichage du graphique."
+"Le panneau inférieur gauche est la liste des prévisions précédentes. Celles-ci "
+"sont automatiquement importées lors de l'affichage du graphique."
 
 #: ../../app-viewer/usage.rst:133
 msgid "Display of the distributions"
@@ -535,19 +579,18 @@ msgstr "Affichage des distributions"
 
 #: ../../app-viewer/usage.rst:135
 msgid ""
-"Rainfall distributions are accessible via the |icon_frame_distributions_s| "
+"The predictand distributions are accessible via the |icon_frame_distributions_s| "
 "button on the toolbar. It allows plotting the distribution of all analogs "
 "comparatively to the best 5 or 10 (Figure below). The display options are "
-"similar to those of the time series (previous section). The method, station, "
-"and lead time must be selected in the upper part of the window."
+"similar to those of the time series (previous section). The method, station, and "
+"lead time must be selected in the upper part of the window."
 msgstr ""
-"Les distributions de précipitations sont accessibles via le bouton |"
-"icon_frame_distributions_s| de la barre d'outils. La fenêtre permet de "
-"tracer la distribution de toutes les analogues par rapport aux 5 ou 10 "
-"meilleures (figure ci-dessous). Les options d'affichage sont similaires à "
-"celles des séries temporelles (section précédente). La méthode, la station "
-"et l'échéance doivent être sélectionnés dans la partie supérieure de la "
-"fenêtre."
+"Les distributions des prédictands sont accessibles via le bouton |"
+"icon_frame_distributions_s| de la barre d'outils. La fenêtre permet de tracer la "
+"distribution de toutes les analogues par rapport aux 5 ou 10 meilleures (figure "
+"ci-dessous). Les options d'affichage sont similaires à celles des séries "
+"temporelles (section précédente). La méthode, la station et l'échéance doivent "
+"être sélectionnés dans la partie supérieure de la fenêtre."
 
 #: ../../app-viewer/usage.rst:145
 msgid "icon_frame_distributions_s"
@@ -555,17 +598,15 @@ msgstr "icon_frame_distributions_s"
 
 #: ../../app-viewer/usage.rst:140
 msgid ""
-"The distribution of the analogy criterion is also available in the same "
-"window through the tab located above the graph (Figure below). This "
-"distribution makes it possible to identify possible discontinuities in the "
-"values of the criteria and thus to increase the confidence in the best "
-"analogs."
+"The distribution of the analogy criterion is also available in the same window "
+"through the tab located above the graph (Figure below). This distribution makes "
+"it possible to identify possible discontinuities in the values of the criteria "
+"and thus to increase the confidence in the best analogs."
 msgstr ""
 "La distribution du critère d'analogie est également disponible dans la même "
 "fenêtre par l'onglet situé au-dessus du graphique (Figure ci-dessous). Cette "
-"distribution permet d'identifier d'éventuelles discontinuités dans les "
-"valeurs des critères et ainsi d'accroître la confiance dans les meilleures "
-"analogues."
+"distribution permet d'identifier d'éventuelles discontinuités dans les valeurs "
+"des critères et ainsi d'accroître la confiance dans les meilleures analogues."
 
 #: ../../app-viewer/usage.rst:153
 msgid "Display of the analog dates"
@@ -573,119 +614,199 @@ msgstr "Affichage des dates analogues"
 
 #: ../../app-viewer/usage.rst:155
 msgid ""
-"The details of the analog dates and their associated criterion and "
-"predictand values (Figure below) are available through the |"
-"icon_frame_analogs_s| button on the toolbar. The method, station, and lead "
-"time must be selected in the upper part of the window. It is possible to "
-"sort the list by each of the columns by clicking on it. The first click "
-"ranks the values in ascending order and the second in descending order."
+"The details of the analog dates and their associated criterion and predictand "
+"values (Figure below) are available through the |icon_frame_analogs_s| button on "
+"the toolbar. The method, station, and lead time must be selected in the upper "
+"part of the window. It is possible to sort the list by each of the columns by "
+"clicking on it. The first click ranks the values in ascending order and the "
+"second in descending order."
 msgstr ""
-"Les détails des dates analogues et les valeurs de critère et de prédictand "
-"qui leur sont associées (figure ci-dessous) sont disponibles via le bouton |"
-"icon_frame_analogs_s| de la barre d'outils. La méthode, la station et "
-"l'échéance doivent être sélectionnés dans la partie supérieure de la "
-"fenêtre. Il est possible de trier la liste par chacune des colonnes en "
-"cliquant dessus. Le premier clic classe les valeurs par ordre croissant et "
-"le second par ordre décroissant."
+"Les détails des dates analogues et les valeurs de critère et de prédictand qui "
+"leur sont associées (figure ci-dessous) sont disponibles via le bouton |"
+"icon_frame_analogs_s| de la barre d'outils. La méthode, la station et l'échéance "
+"doivent être sélectionnés dans la partie supérieure de la fenêtre. Il est "
+"possible de trier la liste par chacune des colonnes en cliquant dessus. Le "
+"premier clic classe les valeurs par ordre croissant et le second par ordre "
+"décroissant."
 
 #: ../../app-viewer/usage.rst:160
 msgid "icon_frame_analogs_s"
 msgstr "icon_frame_analogs_s"
 
 #: ../../app-viewer/usage.rst:168
-msgid "Workspaces"
-msgstr "Espaces de travail (workspace)"
+msgid "Display of the predictor fields"
+msgstr "Affichage des champs météorologiques (prédicteur)"
 
 #: ../../app-viewer/usage.rst:170
 msgid ""
-"AtmoSwing Viewer relies on workspaces to allow changing of region or "
-"configuration. A workspace is an xml file containing the paths to the GIS "
-"layers and their rendering options, as well as the forecast files location "
-"and other properties that can be defined in the preferences."
+"Maps of the predictor fields (Figure below) are accessible via the |"
+"icon_frame_predictors_s| button on the toolbar. This map allows comparing the "
+"predictors for the target situation and the analog dates. The options are as "
+"follows:"
 msgstr ""
-"AtmoSwing Viewer s'appuie sur des espaces de travail (workspaces) pour "
-"permettre de changer de région ou de configuration. Un espace de travail est "
-"un fichier xml contenant les chemins d'accès aux couches SIG et leurs "
-"options de rendu, ainsi que l'emplacement des fichiers de prévision et "
-"d'autres propriétés qui peuvent être définies dans les préférences."
+"Les cartes des champs de prédicteurs (figure ci-dessous) sont accessibles via le "
+"bouton |icon_frame_predictors_s| de la barre d'outils. Cette carte permet de "
+"comparer les variables prédictives pour la situation cible et les dates "
+"analogues. Les options sont les suivantes :"
+
+#: ../../app-viewer/usage.rst:184
+msgid "icon_frame_predictors_s"
+msgstr "icon_frame_predictors_s"
 
 #: ../../app-viewer/usage.rst:172
+msgid ""
+"The method, configuration, and predictors must be selected in the left panel."
+msgstr ""
+"La méthode, la configuration et les prédicteurs doivent être sélectionnés dans "
+"le panneau de gauche."
+
+#: ../../app-viewer/usage.rst:173
+msgid "The lead time and the analog date are selected above the maps."
+msgstr "L'échéance et la date analogue sont sélectionnées au-dessus des cartes."
+
+#: ../../app-viewer/usage.rst:174
+msgid ""
+"The color scales and the map navigation are synchronized between both maps. The "
+"navigation synchronization can be disabled under the Tools menu (synchronize "
+"tools)."
+msgstr ""
+"Les échelles de couleurs et la navigation sont synchronisées entre les deux "
+"cartes. La synchronisation de la navigation peut être désactivée dans le menu "
+"Outils (synchroniser les outils)."
+
+#: ../../app-viewer/usage.rst:175
+msgid "The navigation tools are the same as for the main interface."
+msgstr "Les outils de navigation sont les mêmes que pour l'interface principale."
+
+#: ../../app-viewer/usage.rst:176
+msgid ""
+"An additional tool |icon_map_cross| is provided to display marks on both maps to "
+"help compare the location of some features."
+msgstr ""
+"Un outil supplémentaire |icon_map_cross| permet d'afficher des marques sur les "
+"deux cartes afin de comparer l'emplacement de certains éléments."
+
+#: ../../app-viewer/usage.rst:190
+msgid "icon_map_cross"
+msgstr "icon_map_cross"
+
+#: ../../app-viewer/usage.rst:177
+msgid ""
+"Each panel can be hidden to display only one map using the toggle buttons in the "
+"gap between the maps."
+msgstr ""
+"Chaque panneau peut être masqué pour n'afficher qu'une seule carte à l'aide des "
+"boutons de basculement situés dans l'espace entre les cartes."
+
+#: ../../app-viewer/usage.rst:178
+msgid "The color tables can be changed in the preferences."
+msgstr "Les palettes de couleurs peuvent être modifiées dans les préférences."
+
+#: ../../app-viewer/usage.rst:179
+msgid "The path to the predictor data must be specified in the preferences."
+msgstr ""
+"Le chemin d'accès aux données du prédicteur doit être spécifié dans les "
+"préférences."
+
+#: ../../app-viewer/usage.rst:198
+msgid "Workspaces"
+msgstr "Espaces de travail (workspace)"
+
+#: ../../app-viewer/usage.rst:200
+msgid ""
+"AtmoSwing Viewer relies on workspaces to allow changing of region or "
+"configuration. A workspace is an xml file containing the paths to the GIS layers "
+"and their rendering options, as well as the forecast files location and other "
+"properties that can be defined in the preferences."
+msgstr ""
+"AtmoSwing Viewer s'appuie sur des espaces de travail (workspaces) pour permettre "
+"de changer de région ou de configuration. Un espace de travail est un fichier "
+"xml contenant les chemins d'accès aux couches SIG et leurs options de rendu, "
+"ainsi que l'emplacement des fichiers de prévision et d'autres propriétés qui "
+"peuvent être définies dans les préférences."
+
+#: ../../app-viewer/usage.rst:202
 msgid "The menu File allows to:"
 msgstr "Le menu Fichier permet de:"
 
-#: ../../app-viewer/usage.rst:174
+#: ../../app-viewer/usage.rst:204
 msgid "Open a workspace"
 msgstr "Ouvrir un espace de travail"
 
-#: ../../app-viewer/usage.rst:175
+#: ../../app-viewer/usage.rst:205
 msgid "Save the workspace"
 msgstr "Sauvegarder l'espace de travail"
 
-#: ../../app-viewer/usage.rst:176
+#: ../../app-viewer/usage.rst:206
 msgid "Save the workspace as"
 msgstr "Enregistrer l'espace de travail sous"
 
-#: ../../app-viewer/usage.rst:177
+#: ../../app-viewer/usage.rst:207
 msgid "Create a new workspace"
 msgstr "Créer un nouvel espace de travail"
 
-#: ../../app-viewer/usage.rst:179
+#: ../../app-viewer/usage.rst:209
 msgid "The creation of a new workspace is guided by a wizard to define:"
 msgstr ""
-"La création d'un nouvel espace de travail est guidée par un assistant qui "
-"permet de définir :"
+"La création d'un nouvel espace de travail est guidée par un assistant qui permet "
+"de définir :"
 
-#: ../../app-viewer/usage.rst:181
+#: ../../app-viewer/usage.rst:211
 msgid "The location of the workspace file"
 msgstr "Emplacement du fichier de l'espace de travail"
 
-#: ../../app-viewer/usage.rst:182
+#: ../../app-viewer/usage.rst:212
 msgid "The path to the forecasts directory"
 msgstr "Chemin d'accès au répertoire des prévisions"
 
-#: ../../app-viewer/usage.rst:183
+#: ../../app-viewer/usage.rst:213
 msgid "The base map for the project."
 msgstr "La carte de base du projet."
 
-#: ../../app-viewer/usage.rst:185
+#: ../../app-viewer/usage.rst:215
 msgid "The base map options are:"
 msgstr "Les options de la carte de base sont les suivantes :"
 
-#: ../../app-viewer/usage.rst:187
+#: ../../app-viewer/usage.rst:217
 msgid "Custom layers"
 msgstr "Couches personnalisées"
 
-#: ../../app-viewer/usage.rst:188
+#: ../../app-viewer/usage.rst:218
 msgid "Terrain from Google maps"
 msgstr "Terrain à partir de Google maps"
 
-#: ../../app-viewer/usage.rst:189
+#: ../../app-viewer/usage.rst:219
 msgid "Map from Google maps"
 msgstr "Carte de Google maps"
 
-#: ../../app-viewer/usage.rst:190
+#: ../../app-viewer/usage.rst:220
 msgid "Map from OpenStreetMap"
 msgstr "Carte de OpenStreetMap"
 
-#: ../../app-viewer/usage.rst:191
+#: ../../app-viewer/usage.rst:221
 msgid "Map from ArcGIS Mapserver"
 msgstr "Carte à partir d'ArcGIS Mapserver"
 
-#: ../../app-viewer/usage.rst:192
+#: ../../app-viewer/usage.rst:222
 msgid "Satellite imagery from Google maps"
 msgstr "Images satellite de Google maps"
 
-#: ../../app-viewer/usage.rst:193
+#: ../../app-viewer/usage.rst:223
 msgid "Satellite imagery from VirtualEarth"
 msgstr "Images satellite de VirtualEarth"
 
-#: ../../app-viewer/usage.rst:195
+#: ../../app-viewer/usage.rst:225
 msgid ""
-"The workspace file does not need to be directly edited. The changes can be "
-"made through the interface and the workspace saved again. Its structure is "
-"as follows:"
+"The workspace file does not need to be directly edited. The changes can be made "
+"through the interface and the workspace saved again. Its structure is as follows:"
 msgstr ""
 "Il n'est pas nécessaire de modifier directement le fichier de l'espace de "
 "travail. Les modifications peuvent être apportées par l'intermédiaire de "
-"l'interface et l'espace de travail peut être enregistré à nouveau. Sa "
-"structure est la suivante :"
+"l'interface et l'espace de travail peut être enregistré à nouveau. Sa structure "
+"est la suivante :"
+
+#~ msgid "|icon_run| Run the current forecast (calls the Forecaster)"
+#~ msgstr "|icon_run| Démarrer la prévision en cours (appelle le Forecaster)"
+
+#~ msgid "icon_run"
+#~ msgstr "icon_run"
