@@ -136,15 +136,15 @@ The Optimizer also has a command line interface, which is the prefered way of us
                         * ``classicp``: classic+ calibration
                         * ``varexplocp``: variables exploration classic+
                         * ``montecarlo``: Monte Carlo
-                        * ``ga: genetic``: algorithms
+                        * ``ga``: genetic algorithms
                         * ``evalscores``: evaluate all scores
-                        * ``onlyvalues``: evaluate all scores
-                        * ``onlydates``: evaluate all scores
+                        * ``onlyvalues``: get only the analog values
+                        * ``onlydates``: get only the analog dates
 
---cp-resizing-iteration=<int>  Classic plus: resizing iteration
---cp-lat-step=<step>  Classic plus: steps in latitudes for the relevance map
---cp-lon-step=<step>  Classic plus: steps in longitudes for the relevance map
---cp-proceed-sequentially  Classic plus: proceed sequentially
+--cp-resizing-iteration=<int>  Classic+: resizing iteration
+--cp-lat-step=<step>  Classic+: steps in latitudes for the relevance map
+--cp-lon-step=<step>  Classic+: steps in longitudes for the relevance map
+--cp-proceed-sequentially  Classic+: proceed sequentially
 --ve-step=<step_nb>  Variables exploration: step to process
 --mc-runs-nb=<runs_nb>  Monte Carlo: number of runs
 --ga-xxxxx=<value>  All GAs options are described on the :ref:`genetic algorithms <genetic-algorithms>` page
