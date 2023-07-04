@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: AtmoSwing 2.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-25 14:57+0200\n"
-"PO-Revision-Date: 2023-07-04 11:49+0200\n"
+"PO-Revision-Date: 2023-07-04 12:12+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -467,7 +467,7 @@ msgstr ""
 
 #: ../../app-optimizer/genetic-algorithms.rst:61
 msgid "Operator options"
-msgstr "Options du journal (log)"
+msgstr "Options des opérateurs"
 
 #: ../../app-optimizer/genetic-algorithms.rst:63
 msgid "The different operators can be controlled with the following options:"
@@ -1850,8 +1850,8 @@ msgstr "CRPSS (Score de compétence du CRPS) : ``CRPSS``"
 #: ../../app-optimizer/verification-scores.rst:9
 msgid "CRPS (Continuous ranked probability score): ``CRPS``"
 msgstr ""
-"Indice continu de probabilité ordonnée CRPS (Continuous ranked probability "
-"score) : ``CRPS``"
+"Indice continu de probabilité ordonnée CRPS (\"Continuous ranked probability "
+"score\") : ``CRPS``"
 
 #: ../../app-optimizer/verification-scores.rst:10
 msgid "CRPS accuracy: ``CRPSaccuracy``"
