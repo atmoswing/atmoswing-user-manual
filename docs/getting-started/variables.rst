@@ -8,8 +8,7 @@ The different existing datasets do not name the meteorological variables the sam
 The following sections define first the different levels, then some common variables to most datasets, and finally, list the available variables for the different datasets.
 
 .. contents:: Content of this section
-
-.. TODO: remove the main heading from the content list, i.e., starting the list with the Differentiation subsets/levels heading
+    :local:
 
 Differentiating subsets/levels
 ------------------------------
