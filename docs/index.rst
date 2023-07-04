@@ -28,13 +28,3 @@ AtmoSwing is open-source software written in C++ that implements AMs in a flexib
    app-viewer
    app-downscaler
    app-optimizer
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-
-.. TODO: Index and tables seem not to be implemented (neither online nor in the PDF.
-.. TODO: In the PDF the bibliography is not handled correctly since there same references are repeated several times. Bibliography not ordered alphabetically and chronologically.
