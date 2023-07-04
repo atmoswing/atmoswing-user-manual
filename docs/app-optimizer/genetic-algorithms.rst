@@ -3,11 +3,11 @@
 Genetic algorithms
 ==================
 
-The sequential or classic calibration has substantial limitations: (i) it cannot automatically choose the pressure levels and temporal windows (hour of the day) for a given meteorological variable, (ii) it cannot handle dependencies between parameters, and (iii) it cannot easily handle new degrees of freedom. For this reason, genetic algorithms (GAs) were implemented in AtmoSwing Optimizer to perform a global optimization of AMs. It allows for the optimization of all parameters jointly in a fully automatic and objective way. See more details in [Horton2017]_.
+The sequential or classic calibration has substantial limitations: (i) it cannot automatically choose the pressure levels and temporal windows (hour of the day) for a given meteorological variable, (ii) it cannot handle dependencies between parameters, and (iii) it cannot easily handle new degrees of freedom. For this reason, genetic algorithms (GAs) were implemented in AtmoSwing Optimizer to perform a global optimization of AMs. It allows for the optimization of all parameters jointly in a fully automatic and objective way. See more details in :cite:t:`Horton2017a`.
 
 Genetic algorithms are powerful but very demanding in terms of computational capacity. They require thousands of assessments to evolve towards the global optimum and should thus be used on a cluster rather than a single computer.
 
-Many options and operator variants are available for genetic algorithms. Based on systematic tests detailed in [Horton2017]_, some presets were established in order to ease the use of genetic algorithms in AtmoSwing Optimizer. These presets are listed below, and all options are provided further down.
+Many options and operator variants are available for genetic algorithms. Based on systematic tests detailed in :cite:t:`Horton2017a`, some presets were established in order to ease the use of genetic algorithms in AtmoSwing Optimizer. These presets are listed below, and all options are provided further down.
 
 
 General options
@@ -155,5 +155,3 @@ The different operators can be controlled with the following options:
 
 --ga-mut-multi-scale-p=<0-1>  Multi-scale mutation - probability (default 0.1)
 
-
-.. [Horton2017] Horton, P., Jaboyedoff, M., & Obled, C. (2017). Global Optimization of an Analog Method by Means of Genetic Algorithms. Monthly Weather Review, 145(4), 1275–1294. http://doi.org/10.1175/MWR-D-16-0093.1

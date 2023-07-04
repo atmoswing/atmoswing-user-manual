@@ -20,10 +20,10 @@ The first step consists in choosing the type of database to generate. The option
 * Temporal resolution:
    * 24 hours
    * 6 hours
-   * 1-hr MTW (moving time window, see [Horton2017]_)
-   * 3-hr MTW (moving time window, see [Horton2017]_)
-   * 6-hr MTW (moving time window, see [Horton2017]_)
-   * 12-hr MTW (moving time window, see [Horton2017]_)
+   * 1-hr MTW (moving time window, see :cite:t:`Horton2017b`)
+   * 3-hr MTW (moving time window, see :cite:t:`Horton2017b`)
+   * 6-hr MTW (moving time window, see :cite:t:`Horton2017b`)
+   * 12-hr MTW (moving time window, see :cite:t:`Horton2017b`)
 * Spatial aggregation:
    * Station
    * Groupment
@@ -53,7 +53,7 @@ Precipitation
 During the data processing, Gumbel adjustments are automatically made to calculate the precipitation values corresponding to different return periods. The possible transformations are then:
 
 * A normalization of the precipitation amount by a chosen return period value (often 10 years)
-* A transformation by the square root of the normalized precipitation amounts (see [Bontron2004]_)
+* A transformation by the square root of the normalized precipitation amounts (see :cite:t:`Bontron2004`)
 
 Lightning
 ~~~~~~~~~
@@ -260,7 +260,3 @@ The structure describing such data files is as follows:
         </data>
       </pattern>
     </atmoswing>
-
-
-.. [Horton2017] Horton, P., Obled, C., & Jaboyedoff, M. (2017). The analogue method for precipitation prediction: finding better analogue situations at a sub-daily time step. Hydrology and Earth System Sciences, 21, 3307–3323. http://doi.org/10.5194/hess-21-3307-2017
-.. [Bontron2004] Bontron, G. (2004). Prévision quantitative des précipitations: Adaptation probabiliste par recherche d’analogues. Utilisation des Réanalyses NCEP/NCAR et application aux précipitations du Sud-Est de la France. Institut National Polytechnique de Grenoble.
