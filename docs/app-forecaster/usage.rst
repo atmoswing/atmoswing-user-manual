@@ -153,16 +153,26 @@ Command line interface
 
 The Forecaster also has a command-line interface, which makes it possible to automate forecasts on a server. A scheduled task can then be added on a server (ex: Task Scheduler on Windows or Cron task on Linux). The options are as follows:
 
--h, --help  Displays the help of command-line options
--c, --config  Configure the forecaster
--v, --version  Displays the software version
--f, --batch-file=<file>  Batch file to use for the forecast (full path)
--n, --forecast-now  Run forecast for the latest available data
--p, --forecast-past=<nb_days>  Run forecast for the given number of past days
--d, --forecast-date=<YYYYMMDDHH>  Run forecast for a specified date
--l, --log-level=<n>  Set the log level (0: minimum, 1: errors, 2: warnings (default), 3: verbose)
---proxy=<host[:port]>  Use proxy on given port
---proxy-user=<user[:password]>  Proxy user and password
+-h, --help  
+   Displays the help of command-line options
+-c, --config  
+   Configure the forecaster
+-v, --version  
+   Displays the software version
+-f, --batch-file=<file>  
+   Batch file to use for the forecast (full path)
+-n, --forecast-now  
+   Run forecast for the latest available data
+-p, --forecast-past=<nb_days>  
+   Run forecast for the given number of past days
+-d, --forecast-date=<YYYYMMDDHH>  
+   Run forecast for a specified date
+-l, --log-level=<n>  
+   Set the log level (0: minimum, 1: errors, 2: warnings (default), 3: verbose)
+--proxy=<host[:port]>  
+   Use proxy on given port
+--proxy-user=<user[:password]>  
+   Proxy user and password
 
 
 Docker image
