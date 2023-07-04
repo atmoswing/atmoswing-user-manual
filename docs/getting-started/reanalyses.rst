@@ -3,7 +3,7 @@
 Reanalyses
 ==========
 
-A description of the different reanalyses and the assessment of the impact of the dataset selection are presented in :cite:t:`Horton2018`. AtmoSwing can read the following reanalyses (with the corresponding ID to use):
+A description of the different reanalyses and the assessment of the impact of the dataset selection are presented in :cite:t:`Horton2018b`. AtmoSwing can read the following reanalyses (with the corresponding ID to use):
 
 * NCEP/NCAR Reanalysis 1: ``NCEP_R1``
    * Use the original file names (yearly files)
