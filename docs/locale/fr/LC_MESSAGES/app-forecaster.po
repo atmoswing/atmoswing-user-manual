@@ -169,8 +169,8 @@ msgid ""
 "Directory containing the predictand DB: contains the :ref:`NetCDF file "
 "generated from the predictand data<predictand-db>`."
 msgstr ""
-"Répertoire contenant la base de données des prédictands : contient le :ref:"
-"`fichier NetCDF généré à partir des données des prédictands<predictand-db>`."
+"Répertoire contenant la base de données des prédictants : contient le :ref:"
+"`fichier NetCDF généré à partir des données des prédictants<predictand-db>`."
 
 #: ../../app-forecaster/preferences.rst:13
 msgid ""

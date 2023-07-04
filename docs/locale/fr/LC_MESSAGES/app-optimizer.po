@@ -1169,8 +1169,8 @@ msgid ""
 "Directory containing the predictand DB (:ref:`NetCDF file generated from the "
 "predictand data<predictand-db>`)."
 msgstr ""
-"Répertoire contenant la base de données des prédictands (:ref:`fichier NetCDF "
-"généré à partir des données des prédictands<predictand-db>`)."
+"Répertoire contenant la base de données des prédictants (:ref:`fichier NetCDF "
+"généré à partir des données des prédictants<predictand-db>`)."
 
 #: ../../app-optimizer/preferences.rst:43
 msgid "Advanced options"
@@ -1313,7 +1313,7 @@ msgstr ""
 "approche séquentielle semi-automatique, des simulations de Monte-Carlo et une "
 "technique d'optimisation globale utilisant des algorithmes génétiques. "
 "L'établissement d'une relation statistique entre les prédicteurs et les "
-"prédictands est gourmand en ressources informatiques car il nécessite de "
+"prédictants est gourmand en ressources informatiques car il nécessite de "
 "nombreuses évaluations sur plusieurs décennies."
 
 #: ../../app-optimizer/usage.rst:6
@@ -1330,9 +1330,9 @@ msgstr ""
 "La calibration des MAs est généralement effectuée dans un cadre de pronostic "
 "parfait (perfect prognosis framework). Le pronostic parfait utilise des "
 "données observées ou réanalysées pour calibrer la relation entre les "
-"prédicteurs et les prédictands. En conséquence, le pronostic parfait produit "
+"prédicteurs et les prédictants. En conséquence, le pronostic parfait produit "
 "des relations qui sont aussi proches que possible des liens naturels entre "
-"les prédicteurs et les prédictands. Cependant, il n'existe pas de modèles "
+"les prédicteurs et les prédictants. Cependant, il n'existe pas de modèles "
 "parfaits, et même les données de réanalyse peuvent contenir des biais qui ne "
 "peuvent être ignorés. Ainsi, les prédicteurs considérés doivent être aussi "
 "robustes que possible, c'est-à-dire qu'ils doivent avoir une dépendance "
@@ -1451,7 +1451,7 @@ msgid ""
 "identified by the defined AM into a file."
 msgstr ""
 "**Uniquement les dates analogues (et les critères)** : Ne traite pas de score "
-"de compétence et n'attribue pas de valeurs du prédictand aux dates analogues. "
+"de compétence et n'attribue pas de valeurs du prédictant aux dates analogues. "
 "Enregistre uniquement les dates analogues identifiées par la MA définie dans "
 "un fichier."
 
@@ -1710,11 +1710,11 @@ msgstr "Fichier contenant les paramètres"
 
 #: ../../app-optimizer/usage.rst:123
 msgid "The predictand DB"
-msgstr "La base de données des prédictands"
+msgstr "La base de données des prédictants"
 
 #: ../../app-optimizer/usage.rst:124
 msgid "The predictand station ID"
-msgstr "L'ID de la station du prédictand"
+msgstr "L'ID de la station du prédictant"
 
 #: ../../app-optimizer/usage.rst:125
 msgid "The predictors directory"

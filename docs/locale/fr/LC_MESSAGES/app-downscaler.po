@@ -244,8 +244,8 @@ msgid ""
 "Directory containing the predictand DB (:ref:`NetCDF file generated from the "
 "predictand data<predictand-db>`)."
 msgstr ""
-"Répertoire contenant la base de données des prédictands (:ref:`fichier NetCDF "
-"généré à partir des données des prédictands<predictand-db>`)."
+"Répertoire contenant la base de données des prédictants (:ref:`fichier NetCDF "
+"généré à partir des données des prédictants<predictand-db>`)."
 
 #: ../../app-downscaler/preferences.rst:43
 msgid "Advanced options"
@@ -443,7 +443,7 @@ msgstr "Le Downscaler produit des fichiers **NetCDF** compressés contenant :"
 
 #: ../../app-downscaler/usage.rst:24
 msgid "The values of the predictand for the target period"
-msgstr "Les valeurs du prédictand pour la période cible"
+msgstr "Les valeurs du prédictant pour la période cible"
 
 #: ../../app-downscaler/usage.rst:25
 msgid "The analog dates"
@@ -515,7 +515,7 @@ msgstr ""
 
 #: ../../app-downscaler/usage.rst:59 ../../app-downscaler/usage.rst:74
 msgid "The predictand DB"
-msgstr "La base de données des prédictands"
+msgstr "La base de données des prédictants"
 
 #: ../../app-downscaler/usage.rst:60
 msgid "The directory containing the predictors for the archive period"
@@ -558,7 +558,7 @@ msgstr "Fichier contenant les paramètres pour la descente d'échelle"
 
 #: ../../app-downscaler/usage.rst:75
 msgid "The predictand station ID"
-msgstr "L'ID de la station du prédictand"
+msgstr "L'ID de la station du prédictant"
 
 #: ../../app-downscaler/usage.rst:76
 msgid "The archive predictors directory"

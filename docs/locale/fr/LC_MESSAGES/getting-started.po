@@ -938,7 +938,7 @@ msgid ""
 "The ``<time_step>`` is time step in hours of the predictand (ex: 24), and thus "
 "of the method."
 msgstr ""
-"Le ``<time_step>`` est le pas de temps en heures du prédictand (ex : 24), et "
+"Le ``<time_step>`` est le pas de temps en heures du prédictant (ex : 24), et "
 "donc de la méthode."
 
 #: ../../getting-started/parameters-file.rst:189
@@ -993,7 +993,7 @@ msgid ""
 "(ex: days with more than x mm of precipitation)"
 msgstr ""
 "``predictand_thresholds`` : Sélection des jours sur la base d'un seuil du "
-"prédictand (ex : jours avec plus de x mm de précipitations)"
+"prédictant (ex : jours avec plus de x mm de précipitations)"
 
 #: ../../getting-started/parameters-file.rst:203
 #: ../../getting-started/parameters-file.rst:229
@@ -1009,7 +1009,7 @@ msgid ""
 "In case of a selection based on a predictand threshold "
 "(``predictand_thresholds``), the following elements must be specified:"
 msgstr ""
-"Dans le cas d'une sélection basée sur un seuil du prédictand "
+"Dans le cas d'une sélection basée sur un seuil du prédictant "
 "(``predictand_thresholds``), les éléments suivants doivent être spécifiés :"
 
 #: ../../getting-started/parameters-file.rst:207
@@ -1260,7 +1260,7 @@ msgstr "Élément 'predictand'"
 
 #: ../../getting-started/parameters-file.rst:389
 msgid "Specification of the target predictand timeseries:"
-msgstr "Spécification de la série temporelle du prédictand cible :"
+msgstr "Spécification de la série temporelle du prédictant cible :"
 
 #: ../../getting-started/parameters-file.rst:391
 msgid ""
@@ -1272,7 +1272,7 @@ msgstr ""
 
 #: ../../getting-started/predictand-db.rst:4
 msgid "Predictand DB"
-msgstr "La base de données des prédictands"
+msgstr "La base de données des prédictants"
 
 #: ../../getting-started/predictand-db.rst:6
 msgid ""
@@ -1281,7 +1281,7 @@ msgid ""
 "generation consists of extracting data from text files and combining them into a "
 "NetCDF file."
 msgstr ""
-"Les données relatives aux prédictands (par exemple, les précipitations) doivent "
+"Les données relatives aux prédictants (par exemple, les précipitations) doivent "
 "être préparées pour être utilisées dans AtmoSwing. Un outil fourni avec "
 "AtmoSwing permet de générer la \"base de données\". La génération de la base de "
 "données consiste à extraire les données des fichiers texte et à les combiner "
@@ -1306,7 +1306,7 @@ msgstr ""
 
 #: ../../getting-started/predictand-db.rst:18
 msgid "Predictand parameter:"
-msgstr "Paramètre du prédictand :"
+msgstr "Paramètre du prédictant :"
 
 #: ../../getting-started/predictand-db.rst:16
 #: ../../getting-started/predictand-db.rst:51
@@ -1384,9 +1384,9 @@ msgid ""
 "transformed data depending on the predictand variable (see section `Transformed "
 "data`_)."
 msgstr ""
-"Le fichier résultant contiendra les données brutes du prédictand, mais peut "
+"Le fichier résultant contiendra les données brutes du prédictant, mais peut "
 "également contenir des données transformées en fonction de la variable du "
-"prédictand (voir la section `Données transformées`_)."
+"prédictant (voir la section `Données transformées`_)."
 
 #: ../../getting-started/predictand-db.rst:35
 msgid "Next, a couple of paths must be provided:"
@@ -1397,7 +1397,7 @@ msgid ""
 "The predictand catalog: `a catalog (xml file) <#predictand-catalog>`_ is "
 "required to provide some metadata on the different time series."
 msgstr ""
-"Le catalogue des prédictands : `un catalogue (fichier xml) <#predictand-"
+"Le catalogue des prédictants : `un catalogue (fichier xml) <#predictand-"
 "catalog>`_ est nécessaire pour fournir des métadonnées sur les différentes "
 "séries temporelles."
 
@@ -1406,8 +1406,8 @@ msgid ""
 "The predictand data directory: the directory containing the original predictand "
 "files."
 msgstr ""
-"Le répertoire des données du prédictand : le répertoire contenant les fichiers "
-"originaux du prédictand."
+"Le répertoire des données du prédictant : le répertoire contenant les fichiers "
+"originaux du prédictant."
 
 #: ../../getting-started/predictand-db.rst:39
 msgid ""
@@ -1445,9 +1445,9 @@ msgid ""
 "calibration of the method, but the raw data is used in the Forecaster and the "
 "Downscaler."
 msgstr ""
-"Outre les données brutes du prédictand, le fichier NetCDF résultant peut "
+"Outre les données brutes du prédictant, le fichier NetCDF résultant peut "
 "également contenir des données transformées. Les options disponibles dépendent "
-"de la variable du prédictand. Il est important de noter que ces données "
+"de la variable du prédictant. Il est important de noter que ces données "
 "normalisées seront utilisées pour l'étalonnage de la méthode, mais que les "
 "données brutes sont utilisées dans le Forecaster et le Downscaler."
 
@@ -1485,7 +1485,7 @@ msgstr ""
 
 #: ../../getting-started/predictand-db.rst:65
 msgid "Predictand catalog"
-msgstr "Catalogue des prédictands"
+msgstr "Catalogue des prédictants"
 
 #: ../../getting-started/predictand-db.rst:67
 msgid ""
@@ -1493,8 +1493,8 @@ msgid ""
 "is only required to create the predictand database and is not used afterwards. "
 "It consists of an xml file such as:"
 msgstr ""
-"Le catalogue du prédictand fournit des métadonnées sur les séries temporelles du "
-"prédictand. Il n'est nécessaire que pour créer la base de données du prédictand "
+"Le catalogue du prédictant fournit des métadonnées sur les séries temporelles du "
+"prédictant. Il n'est nécessaire que pour créer la base de données du prédictant "
 "et n'est pas utilisé par la suite. Il se compose d'un fichier xml tel que :"
 
 #: ../../getting-started/predictand-db.rst:135
@@ -1633,7 +1633,7 @@ msgstr "``<end>`` : fin de la série temporelle JJ/MM/AAAA"
 
 #: ../../getting-started/predictand-db.rst:166
 msgid "Predictand file structure"
-msgstr "Structure du fichier des prédictands"
+msgstr "Structure du fichier des prédictants"
 
 #: ../../getting-started/predictand-db.rst:168
 msgid ""
@@ -1718,7 +1718,7 @@ msgstr "Exemple de type 'largeur de ligne constante'"
 #: ../../getting-started/predictand-db.rst:224
 msgid "Predictand files are here structured as constant line width."
 msgstr ""
-"Les fichiers du prédictand sont ici structurés par des lignes de largeur "
+"Les fichiers du prédictant sont ici structurés par des lignes de largeur "
 "constante."
 
 #: ../../getting-started/preprocessing.rst:4
@@ -2075,7 +2075,7 @@ msgstr "pour réduire l'échelle des données climatiques (le Downscaler),"
 
 #: ../../getting-started/using-atmoswing.rst:10
 msgid "to identify predictors for a certain predictand (the Optimizer)."
-msgstr "pour identifier les prédicteurs d'un certain prédictand (l'Optimizer)."
+msgstr "pour identifier les prédicteurs d'un certain prédictant (l'Optimizer)."
 
 #: ../../getting-started/using-atmoswing.rst:12
 msgid ""
@@ -3502,7 +3502,7 @@ msgstr ""
 
 #: ../../getting-started/versioning-migration.rst:39
 msgid "**Predictand DB**"
-msgstr "**La base de données des prédictands**"
+msgstr "**La base de données des prédictants**"
 
 #: ../../getting-started/versioning-migration.rst:41
 msgid ""
