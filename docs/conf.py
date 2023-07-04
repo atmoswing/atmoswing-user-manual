@@ -198,4 +198,4 @@ todo_include_todos = True
 # -- Options for bib extension -----------------------------------------------
 
 bibtex_bibfiles = ['refs.bib']
-bibtex_default_style = 'unsrt'
+bibtex_default_style = 'plain'

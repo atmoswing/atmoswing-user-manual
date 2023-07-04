@@ -11,11 +11,9 @@ AtmoSwing can be used for different purposes:
 
 For any use of AtmoSwing some data need to be prepared, and the method(s) must be calibrated. The following steps are usually required:
 
-1. Get a dataset for the predictor archive. It is often a :ref:`reanalysis dataset <reanalyses>`. The impact of the choice of the dataset is discussed in [Horton2018]_.
+1. Get a dataset for the predictor archive. It is often a :ref:`reanalysis dataset <reanalyses>`. The impact of the choice of the dataset is discussed in :cite:t:`Horton2018`.
 2. Get a dataset for the target situation (NWP output for operational forecasting or GCM/RCM outputs for climate downscaling)
 3. :ref:`Format the predictand data <predictand-db>`.
 4. Calibrate/optimize the method using the Optimizer.
 
 The datasets, predictor variables, number of analogy levels, spatial windows and most other parameters used for the analogue method are defined in the :ref:`parameters files <parameters-file>`.
-
-.. [Horton2018] Horton, P., & Brönnimann, S. (2018). Impact of global atmospheric reanalyses on statistical precipitation downscaling. Climate Dynamics. http://doi.org/10.1007/s00382-018-4442-6

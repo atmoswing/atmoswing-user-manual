@@ -2,4 +2,4 @@ Bibliography
 ============
 
 .. bibliography::
-    :style: unsrt
+    :style: plain

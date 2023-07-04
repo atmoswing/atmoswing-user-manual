@@ -3,7 +3,7 @@
 Reanalyses
 ==========
 
-A description of the different reanalyses and the assessment of the impact of the dataset selection are presented in [Horton2018]_. AtmoSwing can read the following reanalyses (with the corresponding ID to use):
+A description of the different reanalyses and the assessment of the impact of the dataset selection are presented in :cite:t:`Horton2018`. AtmoSwing can read the following reanalyses (with the corresponding ID to use):
 
 * NCEP/NCAR Reanalysis 1: ``NCEP_R1``
    * Use the original file names (yearly files)
@@ -47,6 +47,3 @@ A description of the different reanalyses and the assessment of the impact of th
    * Can be structured as yearly files (ex: z.1998.nc)
    * Can be structured differently, but must be isolated in a directory.
    * :ref:`See details here <generic-dataset>`
-
-
-.. [Horton2018] Horton, P., & Brönnimann, S. (2018). Impact of global atmospheric reanalyses on statistical precipitation downscaling. Climate Dynamics. http://doi.org/10.1007/s00382-018-4442-6
