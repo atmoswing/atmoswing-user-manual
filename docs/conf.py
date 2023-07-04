@@ -40,7 +40,8 @@ needs_sphinx = '1.8'
 # ones.
 extensions = [
     'sphinx.ext.todo',
-    'sphinx.ext.mathjax'
+    'sphinx.ext.mathjax',
+    'sphinxcontrib.bibtex'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -192,3 +193,9 @@ epub_exclude_files = ['search.html']
 
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = True
+
+
+# -- Options for bib extension -----------------------------------------------
+
+bibtex_bibfiles = ['refs.bib']
+bibtex_default_style = 'unsrt'

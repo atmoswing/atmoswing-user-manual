@@ -3,7 +3,7 @@
 Some analog methods
 ===================
 
-Different variants of AMs are presented here. These methods have varying degrees of complexity and comprise one or more subsequent levels of analogy with predictor variables of different kinds. The following content comes from [Horton2018]_.
+Different variants of AMs are presented here. These methods have varying degrees of complexity and comprise one or more subsequent levels of analogy with predictor variables of different kinds. The following content comes from :cite:t:`Horton2018b`.
 
 The first method developed with NCEP/NCAR Reanalysis 1 by [Bontron2004]_ is based on the analogy of synoptic circulation on the geopotential height at two pressure levels (Z1000 at +12 h and Z500 at +24 h) and is known here as 2Z.
 	
