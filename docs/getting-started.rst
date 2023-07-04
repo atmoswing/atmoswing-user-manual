@@ -19,4 +19,5 @@ This section is divided into the following topics:
    getting-started/analogy-criteria
    getting-started/versioning-migration
    getting-started/release-notes
+   bibliography
    
