@@ -36,8 +36,6 @@ The main interface of the Downscaler is as follows.
 .. image:: img/frame-downscaler.png
    :align: center
 
-.. TODO: Replace the figure with a new screenshot (typo already corrected in GUI but not in figure)
-
 The toolbar allows the following actions:
 
 - |icon_run| Start the calculations.
