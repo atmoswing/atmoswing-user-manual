@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AtmoSwing 2.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-25 14:57+0200\n"
-"PO-Revision-Date: 2023-07-04 11:56+0200\n"
+"POT-Creation-Date: 2023-07-04 15:36+0200\n"
+"PO-Revision-Date: 2023-07-04 16:16+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -42,24 +42,24 @@ msgstr "Quelques méthodes des analogues"
 
 #: ../../getting-started/analog-methods.rst:6
 msgid ""
-"Different variants of AMs are presented here. These methods have varying degrees "
-"of complexity and comprise one or more subsequent levels of analogy with "
-"predictor variables of different kinds. The following content comes from "
-"[Horton2018]_."
+"Different variants of AMs are presented here. These methods have varying "
+"degrees of complexity and comprise one or more subsequent levels of analogy "
+"with predictor variables of different kinds. The following content comes from :"
+"cite:t:`Horton2018b`."
 msgstr ""
 "Différentes variantes de la méthode des analogues sont présentées ici. Ces "
 "méthodes ont des degrés de complexité variables et comprennent un ou plusieurs "
-"niveaux d'analogie avec des variables de différentes natures. Le contenu suivant "
-"provient de [Horton2018]_."
+"niveaux d'analogie avec des variables de différentes natures. Le contenu "
+"suivant provient de :cite:t:`Horton2018b`."
 
 #: ../../getting-started/analog-methods.rst:8
 msgid ""
-"The first method developed with NCEP/NCAR Reanalysis 1 by [Bontron2004]_ is "
-"based on the analogy of synoptic circulation on the geopotential height at two "
-"pressure levels (Z1000 at +12 h and Z500 at +24 h) and is known here as 2Z."
+"The first method developed with NCEP/NCAR Reanalysis 1 by :cite:t:`Bontron2004` "
+"is based on the analogy of synoptic circulation on the geopotential height at "
+"two pressure levels (Z1000 at +12 h and Z500 at +24 h) and is known here as 2Z."
 msgstr ""
-"La première méthode développée avec les reanalyses NCEP/NCAR 1 par "
-"[Bontron2004]_ est basée sur l'analogie de la circulation synoptique sur la "
+"La première méthode développée avec les reanalyses NCEP/NCAR 1 par :cite:t:"
+"`Bontron2004` est basée sur l'analogie de la circulation synoptique sur la "
 "hauteur du géopotentiel à deux niveaux de pression (Z1000 à +12 h et Z500 à +24 "
 "h) et est ici nommée 2Z."
 
@@ -71,29 +71,42 @@ msgid ""
 "preselection on a calendar basis in Table below). Then, the analogy of the "
 "atmospheric circulation of a target date with every day from the preselection "
 "set (excluding +-30 days around the target date and an eventual validation "
-"period) is assessed by processing the S1 criterion ([Teweles1954]_, "
-"[Brown2012]_), which is a comparison of gradients, over a defined spatial window "
+"period) is assessed by processing the S1 criterion :cite:p:`Teweles1954,"
+"Brown2012`, which is a comparison of gradients, over a defined spatial window "
 "(the domain on which the predictors are compared). S1 is processed on each "
 "level, and the average is then considered, here with the same weights."
 msgstr ""
 "La méthode 2Z comprend les étapes suivantes : tout d'abord, pour tenir compte "
 "des effets saisonniers, des dates candidates sont extraites de la période "
-"d'archive dans les quatre mois centrés sur la date cible, pour chaque année de "
-"l'archive (PC : présélection sur une base calendaire dans le tableau ci-"
-"dessous). Ensuite, l'analogie de la circulation atmosphérique d'une date cible "
-"avec chaque jour de la présélection (excluant +-30 jours autour de la date cible "
-"et une éventuelle période de validation) est évaluée en calculant le critère S1 "
-"([Teweles1954]_, [Brown2012]_), qui est une comparaison de gradients, sur une "
-"fenêtre spatiale définie (le domaine sur lequel les prédicteurs sont comparés). "
-"Le critère S1 est calculé pour chaque niveau, puis moyenné."
+"d'archive dans les quatre mois centrés autour de la date cible, pour chaque "
+"année de l'archive (PC : présélection sur une base calendaire dans le tableau "
+"ci-dessous). Ensuite, l'analogie de la circulation atmosphérique d'une date "
+"cible avec chaque jour de l'ensemble de présélection (excluant +-30 jours "
+"autour de la date cible et une éventuelle période de validation) est évaluée en "
+"calculant le critère S1 :cite:p:`Teweles1954,Brown2012`, qui est une "
+"comparaison de gradients, sur une fenêtre spatiale définie (le domaine sur "
+"lequel les prédicteurs sont comparés). Le critère S1 est calculé pour chaque "
+"niveau, puis moyenné."
+
+#: ../../getting-started/analog-methods.rst:12
+msgid ""
+"S1=100 \\frac {\\displaystyle \\sum_{i} \\vert \\Delta\\hat{z}_{i} - \\Delta "
+"z_{i} \\vert} {\\displaystyle \\sum_{i} max\\left\\lbrace \\vert \\Delta\\hat{z}"
+"_{i} \\vert , \\vert \\Delta z_{i} \\vert \\right\\rbrace }\n"
+"\n"
+msgstr ""
+"S1=100 \\frac {\\displaystyle \\sum_{i} \\vert \\Delta\\hat{z}_{i} - \\Delta "
+"z_{i} \\vert} {\\displaystyle \\sum_{i} max\\left\\lbrace \\vert \\Delta\\hat{z}"
+"_{i} \\vert , \\vert \\Delta z_{i} \\vert \\right\\rbrace }\n"
+"\n"
 
 #: ../../getting-started/analog-methods.rst:15
 msgid ""
 "where :math:`\\Delta \\hat{z}_{i}` is the difference in geopotential height "
 "between the i-th pair of adjacent points of gridded data describing the target "
 "situation, and :math:`\\Delta z_{i}` is the corresponding observed geopotential "
-"height difference in the candidate situation. The smaller the values S1 are, the "
-"more similar the pressure fields."
+"height difference in the candidate situation. The smaller the values S1 are, "
+"the more similar the pressure fields."
 msgstr ""
 "où :math:`\\Delta \\hat{z}_{i}` est la différence de hauteur géopotentielle "
 "entre la i-ième paire de points adjacents de données maillées décrivant la "
@@ -117,29 +130,30 @@ msgstr ""
 #: ../../getting-started/analog-methods.rst:19
 msgid ""
 "Another method relying only on atmospheric circulation is based on the "
-"geopotential height on four combinations of pressure levels and temporal windows "
-"(4Z, Table below) at levels that were automatically selected by genetic "
-"algorithms for the upper Rhone catchment in Switzerland [Horton2017b]_. The 4Z "
-"method was shown to outperform 2Z by exploiting more information from the "
-"geopotential height and by taking advantage of additional degrees of freedom, "
-"such as different spatial windows between the pressure levels and the "
-"introduction of weighting between them. However, the 4Z method presented here is "
-"a simplification of the results from [Horton2017b]_, and only the selection of "
-"the optimal pressure levels and temporal windows are shown (Z1000 at +06 h and "
-"+30 h, Z700 at +24 h, and Z500 at +12 h)."
+"geopotential height on four combinations of pressure levels and temporal "
+"windows (4Z, Table below) at levels that were automatically selected by genetic "
+"algorithms for the upper Rhone catchment in Switzerland :cite:p:`Horton2017b`. "
+"The 4Z method was shown to outperform 2Z by exploiting more information from "
+"the geopotential height and by taking advantage of additional degrees of "
+"freedom, such as different spatial windows between the pressure levels and the "
+"introduction of weighting between them. However, the 4Z method presented here "
+"is a simplification of the results from :cite:t:`Horton2017b`, and only the "
+"selection of the optimal pressure levels and temporal windows are shown (Z1000 "
+"at +06 h and +30 h, Z700 at +24 h, and Z500 at +12 h)."
 msgstr ""
-"Une autre méthode reposant uniquement sur la circulation atmosphérique est basée "
-"sur la hauteur géopotentielle sur quatre combinaisons de niveaux de pression et "
-"de fenêtres temporelles (4Z, tableau ci-dessous) à des niveaux qui ont été "
-"automatiquement sélectionnés par des algorithmes génétiques pour le bassin "
-"versant du Rhône supérieur en Suisse [Horton2017b]_. La méthode 4Z s'est avérée "
-"plus performante que la méthode 2Z en exploitant davantage d'informations "
-"provenant de la hauteur du champ géopotentielle et en tirant parti de degrés de "
-"liberté supplémentaires, tels que différentes fenêtres spatiales entre les "
-"niveaux de pression et l'introduction d'une pondération entre eux. Cependant, la "
-"méthode 4Z présentée ici est une simplification des résultats de [Horton2017b]_, "
-"et seule la sélection des niveaux de pression et des fenêtres temporelles "
-"optimales est présentée (Z1000 à +06 h et +30 h, Z700 à +24 h, et Z500 à +12 h)."
+"Une autre méthode s'appuyant uniquement sur la circulation atmosphérique est "
+"basée sur la hauteur géopotentielle sur quatre combinaisons de niveaux de "
+"pression et de fenêtres temporelles (4Z, tableau ci-dessous) à des niveaux qui "
+"ont été automatiquement sélectionnés par des algorithmes génétiques pour le "
+"bassin versant du Rhône supérieur en Suisse :cite:p:`Horton2017b`. La méthode "
+"4Z s'est avérée plus performante que la méthode 2Z en exploitant davantage "
+"d'informations provenant de la hauteur géopotentielle et en tirant parti de "
+"degrés de liberté supplémentaires, tels que différentes fenêtres spatiales "
+"entre les niveaux de pression et l'introduction d'une pondération entre eux. "
+"Cependant, la méthode 4Z présentée ici est une simplification des résultats de :"
+"cite:t:`Horton2017b`, et seule la sélection des niveaux de pression optimaux et "
+"des fenêtres temporelles est présentée (Z1000 à +06 h et +30 h, Z700 à +24 h, "
+"et Z500 à +12 h)."
 
 #: ../../getting-started/analog-methods.rst:21
 msgid ""
@@ -155,101 +169,102 @@ msgstr ""
 msgid ""
 "The next method adds a second level of analogy with moisture variables (method "
 "2Z-2MI, Table below), using a moisture index (MI), which is the product of the "
-"total precipitable water (TPW) and the relative humidity at 850 hPa (RH850) "
-"[Bontron2004]_. When adding a second level of analogy, N2 dates are subsampled "
-"from the N1 analogs of the atmospheric circulation, to end up with a smaller "
-"number of analog situations. When this second level of analogy is added, a "
-"higher number of analogs N1 is kept at the first level."
+"total precipitable water (TPW) and the relative humidity at 850 hPa (RH850) :"
+"cite:p:`Bontron2004`. When adding a second level of analogy, N2 dates are "
+"subsampled from the N1 analogs of the atmospheric circulation, to end up with a "
+"smaller number of analog situations. When this second level of analogy is "
+"added, a higher number of analogs N1 is kept at the first level."
 msgstr ""
 "La méthode suivante ajoute un deuxième niveau d'analogie avec les variables "
 "d'humidité (méthode 2Z-2MI, tableau ci-dessous), en utilisant un indice "
 "d'humidité (MI), qui est le produit de l'eau précipitable totale (TPW) et de "
-"l'humidité relative à 850 hPa (RH850) [Bontron2004]_. Lors de l'ajout d'un "
-"deuxième niveau d'analogie, les dates N2 sont sous-échantillonnées à partir des "
-"analogues N1 de la circulation atmosphérique, afin d'obtenir un nombre réduit de "
-"situations analogues. Lorsque ce deuxième niveau d'analogie est ajouté, un plus "
-"grand nombre d'analogues N1 est sélectionné lors du premier niveau."
+"l'humidité relative à 850 hPa (RH850) :cite:p:`Bontron2004`. Lors de l'ajout "
+"d'un deuxième niveau d'analogie, les dates N2 sont sous-échantillonnées à "
+"partir des analogues N1 de la circulation atmosphérique, afin d'obtenir un plus "
+"petit nombre de situations analogiques. Lorsque ce deuxième niveau d'analogie "
+"est ajouté, un plus grand nombre d'analogues N1 est conservé au premier niveau."
 
 #: ../../getting-started/analog-methods.rst:25
 msgid ""
 "Similar to the 4Z method, the 4Z-2MI is a simplification of the methods "
-"optimized by genetic algorithms in [Horton2017b]_. It consists of a first level "
-"of analogy on the geopotential height at four pressure levels (Z1000 at +30 h, "
-"Z850 at +12 h, Z700 at +24 h, and Z400 at +12 h), different from 4Z, followed by "
-"the moisture index (MI) at two pressure levels (MI700 at +24 h and MI600 at +12 "
-"h)."
+"optimized by genetic algorithms in :cite:t:`Horton2017b`. It consists of a "
+"first level of analogy on the geopotential height at four pressure levels "
+"(Z1000 at +30 h, Z850 at +12 h, Z700 at +24 h, and Z400 at +12 h), different "
+"from 4Z, followed by the moisture index (MI) at two pressure levels (MI700 at "
+"+24 h and MI600 at +12 h)."
 msgstr ""
 "De manière similaire à la méthode 4Z, la méthode 4Z-2MI est une simplification "
-"des méthodes optimisées par algorithmes génétiques de [Horton2017b]_. Elle "
-"consiste en un premier niveau d'analogie sur la hauteur du géopotentiel à quatre "
-"niveaux de pression (Z1000 à +30 h, Z850 à +12 h, Z700 à +24 h et Z400 à +12 h), "
-"différents de 4Z, suivi de l'indice d'humidité (MI) à deux niveaux de pression "
-"(MI700 à +24 h et MI600 à +12 h)."
+"des méthodes optimisées par algorithmes génétiques de :cite:t:`Horton2017b`. "
+"Elle consiste en un premier niveau d'analogie sur la hauteur du géopotentiel à "
+"quatre niveaux de pression (Z1000 à +30 h, Z850 à +12 h, Z700 à +24 h et Z400 à "
+"+12 h), différents de 4Z, suivi de l'indice d'humidité (MI) à deux niveaux de "
+"pression (MI700 à +24 h et MI600 à +12 h)."
 
 #: ../../getting-started/analog-methods.rst:27
 msgid ""
-"To constrain the seasonal effect, [BenDaoud2016]_ replaced the calendar "
+"To constrain the seasonal effect, :cite:t:`BenDaoud2016` replaced the calendar "
 "preselection (+- 60 days around the target date) by a preselection based on "
 "similarity of air temperature (T925 at +36 h and T600 at +12 h, at the nearest "
 "grid point). It allows a more dynamic screening of similar situations in terms "
 "of air masses as the seasonal signal is also present in the temperature data. "
-"The undesired mixing of spring and autumn situations is discussed in "
-"[Caillouet2016]_. The number of preselected dates (N0) is equivalent to the "
+"The undesired mixing of spring and autumn situations is discussed in :cite:t:"
+"`Caillouet2016`. The number of preselected dates (N0) is equivalent to the "
 "number of days selected with the calendar approach and thus depends on the "
 "archive size. In this method, named PT-2Z-4MI, the analogy of the atmospheric "
 "circulation is the same as in the 2Z method, but the moisture analogy is "
 "different (MI925 and MI700 at +12 h and 24 h)."
 msgstr ""
-"Pour contraindre l'effet saisonnier, [BenDaoud2016]_ a remplacé la présélection "
-"calendaire (+- 60 jours autour de la date cible) par une présélection basée sur "
-"la similarité des températures de l'air (T925 à +36 h et T600 à +12 h, au point "
-"de grille le plus proche). Cela permet une sélection plus dynamique de "
-"situations similaires en termes de masses d'air, car le signal saisonnier est "
-"également présent dans les données de température. Le mélange indésirable de "
-"situations printanières et automnales est discuté dans [Caillouet2016]_. Le "
-"nombre de dates présélectionnées (N0) est équivalent au nombre de jours "
-"sélectionnés avec l'approche calendaire et dépend donc de la taille des "
-"archives. Dans cette méthode, nommée PT-2Z-4MI, l'analogie de la circulation "
-"atmosphérique est la même que dans la méthode 2Z, mais l'analogie de l'humidité "
-"est différente (MI925 et MI700 à +12 h et +24 h)."
+"Pour contraindre l'effet saisonnier, :cite:t:`BenDaoud2016` a remplacé la "
+"présélection calendaire (+- 60 jours autour de la date cible) par une "
+"présélection basée sur la similarité des températures de l'air (T925 à +36 h et "
+"T600 à +12 h, au point de grille le plus proche). Cela permet une sélection "
+"plus dynamique de situations similaires en termes de masses d'air, car le "
+"signal saisonnier est également présent dans les données de température. Le "
+"mélange indésirable de situations printanières et automnales est discuté dans :"
+"cite:t:`Caillouet2016`. Le nombre de dates présélectionnées (N0) est équivalent "
+"au nombre de jours sélectionnés avec l'approche calendaire et dépend donc de la "
+"taille des archives. Dans cette méthode, nommée PT-2Z-4MI, l'analogie de la "
+"circulation atmosphérique est la même que dans la méthode 2Z, mais l'analogie "
+"de l'humidité est différente (MI925 et MI700 à +12 h et +24 h)."
 
 #: ../../getting-started/analog-methods.rst:29
 msgid ""
-"Subsequently, [BenDaoud2016]_ introduced an additional level of analogy between "
-"the circulation and the moisture analogy (PT-2Z-4W-4MI, Table below), based on "
-"the vertical velocity at 850 hPa (W850). This AM, named \"SANDHY\" for Stepwise "
-"Analogue Downscaling method for Hydrology ([BenDaoud2016]_ [Caillouet2016]_), "
-"was primarily developed for large and relatively flat/lowland catchments in "
-"France (Saône, Seine). It has also been applied to the whole France territory by "
-"[Radanovics2013]_ with ERA-40 and by [Caillouet2016]_ with 20CR-V2b."
+"Subsequently, :cite:t:`BenDaoud2016` introduced an additional level of analogy "
+"between the circulation and the moisture analogy (PT-2Z-4W-4MI, Table below), "
+"based on the vertical velocity at 850 hPa (W850). This AM, named \"SANDHY\" for "
+"Stepwise Analogue Downscaling method for Hydrology :cite:p:`BenDaoud2016,"
+"Caillouet2016`, was primarily developed for large and relatively flat/lowland "
+"catchments in France (Saône, Seine). It has also been applied to the whole "
+"France territory by :cite:t:`Radanovics2013` with ERA-40 and by :cite:t:"
+"`Caillouet2016` with 20CR-V2b."
 msgstr ""
-"Par la suite, [BenDaoud2016]_ a introduit un niveau supplémentaire d'analogie "
-"entre la circulation et l'analogie de l'humidité (PT-2Z-4W-4MI, tableau ci-"
-"dessous), basé sur la vitesse verticale à 850 hPa (W850). Cette MA, appelée "
-"\"SANDHY\" pour Stepwise Analogue Downscaling method for Hydrology "
-"([BenDaoud2016]_ [Caillouet2016]_), a été principalement développée pour des "
+"Par la suite, :cite:t:`BenDaoud2016` a introduit un niveau supplémentaire "
+"d'analogie entre la circulation et l'analogie de l'humidité (PT-2Z-4W-4MI, "
+"tableau ci-dessous), basé sur la vitesse verticale à 850 hPa (W850). Cette MA, "
+"appelée \"SANDHY\" pour Stepwise Analogue Downscaling method for Hydrology :"
+"cite:p:`BenDaoud2016,Caillouet2016`, a été principalement développée pour des "
 "bassins de grande taille et relativement plats en France (Saône, Seine). Elle a "
-"également été appliquée à l'ensemble du territoire français par "
-"[Radanovics2013]_ avec ERA-40 et par [Caillouet2016]_ avec 20CR-V2b."
+"également été appliquée à l'ensemble du territoire français par :cite:t:"
+"`Radanovics2013` avec ERA-40 et par :cite:t:`Caillouet2016` avec 20CR-V2b."
 
 #: ../../getting-started/analog-methods.rst:31
 msgid ""
-"Some analog methods listed by increasing complexity. P0 is the preselection (PC: "
-"on a calendar basis, that is, +-60 days around the target date), L1, L2, and L3 "
-"are the subsequent levels of analogy. The meteorological variables are: SLP -- "
-"mean sea level pressure, Z -- geopotential height, T -- air temperature, W -- "
-"vertical velocity, MI -- moisture index, which is the product of the relative "
-"humidity at the given pressure level and the total water column. The analogy "
-"criterion is S1 for SLP and Z and RMSE for the other variables."
+"Some analog methods listed by increasing complexity. P0 is the preselection "
+"(PC: on a calendar basis, that is, +-60 days around the target date), L1, L2, "
+"and L3 are the subsequent levels of analogy. The meteorological variables are: "
+"SLP -- mean sea level pressure, Z -- geopotential height, T -- air temperature, "
+"W -- vertical velocity, MI -- moisture index, which is the product of the "
+"relative humidity at the given pressure level and the total water column. The "
+"analogy criterion is S1 for SLP and Z and RMSE for the other variables."
 msgstr ""
 "Quelques méthodes des analogues classées par complexité croissante. P0 est la "
-"présélection (PC : sur une base calendaire, c'est-à-dire +-60 jours autour de la "
-"date cible), L1, L2 et L3 sont les niveaux d'analogie consécutifs. Les variables "
-"météorologiques sont les suivantes : SLP -- pression moyenne au niveau de la "
-"mer, Z -- hauteur géopotentielle, T -- température de l'air, W -- vitesse "
-"verticale, MI -- indice d'humidité, qui est le produit de l'humidité relative au "
-"niveau de pression donné et de la colonne d'eau totale. Le critère d'analogie "
-"est S1 pour SLP et Z, et RMSE pour les autres variables."
+"présélection (PC : sur une base calendaire, c'est-à-dire +-60 jours autour de "
+"la date cible), L1, L2 et L3 sont les niveaux d'analogie consécutifs. Les "
+"variables météorologiques sont les suivantes : SLP -- pression moyenne au "
+"niveau de la mer, Z -- hauteur géopotentielle, T -- température de l'air, W -- "
+"vitesse verticale, MI -- indice d'humidité, qui est le produit de l'humidité "
+"relative au niveau de pression donné et de la colonne d'eau totale. Le critère "
+"d'analogie est S1 pour SLP et Z, et RMSE pour les autres variables."
 
 #: ../../getting-started/analog-methods.rst:35
 msgid "Method"
@@ -367,98 +382,6 @@ msgstr "PT-2Z-4W-4MI"
 msgid "W850\\@06-24h"
 msgstr "W850\\@06-24h"
 
-#: ../../getting-started/analog-methods.rst:61
-#: ../../getting-started/reanalyses.rst:52
-#: ../../getting-started/using-atmoswing.rst:21
-msgid ""
-"Horton, P., & Brönnimann, S. (2018). Impact of global atmospheric reanalyses on "
-"statistical precipitation downscaling. Climate Dynamics. http://doi.org/10.1007/"
-"s00382-018-4442-6"
-msgstr ""
-"Horton, P., & Brönnimann, S. (2018). Impact of global atmospheric reanalyses on "
-"statistical precipitation downscaling. Climate Dynamics. http://doi.org/10.1007/"
-"s00382-018-4442-6"
-
-#: ../../getting-started/analog-methods.rst:62
-#: ../../getting-started/predictand-db.rst:266
-msgid ""
-"Bontron, G. (2004). Prévision quantitative des précipitations: Adaptation "
-"probabiliste par recherche d’analogues. Utilisation des Réanalyses NCEP/NCAR et "
-"application aux précipitations du Sud-Est de la France. Institut National "
-"Polytechnique de Grenoble."
-msgstr ""
-"Bontron, G. (2004). Prévision quantitative des précipitations: Adaptation "
-"probabiliste par recherche d’analogues. Utilisation des Réanalyses NCEP/NCAR et "
-"application aux précipitations du Sud-Est de la France. Institut National "
-"Polytechnique de Grenoble."
-
-#: ../../getting-started/analog-methods.rst:63
-#: ../../getting-started/predictand-db.rst:265
-msgid ""
-"Horton, P., Obled, C., & Jaboyedoff, M. (2017). The analogue method for "
-"precipitation prediction: finding better analogue situations at a sub-daily time "
-"step. Hydrology and Earth System Sciences, 21, 3307–3323. http://doi.org/10.5194/"
-"hess-21-3307-2017"
-msgstr ""
-"Horton, P., Obled, C., & Jaboyedoff, M. (2017). The analogue method for "
-"precipitation prediction: finding better analogue situations at a sub-daily time "
-"step. Hydrology and Earth System Sciences, 21, 3307–3323. http://doi.org/10.5194/"
-"hess-21-3307-2017"
-
-#: ../../getting-started/analog-methods.rst:64
-msgid ""
-"Ben Daoud, A., Sauquet, E., Bontron, G., Obled, C., & Lang, M. (2016). Daily "
-"quantitative precipitation forecasts based on the analogue method: improvements "
-"and application to a French large river basin. Atmospheric Research, 169, 147–"
-"159. https://doi.org/10.1016/j.atmosres.2015.09.015"
-msgstr ""
-"Ben Daoud, A., Sauquet, E., Bontron, G., Obled, C., & Lang, M. (2016). Daily "
-"quantitative precipitation forecasts based on the analogue method: improvements "
-"and application to a French large river basin. Atmospheric Research, 169, 147–"
-"159. https://doi.org/10.1016/j.atmosres.2015.09.015"
-
-#: ../../getting-started/analog-methods.rst:65
-msgid ""
-"Teweles, S., & Wobus, H. B. (1954). Verification of prognostic charts. Bulletin "
-"of the American Meteorological Society, 35, 455–463."
-msgstr ""
-"Teweles, S., & Wobus, H. B. (1954). Verification of prognostic charts. Bulletin "
-"of the American Meteorological Society, 35, 455–463."
-
-#: ../../getting-started/analog-methods.rst:66
-msgid ""
-"Brown, B. G., Gilleland, E., & Ebert, E. E. (2012). Forecasts of Spatial Fields. "
-"In I. T. Jolliffe & D. B. Stephenson (Eds.), Forecast Verification (pp. 95–117). "
-"Wiley. http://doi.org/10.1002/9781119960003.ch6"
-msgstr ""
-"Brown, B. G., Gilleland, E., & Ebert, E. E. (2012). Forecasts of Spatial Fields. "
-"In I. T. Jolliffe & D. B. Stephenson (Eds.), Forecast Verification (pp. 95–117). "
-"Wiley. http://doi.org/10.1002/9781119960003.ch6"
-
-#: ../../getting-started/analog-methods.rst:67
-msgid ""
-"Caillouet, L., Vidal, J.-P., Sauquet, E., & Graff, B. (2016). Probabilistic "
-"precipitation and temperature downscaling of the Twentieth Century Reanalysis "
-"over France. Climate of the Past, 12(3), 635–662. http://doi.org/10.5194/"
-"cp-12-635-2016"
-msgstr ""
-"Caillouet, L., Vidal, J.-P., Sauquet, E., & Graff, B. (2016). Probabilistic "
-"precipitation and temperature downscaling of the Twentieth Century Reanalysis "
-"over France. Climate of the Past, 12(3), 635–662. http://doi.org/10.5194/"
-"cp-12-635-2016"
-
-#: ../../getting-started/analog-methods.rst:68
-msgid ""
-"Radanovics, S., Vidal, J.-P., Sauquet, E., Ben Daoud, A., & Bontron, G. (2013). "
-"Optimising predictor domains for spatially coherent precipitation downscaling. "
-"Hydrology and Earth System Sciences, 17(10), 4189–4208. http://doi.org/10.5194/"
-"hess-17-4189-2013"
-msgstr ""
-"Radanovics, S., Vidal, J.-P., Sauquet, E., Ben Daoud, A., & Bontron, G. (2013). "
-"Optimising predictor domains for spatially coherent precipitation downscaling. "
-"Hydrology and Earth System Sciences, 17(10), 4189–4208. http://doi.org/10.5194/"
-"hess-17-4189-2013"
-
 #: ../../getting-started/analogy-criteria.rst:4
 msgid "Analogy criteria"
 msgstr "Critères d'analogie"
@@ -544,8 +467,8 @@ msgid ""
 "AtmoSwing Forecaster can read the following NWP outputs (with the corresponding "
 "ID to use):"
 msgstr ""
-"AtmoSwing Forecaster peut lire les sorties de modèles numériques suivantes (avec "
-"l'ID correspondant à utiliser) :"
+"AtmoSwing Forecaster peut lire les sorties de modèles numériques suivantes "
+"(avec l'ID correspondant à utiliser) :"
 
 #: ../../getting-started/data-forecaster.rst:8
 msgid ""
@@ -577,8 +500,8 @@ msgstr "Indiquer le domaine à télécharger"
 #: ../../getting-started/data-forecaster.rst:18
 msgid ""
 "When choosing GFS, the predictors are downloaded for the European domain by "
-"default: longitude from -32° to 42° and latitude from 20° to 72°. The domain can "
-"be changed in the AtmoSwingForecaster.ini file."
+"default: longitude from -32° to 42° and latitude from 20° to 72°. The domain "
+"can be changed in the AtmoSwingForecaster.ini file."
 msgstr ""
 "Lorsque GFS est utilisé, les prédicteurs sont téléchargés par défaut pour le "
 "domaine européen : longitude de -32° à 42° et latitude de 20° à 72°. Le domaine "
@@ -635,7 +558,8 @@ msgstr ""
 
 #: ../../getting-started/generic-dataset.rst:11
 msgid ""
-"The files can be organized as follows (AtmoSwing will look for possible matches):"
+"The files can be organized as follows (AtmoSwing will look for possible "
+"matches):"
 msgstr ""
 "Les fichiers peuvent être organisés comme suit (AtmoSwing recherchera les "
 "correspondances possibles) :"
@@ -703,11 +627,11 @@ msgstr "Générer des jeux de données génériques"
 
 #: ../../getting-started/generic-dataset.rst:32
 msgid ""
-"The `AtmoSwing Python toolbox repository <https://github.com/atmoswing/atmoswing-"
-"python-toolbox>`_ contains scripts to convert some reanalyses to the generic "
-"format (for example `scripts/createGenericFromERAI.py <https://github.com/"
-"atmoswing/atmoswing-python-toolbox/blob/main/examples/create_generic_from_ERAI."
-"py>`_)."
+"The `AtmoSwing Python toolbox repository <https://github.com/atmoswing/"
+"atmoswing-python-toolbox>`_ contains scripts to convert some reanalyses to the "
+"generic format (for example `scripts/createGenericFromERAI.py <https://github."
+"com/atmoswing/atmoswing-python-toolbox/blob/main/examples/"
+"create_generic_from_ERAI.py>`_)."
 msgstr ""
 "Le dépôt de `AtmoSwing Python toolbox <https://github.com/atmoswing/atmoswing-"
 "python-toolbox>`_ contient des scripts pour convertir certaines réanalyses au "
@@ -757,8 +681,9 @@ msgid ""
 "Executables can be downloaded on `AtmoSwing release page <https://github.com/"
 "atmoswing/atmoswing/releases>`_. There are two versions available:"
 msgstr ""
-"Les exécutables peuvent être téléchargés sur la page `AtmoSwing release <https://"
-"github.com/atmoswing/atmoswing/releases>`_. Deux versions sont disponibles :"
+"Les exécutables peuvent être téléchargés sur la page `AtmoSwing release "
+"<https://github.com/atmoswing/atmoswing/releases>`_. Deux versions sont "
+"disponibles :"
 
 #: ../../getting-started/installation.rst:8
 msgid ""
@@ -810,18 +735,18 @@ msgstr "Fichier de paramètres"
 #: ../../getting-started/parameters-file.rst:6
 msgid ""
 "The parameters files are essential elements in AtmoSwing as they define the "
-"structure of the analog method to use. It is where one defines the datasets, the "
-"predictor variables, the number of analogy levels, the spatial windows, etc...  "
-"Some elements vary between the Forecaster, the Optimizer, and the Downscaler, "
-"and thus the target module must be specified in the root tag (ex: ``<atmoswing "
-"version=\"1.0\" target=\"optimizer\">``)."
+"structure of the analog method to use. It is where one defines the datasets, "
+"the predictor variables, the number of analogy levels, the spatial windows, "
+"etc...  Some elements vary between the Forecaster, the Optimizer, and the "
+"Downscaler, and thus the target module must be specified in the root tag (ex: "
+"``<atmoswing version=\"1.0\" target=\"optimizer\">``)."
 msgstr ""
 "Les fichiers de paramètres sont des éléments essentiels d'AtmoSwing car ils "
 "définissent la structure de la méthode des analogues à utiliser. C'est là que "
 "l'on définit les jeux de données, les variables prédictives, le nombre de "
-"niveaux d'analogie, les fenêtres spatiales, etc. Certains éléments varient entre "
-"le Forecaster, l'Optimizer, et le Downscaler, et donc le module cible doit être "
-"spécifié dans la balise racine (ex : ``<atmoswing version=\"1.0\" "
+"niveaux d'analogie, les fenêtres spatiales, etc. Certains éléments varient "
+"entre le Forecaster, l'Optimizer, et le Downscaler, et donc le module cible "
+"doit être spécifié dans la balise racine (ex : ``<atmoswing version=\"1.0\" "
 "target=\"optimizer\">``)."
 
 #: ../../getting-started/parameters-file.rst:8
@@ -843,8 +768,8 @@ msgid ""
 "The content of ``<description>`` is mainly relevant for the Forecaster, where "
 "results are aggregated by methods for different regions."
 msgstr ""
-"Le contenu de ``<description>`` est principalement pertinent pour le Forecaster, "
-"où les résultats sont agrégés par méthodes pour différentes régions."
+"Le contenu de ``<description>`` est principalement pertinent pour le "
+"Forecaster, où les résultats sont agrégés par méthodes pour différentes régions."
 
 #: ../../getting-started/parameters-file.rst:145
 msgid "``<method_id>``: An ID given to the method (ex: 2Z)"
@@ -856,20 +781,20 @@ msgstr "``<method_id_display>`` : Le nom de la méthode (ex : Classic circulatio
 
 #: ../../getting-started/parameters-file.rst:147
 msgid ""
-"``<specific_tag>``: A tag to identify the specific settings. This is usually the "
-"name of the region for which the method was calibrated."
+"``<specific_tag>``: A tag to identify the specific settings. This is usually "
+"the name of the region for which the method was calibrated."
 msgstr ""
 "``<specific_tag>`` : Une étiquette permettant d'identifier les paramètres "
-"spécifiques. Il s'agit généralement du nom de la région pour laquelle la méthode "
-"a été calibrée."
+"spécifiques. Il s'agit généralement du nom de la région pour laquelle la "
+"méthode a été calibrée."
 
 #: ../../getting-started/parameters-file.rst:148
 msgid ""
 "``<specific_tag_display>``: A more descriptive text for the provided "
 "``<specific_tag>`` above."
 msgstr ""
-"``<specific_tag_display>`` : Un texte plus descriptif pour le ``<specific_tag>`` "
-"fourni ci-dessus."
+"``<specific_tag_display>`` : Un texte plus descriptif pour le "
+"``<specific_tag>`` fourni ci-dessus."
 
 #: ../../getting-started/parameters-file.rst:149
 msgid "``<description>``: A possible additionnal description."
@@ -903,8 +828,9 @@ msgid ""
 "The content of ``<archive_period>`` defines the archive period where the analog "
 "situations will be extracted. Two options are possible:"
 msgstr ""
-"Le contenu de ``<archive_period>`` définit la période de l'archive pour laquelle "
-"les situations analogues seront extraites. Deux options sont possibles :"
+"Le contenu de ``<archive_period>`` définit la période de l'archive pour "
+"laquelle les situations analogues seront extraites. Deux options sont "
+"possibles :"
 
 #: ../../getting-started/parameters-file.rst:173
 msgid "Providing the exact dates:"
@@ -1036,16 +962,16 @@ msgstr "Élément 'time_array_analogs'"
 #: ../../getting-started/parameters-file.rst:215
 msgid ""
 "The content of ``<time_array_analogs>`` defines the temporal properties of the "
-"analog selection. It is usually defined as a days interval (four months centered "
-"around the target date) using +-60 days around the target date. When working in "
-"a perfect prognosis framework, 30 days around the target date are excluded for "
+"analog selection. It is usually defined as an interval of +-60 days around the "
+"target date (four months centered around the target date). When working in a "
+"perfect prognosis framework, 30 days around the target date are excluded for "
 "the same year as the target date."
 msgstr ""
 "Le contenu de ``<time_array_analogs>`` définit les propriétés temporelles de la "
 "sélection des analogues. Il est généralement défini comme un intervalle de +-60 "
 "jours autour de la date cible (quatre mois centrés autour de la date cible). En "
-"calibration, 30 jours autour de la date cible sont exclus pour la même année que "
-"la date cible."
+"calibration, 30 jours autour de la date cible sont exclus pour la même année "
+"que la date cible."
 
 #: ../../getting-started/parameters-file.rst:218
 msgid ""
@@ -1053,7 +979,8 @@ msgid ""
 "year when using ``days_interval``. Usually: 60"
 msgstr ""
 "``<interval_days>`` : Nombre de jours à sélectionner autour de la date cible "
-"pour chaque année lors de l'utilisation de ``days_interval``. Habituellement : 60"
+"pour chaque année lors de l'utilisation de ``days_interval``. Habituellement : "
+"60"
 
 #: ../../getting-started/parameters-file.rst:219
 msgid ""
@@ -1080,8 +1007,8 @@ msgid ""
 "However, when selecting a season or a specific period for the analogs time "
 "array, the same option must be selected for the `Element 'time_array_target'`_."
 msgstr ""
-"Cependant, lorsque l'on sélectionne une saison ou une période spécifique pour le "
-"type de selection temporelle des analogues, la même option doit être "
+"Cependant, lorsque l'on sélectionne une saison ou une période spécifique pour "
+"le type de selection temporelle des analogues, la même option doit être "
 "sélectionnée pour `l'élément 'time_array_target'`_."
 
 #: ../../getting-started/parameters-file.rst:253
@@ -1094,10 +1021,10 @@ msgstr "Contenu 'analog_dates'"
 
 #: ../../getting-started/parameters-file.rst:269
 msgid ""
-"The content of ``<analog_dates>`` defines the analogy for a given analogy level. "
-"Several analogy levels can be successively defined by adding more "
-"``<analog_dates>`` blocks one after the other. Every new level (block) will then "
-"subsample from the previous level."
+"The content of ``<analog_dates>`` defines the analogy for a given analogy "
+"level. Several analogy levels can be successively defined by adding more "
+"``<analog_dates>`` blocks one after the other. Every new level (block) will "
+"then subsample from the previous level."
 msgstr ""
 "Le contenu de ``<analog_dates>`` définit l'analogie pour un niveau d'analogie "
 "donné. Plusieurs niveaux d'analogie peuvent être définis successivement en "
@@ -1113,8 +1040,8 @@ msgid ""
 "The tag ``<analogs_number>`` defined the number of analogs to select for the "
 "given analogy level."
 msgstr ""
-"La balise ``<analogs_number>`` définit le nombre d'analogues à sélectionner pour "
-"le niveau d'analogie donné."
+"La balise ``<analogs_number>`` définit le nombre d'analogues à sélectionner "
+"pour le niveau d'analogie donné."
 
 #: ../../getting-started/parameters-file.rst:288
 msgid "Element 'predictor'"
@@ -1123,14 +1050,14 @@ msgstr "Élément 'predictor'"
 #: ../../getting-started/parameters-file.rst:290
 msgid ""
 "The element ``<predictor>`` provides information about the predictor, the "
-"spatial window, and the criteria to use. Several predictors can be used together "
-"in an analogy level and are provided by adding more ``<predictor>`` blocks one "
-"after the other."
+"spatial window, and the criteria to use. Several predictors can be used "
+"together in an analogy level and are provided by adding more ``<predictor>`` "
+"blocks one after the other."
 msgstr ""
-"L'élément ``<predictor>`` fournit des informations sur le prédicteur, la fenêtre "
-"spatiale et les critères à utiliser. Plusieurs prédicteurs peuvent être utilisés "
-"ensemble dans un niveau d'analogie et sont spécifiés en ajoutant des blocs "
-"``<predictor>`` les uns après les autres."
+"L'élément ``<predictor>`` fournit des informations sur le prédicteur, la "
+"fenêtre spatiale et les critères à utiliser. Plusieurs prédicteurs peuvent être "
+"utilisés ensemble dans un niveau d'analogie et sont spécifiés en ajoutant des "
+"blocs ``<predictor>`` les uns après les autres."
 
 #: ../../getting-started/parameters-file.rst:331
 msgid "The ``<predictor>`` element must define:"
@@ -1149,8 +1076,8 @@ msgid ""
 "``<dataset_id>``: Defines the dataset to be used (:ref:`see the reanalyses "
 "list<reanalyses>`)"
 msgstr ""
-"``<dataset_id>`` : Définit le jeu de données à utiliser (:ref:`voir la liste des "
-"réanalyses<reanalyses>`)"
+"``<dataset_id>`` : Définit le jeu de données à utiliser (:ref:`voir la liste "
+"des réanalyses<reanalyses>`)"
 
 #: ../../getting-started/parameters-file.rst:335
 msgid ""
@@ -1165,8 +1092,8 @@ msgid ""
 "``<level>``: Selection of the predictor level (ex: 500 for 500 hPa or 0 for "
 "surface)"
 msgstr ""
-"``<level>`` : Sélection du niveau du prédicteur (ex : 500 pour 500 hPa ou 0 pour "
-"la surface)"
+"``<level>`` : Sélection du niveau du prédicteur (ex : 500 pour 500 hPa ou 0 "
+"pour la surface)"
 
 #: ../../getting-started/parameters-file.rst:337
 msgid "``<time>``: Selection of the predictor time (ex: 12 for 12h UTC)"
@@ -1174,7 +1101,8 @@ msgstr "``<time>`` : Sélection de l'instant du prédicteur (ex : 12 pour 12h UT
 
 #: ../../getting-started/parameters-file.rst:338
 msgid ""
-"``<members>``: Number of members to select (optional; only for ensemble datasets)"
+"``<members>``: Number of members to select (optional; only for ensemble "
+"datasets)"
 msgstr ""
 "``<members>`` : Nombre de membres à sélectionner (facultatif ; uniquement pour "
 "les ensembles de données)"
@@ -1219,9 +1147,9 @@ msgid ""
 "(several predictors can also be defined one after the other):"
 msgstr ""
 "Lors de l'utilisation d'un prédicteur élaboré, les données doivent passer par "
-"une routine de prétraitement. Dans ce cas, la structure est un peu différente et "
-"peut ressembler à ceci (plusieurs prédicteurs peuvent également être définis les "
-"uns après les autres) :"
+"une routine de prétraitement. Dans ce cas, la structure est un peu différente "
+"et peut ressembler à ceci (plusieurs prédicteurs peuvent également être définis "
+"les uns après les autres) :"
 
 #: ../../getting-started/parameters-file.rst:376
 msgid "In this case, there is a new ``<preprocessing>`` block containing:"
@@ -1232,8 +1160,8 @@ msgid ""
 "``<preprocessing_method>``: The :ref:`preprocessing method<preprocessing>` to "
 "use."
 msgstr ""
-"``<preprocessing_method>`` : La :ref:`méthode de preprocessing<preprocessing>` à "
-"utiliser."
+"``<preprocessing_method>`` : La :ref:`méthode de preprocessing<preprocessing>` "
+"à utiliser."
 
 #: ../../getting-started/parameters-file.rst:379
 msgid ""
@@ -1279,8 +1207,8 @@ msgstr "La base de données des prédictants"
 msgid ""
 "The preditand data (e.g., precipitation) must be prepared for use in AtmoSwing. "
 "A tool provided along AtmoSwing allows for the 'database' generation. Database "
-"generation consists of extracting data from text files and combining them into a "
-"NetCDF file."
+"generation consists of extracting data from text files and combining them into "
+"a NetCDF file."
 msgstr ""
 "Les données relatives aux prédictants (par exemple, les précipitations) doivent "
 "être préparées pour être utilisées dans AtmoSwing. Un outil fourni avec "
@@ -1315,10 +1243,10 @@ msgid "Precipitation"
 msgstr "Précipitations"
 
 #: ../../getting-started/predictand-db.rst:17
-#: ../../getting-started/variables.rst:311 ../../getting-started/variables.rst:323
-#: ../../getting-started/variables.rst:350 ../../getting-started/variables.rst:386
-#: ../../getting-started/variables.rst:438 ../../getting-started/variables.rst:455
-#: ../../getting-started/variables.rst:555 ../../getting-started/variables.rst:584
+#: ../../getting-started/variables.rst:310 ../../getting-started/variables.rst:322
+#: ../../getting-started/variables.rst:349 ../../getting-started/variables.rst:385
+#: ../../getting-started/variables.rst:437 ../../getting-started/variables.rst:454
+#: ../../getting-started/variables.rst:554 ../../getting-started/variables.rst:583
 msgid "Temperature"
 msgstr "Température"
 
@@ -1344,20 +1272,20 @@ msgid "6 hours"
 msgstr "6 heures"
 
 #: ../../getting-started/predictand-db.rst:23
-msgid "1-hr MTW (moving time window, see [Horton2017]_)"
-msgstr "1-hr MTW (moving time window, voir [Horton2017]_)"
+msgid "1-hr MTW (moving time window, see :cite:t:`Horton2017b`)"
+msgstr "1-hr MTW (moving time window, voir :cite:t:`Horton2017b`)"
 
 #: ../../getting-started/predictand-db.rst:24
-msgid "3-hr MTW (moving time window, see [Horton2017]_)"
-msgstr "3-hr MTW (moving time window, voir [Horton2017]_)"
+msgid "3-hr MTW (moving time window, see :cite:t:`Horton2017b`)"
+msgstr "3-hr MTW (moving time window, voir :cite:t:`Horton2017b`)"
 
 #: ../../getting-started/predictand-db.rst:25
-msgid "6-hr MTW (moving time window, see [Horton2017]_)"
-msgstr "6-hr MTW (moving time window, voir [Horton2017]_)"
+msgid "6-hr MTW (moving time window, see :cite:t:`Horton2017b`)"
+msgstr "6-hr MTW (moving time window, voir :cite:t:`Horton2017b`)"
 
 #: ../../getting-started/predictand-db.rst:26
-msgid "12-hr MTW (moving time window, see [Horton2017]_)"
-msgstr "12-hr MTW (moving time window, voir [Horton2017]_)"
+msgid "12-hr MTW (moving time window, see :cite:t:`Horton2017b`)"
+msgstr "12-hr MTW (moving time window, voir :cite:t:`Horton2017b`)"
 
 #: ../../getting-started/predictand-db.rst:31
 msgid "Spatial aggregation:"
@@ -1413,8 +1341,8 @@ msgstr ""
 #: ../../getting-started/predictand-db.rst:39
 msgid ""
 "The file patterns description directory: the directory containing `files "
-"defining the structure <#predictand-file-structure>`_ of the original predictand "
-"files."
+"defining the structure <#predictand-file-structure>`_ of the original "
+"predictand files."
 msgstr ""
 "Le répertoire de description des modèles de fichiers : le répertoire contenant "
 "les `fichiers définissant la structure <#predictand-file-structure>`_ des "
@@ -1427,8 +1355,8 @@ msgstr "Le répertoire de destination : où le fichier résultant sera enregistr
 #: ../../getting-started/predictand-db.rst:42
 msgid ""
 "After execution, a NetCDF file containing all the data necessary for the "
-"software is created in the chosen directory. This file also includes the station "
-"properties and time series."
+"software is created in the chosen directory. This file also includes the "
+"station properties and time series."
 msgstr ""
 "Après exécution, un fichier NetCDF contenant toutes les données nécessaires au "
 "logiciel est créé dans le répertoire choisi. Ce fichier comprend les propriétés "
@@ -1442,9 +1370,9 @@ msgstr "Données transformées"
 msgid ""
 "In addition to the raw predictand data, the resulting NetCDF file can also "
 "contain transformed data. The available options depend on the predictand "
-"variable. It is important to note that this normalized data will be used for the "
-"calibration of the method, but the raw data is used in the Forecaster and the "
-"Downscaler."
+"variable. It is important to note that this normalized data will be used for "
+"the calibration of the method, but the raw data is used in the Forecaster and "
+"the Downscaler."
 msgstr ""
 "Outre les données brutes du prédictant, le fichier NetCDF résultant peut "
 "également contenir des données transformées. Les options disponibles dépendent "
@@ -1472,11 +1400,11 @@ msgstr ""
 
 #: ../../getting-started/predictand-db.rst:56
 msgid ""
-"A transformation by the square root of the normalized precipitation amounts (see "
-"[Bontron2004]_)"
+"A transformation by the square root of the normalized precipitation amounts "
+"(see :cite:t:`Bontron2004`)"
 msgstr ""
 "Une transformation par la racine carrée des quantités de précipitations "
-"normalisées (voir [Bontron2004]_)"
+"normalisées (voir :cite:t:`Bontron2004`)"
 
 #: ../../getting-started/predictand-db.rst:61
 msgid "The lightning data can be transformed using: log10( N + 1 )"
@@ -1494,9 +1422,10 @@ msgid ""
 "is only required to create the predictand database and is not used afterwards. "
 "It consists of an xml file such as:"
 msgstr ""
-"Le catalogue du prédictant fournit des métadonnées sur les séries temporelles du "
-"prédictant. Il n'est nécessaire que pour créer la base de données du prédictant "
-"et n'est pas utilisé par la suite. Il se compose d'un fichier xml tel que :"
+"Le catalogue du prédictant fournit des métadonnées sur les séries temporelles "
+"du prédictant. Il n'est nécessaire que pour créer la base de données du "
+"prédictant et n'est pas utilisé par la suite. Il se compose d'un fichier xml "
+"tel que :"
 
 #: ../../getting-started/predictand-db.rst:135
 msgid "The dataset is described by the following data:"
@@ -1530,9 +1459,11 @@ msgstr ""
 "Daily)"
 
 #: ../../getting-started/predictand-db.rst:143
-msgid "``<spatial_aggregation>``: the spatial aggregation (see above; ex: Station)"
+msgid ""
+"``<spatial_aggregation>``: the spatial aggregation (see above; ex: Station)"
 msgstr ""
-"``<spatial_aggregation>`` : l'agrégation spatiale (voir ci-dessus ; ex : Station)"
+"``<spatial_aggregation>`` : l'agrégation spatiale (voir ci-dessus ; ex : "
+"Station)"
 
 #: ../../getting-started/predictand-db.rst:144
 msgid "``<time_zone>``: time zone of the measurement time (ex: 0 for UTC)"
@@ -1567,14 +1498,15 @@ msgstr ""
 
 #: ../../getting-started/predictand-db.rst:151
 msgid ""
-"Then, every time series (named here 'station', even if they are not representing "
-"a station) must be detailed under a ``<station>`` tag in the ``<stations>`` "
-"list. For every station, the following information can/must be provided:"
+"Then, every time series (named here 'station', even if they are not "
+"representing a station) must be detailed under a ``<station>`` tag in the "
+"``<stations>`` list. For every station, the following information can/must be "
+"provided:"
 msgstr ""
 "Ensuite, chaque série temporelle (appelée ici \"station\", même si elle ne "
-"représente pas une station) doit être détaillée sous une étiquette ``<station>`` "
-"dans la liste ``<stations>``. Pour chaque station, les informations suivantes "
-"peuvent/doivent être fournies :"
+"représente pas une station) doit être détaillée sous une étiquette "
+"``<station>`` dans la liste ``<stations>``. Pour chaque station, les "
+"informations suivantes peuvent/doivent être fournies :"
 
 #: ../../getting-started/predictand-db.rst:153
 msgid ""
@@ -1597,16 +1529,16 @@ msgid ""
 "``<x_coordinate>``: the X coordinate (in the coordinate system defined for the "
 "dataset)"
 msgstr ""
-"``<x_coordinate>`` : la coordonnée X (dans le système de coordonnées défini pour "
-"le jeu de données)"
+"``<x_coordinate>`` : la coordonnée X (dans le système de coordonnées défini "
+"pour le jeu de données)"
 
 #: ../../getting-started/predictand-db.rst:157
 msgid ""
 "``<y_coordinate>``: the Y coordinate (in the coordinate system defined for the "
 "dataset)"
 msgstr ""
-"``<y_coordinate>`` : la coordonnée Y (dans le système de coordonnées défini pour "
-"le jeu de données)"
+"``<y_coordinate>`` : la coordonnée Y (dans le système de coordonnées défini "
+"pour le jeu de données)"
 
 #: ../../getting-started/predictand-db.rst:158
 msgid "``<height>``: the station height (optional)"
@@ -1618,8 +1550,8 @@ msgstr "``<file_name>`` : le nom du fichier contenant les données originales"
 
 #: ../../getting-started/predictand-db.rst:160
 msgid ""
-"``<file_pattern>``: `the pattern describing the data file structure <#predictand-"
-"file-structure>`_"
+"``<file_pattern>``: `the pattern describing the data file structure "
+"<#predictand-file-structure>`_"
 msgstr ""
 "``<file_pattern>`` : `le modèle décrivant la structure du fichier de données "
 "<#predictand-file-structure>`_"
@@ -1639,11 +1571,11 @@ msgstr "Structure du fichier des prédictants"
 #: ../../getting-started/predictand-db.rst:168
 msgid ""
 "It was chosen not to force users to transform their data into a specific format "
-"but to let them describe the structure of the files. It must be done using files "
-"describing the structure of the original time series. The structure file defines "
-"how to read data files and is described in text files. However, a restriction is "
-"imposed: a data file must contain only one time series (single station), or "
-"structure files must be defined to read a specific column."
+"but to let them describe the structure of the files. It must be done using "
+"files describing the structure of the original time series. The structure file "
+"defines how to read data files and is described in text files. However, a "
+"restriction is imposed: a data file must contain only one time series (single "
+"station), or structure files must be defined to read a specific column."
 msgstr ""
 "Il a été choisi de ne pas forcer les utilisateurs à transformer leurs données "
 "dans un format spécifique, mais de les laisser décrire la structure des "
@@ -1665,22 +1597,22 @@ msgid "Delimited by tabs (``tabsdelimited``)"
 msgstr "Délimité par des tabulations (``tabsdelimited``)"
 
 #: ../../getting-started/predictand-db.rst:173
-msgid "With constant line width (``constantwidth``)"
+msgid "With constant width (``constantwidth``)"
 msgstr "Avec une largeur constante (``constantwidth``)"
 
 #: ../../getting-started/predictand-db.rst:175
 msgid ""
-"An option (``<parsetime>``) allows reading the date/time entries or ignore them. "
-"Reading this information allows an automatic check of the correct consistency of "
-"the dates between what the software thinks it is reading and what it is actually "
-"reading. It is therefore recommended to enable this option (``<parse_time>1</"
-"parse_time>``)."
+"An option (``<parsetime>``) allows reading the date/time entries or ignore "
+"them. Reading this information allows an automatic check of the correct "
+"consistency of the dates between what the software thinks it is reading and "
+"what it is actually reading. It is therefore recommended to enable this option "
+"(``<parse_time>1</parse_time>``)."
 msgstr ""
-"Une option (``<parsetime>``) permet de lire les entrées de date et d'heure ou de "
-"les ignorer. La lecture de ces informations permet de vérifier automatiquement "
-"la cohérence des dates entre ce que le logiciel pense lire et ce qu'il lit "
-"réellement. Il est donc recommandé d'activer cette option (``<parse_time>1</"
-"parse_time>``)."
+"Une option (``<parsetime>``) permet de lire les entrées de date et d'heure ou "
+"de les ignorer. La lecture de ces informations permet de vérifier "
+"automatiquement la cohérence des dates entre ce que le logiciel pense lire et "
+"ce qu'il lit réellement. Il est donc recommandé d'activer cette option "
+"(``<parse_time>1</parse_time>``)."
 
 #: ../../getting-started/predictand-db.rst:177
 msgid ""
@@ -1688,9 +1620,9 @@ msgid ""
 "file_patterns' directory, or `online in the repository <https://github.com/"
 "atmoswing/atmoswing/tree/master/data/file_patterns>`_."
 msgstr ""
-"Plusieurs fichiers sont installés avec AtmoSwing et peuvent être trouvés dans le "
-"répertoire 'data/file_patterns', ou `en ligne dans le dépôt <https://github.com/"
-"atmoswing/atmoswing/tree/master/data/file_patterns>`_."
+"Plusieurs fichiers sont installés avec AtmoSwing et peuvent être trouvés dans "
+"le répertoire 'data/file_patterns', ou `en ligne dans le dépôt <https://github."
+"com/atmoswing/atmoswing/tree/master/data/file_patterns>`_."
 
 #: ../../getting-started/predictand-db.rst:180
 msgid "Example of the type 'delimited by tabs'"
@@ -1713,13 +1645,13 @@ msgid "The structure describing such data files is as follows:"
 msgstr "La structure décrivant ces fichiers de données est la suivante :"
 
 #: ../../getting-started/predictand-db.rst:222
-msgid "Example of the type 'constant line width'"
-msgstr "Exemple de type 'largeur de ligne constante'"
+msgid "Example of the type 'constant width'"
+msgstr "Exemple de type 'largeur constante'"
 
 #: ../../getting-started/predictand-db.rst:224
-msgid "Predictand files are here structured as constant line width."
+msgid "Predictand files are here structured as constant columns width."
 msgstr ""
-"Les fichiers du prédictant sont ici structurés par des lignes de largeur "
+"Les fichiers du prédictant sont ici structurés par des colonnes de largeur "
 "constante."
 
 #: ../../getting-started/preprocessing.rst:4
@@ -1768,8 +1700,8 @@ msgstr ""
 
 #: ../../getting-started/preprocessing.rst:14
 msgid ""
-"Humidity (or moisture) index (``HumidityIndex``): multiply the relative humidity "
-"and the precipitable water"
+"Humidity (or moisture) index (``HumidityIndex``): multiply the relative "
+"humidity and the precipitable water"
 msgstr ""
 "Indice d'humidité (``HumidityIndex``) : multiplie l'humidité relative et l'eau "
 "précipitable"
@@ -1815,15 +1747,15 @@ msgid ""
 "is automatically used when the analogy criterion is ``S1``."
 msgstr ""
 "Gradients réels (``RealGradients``) : traitement des gradients réels entre des "
-"points de grille adjacents (en utilisant la distance horizontale). Cette méthode "
-"de prétraitement est automatiquement utilisée lorsque le critère d'analogie est "
-"``S1``."
+"points de grille adjacents (en utilisant la distance horizontale). Cette "
+"méthode de prétraitement est automatiquement utilisée lorsque le critère "
+"d'analogie est ``S1``."
 
 #: ../../getting-started/preprocessing.rst:22
 msgid ""
-"Simple gradients with Gaussian weights (``SimpleGradientsWithGaussianWeights``): "
-"same as before, but with a weighting of the spatial field by a gaussian 'hat'-"
-"shaped pattern."
+"Simple gradients with Gaussian weights "
+"(``SimpleGradientsWithGaussianWeights``): same as before, but with a weighting "
+"of the spatial field by a gaussian 'hat'-shaped pattern."
 msgstr ""
 "Gradients simples avec pondérations gaussiennes "
 "(``SimpleGradientsWithGaussianWeights``) : comme précédemment, mais avec une "
@@ -1860,9 +1792,9 @@ msgstr ""
 
 #: ../../getting-started/preprocessing.rst:26
 msgid ""
-"Simple curvature with Gaussian weights (``SimpleCurvatureWithGaussianWeights``): "
-"same as before, but with a weighting of the spatial field by a gaussian 'hat'-"
-"shaped pattern."
+"Simple curvature with Gaussian weights "
+"(``SimpleCurvatureWithGaussianWeights``): same as before, but with a weighting "
+"of the spatial field by a gaussian 'hat'-shaped pattern."
 msgstr ""
 "Courbure simple avec pondérations gaussiennes "
 "(``SimpleCurvatureWithGaussianWeights``) : comme précédemment, mais avec une "
@@ -1885,12 +1817,13 @@ msgstr "Réanalyses"
 #: ../../getting-started/reanalyses.rst:6
 msgid ""
 "A description of the different reanalyses and the assessment of the impact of "
-"the dataset selection are presented in [Horton2018]_. AtmoSwing can read the "
-"following reanalyses (with the corresponding ID to use):"
+"the dataset selection are presented in :cite:t:`Horton2018b`. AtmoSwing can "
+"read the following reanalyses (with the corresponding ID to use):"
 msgstr ""
 "Une description des différentes réanalyses et l'évaluation de l'impact de la "
-"sélection des jeux de données sont présentées dans [Horton2018]_. AtmoSwing peut "
-"lire les réanalyses suivantes (avec l'identifiant correspondant à utiliser) :"
+"sélection des jeux de données sont présentées dans :cite:t:`Horton2018b`. "
+"AtmoSwing peut lire les réanalyses suivantes (avec l'identifiant correspondant "
+"à utiliser) :"
 
 #: ../../getting-started/reanalyses.rst:8
 msgid "NCEP/NCAR Reanalysis 1: ``NCEP_R1``"
@@ -1917,12 +1850,12 @@ msgstr ""
 #: ../../getting-started/reanalyses.rst:14
 msgid ""
 "NCEP CFSR `subset from NCAR/UCAR <http://rda.ucar.edu/datasets/ds093.0/index."
-"html#!cgi-bin/datasets/getSubset?dsnum=093.0&action=customize&_da=y>`_ as netcdf "
-"files: ``NCEP_CFSR_subset``"
+"html#!cgi-bin/datasets/getSubset?dsnum=093.0&action=customize&_da=y>`_ as "
+"netcdf files: ``NCEP_CFSR_subset``"
 msgstr ""
-"NCEP CFSR `subset du NCAR/UCAR <http://rda.ucar.edu/datasets/ds093.0/index.html#!"
-"cgi-bin/datasets/getSubset?dsnum=093.0&action=customize&_da=y>`_ sous la forme "
-"de fichiers NetCDF : ``NCEP_CFSR_subset``"
+"NCEP CFSR `subset du NCAR/UCAR <http://rda.ucar.edu/datasets/ds093.0/index."
+"html#!cgi-bin/datasets/getSubset?dsnum=093.0&action=customize&_da=y>`_ sous la "
+"forme de fichiers NetCDF : ``NCEP_CFSR_subset``"
 
 #: ../../getting-started/reanalyses.rst:19
 msgid "ECMWF ERA5: ``ECMWF_ERA5``"
@@ -1964,8 +1897,8 @@ msgid ""
 "Must be 1 file per variable with the original variable name in the file name "
 "(ex: z.nc)"
 msgstr ""
-"Il doit y avoir 1 fichier par variable avec le nom de la variable originale dans "
-"le nom du fichier (ex : z.nc)"
+"Il doit y avoir 1 fichier par variable avec le nom de la variable originale "
+"dans le nom du fichier (ex : z.nc)"
 
 #: ../../getting-started/reanalyses.rst:28
 msgid "ECMWF Coupled ERA 20th Century: ``ECMWF_CERA_20C``"
@@ -1992,8 +1925,8 @@ msgid ""
 "NASA MERRA-2 `subset from MDISC <http://disc.sci.gsfc.nasa.gov/daac-bin/"
 "FTPSubset2.pl>`_: ``NASA_MERRA_2_subset``"
 msgstr ""
-"NASA MERRA-2 `subset du MDISC <http://disc.sci.gsfc.nasa.gov/daac-bin/FTPSubset2."
-"pl>`_ : ``NASA_MERRA_2_subset``"
+"NASA MERRA-2 `subset du MDISC <http://disc.sci.gsfc.nasa.gov/daac-bin/"
+"FTPSubset2.pl>`_ : ``NASA_MERRA_2_subset``"
 
 #: ../../getting-started/reanalyses.rst:33 ../../getting-started/reanalyses.rst:35
 #: ../../getting-started/reanalyses.rst:37
@@ -2049,7 +1982,7 @@ msgid "Use the original file names (single files -- ex: sst_1deg.nc)"
 msgstr ""
 "Utiliser les noms de fichiers originaux (fichiers uniques -- ex : sst_1deg.nc)"
 
-#: ../../getting-started/reanalyses.rst:50
+#: ../../getting-started/reanalyses.rst:48
 msgid ":ref:`A generic NetCDF dataset <generic-dataset>`: ``Generic[__]``"
 msgstr ""
 ":ref:`Un jeu de données NetCDF générique <generic-dataset>` : ``Generic[__]``"
@@ -2090,12 +2023,12 @@ msgstr ""
 #: ../../getting-started/using-atmoswing.rst:14
 msgid ""
 "Get a dataset for the predictor archive. It is often a :ref:`reanalysis dataset "
-"<reanalyses>`. The impact of the choice of the dataset is discussed in "
-"[Horton2018]_."
+"<reanalyses>`. The impact of the choice of the dataset is discussed in :cite:t:"
+"`Horton2018b`."
 msgstr ""
 "Obtenir un jeu de données pour l'archive du prédicteur. Il s'agit souvent d'un :"
 "ref:`jeu de réanalyses <reanalyses>`. L'impact du choix du jeu de données est "
-"discuté dans [Horton2018]_."
+"discuté dans :cite:t:`Horton2018b`."
 
 #: ../../getting-started/using-atmoswing.rst:15
 msgid ""
@@ -2115,14 +2048,14 @@ msgstr "Calibrer/optimiser la méthode à l'aide de l'Optimizer."
 
 #: ../../getting-started/using-atmoswing.rst:19
 msgid ""
-"The datasets, predictor variables, number of analogy levels, spatial windows and "
-"most other parameters used for the analogue method are defined in the :ref:"
+"The datasets, predictor variables, number of analogy levels, spatial windows "
+"and most other parameters used for the analogue method are defined in the :ref:"
 "`parameters files <parameters-file>`."
 msgstr ""
-"Les jeux de données, les variables prédictives, le nombre de niveaux d'analogie, "
-"les fenêtres spatiales et la plupart des autres paramètres utilisés pour la "
-"méthode des analogues sont définis dans les `fichiers de paramètres <parameters-"
-"file>`."
+"Les jeux de données, les variables prédictives, le nombre de niveaux "
+"d'analogie, les fenêtres spatiales et la plupart des autres paramètres utilisés "
+"pour la méthode des analogues sont définis dans les `fichiers de paramètres "
+"<parameters-file>`."
 
 #: ../../getting-started/variables.rst:4
 msgid "Predictor variables"
@@ -2132,18 +2065,18 @@ msgstr "Variables prédicteurs"
 msgid ""
 "The different existing datasets do not name the meteorological variables the "
 "same way. AtmoSwing can interact with many datasets and has several of their "
-"variables defined. These datasets often provide different products, for example, "
-"for different types of levels (isobaric, isentropic, surface, etc.). As some "
-"variables can be defined for different levels (e.g., temperature), the product/"
-"level may need to be specified. Thus, the selection of a variable in the "
-"parameters file can be defined as ``level/variable``, such as ``pressure/z`` for "
-"the geopotential on pressure levels, or ``isentropic/t`` for the temperature on "
-"isentropic levels. As different level types and variables are present for "
-"different datasets, they can be named differently in AtmoSwing. For example "
-"``pressure/z``, ``pl/h``, and ``isobaric/hgt`` are identical. The name of the "
-"level (or product) has to be the same as the corresponding subfolder name. For "
-"example, someone using NCEP/NCAR Reanalysis 1 and having a subfolder 'pressure' "
-"should then use ``pressure/z`` for the geopotential height."
+"variables defined. These datasets often provide different products, for "
+"example, for different types of levels (isobaric, isentropic, surface, etc.). "
+"As some variables can be defined for different levels (e.g., temperature), the "
+"product/level may need to be specified. Thus, the selection of a variable in "
+"the parameters file can be defined as ``level/variable``, such as ``pressure/"
+"z`` for the geopotential on pressure levels, or ``isentropic/t`` for the "
+"temperature on isentropic levels. As different level types and variables are "
+"present for different datasets, they can be named differently in AtmoSwing. For "
+"example ``pressure/z``, ``pl/h``, and ``isobaric/hgt`` are identical. The name "
+"of the level (or product) has to be the same as the corresponding subfolder "
+"name. For example, someone using NCEP/NCAR Reanalysis 1 and having a subfolder "
+"'pressure' should then use ``pressure/z`` for the geopotential height."
 msgstr ""
 "Les différents jeux de données existants ne nomment pas les variables "
 "météorologiques de la même manière. AtmoSwing peut interagir avec de nombreux "
@@ -2154,10 +2087,10 @@ msgstr ""
 "la température), il peut être nécessaire de spécifier le produit/niveau. Ainsi, "
 "la sélection d'une variable dans le fichier de paramètres peut être définie "
 "comme ``level/variable``, par exemple ``pressure/z`` pour le géopotentiel sur "
-"les niveaux de pression, ou ``isentropic/t`` pour la température sur les niveaux "
-"isentropiques. Comme différents types de niveaux et de variables sont présents "
-"pour différents jeux de données, ils peuvent être nommés différemment dans "
-"AtmoSwing. Par exemple, ``pressure/z``, ``pl/h`` et ``isobaric/hgt`` sont "
+"les niveaux de pression, ou ``isentropic/t`` pour la température sur les "
+"niveaux isentropiques. Comme différents types de niveaux et de variables sont "
+"présents pour différents jeux de données, ils peuvent être nommés différemment "
+"dans AtmoSwing. Par exemple, ``pressure/z``, ``pl/h`` et ``isobaric/hgt`` sont "
 "identiques. Le nom du niveau (ou du produit) doit être identique au nom du sous-"
 "dossier correspondant. Par exemple, une personne utilisant NCEP/NCAR Reanalysis "
 "1 et ayant un sous-dossier 'pressure' devrait utiliser ``pressure/z`` pour la "
@@ -2173,15 +2106,15 @@ msgstr ""
 "certaines variables communes à la plupart des jeux de données et, enfin, "
 "dressent la liste des variables disponibles pour les différents jeux de données."
 
-#: ../../getting-started/variables.rst:10
+#: ../../getting-started/variables.rst:11
 msgid "Content of this section"
 msgstr "Contenu de cette section"
 
-#: ../../getting-started/variables.rst:15
+#: ../../getting-started/variables.rst:14
 msgid "Differentiating subsets/levels"
 msgstr "Différencier les sous-ensembles/niveaux"
 
-#: ../../getting-started/variables.rst:17
+#: ../../getting-started/variables.rst:16
 msgid ""
 "The level can usually be defined using different terms. The provided terms are "
 "interchangeable."
@@ -2189,194 +2122,194 @@ msgstr ""
 "Le niveau peut généralement être défini à l'aide de différents termes. Les "
 "termes proposés sont interchangeables."
 
-#: ../../getting-started/variables.rst:19
+#: ../../getting-started/variables.rst:18
 msgid "**Pressure level**:"
 msgstr "**Niveau de pression** :"
 
-#: ../../getting-started/variables.rst:21
+#: ../../getting-started/variables.rst:20
 msgid "``pressure_level``"
 msgstr "``pressure_level``"
 
-#: ../../getting-started/variables.rst:22
+#: ../../getting-started/variables.rst:21
 msgid "``pressure_levels``"
 msgstr "``pressure_levels``"
 
-#: ../../getting-started/variables.rst:23 ../../getting-started/variables.rst:139
+#: ../../getting-started/variables.rst:22 ../../getting-started/variables.rst:138
 msgid "``pressure``"
 msgstr "``pressure``"
 
-#: ../../getting-started/variables.rst:24 ../../getting-started/variables.rst:140
+#: ../../getting-started/variables.rst:23 ../../getting-started/variables.rst:139
 msgid "``press``"
 msgstr "``press``"
 
-#: ../../getting-started/variables.rst:25
+#: ../../getting-started/variables.rst:24
 msgid "``isobaric``"
 msgstr "``isobaric``"
 
-#: ../../getting-started/variables.rst:26
+#: ../../getting-started/variables.rst:25
 msgid "``pl``"
 msgstr "``pl``"
 
-#: ../../getting-started/variables.rst:27
+#: ../../getting-started/variables.rst:26
 msgid "``pgbh``"
 msgstr "``pgbh``"
 
-#: ../../getting-started/variables.rst:28
+#: ../../getting-started/variables.rst:27
 msgid "``pgbhnl``"
 msgstr "``pgbhnl``"
 
-#: ../../getting-started/variables.rst:29
+#: ../../getting-started/variables.rst:28
 msgid "``pgb``"
 msgstr "``pgb``"
 
-#: ../../getting-started/variables.rst:31
+#: ../../getting-started/variables.rst:30
 msgid "**Isentropic level**:"
 msgstr "**Niveau isentropique** :"
 
-#: ../../getting-started/variables.rst:33
+#: ../../getting-started/variables.rst:32
 msgid "``isentropic_level``"
 msgstr "``isentropic_level``"
 
-#: ../../getting-started/variables.rst:34
+#: ../../getting-started/variables.rst:33
 msgid "``isentropic``"
 msgstr "``isentropic``"
 
-#: ../../getting-started/variables.rst:35
+#: ../../getting-started/variables.rst:34
 msgid "``potential_temperature``"
 msgstr "``potential_temperature``"
 
-#: ../../getting-started/variables.rst:36
+#: ../../getting-started/variables.rst:35
 msgid "``pt``"
 msgstr "``pt``"
 
-#: ../../getting-started/variables.rst:37
+#: ../../getting-started/variables.rst:36
 msgid "``ipvh``"
 msgstr "``ipvh``"
 
-#: ../../getting-started/variables.rst:38
+#: ../../getting-started/variables.rst:37
 msgid "``ipv``"
 msgstr "``ipv``"
 
-#: ../../getting-started/variables.rst:40
+#: ../../getting-started/variables.rst:39
 msgid "**Surface**:"
 msgstr "**Surface** :"
 
-#: ../../getting-started/variables.rst:42
+#: ../../getting-started/variables.rst:41
 msgid "``surface``"
 msgstr "``surface``"
 
-#: ../../getting-started/variables.rst:43
+#: ../../getting-started/variables.rst:42
 msgid "``surf``"
 msgstr "``surf``"
 
-#: ../../getting-started/variables.rst:44
+#: ../../getting-started/variables.rst:43
 msgid "``ground``"
 msgstr "``ground``"
 
-#: ../../getting-started/variables.rst:45
+#: ../../getting-started/variables.rst:44
 msgid "``sfc``"
 msgstr "``sfc``"
 
-#: ../../getting-started/variables.rst:46
+#: ../../getting-started/variables.rst:45
 msgid "``sf``"
 msgstr "``sf``"
 
-#: ../../getting-started/variables.rst:48
+#: ../../getting-started/variables.rst:47
 msgid "**Flux**:"
 msgstr "**Flux** :"
 
-#: ../../getting-started/variables.rst:50
+#: ../../getting-started/variables.rst:49
 msgid "``surface_fluxes``"
 msgstr "``surface_fluxes``"
 
-#: ../../getting-started/variables.rst:51
+#: ../../getting-started/variables.rst:50
 msgid "``fluxes``"
 msgstr "``fluxes``"
 
-#: ../../getting-started/variables.rst:52
+#: ../../getting-started/variables.rst:51
 msgid "``flux``"
 msgstr "``flux``"
 
-#: ../../getting-started/variables.rst:53
+#: ../../getting-started/variables.rst:52
 msgid "``flxf06``"
 msgstr "``flxf06``"
 
-#: ../../getting-started/variables.rst:54
+#: ../../getting-started/variables.rst:53
 msgid "``flx``"
 msgstr "``flx``"
 
-#: ../../getting-started/variables.rst:56
+#: ../../getting-started/variables.rst:55
 msgid "**Column**:"
 msgstr "**Colonne** :"
 
-#: ../../getting-started/variables.rst:58
+#: ../../getting-started/variables.rst:57
 msgid "``total_column``"
 msgstr "``total_column``"
 
-#: ../../getting-started/variables.rst:59
+#: ../../getting-started/variables.rst:58
 msgid "``column``"
 msgstr "``column``"
 
-#: ../../getting-started/variables.rst:60
+#: ../../getting-started/variables.rst:59
 msgid "``tc``"
 msgstr "``tc``"
 
-#: ../../getting-started/variables.rst:61
+#: ../../getting-started/variables.rst:60
 msgid "``entire_atmosphere``"
 msgstr "``entire_atmosphere``"
 
-#: ../../getting-started/variables.rst:62
+#: ../../getting-started/variables.rst:61
 msgid "``ea``"
 msgstr "``ea``"
 
-#: ../../getting-started/variables.rst:64
+#: ../../getting-started/variables.rst:63
 msgid "**Potential vorticity**:"
 msgstr "**Vorticité potentielle** :"
 
-#: ../../getting-started/variables.rst:66
+#: ../../getting-started/variables.rst:65
 msgid "``potential_vorticity``"
 msgstr "``potential_vorticity``"
 
-#: ../../getting-started/variables.rst:67 ../../getting-started/variables.rst:169
+#: ../../getting-started/variables.rst:66 ../../getting-started/variables.rst:168
 msgid "``pv``"
 msgstr "``pv``"
 
-#: ../../getting-started/variables.rst:68
+#: ../../getting-started/variables.rst:67
 msgid "``pv_surface``"
 msgstr "``pv_surface``"
 
-#: ../../getting-started/variables.rst:69 ../../getting-started/variables.rst:171
+#: ../../getting-started/variables.rst:68 ../../getting-started/variables.rst:170
 msgid "``epv``"
 msgstr "``epv``"
 
-#: ../../getting-started/variables.rst:73
+#: ../../getting-started/variables.rst:72
 msgid "Common variables"
 msgstr "Variables communes"
 
-#: ../../getting-started/variables.rst:75
+#: ../../getting-started/variables.rst:74
 msgid ""
 "Some variables are defined with different names (aliases) across the datasets:"
 msgstr ""
 "Certaines variables sont définies avec des noms différents (alias) dans les "
 "ensembles de données :"
 
-#: ../../getting-started/variables.rst:77
+#: ../../getting-started/variables.rst:76
 msgid "**Geopotential**:"
 msgstr "**Géopotentiel** :"
 
-#: ../../getting-started/variables.rst:79 ../../getting-started/variables.rst:87
+#: ../../getting-started/variables.rst:78 ../../getting-started/variables.rst:86
 msgid "``z``"
 msgstr "``z``"
 
-#: ../../getting-started/variables.rst:80 ../../getting-started/variables.rst:88
+#: ../../getting-started/variables.rst:79 ../../getting-started/variables.rst:87
 msgid "``h``"
 msgstr "``h``"
 
-#: ../../getting-started/variables.rst:81 ../../getting-started/variables.rst:89
+#: ../../getting-started/variables.rst:80 ../../getting-started/variables.rst:88
 msgid "``zg``"
 msgstr "``zg``"
 
-#: ../../getting-started/variables.rst:83
+#: ../../getting-started/variables.rst:82
 msgid ""
 "When loading geopotential data, AtmoSwing automatically converts it to "
 "geopotential height."
@@ -2384,243 +2317,243 @@ msgstr ""
 "Lors du chargement des données géopotentielles, AtmoSwing les convertit "
 "automatiquement en hauteur géopotentielle."
 
-#: ../../getting-started/variables.rst:85
+#: ../../getting-started/variables.rst:84
 msgid "**Geopotential height**:"
 msgstr "**Hauteur géopotentielle** :"
 
-#: ../../getting-started/variables.rst:90
+#: ../../getting-started/variables.rst:89
 msgid "``hgt``"
 msgstr "``hgt``"
 
-#: ../../getting-started/variables.rst:92
+#: ../../getting-started/variables.rst:91
 msgid "**Air temperature**:"
 msgstr "**Température de l'air** :"
 
-#: ../../getting-started/variables.rst:94
+#: ../../getting-started/variables.rst:93
 msgid "``t``"
 msgstr "``t``"
 
-#: ../../getting-started/variables.rst:95
+#: ../../getting-started/variables.rst:94
 msgid "``temp``"
 msgstr "``temp``"
 
-#: ../../getting-started/variables.rst:96
+#: ../../getting-started/variables.rst:95
 msgid "``tmp``"
 msgstr "``tmp``"
 
-#: ../../getting-started/variables.rst:97
+#: ../../getting-started/variables.rst:96
 msgid "``ta``"
 msgstr "``ta``"
 
-#: ../../getting-started/variables.rst:98
+#: ../../getting-started/variables.rst:97
 msgid "``air``"
 msgstr "``air``"
 
-#: ../../getting-started/variables.rst:100
+#: ../../getting-started/variables.rst:99
 msgid "**Relative humidity**:"
 msgstr "**Humidité relative** :"
 
-#: ../../getting-started/variables.rst:102
+#: ../../getting-started/variables.rst:101
 msgid "``rh``"
 msgstr "``rh``"
 
-#: ../../getting-started/variables.rst:103
+#: ../../getting-started/variables.rst:102
 msgid "``rhum``"
 msgstr "``rhum``"
 
-#: ../../getting-started/variables.rst:104
+#: ../../getting-started/variables.rst:103
 msgid "``hur``"
 msgstr "``hur``"
 
-#: ../../getting-started/variables.rst:105
+#: ../../getting-started/variables.rst:104
 msgid "``r``"
 msgstr "``r``"
 
-#: ../../getting-started/variables.rst:107
+#: ../../getting-started/variables.rst:106
 msgid "**Specific humidity**:"
 msgstr "**Humidité spécifique** :"
 
-#: ../../getting-started/variables.rst:109
+#: ../../getting-started/variables.rst:108
 msgid "``sh``"
 msgstr "``sh``"
 
-#: ../../getting-started/variables.rst:110
+#: ../../getting-started/variables.rst:109
 msgid "``shum``"
 msgstr "``shum``"
 
-#: ../../getting-started/variables.rst:111
+#: ../../getting-started/variables.rst:110
 msgid "``hus``"
 msgstr "``hus``"
 
-#: ../../getting-started/variables.rst:112
+#: ../../getting-started/variables.rst:111
 msgid "``q``"
 msgstr "``q``"
 
-#: ../../getting-started/variables.rst:113
+#: ../../getting-started/variables.rst:112
 msgid "``qv``"
 msgstr "``qv``"
 
-#: ../../getting-started/variables.rst:115
+#: ../../getting-started/variables.rst:114
 msgid "**Vertical velocity**:"
 msgstr "**Vitesse verticale** :"
 
-#: ../../getting-started/variables.rst:117
+#: ../../getting-started/variables.rst:116
 msgid "``w``"
 msgstr "``w``"
 
-#: ../../getting-started/variables.rst:118
+#: ../../getting-started/variables.rst:117
 msgid "``vvel``"
 msgstr "``vvel``"
 
-#: ../../getting-started/variables.rst:119
+#: ../../getting-started/variables.rst:118
 msgid "``wap``"
 msgstr "``wap``"
 
-#: ../../getting-started/variables.rst:120
+#: ../../getting-started/variables.rst:119
 msgid "``omega``"
 msgstr "``omega``"
 
-#: ../../getting-started/variables.rst:122
+#: ../../getting-started/variables.rst:121
 msgid "**Precipitable water**:"
 msgstr "**Eau précipitable** :"
 
-#: ../../getting-started/variables.rst:124
+#: ../../getting-started/variables.rst:123
 msgid "``pwat``"
 msgstr "``pwat``"
 
-#: ../../getting-started/variables.rst:125
+#: ../../getting-started/variables.rst:124
 msgid "``p_wat``"
 msgstr "``p_wat``"
 
-#: ../../getting-started/variables.rst:126
+#: ../../getting-started/variables.rst:125
 msgid "``pr_wtr``"
 msgstr "``pr_wtr``"
 
-#: ../../getting-started/variables.rst:127
+#: ../../getting-started/variables.rst:126
 msgid "``prwtr``"
 msgstr "``prwtr``"
 
-#: ../../getting-started/variables.rst:129
+#: ../../getting-started/variables.rst:128
 msgid "**Total column water**:"
 msgstr "**Eau totale de la colonne** :"
 
-#: ../../getting-started/variables.rst:131
+#: ../../getting-started/variables.rst:130
 msgid "``tcw``"
 msgstr "``tcw``"
 
-#: ../../getting-started/variables.rst:133
+#: ../../getting-started/variables.rst:132
 msgid "**Total column water vapour**:"
 msgstr "**Vapeur d'eau totale de la colonne** :"
 
-#: ../../getting-started/variables.rst:135
+#: ../../getting-started/variables.rst:134
 msgid "``tcwv``"
 msgstr "``tcwv``"
 
-#: ../../getting-started/variables.rst:137
+#: ../../getting-started/variables.rst:136
 msgid "**Pressure**:"
 msgstr "**Pression** :"
 
-#: ../../getting-started/variables.rst:141
+#: ../../getting-started/variables.rst:140
 msgid "``pres``"
 msgstr "``pres``"
 
-#: ../../getting-started/variables.rst:143
+#: ../../getting-started/variables.rst:142
 msgid "**Sea level pressure**:"
 msgstr "**Pression au niveau de la mer** :"
 
-#: ../../getting-started/variables.rst:145
+#: ../../getting-started/variables.rst:144
 msgid "``slp``"
 msgstr "``slp``"
 
-#: ../../getting-started/variables.rst:146
+#: ../../getting-started/variables.rst:145
 msgid "``mslp``"
 msgstr "``mslp``"
 
-#: ../../getting-started/variables.rst:147
+#: ../../getting-started/variables.rst:146
 msgid "``psl``"
 msgstr "``psl``"
 
-#: ../../getting-started/variables.rst:148
+#: ../../getting-started/variables.rst:147
 msgid "``prmsl``"
 msgstr "``prmsl``"
 
-#: ../../getting-started/variables.rst:149
+#: ../../getting-started/variables.rst:148
 msgid "``msl``"
 msgstr "``msl``"
 
-#: ../../getting-started/variables.rst:151
+#: ../../getting-started/variables.rst:150
 msgid "**U wind component**:"
 msgstr "**Composante U du vent** :"
 
-#: ../../getting-started/variables.rst:153
+#: ../../getting-started/variables.rst:152
 msgid "``u``"
 msgstr "``u``"
 
-#: ../../getting-started/variables.rst:154
+#: ../../getting-started/variables.rst:153
 msgid "``ua``"
 msgstr "``ua``"
 
-#: ../../getting-started/variables.rst:155
+#: ../../getting-started/variables.rst:154
 msgid "``ugrd``"
 msgstr "``ugrd``"
 
-#: ../../getting-started/variables.rst:156
+#: ../../getting-started/variables.rst:155
 msgid "``u_grd``"
 msgstr "``u_grd``"
 
-#: ../../getting-started/variables.rst:157
+#: ../../getting-started/variables.rst:156
 msgid "``uwnd``"
 msgstr "``uwnd``"
 
-#: ../../getting-started/variables.rst:159
+#: ../../getting-started/variables.rst:158
 msgid "**V wind component**:"
 msgstr "**Composante V du vent** :"
 
-#: ../../getting-started/variables.rst:161
+#: ../../getting-started/variables.rst:160
 msgid "``v``"
 msgstr "``v``"
 
-#: ../../getting-started/variables.rst:162
+#: ../../getting-started/variables.rst:161
 msgid "``va``"
 msgstr "``va``"
 
-#: ../../getting-started/variables.rst:163
+#: ../../getting-started/variables.rst:162
 msgid "``vgrd``"
 msgstr "``vgrd``"
 
-#: ../../getting-started/variables.rst:164
+#: ../../getting-started/variables.rst:163
 msgid "``v_grd``"
 msgstr "``v_grd``"
 
-#: ../../getting-started/variables.rst:165
+#: ../../getting-started/variables.rst:164
 msgid "``vwnd``"
 msgstr "``vwnd``"
 
-#: ../../getting-started/variables.rst:167
+#: ../../getting-started/variables.rst:166
 msgid "**PV**:"
 msgstr "**PV** :"
 
-#: ../../getting-started/variables.rst:170
+#: ../../getting-started/variables.rst:169
 msgid "``pvort``"
 msgstr "``pvort``"
 
-#: ../../getting-started/variables.rst:173
+#: ../../getting-started/variables.rst:172
 msgid "**Total precipitation**:"
 msgstr "**Précipitations totales** :"
 
-#: ../../getting-started/variables.rst:175
+#: ../../getting-started/variables.rst:174
 msgid "``tp``"
 msgstr "``tp``"
 
-#: ../../getting-started/variables.rst:176
+#: ../../getting-started/variables.rst:175
 msgid "``prectot``"
 msgstr "``prectot``"
 
-#: ../../getting-started/variables.rst:180
+#: ../../getting-started/variables.rst:179
 msgid "Variables from datasets"
 msgstr "Variables provenant de jeux de données"
 
-#: ../../getting-started/variables.rst:182
+#: ../../getting-started/variables.rst:181
 msgid ""
 "The following variables are defined in AtmoSwing for the different reanalyses. "
 "When no data ID is provided, one can use one of the variants define above."
@@ -2629,687 +2562,687 @@ msgstr ""
 "réanalyses. Lorsqu'aucun identifiant de données n'est fourni, on peut utiliser "
 "l'une des variantes définies ci-dessus."
 
-#: ../../getting-started/variables.rst:185
+#: ../../getting-started/variables.rst:184
 msgid "NCEP/NCAR Reanalysis 1"
 msgstr "NCEP/NCAR Reanalysis 1"
 
-#: ../../getting-started/variables.rst:187 ../../getting-started/variables.rst:256
-#: ../../getting-started/variables.rst:317 ../../getting-started/variables.rst:344
-#: ../../getting-started/variables.rst:380 ../../getting-started/variables.rst:435
-#: ../../getting-started/variables.rst:452 ../../getting-started/variables.rst:609
+#: ../../getting-started/variables.rst:186 ../../getting-started/variables.rst:255
+#: ../../getting-started/variables.rst:316 ../../getting-started/variables.rst:343
+#: ../../getting-started/variables.rst:379 ../../getting-started/variables.rst:434
+#: ../../getting-started/variables.rst:451 ../../getting-started/variables.rst:608
 msgid "**For pressure levels**:"
 msgstr "**Pour les niveaux de pression** :"
 
-#: ../../getting-started/variables.rst:189 ../../getting-started/variables.rst:199
-#: ../../getting-started/variables.rst:258 ../../getting-started/variables.rst:611
+#: ../../getting-started/variables.rst:188 ../../getting-started/variables.rst:198
+#: ../../getting-started/variables.rst:257 ../../getting-started/variables.rst:610
 msgid "Air Temperature"
 msgstr "Température de l'air"
 
-#: ../../getting-started/variables.rst:190 ../../getting-started/variables.rst:259
-#: ../../getting-started/variables.rst:307 ../../getting-started/variables.rst:319
-#: ../../getting-started/variables.rst:486 ../../getting-started/variables.rst:500
-#: ../../getting-started/variables.rst:510 ../../getting-started/variables.rst:553
-#: ../../getting-started/variables.rst:582
+#: ../../getting-started/variables.rst:189 ../../getting-started/variables.rst:258
+#: ../../getting-started/variables.rst:306 ../../getting-started/variables.rst:318
+#: ../../getting-started/variables.rst:485 ../../getting-started/variables.rst:499
+#: ../../getting-started/variables.rst:509 ../../getting-started/variables.rst:552
+#: ../../getting-started/variables.rst:581
 msgid "Geopotential height"
 msgstr "Hauteur géopotentielle"
 
-#: ../../getting-started/variables.rst:191 ../../getting-started/variables.rst:260
-#: ../../getting-started/variables.rst:614
+#: ../../getting-started/variables.rst:190 ../../getting-started/variables.rst:259
+#: ../../getting-started/variables.rst:613
 msgid "Relative Humidity"
 msgstr "Humidité relative"
 
-#: ../../getting-started/variables.rst:192 ../../getting-started/variables.rst:615
-#: ../../getting-started/variables.rst:616
+#: ../../getting-started/variables.rst:191 ../../getting-started/variables.rst:614
+#: ../../getting-started/variables.rst:615
 msgid "Specific Humidity"
 msgstr "Humidité spécifique"
 
-#: ../../getting-started/variables.rst:193 ../../getting-started/variables.rst:261
-#: ../../getting-started/variables.rst:324
+#: ../../getting-started/variables.rst:192 ../../getting-started/variables.rst:260
+#: ../../getting-started/variables.rst:323
 msgid "Vertical Velocity"
 msgstr "Vitesse verticale"
 
-#: ../../getting-started/variables.rst:194 ../../getting-started/variables.rst:262
-#: ../../getting-started/variables.rst:617
+#: ../../getting-started/variables.rst:193 ../../getting-started/variables.rst:261
+#: ../../getting-started/variables.rst:616
 msgid "U-Wind"
 msgstr "Composante U du vent"
 
-#: ../../getting-started/variables.rst:195 ../../getting-started/variables.rst:263
-#: ../../getting-started/variables.rst:618
+#: ../../getting-started/variables.rst:194 ../../getting-started/variables.rst:262
+#: ../../getting-started/variables.rst:617
 msgid "V-Wind"
 msgstr "Composante V du vent"
 
-#: ../../getting-started/variables.rst:197 ../../getting-started/variables.rst:265
-#: ../../getting-started/variables.rst:620
+#: ../../getting-started/variables.rst:196 ../../getting-started/variables.rst:264
+#: ../../getting-started/variables.rst:619
 msgid "**For the surface**:"
 msgstr "**Pour la surface** :"
 
-#: ../../getting-started/variables.rst:200
+#: ../../getting-started/variables.rst:199
 msgid "Surface lifted index (``lftx``)"
 msgstr "Indice d'élévation de la surface (``lftx``)"
 
-#: ../../getting-started/variables.rst:201
+#: ../../getting-started/variables.rst:200
 msgid "Best (4-layer) lifted index (``lftx4``)"
 msgstr "Meilleur indice de soulèvement (4 couches) (``lftx4``)"
 
-#: ../../getting-started/variables.rst:202 ../../getting-started/variables.rst:354
-#: ../../getting-started/variables.rst:390 ../../getting-started/variables.rst:440
-#: ../../getting-started/variables.rst:457 ../../getting-started/variables.rst:472
-#: ../../getting-started/variables.rst:488 ../../getting-started/variables.rst:556
-#: ../../getting-started/variables.rst:585 ../../getting-started/variables.rst:613
-#: ../../getting-started/variables.rst:667
+#: ../../getting-started/variables.rst:201 ../../getting-started/variables.rst:353
+#: ../../getting-started/variables.rst:389 ../../getting-started/variables.rst:439
+#: ../../getting-started/variables.rst:456 ../../getting-started/variables.rst:471
+#: ../../getting-started/variables.rst:487 ../../getting-started/variables.rst:555
+#: ../../getting-started/variables.rst:584 ../../getting-started/variables.rst:612
+#: ../../getting-started/variables.rst:666
 msgid "Vertical velocity"
 msgstr "Vitesse verticale"
 
-#: ../../getting-started/variables.rst:203
+#: ../../getting-started/variables.rst:202
 msgid "Potential temperature (``pottmp``)"
 msgstr "Température potentielle (``pottmp``)"
 
-#: ../../getting-started/variables.rst:204 ../../getting-started/variables.rst:267
-#: ../../getting-started/variables.rst:308 ../../getting-started/variables.rst:480
-#: ../../getting-started/variables.rst:492 ../../getting-started/variables.rst:564
-#: ../../getting-started/variables.rst:593 ../../getting-started/variables.rst:622
-#: ../../getting-started/variables.rst:636
+#: ../../getting-started/variables.rst:203 ../../getting-started/variables.rst:266
+#: ../../getting-started/variables.rst:307 ../../getting-started/variables.rst:479
+#: ../../getting-started/variables.rst:491 ../../getting-started/variables.rst:563
+#: ../../getting-started/variables.rst:592 ../../getting-started/variables.rst:621
+#: ../../getting-started/variables.rst:635
 msgid "Precipitable water"
 msgstr "Eau précipitable"
 
-#: ../../getting-started/variables.rst:205 ../../getting-started/variables.rst:268
-#: ../../getting-started/variables.rst:397 ../../getting-started/variables.rst:425
+#: ../../getting-started/variables.rst:204 ../../getting-started/variables.rst:267
+#: ../../getting-started/variables.rst:396 ../../getting-started/variables.rst:424
 msgid "Pressure"
 msgstr "Pression"
 
-#: ../../getting-started/variables.rst:206 ../../getting-started/variables.rst:310
-#: ../../getting-started/variables.rst:321 ../../getting-started/variables.rst:336
-#: ../../getting-started/variables.rst:349 ../../getting-started/variables.rst:385
-#: ../../getting-started/variables.rst:439 ../../getting-started/variables.rst:456
-#: ../../getting-started/variables.rst:473 ../../getting-started/variables.rst:489
-#: ../../getting-started/variables.rst:554 ../../getting-started/variables.rst:583
-#: ../../getting-started/variables.rst:664
+#: ../../getting-started/variables.rst:205 ../../getting-started/variables.rst:309
+#: ../../getting-started/variables.rst:320 ../../getting-started/variables.rst:335
+#: ../../getting-started/variables.rst:348 ../../getting-started/variables.rst:384
+#: ../../getting-started/variables.rst:438 ../../getting-started/variables.rst:455
+#: ../../getting-started/variables.rst:472 ../../getting-started/variables.rst:488
+#: ../../getting-started/variables.rst:553 ../../getting-started/variables.rst:582
+#: ../../getting-started/variables.rst:663
 msgid "Relative humidity"
 msgstr "Humidité relative"
 
-#: ../../getting-started/variables.rst:207 ../../getting-started/variables.rst:269
-#: ../../getting-started/variables.rst:446 ../../getting-started/variables.rst:463
-#: ../../getting-started/variables.rst:523 ../../getting-started/variables.rst:623
-#: ../../getting-started/variables.rst:635
+#: ../../getting-started/variables.rst:206 ../../getting-started/variables.rst:268
+#: ../../getting-started/variables.rst:445 ../../getting-started/variables.rst:462
+#: ../../getting-started/variables.rst:522 ../../getting-started/variables.rst:622
+#: ../../getting-started/variables.rst:634
 msgid "Sea level pressure"
 msgstr "Pression au niveau de la mer"
 
-#: ../../getting-started/variables.rst:208
+#: ../../getting-started/variables.rst:207
 msgid "U-wind"
 msgstr "Composante U du vent"
 
-#: ../../getting-started/variables.rst:209
+#: ../../getting-started/variables.rst:208
 msgid "V-wind"
 msgstr "Composante V du vent"
 
-#: ../../getting-started/variables.rst:211 ../../getting-started/variables.rst:271
+#: ../../getting-started/variables.rst:210 ../../getting-started/variables.rst:270
 msgid "**For the surface fluxes**:"
 msgstr "**Pour les flux de surface** :"
 
-#: ../../getting-started/variables.rst:213 ../../getting-started/variables.rst:273
+#: ../../getting-started/variables.rst:212 ../../getting-started/variables.rst:272
 msgid "Air Temperature 2m"
 msgstr "Température de l'air 2m"
 
-#: ../../getting-started/variables.rst:214 ../../getting-started/variables.rst:290
+#: ../../getting-started/variables.rst:213 ../../getting-started/variables.rst:289
 msgid "Potential evaporation rate (``pevpr``)"
 msgstr "Taux d'évaporation potentiel (``pevpr``)"
 
-#: ../../getting-started/variables.rst:215 ../../getting-started/variables.rst:274
+#: ../../getting-started/variables.rst:214 ../../getting-started/variables.rst:273
 msgid "Specific humidity at 2m (``shum``)"
 msgstr "Humidité spécifique à 2m (``shum``)"
 
-#: ../../getting-started/variables.rst:216 ../../getting-started/variables.rst:278
+#: ../../getting-started/variables.rst:215 ../../getting-started/variables.rst:277
 msgid "Soil moisture (0-10cm) (``soilw0-10``)"
 msgstr "Humidité du sol (0-10cm) (``soilw0-10``)"
 
-#: ../../getting-started/variables.rst:217 ../../getting-started/variables.rst:279
+#: ../../getting-started/variables.rst:216 ../../getting-started/variables.rst:278
 msgid "Soil moisture (10-200cm) (``soilw10-200``)"
 msgstr "Humidité du sol (10-200cm) (``soilw10-200``)"
 
-#: ../../getting-started/variables.rst:218 ../../getting-started/variables.rst:277
+#: ../../getting-started/variables.rst:217 ../../getting-started/variables.rst:276
 msgid "Skin Temperature (``sktmp``)"
 msgstr "Température de surface (``sktmp``)"
 
-#: ../../getting-started/variables.rst:219 ../../getting-started/variables.rst:280
+#: ../../getting-started/variables.rst:218 ../../getting-started/variables.rst:279
 msgid "Temperature of 0-10cm layer (``tmp0-10``)"
 msgstr "Température de la couche 0-10cm (``tmp0-10``)"
 
-#: ../../getting-started/variables.rst:220 ../../getting-started/variables.rst:281
+#: ../../getting-started/variables.rst:219 ../../getting-started/variables.rst:280
 msgid "Temperature of 10-200cm layer (``tmp10-200``)"
 msgstr "Température de la couche 10-200cm (``tmp10-200``)"
 
-#: ../../getting-started/variables.rst:221
+#: ../../getting-started/variables.rst:220
 msgid "Temperature at 300cm (``tmp300``)"
 msgstr "Température à 300 cm (``tmp300``)"
 
-#: ../../getting-started/variables.rst:222 ../../getting-started/variables.rst:282
+#: ../../getting-started/variables.rst:221 ../../getting-started/variables.rst:281
 msgid "U-wind at 10 m"
 msgstr "Composante U du vent à 10 m"
 
-#: ../../getting-started/variables.rst:223 ../../getting-started/variables.rst:283
+#: ../../getting-started/variables.rst:222 ../../getting-started/variables.rst:282
 msgid "V-wind at 10 m"
 msgstr "Composante V du vent à 10 m"
 
-#: ../../getting-started/variables.rst:224 ../../getting-started/variables.rst:284
+#: ../../getting-started/variables.rst:223 ../../getting-started/variables.rst:283
 msgid "Water equiv. of snow dept (``weasd``)"
 msgstr "Équivalent en eau de la neige (``weasd``)"
 
-#: ../../getting-started/variables.rst:225 ../../getting-started/variables.rst:275
+#: ../../getting-started/variables.rst:224 ../../getting-started/variables.rst:274
 msgid "Maximum temperature at 2m (``tmax2m``)"
 msgstr "Température maximale à 2m (``tmax2m``)"
 
-#: ../../getting-started/variables.rst:226 ../../getting-started/variables.rst:276
+#: ../../getting-started/variables.rst:225 ../../getting-started/variables.rst:275
 msgid "Minimum temperature at 2m (``tmin2m``)"
 msgstr "Température minimale à 2m (``tmin2m``)"
 
-#: ../../getting-started/variables.rst:227
+#: ../../getting-started/variables.rst:226
 msgid "Cloud forcing net longwave flux (``cfnlf``)"
 msgstr "Flux net d'ondes longues du forçage des nuages (``cfnlf``)"
 
-#: ../../getting-started/variables.rst:228
+#: ../../getting-started/variables.rst:227
 msgid "Cloud forcing net solar flux (``cfnsf``)"
 msgstr "Flux solaire net de forçage des nuages (``cfnsf``)"
 
-#: ../../getting-started/variables.rst:229 ../../getting-started/variables.rst:285
+#: ../../getting-started/variables.rst:228 ../../getting-started/variables.rst:284
 msgid "Convective precipitation rate (``cprat``)"
 msgstr "Taux de précipitations convectives (``cprat``)"
 
-#: ../../getting-started/variables.rst:230
+#: ../../getting-started/variables.rst:229
 msgid "Clear sky downward longwave flux (``csdlf``)"
 msgstr "Flux d'ondes longues descendantes par ciel clair (``csdlf``)"
 
-#: ../../getting-started/variables.rst:231
+#: ../../getting-started/variables.rst:230
 msgid "Clear sky downward solar flux (``csdsf``)"
 msgstr "Flux solaire descendant par ciel clair (``csdsf``)"
 
-#: ../../getting-started/variables.rst:232
+#: ../../getting-started/variables.rst:231
 msgid "Clear sky upward solar flux at surface (``csusf``)"
 msgstr "Flux solaire ascendant à la surface par ciel clair (``csusf``)"
 
-#: ../../getting-started/variables.rst:233 ../../getting-started/variables.rst:286
+#: ../../getting-started/variables.rst:232 ../../getting-started/variables.rst:285
 msgid "Downward longwave radiation flux (``dlwrf``)"
 msgstr "Flux de rayonnement descendant de grande longueur d'onde (``dlwrf``)"
 
-#: ../../getting-started/variables.rst:234 ../../getting-started/variables.rst:287
+#: ../../getting-started/variables.rst:233 ../../getting-started/variables.rst:286
 msgid "Downward solar radiation flux (``dswrf``)"
 msgstr "Flux de rayonnement solaire descendant (``dswrf``)"
 
-#: ../../getting-started/variables.rst:235 ../../getting-started/variables.rst:288
+#: ../../getting-started/variables.rst:234 ../../getting-started/variables.rst:287
 msgid "Ground heat flux (``gflux``)"
 msgstr "Flux de chaleur du sol (``gflux``)"
 
-#: ../../getting-started/variables.rst:236 ../../getting-started/variables.rst:289
+#: ../../getting-started/variables.rst:235 ../../getting-started/variables.rst:288
 msgid "Latent heat net flux (``lhtfl``)"
 msgstr "Flux net de chaleur latente (``lhtfl``)"
 
-#: ../../getting-started/variables.rst:237
+#: ../../getting-started/variables.rst:236
 msgid "Near IR beam downward solar flux (``nbdsf``)"
 msgstr "Flux solaire descendant du faisceau proche IR (``nbdsf``)"
 
-#: ../../getting-started/variables.rst:238
+#: ../../getting-started/variables.rst:237
 msgid "Near IR diffuse downward solar flux (``nddsf``)"
 msgstr "Flux solaire descendant diffus dans le proche IR (``nddsf``)"
 
-#: ../../getting-started/variables.rst:239
+#: ../../getting-started/variables.rst:238
 msgid "Net longwave radiation (``nlwrs``)"
 msgstr "Rayonnement net de grande longueur d'onde (``nlwrs``)"
 
-#: ../../getting-started/variables.rst:240
+#: ../../getting-started/variables.rst:239
 msgid "Net shortwave radiation (``nswrs``)"
 msgstr "Rayonnement net d'ondes courtes (``nswrs``)"
 
-#: ../../getting-started/variables.rst:241 ../../getting-started/variables.rst:291
-#: ../../getting-started/variables.rst:627 ../../getting-started/variables.rst:648
+#: ../../getting-started/variables.rst:240 ../../getting-started/variables.rst:290
+#: ../../getting-started/variables.rst:626 ../../getting-started/variables.rst:647
 msgid "Precipitation rate"
 msgstr "Taux de précipitations"
 
-#: ../../getting-started/variables.rst:242 ../../getting-started/variables.rst:292
+#: ../../getting-started/variables.rst:241 ../../getting-started/variables.rst:291
 msgid "Sensible heat net flux (``shtfl``)"
 msgstr "Flux net de chaleur sensible (``shtfl``)"
 
-#: ../../getting-started/variables.rst:243 ../../getting-started/variables.rst:294
+#: ../../getting-started/variables.rst:242 ../../getting-started/variables.rst:293
 msgid "Momentum flux (zonal) (``uflx``)"
 msgstr "Flux de quantité de mouvement (zonal) (``uflx``)"
 
-#: ../../getting-started/variables.rst:244 ../../getting-started/variables.rst:295
+#: ../../getting-started/variables.rst:243 ../../getting-started/variables.rst:294
 msgid "Zonal gravity wave stress (``ugwd``)"
 msgstr "Contrainte d'onde de gravité zonale (``ugwd``)"
 
-#: ../../getting-started/variables.rst:245 ../../getting-started/variables.rst:296
+#: ../../getting-started/variables.rst:244 ../../getting-started/variables.rst:295
 msgid "Upward Longwave Radiation Flux (``ulwrf``)"
 msgstr "Flux ascendant de rayonnement de grande longueur d'onde (``ulwrf``)"
 
-#: ../../getting-started/variables.rst:246 ../../getting-started/variables.rst:297
+#: ../../getting-started/variables.rst:245 ../../getting-started/variables.rst:296
 msgid "Upward Solar Radiation Flux (``uswrf``)"
 msgstr "Flux de rayonnement solaire ascendant (``uswrf``)"
 
-#: ../../getting-started/variables.rst:247
+#: ../../getting-started/variables.rst:246
 msgid "Visible Beam Downward Solar Flux (``vbdsf``)"
 msgstr "Flux solaire descendant du faisceau visible (`vbdsf`)"
 
-#: ../../getting-started/variables.rst:248
+#: ../../getting-started/variables.rst:247
 msgid "Visible Diffuse Downward Solar Flux (``vddsf``)"
 msgstr "Flux solaire visible diffus descendant (`vddsf`)"
 
-#: ../../getting-started/variables.rst:249
+#: ../../getting-started/variables.rst:248
 msgid "Momentum Flux, v-component (``vflx``)"
 msgstr "Flux de Momentum, composante v (``vflx``)"
 
-#: ../../getting-started/variables.rst:250 ../../getting-started/variables.rst:299
+#: ../../getting-started/variables.rst:249 ../../getting-started/variables.rst:298
 msgid "Meridional Gravity Wave Stress (``vgwd``)"
 msgstr "Contrainte d'onde de gravité méridienne (``vgwd``)"
 
-#: ../../getting-started/variables.rst:254
+#: ../../getting-started/variables.rst:253
 msgid "NCEP/DOE Reanalysis 2"
 msgstr "NCEP/DOE Reanalysis 2"
 
-#: ../../getting-started/variables.rst:293
+#: ../../getting-started/variables.rst:292
 msgid "Total cloud cover (``tcdc``)"
 msgstr "Couverture nuageuse totale (``tcdc``)"
 
-#: ../../getting-started/variables.rst:298
+#: ../../getting-started/variables.rst:297
 msgid "Momentum Flux (meridional) (``vflx``)"
 msgstr "Flux de Momentum (méridional) (``vflx``)"
 
-#: ../../getting-started/variables.rst:303
+#: ../../getting-started/variables.rst:302
 msgid "NCEP CFSR"
 msgstr "NCEP CFSR"
 
-#: ../../getting-started/variables.rst:305
+#: ../../getting-started/variables.rst:304
 msgid "**For pressure levels** (``pgbh``):"
 msgstr "**Pour les niveaux de pression** (``pgbh``) :"
 
-#: ../../getting-started/variables.rst:309
+#: ../../getting-started/variables.rst:308
 msgid "Mean sea level pressure"
 msgstr "Pression au niveau moyen de la mer"
 
-#: ../../getting-started/variables.rst:315
+#: ../../getting-started/variables.rst:314
 msgid "NCEP CFSR subset"
 msgstr "NCEP CFSR subset"
 
-#: ../../getting-started/variables.rst:320
+#: ../../getting-started/variables.rst:319
 msgid "Geopotential height anomaly (``gpa``)"
 msgstr "Anomalie de hauteur géopotentielle (``gpa``)"
 
-#: ../../getting-started/variables.rst:322 ../../getting-started/variables.rst:348
-#: ../../getting-started/variables.rst:384 ../../getting-started/variables.rst:399
-#: ../../getting-started/variables.rst:474 ../../getting-started/variables.rst:511
+#: ../../getting-started/variables.rst:321 ../../getting-started/variables.rst:347
+#: ../../getting-started/variables.rst:383 ../../getting-started/variables.rst:398
+#: ../../getting-started/variables.rst:473 ../../getting-started/variables.rst:510
 msgid "Specific humidity"
 msgstr "Humidité spécifique"
 
-#: ../../getting-started/variables.rst:325
+#: ../../getting-started/variables.rst:324
 msgid "Eastward wind"
 msgstr "Vent d'est"
 
-#: ../../getting-started/variables.rst:326
+#: ../../getting-started/variables.rst:325
 msgid "Northward wind"
 msgstr "Vent du nord"
 
-#: ../../getting-started/variables.rst:327
+#: ../../getting-started/variables.rst:326
 msgid "Atmosphere horizontal velocity potential (``vpot``)"
 msgstr "Potentiel de vitesse horizontale de l'atmosphère (``vpot``)"
 
-#: ../../getting-started/variables.rst:328
+#: ../../getting-started/variables.rst:327
 msgid "5-wave geopotential height (``5wavh``)"
 msgstr "Hauteur géopotentielle à 5 ondes (``5wavh``)"
 
-#: ../../getting-started/variables.rst:329
+#: ../../getting-started/variables.rst:328
 msgid "5-wave geopotential height anomaly (``5wava``)"
 msgstr "Anomalie de hauteur géopotentielle à 5 ondes (``5wava``)"
 
-#: ../../getting-started/variables.rst:330
+#: ../../getting-started/variables.rst:329
 msgid "Atmosphere absolute vorticity (``absv``)"
 msgstr "Vorticité absolue de l'atmosphère (``absv``)"
 
-#: ../../getting-started/variables.rst:331
+#: ../../getting-started/variables.rst:330
 msgid "Cloud water mixing ratio (``clwmr``)"
 msgstr "Taux de mélange de l'eau dans les nuages (``clwmr``)"
 
-#: ../../getting-started/variables.rst:332
+#: ../../getting-started/variables.rst:331
 msgid "Atmosphere horizontal streamfunction (``strm``)"
 msgstr "Fonction horizontale de l'atmosphère (``strm``)"
 
-#: ../../getting-started/variables.rst:334
+#: ../../getting-started/variables.rst:333
 msgid "**For the total column**:"
 msgstr "**Pour la colonne totale**:"
 
-#: ../../getting-started/variables.rst:337
+#: ../../getting-started/variables.rst:336
 msgid "Cloud water (``cwat``)"
 msgstr "Eau de nuage (``cwat``)"
 
-#: ../../getting-started/variables.rst:338
+#: ../../getting-started/variables.rst:337
 msgid "Atmosphere water vapor content (``pwat``)"
 msgstr "Contenu en vapeur d'eau de l'atmosphère (``pwat``)"
 
-#: ../../getting-started/variables.rst:342
+#: ../../getting-started/variables.rst:341
 msgid "ECMWF ERA5"
 msgstr "ECMWF ERA5"
 
-#: ../../getting-started/variables.rst:346 ../../getting-started/variables.rst:382
-#: ../../getting-started/variables.rst:395
+#: ../../getting-started/variables.rst:345 ../../getting-started/variables.rst:381
+#: ../../getting-started/variables.rst:394
 msgid "Divergence (``d``)"
 msgstr "Divergence (``d``)"
 
-#: ../../getting-started/variables.rst:347 ../../getting-started/variables.rst:383
-#: ../../getting-started/variables.rst:398 ../../getting-started/variables.rst:568
-#: ../../getting-started/variables.rst:597
+#: ../../getting-started/variables.rst:346 ../../getting-started/variables.rst:382
+#: ../../getting-started/variables.rst:397 ../../getting-started/variables.rst:567
+#: ../../getting-started/variables.rst:596
 msgid "Potential vorticity"
 msgstr "Vorticité potentielle"
+
+#: ../../getting-started/variables.rst:350 ../../getting-started/variables.rst:386
+#: ../../getting-started/variables.rst:399 ../../getting-started/variables.rst:426
+#: ../../getting-started/variables.rst:474 ../../getting-started/variables.rst:489
+msgid "U component of wind"
+msgstr "Composante U du vent"
 
 #: ../../getting-started/variables.rst:351 ../../getting-started/variables.rst:387
 #: ../../getting-started/variables.rst:400 ../../getting-started/variables.rst:427
 #: ../../getting-started/variables.rst:475 ../../getting-started/variables.rst:490
-msgid "U component of wind"
-msgstr "Composante U du vent"
-
-#: ../../getting-started/variables.rst:352 ../../getting-started/variables.rst:388
-#: ../../getting-started/variables.rst:401 ../../getting-started/variables.rst:428
-#: ../../getting-started/variables.rst:476 ../../getting-started/variables.rst:491
 msgid "V component of wind"
 msgstr "Composante V du vent"
 
-#: ../../getting-started/variables.rst:353 ../../getting-started/variables.rst:389
-#: ../../getting-started/variables.rst:402
+#: ../../getting-started/variables.rst:352 ../../getting-started/variables.rst:388
+#: ../../getting-started/variables.rst:401
 msgid "Vorticity (relative) (``vo``)"
 msgstr "Vorticité (relative) (``vo``)"
 
-#: ../../getting-started/variables.rst:355 ../../getting-started/variables.rst:391
-#: ../../getting-started/variables.rst:429 ../../getting-started/variables.rst:437
-#: ../../getting-started/variables.rst:454 ../../getting-started/variables.rst:612
-#: ../../getting-started/variables.rst:663
+#: ../../getting-started/variables.rst:354 ../../getting-started/variables.rst:390
+#: ../../getting-started/variables.rst:428 ../../getting-started/variables.rst:436
+#: ../../getting-started/variables.rst:453 ../../getting-started/variables.rst:611
+#: ../../getting-started/variables.rst:662
 msgid "Geopotential"
 msgstr "Géopotentiel"
 
-#: ../../getting-started/variables.rst:357 ../../getting-started/variables.rst:404
-#: ../../getting-started/variables.rst:442 ../../getting-started/variables.rst:459
+#: ../../getting-started/variables.rst:356 ../../getting-started/variables.rst:403
+#: ../../getting-started/variables.rst:441 ../../getting-started/variables.rst:458
 msgid "**For surface**:"
 msgstr "**Pour la surface** :"
 
-#: ../../getting-started/variables.rst:359 ../../getting-started/variables.rst:406
+#: ../../getting-started/variables.rst:358 ../../getting-started/variables.rst:405
 msgid "2 meter dewpoint temperature (``d2m``)"
 msgstr "Température du point de rosée à 2 mètres (``d2m``)"
 
-#: ../../getting-started/variables.rst:360 ../../getting-started/variables.rst:407
+#: ../../getting-started/variables.rst:359 ../../getting-started/variables.rst:406
 msgid "Sea level pressure (``msl``)"
 msgstr "Pression au niveau de la mer (``msl``)"
 
-#: ../../getting-started/variables.rst:361 ../../getting-started/variables.rst:408
+#: ../../getting-started/variables.rst:360 ../../getting-started/variables.rst:407
 msgid "Snow depth (``sd``)"
 msgstr "Épaisseur de neige (``sd``)"
 
-#: ../../getting-started/variables.rst:362 ../../getting-started/variables.rst:409
+#: ../../getting-started/variables.rst:361 ../../getting-started/variables.rst:408
 msgid "Sea surface temperature (``sst``)"
 msgstr "Température de surface de la mer (``sst``)"
 
-#: ../../getting-started/variables.rst:363 ../../getting-started/variables.rst:410
+#: ../../getting-started/variables.rst:362 ../../getting-started/variables.rst:409
 msgid "2 meter temperature (``t2m``)"
 msgstr "Température à 2 mètres (``t2m``)"
 
-#: ../../getting-started/variables.rst:364 ../../getting-started/variables.rst:411
+#: ../../getting-started/variables.rst:363 ../../getting-started/variables.rst:410
 msgid "Total column water (``tcw``)"
 msgstr "Eau totale de la colonne (``tcw``)"
 
-#: ../../getting-started/variables.rst:365 ../../getting-started/variables.rst:412
+#: ../../getting-started/variables.rst:364 ../../getting-started/variables.rst:411
 msgid "Total column water vapor (``tcwv``)"
 msgstr "Vapeur d'eau totale de la colonne (``tcwv``)"
 
-#: ../../getting-started/variables.rst:366 ../../getting-started/variables.rst:413
+#: ../../getting-started/variables.rst:365 ../../getting-started/variables.rst:412
 msgid "10 meter U wind component (``u10``)"
 msgstr "Composante U du vent à 10 mètres (``u10``)"
 
-#: ../../getting-started/variables.rst:367 ../../getting-started/variables.rst:414
+#: ../../getting-started/variables.rst:366 ../../getting-started/variables.rst:413
 msgid "10 meter V wind component (``v10``)"
 msgstr "Composante V du vent à 10 mètres (``v10``)"
 
-#: ../../getting-started/variables.rst:368
+#: ../../getting-started/variables.rst:367
 msgid "Total precipitation (``tp``)"
 msgstr "Précipitations totales (``tp``)"
 
-#: ../../getting-started/variables.rst:369 ../../getting-started/variables.rst:416
+#: ../../getting-started/variables.rst:368 ../../getting-started/variables.rst:415
 msgid "Convective available potential energy (``cape``)"
 msgstr "Énergie potentielle de convection disponible (``cape``)"
 
-#: ../../getting-started/variables.rst:370 ../../getting-started/variables.rst:417
+#: ../../getting-started/variables.rst:369 ../../getting-started/variables.rst:416
 msgid "Instantaneous moisture flux (``ie``)"
 msgstr "Flux d'humidité instantané (``ie``)"
 
-#: ../../getting-started/variables.rst:371 ../../getting-started/variables.rst:418
+#: ../../getting-started/variables.rst:370 ../../getting-started/variables.rst:417
 msgid "Surface net solar radiation (``ssr``)"
 msgstr "Rayonnement solaire net de surface (``ssr``)"
 
-#: ../../getting-started/variables.rst:372 ../../getting-started/variables.rst:419
+#: ../../getting-started/variables.rst:371 ../../getting-started/variables.rst:418
 msgid "Surface solar radiation downwards (``ssrd``)"
 msgstr "Rayonnement solaire descendant de surface (``ssrd``)"
 
-#: ../../getting-started/variables.rst:373 ../../getting-started/variables.rst:420
+#: ../../getting-started/variables.rst:372 ../../getting-started/variables.rst:419
 msgid "Surface net thermal radiation (``str``)"
 msgstr "Rayonnement thermique net de la surface (``str``)"
 
-#: ../../getting-started/variables.rst:374 ../../getting-started/variables.rst:421
+#: ../../getting-started/variables.rst:373 ../../getting-started/variables.rst:420
 msgid "Surface thermal radiation downwards (``strd``)"
 msgstr "Rayonnement thermique descendant de surface (``strd``)"
 
-#: ../../getting-started/variables.rst:378
+#: ../../getting-started/variables.rst:377
 msgid "ECMWF ERA-interim"
 msgstr "ECMWF ERA-interim"
 
-#: ../../getting-started/variables.rst:393 ../../getting-started/variables.rst:566
-#: ../../getting-started/variables.rst:595
+#: ../../getting-started/variables.rst:392 ../../getting-started/variables.rst:565
+#: ../../getting-started/variables.rst:594
 msgid "**For isentropic levels**:"
 msgstr "**Pour les niveaux isentropiques** :"
 
-#: ../../getting-started/variables.rst:396
+#: ../../getting-started/variables.rst:395
 msgid "Montgomery potential (``mont``)"
 msgstr "Potentiel de Montgomery (``mont``)"
 
-#: ../../getting-started/variables.rst:415 ../../getting-started/variables.rst:445
-#: ../../getting-started/variables.rst:462
+#: ../../getting-started/variables.rst:414 ../../getting-started/variables.rst:444
+#: ../../getting-started/variables.rst:461
 msgid "Total precipitation"
 msgstr "Précipitations totales"
 
-#: ../../getting-started/variables.rst:423
+#: ../../getting-started/variables.rst:422
 msgid "**For PV levels**:"
 msgstr "**Pour les niveaux de PV** :"
 
-#: ../../getting-started/variables.rst:426
+#: ../../getting-started/variables.rst:425
 msgid "Potential temperature (``pt``)"
 msgstr "Température potentielle (``pt``)"
 
-#: ../../getting-started/variables.rst:433
+#: ../../getting-started/variables.rst:432
 msgid "ECMWF ERA 20th Century"
 msgstr "ECMWF ERA 20th Century"
 
-#: ../../getting-started/variables.rst:444 ../../getting-started/variables.rst:461
+#: ../../getting-started/variables.rst:443 ../../getting-started/variables.rst:460
 msgid "Total column water"
 msgstr "Total de la colonne d'eau"
 
-#: ../../getting-started/variables.rst:450
+#: ../../getting-started/variables.rst:449
 msgid "ECMWF Coupled ERA 20th Century"
 msgstr "ECMWF Coupled ERA 20th Century"
 
-#: ../../getting-started/variables.rst:467
+#: ../../getting-started/variables.rst:466
 msgid "ECMWF IFS"
 msgstr "ECMWF IFS"
 
-#: ../../getting-started/variables.rst:469
+#: ../../getting-started/variables.rst:468
 msgid "Geopotential (``z``)"
 msgstr "Géopotentiel (``z``)"
 
-#: ../../getting-started/variables.rst:470
+#: ../../getting-started/variables.rst:469
 msgid "Geopotential height (``gh``)"
 msgstr "Hauteur géopotentielle (``gh``)"
 
-#: ../../getting-started/variables.rst:471 ../../getting-started/variables.rst:487
-#: ../../getting-started/variables.rst:501 ../../getting-started/variables.rst:512
-#: ../../getting-started/variables.rst:524 ../../getting-started/variables.rst:666
+#: ../../getting-started/variables.rst:470 ../../getting-started/variables.rst:486
+#: ../../getting-started/variables.rst:500 ../../getting-started/variables.rst:511
+#: ../../getting-started/variables.rst:523 ../../getting-started/variables.rst:665
 msgid "Air temperature"
 msgstr "Température de l'air"
 
-#: ../../getting-started/variables.rst:477
+#: ../../getting-started/variables.rst:476
 msgid "Theta E (``thetaE``)"
 msgstr "Theta E (``thetaE``)"
 
-#: ../../getting-started/variables.rst:478
+#: ../../getting-started/variables.rst:477
 msgid "Theta ES (``thetaES``)"
 msgstr "Theta ES (``thetaES``)"
 
-#: ../../getting-started/variables.rst:479
+#: ../../getting-started/variables.rst:478
 msgid "Total column water vapour (``tcwv``)"
 msgstr "Vapeur d'eau totale de la colonne (``tcwv``)"
 
-#: ../../getting-started/variables.rst:484
+#: ../../getting-started/variables.rst:483
 msgid "NWS GFS"
 msgstr "NWS GFS"
 
-#: ../../getting-started/variables.rst:496
+#: ../../getting-started/variables.rst:495
 msgid "NASA MERRA-2"
 msgstr "NASA MERRA-2"
 
-#: ../../getting-started/variables.rst:498 ../../getting-started/variables.rst:508
+#: ../../getting-started/variables.rst:497 ../../getting-started/variables.rst:507
 msgid "**For product 'inst6_3d_ana_Np'**:"
 msgstr "**Pour le produit 'inst6_3d_ana_Np'** :"
 
-#: ../../getting-started/variables.rst:502 ../../getting-started/variables.rst:513
+#: ../../getting-started/variables.rst:501 ../../getting-started/variables.rst:512
 msgid "Sea-level pressure"
 msgstr "Pression au niveau de la mer"
 
-#: ../../getting-started/variables.rst:506
+#: ../../getting-started/variables.rst:505
 msgid "NASA MERRA-2 subset"
 msgstr "NASA MERRA-2 subset"
 
-#: ../../getting-started/variables.rst:514
+#: ../../getting-started/variables.rst:513
 msgid "Eastward wind component"
 msgstr "Composante est du vent"
 
-#: ../../getting-started/variables.rst:515
+#: ../../getting-started/variables.rst:514
 msgid "Northward wind component"
 msgstr "Composante nord du vent"
 
-#: ../../getting-started/variables.rst:516
+#: ../../getting-started/variables.rst:515
 msgid "Surface pressure (``ps``)"
 msgstr "Pression de surface (``ps``)"
 
-#: ../../getting-started/variables.rst:518
+#: ../../getting-started/variables.rst:517
 msgid "**For product 'inst3_3d_asm_Np'**:"
 msgstr "**Pour le produit 'inst3_3d_asm_Np'** :"
 
-#: ../../getting-started/variables.rst:520
+#: ../../getting-started/variables.rst:519
 msgid "Ertel's potential vorticity"
 msgstr "Vorticité potentielle d'Ertel"
 
-#: ../../getting-started/variables.rst:521
+#: ../../getting-started/variables.rst:520
 msgid "Vertical pressure velocity"
 msgstr "Vitesse de pression verticale"
 
-#: ../../getting-started/variables.rst:522
+#: ../../getting-started/variables.rst:521
 msgid "Relative humidity after moist"
 msgstr "Humidité relative après humidification"
 
-#: ../../getting-started/variables.rst:526
+#: ../../getting-started/variables.rst:525
 msgid "**For product 'inst1_2d_int_Nx'**:"
 msgstr "**Pour le produit 'inst1_2d_int_Nx'** :"
 
-#: ../../getting-started/variables.rst:528 ../../getting-started/variables.rst:534
+#: ../../getting-started/variables.rst:527 ../../getting-started/variables.rst:533
 msgid "Total precipitable ice water (``tqi``)"
 msgstr "Eau gelée précipitable totale (``tqi``)"
 
-#: ../../getting-started/variables.rst:529 ../../getting-started/variables.rst:535
+#: ../../getting-started/variables.rst:528 ../../getting-started/variables.rst:534
 msgid "Total precipitable liquid water (``tql``)"
 msgstr "Eau liquide précipitable totale (``tql``)"
 
-#: ../../getting-started/variables.rst:530 ../../getting-started/variables.rst:536
+#: ../../getting-started/variables.rst:529 ../../getting-started/variables.rst:535
 msgid "Total precipitable water vapor (``tqv``)"
 msgstr "Vapeur d'eau précipitable totale (``tqv``)"
 
-#: ../../getting-started/variables.rst:532
+#: ../../getting-started/variables.rst:531
 msgid "**For product 'inst1_2d_asm_Nx'**:"
 msgstr "**Pour le produit 'inst1_2d_asm_Nx'** :"
 
-#: ../../getting-started/variables.rst:537
+#: ../../getting-started/variables.rst:536
 msgid "10-meter air temperature (``t10m``)"
 msgstr "Température de l'air à 10 mètres (``t10m``)"
 
-#: ../../getting-started/variables.rst:539
+#: ../../getting-started/variables.rst:538
 msgid "**For product 'tavg1_2d_flx_Nx'**:"
 msgstr "**Pour le produit 'tavg1_2d_flx_Nx'** :"
 
-#: ../../getting-started/variables.rst:541
+#: ../../getting-started/variables.rst:540
 msgid "Total surface precipitation flux"
 msgstr "Flux total de précipitations de surface"
 
-#: ../../getting-started/variables.rst:543
+#: ../../getting-started/variables.rst:542
 msgid "**For product 'tavg1_2d_lnd_Nx'**:"
 msgstr "**Pour le produit 'tavg1_2d_lnd_Nx'** :"
 
-#: ../../getting-started/variables.rst:545
+#: ../../getting-started/variables.rst:544
 msgid "Total precipitation land; bias corrected"
 msgstr "Précipitations totales, avec biais corrigés"
 
-#: ../../getting-started/variables.rst:549
+#: ../../getting-started/variables.rst:548
 msgid "JMA JRA-55 subset"
 msgstr "JMA JRA-55 subset"
 
-#: ../../getting-started/variables.rst:551 ../../getting-started/variables.rst:580
+#: ../../getting-started/variables.rst:550 ../../getting-started/variables.rst:579
 msgid "**For pressure levels** (anl_p125):"
 msgstr "**Pour les niveaux de pression** (anl_p125) :"
 
-#: ../../getting-started/variables.rst:558 ../../getting-started/variables.rst:587
+#: ../../getting-started/variables.rst:557 ../../getting-started/variables.rst:586
 msgid "**For the surface** (anl_surf125):"
 msgstr "**Pour la surface** (anl_surf125) :"
 
-#: ../../getting-started/variables.rst:560 ../../getting-started/variables.rst:589
+#: ../../getting-started/variables.rst:559 ../../getting-started/variables.rst:588
 msgid "Pressure reduced to MSL"
 msgstr "Pression réduite au niveau de la mer"
 
-#: ../../getting-started/variables.rst:562 ../../getting-started/variables.rst:591
+#: ../../getting-started/variables.rst:561 ../../getting-started/variables.rst:590
 msgid "**For the total column** (anl_column125):"
 msgstr "**Pour la colonne totale** (anl_column125) :"
 
-#: ../../getting-started/variables.rst:569 ../../getting-started/variables.rst:598
+#: ../../getting-started/variables.rst:568 ../../getting-started/variables.rst:597
 msgid "Geopotential Height"
 msgstr "Hauteur géopotentielle"
 
-#: ../../getting-started/variables.rst:571 ../../getting-started/variables.rst:600
+#: ../../getting-started/variables.rst:570 ../../getting-started/variables.rst:599
 msgid "**For product 'fcst_phy2m125'**:"
 msgstr "**Pour le produit 'fcst_phy2m125'** :"
 
-#: ../../getting-started/variables.rst:573 ../../getting-started/variables.rst:602
+#: ../../getting-started/variables.rst:572 ../../getting-started/variables.rst:601
 msgid "Total precipitation 3h (``tprat3h``)"
 msgstr "Précipitations totales 3h (``tprat3h``)"
 
-#: ../../getting-started/variables.rst:574 ../../getting-started/variables.rst:603
+#: ../../getting-started/variables.rst:573 ../../getting-started/variables.rst:602
 msgid "Total precipitation 6h (``tprat6h``)"
 msgstr "Précipitations totales 6h (``tprat6h``)"
 
-#: ../../getting-started/variables.rst:578
+#: ../../getting-started/variables.rst:577
 msgid "JMA JRA-55C subset"
 msgstr "JMA JRA-55C subset"
 
-#: ../../getting-started/variables.rst:607
+#: ../../getting-started/variables.rst:606
 msgid "NOAA 20CR v2c"
 msgstr "NOAA 20CR v2c"
 
-#: ../../getting-started/variables.rst:625
+#: ../../getting-started/variables.rst:624
 msgid "**For surface fluxes**:"
 msgstr "**Pour les flux de surface** :"
 
-#: ../../getting-started/variables.rst:631
+#: ../../getting-started/variables.rst:630
 msgid "NOAA 20CR v2c ensemble"
 msgstr "NOAA 20CR v2c ensemble"
 
-#: ../../getting-started/variables.rst:633
+#: ../../getting-started/variables.rst:632
 msgid "**For the product 'analysis'**:"
 msgstr "**Pour le produit 'analyse'** :"
 
-#: ../../getting-started/variables.rst:637
+#: ../../getting-started/variables.rst:636
 msgid "Vertical velocity at 500 hPa (``omega500``)"
 msgstr "Vitesse verticale à 500 hPa (``omega500``)"
 
-#: ../../getting-started/variables.rst:638
+#: ../../getting-started/variables.rst:637
 msgid "Relative Humidity at 850 hPa (``rh850``)"
 msgstr "Humidité relative à 850 hPa (``rh850``)"
 
-#: ../../getting-started/variables.rst:639
+#: ../../getting-started/variables.rst:638
 msgid ""
 "Relative Humidity at the pressure level 0.995 times the surface pressure "
 "(``rh9950``)"
@@ -3317,11 +3250,11 @@ msgstr ""
 "Humidité relative au niveau de pression 0.995 fois la pression de surface "
 "(``rh9950``)"
 
-#: ../../getting-started/variables.rst:640
+#: ../../getting-started/variables.rst:639
 msgid "Air Temperature at 850 hPa(``t850``)"
 msgstr "Température de l'air à 850 hPa (``t850``)"
 
-#: ../../getting-started/variables.rst:641
+#: ../../getting-started/variables.rst:640
 msgid ""
 "Air Temperature at the pressure level 0.995 times the surface pressure "
 "(``t9950``)"
@@ -3329,54 +3262,54 @@ msgstr ""
 "Température de l'air au niveau de pression 0.995 fois la pression de surface "
 "(``t9950``)"
 
-#: ../../getting-started/variables.rst:642
+#: ../../getting-started/variables.rst:641
 msgid "Geopotential height at 200 hPa (``z200``)"
 msgstr "Hauteur géopotentielle à 200 hPa (``z200``)"
 
-#: ../../getting-started/variables.rst:643
+#: ../../getting-started/variables.rst:642
 msgid "Geopotential height at 500 hPa (``z500``)"
 msgstr "Hauteur géopotentielle à 500 hPa (``z500``)"
 
-#: ../../getting-started/variables.rst:644
+#: ../../getting-started/variables.rst:643
 msgid "Geopotential height at 1000 hPa (``z1000``)"
 msgstr "Hauteur géopotentielle à 1000 hPa (``z1000``)"
 
-#: ../../getting-started/variables.rst:646
+#: ../../getting-started/variables.rst:645
 msgid "**For the product 'first_guess'**:"
 msgstr "**Pour le produit 'first_guess'** :"
 
-#: ../../getting-started/variables.rst:652
+#: ../../getting-started/variables.rst:651
 msgid "NOAA OISST v2"
 msgstr "NOAA OISST v2"
 
-#: ../../getting-started/variables.rst:654
+#: ../../getting-started/variables.rst:653
 msgid "There are no product/level definition for this dataset."
 msgstr "Il n'y a pas de définition de produit/niveau pour ce jeu de données."
 
-#: ../../getting-started/variables.rst:656
+#: ../../getting-started/variables.rst:655
 msgid "Sea Surface Temperature (``sst``)"
 msgstr "Température de surface de la mer (``sst``)"
 
-#: ../../getting-started/variables.rst:657
+#: ../../getting-started/variables.rst:656
 msgid "Sea Surface Temperature Anomaly (``sst_anom``)"
 msgstr "Anomalie de température de surface de la mer (``sst_anom``)"
 
-#: ../../getting-started/variables.rst:661
+#: ../../getting-started/variables.rst:660
 msgid "METEO-FRANCE ARPEGE"
 msgstr "METEO-FRANCE ARPEGE"
 
-#: ../../getting-started/variables.rst:665
+#: ../../getting-started/variables.rst:664
 msgid "Total column water vapour"
 msgstr "Vapeur d'eau totale de la colonne"
 
-#: ../../getting-started/variables.rst:671
+#: ../../getting-started/variables.rst:670
 msgid "Generic NetCDF"
 msgstr "NetCDF générique"
 
-#: ../../getting-started/variables.rst:673
+#: ../../getting-started/variables.rst:672
 msgid ""
-"The generic dataset is different from the other datasets. There is no predefined "
-"variables. The variable name needs to be used in the NetCDF file."
+"The generic dataset is different from the other datasets. There is no "
+"predefined variables. The variable name needs to be used in the NetCDF file."
 msgstr ""
 "Le jeu de données générique est différent des autres jeux de données. Il n'y a "
 "pas de variables prédéfinies. Le nom de la variable doit être utilisé dans le "
@@ -3400,8 +3333,8 @@ msgstr ""
 
 #: ../../getting-started/versioning-migration.rst:11
 msgid ""
-"MAJOR version: significant changes in the overall structure or addition of a new "
-"tool,"
+"MAJOR version: significant changes in the overall structure or addition of a "
+"new tool,"
 msgstr ""
 "Version MAJOR : changements significatifs dans la structure générale ou ajout "
 "d'un nouvel outil,"
@@ -3498,8 +3431,9 @@ msgid ""
 "Changes to the predictors ``dataset_id`` for the Forecaster. Check the new "
 "values under the :ref:`Forecaster data page<data-forecaster>`."
 msgstr ""
-"Modification des ``dataset_id`` des prédicteurs pour le Forecaster. Vérifiez les "
-"nouvelles valeurs sous :ref:`la page des données du Forecaster<data-forecaster>`."
+"Modification des ``dataset_id`` des prédicteurs pour le Forecaster. Vérifiez "
+"les nouvelles valeurs sous :ref:`la page des données du Forecaster<data-"
+"forecaster>`."
 
 #: ../../getting-started/versioning-migration.rst:39
 msgid "**Predictand DB**"
@@ -3507,8 +3441,8 @@ msgstr "**La base de données des prédictants**"
 
 #: ../../getting-started/versioning-migration.rst:41
 msgid ""
-"The predictand DB has been updated to include the projection information. The DB "
-"must be generated again with the new version of the software."
+"The predictand DB has been updated to include the projection information. The "
+"DB must be generated again with the new version of the software."
 msgstr ""
 "La base de données des predictands a été mise à jour pour inclure les "
 "informations de projection. La BD doit être générée à nouveau avec la nouvelle "
@@ -3536,3 +3470,83 @@ msgstr ""
 
 #~ msgid "2.1 LTS"
 #~ msgstr "2.1 LTS"
+
+#~ msgid ""
+#~ "Horton, P., & Brönnimann, S. (2018). Impact of global atmospheric reanalyses "
+#~ "on statistical precipitation downscaling. Climate Dynamics. http://doi."
+#~ "org/10.1007/s00382-018-4442-6"
+#~ msgstr ""
+#~ "Horton, P., & Brönnimann, S. (2018). Impact of global atmospheric reanalyses "
+#~ "on statistical precipitation downscaling. Climate Dynamics. http://doi."
+#~ "org/10.1007/s00382-018-4442-6"
+
+#~ msgid ""
+#~ "Bontron, G. (2004). Prévision quantitative des précipitations: Adaptation "
+#~ "probabiliste par recherche d’analogues. Utilisation des Réanalyses NCEP/NCAR "
+#~ "et application aux précipitations du Sud-Est de la France. Institut National "
+#~ "Polytechnique de Grenoble."
+#~ msgstr ""
+#~ "Bontron, G. (2004). Prévision quantitative des précipitations: Adaptation "
+#~ "probabiliste par recherche d’analogues. Utilisation des Réanalyses NCEP/NCAR "
+#~ "et application aux précipitations du Sud-Est de la France. Institut National "
+#~ "Polytechnique de Grenoble."
+
+#~ msgid ""
+#~ "Horton, P., Obled, C., & Jaboyedoff, M. (2017). The analogue method for "
+#~ "precipitation prediction: finding better analogue situations at a sub-daily "
+#~ "time step. Hydrology and Earth System Sciences, 21, 3307–3323. http://doi."
+#~ "org/10.5194/hess-21-3307-2017"
+#~ msgstr ""
+#~ "Horton, P., Obled, C., & Jaboyedoff, M. (2017). The analogue method for "
+#~ "precipitation prediction: finding better analogue situations at a sub-daily "
+#~ "time step. Hydrology and Earth System Sciences, 21, 3307–3323. http://doi."
+#~ "org/10.5194/hess-21-3307-2017"
+
+#~ msgid ""
+#~ "Ben Daoud, A., Sauquet, E., Bontron, G., Obled, C., & Lang, M. (2016). Daily "
+#~ "quantitative precipitation forecasts based on the analogue method: "
+#~ "improvements and application to a French large river basin. Atmospheric "
+#~ "Research, 169, 147–159. https://doi.org/10.1016/j.atmosres.2015.09.015"
+#~ msgstr ""
+#~ "Ben Daoud, A., Sauquet, E., Bontron, G., Obled, C., & Lang, M. (2016). Daily "
+#~ "quantitative precipitation forecasts based on the analogue method: "
+#~ "improvements and application to a French large river basin. Atmospheric "
+#~ "Research, 169, 147–159. https://doi.org/10.1016/j.atmosres.2015.09.015"
+
+#~ msgid ""
+#~ "Teweles, S., & Wobus, H. B. (1954). Verification of prognostic charts. "
+#~ "Bulletin of the American Meteorological Society, 35, 455–463."
+#~ msgstr ""
+#~ "Teweles, S., & Wobus, H. B. (1954). Verification of prognostic charts. "
+#~ "Bulletin of the American Meteorological Society, 35, 455–463."
+
+#~ msgid ""
+#~ "Brown, B. G., Gilleland, E., & Ebert, E. E. (2012). Forecasts of Spatial "
+#~ "Fields. In I. T. Jolliffe & D. B. Stephenson (Eds.), Forecast Verification "
+#~ "(pp. 95–117). Wiley. http://doi.org/10.1002/9781119960003.ch6"
+#~ msgstr ""
+#~ "Brown, B. G., Gilleland, E., & Ebert, E. E. (2012). Forecasts of Spatial "
+#~ "Fields. In I. T. Jolliffe & D. B. Stephenson (Eds.), Forecast Verification "
+#~ "(pp. 95–117). Wiley. http://doi.org/10.1002/9781119960003.ch6"
+
+#~ msgid ""
+#~ "Caillouet, L., Vidal, J.-P., Sauquet, E., & Graff, B. (2016). Probabilistic "
+#~ "precipitation and temperature downscaling of the Twentieth Century "
+#~ "Reanalysis over France. Climate of the Past, 12(3), 635–662. http://doi."
+#~ "org/10.5194/cp-12-635-2016"
+#~ msgstr ""
+#~ "Caillouet, L., Vidal, J.-P., Sauquet, E., & Graff, B. (2016). Probabilistic "
+#~ "precipitation and temperature downscaling of the Twentieth Century "
+#~ "Reanalysis over France. Climate of the Past, 12(3), 635–662. http://doi."
+#~ "org/10.5194/cp-12-635-2016"
+
+#~ msgid ""
+#~ "Radanovics, S., Vidal, J.-P., Sauquet, E., Ben Daoud, A., & Bontron, G. "
+#~ "(2013). Optimising predictor domains for spatially coherent precipitation "
+#~ "downscaling. Hydrology and Earth System Sciences, 17(10), 4189–4208. http://"
+#~ "doi.org/10.5194/hess-17-4189-2013"
+#~ msgstr ""
+#~ "Radanovics, S., Vidal, J.-P., Sauquet, E., Ben Daoud, A., & Bontron, G. "
+#~ "(2013). Optimising predictor domains for spatially coherent precipitation "
+#~ "downscaling. Hydrology and Earth System Sciences, 17(10), 4189–4208. http://"
+#~ "doi.org/10.5194/hess-17-4189-2013"

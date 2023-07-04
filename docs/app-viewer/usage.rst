@@ -210,7 +210,7 @@ The creation of a new workspace is guided by a wizard to define:
 
 1. The location of the workspace file
 2. The path to the forecasts directory
-3. The base map for the project. 
+3. The base map for the project
 
 The base map options are:
 

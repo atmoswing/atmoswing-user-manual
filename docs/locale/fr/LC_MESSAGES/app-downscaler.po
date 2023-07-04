@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AtmoSwing 2.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-25 14:57+0200\n"
-"PO-Revision-Date: 2023-07-04 11:07+0200\n"
+"POT-Creation-Date: 2023-07-04 15:36+0200\n"
+"PO-Revision-Date: 2023-07-04 15:51+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -25,8 +25,8 @@ msgstr "Le Downscaler"
 
 #: ../../app-downscaler.rst:6
 msgid ""
-"This section contains the documentation for AtmoSwing Downscaler. This "
-"document can also be downloaded as a pdf or epub using the bottom left menu."
+"This section contains the documentation for AtmoSwing Downscaler. This document "
+"can also be downloaded as a pdf or epub using the bottom left menu."
 msgstr ""
 "Cette section contient la documentation relative à AtmoSwing Downscaler. Ce "
 "document peut également être téléchargé au format pdf ou epub en utilisant le "
@@ -42,15 +42,14 @@ msgstr "Fichier de paramètres du Downscaler"
 
 #: ../../app-downscaler/parameters-file.rst:6
 msgid ""
-"The parameters file for the Downscaler is based on the :ref:`generic "
-"parameters file for AtmoSwing<parameters-file>`, but has some specific "
-"elements as detailed below. A `full example`_ is provided at the bottom of "
-"the page."
+"The parameters file for the Downscaler is based on the :ref:`generic parameters "
+"file for AtmoSwing<parameters-file>`, but has some specific elements as detailed "
+"below. A `full example`_ is provided at the bottom of the page."
 msgstr ""
 "Le fichier de paramètres pour le Downscaler est basé sur le :ref:`fichier de "
 "paramètres générique pour AtmoSwing<parameters-file>`, mais possède quelques "
-"éléments spécifiques détaillés ci-dessous. Un `exemple complet`_ est fourni "
-"au bas de la page."
+"éléments spécifiques détaillés ci-dessous. Un `exemple complet`_ est fourni au "
+"bas de la page."
 
 #: ../../app-downscaler/parameters-file.rst:9
 msgid "Root node"
@@ -70,8 +69,7 @@ msgid ""
 "parameters file, to the exception of a new ``<downscaling_period>`` element."
 msgstr ""
 "Le contenu de ``<time_properties>`` est globalement similaire au fichier de "
-"paramètres standard, à l'exception d'un nouvel élément "
-"``<downscaling_period>``."
+"paramètres standard, à l'exception d'un nouvel élément ``<downscaling_period>``."
 
 #: ../../app-downscaler/parameters-file.rst:24
 msgid "Element 'downscaling_period'"
@@ -79,11 +77,13 @@ msgstr "Élément 'downscaling_period'"
 
 #: ../../app-downscaler/parameters-file.rst:26
 msgid ""
-"The content of ``<downscaling_period>`` defines the target period. It works "
-"as the ``<archive_period>`` element. Two options are possible:"
+"The content of ``<downscaling_period>`` defines the target period. It works as "
+"the ``<target_period>`` element of the standard parameters file. Two options are "
+"possible:"
 msgstr ""
-"Le contenu de l'élément ``<downscaling_period>`` définit la période cible. Il "
-"fonctionne comme l'élément ``<archive_period>``. Deux options sont possibles :"
+"Le contenu de ``<downscaling_period>`` définit la période cible. Il fonctionne "
+"comme l'élément ``<target_period>`` du fichier de paramètres standard. Deux "
+"options sont possibles :"
 
 #: ../../app-downscaler/parameters-file.rst:28
 msgid "Providing the years :"
@@ -115,12 +115,12 @@ msgstr "Contenu 'analog_dates'"
 
 #: ../../app-downscaler/parameters-file.rst:41
 msgid ""
-"The content of ``<analog_dates>`` is mostly similar to the basic parameters "
-"file structure. The difference is that two predictor datasets are needed:"
+"The content of ``<analog_dates>`` is mostly similar to the basic parameters file "
+"structure. The difference is that two predictor datasets are needed:"
 msgstr ""
-"Le contenu de ``<analog_dates>`` est en grande partie similaire à la "
-"structure du fichier des paramètres de base. La différence est que deux "
-"ensembles de données prédicteurs sont nécessaires :"
+"Le contenu de ``<analog_dates>`` est en grande partie similaire à la structure "
+"du fichier des paramètres de base. La différence est que deux ensembles de "
+"données prédicteurs sont nécessaires :"
 
 #: ../../app-downscaler/parameters-file.rst:43
 msgid "``<proj_dataset_id>``: Climate dataset"
@@ -128,8 +128,7 @@ msgstr "``<proj_dataset_id>`` : Jeu de données climatiques"
 
 #: ../../app-downscaler/parameters-file.rst:44
 msgid "``<proj_data_id>``: Name of the variable in the climate dataset"
-msgstr ""
-"``<proj_data_id>`` : Nom de la variable dans le jeu de données climatiques"
+msgstr "``<proj_data_id>`` : Nom de la variable dans le jeu de données climatiques"
 
 #: ../../app-downscaler/parameters-file.rst:45
 msgid "``<archive_dataset_id>``: Archive dataset"
@@ -153,8 +152,8 @@ msgstr "Préférences"
 
 #: ../../app-downscaler/preferences.rst:4
 msgid ""
-"The preferences frame can be opened from the menu Options / Preferences of "
-"the main interface or with a button from the toolbar."
+"The preferences frame can be opened from the menu Options / Preferences of the "
+"main interface or with a button from the toolbar."
 msgstr ""
 "La fenêtre des préférences peut être ouvert à partir du menu Options / "
 "Préférences de l'interface principale ou à l'aide d'un bouton de la barre "
@@ -173,8 +172,8 @@ msgid ""
 "The language can be changed from the drop-down list. The change is effective "
 "after restarting the software."
 msgstr ""
-"La langue peut être modifiée à partir de la liste déroulante. Le changement "
-"est effectif après le redémarrage du logiciel."
+"La langue peut être modifiée à partir de la liste déroulante. Le changement est "
+"effectif après le redémarrage du logiciel."
 
 #: ../../app-downscaler/preferences.rst:18
 msgid "Log options"
@@ -182,11 +181,11 @@ msgstr "Options du journal (log)"
 
 #: ../../app-downscaler/preferences.rst:20
 msgid ""
-"Log preferences control the display of the log window and the level "
-"(importance) of reported messages:"
+"Log preferences control the display of the log window and the level (importance) "
+"of reported messages:"
 msgstr ""
-"Les préférences de journal contrôlent l'affichage de la fenêtre de journal et "
-"le niveau (importance) des messages rapportés :"
+"Les préférences de journal contrôlent l'affichage de la fenêtre de journal et le "
+"niveau (importance) des messages rapportés :"
 
 #: ../../app-downscaler/preferences.rst:22
 msgid "Errors only - recommended as long as everything goes as planned."
@@ -197,22 +196,22 @@ msgid ""
 "Errors and warnings - some warnings help to be vigilant in case of problems. "
 "However, there might be warnings even during regular operation."
 msgstr ""
-"Erreurs et avertissements - certains avertissements permettent d'être "
-"vigilant en cas de problème. Cependant, il peut y avoir des avertissements "
-"même pendant un fonctionnement normal."
+"Erreurs et avertissements - certains avertissements permettent d'être vigilant "
+"en cas de problème. Cependant, il peut y avoir des avertissements même pendant "
+"un fonctionnement normal."
 
 #: ../../app-downscaler/preferences.rst:24
 msgid ""
 "Verbose - all operations are reported, which is an unnecessary amount of "
-"information during regular operation. As a result, important messages might "
-"be hidden in a large number of messages. This option is only useful to "
-"identify where AtmoSwing is failing."
+"information during regular operation. As a result, important messages might be "
+"hidden in a large number of messages. This option is only useful to identify "
+"where AtmoSwing is failing."
 msgstr ""
-"Verbose - toutes les opérations sont signalées, ce qui représente une "
-"quantité inutile d’informations lors d’une opération régulière. Par "
-"conséquent, des messages importants peuvent être cachés dans un grand nombre "
-"de messages. Cette option n’est utile que pour identifier les endroits où "
-"AtmoSwing rencontre des problèmes."
+"Verbose - toutes les opérations sont signalées, ce qui représente une quantité "
+"inutile d’informations lors d’une opération régulière. Par conséquent, des "
+"messages importants peuvent être cachés dans un grand nombre de messages. Cette "
+"option n’est utile que pour identifier les endroits où AtmoSwing rencontre des "
+"problèmes."
 
 #: ../../app-downscaler/preferences.rst:30
 msgid "Directories"
@@ -224,8 +223,8 @@ msgstr "Des répertoires différents doivent être spécifiés :"
 
 #: ../../app-downscaler/preferences.rst:34
 msgid ""
-"Directory containing the archive predictors: predictor describing the "
-"candidate situations (for example :ref:`reanalyses<reanalyses>`)."
+"Directory containing the archive predictors: predictor describing the candidate "
+"situations (for example :ref:`reanalyses<reanalyses>`)."
 msgstr ""
 "Répertoire contenant les archives de prédicteurs : prédicteur décrivant les "
 "situations candidates (par exemple :ref:`reanalyses<reanalyses>`)."
@@ -257,12 +256,11 @@ msgstr "Options de l'interface utilisateur graphique (GUI)"
 
 #: ../../app-downscaler/preferences.rst:48
 msgid ""
-"Options to control the behavior of the interface and its means of "
-"communication with the user. Saves calculation time by disabling dialog "
-"boxes. The choices are:"
+"Options to control the behavior of the interface and its means of communication "
+"with the user. Saves calculation time by disabling dialog boxes. The choices are:"
 msgstr ""
-"Options permettant de contrôler le comportement de l'interface et ses moyens "
-"de communication avec l'utilisateur. Permet de gagner du temps de calcul en "
+"Options permettant de contrôler le comportement de l'interface et ses moyens de "
+"communication avec l'utilisateur. Permet de gagner du temps de calcul en "
 "désactivant les boîtes de dialogue. Les choix sont les suivants :"
 
 #: ../../app-downscaler/preferences.rst:50
@@ -272,8 +270,8 @@ msgid ""
 "intensive calculations."
 msgstr ""
 "Silencieux - aucune boîte de dialogue n'est affichée. L'utilisateur doit donc "
-"garder un œil sur la fenêtre de journal pour détecter toute erreur. Cette "
-"option n'est utile que pour les calculs très intensifs."
+"garder un œil sur la fenêtre de journal pour détecter toute erreur. Cette option "
+"n'est utile que pour les calculs très intensifs."
 
 #: ../../app-downscaler/preferences.rst:51
 msgid "Standard - recommended for regular use."
@@ -283,15 +281,19 @@ msgstr "Standard - recommandé pour une utilisation régulière."
 msgid "Verbose - a bit more verbose than the Standard option."
 msgstr "Verbose - un peu plus verbeux que l'option Standard."
 
-#: ../../app-downscaler/preferences.rst:58
+#: ../../app-downscaler/preferences.rst:53
+msgid "Enable or disable the reactivity of the graphical interface."
+msgstr "Activer ou désactiver la réactivité de l'interface graphique."
+
+#: ../../app-downscaler/preferences.rst:59
 msgid "Multithreading"
 msgstr "Multithreading"
 
-#: ../../app-downscaler/preferences.rst:60
+#: ../../app-downscaler/preferences.rst:61
 msgid "Options for using multiple threads:"
 msgstr "Options pour l'utilisation de plusieurs threads :"
 
-#: ../../app-downscaler/preferences.rst:62
+#: ../../app-downscaler/preferences.rst:63
 msgid ""
 "Allow multithreading - allows a gain in performance for the calculations "
 "(recommended)."
@@ -299,47 +301,46 @@ msgstr ""
 "Autoriser le multithreading - permet un gain de performance pour les calculs "
 "(recommandé)."
 
-#: ../../app-downscaler/preferences.rst:63
+#: ../../app-downscaler/preferences.rst:64
 msgid ""
 "Maximum number of threads - to be chosen according to the computer's CPU. The "
-"software automatically proposes the optimal number of threads for the "
-"computer in use."
+"software automatically proposes the optimal number of threads for the computer "
+"in use."
 msgstr ""
 "Nombre maximal de threads - à choisir en fonction du CPU de l'ordinateur. Le "
-"logiciel propose automatiquement le nombre optimal de threads pour "
-"l'ordinateur utilisé."
+"logiciel propose automatiquement le nombre optimal de threads pour l'ordinateur "
+"utilisé."
 
-#: ../../app-downscaler/preferences.rst:64
+#: ../../app-downscaler/preferences.rst:65
 msgid ""
 "Threads priority - allows defining the priority of the threads in competition "
 "with other ongoing processes."
 msgstr ""
-"Priorité des threads - permet de définir la priorité des threads en "
-"compétition avec les autres processus en cours."
+"Priorité des threads - permet de définir la priorité des threads en compétition "
+"avec les autres processus en cours."
 
-#: ../../app-downscaler/preferences.rst:70
+#: ../../app-downscaler/preferences.rst:71
 msgid "Processing options"
 msgstr "Options de calculs"
 
-#: ../../app-downscaler/preferences.rst:72
+#: ../../app-downscaler/preferences.rst:73
 msgid ""
 "These options influence how the search for analogs is performed, which has no "
-"impact on the results, only on the calculation time. The choices are as "
-"follows:"
+"impact on the results, only on the calculation time. The choices are as follows:"
 msgstr ""
-"Ces options influencent la manière dont la recherche d'analogues est "
-"effectuée, ce qui n'a aucun impact sur les résultats, mais uniquement sur le "
-"temps de calcul. Les choix sont les suivants :"
-
-#: ../../app-downscaler/preferences.rst:74
-msgid ""
-"Multithreaded - as long as the computer has at least two processors. It is "
-"the fastest version."
-msgstr ""
-"Multithreaded - pour autant que l'ordinateur possède au moins deux "
-"processeurs. Il s'agit de la version la plus rapide."
+"Ces options influencent la manière dont la recherche d'analogues est effectuée, "
+"ce qui n'a aucun impact sur les résultats, mais uniquement sur le temps de "
+"calcul. Les choix sont les suivants :"
 
 #: ../../app-downscaler/preferences.rst:75
+msgid ""
+"Multithreaded - as long as the computer has at least two processors. It is the "
+"fastest version."
+msgstr ""
+"Multithreaded - pour autant que l'ordinateur possède au moins deux processeurs. "
+"Il s'agit de la version la plus rapide."
+
+#: ../../app-downscaler/preferences.rst:76
 msgid ""
 "Standard - this option is slower than the previous one as it uses a single "
 "thread."
@@ -347,11 +348,11 @@ msgstr ""
 "Standard - cette option est plus lente que la précédente car elle utilise un "
 "seul thread."
 
-#: ../../app-downscaler/preferences.rst:81
+#: ../../app-downscaler/preferences.rst:82
 msgid "Working directory"
 msgstr "Répertoire de travail"
 
-#: ../../app-downscaler/preferences.rst:83
+#: ../../app-downscaler/preferences.rst:84
 msgid ""
 "A working directory can be specified to save optional intermediate files, for "
 "example between levels of analogy."
@@ -359,18 +360,18 @@ msgstr ""
 "Un répertoire supplémentaire peut être spécifié pour enregistrer des fichiers "
 "intermédiaires optionels, par exemple entre les niveaux d'analogie."
 
-#: ../../app-downscaler/preferences.rst:89
+#: ../../app-downscaler/preferences.rst:90
 msgid "User-specific paths"
 msgstr "Chemins d'accès spécifiques à l'utilisateur"
 
-#: ../../app-downscaler/preferences.rst:91
+#: ../../app-downscaler/preferences.rst:92
 msgid ""
 "Some paths automatically defined according to the OS: working directory, log "
 "file, and preferences file."
 msgstr ""
 "Certains chemins sont définis automatiquement en fonction du système "
-"d'exploitation : le répertoire de travail, le fichier journal et le fichier "
-"de préférences."
+"d'exploitation : le répertoire de travail, le fichier journal et le fichier de "
+"préférences."
 
 #: ../../app-downscaler/usage.rst:2
 msgid "Usage"
@@ -384,22 +385,22 @@ msgid ""
 "predictors, so that they can represent the climate change signal. It is a "
 "relatively new field of application of AMs."
 msgstr ""
-"Le Downscaler permet d'utiliser les MAs dans un contexte climatique, soit "
-"pour la reconstruction du climat, soit pour les études d'impact du changement "
-"climatique. Lorsqu'ils sont utilisés pour l'étude de l'impact du climat "
-"futur, l'utilisateur doit accorder une attention particulière aux prédicteurs "
+"Le Downscaler permet d'utiliser les MAs dans un contexte climatique, soit pour "
+"la reconstruction du climat, soit pour les études d'impact du changement "
+"climatique. Lorsqu'ils sont utilisés pour l'étude de l'impact du climat futur, "
+"l'utilisateur doit accorder une attention particulière aux prédicteurs "
 "sélectionnés, afin qu'ils puissent représenter le signal du changement "
 "climatique. Il s'agit d'un domaine d'application relativement nouveau des MAs."
 
 #: ../../app-downscaler/usage.rst:7
 msgid ""
 "The Downscaler is the last addition to AtmoSwing and has therefore not been "
-"tested/used as intensively as the other tools. Some bugs might be "
-"encountered. Please report them as `GitHub issues <https://github.com/"
-"atmoswing/atmoswing/issues>`_ or contact the developer directly."
+"tested/used as intensively as the other tools. Some bugs might be encountered. "
+"Please report them as `GitHub issues <https://github.com/atmoswing/atmoswing/"
+"issues>`_ or contact the developer directly."
 msgstr ""
-"Le Downscaler est le dernier ajout à AtmoSwing et n'a donc pas été testé/"
-"utilisé aussi intensivement que les autres outils. Quelques bugs peuvent être "
+"Le Downscaler est le dernier ajout à AtmoSwing et n'a donc pas été testé/utilisé "
+"aussi intensivement que les autres outils. Quelques bugs peuvent être "
 "rencontrés. Veuillez les signaler comme `GitHub issues <https://github.com/"
 "atmoswing/atmoswing/issues>`_ ou contacter le développeur directement."
 
@@ -422,8 +423,8 @@ msgstr ":ref:`De prédicteurs pour la période cible <data-downscaler>`"
 #: ../../app-downscaler/usage.rst:16
 msgid ":ref:`A predictors archive (e.g. a reanalysis dataset) <reanalyses>`"
 msgstr ""
-":ref:`D'une archive de prédicteurs (par exemple un jeu de données de "
-"réanalyse) <reanalyses>`"
+":ref:`D'une archive de prédicteurs (par exemple un jeu de données de réanalyse) "
+"<reanalyses>`"
 
 #: ../../app-downscaler/usage.rst:17
 msgid ""
@@ -460,8 +461,8 @@ msgstr "Les dates cibles"
 #: ../../app-downscaler/usage.rst:28
 msgid "Some reference values (e.g., precipitation for different return periods)"
 msgstr ""
-"Quelques valeurs de référence (par exemple, les précipitations pour "
-"différentes périodes de retour)"
+"Quelques valeurs de référence (par exemple, les précipitations pour différentes "
+"périodes de retour)"
 
 #: ../../app-downscaler/usage.rst:29
 msgid "Some station metadata (id, name, coordinates, height)"
@@ -475,120 +476,120 @@ msgstr "Interface utilisateur graphique"
 msgid "The main interface of the Downscaler is as follows."
 msgstr "L'interface principale du Downscaler est la suivante."
 
-#: ../../app-downscaler/usage.rst:41
+#: ../../app-downscaler/usage.rst:39
 msgid "The toolbar allows the following actions:"
 msgstr "La barre d'outils permet d'effectuer les actions suivantes :"
 
-#: ../../app-downscaler/usage.rst:43
+#: ../../app-downscaler/usage.rst:41
 msgid "|icon_run| Start the calculations."
 msgstr "|icon_run| Lancez les calculs."
 
-#: ../../app-downscaler/usage.rst:47
+#: ../../app-downscaler/usage.rst:45
 msgid "icon_run"
 msgstr "icon_run"
 
-#: ../../app-downscaler/usage.rst:44
+#: ../../app-downscaler/usage.rst:42
 msgid "|icon_stop| Stop the current calculations."
 msgstr "|icon_stop| Arrêter les calculs en cours."
 
-#: ../../app-downscaler/usage.rst:50
+#: ../../app-downscaler/usage.rst:48
 msgid "icon_stop"
 msgstr "icon_stop"
 
-#: ../../app-downscaler/usage.rst:45
+#: ../../app-downscaler/usage.rst:43
 msgid "|icon_preferences| Define the preferences."
 msgstr "|icon_preferences| Définir les préférences."
 
-#: ../../app-downscaler/usage.rst:53
+#: ../../app-downscaler/usage.rst:51
 msgid "icon_preferences"
 msgstr "icon_preferences"
 
-#: ../../app-downscaler/usage.rst:56
+#: ../../app-downscaler/usage.rst:54
 msgid "What is needed:"
 msgstr "Ce qui est nécessaire :"
 
-#: ../../app-downscaler/usage.rst:58
+#: ../../app-downscaler/usage.rst:56
 msgid ":ref:`The parameters file for downscaling <parameters-file-downscaler>`"
 msgstr ""
 ":ref:`Le fichier de paramètres pour la descente d'échelle <parameters-file-"
 "downscaler>`"
 
-#: ../../app-downscaler/usage.rst:59 ../../app-downscaler/usage.rst:74
+#: ../../app-downscaler/usage.rst:57 ../../app-downscaler/usage.rst:72
 msgid "The predictand DB"
 msgstr "La base de données des prédictants"
 
-#: ../../app-downscaler/usage.rst:60
+#: ../../app-downscaler/usage.rst:58
 msgid "The directory containing the predictors for the archive period"
 msgstr "Le répertoire contenant les prédicteurs pour la période d'archive"
 
-#: ../../app-downscaler/usage.rst:61
+#: ../../app-downscaler/usage.rst:59
 msgid "The directory containing the predictors for the target period"
 msgstr "Le répertoire contenant les prédicteurs pour la période cible"
 
-#: ../../app-downscaler/usage.rst:62
+#: ../../app-downscaler/usage.rst:60
 msgid "The directory to save the downscaling results"
 msgstr "Le répertoire pour sauvegarder les résultats de la descente d'échelle"
 
-#: ../../app-downscaler/usage.rst:66
+#: ../../app-downscaler/usage.rst:64
 msgid "Command line interface"
 msgstr "Interface en ligne de commande"
 
-#: ../../app-downscaler/usage.rst:68
+#: ../../app-downscaler/usage.rst:66
 msgid ""
 "The Downscaler also has a command line interface. The options are as follows:"
 msgstr ""
 "Le Downscaler dispose également d'une interface en ligne de commande. Les "
 "options sont les suivantes :"
 
-#: ../../app-downscaler/usage.rst:70
+#: ../../app-downscaler/usage.rst:68
 msgid "Displays the help of command line options"
 msgstr "Afficher l'aide des options en ligne de commande"
 
-#: ../../app-downscaler/usage.rst:71
+#: ../../app-downscaler/usage.rst:69
 msgid "Displays the software version"
 msgstr "Afficher la version du logiciel"
 
-#: ../../app-downscaler/usage.rst:72
+#: ../../app-downscaler/usage.rst:70
 msgid "A given run number"
 msgstr "Un numéro pour le run"
 
-#: ../../app-downscaler/usage.rst:73
+#: ../../app-downscaler/usage.rst:71
 msgid "File containing the downscaling parameters"
 msgstr "Fichier contenant les paramètres pour la descente d'échelle"
 
-#: ../../app-downscaler/usage.rst:75
+#: ../../app-downscaler/usage.rst:73
 msgid "The predictand station ID"
 msgstr "L'ID de la station du prédictant"
 
-#: ../../app-downscaler/usage.rst:76
+#: ../../app-downscaler/usage.rst:74
 msgid "The archive predictors directory"
 msgstr "Répertoire contenant les archives de prédicteurs"
 
-#: ../../app-downscaler/usage.rst:77
+#: ../../app-downscaler/usage.rst:75
 msgid "The scenario predictors directory"
 msgstr "Le répertoire des prédicteurs du scénario climatique"
 
-#: ../../app-downscaler/usage.rst:78
+#: ../../app-downscaler/usage.rst:76
 msgid "Choice of the downscaling method (classic: classic downscaling)"
 msgstr ""
 "Choix de la méthode de descente d'échelle (classique : réduction d'échelle "
 "classique)"
 
-#: ../../app-downscaler/usage.rst:79
+#: ../../app-downscaler/usage.rst:77
 msgid "Number of threads to use"
 msgstr "Nombre de threads à utiliser"
 
-#: ../../app-downscaler/usage.rst:80
+#: ../../app-downscaler/usage.rst:78
 msgid "Silent mode"
 msgstr "Mode silencieux"
 
-#: ../../app-downscaler/usage.rst:81
+#: ../../app-downscaler/usage.rst:79
 msgid "Work in local directory"
 msgstr "Travail dans le répertoire local"
 
-#: ../../app-downscaler/usage.rst:82
+#: ../../app-downscaler/usage.rst:80
 msgid ""
 "Set the log level (0: minimum, 1: errors, 2: warnings (default), 3: verbose)"
 msgstr ""
-"Définir le niveau du journal (0 : minimum, 1 : erreurs, 2 : avertissements "
-"(par défaut), 3 : verbeux)"
+"Définir le niveau du journal (0 : minimum, 1 : erreurs, 2 : avertissements (par "
+"défaut), 3 : verbeux)"

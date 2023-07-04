@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AtmoSwing 2.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-25 14:57+0200\n"
-"PO-Revision-Date: 2023-07-04 12:12+0200\n"
+"POT-Creation-Date: 2023-07-04 15:45+0200\n"
+"PO-Revision-Date: 2023-07-04 15:57+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -43,21 +43,23 @@ msgstr "Calibration classique"
 #: ../../app-optimizer/classic-calibration.rst:6
 msgid ""
 "The calibration procedure that we call \"sequential\" or \"classic\" was "
-"elaborated by [Bontron2004]_ (see also [Radanovics2013]_ and "
-"[BenDaoud2016]_). It is a semi-automatic procedure that optimizes the spatial "
-"windows in which the predictors are compared and the number of analogs are "
-"systematically assessed for every level of analogy. The different analogy "
-"levels (e.g., the atmospheric circulation or moisture index) are calibrated "
-"sequentially. The procedure consists of the following steps [Bontron2004]_:"
+"elaborated by :cite:t:`Bontron2004` (see also :cite:t:`Radanovics2013` and :"
+"cite:t:`BenDaoud2016`). It is a semi-automatic procedure that optimizes the "
+"spatial windows in which the predictors are compared and the number of "
+"analogs are systematically assessed for every level of analogy. The different "
+"analogy levels (e.g., the atmospheric circulation or moisture index) are "
+"calibrated sequentially. The procedure consists of the following steps :cite:"
+"p:`Bontron2004`:"
 msgstr ""
-"La procédure de calibration que nous appelons \"séquentielle\" ou "
-"\"classique\" a été élaborée par [Bontron2004]_ (voir aussi [Radanovics2013]_ "
-"et [BenDaoud2016]_). Il s'agit d'une procédure semi-automatique qui optimise "
-"les fenêtres spatiales dans lesquelles les prédicteurs sont comparés, ainsi "
-"que le nombre d'analogues qui est évalué pour chaque niveau d'analogie. Les "
-"différents niveaux d'analogie (par exemple, la circulation atmosphérique ou "
-"l'indice d'humidité) sont calibrés séquentiellement. La procédure comprend "
-"les étapes suivantes [Bontron2004]_ :"
+"La procédure de calibration que nous appelons \" séquentielle \" ou \" "
+"classique \" a été élaborée par :cite:t:`Bontron2004` (voir aussi :cite:t:"
+"`Radanovics2013` et :cite:t:`BenDaoud2016`). Il s'agit d'une procédure semi-"
+"automatique qui optimise les fenêtres spatiales dans lesquelles les "
+"prédicteurs sont comparés et le nombre d'analogues qui est systématiquement "
+"évalué pour chaque niveau d'analogie. Les différents niveaux d'analogie (par "
+"exemple, la circulation atmosphérique ou l'indice d'humidité) sont calibrés "
+"séquentiellement. La procédure comprend les étapes suivantes :cite:p:"
+"`Bontron2004` :"
 
 #: ../../app-optimizer/classic-calibration.rst:8
 msgid "Manual selection of the following parameters:"
@@ -214,42 +216,6 @@ msgstr ""
 "conséquent pour les réanalyses à plus haute résolution en raison de la "
 "présence de minima locaux."
 
-#: ../../app-optimizer/classic-calibration.rst:42
-msgid ""
-"Bontron, G. (2004). Prévision quantitative des précipitations: Adaptation "
-"probabiliste par recherche d’analogues. Utilisation des Réanalyses NCEP/NCAR "
-"et application aux précipitations du Sud-Est de la France. Institut National "
-"Polytechnique de Grenoble."
-msgstr ""
-"Bontron, G. (2004). Prévision quantitative des précipitations: Adaptation "
-"probabiliste par recherche d’analogues. Utilisation des Réanalyses NCEP/NCAR "
-"et application aux précipitations du Sud-Est de la France. Institut National "
-"Polytechnique de Grenoble."
-
-#: ../../app-optimizer/classic-calibration.rst:43
-msgid ""
-"Ben Daoud, A., Sauquet, E., Bontron, G., Obled, C., & Lang, M. (2016). Daily "
-"quantitative precipitation forecasts based on the analogue method: "
-"improvements and application to a French large river basin. Atmospheric "
-"Research, 169, 147–159. https://doi.org/10.1016/j.atmosres.2015.09.015"
-msgstr ""
-"Ben Daoud, A., Sauquet, E., Bontron, G., Obled, C., & Lang, M. (2016). Daily "
-"quantitative precipitation forecasts based on the analogue method: "
-"improvements and application to a French large river basin. Atmospheric "
-"Research, 169, 147–159. https://doi.org/10.1016/j.atmosres.2015.09.015"
-
-#: ../../app-optimizer/classic-calibration.rst:44
-msgid ""
-"Radanovics, S., Vidal, J.-P., Sauquet, E., Ben Daoud, A., & Bontron, G. "
-"(2013). Optimising predictor domains for spatially coherent precipitation "
-"downscaling. Hydrology and Earth System Sciences, 17(10), 4189–4208. http://"
-"doi.org/10.5194/hess-17-4189-2013"
-msgstr ""
-"Radanovics, S., Vidal, J.-P., Sauquet, E., Ben Daoud, A., & Bontron, G. "
-"(2013). Optimising predictor domains for spatially coherent precipitation "
-"downscaling. Hydrology and Earth System Sciences, 17(10), 4189–4208. http://"
-"doi.org/10.5194/hess-17-4189-2013"
-
 #: ../../app-optimizer/genetic-algorithms.rst:4
 msgid "Genetic algorithms"
 msgstr "Algorithmes génétiques"
@@ -263,7 +229,7 @@ msgid ""
 "degrees of freedom. For this reason, genetic algorithms (GAs) were "
 "implemented in AtmoSwing Optimizer to perform a global optimization of AMs. "
 "It allows for the optimization of all parameters jointly in a fully automatic "
-"and objective way. See more details in [Horton2017]_."
+"and objective way. See more details in :cite:t:`Horton2017a`."
 msgstr ""
 "La calibration séquentielle ou classique présente des limites importantes : "
 "(i) elle ne peut pas choisir automatiquement les niveaux de pression et les "
@@ -273,7 +239,7 @@ msgstr ""
 "pourquoi des algorithmes génétiques (AG) ont été mis en œuvre dans AtmoSwing "
 "Optimizer pour réaliser une optimisation globale des MA. Cela permet "
 "d'optimiser tous les paramètres conjointement de manière entièrement "
-"automatique et objective. Voir plus de détails dans [Horton2017]_."
+"automatique et objective. Voir plus de détails dans :cite:t:`Horton2017a`."
 
 #: ../../app-optimizer/genetic-algorithms.rst:8
 msgid ""
@@ -289,17 +255,17 @@ msgstr ""
 #: ../../app-optimizer/genetic-algorithms.rst:10
 msgid ""
 "Many options and operator variants are available for genetic algorithms. "
-"Based on systematic tests detailed in [Horton2017]_, some presets were "
-"established in order to ease the use of genetic algorithms in AtmoSwing "
+"Based on systematic tests detailed in :cite:t:`Horton2017a`, some presets "
+"were established in order to ease the use of genetic algorithms in AtmoSwing "
 "Optimizer. These presets are listed below, and all options are provided "
 "further down."
 msgstr ""
 "De nombreuses options et variantes d'opérateurs sont disponibles pour les "
-"algorithmes génétiques. Sur la base de tests systématiques détaillés dans "
-"[Horton2017]_, certaines présélections ont été établies afin de faciliter "
-"l'utilisation des algorithmes génétiques dans AtmoSwing Optimizer. Ces "
-"présélections sont listées ci-dessous, et toutes les options sont fournies "
-"plus loin."
+"algorithmes génétiques. Sur la base de tests systématiques détaillés dans :"
+"cite:t:`Horton2017a`, certaines présélections ont été établies afin de "
+"faciliter l'utilisation des algorithmes génétiques dans AtmoSwing Optimizer. "
+"Ces présélections sont listées ci-dessous, et toutes les options sont "
+"fournies plus loin."
 
 #: ../../app-optimizer/genetic-algorithms.rst:14
 #: ../../app-optimizer/preferences.rst:8
@@ -713,16 +679,6 @@ msgstr "Mutation non uniforme - taux minimum (par défaut 0.1)"
 msgid "Multi-scale mutation - probability (default 0.1)"
 msgstr "Mutation multi-échelle - probabilité (par défaut 0.1)"
 
-#: ../../app-optimizer/genetic-algorithms.rst:159
-msgid ""
-"Horton, P., Jaboyedoff, M., & Obled, C. (2017). Global Optimization of an "
-"Analog Method by Means of Genetic Algorithms. Monthly Weather Review, 145(4), "
-"1275–1294. http://doi.org/10.1175/MWR-D-16-0093.1"
-msgstr ""
-"Horton, P., Jaboyedoff, M., & Obled, C. (2017). Global Optimization of an "
-"Analog Method by Means of Genetic Algorithms. Monthly Weather Review, 145(4), "
-"1275–1294. http://doi.org/10.1175/MWR-D-16-0093.1"
-
 #: ../../app-optimizer/parameters-file.rst:4
 msgid "Optimizer parameters file"
 msgstr "Fichier de paramètres de l'Optimizer"
@@ -1081,6 +1037,20 @@ msgstr "La propriété ``target`` du nœud racine doit être ``optimizer``."
 msgid "Element ‘predictor’"
 msgstr "Élément 'predictor'"
 
+#: ../../app-optimizer/parameters-file.rst:324
+msgid ""
+"This element is used to define the parameters to calibrate related to the "
+"predictors. The structure is mostly similar to the :ref:`standard parameters "
+"file structure<parameters-file>`. The ``preload`` option specifies that the "
+"data should be preloaded prior to the calibration, which saves a substantial "
+"amount of time. For example:"
+msgstr ""
+"Cet élément est utilisé pour définir les paramètres à étalonner en rapport "
+"avec les prédicteurs. La structure est essentiellement similaire à la "
+"structure du :ref:`fichier de paramètres standard<parameters-file>`. L'option "
+"``preload`` spécifie que les données doivent être préchargées avant "
+"l'étalonnage, ce qui permet un gain de temps considérable. Par exemple :"
+
 #: ../../app-optimizer/parameters-file.rst:326
 msgid "Example:"
 msgstr "Exemple :"
@@ -1208,15 +1178,19 @@ msgstr "Standard - recommandé pour une utilisation régulière."
 msgid "Verbose - a bit more verbose than the Standard option."
 msgstr "Verbose - un peu plus verbeux que l'option Standard."
 
-#: ../../app-optimizer/preferences.rst:58
+#: ../../app-optimizer/preferences.rst:53
+msgid "Enable or disable the reactivity of the graphical interface."
+msgstr "Activer ou désactiver la réactivité de l'interface graphique."
+
+#: ../../app-optimizer/preferences.rst:59
 msgid "Multithreading"
 msgstr "Multithreading"
 
-#: ../../app-optimizer/preferences.rst:60
+#: ../../app-optimizer/preferences.rst:61
 msgid "Options for using multiple threads:"
 msgstr "Options pour l'utilisation de plusieurs threads :"
 
-#: ../../app-optimizer/preferences.rst:62
+#: ../../app-optimizer/preferences.rst:63
 msgid ""
 "Allow multithreading - allows a gain in performance for the calculations "
 "(recommended)."
@@ -1224,7 +1198,7 @@ msgstr ""
 "Autoriser le multithreading - permet un gain de performance pour les calculs "
 "(recommandé)."
 
-#: ../../app-optimizer/preferences.rst:63
+#: ../../app-optimizer/preferences.rst:64
 msgid ""
 "Maximum number of threads - to be chosen according to the computer's CPU. The "
 "software automatically proposes the optimal number of threads for the "
@@ -1234,7 +1208,7 @@ msgstr ""
 "logiciel propose automatiquement le nombre optimal de threads pour "
 "l'ordinateur utilisé."
 
-#: ../../app-optimizer/preferences.rst:64
+#: ../../app-optimizer/preferences.rst:65
 msgid ""
 "Threads priority - allows defining the priority of the threads in competition "
 "with other ongoing processes."
@@ -1242,11 +1216,11 @@ msgstr ""
 "Priorité des threads - permet de définir la priorité des threads en "
 "compétition avec les autres processus en cours."
 
-#: ../../app-optimizer/preferences.rst:70
+#: ../../app-optimizer/preferences.rst:71
 msgid "Processing options"
 msgstr "Options de calculs"
 
-#: ../../app-optimizer/preferences.rst:72
+#: ../../app-optimizer/preferences.rst:73
 msgid ""
 "These options influence how the search for analogs is performed, which has no "
 "impact on the results, only on the calculation time. The choices are as "
@@ -1256,7 +1230,7 @@ msgstr ""
 "effectuée, ce qui n'a aucun impact sur les résultats, mais uniquement sur le "
 "temps de calcul. Les choix sont les suivants :"
 
-#: ../../app-optimizer/preferences.rst:74
+#: ../../app-optimizer/preferences.rst:75
 msgid ""
 "Multithreaded - as long as the computer has at least two processors. It is "
 "the fastest version."
@@ -1264,7 +1238,7 @@ msgstr ""
 "Multithreaded - pour autant que l'ordinateur possède au moins deux "
 "processeurs. Il s'agit de la version la plus rapide."
 
-#: ../../app-optimizer/preferences.rst:75
+#: ../../app-optimizer/preferences.rst:76
 msgid ""
 "Standard - this option is slower than the previous one as it uses a single "
 "thread."
@@ -1272,11 +1246,11 @@ msgstr ""
 "Standard - cette option est plus lente que la précédente car elle utilise un "
 "seul thread."
 
-#: ../../app-optimizer/preferences.rst:81
+#: ../../app-optimizer/preferences.rst:82
 msgid "Working directory"
 msgstr "Répertoire de travail"
 
-#: ../../app-optimizer/preferences.rst:83
+#: ../../app-optimizer/preferences.rst:84
 msgid ""
 "A working directory can be specified to save optional intermediate files, for "
 "example between levels of analogy."
@@ -1284,11 +1258,11 @@ msgstr ""
 "Un répertoire supplémentaire peut être spécifié pour enregistrer des fichiers "
 "intermédiaires optionels, par exemple entre les niveaux d'analogie."
 
-#: ../../app-optimizer/preferences.rst:89
+#: ../../app-optimizer/preferences.rst:90
 msgid "User-specific paths"
 msgstr "Chemins d'accès spécifiques à l'utilisateur"
 
-#: ../../app-optimizer/preferences.rst:91
+#: ../../app-optimizer/preferences.rst:92
 msgid ""
 "Some paths automatically defined according to the OS: working directory, log "
 "file, and preferences file."
@@ -1777,35 +1751,35 @@ msgid "``montecarlo``: Monte Carlo"
 msgstr "``montecarlo`` : Simulations de Monte Carlo"
 
 #: ../../app-optimizer/usage.rst:139
-msgid "``ga: genetic``: algorithms"
-msgstr "``ga`` : algorithms génétiques"
+msgid "``ga``: genetic algorithms"
+msgstr "``ga`` : algorithmes génétiques"
 
 #: ../../app-optimizer/usage.rst:140
 msgid "``evalscores``: evaluate all scores"
 msgstr "``evalscores`` : évalue tous les scores"
 
 #: ../../app-optimizer/usage.rst:141
-msgid "``onlyvalues``: evaluate all scores"
+msgid "``onlyvalues``: get only the analog values"
 msgstr "``onlyvalues`` : calcule uniquement les valeurs analogues"
 
 #: ../../app-optimizer/usage.rst:142
-msgid "``onlydates``: evaluate all scores"
+msgid "``onlydates``: get only the analog dates"
 msgstr "``onlydates`` : calcule uniquement les dates analogues"
 
 #: ../../app-optimizer/usage.rst:144
-msgid "Classic plus: resizing iteration"
+msgid "Classic+: resizing iteration"
 msgstr "Classique+ : itération de redimensionnement"
 
 #: ../../app-optimizer/usage.rst:145
-msgid "Classic plus: steps in latitudes for the relevance map"
+msgid "Classic+: steps in latitudes for the relevance map"
 msgstr "Classique+ : pas (résolution) en latitudes pour la carte de pertinence"
 
 #: ../../app-optimizer/usage.rst:146
-msgid "Classic plus: steps in longitudes for the relevance map"
+msgid "Classic+: steps in longitudes for the relevance map"
 msgstr "Classique+ : pas (résolution) en longitudes pour la carte de pertinence"
 
 #: ../../app-optimizer/usage.rst:147
-msgid "Classic plus: proceed sequentially"
+msgid "Classic+: proceed sequentially"
 msgstr "Classique+ : procéder de manière séquentielle"
 
 #: ../../app-optimizer/usage.rst:148
@@ -1963,3 +1937,51 @@ msgstr ""
 
 #~ msgid "All options"
 #~ msgstr "Tables options"
+
+#~ msgid ""
+#~ "Bontron, G. (2004). Prévision quantitative des précipitations: Adaptation "
+#~ "probabiliste par recherche d’analogues. Utilisation des Réanalyses NCEP/"
+#~ "NCAR et application aux précipitations du Sud-Est de la France. Institut "
+#~ "National Polytechnique de Grenoble."
+#~ msgstr ""
+#~ "Bontron, G. (2004). Prévision quantitative des précipitations: Adaptation "
+#~ "probabiliste par recherche d’analogues. Utilisation des Réanalyses NCEP/"
+#~ "NCAR et application aux précipitations du Sud-Est de la France. Institut "
+#~ "National Polytechnique de Grenoble."
+
+#~ msgid ""
+#~ "Ben Daoud, A., Sauquet, E., Bontron, G., Obled, C., & Lang, M. (2016). "
+#~ "Daily quantitative precipitation forecasts based on the analogue method: "
+#~ "improvements and application to a French large river basin. Atmospheric "
+#~ "Research, 169, 147–159. https://doi.org/10.1016/j.atmosres.2015.09.015"
+#~ msgstr ""
+#~ "Ben Daoud, A., Sauquet, E., Bontron, G., Obled, C., & Lang, M. (2016). "
+#~ "Daily quantitative precipitation forecasts based on the analogue method: "
+#~ "improvements and application to a French large river basin. Atmospheric "
+#~ "Research, 169, 147–159. https://doi.org/10.1016/j.atmosres.2015.09.015"
+
+#~ msgid ""
+#~ "Radanovics, S., Vidal, J.-P., Sauquet, E., Ben Daoud, A., & Bontron, G. "
+#~ "(2013). Optimising predictor domains for spatially coherent precipitation "
+#~ "downscaling. Hydrology and Earth System Sciences, 17(10), 4189–4208. "
+#~ "http://doi.org/10.5194/hess-17-4189-2013"
+#~ msgstr ""
+#~ "Radanovics, S., Vidal, J.-P., Sauquet, E., Ben Daoud, A., & Bontron, G. "
+#~ "(2013). Optimising predictor domains for spatially coherent precipitation "
+#~ "downscaling. Hydrology and Earth System Sciences, 17(10), 4189–4208. "
+#~ "http://doi.org/10.5194/hess-17-4189-2013"
+
+#~ msgid ""
+#~ "Horton, P., Jaboyedoff, M., & Obled, C. (2017). Global Optimization of an "
+#~ "Analog Method by Means of Genetic Algorithms. Monthly Weather Review, "
+#~ "145(4), 1275–1294. http://doi.org/10.1175/MWR-D-16-0093.1"
+#~ msgstr ""
+#~ "Horton, P., Jaboyedoff, M., & Obled, C. (2017). Global Optimization of an "
+#~ "Analog Method by Means of Genetic Algorithms. Monthly Weather Review, "
+#~ "145(4), 1275–1294. http://doi.org/10.1175/MWR-D-16-0093.1"
+
+#~ msgid "``onlyvalues``: evaluate all scores"
+#~ msgstr "``onlyvalues`` : calcule uniquement les valeurs analogues"
+
+#~ msgid "``onlydates``: evaluate all scores"
+#~ msgstr "``onlydates`` : calcule uniquement les dates analogues"
