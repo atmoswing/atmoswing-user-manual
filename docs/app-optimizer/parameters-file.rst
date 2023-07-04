@@ -321,7 +321,7 @@ This element varies the number of analog situations Ni to consider, for example:
 Element ‘predictor’
 ^^^^^^^^^^^^^^^^^^^
 
-.. TODO: Provide some explanation for this code block.
+This element is used to define the parameters to calibrate related to the predictors. The structure is mostly similar to the :ref:`standard parameters file structure<parameters-file>`. The ``preload`` option specifies that the data should be preloaded prior to the calibration, which saves a substantial amount of time. For example:
 
 Example:
 
@@ -330,9 +330,9 @@ Example:
     <predictor>
       <preload>1</preload>
       <dataset_id>GenericNetcdf</dataset_id>
-	  <data_id method="array" lock="0">pl/r, pl/t, pl/u, pl/v, pl/z, sfa/msl</data_id>
+	    <data_id method="array" lock="0">pl/r, pl/t, pl/u, pl/v, pl/z, sfa/msl</data_id>
       <level method="array" lock="0">0, 300, 500, 850, 1000</level>
-	  <time lowerlimit="0" upperlimit="30" iteration="6" lock="0"></time>
+  	  <time lowerlimit="0" upperlimit="30" iteration="6" lock="0"></time>
       <spatial_window>
         <x_min lowerlimit="-10.5" upperlimit="10.5" iteration="0.75" lock="0"></x_min>
         <x_points_nb lowerlimit="1" upperlimit="40" iteration="1" lock="0"></x_points_nb>

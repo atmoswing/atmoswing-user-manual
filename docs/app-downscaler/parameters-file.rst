@@ -23,7 +23,7 @@ The content of ``<time_properties>`` is globally similar to the standard paramet
 Element 'downscaling_period'
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The content of ``<downscaling_period>`` defines the target period. It works as the ``<archive_period>`` element. Two options are possible:
+The content of ``<downscaling_period>`` defines the target period. It works as the ``<target_period>`` element of the standard parameters file. Two options are possible:
 
 Providing the years :
 

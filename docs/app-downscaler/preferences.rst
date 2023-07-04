@@ -50,6 +50,7 @@ Options to control the behavior of the interface and its means of communication 
 * Silent - no dialog box is displayed. The user must, therefore, keep an eye on the log window to detect any error. This option is only useful for very intensive calculations.
 * Standard - recommended for regular use.
 * Verbose - a bit more verbose than the Standard option.
+* Enable or disable the reactivity of the graphical interface.
 
 .. image:: img/preferences-adv-gui.png
    :align: center

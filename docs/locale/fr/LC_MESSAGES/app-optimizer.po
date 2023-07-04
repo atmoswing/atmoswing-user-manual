@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: AtmoSwing 2.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-25 14:57+0200\n"
-"PO-Revision-Date: 2023-05-26 10:58+0200\n"
+"PO-Revision-Date: 2023-07-04 11:49+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Generated-By: Babel 2.11.0\n"
-"X-Generator: Poedit 3.3.1\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #: ../../app-optimizer.rst:4
 msgid "The Optimizer"
@@ -104,9 +104,9 @@ msgid ""
 "window)."
 msgstr ""
 "À partir de la cellule la plus compétente, la fenêtre spatiale est élargie "
-"par itérations successives dans la direction du gain du plus grand gain en "
+"par itérations successives dans la direction du plus grand gain en "
 "performance jusqu'à ce qu'aucune amélioration supplémentaire ne soit possible "
-"(jusqu'à la fenêtre spatiale maximale spécifiée par l'utilisateur)."
+"(ou jusqu'à la fenêtre spatiale maximale spécifiée par l'utilisateur)."
 
 #: ../../app-optimizer/classic-calibration.rst:19
 msgid ""
@@ -152,7 +152,7 @@ msgid ""
 msgstr ""
 "Le calage est effectué par étapes successives pour un nombre limité de "
 "paramètres afin de minimiser les fonctions d'erreur ou de maximiser les "
-"scores de compétence. À l'exception du nombre d'analogues, les paramètres "
+"scores de vérification. À l'exception du nombre d'analogues, les paramètres "
 "précédemment calibrés ne sont généralement pas réévalués. L'avantage de cette "
 "méthode est qu'elle est relativement rapide, qu'elle fournit des résultats "
 "acceptables et qu'elle est peu exigeante en matière de resources de calcul."
@@ -168,7 +168,7 @@ msgid ""
 "moves, such as:"
 msgstr ""
 "De petites améliorations ont été incorporées à cette méthode dans AtmoSwing "
-"Optimizer, avec le nom \"classic+\", en permettant aux fenêtres spatiales "
+"Optimizer, avec le nom \"classique+\", en permettant aux fenêtres spatiales "
 "d'effectuer d'autres mouvements, tels que :"
 
 #: ../../app-optimizer/classic-calibration.rst:33
@@ -283,8 +283,8 @@ msgid ""
 msgstr ""
 "Les algorithmes génétiques sont puissants mais très exigeants en termes de "
 "capacité de calcul. Ils nécessitent des milliers d'évaluations pour évoluer "
-"vers l'optimum global et doivent donc être utilisés sur un cluster plutôt que "
-"sur un seul ordinateur."
+"vers l'optimum global et doivent donc être utilisés sur une grappe de "
+"serveurs (cluster) plutôt que sur un seul ordinateur."
 
 #: ../../app-optimizer/genetic-algorithms.rst:10
 msgid ""
@@ -327,7 +327,7 @@ msgid ""
 "The convergence steps is the number of generations without improvement after "
 "which the algorithm stops."
 msgstr ""
-"Les iterations pour la convergence sont le nombre de générations sans "
+"Les itérations pour la convergence sont le nombre de générations sans "
 "amélioration après lequel l'algorithme s'arrête."
 
 #: ../../app-optimizer/genetic-algorithms.rst:21
@@ -347,17 +347,17 @@ msgid ""
 "The number of epochs is the number of times the whole dataset is used for the "
 "optimization."
 msgstr ""
-"Le nombre d'epochs correspond au nombre de fois où l'ensemble des données est "
-"utilisé pour l'optimisation."
+"Le nombre d'époques correspond au nombre de fois où l'ensemble des données "
+"est utilisé pour l'optimisation."
 
 #: ../../app-optimizer/genetic-algorithms.rst:24
 msgid ""
 "The batch size and the number of epochs are only used if batches are used (in "
 "which case the number of generations for convergence is not used)."
 msgstr ""
-"La taille du lot et le nombre d'epochs ne sont utilisés que si l'approche pat "
-"lots est utilisée (auquel cas le nombre de générations pour la convergence "
-"n'est pas utilisé)."
+"La taille du lot et le nombre d'époques ne sont utilisés que si l'approche "
+"pat lots est utilisée (auquel cas le nombre de générations pour la "
+"convergence n'est pas utilisé)."
 
 #: ../../app-optimizer/genetic-algorithms.rst:26
 msgid "Size of the population (default 500)"
@@ -381,7 +381,7 @@ msgstr "Taille des lots (batches)"
 
 #: ../../app-optimizer/genetic-algorithms.rst:36
 msgid "Number of epochs if using batches"
-msgstr "Nombre d'epochs si l'on utilise des lots (batches)"
+msgstr "Nombre d'époques si l'on utilise des lots (batches)"
 
 #: ../../app-optimizer/genetic-algorithms.rst:41
 msgid "Operator options presets"
@@ -462,8 +462,8 @@ msgid ""
 "Any of these options can be overridden by specifying it along with ``--ga-"
 "config``."
 msgstr ""
-"Chacune de ces options peut être surchargée en la spécifiant en addition de "
-"`--ga-config``."
+"Chacune de ces options peut être modifiée en la spécifiant en addition de `--"
+"ga-config``."
 
 #: ../../app-optimizer/genetic-algorithms.rst:61
 msgid "Operator options"
@@ -678,8 +678,8 @@ msgstr ""
 #: ../../app-optimizer/genetic-algorithms.rst:140
 msgid "Variable normal mutation - generations nb for std deviation (default 50)"
 msgstr ""
-"Mutation uniforme variable - nb de générations nb pour l'écart-type (par "
-"défaut 50)"
+"Mutation uniforme variable - nb de générations pour l'écart-type (par défaut "
+"50)"
 
 #: ../../app-optimizer/genetic-algorithms.rst:142
 msgid "Variable normal mutation - starting probability (default 0.5)"
@@ -758,7 +758,7 @@ msgid ""
 msgstr ""
 "Le contenu de ``<time_properties>`` est globalement similaire au :ref:"
 "`fichier de paramètres standard<parameters-file>`, à l'exception d'un élément "
-"``<calibration_period>` et d'un élément ``<validation_period>`."
+"``<calibration_period>`` et d'un élément ``<validation_period>``."
 
 #: ../../app-optimizer/parameters-file.rst:17
 msgid "Element 'calibration_period'"
@@ -770,7 +770,7 @@ msgid ""
 "the method is trained. It works as the ``<archive_period>`` element. Two "
 "options are possible:"
 msgstr ""
-"Le contenu de ``<calibration_period>` définit la période cible sur laquelle "
+"Le contenu de ``<calibration_period>`` définit la période cible sur laquelle "
 "la méthode est entraînée. Il fonctionne comme l'élément ``<archive_period>``. "
 "Deux options sont possibles :"
 
@@ -856,7 +856,7 @@ msgid ""
 "The Optimizer has a ``<evaluation>`` node to specify the score to use and "
 "other characteristics:"
 msgstr ""
-"L'Optimiseur possède un noeud ``<evaluation>`` pour spécifier le score à "
+"L'Optimiseur possède un nœud ``<evaluation>`` pour spécifier le score à "
 "utiliser et d'autres caractéristiques :"
 
 #: ../../app-optimizer/parameters-file.rst:63
@@ -952,7 +952,7 @@ msgid ""
 "``array``: the content of the node will then be parsed as an array. For "
 "example:"
 msgstr ""
-"``array`` : le contenu du noeud sera alors traité comme un vecteur. Par "
+"``array`` : le contenu du nœud sera alors traité comme un vecteur. Par "
 "exemple :"
 
 #: ../../app-optimizer/parameters-file.rst:98
@@ -970,7 +970,7 @@ msgstr "Nœud racine"
 
 #: ../../app-optimizer/parameters-file.rst:103
 msgid "The ``target`` property of the root node needs to be ``calibrator``."
-msgstr "La propriété ``target`` du noeud racine doit être ``calibrator``."
+msgstr "La propriété ``target`` du nœud racine doit être ``calibrator``."
 
 #: ../../app-optimizer/parameters-file.rst:110
 #: ../../app-optimizer/parameters-file.rst:307
@@ -1075,7 +1075,7 @@ msgstr ""
 
 #: ../../app-optimizer/parameters-file.rst:300
 msgid "The ``target`` property of the root node needs to be ``optimizer``."
-msgstr "La propriété ``target`` du noeud racine doit être ``optimizer``."
+msgstr "La propriété ``target`` du nœud racine doit être ``optimizer``."
 
 #: ../../app-optimizer/parameters-file.rst:322
 msgid "Element ‘predictor’"
@@ -1363,9 +1363,9 @@ msgstr ""
 "valable pour une autre période. Afin de tenir compte des changements "
 "climatiques et de l'évolution des techniques de mesure, il est recommandé "
 "d'utiliser une période de validation non continue, répartie sur l'ensemble "
-"des archives (par exemple, tous les 5 ans). Les utilisateurs d'AtmoSwing "
+"des archives (par exemple, 1 année sur 5). Les utilisateurs d'AtmoSwing "
 "peuvent ainsi spécifier une liste d'années à mettre à part pour la validation "
-"qui sont retirées des situations candidates possibles. A la fin de "
+"qui sont retirées des situations candidates possibles. À la fin de "
 "l'optimisation, le score de validation est traité automatiquement. Les "
 "différents scores de vérification disponibles sont détaillés :ref:"
 "`ici<verification-scores>`."
@@ -1380,7 +1380,7 @@ msgstr "L'Optimizer a besoin :"
 
 #: ../../app-optimizer/usage.rst:15
 msgid ":ref:`A predictand database <predictand-db>`"
-msgstr ":ref:`D'une base de données de predictands <predictand-db>`"
+msgstr ":ref:`D'une base de données de prédictants <predictand-db>`"
 
 #: ../../app-optimizer/usage.rst:16
 msgid ":ref:`A predictors archive (e.g. a reanalysis dataset) <reanalyses>`"
@@ -1432,7 +1432,7 @@ msgid ""
 "**Evaluation of all scores**: Similar as above, but assesses all the "
 "implemented scores."
 msgstr ""
-"**Evaluation de tous les scores** : Identique au précédent, mais évalue tous "
+"**Évaluation de tous les scores** : Identique au précédent, mais évalue tous "
 "les scores disponibles."
 
 #: ../../app-optimizer/usage.rst:31
@@ -1440,8 +1440,8 @@ msgid ""
 "**Only predictand values**: Does not process a skill score, but processes the "
 "AM and save the analog values into a file."
 msgstr ""
-"**Uniquement les valeurs prédictives** : Ne calcul pas de score de "
-"compétence, mais calcule la MA et enregistre les valeurs analogues dans un "
+"**Uniquement les valeurs prédictives** : Ne calcule pas de score de "
+"vérification, mais calcule la MA et enregistre les valeurs analogues dans un "
 "fichier."
 
 #: ../../app-optimizer/usage.rst:32
@@ -1450,10 +1450,10 @@ msgid ""
 "assign predictand values to the analog dates. It only saves the analog dates "
 "identified by the defined AM into a file."
 msgstr ""
-"**Uniquement les dates analogues (et les critères)** : Ne traite pas de score "
-"de compétence et n'attribue pas de valeurs du prédictant aux dates analogues. "
-"Enregistre uniquement les dates analogues identifiées par la MA définie dans "
-"un fichier."
+"**Uniquement les dates analogues (et les critères)** : Ne calcule pas de "
+"score de vérification et n'attribue pas de valeurs du prédictant aux dates "
+"analogues. Enregistre un fichier avec uniquement les dates analogues "
+"identifiées par la MA définie."
 
 #: ../../app-optimizer/usage.rst:35
 msgid "Based on the classic calibration"
@@ -1496,7 +1496,7 @@ msgid ""
 "**Genetic algorithms**: The optimization using :ref:`genetic algorithms "
 "<genetic-algorithms>`."
 msgstr ""
-"**Agorithmes génétiques** : L'optimisation utilisant des :ref:``algorithmes "
+"**Algorithmes génétiques** : L'optimisation utilisant des :ref:`algorithmes "
 "génétiques <genetic-algorithms>`."
 
 #: ../../app-optimizer/usage.rst:49
@@ -1530,7 +1530,7 @@ msgid ""
 "([...]best_parameters.txt)."
 msgstr ""
 "Un fichier texte avec le meilleur jeu de paramètres résultant et le score de "
-"compétence ([...]best_parameters.txt)."
+"vérification ([...]best_parameters.txt)."
 
 #: ../../app-optimizer/usage.rst:59
 msgid ""
@@ -1538,7 +1538,7 @@ msgid ""
 "skill score ([...]tested_parameters.txt)."
 msgstr ""
 "Un fichier texte contenant tous les paramètres évalués et leur score de "
-"compétence correspondant ([...]tested_parameters.txt)."
+"vérification correspondant ([...]tested_parameters.txt)."
 
 #: ../../app-optimizer/usage.rst:60
 msgid ""
@@ -1569,7 +1569,7 @@ msgid ""
 "A NetCDF file containing the skill scores (Scores[...].nc) both for the "
 "calibration and validation periods."
 msgstr ""
-"Un fichier NetCDF contenant les scores de compétence (Scores[...].nc) pour "
+"Un fichier NetCDF contenant les scores de vérification (Scores[...].nc) pour "
 "les périodes de calibration et de validation."
 
 #: ../../app-optimizer/usage.rst:67
@@ -1618,18 +1618,19 @@ msgstr "Sélectionnez une des `méthodes de calibration`_"
 
 #: ../../app-optimizer/usage.rst:93
 msgid ":ref:`The parameters file <parameters-file-optimizer>`"
-msgstr ":ref:`Le fichier de paramètres <parameters-file-optimizer>`"
+msgstr ""
+":ref:`Le fichier de paramètres pour la calibration<parameters-file-optimizer>`"
 
 #: ../../app-optimizer/usage.rst:94
 msgid ":ref:`The predictand database <predictand-db>`"
-msgstr ":ref:`Une base de données de predictands <predictand-db>`"
+msgstr ":ref:`Une base de données de prédictants <predictand-db>`"
 
 #: ../../app-optimizer/usage.rst:95
 msgid ""
 "The directory containing the :ref:`predictors for the archive period "
 "<reanalyses>`"
 msgstr ""
-"Le répertoire contenant les prédicteurs :ref:` pour la période d'archive "
+"Le répertoire contenant les :ref:`prédicteurs pour la période d'archive "
 "<reanalyses>`"
 
 #: ../../app-optimizer/usage.rst:96
@@ -1666,7 +1667,7 @@ msgstr ""
 
 #: ../../app-optimizer/usage.rst:111
 msgid "Command line interface"
-msgstr "Interface de la ligne de commande"
+msgstr "Interface en ligne de commande"
 
 #: ../../app-optimizer/usage.rst:113
 msgid ""
@@ -1678,11 +1679,11 @@ msgstr ""
 
 #: ../../app-optimizer/usage.rst:115
 msgid "Displays the help of command line options"
-msgstr "Affiche l'aide des options de la ligne de commande"
+msgstr "Afficher l'aide des options en ligne de commande"
 
 #: ../../app-optimizer/usage.rst:116
 msgid "Displays the software version"
-msgstr "Affiche la version du logiciel"
+msgstr "Afficher la version du logiciel"
 
 #: ../../app-optimizer/usage.rst:117
 msgid "Silent mode"
@@ -1773,11 +1774,11 @@ msgstr "``varexplocp`` : exploration des variables avec classique+"
 
 #: ../../app-optimizer/usage.rst:138
 msgid "``montecarlo``: Monte Carlo"
-msgstr "``montecarlo`` : Monte Carlo"
+msgstr "``montecarlo`` : Simulations de Monte Carlo"
 
 #: ../../app-optimizer/usage.rst:139
 msgid "``ga: genetic``: algorithms"
-msgstr "``ga`` algorithms génétiques"
+msgstr "``ga`` : algorithms génétiques"
 
 #: ../../app-optimizer/usage.rst:140
 msgid "``evalscores``: evaluate all scores"
@@ -1785,15 +1786,15 @@ msgstr "``evalscores`` : évalue tous les scores"
 
 #: ../../app-optimizer/usage.rst:141
 msgid "``onlyvalues``: evaluate all scores"
-msgstr "``onlyvalues`` : extraction uniquement des valeurs des analogues"
+msgstr "``onlyvalues`` : calcule uniquement les valeurs analogues"
 
 #: ../../app-optimizer/usage.rst:142
 msgid "``onlydates``: evaluate all scores"
-msgstr "``onlydates`` : extraction uniquement des dates analogues"
+msgstr "``onlydates`` : calcule uniquement les dates analogues"
 
 #: ../../app-optimizer/usage.rst:144
 msgid "Classic plus: resizing iteration"
-msgstr "Classique+ : l'itération de redimensionnement"
+msgstr "Classique+ : itération de redimensionnement"
 
 #: ../../app-optimizer/usage.rst:145
 msgid "Classic plus: steps in latitudes for the relevance map"
@@ -1813,7 +1814,7 @@ msgstr "Exploration des variables : étape à traiter"
 
 #: ../../app-optimizer/usage.rst:149
 msgid "Monte Carlo: number of runs"
-msgstr "Monte Carlo : nombre d'exécutions"
+msgstr "Monte Carlo : nombre de simulations"
 
 #: ../../app-optimizer/usage.rst:150
 msgid ""
@@ -1848,15 +1849,17 @@ msgstr "CRPSS (Score de compétence du CRPS) : ``CRPSS``"
 
 #: ../../app-optimizer/verification-scores.rst:9
 msgid "CRPS (Continuous ranked probability score): ``CRPS``"
-msgstr "CRPS (Continuous ranked probability score) : ``CRPS``"
+msgstr ""
+"Indice continu de probabilité ordonnée CRPS (Continuous ranked probability "
+"score) : ``CRPS``"
 
 #: ../../app-optimizer/verification-scores.rst:10
 msgid "CRPS accuracy: ``CRPSaccuracy``"
-msgstr "CRPS accuracy: \"CRPSaccuracy\""
+msgstr "Précision du CRPS : ``CRPSaccuracy``"
 
 #: ../../app-optimizer/verification-scores.rst:11
 msgid "CRPS sharpness: ``CRPSsharpness``"
-msgstr "CRPS sharpness: ``CRPSsharpness``"
+msgstr "Netteté du CRPS : ``CRPSsharpness``"
 
 #: ../../app-optimizer/verification-scores.rst:12
 msgid "CRPS reliability: ``CRPSreliability``"
@@ -1864,7 +1867,7 @@ msgstr "Fiabilité du CRPS : ``CRPSreliability``"
 
 #: ../../app-optimizer/verification-scores.rst:13
 msgid "CRPS potential: ``CRPSpotential``"
-msgstr "CRPS potential:  ``CRPSpotential``"
+msgstr "Potentiel du CRPS:  ``CRPSpotential``"
 
 #: ../../app-optimizer/verification-scores.rst:14
 msgid "Absolute difference of the frequency of null values: ``DF0``"
@@ -1872,12 +1875,11 @@ msgstr "Différence absolue de la fréquence des valeurs nulles : ``DF0``"
 
 #: ../../app-optimizer/verification-scores.rst:15
 msgid "Proportion correct (contingency table): ``PC``"
-msgstr ""
-"Proportion correcte (Proportion correct, tableau de contingence) : ``PC``"
+msgstr "Proportion correcte (tableau de contingence) : ``PC``"
 
 #: ../../app-optimizer/verification-scores.rst:16
 msgid "Threat score (contingency table): ``TS``"
-msgstr "Score de menace (Threat score, tableau de contingence) : ``TS``"
+msgstr "Score de menace (\"Threat score\", tableau de contingence) : ``TS``"
 
 #: ../../app-optimizer/verification-scores.rst:17
 msgid "Bias (contingency table): ``BIAS``"
@@ -1886,35 +1888,35 @@ msgstr "Biais (tableau de contingence) : ``BIAS``"
 #: ../../app-optimizer/verification-scores.rst:18
 msgid "False alarm ratio (contingency table): ``FARA``"
 msgstr ""
-"Rapport de fausses alarmes (False alarm ratio, tableau de contingence) : "
+"Rapport de fausses alarmes (\"False alarm ratio\", tableau de contingence) : "
 "``FARA``"
 
 #: ../../app-optimizer/verification-scores.rst:19
 msgid "Hit rate (contingency table): ``H``"
-msgstr "Taux de réussite (Hit rate, tableau de contingence) : ``H``"
+msgstr "Taux de réussite (\"Hit rate\", tableau de contingence) : ``H``"
 
 #: ../../app-optimizer/verification-scores.rst:20
 msgid "False alarm rate (contingency table): ``F``"
 msgstr ""
-"Taux de fausses alarmes (False alarm rate, tableau de contingence) : ``F``"
+"Taux de fausses alarmes (\"False alarm rate\", tableau de contingence) : ``F``"
 
 #: ../../app-optimizer/verification-scores.rst:21
 msgid "Heidke skill score (contingency table): ``HSS``"
 msgstr ""
-"Score de compétence de Heidke (Heidke skill score, tableau de contingence) : "
-"``HSS``"
+"Score de compétence de Heidke (\"Heidke skill score\", tableau de "
+"contingence) : ``HSS``"
 
 #: ../../app-optimizer/verification-scores.rst:22
 msgid "Pierce skill score (contingency table): ``PSS``"
 msgstr ""
-"Score de compétence de Pierce (Pierce skill score, tableau de contingence) : "
-"``PSS``"
+"Score de compétence de Pierce (\"Pierce skill score\", tableau de "
+"contingence) : ``PSS``"
 
 #: ../../app-optimizer/verification-scores.rst:23
 msgid "Gilbert skill score (contingency table): ``GSS``"
 msgstr ""
-"Score de compétence Gilbert (Gilbert skill score, tableau de contingence) : "
-"``GSS``"
+"Score de compétence Gilbert (\"Gilbert skill score\", tableau de "
+"contingence) : ``GSS``"
 
 #: ../../app-optimizer/verification-scores.rst:24
 msgid "Mean absolute error: ``MAE``"
@@ -1927,11 +1929,12 @@ msgstr "Erreur quadratique moyenne : ``MSE``"
 #: ../../app-optimizer/verification-scores.rst:26
 msgid "Root mean squared error: ``RMSE``"
 msgstr ""
-"Racine de l'erreur quadratique Moyenne (Root mean squared error) : ``RMSE``"
+"Racine de l'erreur quadratique Moyenne (\"Root mean squared error\") : "
+"``RMSE``"
 
 #: ../../app-optimizer/verification-scores.rst:27
 msgid "Brier score: ``BS``"
-msgstr "Score de Brier (Brier score) : ``BS``"
+msgstr "Score de Brier (\"Brier score\") : ``BS``"
 
 #: ../../app-optimizer/verification-scores.rst:28
 msgid "Brier skill score: ``BSS``"
@@ -1940,8 +1943,8 @@ msgstr "Score de compétence Brier : ``BSS``"
 #: ../../app-optimizer/verification-scores.rst:29
 msgid "Stable equitable error in probability space: ``SEEPS``"
 msgstr ""
-"Erreur équitable stable dans l'espace de probabilité (Stable equitable error "
-"in probability space) : ``SEEPS``"
+"Erreur équitable stable dans l'espace de probabilité (\"Stable equitable "
+"error in probability space\") : ``SEEPS``"
 
 #: ../../app-optimizer/verification-scores.rst:30
 msgid "The Verification Rank Histogram (Talagrand Diagram): ``RankHistogram``"

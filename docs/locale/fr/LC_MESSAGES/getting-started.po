@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: AtmoSwing 2.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-25 14:57+0200\n"
-"PO-Revision-Date: 2023-05-26 11:01+0200\n"
+"PO-Revision-Date: 2023-07-04 10:48+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Generated-By: Babel 2.11.0\n"
-"X-Generator: Poedit 3.3.1\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #: ../../getting-started.rst:4
 msgid "Getting started"
@@ -47,9 +47,9 @@ msgid ""
 "predictor variables of different kinds. The following content comes from "
 "[Horton2018]_."
 msgstr ""
-"Différentes variantes de méthode des analogues sont présentées ici. Ces méthodes "
-"ont des degrés de complexité variables et comprennent un ou plusieurs niveaux "
-"d'analogie avec des variables de différentes natures. Le contenu suivant "
+"Différentes variantes de la méthode des analogues sont présentées ici. Ces "
+"méthodes ont des degrés de complexité variables et comprennent un ou plusieurs "
+"niveaux d'analogie avec des variables de différentes natures. Le contenu suivant "
 "provient de [Horton2018]_."
 
 #: ../../getting-started/analog-methods.rst:8
@@ -108,9 +108,9 @@ msgid ""
 "precipitation values of the N1 selected dates provide the empirical conditional "
 "distribution, considered as the probabilistic prediction for the target date."
 msgstr ""
-"Les N1 dates, où N1 est un paramètre à calibrer, avec les valeurs les plus "
-"faibles de S1 sont considérées comme analogues à la date cible. Ensuite, les "
-"valeurs de précipitations quotidiennes observées pour les N1 dates sélectionnées "
+"Les N1 dates, où N1 est un paramètre à calibrer, avec les valeurs S1 les plus "
+"faibles, sont considérées comme analogues à la date cible. Ensuite, les valeurs "
+"de précipitations quotidiennes observées pour les N1 dates sélectionnées "
 "fournissent la distribution conditionnelle empirique, considérée comme la "
 "prédiction probabiliste pour la date cible."
 
@@ -211,7 +211,7 @@ msgstr ""
 "sélectionnés avec l'approche calendaire et dépend donc de la taille des "
 "archives. Dans cette méthode, nommée PT-2Z-4MI, l'analogie de la circulation "
 "atmosphérique est la même que dans la méthode 2Z, mais l'analogie de l'humidité "
-"est différente (MI925 et MI700 à +12 h et 24 h)."
+"est différente (MI925 et MI700 à +12 h et +24 h)."
 
 #: ../../getting-started/analog-methods.rst:29
 msgid ""
@@ -597,8 +597,8 @@ msgstr ""
 "d'AtmoSwingForecaster.ini (dans votre répertoire de profil ; typiquement C:\\"
 "\\Users\\\\<username>\\\\AppData\\\\Roaming\\\\AtmoSwing pour Windows ou ."
 "AtmoSwing pour Linux/OSX). Le domaine est ajusté en changeant les valeurs de "
-"``leftlon=-32&amp;rightlon=42&amp;toplat=72&amp;bottomlat=20``, et les niveaux "
-"avec ``lev_XXX_mb=on``."
+"``leftlon=-32&rightlon=42&toplat=72&bottomlat=20``, et les niveaux avec "
+"``lev_XXX_mb=on``."
 
 #: ../../getting-started/generic-dataset.rst:4
 msgid "Generic dataset"
@@ -765,8 +765,9 @@ msgid ""
 "The desktop version: contains all four tools with a graphical user interface "
 "(GUI). This version is suited for desktop PCs."
 msgstr ""
-"La version de bureau : contient les quatre outils avec une interface utilisateur "
-"graphique (GUI). Cette version est adaptée aux PC de bureau."
+"La version ordinateur de bureau (desktop) : contient les quatre outils avec une "
+"interface utilisateur graphique (GUI). Cette version est adaptée aux PC de "
+"bureau."
 
 #: ../../getting-started/installation.rst:9
 msgid ""
@@ -774,9 +775,9 @@ msgid ""
 "without GUI. The Viewer is not included. This version is suited for use on "
 "servers through a command-line interface."
 msgstr ""
-"La version serveur : contient le Forecaster, le Downscaler, et l'Optimizer sans "
-"GUI. Le Viewer n'est pas inclus. Cette version est adaptée à une utilisation sur "
-"des serveurs via une interface de ligne de commande."
+"La version serveur (server) : contient le Forecaster, le Downscaler, et "
+"l'Optimizer sans GUI. Le Viewer n'est pas inclus. Cette version est adaptée à "
+"une utilisation sur des serveurs via une interface de ligne de commande."
 
 #: ../../getting-started/installation.rst:13
 msgid "Windows"
@@ -818,9 +819,9 @@ msgstr ""
 "Les fichiers de paramètres sont des éléments essentiels d'AtmoSwing car ils "
 "définissent la structure de la méthode des analogues à utiliser. C'est là que "
 "l'on définit les jeux de données, les variables prédictives, le nombre de "
-"niveaux d'analogie, les fenêtres spatiales, etc...  Certains éléments varient "
-"entre le Forecaster, l'Optimizer, et le Downscaler, et donc le module cible doit "
-"être spécifié dans la balise racine (ex : ``<atmoswing version=\"1.0\" "
+"niveaux d'analogie, les fenêtres spatiales, etc. Certains éléments varient entre "
+"le Forecaster, l'Optimizer, et le Downscaler, et donc le module cible doit être "
+"spécifié dans la balise racine (ex : ``<atmoswing version=\"1.0\" "
 "target=\"optimizer\">``)."
 
 #: ../../getting-started/parameters-file.rst:8
@@ -1041,10 +1042,10 @@ msgid ""
 "the same year as the target date."
 msgstr ""
 "Le contenu de ``<time_array_analogs>`` définit les propriétés temporelles de la "
-"sélection des analogues. Il est généralement défini comme un intervalle de jours "
-"(quatre mois centrés autour de la date cible) base sur +-60 jours autour de la "
-"date cible. En calibration, 30 jours autour de la date cible sont exclus pour la "
-"même année que la date cible."
+"sélection des analogues. Il est généralement défini comme un intervalle de +-60 "
+"jours autour de la date cible (quatre mois centrés autour de la date cible). En "
+"calibration, 30 jours autour de la date cible sont exclus pour la même année que "
+"la date cible."
 
 #: ../../getting-started/parameters-file.rst:218
 msgid ""
@@ -1311,7 +1312,7 @@ msgstr "Paramètre du prédictant :"
 #: ../../getting-started/predictand-db.rst:16
 #: ../../getting-started/predictand-db.rst:51
 msgid "Precipitation"
-msgstr "Precipitation (Précipitations)"
+msgstr "Précipitations"
 
 #: ../../getting-started/predictand-db.rst:17
 #: ../../getting-started/variables.rst:311 ../../getting-started/variables.rst:323
@@ -1319,7 +1320,7 @@ msgstr "Precipitation (Précipitations)"
 #: ../../getting-started/variables.rst:438 ../../getting-started/variables.rst:455
 #: ../../getting-started/variables.rst:555 ../../getting-started/variables.rst:584
 msgid "Temperature"
-msgstr "Temperature (Température)"
+msgstr "Température"
 
 #: ../../getting-started/predictand-db.rst:18
 #: ../../getting-started/predictand-db.rst:59
@@ -1665,7 +1666,7 @@ msgstr "Délimité par des tabulations (``tabsdelimited``)"
 
 #: ../../getting-started/predictand-db.rst:173
 msgid "With constant line width (``constantwidth``)"
-msgstr "Avec une largeur de ligne constante (``constantwidth``)"
+msgstr "Avec une largeur constante (``constantwidth``)"
 
 #: ../../getting-started/predictand-db.rst:175
 msgid ""
@@ -1813,7 +1814,7 @@ msgid ""
 "adjacent grid points (using the horizontal distance). This preprocessing method "
 "is automatically used when the analogy criterion is ``S1``."
 msgstr ""
-"Real gradients (``RealGradients``) : traitement des gradients réels entre des "
+"Gradients réels (``RealGradients``) : traitement des gradients réels entre des "
 "points de grille adjacents (en utilisant la distance horizontale). Cette méthode "
 "de prétraitement est automatiquement utilisée lorsque le critère d'analogie est "
 "``S1``."
@@ -1992,7 +1993,7 @@ msgid ""
 "FTPSubset2.pl>`_: ``NASA_MERRA_2_subset``"
 msgstr ""
 "NASA MERRA-2 `subset du MDISC <http://disc.sci.gsfc.nasa.gov/daac-bin/FTPSubset2."
-"pl>`_ : `NASA_MERRA_2_subset``"
+"pl>`_ : ``NASA_MERRA_2_subset``"
 
 #: ../../getting-started/reanalyses.rst:33 ../../getting-started/reanalyses.rst:35
 #: ../../getting-started/reanalyses.rst:37
@@ -2102,7 +2103,7 @@ msgid ""
 "or GCM/RCM outputs for climate downscaling)"
 msgstr ""
 "Obtenir un jeu de données pour la situation cible (sorties NWP pour les "
-"prévisions opérationnelles ou sorties GCM/RCM pour la descente d'échelle)"
+"prévisions opérationnelles ou sorties GCM/RCM pour la descente d'échelle)."
 
 #: ../../getting-started/using-atmoswing.rst:16
 msgid ":ref:`Format the predictand data <predictand-db>`."
@@ -2152,11 +2153,11 @@ msgstr ""
 "certaines variables peuvent être définies pour différents niveaux (par exemple, "
 "la température), il peut être nécessaire de spécifier le produit/niveau. Ainsi, "
 "la sélection d'une variable dans le fichier de paramètres peut être définie "
-"comme ``niveau/variable``, par exemple ``pression/z`` pour le géopotentiel sur "
+"comme ``level/variable``, par exemple ``pressure/z`` pour le géopotentiel sur "
 "les niveaux de pression, ou ``isentropic/t`` pour la température sur les niveaux "
 "isentropiques. Comme différents types de niveaux et de variables sont présents "
 "pour différents jeux de données, ils peuvent être nommés différemment dans "
-"AtmoSwing. Par exemple, ``pression/z``, ``pl/h`` et ``isobaric/hgt`` sont "
+"AtmoSwing. Par exemple, ``pressure/z``, ``pl/h`` et ``isobaric/hgt`` sont "
 "identiques. Le nom du niveau (ou du produit) doit être identique au nom du sous-"
 "dossier correspondant. Par exemple, une personne utilisant NCEP/NCAR Reanalysis "
 "1 et ayant un sous-dossier 'pressure' devrait utiliser ``pressure/z`` pour la "
@@ -3402,7 +3403,7 @@ msgid ""
 "MAJOR version: significant changes in the overall structure or addition of a new "
 "tool,"
 msgstr ""
-"Version MAJEURE : changements significatifs dans la structure générale ou ajout "
+"Version MAJOR : changements significatifs dans la structure générale ou ajout "
 "d'un nouvel outil,"
 
 #: ../../getting-started/versioning-migration.rst:12

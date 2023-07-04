@@ -170,7 +170,7 @@ It was chosen not to force users to transform their data into a specific format 
 Files can be structured (``<structure_type>``) in two common types:
 
 * Delimited by tabs (``tabsdelimited``)
-* With constant line width (``constantwidth``)
+* With constant width (``constantwidth``)
 
 An option (``<parsetime>``) allows reading the date/time entries or ignore them. Reading this information allows an automatic check of the correct consistency of the dates between what the software thinks it is reading and what it is actually reading. It is therefore recommended to enable this option (``<parse_time>1</parse_time>``).
 
@@ -218,10 +218,10 @@ The structure describing such data files is as follows:
   </atmoswing>
 
 
-Example of the type 'constant line width'
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Example of the type 'constant width'
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Predictand files are here structured as constant line width.
+Predictand files are here structured as constant columns width.
 
 .. code-block:: text
 

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: AtmoSwing 2.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-25 14:57+0200\n"
-"PO-Revision-Date: 2023-05-25 15:36+0200\n"
+"PO-Revision-Date: 2023-07-04 11:07+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Generated-By: Babel 2.11.0\n"
-"X-Generator: Poedit 3.3.1\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #: ../../app-downscaler.rst:4
 msgid "The Downscaler"
@@ -58,7 +58,7 @@ msgstr "Nœud racine"
 
 #: ../../app-downscaler/parameters-file.rst:11
 msgid "The ``target`` property of the root node needs to be ``downscaler``."
-msgstr "La propriété ``target`` du noeud racine doit être ``downscaler``."
+msgstr "La propriété ``target`` du nœud racine doit être ``downscaler``."
 
 #: ../../app-downscaler/parameters-file.rst:19
 msgid "Content 'time_properties'"
@@ -69,7 +69,7 @@ msgid ""
 "The content of ``<time_properties>`` is globally similar to the standard "
 "parameters file, to the exception of a new ``<downscaling_period>`` element."
 msgstr ""
-"Le contenu de ``<time_properties>` est globalement similaire au fichier de "
+"Le contenu de ``<time_properties>`` est globalement similaire au fichier de "
 "paramètres standard, à l'exception d'un nouvel élément "
 "``<downscaling_period>``."
 
@@ -118,9 +118,9 @@ msgid ""
 "The content of ``<analog_dates>`` is mostly similar to the basic parameters "
 "file structure. The difference is that two predictor datasets are needed:"
 msgstr ""
-"Le contenu de ``<analog_dates>` est en grande partie similaire à la structure "
-"du fichier des paramètres de base. La différence est que deux ensembles de "
-"données prédicteurs sont nécessaires :"
+"Le contenu de ``<analog_dates>`` est en grande partie similaire à la "
+"structure du fichier des paramètres de base. La différence est que deux "
+"ensembles de données prédicteurs sont nécessaires :"
 
 #: ../../app-downscaler/parameters-file.rst:43
 msgid "``<proj_dataset_id>``: Climate dataset"
@@ -531,22 +531,22 @@ msgstr "Le répertoire pour sauvegarder les résultats de la descente d'échelle
 
 #: ../../app-downscaler/usage.rst:66
 msgid "Command line interface"
-msgstr "Interface de la ligne de commande"
+msgstr "Interface en ligne de commande"
 
 #: ../../app-downscaler/usage.rst:68
 msgid ""
 "The Downscaler also has a command line interface. The options are as follows:"
 msgstr ""
-"Le Downscaler dispose également d'une interface de ligne de commande. Les "
+"Le Downscaler dispose également d'une interface en ligne de commande. Les "
 "options sont les suivantes :"
 
 #: ../../app-downscaler/usage.rst:70
 msgid "Displays the help of command line options"
-msgstr "Affiche l'aide des options de la ligne de commande"
+msgstr "Afficher l'aide des options en ligne de commande"
 
 #: ../../app-downscaler/usage.rst:71
 msgid "Displays the software version"
-msgstr "Affiche la version du logiciel"
+msgstr "Afficher la version du logiciel"
 
 #: ../../app-downscaler/usage.rst:72
 msgid "A given run number"
@@ -566,7 +566,7 @@ msgstr "Répertoire contenant les archives de prédicteurs"
 
 #: ../../app-downscaler/usage.rst:77
 msgid "The scenario predictors directory"
-msgstr "Le répertoire des prédicteurs du scenario climatique"
+msgstr "Le répertoire des prédicteurs du scénario climatique"
 
 #: ../../app-downscaler/usage.rst:78
 msgid "Choice of the downscaling method (classic: classic downscaling)"

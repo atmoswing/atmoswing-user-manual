@@ -108,7 +108,8 @@ The list of analog methods can be completed, or methods can be deleted. A method
 
 The entries can be edited by clicking on the |icon_edit| icon. A dialog box appears to set the parameters file name (only the name, not the full path). The parameters file must be located in the directory defined in the preferences. It is an XML file that can be edited with a text editor. The structure of the file is described in the :ref:`parameters file section <parameters-file-forecaster>`. If the file is not found, the |icon_warning| icon is shown. The |icon_info| icon allows displaying the description of the parameters file in a tooltip. The |icon_details| icon allows displaying the content of the parameters file in a new frame (the content cannot be edited).
 
-When the list of methods has been modified and should be kept as default, it is necessary to save it (menu 'File / Save batch file'); otherwise, the list will be reset at the software restart.
+.. warning::
+   When the list of methods has been modified and should be kept as default, it is necessary to save it (menu 'File / Save batch file'); otherwise, the list will be reset at the software restart.
 
 .. |icon_close| image:: img/icon-close.png
    :width: 24

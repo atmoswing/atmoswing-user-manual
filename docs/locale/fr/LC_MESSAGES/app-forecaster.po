@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: AtmoSwing 2.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-25 14:57+0200\n"
-"PO-Revision-Date: 2023-05-25 15:08+0200\n"
+"PO-Revision-Date: 2023-07-04 10:57+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Generated-By: Babel 2.11.0\n"
-"X-Generator: Poedit 3.3.1\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #: ../../app-forecaster.rst:4
 msgid "The Forecaster"
@@ -58,7 +58,7 @@ msgstr "Nœud racine"
 
 #: ../../app-forecaster/parameters-file.rst:11
 msgid "The ``target`` property of the root node needs to be ``forecaster``."
-msgstr "La propriété ``target`` du noeud racine doit être ``forecaster``."
+msgstr "La propriété ``target`` du nœud racine doit être ``forecaster``."
 
 #: ../../app-forecaster/parameters-file.rst:18
 msgid "Content 'time_properties'"
@@ -178,7 +178,7 @@ msgid ""
 "situations (for example :ref:`reanalyses<reanalyses>`)."
 msgstr ""
 "Répertoire contenant les archives de prédicteurs : prédicteur décrivant les "
-"situations candidates (par exemple :ref:`reanalyses<reanalyses>`)."
+"situations candidates (par exemple :ref:`réanalyses<reanalyses>`)."
 
 #: ../../app-forecaster/preferences.rst:14
 msgid ""
@@ -478,7 +478,7 @@ msgstr ""
 "la prévision en temps réel peut être effectué par un ordinateur standard sans "
 "ressources spécifiques. La prévision peut être exécutée à la demande par le "
 "biais d'une interface utilisateur graphique (GUI) ou peut être automatisée par "
-"l'utilisation d'une interface de ligne de commande (CLI). Ces deux aspects sont "
+"l'utilisation d'une interface en ligne de commande (CLI). Ces deux aspects sont "
 "expliqués ci-après."
 
 #: ../../app-forecaster/usage.rst:6
@@ -506,13 +506,12 @@ msgid ""
 "successively with different options, for example, for different regions. The "
 "results can be saved in different directories, or the same ones."
 msgstr ""
-"Un fichier batch peut être fourni à l'interface graphique (GUI) ou à la ligne "
-"de commande (CLI). Il contient les chemins des données et d'exportation ainsi "
-"que les méthodes d'analogues à appliquer (définies dans les fichiers de "
-"paramètres xml). Des tâches automatiques peuvent ainsi exécuter successivement "
-"le Forecaster avec différentes options, par exemple pour différentes régions. "
-"Les résultats peuvent être optionellement sauvegardés dans différents "
-"répertoires."
+"Un fichier batch peut être fourni à l'interface graphique (GUI) ou en ligne de "
+"commande (CLI). Il contient les chemins des données et d'exportation ainsi que "
+"les méthodes d'analogues à appliquer (définies dans les fichiers de paramètres "
+"xml). Des tâches automatiques peuvent ainsi exécuter successivement le "
+"Forecaster avec différentes options, par exemple pour différentes régions. Les "
+"résultats peuvent être optionellement sauvegardés dans différents répertoires."
 
 #: ../../app-forecaster/usage.rst:11
 msgid "Requirements"
@@ -528,7 +527,8 @@ msgstr ":ref:`Une base de données de predictands <predictand-db>`"
 
 #: ../../app-forecaster/usage.rst:16
 msgid ":ref:`Operational predictors from NWP outputs <data-forecaster>`"
-msgstr ":ref:`Prédicteurs prévus à partir des sorties NWP <data-forecaster>`"
+msgstr ""
+":ref:`Prédicteurs prévus à partir des sorties PNT (NWP) <data-forecaster>`"
 
 #: ../../app-forecaster/usage.rst:17
 msgid ":ref:`A predictors archive (e.g. a reanalysis dataset) <reanalyses>`"
@@ -804,7 +804,7 @@ msgstr ""
 
 #: ../../app-forecaster/usage.rst:151
 msgid "Command line interface"
-msgstr "Interface de la ligne de commande"
+msgstr "Interface en ligne de commande"
 
 #: ../../app-forecaster/usage.rst:153
 msgid ""
@@ -820,7 +820,7 @@ msgstr ""
 
 #: ../../app-forecaster/usage.rst:155
 msgid "Displays the help of command-line options"
-msgstr "Affiche l'aide des options de la ligne de commande"
+msgstr "Afficher l'aide des options en ligne de commande"
 
 #: ../../app-forecaster/usage.rst:156
 msgid "Configure the forecaster"
@@ -828,7 +828,7 @@ msgstr "Configurer le Forecaster"
 
 #: ../../app-forecaster/usage.rst:157
 msgid "Displays the software version"
-msgstr "Affiche la version du logiciel"
+msgstr "Afficher la version du logiciel"
 
 #: ../../app-forecaster/usage.rst:158
 msgid "Batch file to use for the forecast (full path)"
@@ -885,7 +885,7 @@ msgid ""
 "allow AtmoSwing accessing the data and saving outputs."
 msgstr ""
 "Le conteneur docker pour AtmoSwing Forecaster utilise les mêmes options que "
-"l'interface de ligne de commande (à l'exception de l'option ``--config``). "
+"l'interface en ligne de commande (à l'exception de l'option ``--config``). "
 "Cependant, différents répertoires doivent être montés dans le conteneur docker "
 "pour permettre à AtmoSwing d'accéder aux données et de sauvegarder les "
 "résultats."

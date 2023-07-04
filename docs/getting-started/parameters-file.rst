@@ -212,7 +212,7 @@ In case of a selection based on a predictand threshold (``predictand_thresholds`
 Element 'time_array_analogs'
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The content of ``<time_array_analogs>`` defines the temporal properties of the analog selection. It is usually defined as a days interval (four months centered around the target date) using +-60 days around the target date. When working in a perfect prognosis framework, 30 days around the target date are excluded for the same year as the target date.
+The content of ``<time_array_analogs>`` defines the temporal properties of the analog selection. It is usually defined as an interval of +-60 days around the target date (four months centered around the target date). When working in a perfect prognosis framework, 30 days around the target date are excluded for the same year as the target date.
 
 * ``<time_array>``: Type of time selection.
 * ``<interval_days>``: Number of days to select around the target date for every year when using ``days_interval``. Usually: 60

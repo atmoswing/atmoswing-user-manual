@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: AtmoSwing 2.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-25 14:57+0200\n"
-"PO-Revision-Date: 2023-05-25 15:48+0200\n"
+"PO-Revision-Date: 2023-07-04 10:59+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Generated-By: Babel 2.11.0\n"
-"X-Generator: Poedit 3.3.1\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #: ../../app-viewer.rst:4
 msgid "The Viewer"
@@ -474,7 +474,7 @@ msgstr ""
 
 #: ../../app-viewer/usage.rst:91
 msgid "The thickness of the line - for the lines or perimeters of polygons."
-msgstr "L'épaisseur de la ligne - pour les lignes ou les périmètres des polygones."
+msgstr "Épaisseur de la ligne - pour les lignes ou les périmètres des polygones."
 
 #: ../../app-viewer/usage.rst:96
 msgid ""
@@ -739,7 +739,7 @@ msgstr "Sauvegarder l'espace de travail"
 
 #: ../../app-viewer/usage.rst:206
 msgid "Save the workspace as"
-msgstr "Enregistrer l'espace de travail sous"
+msgstr "Enregistrer l'espace de travail sous un autre nom"
 
 #: ../../app-viewer/usage.rst:207
 msgid "Create a new workspace"
@@ -761,7 +761,7 @@ msgstr "Chemin d'accès au répertoire des prévisions"
 
 #: ../../app-viewer/usage.rst:213
 msgid "The base map for the project."
-msgstr "La carte de base du projet."
+msgstr "La carte de base du projet"
 
 #: ../../app-viewer/usage.rst:215
 msgid "The base map options are:"
@@ -773,7 +773,7 @@ msgstr "Couches personnalisées"
 
 #: ../../app-viewer/usage.rst:218
 msgid "Terrain from Google maps"
-msgstr "Terrain à partir de Google maps"
+msgstr "Terrain de Google maps"
 
 #: ../../app-viewer/usage.rst:219
 msgid "Map from Google maps"
@@ -785,7 +785,7 @@ msgstr "Carte de OpenStreetMap"
 
 #: ../../app-viewer/usage.rst:221
 msgid "Map from ArcGIS Mapserver"
-msgstr "Carte à partir d'ArcGIS Mapserver"
+msgstr "Carte d'ArcGIS Mapserver"
 
 #: ../../app-viewer/usage.rst:222
 msgid "Satellite imagery from Google maps"
