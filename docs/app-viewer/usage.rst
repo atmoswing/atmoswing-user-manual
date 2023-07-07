@@ -72,6 +72,10 @@ The first visualization is a summary of the next lead times (Figure below). At t
 .. image:: img/frame-viewer-rings.png
    :align: center
 
+AtmoSwing Viewer offers the capability to display forecasts for sub-daily time steps. Users can view forecasts for various time steps simultaneously. In the example below, a combination of 6-hourly and daily time steps is shown. When a sub-daily forecast is opened, the interface adjusts accordingly by introducing subdivisions to the lead time selection, alarm panel, and circular bands on the map.
+
+.. image:: img/frame-viewer-6h.png
+   :align: center
 
 Sidebar
 ~~~~~~~
