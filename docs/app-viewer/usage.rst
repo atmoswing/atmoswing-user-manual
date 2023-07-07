@@ -132,6 +132,11 @@ The lower left panel is the list of the previous forecasts. These are automatica
 .. image:: img/frame-plot-timeseries.png
    :align: center
 
+The time series can also be displayed for sub-daily time steps, such as in the example below for a 6-hourly forecast. The display options are the same as for the daily time steps. 
+
+.. image:: img/frame-plot-timeseries-6h.png
+   :align: center
+
 
 Display of the distributions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~

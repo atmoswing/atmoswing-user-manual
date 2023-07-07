@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AtmoSwing 2.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-07 16:00+0200\n"
-"PO-Revision-Date: 2023-07-07 16:02+0200\n"
+"POT-Creation-Date: 2023-07-07 16:35+0200\n"
+"PO-Revision-Date: 2023-07-07 16:36+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -597,11 +597,22 @@ msgstr ""
 "Le panneau inférieur gauche est la liste des prévisions précédentes. Celles-ci "
 "sont automatiquement importées lors de l'affichage du graphique."
 
-#: ../../app-viewer/usage.rst:137
+#: ../../app-viewer/usage.rst:135
+msgid ""
+"The time series can also be displayed for sub-daily time steps, such as in the "
+"example below for a 6-hourly forecast. The display options are the same as for "
+"the daily time steps."
+msgstr ""
+"Les séries temporelles peuvent également être affichées pour des pas de temps "
+"infra-journaliers, comme dans l'exemple ci-dessous pour une prévision à pas de "
+"temps de 6 heures. Les options d'affichage sont les mêmes que pour les pas de "
+"temps journaliers."
+
+#: ../../app-viewer/usage.rst:142
 msgid "Display of the distributions"
 msgstr "Affichage des distributions"
 
-#: ../../app-viewer/usage.rst:139
+#: ../../app-viewer/usage.rst:144
 msgid ""
 "The predictand distributions are accessible via the |"
 "icon_frame_distributions_s| button on the toolbar. It allows plotting the "
@@ -617,11 +628,11 @@ msgstr ""
 "séries temporelles (section précédente). La méthode, la station et l'échéance "
 "doivent être sélectionnés dans la partie supérieure de la fenêtre."
 
-#: ../../app-viewer/usage.rst:149
+#: ../../app-viewer/usage.rst:154
 msgid "icon_frame_distributions_s"
 msgstr "icon_frame_distributions_s"
 
-#: ../../app-viewer/usage.rst:144
+#: ../../app-viewer/usage.rst:149
 msgid ""
 "The distribution of the analogy criterion is also available in the same window "
 "through the tab located above the graph (Figure below). This distribution "
@@ -633,11 +644,11 @@ msgstr ""
 "distribution permet d'identifier d'éventuelles discontinuités dans les valeurs "
 "des critères et ainsi d'accroître la confiance dans les meilleures analogues."
 
-#: ../../app-viewer/usage.rst:157
+#: ../../app-viewer/usage.rst:162
 msgid "Display of the analog dates"
 msgstr "Affichage des dates analogues"
 
-#: ../../app-viewer/usage.rst:159
+#: ../../app-viewer/usage.rst:164
 msgid ""
 "The details of the analog dates and their associated criterion and predictand "
 "values (Figure below) are available through the |icon_frame_analogs_s| button "
@@ -654,15 +665,15 @@ msgstr ""
 "Le premier clic classe les valeurs par ordre croissant et le second par ordre "
 "décroissant."
 
-#: ../../app-viewer/usage.rst:164
+#: ../../app-viewer/usage.rst:169
 msgid "icon_frame_analogs_s"
 msgstr "icon_frame_analogs_s"
 
-#: ../../app-viewer/usage.rst:172
+#: ../../app-viewer/usage.rst:177
 msgid "Display of the predictor fields"
 msgstr "Affichage des champs météorologiques (prédicteur)"
 
-#: ../../app-viewer/usage.rst:174
+#: ../../app-viewer/usage.rst:179
 msgid ""
 "Maps of the predictor fields (Figure below) are accessible via the |"
 "icon_frame_predictors_s| button on the toolbar. This map allows comparing the "
@@ -674,22 +685,22 @@ msgstr ""
 "de comparer les variables prédictives pour la situation cible et les dates "
 "analogues. Les options sont les suivantes :"
 
-#: ../../app-viewer/usage.rst:188
+#: ../../app-viewer/usage.rst:193
 msgid "icon_frame_predictors_s"
 msgstr "icon_frame_predictors_s"
 
-#: ../../app-viewer/usage.rst:176
+#: ../../app-viewer/usage.rst:181
 msgid ""
 "The method, configuration, and predictors must be selected in the left panel."
 msgstr ""
 "La méthode, la configuration et les prédicteurs doivent être sélectionnés dans "
 "le panneau de gauche."
 
-#: ../../app-viewer/usage.rst:177
+#: ../../app-viewer/usage.rst:182
 msgid "The lead time and the analog date are selected above the maps."
 msgstr "L'échéance et la date analogue sont sélectionnées au-dessus des cartes."
 
-#: ../../app-viewer/usage.rst:178
+#: ../../app-viewer/usage.rst:183
 msgid ""
 "The color scales and the map navigation are synchronized between both maps. "
 "The navigation synchronization can be disabled under the Tools menu "
@@ -699,11 +710,11 @@ msgstr ""
 "cartes. La synchronisation de la navigation peut être désactivée dans le menu "
 "Outils (synchroniser les outils)."
 
-#: ../../app-viewer/usage.rst:179
+#: ../../app-viewer/usage.rst:184
 msgid "The navigation tools are the same as for the main interface."
 msgstr "Les outils de navigation sont les mêmes que pour l'interface principale."
 
-#: ../../app-viewer/usage.rst:180
+#: ../../app-viewer/usage.rst:185
 msgid ""
 "An additional tool |icon_map_cross| is provided to display marks on both maps "
 "to help compare the location of some features."
@@ -711,11 +722,11 @@ msgstr ""
 "Un outil supplémentaire |icon_map_cross| permet d'afficher des marques sur les "
 "deux cartes afin de comparer l'emplacement de certains éléments."
 
-#: ../../app-viewer/usage.rst:194
+#: ../../app-viewer/usage.rst:199
 msgid "icon_map_cross"
 msgstr "icon_map_cross"
 
-#: ../../app-viewer/usage.rst:181
+#: ../../app-viewer/usage.rst:186
 msgid ""
 "Each panel can be hidden to display only one map using the toggle buttons in "
 "the gap between the maps."
@@ -723,21 +734,21 @@ msgstr ""
 "Chaque panneau peut être masqué pour n'afficher qu'une seule carte à l'aide "
 "des boutons de basculement situés dans l'espace entre les cartes."
 
-#: ../../app-viewer/usage.rst:182
+#: ../../app-viewer/usage.rst:187
 msgid "The color tables can be changed in the preferences."
 msgstr "Les palettes de couleurs peuvent être modifiées dans les préférences."
 
-#: ../../app-viewer/usage.rst:183
+#: ../../app-viewer/usage.rst:188
 msgid "The path to the predictor data must be specified in the preferences."
 msgstr ""
 "Le chemin d'accès aux données du prédicteur doit être spécifié dans les "
 "préférences."
 
-#: ../../app-viewer/usage.rst:202
+#: ../../app-viewer/usage.rst:207
 msgid "Workspaces"
 msgstr "Espaces de travail (workspace)"
 
-#: ../../app-viewer/usage.rst:204
+#: ../../app-viewer/usage.rst:209
 msgid ""
 "AtmoSwing Viewer relies on workspaces to allow changing of region or "
 "configuration. A workspace is an xml file containing the paths to the GIS "
@@ -750,77 +761,77 @@ msgstr ""
 "de rendu, ainsi que l'emplacement des fichiers de prévision et d'autres "
 "propriétés qui peuvent être définies dans les préférences."
 
-#: ../../app-viewer/usage.rst:206
+#: ../../app-viewer/usage.rst:211
 msgid "The menu File allows to:"
 msgstr "Le menu Fichier permet de:"
 
-#: ../../app-viewer/usage.rst:208
+#: ../../app-viewer/usage.rst:213
 msgid "Open a workspace"
 msgstr "Ouvrir un espace de travail"
 
-#: ../../app-viewer/usage.rst:209
+#: ../../app-viewer/usage.rst:214
 msgid "Save the workspace"
 msgstr "Sauvegarder l'espace de travail"
 
-#: ../../app-viewer/usage.rst:210
+#: ../../app-viewer/usage.rst:215
 msgid "Save the workspace as"
 msgstr "Enregistrer l'espace de travail sous un autre nom"
 
-#: ../../app-viewer/usage.rst:211
+#: ../../app-viewer/usage.rst:216
 msgid "Create a new workspace"
 msgstr "Créer un nouvel espace de travail"
 
-#: ../../app-viewer/usage.rst:213
+#: ../../app-viewer/usage.rst:218
 msgid "The creation of a new workspace is guided by a wizard to define:"
 msgstr ""
 "La création d'un nouvel espace de travail est guidée par un assistant qui "
 "permet de définir :"
 
-#: ../../app-viewer/usage.rst:215
+#: ../../app-viewer/usage.rst:220
 msgid "The location of the workspace file"
 msgstr "Emplacement du fichier de l'espace de travail"
 
-#: ../../app-viewer/usage.rst:216
+#: ../../app-viewer/usage.rst:221
 msgid "The path to the forecasts directory"
 msgstr "Chemin d'accès au répertoire des prévisions"
 
-#: ../../app-viewer/usage.rst:217
+#: ../../app-viewer/usage.rst:222
 msgid "The base map for the project"
 msgstr "La carte de base du projet"
 
-#: ../../app-viewer/usage.rst:219
+#: ../../app-viewer/usage.rst:224
 msgid "The base map options are:"
 msgstr "Les options de la carte de base sont les suivantes :"
 
-#: ../../app-viewer/usage.rst:221
+#: ../../app-viewer/usage.rst:226
 msgid "Custom layers"
 msgstr "Couches personnalisées"
 
-#: ../../app-viewer/usage.rst:222
+#: ../../app-viewer/usage.rst:227
 msgid "Terrain from Google maps"
 msgstr "Terrain de Google maps"
 
-#: ../../app-viewer/usage.rst:223
+#: ../../app-viewer/usage.rst:228
 msgid "Map from Google maps"
 msgstr "Carte de Google maps"
 
-#: ../../app-viewer/usage.rst:224
+#: ../../app-viewer/usage.rst:229
 msgid "Map from OpenStreetMap"
 msgstr "Carte de OpenStreetMap"
 
-#: ../../app-viewer/usage.rst:225
+#: ../../app-viewer/usage.rst:230
 msgid "Map from ArcGIS Mapserver"
 msgstr "Carte d'ArcGIS Mapserver"
 
-#: ../../app-viewer/usage.rst:226
+#: ../../app-viewer/usage.rst:231
 msgid "Satellite imagery from Google maps"
 msgstr "Images satellite de Google maps"
 
-#: ../../app-viewer/usage.rst:227
+#: ../../app-viewer/usage.rst:232
 msgid "Satellite imagery from VirtualEarth"
 msgstr "Images satellite de VirtualEarth"
 
-#: ../../app-viewer/usage.rst:229
+#: ../../app-viewer/usage.rst:234
 msgid ""
 "The workspace file does not need to be directly edited. The changes can be "
 "made through the interface and the workspace saved again. Its structure is as "
