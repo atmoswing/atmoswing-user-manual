@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AtmoSwing 2.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-25 14:57+0200\n"
-"PO-Revision-Date: 2023-07-04 10:57+0200\n"
+"POT-Creation-Date: 2023-07-10 12:16+0200\n"
+"PO-Revision-Date: 2023-07-10 12:20+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -47,8 +47,8 @@ msgid ""
 "for the operational forecasting as detailed below. A :ref:`full example<Full "
 "example>` is provided at the bottom of the page."
 msgstr ""
-"Les fichiers de paramètres pour le Forecaster sont basés sur le :ref:`fichier "
-"de paramètres générique pour AtmoSwing<parameters-file>`, mais comportent des "
+"Les fichiers de paramètres pour le Forecaster sont basés sur le :ref:`fichier de "
+"paramètres générique pour AtmoSwing<parameters-file>`, mais comportent des "
 "éléments spécifiques pour la prévision opérationnelle, comme détaillé ci-"
 "dessous. Un :ref:`exemple complet<Full example>` est fourni en bas de page."
 
@@ -66,12 +66,11 @@ msgstr "Contenu 'time_properties'"
 
 #: ../../app-forecaster/parameters-file.rst:20
 msgid ""
-"The ``<time_properties>`` property has no ``<time_array_target>`` element, but "
-"a ``<lead_time_days>`` element listing the lead times (in days) to process."
+"The ``<time_properties>`` property has no ``<time_array_target>`` element, but a "
+"``<lead_time_days>`` element listing the lead times (in days) to process."
 msgstr ""
 "La propriété ``<time_properties>`` n'a pas d'élément ``<time_array_target>``, "
-"mais un élément ``<lead_time_days>`` listant les échéances (en jours) à "
-"calculer."
+"mais un élément ``<lead_time_days>`` listant les échéances (en jours) à calculer."
 
 #: ../../app-forecaster/parameters-file.rst:33
 msgid "Content 'analog_dates'"
@@ -79,18 +78,18 @@ msgstr "Contenu 'analog_dates'"
 
 #: ../../app-forecaster/parameters-file.rst:35
 msgid ""
-"The content of ``<analog_dates>`` is mostly similar to the basic parameters "
-"file structure. The differences are:"
+"The content of ``<analog_dates>`` is mostly similar to the basic parameters file "
+"structure. The differences are:"
 msgstr ""
 "Le contenu de ``<analog_dates>`` est en grande partie similaire à la structure "
 "du fichier des paramètres de base. Les différences sont les suivantes :"
 
 #: ../../app-forecaster/parameters-file.rst:37
 msgid ""
-"``<analogs_number>``: The number of analogs to extract is not a single number "
-"as in the generic parameters file, but one value has to be provided for each "
-"lead time. The number of analogs to extract can thus increase with the lead "
-"time to take into account the increasing uncertainty of the NWP outputs."
+"``<analogs_number>``: The number of analogs to extract is not a single number as "
+"in the generic parameters file, but one value has to be provided for each lead "
+"time. The number of analogs to extract can thus increase with the lead time to "
+"take into account the increasing uncertainty of the NWP outputs."
 msgstr ""
 "``<analogs_number>`` : Le nombre d'analogues à extraire n'est pas un nombre "
 "unique comme dans le fichier de paramètres de base, mais une valeur doit être "
@@ -139,11 +138,21 @@ msgstr "Préférences"
 #: ../../app-forecaster/preferences.rst:4
 msgid ""
 "The preferences frame can be opened from the menu Options / Preferences of the "
-"main interface or with a button from the toolbar."
+"main interface or with a button from the toolbar. The options related to the "
+"batch file are saved in the batch file itself, while the other options are saved "
+"in the user preferences file. The preferences are saved when the software is "
+"closed. The preferences are automatically loaded when the software is started. "
+"AtmoSwing will first look for a preference file in the same directory as the "
+"executable, then in the user directory."
 msgstr ""
 "La fenêtre des préférences peut être ouvert à partir du menu Options / "
-"Préférences de l'interface principale ou à l'aide d'un bouton de la barre "
-"d'outils."
+"Préférences de l’interface principale ou à l’aide d’un bouton de la barre "
+"d’outils. Les options liées au fichier batch sont sauvegardées dans le fichier "
+"batch lui-même, tandis que les autres options sont sauvegardées dans le fichier "
+"de préférences de l'utilisateur. Les préférences sont sauvegardées à la "
+"fermeture du logiciel et sont automatiquement chargées au démarrage du logiciel. "
+"AtmoSwing cherchera d'abord un fichier de préférences dans le même répertoire "
+"que l'exécutable, puis dans le répertoire de l'utilisateur."
 
 #: ../../app-forecaster/preferences.rst:7
 msgid "Batch file properties"
@@ -160,14 +169,14 @@ msgid ""
 "Directory containing the parameters files: contains the :ref:`xml parameters "
 "files (defining by the method parameters)<parameters-file-forecaster>`"
 msgstr ""
-"Répertoire contenant les fichiers de paramètres : contient les :ref:`fichiers "
-"de paramètres xml (définis par les paramètres de la méthode)<parameters-file-"
+"Répertoire contenant les fichiers de paramètres : contient les :ref:`fichiers de "
+"paramètres xml (définis par les paramètres de la méthode)<parameters-file-"
 "forecaster>`"
 
 #: ../../app-forecaster/preferences.rst:12
 msgid ""
-"Directory containing the predictand DB: contains the :ref:`NetCDF file "
-"generated from the predictand data<predictand-db>`."
+"Directory containing the predictand DB: contains the :ref:`NetCDF file generated "
+"from the predictand data<predictand-db>`."
 msgstr ""
 "Répertoire contenant la base de données des prédictants : contient le :ref:"
 "`fichier NetCDF généré à partir des données des prédictants<predictand-db>`."
@@ -238,11 +247,11 @@ msgstr "Options du journal (log)"
 
 #: ../../app-forecaster/preferences.rst:37
 msgid ""
-"Log preferences control the display of the log window and the level "
-"(importance) of reported messages:"
+"Log preferences control the display of the log window and the level (importance) "
+"of reported messages:"
 msgstr ""
-"Les préférences de journal contrôlent l'affichage de la fenêtre de journal et "
-"le niveau (importance) des messages rapportés :"
+"Les préférences de journal contrôlent l'affichage de la fenêtre de journal et le "
+"niveau (importance) des messages rapportés :"
 
 #: ../../app-forecaster/preferences.rst:39
 msgid "Errors only - recommended as long as everything goes as planned."
@@ -295,8 +304,7 @@ msgstr "Options des librairies"
 #: ../../app-forecaster/preferences.rst:60
 msgid ""
 "The path to the ecCodes definitions can be specified. These files are used to "
-"decode the GRIB files. The default path is automatically set during "
-"installation."
+"decode the GRIB files. The default path is automatically set during installation."
 msgstr ""
 "Le chemin d'accès aux définitions d'ecCodes peut être spécifié. Ces fichiers "
 "sont utilisés pour décoder les fichiers GRIB. Le chemin par défaut est "
@@ -321,8 +329,7 @@ msgstr "Options de l'interface utilisateur graphique (GUI)"
 #: ../../app-forecaster/preferences.rst:74
 msgid ""
 "Options to control the behavior of the interface and its means of communication "
-"with the user. Saves calculation time by disabling dialog boxes. The choices "
-"are:"
+"with the user. Saves calculation time by disabling dialog boxes. The choices are:"
 msgstr ""
 "Options permettant de contrôler le comportement de l'interface et ses moyens de "
 "communication avec l'utilisateur. Permet de gagner du temps de calcul en "
@@ -335,8 +342,8 @@ msgid ""
 "intensive calculations."
 msgstr ""
 "Silencieux - aucune boîte de dialogue n'est affichée. L'utilisateur doit donc "
-"garder un œil sur la fenêtre de journal pour détecter toute erreur. Cette "
-"option n'est utile que pour les calculs très intensifs."
+"garder un œil sur la fenêtre de journal pour détecter toute erreur. Cette option "
+"n'est utile que pour les calculs très intensifs."
 
 #: ../../app-forecaster/preferences.rst:77
 msgid "Standard - recommended for regular use."
@@ -356,12 +363,12 @@ msgid ""
 "steps if the download fails\" corresponds to the number of attempts to retrieve "
 "data issued earlier if the desired data cannot be downloaded; this number must "
 "be greater than 2 to ensure proper operation of the Forecaster. Indeed, the "
-"latest NWP outputs are never instantly accessible, but after a certain delay. "
-"In this case, the most recent available data must be used."
+"latest NWP outputs are never instantly accessible, but after a certain delay. In "
+"this case, the most recent available data must be used."
 msgstr ""
-"Options pour le téléchargement automatique du prédicteur. Le \"nombre maximum "
-"de pas de temps précédents si le téléchargement échoue\" correspond au nombre "
-"de tentatives de récupération des données émises précédemment si les données "
+"Options pour le téléchargement automatique du prédicteur. Le \"nombre maximum de "
+"pas de temps précédents si le téléchargement échoue\" correspond au nombre de "
+"tentatives de récupération des données émises précédemment si les données "
 "souhaitées ne peuvent pas être téléchargées ; ce nombre doit être supérieur à 2 "
 "pour assurer le bon fonctionnement du Forecaster. En effet, les dernières "
 "sorties de la PNT ne sont jamais accessibles instantanément, mais après un "
@@ -468,18 +475,18 @@ msgstr "Utilisation"
 msgid ""
 "The Forecaster allows processing an analog method based on the latest available "
 "NWP outputs or for a given date. The real-time forecast calculation can be "
-"performed by a standard computer without specific resources. The forecast can "
-"be executed on demand through a graphical user interface (GUI) or can be "
-"automated through the use of a command-line interface (CLI). Both aspects are "
-"explained hereafter."
+"performed by a standard computer without specific resources. The forecast can be "
+"executed on demand through a graphical user interface (GUI) or can be automated "
+"through the use of a command-line interface (CLI). Both aspects are explained "
+"hereafter."
 msgstr ""
-"Le Forecaster permet de calculer une méthode d'analogues basée sur les "
-"dernières sorties PNT (NWP) disponibles ou pour une date donnée. Le calcul de "
-"la prévision en temps réel peut être effectué par un ordinateur standard sans "
-"ressources spécifiques. La prévision peut être exécutée à la demande par le "
-"biais d'une interface utilisateur graphique (GUI) ou peut être automatisée par "
-"l'utilisation d'une interface en ligne de commande (CLI). Ces deux aspects sont "
-"expliqués ci-après."
+"Le Forecaster permet de calculer une méthode d'analogues basée sur les dernières "
+"sorties PNT (NWP) disponibles ou pour une date donnée. Le calcul de la prévision "
+"en temps réel peut être effectué par un ordinateur standard sans ressources "
+"spécifiques. La prévision peut être exécutée à la demande par le biais d'une "
+"interface utilisateur graphique (GUI) ou peut être automatisée par l'utilisation "
+"d'une interface en ligne de commande (CLI). Ces deux aspects sont expliqués ci-"
+"après."
 
 #: ../../app-forecaster/usage.rst:6
 msgid ""
@@ -490,13 +497,13 @@ msgid ""
 "fill eventual gaps in the previous days. If the forecasts are already present, "
 "no computing resources are used."
 msgstr ""
-"Par défaut, le Forecaster traite la dernière prévision disponible. Cependant, "
-"il peut également calculer une prévision pour un jour donné dans le passé, à "
-"condition que les sorties PNT (NWP) soient disponibles localement ou à "
-"distance, ou il peut être exécuté pour traiter les x derniers jours. Ces "
-"options peuvent également être exécutées une fois par jour par un gestionnaire "
-"de tâches pour combler d'éventuelles lacunes dans les jours précédents. Si les "
-"prévisions sont déjà présentes, aucune ressource informatique n'est utilisée."
+"Par défaut, le Forecaster traite la dernière prévision disponible. Cependant, il "
+"peut également calculer une prévision pour un jour donné dans le passé, à "
+"condition que les sorties PNT (NWP) soient disponibles localement ou à distance, "
+"ou il peut être exécuté pour traiter les x derniers jours. Ces options peuvent "
+"également être exécutées une fois par jour par un gestionnaire de tâches pour "
+"combler d'éventuelles lacunes dans les jours précédents. Si les prévisions sont "
+"déjà présentes, aucune ressource informatique n'est utilisée."
 
 #: ../../app-forecaster/usage.rst:8
 msgid ""
@@ -527,8 +534,7 @@ msgstr ":ref:`Une base de données de predictands <predictand-db>`"
 
 #: ../../app-forecaster/usage.rst:16
 msgid ":ref:`Operational predictors from NWP outputs <data-forecaster>`"
-msgstr ""
-":ref:`Prédicteurs prévus à partir des sorties PNT (NWP) <data-forecaster>`"
+msgstr ":ref:`Prédicteurs prévus à partir des sorties PNT (NWP) <data-forecaster>`"
 
 #: ../../app-forecaster/usage.rst:17
 msgid ":ref:`A predictors archive (e.g. a reanalysis dataset) <reanalyses>`"
@@ -598,8 +604,8 @@ msgstr ""
 
 #: ../../app-forecaster/usage.rst:36
 msgid ""
-"Some **exports** can also be generated (e.g. synthetic xml or csv files) to "
-"ease the integration of synthetic data on a web platform, for example."
+"Some **exports** can also be generated (e.g. synthetic xml or csv files) to ease "
+"the integration of synthetic data on a web platform, for example."
 msgstr ""
 "Certains **exports** peuvent également être générés (par exemple, des fichiers "
 "synthétiques xml ou csv) pour faciliter l'intégration de données synthétiques "
@@ -612,8 +618,8 @@ msgid ""
 "automatically. The output directory can be synchronized by means of a file-"
 "sharing client to distribute the forecasts."
 msgstr ""
-"Les fichiers sont enregistrés dans une structure de répertoire basée sur la "
-"date (par exemple, 2019/04/23). Le Viewer suit les mêmes règles pour rechercher "
+"Les fichiers sont enregistrés dans une structure de répertoire basée sur la date "
+"(par exemple, 2019/04/23). Le Viewer suit les mêmes règles pour rechercher "
 "automatiquement les nouvelles prévisions. Le répertoire de sortie peut être "
 "synchronisé à l'aide d'un client de partage de fichiers pour distribuer les "
 "prévisions."
@@ -673,8 +679,8 @@ msgstr "Pour effectuer une prévision, il faut :"
 #: ../../app-forecaster/usage.rst:68
 msgid ""
 "Choose the date from the calendar and the time below. When the software is "
-"started, the date and time are set to the current values. The |icon_update| "
-"icon allows updating to the current values."
+"started, the date and time are set to the current values. The |icon_update| icon "
+"allows updating to the current values."
 msgstr ""
 "Choisir la date dans le calendrier et l'heure en dessous. Au démarrage du "
 "logiciel, la date et l'heure sont réglées sur les valeurs actuelles. L'icône |"
@@ -731,24 +737,24 @@ msgstr "Définir la liste des méthodes"
 
 #: ../../app-forecaster/usage.rst:107
 msgid ""
-"The list of analog methods can be completed, or methods can be deleted. A "
-"method here is a specific parameterization of an analog method optimal for a "
-"lead time or a region. It is represented in the graphical user interface by "
-"choice of a parameters file. An entry can be removed with the |icon_close| "
-"icon, and new ones can be added using the |icon_plus| icon below the list."
+"The list of analog methods can be completed, or methods can be deleted. A method "
+"here is a specific parameterization of an analog method optimal for a lead time "
+"or a region. It is represented in the graphical user interface by choice of a "
+"parameters file. An entry can be removed with the |icon_close| icon, and new "
+"ones can be added using the |icon_plus| icon below the list."
 msgstr ""
 "La liste des méthodes d'analogues peut être complétée, ou des méthodes peuvent "
 "être supprimées. Une méthode est ici un paramétrage spécifique d'une méthode "
 "d'analogue optimale pour une échéance ou une région. Elle est représentée dans "
 "l'interface graphique par le choix d'un fichier de paramètres. Une entrée peut "
-"être supprimée à l'aide de l'icône |icon_close|, et de nouvelles entrées "
-"peuvent être ajoutées à l'aide de l'icône |icon_plus| située sous la liste."
+"être supprimée à l'aide de l'icône |icon_close|, et de nouvelles entrées peuvent "
+"être ajoutées à l'aide de l'icône |icon_plus| située sous la liste."
 
-#: ../../app-forecaster/usage.rst:113
+#: ../../app-forecaster/usage.rst:114
 msgid "icon_close"
 msgstr "icon_close"
 
-#: ../../app-forecaster/usage.rst:119
+#: ../../app-forecaster/usage.rst:120
 msgid "icon_plus"
 msgstr "icon_plus"
 
@@ -758,41 +764,41 @@ msgid ""
 "appears to set the parameters file name (only the name, not the full path). The "
 "parameters file must be located in the directory defined in the preferences. It "
 "is an XML file that can be edited with a text editor. The structure of the file "
-"is described in the :ref:`parameters file section <parameters-file-"
-"forecaster>`. If the file is not found, the |icon_warning| icon is shown. The |"
-"icon_info| icon allows displaying the description of the parameters file in a "
-"tooltip. The |icon_details| icon allows displaying the content of the "
-"parameters file in a new frame (the content cannot be edited)."
+"is described in the :ref:`parameters file section <parameters-file-forecaster>`. "
+"If the file is not found, the |icon_warning| icon is shown. The |icon_info| icon "
+"allows displaying the description of the parameters file in a tooltip. The |"
+"icon_details| icon allows displaying the content of the parameters file in a new "
+"frame (the content cannot be edited)."
 msgstr ""
 "Les entrées peuvent être modifiées en cliquant sur l'icône |icon_edit|. Une "
 "boîte de dialogue apparaît pour définir le nom du fichier de paramètres "
 "(uniquement le nom, pas le chemin d'accès complet). Le fichier de paramètres "
 "doit être situé dans le répertoire défini dans les préférences. Il s'agit d'un "
 "fichier XML qui peut être édité avec un éditeur de texte. La structure du "
-"fichier est décrite dans la section :ref:`fichier de paramètres <parameters-"
-"file-forecaster>`. Si le fichier n'est pas trouvé, l'icône |icon_warning| est "
+"fichier est décrite dans la section :ref:`fichier de paramètres <parameters-file-"
+"forecaster>`. Si le fichier n'est pas trouvé, l'icône |icon_warning| est "
 "affichée. L'icône |icon_info| permet d'afficher la description du fichier de "
 "paramètres dans une info-bulle. L'icône |icon_details| permet d'afficher le "
 "contenu du fichier de paramètres dans une nouvelle fenêtre (le contenu ne peut "
 "pas être édité)."
 
-#: ../../app-forecaster/usage.rst:125
+#: ../../app-forecaster/usage.rst:126
 msgid "icon_edit"
 msgstr "icon_edit"
 
-#: ../../app-forecaster/usage.rst:131
+#: ../../app-forecaster/usage.rst:132
 msgid "icon_warning"
 msgstr "icon_warning"
 
-#: ../../app-forecaster/usage.rst:137
+#: ../../app-forecaster/usage.rst:138
 msgid "icon_info"
 msgstr "icon_info"
 
-#: ../../app-forecaster/usage.rst:143
+#: ../../app-forecaster/usage.rst:144
 msgid "icon_details"
 msgstr "icon_details"
 
-#: ../../app-forecaster/usage.rst:111
+#: ../../app-forecaster/usage.rst:112
 msgid ""
 "When the list of methods has been modified and should be kept as default, it is "
 "necessary to save it (menu 'File / Save batch file'); otherwise, the list will "
@@ -802,70 +808,70 @@ msgstr ""
 "défaut, il est nécessaire de la sauvegarder (menu 'Fichier / Enregistrer le "
 "fichier batch') ; sinon, la liste sera réinitialisée au redémarrage du logiciel."
 
-#: ../../app-forecaster/usage.rst:151
+#: ../../app-forecaster/usage.rst:152
 msgid "Command line interface"
 msgstr "Interface en ligne de commande"
 
-#: ../../app-forecaster/usage.rst:153
+#: ../../app-forecaster/usage.rst:154
 msgid ""
 "The Forecaster also has a command-line interface, which makes it possible to "
 "automate forecasts on a server. A scheduled task can then be added on a server "
 "(ex: Task Scheduler on Windows or Cron task on Linux). The options are as "
 "follows:"
 msgstr ""
-"Le Forecaster dispose également d'une interface en ligne de commande, qui "
-"permet d'automatiser les prévisions sur un serveur. Une tâche planifiée peut "
-"alors être ajoutée sur un serveur (ex : Task Scheduler sous Windows ou tâche "
-"Cron sous Linux). Les options sont les suivantes :"
+"Le Forecaster dispose également d'une interface en ligne de commande, qui permet "
+"d'automatiser les prévisions sur un serveur. Une tâche planifiée peut alors être "
+"ajoutée sur un serveur (ex : Task Scheduler sous Windows ou tâche Cron sous "
+"Linux). Les options sont les suivantes :"
 
-#: ../../app-forecaster/usage.rst:155
+#: ../../app-forecaster/usage.rst:157
 msgid "Displays the help of command-line options"
 msgstr "Afficher l'aide des options en ligne de commande"
 
-#: ../../app-forecaster/usage.rst:156
+#: ../../app-forecaster/usage.rst:159
 msgid "Configure the forecaster"
 msgstr "Configurer le Forecaster"
 
-#: ../../app-forecaster/usage.rst:157
+#: ../../app-forecaster/usage.rst:161
 msgid "Displays the software version"
 msgstr "Afficher la version du logiciel"
 
-#: ../../app-forecaster/usage.rst:158
+#: ../../app-forecaster/usage.rst:163
 msgid "Batch file to use for the forecast (full path)"
 msgstr "Fichier batch à utiliser pour la prévision (chemin complet)"
 
-#: ../../app-forecaster/usage.rst:159
+#: ../../app-forecaster/usage.rst:165
 msgid "Run forecast for the latest available data"
 msgstr "Exécuter la prévision pour les dernières données disponibles"
 
-#: ../../app-forecaster/usage.rst:160
+#: ../../app-forecaster/usage.rst:167
 msgid "Run forecast for the given number of past days"
 msgstr "Exécuter les prévisions pour le nombre donné de jours passés"
 
-#: ../../app-forecaster/usage.rst:161
+#: ../../app-forecaster/usage.rst:169
 msgid "Run forecast for a specified date"
 msgstr "Exécuter les prévisions pour une date donnée"
 
-#: ../../app-forecaster/usage.rst:162
+#: ../../app-forecaster/usage.rst:171
 msgid ""
 "Set the log level (0: minimum, 1: errors, 2: warnings (default), 3: verbose)"
 msgstr ""
 "Définir le niveau du journal (0 : minimum, 1 : erreurs, 2 : avertissements (par "
 "défaut), 3 : verbeux)"
 
-#: ../../app-forecaster/usage.rst:163
+#: ../../app-forecaster/usage.rst:173
 msgid "Use proxy on given port"
 msgstr "Utiliser le proxy sur le port donné"
 
-#: ../../app-forecaster/usage.rst:164
+#: ../../app-forecaster/usage.rst:175
 msgid "Proxy user and password"
 msgstr "Utilisateur et mot de passe du proxy"
 
-#: ../../app-forecaster/usage.rst:168
+#: ../../app-forecaster/usage.rst:179
 msgid "Docker image"
 msgstr "Image Docker"
 
-#: ../../app-forecaster/usage.rst:170
+#: ../../app-forecaster/usage.rst:181
 msgid ""
 "A Docker image is available on DockerHub: https://hub.docker.com/r/atmoswing/"
 "forecaster"
@@ -873,24 +879,23 @@ msgstr ""
 "Une image Docker est disponible sur DockerHub : https://hub.docker.com/r/"
 "atmoswing/forecaster"
 
-#: ../../app-forecaster/usage.rst:172
+#: ../../app-forecaster/usage.rst:183
 msgid "Get it with: ``docker pull atmoswing/forecaster``"
 msgstr "Obtenez-le avec : ``docker pull atmoswing/forecaster``"
 
-#: ../../app-forecaster/usage.rst:174
+#: ../../app-forecaster/usage.rst:185
 msgid ""
 "The docker container for AtmoSwing Forecaster uses the same options than the "
-"`command line interface` (to the exception of the ``--config`` option). "
-"However, different directories need to be mounted in the docker container to "
-"allow AtmoSwing accessing the data and saving outputs."
+"`command line interface` (to the exception of the ``--config`` option). However, "
+"different directories need to be mounted in the docker container to allow "
+"AtmoSwing accessing the data and saving outputs."
 msgstr ""
 "Le conteneur docker pour AtmoSwing Forecaster utilise les mêmes options que "
 "l'interface en ligne de commande (à l'exception de l'option ``--config``). "
 "Cependant, différents répertoires doivent être montés dans le conteneur docker "
-"pour permettre à AtmoSwing d'accéder aux données et de sauvegarder les "
-"résultats."
+"pour permettre à AtmoSwing d'accéder aux données et de sauvegarder les résultats."
 
-#: ../../app-forecaster/usage.rst:176
+#: ../../app-forecaster/usage.rst:187
 msgid ""
 "The recommended way to use the docker container is to create a docker-compose "
 "file. An example is provided below:"
@@ -898,27 +903,26 @@ msgstr ""
 "La manière recommandée d'utiliser le conteneur docker est de créer un fichier "
 "docker-compose. Un exemple est fourni ci-dessous :"
 
-#: ../../app-forecaster/usage.rst:197
+#: ../../app-forecaster/usage.rst:208
 msgid ""
 "Then, the batch file needs to contain the mounted directories in the docker "
 "container. If you changed the target directories above, you need to adapt them "
 "below as well. The batch file should look like:"
 msgstr ""
-"Ensuite, le fichier batch doit contenir les répertoires montés dans le "
-"conteneur docker. Si vous avez modifié les répertoires cibles ci-dessus, vous "
-"devez également les adapter ci-dessous. Le fichier batch doit ressembler à ça :"
+"Ensuite, le fichier batch doit contenir les répertoires montés dans le conteneur "
+"docker. Si vous avez modifié les répertoires cibles ci-dessus, vous devez "
+"également les adapter ci-dessous. Le fichier batch doit ressembler à ça :"
 
 #~ msgid ""
 #~ "The parameters files for the Forecaster are based on the :ref:`generic "
 #~ "parameters file for AtmoSwing<parameters-file>`, but has some specific "
-#~ "elements for the operational forecasting as detailed below. A `full "
-#~ "example`_ is provided at the bottom of the page."
+#~ "elements for the operational forecasting as detailed below. A `full example`_ "
+#~ "is provided at the bottom of the page."
 #~ msgstr ""
-#~ "Les fichiers de paramètres pour le Forecaster sont basés sur le :ref:"
-#~ "`fichier de paramètres de base pour AtmoSwing<parameters-file>`, mais "
-#~ "comporte quelques éléments spécifiques pour la prévision opérationnelle "
-#~ "comme détaillé ci-dessous. Un :ref:`exemple complet<Full example>` est "
-#~ "fourni en bas de page."
+#~ "Les fichiers de paramètres pour le Forecaster sont basés sur le :ref:`fichier "
+#~ "de paramètres de base pour AtmoSwing<parameters-file>`, mais comporte "
+#~ "quelques éléments spécifiques pour la prévision opérationnelle comme détaillé "
+#~ "ci-dessous. Un :ref:`exemple complet<Full example>` est fourni en bas de page."
 
 #~ msgid "Options for automatic predictor download. The choices are:"
 #~ msgstr ""
@@ -937,8 +941,7 @@ msgstr ""
 
 #~ msgid ""
 #~ "Restrict downloads to needed lead times (enabled by default) - will only "
-#~ "download the data needed to process the forecast (skipping unused time "
-#~ "steps)."
+#~ "download the data needed to process the forecast (skipping unused time steps)."
 #~ msgstr ""
 #~ "Limiter les téléchargements aux échéances nécessaires (activée par défaut) - "
 #~ "ne téléchargera que les données nécessaires au calcul de la prévision (en "
@@ -958,14 +961,13 @@ msgstr ""
 
 #~ msgid "predictors archives: ``/app/predictors/archive`` -> can be read-only"
 #~ msgstr ""
-#~ "archives des prédicteurs : `/app/predictors/archive`` -> peut être en "
-#~ "lecture seule"
+#~ "archives des prédicteurs : `/app/predictors/archive`` -> peut être en lecture "
+#~ "seule"
 
 #~ msgid ""
 #~ "predictors realtime (eventually downloaded): ``/app/predictors/realtime``"
 #~ msgstr ""
-#~ "predictors realtime (éventuellement téléchargé) : ``/app/predictors/"
-#~ "realtime``"
+#~ "predictors realtime (éventuellement téléchargé) : ``/app/predictors/realtime``"
 
 #~ msgid "predictands: ``/app/predictands`` -> can be read-only"
 #~ msgstr "predictands : ``app/predictands`` -> peut être en lecture seule"
@@ -979,3 +981,11 @@ msgstr ""
 
 #~ msgid "Or, on Linux:"
 #~ msgstr "Ou, sur Linux :"
+
+#~ msgid ""
+#~ "The preferences frame can be opened from the menu Options / Preferences of "
+#~ "the main interface or with a button from the toolbar."
+#~ msgstr ""
+#~ "La fenêtre des préférences peut être ouvert à partir du menu Options / "
+#~ "Préférences de l'interface principale ou à l'aide d'un bouton de la barre "
+#~ "d'outils."

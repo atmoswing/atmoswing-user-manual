@@ -1,7 +1,7 @@
 Preferences
 ===========
 
-The preferences frame can be opened from the menu Options / Preferences of the main interface or with a button from the toolbar.
+The preferences frame can be opened from the menu Options / Preferences of the main interface or with a button from the toolbar. The options related to the batch file are saved in the batch file itself, while the other options are saved in the user preferences file. The preferences are saved when the software is closed. The preferences are automatically loaded when the software is started. AtmoSwing will first look for a preference file in the same directory as the executable, then in the user directory.
 
 Batch file properties
 ---------------------
